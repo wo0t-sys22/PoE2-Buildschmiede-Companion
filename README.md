@@ -59,6 +59,8 @@ Persönliche Einstellungen und Fortschritt speichert der Companion lokal in `app
 
 ## Rechtliches
 
-© Buildschmiede. Alle Rechte vorbehalten. Der Quellcode ist zur Ansicht veröffentlicht. Für Nutzung, Änderung oder Weitergabe außerhalb des normalen Gebrauchs des Tools bitte vorher anfragen.
+© Buildschmiede. Alle Rechte am eigenen Code und an den eigenen Texten vorbehalten. Der Quellcode ist zur Ansicht veröffentlicht. Für Nutzung, Änderung oder Weitergabe außerhalb des normalen Gebrauchs des Tools bitte vorher anfragen.
+
+Spieldaten, Grafiken und weitere Inhalte stammen von Dritten. Quellen und Lizenzen stehen in [DRITTANBIETER.md](DRITTANBIETER.md).
 
 Dies ist ein Fanprojekt und steht in keiner Verbindung zu Grinding Gear Games. Path of Exile ist eine Marke von Grinding Gear Games.
