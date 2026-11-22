@@ -33,7 +33,8 @@ def structured_layout(record, area):
         section = {"heading": heading, "tone": HEADING_TONES[heading], "lines": []}
         layout["sections"].append(section)
         if group == "landmarks":
-            section["image"] = record["image"]
+            if record.get("image"):
+                section["image"] = record["image"]
             section["lines"].append({**record["text"], "checkId": "route:" + area})
             layout["steps"].append({**record["compact"], "checkId": "route:" + area, "section": heading})
         for i, stop in enumerate(record[group]):

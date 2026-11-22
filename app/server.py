@@ -47,7 +47,7 @@ CONTROL_CENTER_FILE = "poe2_race_control.html"
 WEB_DIR = BASE_DIR / "web"
 WEB_IMAGES = {
     "images/buildschmiede-hud.png", "images/buildschmiede-lockup.png",
-    "images/buildschmiede-mark.png", "images/grelwood-layout.png",
+    "images/buildschmiede-mark.png",
 }
 CHECKLISTS = Checklists(BASE_DIR / "poe2_checklists.json")
 WEB_FILES = {
