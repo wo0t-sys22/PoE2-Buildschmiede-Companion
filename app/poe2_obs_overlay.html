@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PoE2 Ingame Guide · OBS · v.0.19.0</title>
+  <link rel="icon" type="image/png" href="./images/buildschmiede-hud.png">
+  <link rel="stylesheet" href="poe2_endgame_atlas.css">
+  <link rel="stylesheet" href="poe2_campaign_companion.css">
+  <link rel="stylesheet" href="poe2_overlay_tracker.css">
+</head>
+<body>
+  <section class="panel" aria-label="PoE2 Ingame Guide">
+      <header class="top">
+        <button type="button" class="view-name" id="viewName" title="Ansicht wechseln">Ausführlich</button>
+        <h1 class="title" id="zone">Gebiet wird erkannt …</h1>
+      </header>
+      <div class="race">
+        <div class="race-context">
+          <span id="mode">Spielmodus unbekannt</span>
+          <span class="status prep" id="status">PREP</span>
+        </div>
+        <dl class="metrics">
+          <div><dt>Time</dt><dd id="time">—</dd></div>
+          <div><dt>Level</dt><dd id="level">—</dd></div>
+          <div><dt>XP</dt><dd id="xp">—</dd></div>
+          <div><dt>Ladder</dt><dd id="rank">—</dd></div>
+          <div><dt>Deaths</dt><dd id="deaths">—</dd></div>
+        </dl>
+        <div class="progress"><div class="fill" id="fill"></div></div>
+      </div>
+      <nav class="tracker-nav" id="trackerNav" aria-label="Guide">
+        <button type="button" data-tracker-view="quest" aria-pressed="true">Quest</button>
+        <button type="button" data-tracker-view="boss" aria-pressed="false">Boss</button>
+        <button type="button" data-tracker-view="build" aria-pressed="false">Build</button>
+        <button type="button" data-tracker-view="endgame" aria-pressed="false">Atlas</button>
+      </nav>
+      <div class="atlas-guide" id="atlasGuide" lang="en" hidden></div>
+      <div id="campaignGuide">
+        <section class="route" id="route" aria-label="Gebietshinweise" hidden>
+          <div class="route-list" id="routeList"></div>
+        </section>
+        <div id="trackerCompanion" class="guide-companion" hidden></div>
+      </div>
+  </section>
+  <script src="poe2_campaign_route.js"></script>
+  <script src="poe2_endgame_atlas.js"></script>
+  <script src="poe2_campaign_companion.js"></script>
+  <script>
+    function esc(value) { return String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char])); }
+    function phaseLabel(phase) { return ({campaign:'Kampagne', 'early-maps':'Frühe Maps', endgame:'T15+ Endgame'})[phase] || phase || 'Race'; }
+    let lastRoute = '';
+    let latestState;
+    let guideMode = 'basis';
+    let campaignView = 'quest';
+    let lastBossArea = '';
+    const atlas = new AtlasGuide(esc, { separate: true, onBuildChange: applyGuideBuild });
+    const companion = new CampaignCompanion(esc, () => atlas.show('endgame', 'build'), openCampaignView, applyGuideBuild);
+    companion.attach(document.getElementById('trackerCompanion'));
+    atlas.attach(document.getElementById('atlasGuide'), null, renderGuide);
+
+    function applyGuideBuild(build) {
+      latestState.guideBuild = build;
+      atlas.selectBuild(build);
+      renderGuide(atlas.section);
+    }
+
+    function openCampaignView(view) {
+      if (view !== 'endgame') campaignView = view;
+      if (view === 'endgame') atlas.show('endgame');
+      else if (atlas.section === 'endgame') atlas.show('campaign');
+      else renderGuide('campaign');
+    }
+
+    document.getElementById('trackerNav').addEventListener('click', event => {
+      const view = event.target.closest('[data-tracker-view]')?.dataset.trackerView;
+      if (view) openCampaignView(view);
+    });
+
+    document.getElementById('viewName').addEventListener('click', async event => {
+      const button = event.currentTarget;
+      button.disabled = true;
+      try {
+        const mode = guideMode === 'basis' ? 'veteran' : 'basis';
+        const response = await fetch('/api/guide-mode', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({mode}),
+        });
+        if (!response.ok) throw new Error('Guide mode update failed');
+        guideMode = campaignGuideMode((await response.json()).mode);
+        button.title = 'Ansicht wechseln';
+        renderGuide(atlas.section);
+        atlas.observe(null, guideMode);
+      } catch (_) {
+        button.title = 'Ansicht konnte nicht gespeichert werden. Erneut klicken.';
+      } finally {
+        button.disabled = false;
+      }
+    });
+
+    function renderGuide(section) {
+      document.getElementById('viewName').textContent = guideMode === 'basis' ? 'Ausführlich' : 'Kompakt';
+      if (!latestState) return;
+      const progress = latestState.progress || {};
+      const active = section === 'endgame';
+      document.getElementById('mode').textContent = [
+        active ? 'Endgame & Atlas' : phaseLabel(latestState.meta?.phase), latestState.meta?.mode || 'HC SSF',
+        ...(progress.mapTier ? [`T${progress.mapTier}`] : []),
+      ].join(' · ');
+      document.getElementById('zone').textContent = progress.currentAct ||
+        (progress.mapTier ? `T${progress.mapTier}` : active ? 'Endgame & Atlas' : 'Gebiet wird erkannt …');
+      for (const button of document.querySelectorAll('[data-tracker-view]')) {
+        const view = button.dataset.trackerView;
+        button.hidden = active && !['quest', 'endgame'].includes(view);
+        if (view === 'quest') button.textContent = active ? 'Kampagne' : 'Quest';
+        button.setAttribute('aria-pressed', String(active ? view === 'endgame' : view === campaignView));
+      }
+      document.getElementById('campaignGuide').hidden = active;
+      document.getElementById('atlasGuide').hidden = !active;
+      const zone = progress.currentAct || '';
+      const list = document.getElementById('campaignGuide');
+      if (list.dataset.view !== campaignView) {
+        list.dataset.view = campaignView;
+        list.scrollTop = 0;
+      }
+      companion.current(active ? 'endgame' : campaignView, zone, progress.level, guideMode, latestState.guideBuild);
+      const goal = campaignObjective(latestState, zone, companion.bossesHere());
+      const showRoute = !active && campaignView === 'quest';
+      if (showRoute) renderRoute(latestState, zone, guideMode, goal);
+      else document.getElementById('route').hidden = true;
+    }
+
+    function renderRoute(state, zone, mode, goal) {
+      const panel = document.getElementById('route');
+      const list = document.getElementById('routeList');
+      const {layout, quest} = campaignRouteBlocks(state.routeClues, zone, mode);
+      const route = JSON.stringify([zone, mode, goal, layout, quest]);
+      panel.hidden = !(goal || layout.length || quest.length);
+      if (lastRoute === route) return;
+      lastRoute = route;
+      panel.dataset.guideMode = mode;
+      const rows = (clues, isLayout = false) => clues.map(clue => {
+        const content = mode === 'basis'
+          ? `<div>${clue.cue !== goal ? `<h2 class="route-heading">${esc(clue.cue)}</h2>` : ''}<div class="route-copy">${campaignInstructionHtml(clue, esc)}</div>
+             ${clue.target ? `<div class="route-target">${esc(clue.target)}</div>` : ''}</div>`
+          : `<div class="route-copy">${esc(campaignLiveText(clue))}</div>`;
+        return `<div class="route-item" data-category="${isLayout ? 'route' : campaignRouteCategory(clue)}">
+          ${content}
+        </div>`;
+      }).join('');
+      list.innerHTML = (layout.length ? '<h2 class="group-title is-layout">Layout</h2>' + rows(layout, true) : '') +
+        (goal || quest.length ? '<h2 class="group-title is-quest">Quest</h2>' + (goal ? `<p class="next">${esc(goal)}</p>` : '') + rows(quest) : '');
+      document.getElementById('campaignGuide').scrollTop = 0;
+    }
+
+    function formatTime(totalSeconds) {
+      const seconds = Math.max(0, Number(totalSeconds) || 0);
+      const digits = [Math.floor(seconds / 3600), Math.floor(seconds % 3600 / 60), Math.floor(seconds % 60)];
+      return digits.map(value => String(value).padStart(2, '0')).join(':');
+    }
+
+    async function update() {
+      try {
+        const response = await fetch('/api/state', {cache: 'no-store'});
+        if (!response.ok) return;
+        const state = await response.json();
+        latestState = state;
+        const meta = state.meta || {};
+        const progress = state.progress || {};
+        const status = document.getElementById('status');
+        status.textContent = String(meta.status || 'prep').toUpperCase();
+        status.classList.toggle('prep', meta.status !== 'live');
+        document.getElementById('level').textContent = progress.level ?? 1;
+        document.getElementById('xp').textContent = `${progress.xpPercent ?? 0}%`;
+        document.getElementById('rank').textContent = progress.rank || '—';
+        document.getElementById('deaths').textContent = progress.deaths ?? 0;
+        const liveSeconds = meta.status === 'live' && meta.runStartedAt ? Math.max(0, Math.floor(Date.now() / 1000 - Number(meta.runStartedAt))) : 0;
+        document.getElementById('time').textContent = formatTime(Number(progress.runSeconds || 0) + liveSeconds);
+        document.getElementById('fill').style.width = `${Math.max(0, Math.min(100, Number(progress.xpPercent) || 0))}%`;
+        guideMode = campaignGuideMode(state.guideMode);
+        atlas.selectBuild(state.guideBuild);
+        atlas.observe(state.atlasLocation && {
+          ...state.atlasLocation, campaign: campaignRouteClues(state.routeClues, progress.currentAct).length > 0,
+        }, guideMode);
+        const bossArea = state.bossEncounter?.phase === 'campaign' ? campaignZoneKey(progress.currentAct) : '';
+        if (bossArea !== lastBossArea) {
+          if (bossArea) campaignView = 'boss';
+          else if (lastBossArea && campaignView === 'boss') campaignView = 'quest';
+          lastBossArea = bossArea;
+        }
+        renderGuide(atlas.section);
+      } catch (_) {}
+    }
+
+    update();
+    setInterval(update, 1000);
+  </script>
+</body>
+</html>

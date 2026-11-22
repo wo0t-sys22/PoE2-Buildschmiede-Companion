@@ -1,0 +1,4 @@
+# Lokale Daten des Companion
+app/userdata/
+__pycache__/
+*.pyc

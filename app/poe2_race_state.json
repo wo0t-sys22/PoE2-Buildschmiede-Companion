@@ -1,0 +1,870 @@
+{
+  "meta": {
+    "title": "Game Guide · Kontrollzentrum",
+    "character": "",
+    "mode": "",
+    "phase": "campaign",
+    "status": "prep",
+    "raceDate": "2026-12-11",
+    "runStartedAt": null
+  },
+  "progress": {
+    "level": null,
+    "xpPercent": null,
+    "rank": "—",
+    "deaths": null,
+    "runSeconds": null,
+    "currentAct": "",
+    "mapTier": 0,
+    "nextAction": "Route und Build vorbereiten"
+  },
+  "raceTargets": {
+    "dataVersion": "PoE2 0.5.5f reference, replace after 1.0",
+    "measuredXpPerHour": 0,
+    "campaignTargetHours": "offen",
+    "mapsEntryTargetHours": "offen",
+    "levels": [
+      {
+        "level": "90",
+        "totalXp": "1934009687",
+        "share": "45.5%",
+        "targetHours": "offen",
+        "note": "Current 0.5.5f reference. Level 90 is not halfway to 100."
+      },
+      {
+        "level": "95",
+        "totalXp": "2876116901",
+        "share": "67.7%",
+        "targetHours": "offen",
+        "note": "From here the XP loop gets more important than optional progression."
+      },
+      {
+        "level": "97",
+        "totalXp": "3364828162",
+        "share": "79.2%",
+        "targetHours": "offen",
+        "note": "Only measured safe loops should remain."
+      },
+      {
+        "level": "100",
+        "totalXp": "4250334444",
+        "share": "100%",
+        "targetHours": "offen",
+        "note": "Race target. Exact 1.0 XP curve must be checked after launch."
+      }
+    ]
+  },
+  "thresholds": [
+    {
+      "id": "camp-boss-time",
+      "phase": "campaign",
+      "kind": "offensive",
+      "metric": "Pflicht-Boss kill time",
+      "target": "≤ 90 s als Startwert",
+      "why": "Verlässlicher Single Target hilft bei Bossen und starken Rare Monsters.",
+      "status": "test"
+    },
+    {
+      "id": "camp-deathless",
+      "phase": "campaign",
+      "kind": "defensive",
+      "metric": "Todesfreie Kampagne",
+      "target": "0 Tode im Vergleichsrun",
+      "why": "Jeder Speedvorteil ist wertlos, wenn der Run durch einen frühen RIP verloren geht.",
+      "status": "test"
+    },
+    {
+      "id": "maps-clear",
+      "phase": "early-maps",
+      "kind": "offensive",
+      "metric": "T1–T5 Map-Zeit",
+      "target": "≤ 6 min als Startwert",
+      "why": "Erste Messlatte für Tempo ohne lange Mechanik-Setups.",
+      "status": "test"
+    },
+    {
+      "id": "maps-sustain",
+      "phase": "early-maps",
+      "kind": "defensive",
+      "metric": "Waystone-Sustain",
+      "target": "5 Maps ohne Tierverlust",
+      "why": "Vor dem Push muss der Map-Pool sich selbst tragen.",
+      "status": "test"
+    },
+    {
+      "id": "red-clear",
+      "phase": "early-maps",
+      "kind": "offensive",
+      "metric": "T11–T15 Clear-Zeit",
+      "target": "≤ 8 min als Startwert",
+      "why": "Nur sinnvoll, wenn der Loop auch ohne gefährliche Mods stabil bleibt.",
+      "status": "test"
+    },
+    {
+      "id": "red-death-rate",
+      "phase": "early-maps",
+      "kind": "defensive",
+      "metric": "T11–T15 Todesrate",
+      "target": "0/10 Maps",
+      "why": "Erst zehn sichere Maps rechtfertigen die nächste Tierstufe.",
+      "status": "test"
+    },
+    {
+      "id": "xp-loop",
+      "phase": "endgame",
+      "kind": "offensive",
+      "metric": "XP-Loop ab 95",
+      "target": "höchste gemessene XP/h",
+      "why": "Ab 95 zählt die wiederholbare Ausbeute pro Stunde.",
+      "status": "open"
+    },
+    {
+      "id": "xp-safety",
+      "phase": "endgame",
+      "kind": "defensive",
+      "metric": "XP-Verlust ab 97",
+      "target": "0 Tode im Standardloop",
+      "why": "Keine ungeprüften Mechaniken mehr auf dem Weg zu 100.",
+      "status": "open"
+    }
+  ],
+  "shadowComparisons": [
+    {
+      "id": "monk-shadow-proxy",
+      "name": "Martial Artist Monk · Glacial Cascade → Whirling Assault",
+      "proximity": "hoch",
+      "treeDirection": "Monk-Start, Evasion/ES und Bewegung zuerst; danach Angriffstempo und Kälte-/Elementarschaden. Keine reine ES-Wette ohne Gear.",
+      "defenseDirection": "Evasion + Energy Shield bzw. Deflection und Recovery. Als defensive Referenz Ghost Dance und hohe Evasion prüfen.",
+      "offenseDirection": "Schneller Pack-Clear, Freeze/Burst und beweglicher Single-Target-Schaden.",
+      "use": "Hauptvergleich für Shadow-Tempo und Skilltree-Richtung",
+      "status": "candidate",
+      "source": "0.5.5 Monk Guides"
+    },
+    {
+      "id": "monk-defensive",
+      "name": "Whirling Assault Monk · defensive Endgame-Variante",
+      "proximity": "mittel-hoch",
+      "treeDirection": "Evasion/ES-Schwerpunkte mit Recovery und defensiven Clusterentscheidungen.",
+      "defenseDirection": "Referenzrahmen aus einem 0.5-Endgame-Build: ungefähr 5.7k ES, 25k Evasion und 86% Deflection. Nicht als Shadow-Grenzwert übernehmen.",
+      "offenseDirection": "Whirling-Clear mit ausreichend Boss-Schaden, solange die Defense nicht aufgegeben wird.",
+      "use": "Defensive Obergrenze und T15+-Vergleich",
+      "status": "reference",
+      "source": "0.5 Defensive Whirling Guide"
+    },
+    {
+      "id": "deadeye-speed",
+      "name": "Deadeye Ice Shot / Lightning Arrow",
+      "proximity": "mittel",
+      "treeDirection": "DEX-/Evasion-Richtung, Bewegungstempo, Angriffstempo und Projektilschaden.",
+      "defenseDirection": "Evasion, Resistenzen, Bewegung und Distanz. Gut für Speed, weniger nah an Shadow-Melee.",
+      "offenseDirection": "Kampagnen- und Map-Tempo als Fernkampf-Benchmark.",
+      "use": "Reiner Geschwindigkeitsvergleich",
+      "status": "candidate",
+      "source": "0.5.5 Campaign Guides"
+    },
+    {
+      "id": "varashta-safe",
+      "name": "Disciple of Varashta Minions",
+      "proximity": "niedrig",
+      "treeDirection": "Nicht Shadow-nah. Dient als stabile SSF-Referenz für Progression.",
+      "defenseDirection": "Hohe Sicherheitsmarge und skalierbare defensive Layer.",
+      "offenseDirection": "Boss-Schaden ohne persönliche Nahkampfpositionierung.",
+      "use": "HC-SSF-Sicherheits- und Endgame-Baseline",
+      "status": "reference",
+      "source": "0.5.5 HC SSF Guide"
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "a1-boss",
+      "version": "0.5.5 baseline",
+      "phase": "campaign",
+      "name": "Act 1 Boss",
+      "targetLevel": "14",
+      "targetTime": "",
+      "objective": "Count Geonor sicher erreichen; Kältewiderstand prüfen",
+      "status": "provisional"
+    },
+    {
+      "id": "a2-boss",
+      "version": "0.5.5 baseline",
+      "phase": "campaign",
+      "name": "Act 2 Boss",
+      "targetLevel": "29",
+      "targetTime": "",
+      "objective": "Jamanra ohne unnötige Nebenwege; Gear vor Boss aktualisieren",
+      "status": "provisional"
+    },
+    {
+      "id": "a3-boss",
+      "version": "0.5.5 baseline",
+      "phase": "campaign",
+      "name": "Act 3 Boss",
+      "targetLevel": "42",
+      "targetTime": "",
+      "objective": "Doryani; Single-Target-Setup und Resistenzen prüfen",
+      "status": "provisional"
+    },
+    {
+      "id": "a4-boss",
+      "version": "0.5.5 baseline",
+      "phase": "campaign",
+      "name": "Act 4 Boss",
+      "targetLevel": "52",
+      "targetTime": "",
+      "objective": "Tavakai; Inselroute und sichere Rückkehr festhalten",
+      "status": "provisional"
+    },
+    {
+      "id": "interlude-1",
+      "version": "0.5.5 baseline",
+      "phase": "campaign",
+      "name": "Interlude I",
+      "targetLevel": "53",
+      "targetTime": "",
+      "objective": "Nur als aktueller Trainingsabschnitt. Für 1.0 ersetzen",
+      "status": "provisional"
+    },
+    {
+      "id": "interlude-2",
+      "version": "0.5.5 baseline",
+      "phase": "campaign",
+      "name": "Interlude II",
+      "targetLevel": "55",
+      "targetTime": "",
+      "objective": "Nur als aktueller Trainingsabschnitt. Für 1.0 ersetzen",
+      "status": "provisional"
+    },
+    {
+      "id": "interlude-3",
+      "version": "0.5.5 baseline",
+      "phase": "campaign",
+      "name": "Interlude III / Atlas Unlock",
+      "targetLevel": "58",
+      "targetTime": "",
+      "objective": "Aktuellen Atlas-Einstieg und Map-Device-Zeit messen",
+      "status": "provisional"
+    },
+    {
+      "id": "a5-boss",
+      "version": "1.0",
+      "phase": "campaign",
+      "name": "Act 5 Boss",
+      "targetLevel": "offen",
+      "targetTime": "",
+      "objective": "Vor Launch vollständig spielen und ersten echten Split setzen",
+      "status": "open"
+    },
+    {
+      "id": "a6-boss",
+      "version": "1.0",
+      "phase": "campaign",
+      "name": "Act 6 Boss",
+      "targetLevel": "offen",
+      "targetTime": "",
+      "objective": "Blindes Routing; Informationen live dokumentieren",
+      "status": "blind"
+    },
+    {
+      "id": "maps-entry",
+      "version": "1.0",
+      "phase": "early-maps",
+      "name": "Erste Maps stabil",
+      "targetLevel": "offen",
+      "targetTime": "",
+      "objective": "Waystone-Sustain, Defensiven und ersten Atlaspfad sichern",
+      "status": "open"
+    },
+    {
+      "id": "t5-gate",
+      "version": "0.5.5 baseline",
+      "phase": "early-maps",
+      "name": "T5-Gateway",
+      "targetLevel": "offen",
+      "targetTime": "",
+      "objective": "T5-Anforderung und 3:1-Reforge-Bedarf messen",
+      "status": "provisional"
+    },
+    {
+      "id": "t10-wall",
+      "version": "0.5.5 baseline",
+      "phase": "early-maps",
+      "name": "T10-Atlas-Wall",
+      "targetLevel": "offen",
+      "targetTime": "",
+      "objective": "Nicht blind weiterpushen; Farming-Ausweichroute testen",
+      "status": "provisional"
+    },
+    {
+      "id": "t15-stable",
+      "version": "1.0",
+      "phase": "endgame",
+      "name": "T15 stabil",
+      "targetLevel": "offen",
+      "targetTime": "",
+      "objective": "Sicheren roten Map-Loop und XP pro Stunde messen",
+      "status": "open"
+    },
+    {
+      "id": "level95",
+      "version": "1.0",
+      "phase": "endgame",
+      "name": "Level 95",
+      "targetLevel": "95",
+      "targetTime": "",
+      "objective": "Nur noch gemessene XP-Routine priorisieren",
+      "status": "open"
+    },
+    {
+      "id": "level97",
+      "version": "1.0",
+      "phase": "endgame",
+      "name": "Level 97",
+      "targetLevel": "97",
+      "targetTime": "",
+      "objective": "Todesrisiko, XP/h und Map-Sustain gemeinsam bewerten",
+      "status": "open"
+    },
+    {
+      "id": "level100",
+      "version": "1.0",
+      "phase": "endgame",
+      "name": "Level 100",
+      "targetLevel": "100",
+      "targetTime": "",
+      "objective": "Race-Ziel",
+      "status": "open"
+    }
+  ],
+  "checkpointRuns": [],
+  "mapRuns": [],
+  "tips": [
+    {
+      "id": "tip-waypoints",
+      "phase": "campaign",
+      "title": "Jeden Waypoint mitnehmen",
+      "text": "Waypoints auf dem Weg aktivieren, weil spätere Rückwege mehr Zeit kosten als der kurze Umweg.",
+      "status": "provisional",
+      "source": "0.5.5 Campaign Walkthrough"
+    },
+    {
+      "id": "tip-blue-packs",
+      "phase": "campaign",
+      "title": "Blaue Packs priorisieren",
+      "text": "Für Speedruns nicht jeden weißen Pack clearen. Magische Packs und Pflichtziele zuerst, solange du auf der XP-Kurve bleibst.",
+      "status": "provisional",
+      "source": "Community-Leveling-Checklist"
+    },
+    {
+      "id": "tip-resists",
+      "phase": "campaign",
+      "title": "Resistenzen vor Interludes prüfen",
+      "text": "Nach den Kampagnenabschnitten verschieben sich die defensiven Anforderungen. Vor dem Boss lieber ein Upgrade kaufen oder craften als später zu sterben.",
+      "status": "provisional",
+      "source": "0.5.5 Campaign Walkthrough"
+    },
+    {
+      "id": "tip-flasks",
+      "phase": "campaign",
+      "title": "Flasks bei jedem neuen Tier prüfen",
+      "text": "Vendor-Flasks sind ein günstiger und verlässlicher Defensivsprung. Nicht mit alten Flasks in einen Boss gehen.",
+      "status": "provisional",
+      "source": "0.5.5 Campaign Walkthrough"
+    },
+    {
+      "id": "tip-npcs",
+      "phase": "campaign",
+      "title": "Nach Bossen mit NPCs sprechen",
+      "text": "Quest-Belohnungen und permanente Fortschritte erst nach dem vollständigen Town-Turn-in als erledigt markieren.",
+      "status": "provisional",
+      "source": "0.5.5 Campaign Walkthrough"
+    },
+    {
+      "id": "tip-atlas-boss-rush",
+      "phase": "early-maps",
+      "title": "Leeren Atlas zuerst bossrushen",
+      "text": "Solange die Atlas-Passives fehlen, Maps hauptsächlich als Progressionsweg behandeln und lange Mechaniken überspringen.",
+      "status": "provisional",
+      "source": "0.5.5 Atlas Progression Guide"
+    },
+    {
+      "id": "tip-magic-maps",
+      "phase": "early-maps",
+      "title": "Magic statt blind rare",
+      "text": "Frühe Progressionsmaps auf Magic halten, wenn Rare-Mods nur Gefahr und Zeit erhöhen. Rare erst dort, wo Sustain und Build stabil sind.",
+      "status": "provisional",
+      "source": "0.5.5 Atlas Progression Guide"
+    },
+    {
+      "id": "tip-powerful-boss",
+      "phase": "early-maps",
+      "title": "Powerful Map Bosses suchen",
+      "text": "Maps mit stärkerem Boss priorisieren, wenn sie eine höhere Waystone-Stufe ermöglichen. Das ist für SSF-Tierprogression wichtiger als Nebenloot.",
+      "status": "provisional",
+      "source": "0.5.5 Atlas Progression Guide"
+    },
+    {
+      "id": "tip-reforge",
+      "phase": "early-maps",
+      "title": "3:1-Reforge als Tier-Plan einbauen",
+      "text": "Gleiche Waystones nicht horten, sondern bei einem Tier-Gate gezielt zum nächsten Tier reforgen, wenn die aktuelle Version das bestätigt.",
+      "status": "provisional",
+      "source": "0.5.5 Waystone Guide"
+    },
+    {
+      "id": "tip-vendor",
+      "phase": "early-maps",
+      "title": "Vendor eine Tierstufe darunter nutzen",
+      "text": "Doryanis Map-Angebot und der höchste abgeschlossene Waystone gehören in jede Sustain-Auswertung.",
+      "status": "provisional",
+      "source": "0.5.5 SSF Atlas Guide"
+    },
+    {
+      "id": "tip-atlas-wall",
+      "phase": "early-maps",
+      "title": "An der T10-Wall ausweichen",
+      "text": "Wenn der nächste Atlas-Schritt den Charakter überfordert, nicht stumpf weiterpushen. Einen einfachen Farm-Mechanismus öffnen, Gear und Passives sammeln und dann zurückkehren.",
+      "status": "provisional",
+      "source": "0.5.5 HC SSF Atlas Guide"
+    },
+    {
+      "id": "tip-xp95",
+      "phase": "endgame",
+      "title": "Ab 95 nur noch XP pro Stunde messen",
+      "text": "Mechaniken nur wiederholen, wenn sie nach Abzug von Town-Zeit, Setup und Risiko wirklich XP/h liefern.",
+      "status": "rule",
+      "source": "Race-Regel"
+    },
+    {
+      "id": "tip-xp97",
+      "phase": "endgame",
+      "title": "Ab 97 keine ungeprüften Risiken",
+      "text": "Boss- und League-Content nur für konkrete Belohnungen laufen. Für das Leveln bleibt der sicherste gemessene Loop aktiv.",
+      "status": "rule",
+      "source": "Race-Regel"
+    }
+  ],
+  "routeClues": [],
+  "mappingRules": [
+    {
+      "id": "t1-t5",
+      "tier": "T1–T5",
+      "goal": "Atlas und Sustain",
+      "rarity": "Magic, Rare nur bei stabiler Defense",
+      "mechanics": "Bossroute; schnelle Mechaniken mitnehmen, lange Inhalte skippen",
+      "unlock": "Waystones identifizieren, erste Atlaspunkte, T5-Gate dokumentieren",
+      "status": "provisional"
+    },
+    {
+      "id": "t6-t10",
+      "tier": "T6–T10",
+      "goal": "Tierprogression und Gear",
+      "rarity": "Rare bei kontrollierbaren Mods",
+      "mechanics": "Eine einfache Farmmechanik wählen; bei Wall nicht weiterwürfeln",
+      "unlock": "Powerful Bosses, 3:1-Reforge und Vendor-Angebot messen",
+      "status": "provisional"
+    },
+    {
+      "id": "t11-t15",
+      "tier": "T11–T15",
+      "goal": "Rote Maps stabilisieren",
+      "rarity": "Nur Mods mit sicherem Clear",
+      "mechanics": "Mechanik nach XP/h und Gearwert auswählen",
+      "unlock": "Atlaspfad und Map-Pool auf wenige sichere Layouts reduzieren",
+      "status": "open"
+    },
+    {
+      "id": "t15-plus",
+      "tier": "T15+",
+      "goal": "XP-Loop für 95–100",
+      "rarity": "Keine tödlichen Mod-Kombinationen",
+      "mechanics": "Nur gemessene Dichte und kurze Setup-Zeit",
+      "unlock": "XP vor/nach Map, Laufzeit, Tode, Waystone-Delta loggen",
+      "status": "open"
+    }
+  ],
+  "leagueMechanics": [
+    {
+      "id": "abyss",
+      "name": "Abyss",
+      "phase": "Frühe Maps bis Endgame",
+      "xp": "hoch",
+      "ssf": "hoch",
+      "danger": "mittel",
+      "setup": "kurz",
+      "use": "Erster Farmkandidat für Währung, Dichte und SSF-Fortschritt",
+      "repeat": "Ja, wenn die Pits ohne Stillstand laufen",
+      "status": "provisional",
+      "note": "Aktuelle 0.5.5-Referenz. In 1.0 neu testen."
+    },
+    {
+      "id": "ritual",
+      "name": "Ritual",
+      "phase": "Frühe Maps bis Midgame",
+      "xp": "mittel-hoch",
+      "ssf": "hoch",
+      "danger": "mittel",
+      "setup": "mittel",
+      "use": "Fallback bei Tier-Wall und für gezielte Rewards",
+      "repeat": "Ja, wenn Tribute pro Minute gut sind",
+      "status": "provisional",
+      "note": "Nicht blind jede Arena ausspielen. Zeit pro Belohnung messen."
+    },
+    {
+      "id": "breach",
+      "name": "Breach",
+      "phase": "Midgame bis Endgame",
+      "xp": "hoch",
+      "ssf": "mittel",
+      "danger": "hoch",
+      "setup": "kurz",
+      "use": "Dichte und XP bei stabiler Defensive vergleichen.",
+      "repeat": "Nur bei stabiler Defensive",
+      "status": "provisional",
+      "note": "Hoher Wert, aber schlechte Kombination mit einem noch unfertigen Build."
+    },
+    {
+      "id": "delirium",
+      "name": "Delirium",
+      "phase": "T15+",
+      "xp": "sehr hoch",
+      "ssf": "mittel",
+      "danger": "sehr hoch",
+      "setup": "hoch",
+      "use": "Später XP-Kandidat, nicht als erster Progressionsschritt",
+      "repeat": "Nur mit gemessener XP/h und null Todesfällen",
+      "status": "open",
+      "note": "Nicht auf Vermutung in den Race-Loop nehmen."
+    },
+    {
+      "id": "expedition",
+      "name": "Expedition",
+      "phase": "T11+ oder Gear-Wall",
+      "xp": "mittel",
+      "ssf": "sehr hoch",
+      "danger": "hoch",
+      "setup": "lang",
+      "use": "Deterministisches Gear und Crafting, wenn der Build festhängt",
+      "repeat": "Nur wenn der Gearwert die Zeit rechtfertigt",
+      "status": "provisional",
+      "note": "Current guide gates the quest line later. 1.0 prüfen."
+    },
+    {
+      "id": "conquerors",
+      "name": "Conquerors of Wraeclast",
+      "phase": "PoE2 1.0",
+      "xp": "offen",
+      "ssf": "offen",
+      "danger": "offen",
+      "setup": "offen",
+      "use": "Neue League-Mechanik. Erst am Launch vermessen",
+      "repeat": "offen",
+      "status": "blind",
+      "note": "Keine 0.5.5-Werte übertragen."
+    }
+  ],
+  "milestones": [
+    {
+      "id": "a1-route",
+      "phase": "campaign",
+      "label": "Act 1 Route testen",
+      "status": "todo",
+      "note": "Zonenfolge, Pflichtziele und sichere Bossvorbereitung"
+    },
+    {
+      "id": "a2-route",
+      "phase": "campaign",
+      "label": "Act 2 Route testen",
+      "status": "todo",
+      "note": "Wegpunkte, optionale permanente Belohnungen und Umwege"
+    },
+    {
+      "id": "a3-route",
+      "phase": "campaign",
+      "label": "Act 3 Route testen",
+      "status": "todo",
+      "note": "Zeitverlust durch Händler, Trials und Bossmechaniken messen"
+    },
+    {
+      "id": "a4-route",
+      "phase": "campaign",
+      "label": "Act 4 Route testen",
+      "status": "todo",
+      "note": "Bekannten Abschnitt als Split-Grundlage festhalten"
+    },
+    {
+      "id": "a5-route",
+      "phase": "campaign",
+      "label": "Act 5 Route einarbeiten",
+      "status": "todo",
+      "note": "Vor Launch vollständig spielen, sobald der Zugang besteht"
+    },
+    {
+      "id": "a6-route",
+      "phase": "campaign",
+      "label": "Act 6 blindes Routing",
+      "status": "blind",
+      "note": "Keine erfundene Route. Am Launch mit Safe-First-Regeln erkunden"
+    },
+    {
+      "id": "ascendancy",
+      "phase": "campaign",
+      "label": "Ascendancy-Timing festlegen",
+      "status": "todo",
+      "note": "Sicheres Timing gegen Zeitgewinn abwägen"
+    },
+    {
+      "id": "resist",
+      "phase": "campaign",
+      "label": "Defensive Kampagnen-Breakpoints",
+      "status": "todo",
+      "note": "Widerstände, Leben, Recovery und Boss-Schaden notieren"
+    },
+    {
+      "id": "maps-entry",
+      "phase": "early-maps",
+      "label": "Map-Einstieg stabilisieren",
+      "status": "todo",
+      "note": "Waystone-Sustain und Basisresistenzen vor Tempo priorisieren"
+    },
+    {
+      "id": "atlas-path",
+      "phase": "early-maps",
+      "label": "Atlas-Startpfad bestimmen",
+      "status": "todo",
+      "note": "Erst Unlocks und Sustain, dann XP-Optimierung"
+    },
+    {
+      "id": "mechanics-filter",
+      "phase": "early-maps",
+      "label": "League-Mechaniken bewerten",
+      "status": "todo",
+      "note": "Zeitwert, Gefahr, Loot und XP pro Minute erfassen"
+    },
+    {
+      "id": "t15-loop",
+      "phase": "endgame",
+      "label": "T15+-XP-Loop bestimmen",
+      "status": "todo",
+      "note": "Sicherste wiederholbare Map- und Mechanik-Kombination"
+    },
+    {
+      "id": "atlas-final",
+      "phase": "endgame",
+      "label": "Endgame-Atlas finalisieren",
+      "status": "todo",
+      "note": "Nur bestätigte 1.0-Mechaniken eintragen"
+    },
+    {
+      "id": "xp-95",
+      "phase": "endgame",
+      "label": "Level-95-Routine testen",
+      "status": "todo",
+      "note": "Keine unnötigen Boss- oder High-Risk-Inhalte"
+    },
+    {
+      "id": "xp-97",
+      "phase": "endgame",
+      "label": "Level-97-Routine testen",
+      "status": "todo",
+      "note": "XP pro Stunde gegen Todesrisiko vergleichen"
+    },
+    {
+      "id": "race-overlay",
+      "phase": "all",
+      "label": "OBS-Race-Overlay einrichten",
+      "status": "todo",
+      "note": "Level, Rang, Phase, XP, Tode und nächstes Ziel"
+    }
+  ],
+  "atlas": [
+    {
+      "id": "perm",
+      "bucket": "mandatory",
+      "name": "Permanente Belohnungen und Unlocks",
+      "when": "Einmal so früh wie sicher möglich",
+      "why": "Dauerhafter Machtzuwachs und Zugang zu Systemen",
+      "repeat": "once",
+      "status": "unknown"
+    },
+    {
+      "id": "map-sustain",
+      "bucket": "mandatory",
+      "name": "Waystone- und Map-Sustain",
+      "when": "Vor dem aggressiven Atlas-Tempo",
+      "why": "Ohne Sustain verliert SSF mehr Zeit als durch vorsichtiges Mapping",
+      "repeat": "repeat",
+      "status": "unknown"
+    },
+    {
+      "id": "ascendancy",
+      "bucket": "mandatory",
+      "name": "Ascendancy und Klassenfortschritt",
+      "when": "Sobald das sichere Timing feststeht",
+      "why": "Kernmacht des Builds",
+      "repeat": "once",
+      "status": "unknown"
+    },
+    {
+      "id": "safe-mechanic",
+      "bucket": "repeat",
+      "name": "Sichere Dichte-Mechanik",
+      "when": "Ab stabiler Map-Basis",
+      "why": "XP und Loot pro Minute ohne lange Unterbrechungen",
+      "repeat": "repeat",
+      "status": "unknown"
+    },
+    {
+      "id": "target-gear",
+      "bucket": "repeat",
+      "name": "Gezielte SSF-Gear-Mechanik",
+      "when": "Wenn der Build ein konkretes Upgrade braucht",
+      "why": "Crafting-Basen, Währungen oder defensive Lücken",
+      "repeat": "repeat",
+      "status": "unknown"
+    },
+    {
+      "id": "boss-content",
+      "bucket": "once",
+      "name": "Einmalige Boss- und Atlas-Belohnungen",
+      "when": "Wenn der Charakter den Inhalt sicher erledigt",
+      "why": "Permanente oder große Progressionsbelohnungen",
+      "repeat": "once",
+      "status": "unknown"
+    },
+    {
+      "id": "long-content",
+      "bucket": "defer",
+      "name": "Lange oder hochvariante Mechaniken",
+      "when": "Nach dem Level-100-Ziel oder bei konkretem Bedarf",
+      "why": "Zeitverlust und Todesrisiko können den XP-Loop zerstören",
+      "repeat": "defer",
+      "status": "unknown"
+    }
+  ],
+  "builds": [
+    {
+      "id": "dagger-stealth",
+      "name": "Dagger + Stealth",
+      "state": "hypothesis",
+      "core": "Stealth-Mobility, Dagger-Angriffe, Shades",
+      "early": "Noch offen bis Skill-Gems und Level-Anforderungen bekannt sind",
+      "defense": "Leben, Resistenzen, Recovery, sichere Nahkampffenster",
+      "risk": "Möglicherweise hoher Boss- und Nahkampfrisikoanteil"
+    },
+    {
+      "id": "trap-burst",
+      "name": "Trap Burst",
+      "state": "hypothesis",
+      "core": "Traps aus Stealth vorbereiten und in Sequenz auslösen",
+      "early": "Frühe Trap-Verfügbarkeit und Cooldowns prüfen",
+      "defense": "Distanz, Bewegung, Trap-Setup ohne Stillstand",
+      "risk": "Setup-Zeit und schwache Einzelziele am Anfang"
+    },
+    {
+      "id": "shadow-hybrid",
+      "name": "Shadow Hybrid",
+      "state": "candidate",
+      "core": "Dagger-Clear plus Trap- oder Shade-Burst",
+      "early": "Wahrscheinlich stabilster Vergleichskandidat",
+      "defense": "Defensivpfad vor maximaler DPS priorisieren",
+      "risk": "Kann durch neue Balance weniger spezialisiert sein"
+    }
+  ],
+  "currentBuilds": [
+    {
+      "id": "monk-proxy",
+      "name": "Martial Artist Monk",
+      "role": "Shadow-Movement-Proxy",
+      "speed": "hoch",
+      "safety": "niedrig",
+      "boss": "hoch",
+      "ssf": "mittel",
+      "use": "Route, Bewegung und Nahkampf-Fenster trainieren",
+      "notes": "Glacial Cascade/Frozen Locus im frühen Spiel, später Whirling Assault. Gute Shadow-Nähe beim Tempo, aber für HC besonders vorsichtig spielen."
+    },
+    {
+      "id": "amazon-benchmark",
+      "name": "Amazon Twister",
+      "role": "Race-Speed-Benchmark",
+      "speed": "sehr hoch",
+      "safety": "mittel",
+      "boss": "hoch",
+      "ssf": "hoch",
+      "use": "Kampagnenroute und schnelle Entscheidungen messen",
+      "notes": "Schneller Fernkampf- und Spear-Vergleich. Nicht als Shadow-Build behandeln, sondern als Zeitbenchmark."
+    },
+    {
+      "id": "varashta-baseline",
+      "name": "Disciple of Varashta Minions",
+      "role": "HC-SSF-Baseline",
+      "speed": "mittel",
+      "safety": "hoch",
+      "boss": "hoch",
+      "ssf": "sehr hoch",
+      "use": "SSF-Progression, Defense und T15+-Stabilität vergleichen",
+      "notes": "Sicherer Referenzpunkt für Endgame- und Todesrisiko. Simuliert Shadow-Tempo nur eingeschränkt."
+    }
+  ],
+  "defenseLab": {
+    "life": 2500,
+    "energyShield": 0,
+    "armour": 1000,
+    "evasion": 1000,
+    "maxRes": 75,
+    "physicalHit": 2500,
+    "elementalHit": 2500,
+    "recovery": 250,
+    "bossDps": 10000
+  },
+  "defense": [
+    {
+      "id": "life",
+      "label": "Leben oder gleichwertige Primärdefensive",
+      "status": "todo",
+      "note": "Breakpoints je Patch festlegen"
+    },
+    {
+      "id": "resists",
+      "label": "Elementarresistenzen",
+      "status": "todo",
+      "note": "Kampagne, Map-Einstieg und T15+ getrennt prüfen"
+    },
+    {
+      "id": "recovery",
+      "label": "Recovery",
+      "status": "todo",
+      "note": "Flasks, Leech oder Regeneration."
+    },
+    {
+      "id": "ailments",
+      "label": "Ailment- und Crowd-Control-Schutz",
+      "status": "todo",
+      "note": "Nicht erst nach dem ersten RIP testen"
+    },
+    {
+      "id": "movement",
+      "label": "Bewegung und Escape",
+      "status": "todo",
+      "note": "Stealth, Dodge, Dash und sichere Bossfenster"
+    },
+    {
+      "id": "boss",
+      "label": "Boss-Schaden ohne perfekte Drops",
+      "status": "todo",
+      "note": "Mindestens eine sichere Single-Target-Lösung"
+    },
+    {
+      "id": "map-mods",
+      "label": "Gefährliche Map-Mods",
+      "status": "todo",
+      "note": "Blacklist nach echten Tests erstellen"
+    }
+  ],
+  "runs": [],
+  "notes": {
+    "confirmed": "",
+    "unknown": "Skill-Gems, Zahlen, Support-Gems, Passive-Tree-Pfade, Act-6-Route, Atlas-Knoten und exakte League-Mechaniken werden nach den 1.0-Informationen eingetragen. Alle 0.5.5-Werte in der Datei sind Trainingsdaten, keine 1.0-Garantie.",
+    "rule": "Keine unbekannten 1.0-Details als Fakten behandeln. Jede Strategie bekommt den Status bestätigt, getestet, plausibel oder offen."
+  }
+}

@@ -1,0 +1,4494 @@
+{
+  "version": "0.5.5f",
+  "clientAreaIds": {
+    "G1_1": "The Riverbank",
+    "G1_11": "Hunting Grounds",
+    "G1_12": "Freythorn",
+    "G1_13_1": "Ogham Farmlands",
+    "G1_13_2": "Ogham Village",
+    "G1_14": "The Manor Ramparts",
+    "G1_15": "Ogham Manor",
+    "G1_2": "Clearfell",
+    "G1_3": "Mud Burrow",
+    "G1_4": "The Grelwood",
+    "G1_5": "The Red Vale",
+    "G1_6": "The Grim Tangle",
+    "G1_7": "Cemetery of the Eternals",
+    "G1_8": "Mausoleum of the Praetor",
+    "G1_9": "Tomb of the Consort",
+    "G1_town": "Clearfell Encampment",
+    "G2_1": "Vastiri Outskirts",
+    "G2_10_1": "Mawdun Quarry",
+    "G2_10_2": "Mawdun Mine",
+    "G2_12": "Dreadnought",
+    "G2_13": "Trial of the Sekhemas",
+    "G2_2": "Traitor's Passage",
+    "G2_3": "The Halani Gates",
+    "G2_3a": "The Halani Gates",
+    "G2_4_1": "Keth",
+    "G2_4_2": "The Lost City",
+    "G2_4_3": "Buried Shrines",
+    "G2_5_1": "Mastodon Badlands",
+    "G2_5_2": "The Bone Pits",
+    "G2_6": "Valley of the Titans",
+    "G2_7": "The Titan Grotto",
+    "G2_8": "Deshar",
+    "G2_9_1": "Path of Mourning",
+    "G2_9_2": "The Spires of Deshar",
+    "G2_town": "The Ardura Caravan",
+    "G3_10": "The Trial of Chaos",
+    "G3_11": "Apex of Filth",
+    "G3_14": "Utzaal",
+    "G3_16": "Aggorat",
+    "G3_17": "The Black Chambers",
+    "G3_2_1": "Infested Barrens",
+    "G3_2_2": "The Matlan Waterways",
+    "G3_3": "Jungle Ruins",
+    "G3_4": "The Venom Crypts",
+    "G3_5": "Chimeral Wetlands",
+    "G3_6_1": "Jiquani's Machinarium",
+    "G3_6_2": "Jiquani's Sanctum",
+    "G3_7": "The Azak Bog",
+    "G3_8": "The Drowned City",
+    "G3_town": "Ziggurat Encampment",
+    "G4_11_1a": "Ngakanu",
+    "G4_11_1b": "Ngakanu",
+    "G4_11_2": "Heart of the Tribe",
+    "G4_13": "Plunder's Point",
+    "G4_1_1": "Isle of Kin",
+    "G4_2_1": "Kedge Bay",
+    "G4_2_2": "Journey's End",
+    "G4_3_1": "Whakapanu Island",
+    "G4_4_1": "Eye of Hinekora",
+    "G4_4_2": "Halls of the Dead",
+    "G4_4_3": "Trial of the Ancestors",
+    "G4_5_1": "Abandoned Prison",
+    "G4_5_2": "Solitary Confinement",
+    "G4_7": "Shrike Island",
+    "G4_town": "Kingsmarch",
+    "P1_2": "Stones of Serle",
+    "P1_5": "Wolvenhold",
+    "P1_6": "Holten Estate",
+    "P1_Town": "The Refuge",
+    "P2_1": "The Khari Crossing",
+    "P2_6": "Qimah",
+    "P2_7": "Qimah Reservoir",
+    "P2_Town": "The Khari Bazaar",
+    "P3_2": "Kriar Village",
+    "P3_3": "Glacial Tarn",
+    "P3_4": "Howling Caves",
+    "P3_7": "The Cuachic Vault",
+    "P3_Town": "The Glade",
+    "Sanctum_1_Foyer_1": "Trial of the Sekhemas",
+    "Sanctum_2_Foyer_3": "Trial of the Sekhemas",
+    "Sanctum_3_Foyer_3": "Trial of the Sekhemas",
+    "Sanctum_4_Foyer_1": "Trial of the Sekhemas",
+    "G3_1": "Sandswept Marsh",
+    "G3_10_Airlock": "The Temple of Chaos",
+    "G3_9": "The Molten Vault",
+    "G3_12": "Temple of Kopec",
+    "IncursionHub": "Vaal Ruins",
+    "MapHideoutShoreline_Claimable": "Shoreline Hideout",
+    "G4_1_2": "Volcanic Warrens",
+    "G4_3_2": "Singing Caverns",
+    "G4_8a": "Arastas",
+    "G4_8b": "Arastas",
+    "G4_10": "The Excavation"
+  },
+  "clues": [
+    {
+      "id": "a1-riverbank",
+      "compactSteps": [
+        "WASD (empfohlen)",
+        "Verwundeter → Starterwaffe",
+        "Truhe → ersten Gem belegen",
+        "Bloated Miller → Lager"
+      ],
+      "gameplayTip": "Bewegung per Mausklick oder WASD wählen. Wir empfehlen WASD.",
+      "act": "Act 1",
+      "zone": "Riverbank",
+      "zoneMatch": [
+        "riverbank"
+      ],
+      "exactZone": true,
+      "cue": "Waffe und erster Gem",
+      "instruction": "Mit dem Verwundeten sprechen, die Starterwaffe ausrüsten und dem Weg folgen. Den ersten Skill aus der Truhe nehmen und belegen. Zügig weiterlaufen, ohne alle Gegner zu töten. Bloated Miller blockiert den Weg ins Lager.",
+      "target": "Clearfell Encampment",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Hinter dem Boss geht es nach Clearfell Encampment. Dort gibt Renly den nächsten Gem.",
+      "veteranText": "Starterwaffe + Gem. Bloated Miller → Clearfell.",
+      "highlight": "Starterwaffe ausrüsten"
+    },
+    {
+      "id": "a1-town",
+      "act": "Act 1",
+      "zone": "Clearfell Encampment",
+      "zoneMatch": [
+        "clearfell encampment"
+      ],
+      "exactZone": true,
+      "cue": "Questabgabe und Weiterreise",
+      "instruction": "Renly gibt am Start den Gem und nach Rust King die Runed Spikes. Nach dem Endboss zum Hooded One für Akt 2.",
+      "target": "Clearfell / Vastiri Outskirts",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Nach Rust King gibt Renly die Runed Spikes. Nach Lachlann den Ring bei Una abgeben und den Hooded One wecken. Unas Laute beim nächsten passenden Stopp abgeben.",
+      "veteranText": "Renly: Gem / Spikes. Una: Lachlanns Ring. Nach dem Endboss zum Hooded One.",
+      "highlight": "Nach dem Endboss zum Hooded One"
+    },
+    {
+      "id": "a1-clearfell-exit",
+      "compactSteps": [
+        "Waypoint · The Mud Burrow",
+        "Optional: Mysterious Campsite → Uncut Skill Gem I",
+        "Optional: The Devourer → Uncut Support Gem I",
+        "Weltkarte (U) → Gebietsrand → The Grelwood"
+      ],
+      "campsiteTip": "Halte nach dem Mysterious Campsite Ausschau. Dort findest du einen Uncut Skill Gem (Stufe 1).",
+      "areaRewards": [
+        "Mysterious Campsite in Clearfell · Uncut Skill Gem (Stufe 1)",
+        "Quest in The Mud Burrow · Uncut Support Gem (Stufe 1)",
+        "Beira of the Rotten Pack · dauerhaft +10 % Kälteresistenz"
+      ],
+      "mudBurrowTip": "Der Eingang zu The Mud Burrow liegt meist direkt neben dem Waypoint. Besiege The Devourer in seinem Bau, um als Questbelohnung einen Uncut Support Gem (Stufe 1) zu erhalten. Empfohlen für Ligastarts und Anfänger.",
+      "act": "Act 1",
+      "zone": "Clearfell",
+      "zoneMatch": [
+        "clearfell"
+      ],
+      "exactZone": true,
+      "cue": "Weiter nach The Grelwood",
+      "instruction": "Aktiviere den Waypoint beim Eingang zu The Mud Burrow. Schau auf der Weltkarte (U), in welcher Richtung The Grelwood liegt. Folge dem Gebietsrand in diese Richtung, um das nächste Gebiet zu erreichen.",
+      "target": "Grelwood",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Im ersten HC-Lauf Beira für +10 % Kälteresistenz mitnehmen. Mud Burrow lohnt sich bei Gem-Bedarf.",
+      "veteranText": "Waypoint aktivieren. Weltkarte (U) prüfen und am Gebietsrand Richtung The Grelwood laufen.",
+      "highlight": "The Grelwood"
+    },
+    {
+      "id": "a1-clearfell-beira",
+      "compactSteps": [
+        "Beira → Wolfskopf benutzen → +10 % Kälteresistenz"
+      ],
+      "act": "Act 1",
+      "zone": "Clearfell",
+      "zoneMatch": [
+        "clearfell"
+      ],
+      "exactZone": true,
+      "cue": "Beira für Kälteresistenz",
+      "instruction": "Achte auf vereiste Baumstämme. Dort findest du Beira of the Rotten Pack. Besiege sie und benutze den Head of the Winter Wolf für dauerhaft +10 % Kälteresistenz.",
+      "target": "+10 % Cold Resistance",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Guter HC-Stopp vor Geonor. Setz im Run-Log einen Haken für den benutzten Reward.",
+      "veteranText": "Beira töten, Kopf benutzen → +10 % Cold Res.",
+      "highlight": "Head of the Winter Wolf benutzen"
+    },
+    {
+      "id": "a1-devourer",
+      "act": "Act 1",
+      "zone": "Mud Burrow",
+      "zoneMatch": [
+        "mud burrow"
+      ],
+      "exactZone": true,
+      "cue": "The Devourer",
+      "instruction": "Devourer in Mud Burrow töten, wenn du den Gem brauchst. Bei Renly in Clearfell Encampment den Quest-Reward abholen.",
+      "target": "Skill Gem vom Boss · Support Gem bei Renly",
+      "kind": "Optionaler Boss",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2DB · Treacherous Ground",
+      "note": "Sein Geschossschwall ist Chaos-Schaden. Nimm bei wenig Platz eine freie Ausweichlinie.",
+      "highlight": "in Mud Burrow"
+    },
+    {
+      "id": "a1-grelwood-roots",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Leuchtende Wurzeln zum Tree of Souls",
+      "instruction": "Den leuchtenden Wurzeln bis zum Tree of Souls folgen und Una rufen. Mit den Runed Spikes vom Red-Vale-Questschritt alle drei Runic Seals aktivieren.",
+      "target": "Nach der Abgabe bei Una zum Grim Tangle",
+      "kind": "Questziel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Sprich nach den Siegeln bei Una vor Ort und dann im Lager. Markiere den Waypoint in Red Vale oder Grim Tangle schon beim ersten Vorbeilaufen.",
+      "veteranText": "Leuchtende Wurzeln → Una. Mit Runed Spikes die 3 Siegel öffnen.",
+      "highlight": "alle drei Runic Seals aktivieren"
+    },
+    {
+      "id": "a1-grelwood-river",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Fluss zum Red Vale",
+      "instruction": "Wenn du auf den Fluss stößt, folge ihm bis zur Brücke und dem Eingang nach Red Vale.",
+      "target": "Red Vale",
+      "kind": "Wegsignal",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die relative Lage von Red Vale auf der Weltkarte kann bei der Wahl der Kartenseite helfen.",
+      "veteranText": "Fluss entlang → Red Vale.",
+      "highlight": "bis zur Brücke"
+    },
+    {
+      "id": "a1-grelwood-mushrooms",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Leuchtende Pilze",
+      "instruction": "Die leuchtenden, teils explodierenden Pilze häufen sich beim Durchgang in den Grim Tangle.",
+      "target": "Grim Tangle",
+      "kind": "Wegsignal",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Aktiviere den Waypoint im Grim Tangle. Der Durchgang wird nach dem Tree-of-Souls-Questschritt frei.",
+      "veteranText": "Leuchtpilze → Eingang zum Grim Tangle.",
+      "highlight": "leuchtenden, teils explodierenden Pilze"
+    },
+    {
+      "id": "a1-grelwood-cauldron",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "exactZone": true,
+      "cue": "Flasks aus dem Kessel",
+      "instruction": "Kessel in der Hexenhütte anklicken. Die mittleren Life- und Mana-Flasks bekommst du auch ohne Bosskill.",
+      "target": "Medium Life Flask und Medium Mana Flask",
+      "kind": "Optionaler Loot",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2DB · Act 1",
+      "note": "In der Hütte kann Areagne stehen. Nimm die Flasks mit, wenn du direkt vorbeikommst.",
+      "veteranText": "Hexenhütte: Kessel looten, Areagne kannst du stehen lassen.",
+      "highlight": "Kessel in der Hexenhütte"
+    },
+    {
+      "id": "a1-grelwood-areagne",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "exactZone": true,
+      "cue": "Areagne, Forgotten Witch",
+      "instruction": "Optionaler Kampf in der Hexenhütte. Beim ersten Kill gibt es einen Uncut Support Gem.",
+      "target": "Uncut Support Gem",
+      "kind": "Optionaler Boss",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2DB · Act 1",
+      "note": "Sie teleportiert und legt Kälteflächen. Wenn du nur Flasks brauchst, reicht der Kessel.",
+      "highlight": "Uncut Support Gem"
+    },
+    {
+      "id": "a1-grelwood-brambleghast",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "exactZone": true,
+      "cue": "Gerung, the Brambleghast",
+      "instruction": "Der optionale Boss bringt einen Uncut Skill Gem. Spiel ihn bei Bedarf, wenn seine Arena auf deiner Route liegt.",
+      "target": "Uncut Skill Gem",
+      "kind": "Optionaler Boss",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Wenn du ihn suchst, können die Dornen der Arena auf der Minimap sichtbar sein.",
+      "highlight": "Uncut Skill Gem"
+    },
+    {
+      "id": "a1-red-vale-obelisks",
+      "act": "Act 1",
+      "zone": "Red Vale",
+      "zoneMatch": [
+        "red vale"
+      ],
+      "exactZone": true,
+      "cue": "Drei Obelisken, dann Rust King",
+      "instruction": "Aktiviere die Obelisks of Rust und heb nach jedem Kampf den Questdrop auf. Am dritten erscheint der Rust King. Mit allen Teilen zu Renly.",
+      "target": "Runed Spikes",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2DB · Act 1",
+      "note": "Aktiviere den Waypoint. Renly tauscht die Questdrops gegen Runed Spikes für die Siegel im Grelwood.",
+      "veteranText": "Questdrops einsammeln. Am 3. Obelisken Rust King → Renly.",
+      "highlight": "nach jedem Kampf den Questdrop auf"
+    },
+    {
+      "id": "a1-red-vale-audio",
+      "act": "Act 1",
+      "zone": "Red Vale",
+      "zoneMatch": [
+        "red vale"
+      ],
+      "exactZone": true,
+      "cue": "Rauschen in der Nähe",
+      "instruction": "Spielton anlassen. Wenn du ein hallendes Rauschen hörst, prüfe die Richtung und such dort nach einem Obelisken.",
+      "target": "",
+      "kind": "Hörhinweis",
+      "status": "observed",
+      "confidence": "Doms Beobachtung",
+      "mandatory": false,
+      "note": "Dom hat das Geräusch im Run beobachtet. Prüfe bei der nächsten Instanz, wo es einsetzt und wie gut sich die Richtung hören lässt.",
+      "veteranText": "Spielton an. Hallendes Rauschen? Dort nach dem Obelisken suchen.",
+      "highlight": "hallendes Rauschen"
+    },
+    {
+      "id": "a1-red-vale-layout",
+      "act": "Act 1",
+      "zone": "Red Vale",
+      "zoneMatch": [
+        "red vale"
+      ],
+      "exactZone": true,
+      "cue": "Drittes Ziel seitlich suchen",
+      "instruction": "Die Obelisken können grob wie ein schiefes Dreieck stehen. Hast du zwei, prüfe die Seite neben ihrer Verbindung. Je nach Layout lohnt sich auch der Blick ins Zentrum.",
+      "target": "",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Rote Bodenadern oder Checkpoints als weitere Orientierung prüfen. Ein Obelisk kann beim Blutfluss liegen. Wenn die Suche nach dem Dreieck nichts bringt, such in einer Runde weiter.",
+      "veteranText": "Zwei gefunden? Dritten seitlich suchen. Rote Adern und Checkpoints.",
+      "highlight": "schiefes Dreieck"
+    },
+    {
+      "id": "a1-grim-tangle",
+      "act": "Act 1",
+      "zone": "Grim Tangle",
+      "zoneMatch": [
+        "grim tangle"
+      ],
+      "exactZone": true,
+      "cue": "Durch zum Friedhof",
+      "instruction": "Lauf durch den Grim Tangle zum Cemetery of the Eternals. Wenn Wurzeln den Weg versperren, prüfe die Runic Seals und Unas Questabgabe.",
+      "target": "Cemetery of the Eternals",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "In der Zone kannst du Ervig für einen Support Gem mitnehmen, wenn dir der Kampf gerade etwas bringt.",
+      "veteranText": "Wurzeln blockieren? Una-Quest prüfen. Durch zum Friedhof.",
+      "highlight": "Cemetery of the Eternals"
+    },
+    {
+      "id": "a1-grim-caskets",
+      "act": "Act 1",
+      "zone": "Grim Tangle",
+      "zoneMatch": [
+        "grim tangle"
+      ],
+      "exactZone": true,
+      "cue": "Sargspur zum Friedhof",
+      "instruction": "Wenn du eine Reihe von Särgen siehst, prüfe die Richtung zum Friedhof.",
+      "target": "Cemetery of the Eternals",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Vergleiche die Spur in mehreren Instanzen mit dem tatsächlichen Ausgang.",
+      "veteranText": "Sargspur als Richtung zum Friedhof prüfen.",
+      "highlight": "Reihe von Särgen"
+    },
+    {
+      "id": "a1-grim-ervig",
+      "act": "Act 1",
+      "zone": "Grim Tangle",
+      "zoneMatch": [
+        "grim tangle"
+      ],
+      "exactZone": true,
+      "cue": "Ervig, the Rotten Druid",
+      "instruction": "Optionaler Boss für einen Uncut Support Gem. Kämpfe, wenn du den Gem direkt einsetzen kannst.",
+      "target": "Uncut Support Gem",
+      "kind": "Optionaler Boss",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2DB · Act 1",
+      "note": "Bei den Wurzelausbrüchen aus der Fläche bewegen.",
+      "highlight": "Uncut Support Gem"
+    },
+    {
+      "id": "a1-cemetery-keys",
+      "act": "Act 1",
+      "zone": "Cemetery of the Eternals",
+      "zoneMatch": [
+        "cemetery of the eternals"
+      ],
+      "exactZone": true,
+      "cue": "Zwei Schlüsselhälften",
+      "instruction": "Beide Memorial Key Pieces sammeln, das Tor bei Lachlann öffnen und ihn danach besiegen.",
+      "target": "Lachlann → Hunting Grounds",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Draven sitzt im Mausoleum of the Praetor, Asinia im Tomb of the Consort. Nimm Lachlanns Ring für Una mit.",
+      "veteranText": "Beide Schlüsselhälften → Memorial Gate, Lachlann töten, Ring zu Una.",
+      "highlight": "Beide Memorial Key Pieces"
+    },
+    {
+      "id": "a1-mausoleum-draven",
+      "act": "Act 1",
+      "zone": "Mausoleum of the Praetor",
+      "zoneMatch": [
+        "mausoleum of the praetor"
+      ],
+      "exactZone": true,
+      "cue": "Dravens Schlüsselhälfte",
+      "instruction": "Draven besiegen, seine Memorial Key Piece aufheben und zum Friedhof zurück.",
+      "target": "Cemetery of the Eternals",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du die zweite Hälfte schon hast, geh direkt zum Memorial Gate.",
+      "veteranText": "Draven töten, Schlüsselhälfte aufheben → Friedhof.",
+      "highlight": "seine Memorial Key Piece aufheben"
+    },
+    {
+      "id": "a1-mausoleum-layout",
+      "act": "Act 1",
+      "zone": "Mausoleum of the Praetor",
+      "zoneMatch": [
+        "mausoleum of the praetor"
+      ],
+      "exactZone": true,
+      "cue": "Das Rad in der Mitte",
+      "instruction": "Wenn du das Rad findest, laufe vom Eingang durch das Rad weiter Richtung Außenwand.",
+      "target": "Dravens Arena",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Das Muster ist eine Suchhilfe. Prüfe den tatsächlichen Weg im Trainingslauf.",
+      "veteranText": "Vom Eingang durchs Rad in der Mitte weiter Richtung Außenwand.",
+      "highlight": "durch das Rad weiter Richtung Außenwand"
+    },
+    {
+      "id": "a1-tomb-asinia",
+      "act": "Act 1",
+      "zone": "Tomb of the Consort",
+      "zoneMatch": [
+        "tomb of the consort"
+      ],
+      "exactZone": true,
+      "cue": "Asinias Schlüsselhälfte",
+      "instruction": "Asinia besiegen, ihre Memorial Key Piece mitnehmen und zum Friedhof zurück.",
+      "target": "Cemetery of the Eternals",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Für das Memorial Gate brauchst du beide Hälften. Welche Gruft du zuerst machst, ist egal.",
+      "veteranText": "Asinia töten, Schlüsselhälfte aufheben → Friedhof.",
+      "highlight": "ihre Memorial Key Piece mitnehmen"
+    },
+    {
+      "id": "a1-hunting-exit",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "exactZone": true,
+      "cue": "Wegweiser zu den Farmlands",
+      "instruction": "Hauptstraße und Wegweiser liegen meist in unmittelbarer Nähe zum Ritualaltar. Folge der Straße zu den Ogham Farmlands und aktiviere dort den Waypoint.",
+      "target": "Ogham Farmlands",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Markiere den Ausgang, auch wenn du Crowbell oder Freythorn zuerst mitnehmen willst.",
+      "veteranText": "Wegweiser nahe dem Ritualaltar → Farmlands und Waypoint.",
+      "highlight": "Hauptstraße und Wegweiser"
+    },
+    {
+      "id": "a1-hunting-blood",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Blutspur oder Tierkadaver",
+      "instruction": "Eine Blutspur oder ein Tierkadaver in unmittelbarer Nähe zum Ritualaltar weist grob in Richtung der Crowbell. Nach dem Kill das Book of Specialisation benutzen.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Crowbell wechselt während des Kampfes die Position. Beim schweren Slam aus der Trefferfläche gehen.",
+      "veteranText": "Blutspur oder Tierkadaver nahe dem Ritualaltar → grob Richtung Crowbell → +2 Punkte.",
+      "highlight": "Book of Specialisation benutzen"
+    },
+    {
+      "id": "a1-hunting-locusts",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Heuschrecken nach dem kleinen Ritual",
+      "instruction": "Nach dem Ritual fliegen violette Heuschrecken in Richtung Freythorn.",
+      "target": "Freythorn",
+      "kind": "Abstecher für Spirit",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Am Eingang den Waypoint sichern. Die +30 Spirit kommen vom King in Freythorn.",
+      "veteranText": "Kleines Ritual fertig → Heuschrecken zeigen Freythorn.",
+      "highlight": "violette Heuschrecken"
+    },
+    {
+      "id": "a1-freythorn-rituals",
+      "act": "Act 1",
+      "zone": "Freythorn",
+      "zoneMatch": [
+        "freythorn",
+        "freydorn"
+      ],
+      "exactZone": true,
+      "cue": "Drei kleine Rituale, dann der King",
+      "instruction": "Drei kleine Rituale abschließen und den großen Altar aktivieren. Nach dem King den Gembloom Skull aufheben und benutzen.",
+      "target": "+30 Spirit",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "In den Ritualkreisen eine freie Ausweichlinie lassen.",
+      "veteranText": "3 kleine Rituale → King → Skull benutzen, +30 Spirit.",
+      "highlight": "Gembloom Skull aufheben und benutzen"
+    },
+    {
+      "id": "a1-freythorn-smoke",
+      "act": "Act 1",
+      "zone": "Freythorn",
+      "zoneMatch": [
+        "freythorn",
+        "freydorn"
+      ],
+      "exactZone": true,
+      "cue": "Rauch am großen Altar",
+      "instruction": "Wenn du den großen Altar zuerst findest, achte auf die Rauchfäden. Folge einem davon zu einem kleinen Ritual.",
+      "target": "",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Die Rauchfäden sind in der 0.5.5-Route beschrieben. Prüfe die Spur in deinem Run.",
+      "veteranText": "Großer Altar zuerst gefunden? Rauchfäden zu den kleinen Altären prüfen.",
+      "highlight": "achte auf die Rauchfäden"
+    },
+    {
+      "id": "a1-king-markings",
+      "act": "Act 1",
+      "zone": "Freythorn",
+      "zoneMatch": [
+        "freythorn",
+        "freydorn"
+      ],
+      "exactZone": true,
+      "cue": "King in the Mists · Rot und Violett",
+      "instruction": "Violett in Bewegung bleiben. Bei Rot zum Ablauf der Markierung stillstehen.",
+      "target": "Ritual of Dance / Ritual of Meditation",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Bei Dance löst Stehenbleiben den Root aus. Bei Meditation ist Bewegung beim Ablauf riskant. Plane deinen Platz dafür früh.",
+      "veteranText": "King: Violett bewegen. Bei Rot stillstehen, bis die Markierung weg ist.",
+      "highlight": "Bei Rot zum Ablauf der Markierung stillstehen"
+    },
+    {
+      "id": "a1-farmlands-exit",
+      "act": "Act 1",
+      "zone": "Ogham Farmlands",
+      "zoneMatch": [
+        "ogham farmlands"
+      ],
+      "exactZone": true,
+      "cue": "Weiter zum Dorf",
+      "instruction": "Zum Ausgang nach Ogham Village. Unas Laute liegt in einem Haus beim Checkpoint.",
+      "target": "Ogham Village",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die Laute beim nächsten Stadtbesuch abgeben und das Buch benutzen.",
+      "veteranText": "Gegenüber vom Eingang weiter nach Ogham Village.",
+      "highlight": "Ausgang nach Ogham Village"
+    },
+    {
+      "id": "a1-una-lute",
+      "act": "Act 1",
+      "zone": "Ogham Farmlands",
+      "zoneMatch": [
+        "ogham farmlands"
+      ],
+      "exactZone": true,
+      "cue": "Karren vor Unas Hütte",
+      "instruction": "Such beim Checkpoint den langen Schuppen mit den Karren. Geh außen herum zur Hütte mit Unas Lute Box und bring die Laute zu Una.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Beim nächsten Stadtbesuch das Buch abholen und benutzen.",
+      "veteranText": "Am Schuppen mit Karren vorbei zur Lute Box → bei Una +2 Punkte.",
+      "highlight": "langen Schuppen mit den Karren"
+    },
+    {
+      "id": "a1-ogham-village",
+      "act": "Act 1",
+      "zone": "Ogham Village",
+      "zoneMatch": [
+        "ogham village"
+      ],
+      "exactZone": true,
+      "cue": "Executioner und Leitis",
+      "instruction": "Executioner besiegen, den Hebel betätigen, Leitis befreien und zu den Manor Ramparts weiter.",
+      "target": "Manor Ramparts",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Beim ersten SSF-Charakter beim Schmiedehaus vorbeigehen, wenn du die Salvage Bench dafür einplanst.",
+      "veteranText": "Executioner → Hebel oben → mit Leitis reden → Ramparts.",
+      "highlight": "den Hebel betätigen, Leitis befreien"
+    },
+    {
+      "id": "a1-smithing-tools",
+      "act": "Act 1",
+      "zone": "Ogham Village",
+      "zoneMatch": [
+        "ogham village"
+      ],
+      "exactZone": true,
+      "cue": "Werkzeug für Renly",
+      "instruction": "Die gepflasterte Straße beim Suchen nach dem Schmiedehaus als Orientierung nehmen.",
+      "target": "Salvage Bench",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Smithing Tools bei Renly abgeben. Beim ersten SSF-Charakter lohnt sich der Unlock für spätere Sockel-Upgrades.",
+      "veteranText": "Kopfsteinpflaster → Schmiedehaus und Renlys Tools.",
+      "highlight": "gepflasterte Straße"
+    },
+    {
+      "id": "a1-ramparts",
+      "act": "Act 1",
+      "zone": "Manor Ramparts",
+      "zoneMatch": [
+        "manor ramparts"
+      ],
+      "exactZone": true,
+      "cue": "Eingang zum Anwesen",
+      "instruction": "Zum Ogham Manor durchlaufen. Jetzt Kälteresistenz und Life Flask für Geonor prüfen.",
+      "target": "Ogham Manor",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der Galgen beim Checkpoint ist ein optionaler Support-Gem-Stopp.",
+      "veteranText": "Zum Manor. Vor Geonor Cold Res und Life Flask prüfen.",
+      "highlight": "Kälteresistenz und Life Flask"
+    },
+    {
+      "id": "a1-candlemass",
+      "act": "Act 1",
+      "zone": "Ogham Manor",
+      "zoneMatch": [
+        "ogham manor",
+        "iron manor"
+      ],
+      "exactZone": true,
+      "cue": "Candlemass für Leben",
+      "instruction": "Candlemass besiegen und die permanente Lebensbelohnung benutzen.",
+      "target": "+20 Maximum Life",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Einplanen, wenn der Kampf sauber läuft. Den Geonor-Split getrennt nehmen, damit der Abstecher messbar bleibt.",
+      "veteranText": "Candlemass’ Essenz benutzen → +20 Max Life.",
+      "highlight": "permanente Lebensbelohnung benutzen"
+    },
+    {
+      "id": "a1-geonor",
+      "act": "Act 1",
+      "zone": "Ogham Manor",
+      "zoneMatch": [
+        "ogham manor",
+        "iron manor"
+      ],
+      "exactZone": true,
+      "cue": "Geonors Stimme im Nebel",
+      "instruction": "Bleib im Nebel in der freien Fläche. Hör auf Geonors Stimme und weich seitlich aus, wenn er aus dem Nebel anstürmt.",
+      "target": "Clearfell Encampment → Vastiri Outskirts",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Count Geonor",
+      "note": "Vor dem Boss Cold Res und Life Flask prüfen. Nach dem Kill zum Hooded One in Clearfell Encampment.",
+      "veteranText": "Geonor im Nebel: Stimme hören, beim Ansturm seitlich raus.",
+      "highlight": "weich seitlich aus"
+    },
+    {
+      "id": "a1-manor-stairs",
+      "act": "Act 1",
+      "zone": "Ogham Manor",
+      "zoneMatch": [
+        "ogham manor",
+        "iron manor"
+      ],
+      "exactZone": true,
+      "cue": "Treppen gegenüber suchen",
+      "instruction": "Dreh beim Etagenwechsel die Laufrichtung um. Such die nächste Treppe an der Seite, die vom neuen Eingang wegführt.",
+      "target": "",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Die Etagen können gespiegelt sein. Entscheide nach der Richtung, in der du auf dieser Etage ankommst.",
+      "veteranText": "Nach jeder Treppe Richtung wechseln.",
+      "highlight": "beim Etagenwechsel die Laufrichtung um"
+    },
+    {
+      "id": "a2-outskirts",
+      "act": "Act 2",
+      "zone": "Vastiri Outskirts",
+      "zoneMatch": [
+        "vastiri outskirts"
+      ],
+      "exactZone": true,
+      "cue": "Rathbreaker mit freiem Rückweg",
+      "instruction": "Rathbreaker besiegen, Abstand zu Fernkämpfern halten und danach mit Zarka sprechen.",
+      "target": "Ardura Caravan",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Life Flask auffüllen und vor dem Boss eine freie Ausweichlinie sichern. Den ersten Stadtstopp für Waffe, Flask und Gem bündeln.",
+      "veteranText": "Rathbreaker mit Platz zum Ausweichen. Danach zu Zarka.",
+      "highlight": "Abstand zu Fernkämpfern halten"
+    },
+    {
+      "id": "a2-caravan",
+      "act": "Act 2",
+      "zone": "Ardura Caravan",
+      "zoneMatch": [
+        "ardura caravan"
+      ],
+      "exactZone": true,
+      "cue": "Nächsten Queststopp wählen",
+      "instruction": "Mit Asala sprechen und den nächsten Ort auf der Desert Map wählen. Questitems bei Zarka abgeben.",
+      "target": "Desert Map",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · The Trail of Corruption (Akt 2)",
+      "note": "Start: Mawdun Quarry. Nach Rudja mit Risu und Asala reden. Nach dem Aktboss draußen zum Hooded One und mit Asala nach Sandswept Marsh reisen.",
+      "veteranText": "Desert Map für die Route. Questitems bei Zarka abgeben.",
+      "highlight": "nächsten Ort auf der Desert Map wählen"
+    },
+    {
+      "id": "a2-caravan-horn",
+      "act": "Act 2",
+      "zone": "Ardura Caravan",
+      "zoneMatch": [
+        "ardura caravan"
+      ],
+      "exactZone": true,
+      "cue": "Horn am Sandsturm benutzen",
+      "instruction": "Nach Tusks, Essence of Water und Flame Ruby das Horn bei Zarka holen. Zum Sandsturm reisen und das Horn benutzen.",
+      "target": "Deshar",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · The Trail of Corruption (Akt 2)",
+      "note": "Die Questmarkierung zeigt den Interaktionspunkt an der Karawane. Danach bei Asala weiterreisen.",
+      "veteranText": "Tusks, Water, Ruby abgeben → Zarkas Horn am Sandsturm benutzen.",
+      "highlight": "Zum Sandsturm reisen und das Horn benutzen"
+    },
+    {
+      "id": "a2-quarry",
+      "act": "Act 2",
+      "zone": "Mawdun Quarry",
+      "zoneMatch": [
+        "mawdun quarry"
+      ],
+      "exactZone": true,
+      "cue": "Zum Eingang der Mine",
+      "instruction": "Über die Brücken und Checkpoints zum Eingang der Mawdun Mine.",
+      "target": "Mawdun Mine",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die Faridun War Cache beim Checkpoint ist ein kurzer Umweg, wenn du einen Artificer’s Orb brauchst.",
+      "veteranText": "Brücken und Checkpoints bis zum Eingang der Mine.",
+      "highlight": "Über die Brücken und Checkpoints"
+    },
+    {
+      "id": "a2-mawdun-rescue",
+      "act": "Act 2",
+      "zone": "Mawdun Mine",
+      "zoneMatch": [
+        "mawdun mine"
+      ],
+      "exactZone": true,
+      "cue": "Risu aus dem Käfig holen",
+      "instruction": "Rudja besiegen, Risu befreien und danach bei der Karawane abgeben.",
+      "target": "Questfortschritt in der Karawane",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Nimm den Waypoint auf der Route und bleib an Kreuzungen an verbundenen Gleisen. Die Gleisnotiz funktioniert als Orientierung bei gedrehten Layouts.",
+      "veteranText": "Rudja töten, Käfig öffnen, mit Risu reden → Karawane.",
+      "highlight": "Risu befreien"
+    },
+    {
+      "id": "a2-mawdun-rails",
+      "act": "Act 2",
+      "zone": "Mawdun Mine",
+      "zoneMatch": [
+        "mawdun mine"
+      ],
+      "cue": "An den Gleisen bleiben",
+      "instruction": "An Kreuzungen den Abzweig nehmen, der an die Schienen angeschlossen bleibt.",
+      "target": "Hauptweg durch die Mine",
+      "kind": "Wegsignal",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Schau an Kreuzungen auf die Weiche. Der durchgehende Gleisstrang ist die Orientierung zum Munitionsbunker.",
+      "exactZone": true,
+      "veteranText": "An der Weiche die verbundenen Gleise nehmen.",
+      "highlight": "an die Schienen angeschlossen"
+    },
+    {
+      "id": "a2-traitors-exit",
+      "act": "Act 2",
+      "zone": "Traitor's Passage",
+      "zoneMatch": [
+        "traitor's passage"
+      ],
+      "exactZone": true,
+      "cue": "Treppen zu den Halani Gates",
+      "instruction": "Dem Hauptweg über die Treppen folgen und den Ausgang zu den Halani Gates nehmen.",
+      "target": "Halani Gates",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du Balbala auslässt, führt der andere Ast an der Kreuzung zum Ausgang.",
+      "veteranText": "Treppen Richtung Halani Gates. Papier-Ast ist Balbala.",
+      "highlight": "Ausgang zu den Halani Gates"
+    },
+    {
+      "id": "a2-traitors-parchment",
+      "act": "Act 2",
+      "zone": "Traitor's Passage",
+      "zoneMatch": [
+        "traitor's passage"
+      ],
+      "cue": "Papiersiegel zu Balbala",
+      "instruction": "Am Decree of Imprisonment den Ast mit gelben Papiersiegeln nehmen. Die Runic Seals an der Arena lösen und Balbala für den frühen Barya besiegen.",
+      "target": "Balbala’s Barya für die erste Ascendancy",
+      "kind": "Optionaler Boss",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · Traitor’s Passage",
+      "note": "Willst du später in den Trial, droppen auch die Watchful Twins in Deshar einen Barya.",
+      "exactZone": true,
+      "veteranText": "Gelbe Papiersiegel → Balbala für frühen Barya.",
+      "highlight": "Ast mit gelben Papiersiegeln"
+    },
+    {
+      "id": "a2-halani",
+      "act": "Act 2",
+      "zone": "Halani Gates",
+      "zoneMatch": [
+        "halani gates"
+      ],
+      "exactZone": true,
+      "cue": "Asala ans Tor holen",
+      "instruction": "Asala die Tore öffnen lassen, Jamanra bekämpfen und nach dem Sandsturm zur Karawane zurück.",
+      "target": "Drei Questäste für das Horn",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der Trial-Waypoint lässt sich beim nächsten Karawanenstopp sichern. Jamanra hier und der spätere Aktboss sind zwei Kämpfe.",
+      "veteranText": "Asala an die Tore rufen → Jamanra → bis zum Sandsturm, zurück.",
+      "highlight": "nach dem Sandsturm zur Karawane zurück"
+    },
+    {
+      "id": "a2-halani-lim",
+      "act": "Act 2",
+      "zone": "Halani Gates",
+      "zoneMatch": [
+        "halani gates"
+      ],
+      "exactZone": true,
+      "cue": "L’im the Impaler",
+      "instruction": "Optionaler Rare bei den Forward Command Tents vor dem zweiten Tor. Die aufgespießten Leichen daneben geben magische Waffen.",
+      "target": "Magische Waffen bei den Zelten",
+      "kind": "Optionaler Boss",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · The Halani Gates",
+      "note": "Greif zu, wenn du dort direkt ein Waffenupgrade prüfen kannst.",
+      "highlight": "Forward Command Tents"
+    },
+    {
+      "id": "a2-mastodon-main",
+      "act": "Act 2",
+      "zone": "Mastodon Badlands",
+      "zoneMatch": [
+        "mastodon badlands"
+      ],
+      "exactZone": true,
+      "cue": "Zu den Bone Pits",
+      "instruction": "Den Weg zu den Bone Pits nehmen. Dort liegen die Mastodon Tusks für das Horn.",
+      "target": "Bone Pits",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Für den ersten Vergleichslauf diesen Ast vor Keth und Valley of the Titans laufen.",
+      "veteranText": "Hauptweg → Bone Pits für die Mastodon Tusks.",
+      "highlight": "Mastodon Tusks für das Horn"
+    },
+    {
+      "id": "a2-mastodon-cracks",
+      "act": "Act 2",
+      "zone": "Mastodon Badlands",
+      "zoneMatch": [
+        "mastodon badlands"
+      ],
+      "cue": "Bodenrisse zum Well of Souls",
+      "instruction": "Für den Crafting-Unlock folgst du den Rissen bis zur Lightless Passage und gehst weiter zum Well of Souls.",
+      "target": "Lightless Passage / Well of Souls",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Lohnt sich im Run bei einem geplanten Abyss-Craft. Für die Mastodon Tusks den Weg zu den Bone Pits nehmen.",
+      "exactZone": true,
+      "veteranText": "Bodenrisse → Lightless Passage → Well of Souls fürs Crafting.",
+      "highlight": "den Rissen bis zur Lightless Passage"
+    },
+    {
+      "id": "a2-bone-pits",
+      "act": "Act 2",
+      "zone": "Bone Pits",
+      "zoneMatch": [
+        "bone pits"
+      ],
+      "exactZone": true,
+      "cue": "Tusks und Sun Clan Relic",
+      "instruction": "Iktab und Ekbab besiegen und die Mastodon Tusks bei Zarka abgeben.",
+      "target": "Erstes Questitem für das Horn",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du den Charm-Slot einplanst, sammel beim Durchlaufen das Sun Clan Relic ein.",
+      "veteranText": "Iktab + Ekbab → Tusks zu Zarka. Für Charm-Slot Sun Relic aufheben.",
+      "highlight": "Mastodon Tusks bei Zarka abgeben"
+    },
+    {
+      "id": "a2-bone-pits-arch",
+      "act": "Act 2",
+      "zone": "Bone Pits",
+      "zoneMatch": [
+        "bone pits"
+      ],
+      "exactZone": true,
+      "cue": "Knochenbogen als Kompass",
+      "instruction": "Durch den Knochenbogen in der Nähe des Eingangs. Lauf ungefähr in derselben Richtung bis zur gegenüberliegenden Wand und such dort den Arena-Zugang.",
+      "target": "",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Die Angabe ist eine Suchrichtung aus dem Layoutguide. Varianten im aktuellen Run gegenprüfen.",
+      "veteranText": "Durch den Knochenbogen geradeaus bis zur gegenüberliegenden Wand.",
+      "highlight": "Knochenbogen in der Nähe des Eingangs"
+    },
+    {
+      "id": "a2-keth-exit",
+      "act": "Act 2",
+      "zone": "Keth",
+      "zoneMatch": [
+        "keth"
+      ],
+      "exactZone": true,
+      "cue": "Abstieg in die Lost City",
+      "instruction": "Den Eingang zur Lost City nehmen. Der Weg zum Questboss Azarian führt durch die Buried Shrines.",
+      "target": "The Lost City",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Das Kabala Clan Relic auf dem Weg einsammeln, wenn du den Charm-Slot einplanst.",
+      "veteranText": "Lost City → Buried Shrines → Azarian.",
+      "highlight": "Eingang zur Lost City"
+    },
+    {
+      "id": "a2-keth-kabala",
+      "act": "Act 2",
+      "zone": "Keth",
+      "zoneMatch": [
+        "keth"
+      ],
+      "exactZone": true,
+      "cue": "Kabala und das Clan Relic",
+      "instruction": "Kabala für das Buch töten. Beim Durchlaufen von Keth nach dem Kabala Clan Relic schauen.",
+      "target": "+2 Waffen-Set-Passivpunkte / Ancient Vows",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Keth ist auch ein Ausgangspunkt der Storyroute über Lost City und Buried Shrines. Der Boss und das Relic sind getrennte Ziele.",
+      "veteranText": "Kabala → +2 Punkte. Kabala Relic für den Charm-Slot aufheben.",
+      "highlight": "Kabala für das Buch"
+    },
+    {
+      "id": "a2-lost-city",
+      "act": "Act 2",
+      "zone": "Lost City",
+      "zoneMatch": [
+        "lost city"
+      ],
+      "exactZone": true,
+      "cue": "Weiter zu den Buried Shrines",
+      "instruction": "In der Lost City den Ausgang zu den Buried Shrines suchen.",
+      "target": "Buried Shrines",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Das Golden Tomb lohnt sich, wenn du einen Uncut Spirit Gem für den Build brauchst.",
+      "veteranText": "Ausgang entlang der fernen Kante → Buried Shrines.",
+      "highlight": "Ausgang zu den Buried Shrines"
+    },
+    {
+      "id": "a2-lost-city-v-bridge",
+      "act": "Act 2",
+      "zone": "Lost City",
+      "zoneMatch": [
+        "lost city"
+      ],
+      "exactZone": true,
+      "cue": "V-Brücke und Flügel",
+      "instruction": "Such an einer Seite des ersten Blocks die V-förmige Brücke. Drüben an die ferne Wand. Ein flügelähnliches Muster auf der Minimap kann den Ausgang zu den Buried Shrines zeigen.",
+      "target": "",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Wenn an der ersten Seite keine V-Brücke auftaucht, prüfe die gegenüberliegende Seite.",
+      "veteranText": "V-Brücke an der Seitenkante. Drüben Flügel auf der Minimap suchen.",
+      "highlight": "V-förmige Brücke"
+    },
+    {
+      "id": "a2-lost-city-ninth",
+      "act": "Act 2",
+      "zone": "Lost City",
+      "zoneMatch": [
+        "lost city"
+      ],
+      "exactZone": true,
+      "cue": "The Ninth Treasure of Keth",
+      "instruction": "Der optionale Rare läuft in der Galleria umher. Er droppt ein magisches Jewel.",
+      "target": "Magisches Jewel",
+      "kind": "Optionaler Boss",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · The Ninth Treasure of Keth",
+      "note": "Das Golden Tomb ist ein eigenes Ziel, wenn du einen Uncut Spirit Gem brauchst.",
+      "highlight": "magisches Jewel"
+    },
+    {
+      "id": "a2-heart-keth",
+      "act": "Act 2",
+      "zone": "Buried Shrines",
+      "zoneMatch": [
+        "buried shrines",
+        "heart of keth"
+      ],
+      "exactZone": true,
+      "cue": "Azarian und die Goddess Essence",
+      "instruction": "Azarian besiegen, Halani mit den Everburning Cinders entzünden und die Essence of Water mitnehmen.",
+      "target": "Essence of Water zu Zarka",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Buried Shrines",
+      "note": "Halte im Kampf eine freie Ausweichlinie zwischen den Feuerflächen. Die Essence fällt nach der Interaktion.",
+      "veteranText": "Azarian → mit Cinders Halani entzünden → Essence zu Zarka.",
+      "highlight": "Essence of Water mitnehmen"
+    },
+    {
+      "id": "a2-buried-offering",
+      "act": "Act 2",
+      "zone": "Buried Shrines",
+      "zoneMatch": [
+        "buried shrines"
+      ],
+      "exactZone": true,
+      "cue": "Resistenzring für die nächste Hürde",
+      "instruction": "Das Elemental Shrine bei Bedarf nutzen und einen Ring für die fehlende Elementarresistenz wählen.",
+      "target": "Ruby, Sapphire oder Topaz Ring",
+      "kind": "Gear-Abstecher",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2DB · Act 2",
+      "note": "Fehlt Blitzresistenz für Jamanra, prüfe den Topaz Ring. Für Azarians Feuerflächen kann Ruby helfen.",
+      "highlight": "Ring für die fehlende Elementarresistenz"
+    },
+    {
+      "id": "a2-titans-seals",
+      "act": "Act 2",
+      "zone": "Valley of the Titans",
+      "zoneMatch": [
+        "valley of the titans"
+      ],
+      "exactZone": true,
+      "cue": "Drei Siegel für den Grotto-Eingang",
+      "instruction": "Drei Ancient Seals aktivieren und danach den Titan Grotto betreten.",
+      "target": "Titan Grotto",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die drei Siegel gehören zur Horn-Quest. Die Clan Relics gehören zum Altar.",
+      "veteranText": "3 Ancient Seals öffnen den Titan Grotto.",
+      "highlight": "Drei Ancient Seals aktivieren"
+    },
+    {
+      "id": "a2-titans-altar",
+      "act": "Act 2",
+      "zone": "Valley of the Titans",
+      "zoneMatch": [
+        "valley of the titans"
+      ],
+      "exactZone": true,
+      "cue": "Ancient Vows für den Charm-Slot",
+      "instruction": "Das Sun Clan Relic und das Kabala Clan Relic am Altar einsetzen und einen Bonus wählen.",
+      "target": "+1 Charm-Slot und wählbarer Charm-Bonus",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · Ancient Vows",
+      "note": "Wähle +30 % Charm Charges gained oder +30 % Charm Effect Duration. Wechsel später an der Statue möglich.",
+      "veteranText": "Beide Clan Relics am Altar → +1 Charm-Slot.",
+      "highlight": "Sun Clan Relic und das Kabala Clan Relic"
+    },
+    {
+      "id": "a2-titan-heads",
+      "act": "Act 2",
+      "zone": "Valley of the Titans",
+      "zoneMatch": [
+        "valley of the titans"
+      ],
+      "cue": "Riesige Titanenköpfe",
+      "instruction": "Jeden sichtbaren Kopf über den kurzen Canyon bis zum Siegel verfolgen.",
+      "target": "Ancient Seals",
+      "kind": "Permanenter Fortschritt",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": true,
+      "note": "Die Titanenköpfe als Signal für die drei Siegel testen. Den Relic Altar separat auf der Minimap im Blick behalten.",
+      "veteranText": "Titanenköpfe suchen: Der Canyon daneben kann zum Siegel führen.",
+      "highlight": "Kopf über den kurzen Canyon"
+    },
+    {
+      "id": "a2-titan-grotto",
+      "act": "Act 2",
+      "zone": "Titan Grotto",
+      "zoneMatch": [
+        "titan grotto"
+      ],
+      "exactZone": true,
+      "cue": "Zalmarath und die Flame Ruby",
+      "instruction": "Zalmarath besiegen, die Flame Ruby mitnehmen und bei Zarka abgeben.",
+      "target": "Drittes Questitem für das Horn",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Prüfe vor dem Rückweg, ob du die Flame Ruby aufgehoben hast.",
+      "veteranText": "Zalmarath → Flame Ruby zu Zarka.",
+      "highlight": "Flame Ruby mitnehmen"
+    },
+    {
+      "id": "a2-titan-grotto-stairs",
+      "act": "Act 2",
+      "zone": "Titan Grotto",
+      "zoneMatch": [
+        "titan grotto"
+      ],
+      "exactZone": true,
+      "cue": "Die lange Treppenbrücke",
+      "instruction": "Orientiere dich daran, in welche Richtung sich die Zone am Eingang öffnet. An der gegenüberliegenden Kante suchst du die lange Treppenbrücke zu Zalmarath.",
+      "target": "",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Bei den verwinkelten Seitengängen hilft die grobe Richtung. Such die Treppe über die Außenkante.",
+      "veteranText": "An die gegenüberliegende Kante. Lange Treppe → Zalmarath.",
+      "highlight": "lange Treppenbrücke"
+    },
+    {
+      "id": "a2-deshar-exit",
+      "act": "Act 2",
+      "zone": "Deshar",
+      "zoneMatch": [
+        "deshar"
+      ],
+      "exactZone": true,
+      "cue": "Von Deshar in den Path of Mourning",
+      "instruction": "Den Ausgang zum Path of Mourning nehmen. Am Fallen Dekhara den Brief für Shambrin mitnehmen.",
+      "target": "Path of Mourning",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der Barya-Abstecher lohnt sich, wenn du die erste Ascendancy noch brauchst.",
+      "veteranText": "Durch das Gebiet mit den Grabbauten → Path of Mourning.",
+      "highlight": "Ausgang zum Path of Mourning"
+    },
+    {
+      "id": "a2-deshar-letter",
+      "act": "Act 2",
+      "zone": "Deshar",
+      "zoneMatch": [
+        "deshar"
+      ],
+      "exactZone": true,
+      "cue": "Brief beim Fallen Dekhara",
+      "instruction": "Lihl Limas Brief mitnehmen und bei Shambrin abgeben.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Falls du den ersten Trial spät planst, prüfe den Level-28-Barya der Watchful Twins in Deshar. Die Abgabe des Briefs beim nächsten Karawanenstopp bündeln.",
+      "veteranText": "Brief bei den Türmen → Shambrin für +2 Punkte.",
+      "highlight": "Brief mitnehmen und bei Shambrin abgeben"
+    },
+    {
+      "id": "a2-deshar-barya",
+      "act": "Act 2",
+      "zone": "Deshar",
+      "zoneMatch": [
+        "deshar"
+      ],
+      "exactZone": true,
+      "cue": "Später Barya bei den Watchful Twins",
+      "instruction": "Wenn du noch einen Barya brauchst, die beiden Geier beim Kartenmarker Watchful Twins töten.",
+      "target": "Djinn Barya für Trial of the Sekhemas",
+      "kind": "Trial-Zugang",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · Deshar",
+      "note": "Miss den Umweg und den Trial gemeinsam. So kannst du ihn mit dem frühen Balbala-Start vergleichen.",
+      "veteranText": "Watchful Twins: beide Geier → Barya für späteren Trial.",
+      "highlight": "Kartenmarker Watchful Twins"
+    },
+    {
+      "id": "a2-mourning",
+      "act": "Act 2",
+      "zone": "Path of Mourning",
+      "zoneMatch": [
+        "path of mourning"
+      ],
+      "exactZone": true,
+      "cue": "In die Spires of Deshar",
+      "instruction": "Den Durchgang zu den Spires nehmen. Die Hushed Urn bei Bedarf für einen Support Gem mitnehmen.",
+      "target": "Spires of Deshar",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du den Umweg läufst, zähle den Kampf am Gefäß beim Split mit.",
+      "veteranText": "Durch zu den Spires. Hushed Urn bei Gem-Bedarf.",
+      "highlight": "Durchgang zu den Spires"
+    },
+    {
+      "id": "a2-tor-gul",
+      "act": "Act 2",
+      "zone": "Spires of Deshar",
+      "zoneMatch": [
+        "spires of deshar"
+      ],
+      "exactZone": true,
+      "cue": "Tor Gul öffnet den Weg zum Dreadnought",
+      "instruction": "Tor Gul besiegen und bei Asala in der Karawane den nächsten Queststopp öffnen.",
+      "target": "The Dreadnought",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Tor Gul",
+      "note": "Achte auf physische Treffer, Feuerflächen und Gift. Den Garukhan-Schrein für Jamanra auf dem Weg mitnehmen.",
+      "veteranText": "Tor Gul → Asala für Dreadnought. Abstand zu Feuer und Gift.",
+      "highlight": "bei Asala in der Karawane"
+    },
+    {
+      "id": "a2-garukhan",
+      "act": "Act 2",
+      "zone": "Spires of Deshar",
+      "zoneMatch": [
+        "spires of deshar"
+      ],
+      "exactZone": true,
+      "cue": "Garukhan-Schrein für Blitzresistenz",
+      "instruction": "Den Schrein der Sisters of Garukhan anklicken.",
+      "target": "+10 % Lightning Resistance",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Sinnvoll vor Jamanra. Prüfe den Wert beim nächsten Gear-Wechsel.",
+      "veteranText": "Garukhan-Schrein anklicken → +10 % Lightning Res.",
+      "highlight": "Schrein der Sisters of Garukhan"
+    },
+    {
+      "id": "a2-sekhemas",
+      "act": "Act 2",
+      "zone": "Trial of the Sekhemas",
+      "zoneMatch": [
+        "trial of the sekhemas"
+      ],
+      "exactZone": true,
+      "cue": "Erste Ascendancy gezielt timen",
+      "instruction": "Honor-Reserve, Flask und Gear prüfen. Wähle Räume mit überschaubarem Risiko.",
+      "target": "Erstes Ascendancy-Paar",
+      "kind": "Trial-Check",
+      "status": "rule",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Vergleiche im Training zwei Starts. Mit Balbalas Barya früh starten oder nach Deshar mit besserem Gear. Notiere die Trial-Zeit und den Effekt auf den nächsten Boss.",
+      "veteranText": "Früher Balbala-Barya oder später Watchful Twins. Honour im Blick.",
+      "highlight": "Honor-Reserve"
+    },
+    {
+      "id": "a2-jamanra",
+      "act": "Act 2",
+      "zone": "The Dreadnought",
+      "zoneMatch": [
+        "the dreadnought",
+        "the dreadnaught",
+        "dreadnought vanguard",
+        "dreadnaught vanguard"
+      ],
+      "exactZone": true,
+      "cue": "Jamanra · Asalas Schutz",
+      "instruction": "Jamanra auf dem letzten Wagen besiegen. Beim Sandsturm in Asalas Schutzfeld.",
+      "target": "Sandswept Marsh über die Ardura Caravan",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Jamanra, the Abomination",
+      "note": "Lightning Resistance und Flasks vor dem Boss prüfen. In Phase zwei Platz zu Blitzlinien und Portalen lassen.",
+      "veteranText": "Jamanra auf dem letzten Wagen. Sandsturm → ins Feld bei Asala.",
+      "highlight": "in Asalas Schutzfeld"
+    },
+    {
+      "id": "a3-marsh",
+      "act": "Act 3",
+      "zone": "Sandswept Marsh",
+      "zoneMatch": [
+        "sandswept marsh"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Hooded One → Ziggurat Encampment",
+      "instruction": "Sprich am Start mit dem Hooded One, wenn der Questmarker angezeigt wird. Betritt anschließend Ziggurat Encampment.",
+      "target": "Ziggurat Encampment",
+      "veteranText": "Hooded One → Ziggurat Encampment"
+    },
+    {
+      "id": "a3-town",
+      "act": "Act 3",
+      "zone": "Ziggurat Encampment",
+      "zoneMatch": [
+        "ziggurat encampment"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Mit NPCs sprechen → oben Richtung Jungle Ruins",
+      "instruction": "Sprich beim ersten Besuch mit Alva, Oswald und dem Hooded One, wenn sie einen Questmarker haben. Geh anschließend durch den oberen Ausgang Richtung Jungle Ruins.",
+      "target": "Jungle Ruins",
+      "veteranText": "Mit NPCs sprechen → oben Richtung Jungle Ruins"
+    },
+    {
+      "id": "a3-jungle-main",
+      "act": "Act 3",
+      "zone": "Jungle Ruins",
+      "zoneMatch": [
+        "jungle ruins"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Zuerst Infested Barrens · später Large Soul Core am Stone Altar → Matlan Waterways",
+      "instruction": "Für die Hauptroute such den Übergang zu Infested Barrens. Wenn du später den Large Soul Core aus Jiquani's Sanctum hast, kehre hierher zurück, setze ihn am Stone Altar ein und geh zu den Matlan Waterways.",
+      "target": "Infested Barrens / The Matlan Waterways",
+      "veteranText": "Zuerst Infested Barrens · später Large Soul Core am Stone Altar → Matlan Waterways"
+    },
+    {
+      "id": "a3-jungle-silverfist",
+      "act": "Act 3",
+      "zone": "Jungle Ruins",
+      "zoneMatch": [
+        "jungle ruins"
+      ],
+      "exactZone": true,
+      "cue": "Silverfist für +2 Punkte",
+      "instruction": "Silverfist einplanen, wenn der Kampf stabil ist. Beim großen Slam Abstand halten.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Der Vaal Beacon ist ein separater Stopp für Fate of the Vaal. Erfasse einen Abstecher dafür getrennt vom Boss-Split.",
+      "highlight": "Beim großen Slam Abstand halten"
+    },
+    {
+      "id": "a3-venom-servi",
+      "act": "Act 3",
+      "zone": "Venom Crypts",
+      "zoneMatch": [
+        "venom crypts"
+      ],
+      "exactZone": true,
+      "cue": "Orok Poison für Servi",
+      "instruction": "Venom für Servi mitnehmen. Vaal Beacon einplanen, falls du Fate of the Vaal trainierst.",
+      "target": "Permanenter Wahlbonus",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Entscheide den Wahlbonus passend zum Build. Für eine schnelle Rückkehr reicht ein Stadtstopp mit mehreren Abgaben.",
+      "highlight": "Venom für Servi"
+    },
+    {
+      "id": "a3-venom-snakes",
+      "act": "Act 3",
+      "zone": "Venom Crypts",
+      "zoneMatch": [
+        "venom crypts"
+      ],
+      "cue": "Schlangen bewegen sich in eine Richtung",
+      "instruction": "Die Schlangenrichtung als Hinweis auf die Venom Crypts prüfen.",
+      "target": "Venom Crypts",
+      "kind": "Gebietseingang",
+      "status": "test",
+      "confidence": "mittel",
+      "mandatory": false,
+      "note": "Im ersten 1.0-Lauf nicht als harte Regel behandeln.",
+      "highlight": "Schlangenrichtung"
+    },
+    {
+      "id": "a3-infested-alva",
+      "act": "Act 3",
+      "zone": "Infested Barrens",
+      "zoneMatch": [
+        "infested barrens"
+      ],
+      "exactZone": true,
+      "cue": "Alva und Waypoint",
+      "instruction": "Waypoint bei Alva sichern und dem Storymarker folgen.",
+      "target": "Weiter durch den Dschungel",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du Fate of the Vaal testest, führe die sechs Beacons bis zum Portal der Vaal Ruins als eigene Nebenquest.",
+      "highlight": "Waypoint bei Alva"
+    },
+    {
+      "id": "a3-explorers",
+      "act": "Act 3",
+      "zone": "Jungle Ruins / Infested Barrens",
+      "zoneMatch": [
+        "jungle ruins",
+        "infested barrens"
+      ],
+      "cue": "Jungle Explorer zeigt den Ausgang",
+      "instruction": "Wenn du am Explorercamp vorbeikommst, sprich die Person dort an und prüfe den aufgedeckten Marker auf der Minimap.",
+      "target": "Nächstes Gebiet",
+      "kind": "Wegsignal",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "GGG zeigt das Prinzip im 0.5-Reveal. Der Marker hilft dir beim Weiterweg im Dschungel.",
+      "veteranText": "Explorer im Camp ansprechen → Ausgang auf der Minimap prüfen.",
+      "highlight": "aufgedeckten Marker auf der Minimap"
+    },
+    {
+      "id": "a3-wetlands-main",
+      "act": "Act 3",
+      "zone": "Chimeral Wetlands",
+      "zoneMatch": [
+        "chimeral wetlands"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Hinter der Arena → Jiquani's Machinarium",
+      "instruction": "Nimm nach Xyclucian den Ausgang hinter der Arena ins Jiquani's Machinarium.",
+      "target": "Jiquani's Machinarium",
+      "veteranText": "Hinter der Arena → Jiquani's Machinarium"
+    },
+    {
+      "id": "a3-xyclucian",
+      "act": "Act 3",
+      "zone": "Chimeral Wetlands",
+      "zoneMatch": [
+        "chimeral wetlands"
+      ],
+      "exactZone": true,
+      "cue": "Xyclucian für den Trial-Zugang",
+      "instruction": "Wenn du den Trial planst, Xyclucians Ultimatum und den Waypoint am Temple of Chaos holen.",
+      "target": "Inscribed Ultimatum",
+      "kind": "Trial-Zugang",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Trial-Timing als eigenen Split notieren. Den Vaal Beacon vor Ort als separaten Abstecher messen.",
+      "highlight": "Xyclucians Ultimatum"
+    },
+    {
+      "id": "a3-expedition-record",
+      "act": "Act 3",
+      "zone": "Chimeral Wetlands",
+      "zoneMatch": [
+        "chimeral wetlands"
+      ],
+      "cue": "Lost Temple Logbook im Ravaged Camp",
+      "instruction": "Das Lost Temple Logbook im Ravaged Camp lesen. Es markiert den Temple of Chaos auf der Minimap.",
+      "target": "Temple of Chaos",
+      "kind": "Wegsignal",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Wenn der Trial geplant ist, lauf zum aufgedeckten Eingang und nimm den Waypoint.",
+      "exactZone": true,
+      "veteranText": "Ravaged Camp: Logbook lesen → Temple of Chaos auf der Minimap.",
+      "highlight": "Lost Temple Logbook im Ravaged Camp"
+    },
+    {
+      "id": "a3-chaos-temple",
+      "act": "Act 3",
+      "zone": "The Temple of Chaos",
+      "zoneMatch": [
+        "temple of chaos"
+      ],
+      "exactZone": true,
+      "kind": "Optionales Ziel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Chimeral Inscribed Ultimatum an der Opferstelle → Trial of Chaos",
+      "instruction": "Setze das Chimeral Inscribed Ultimatum an der Opferstelle ein, wenn du bereit bist für die Trial of Chaos. Scheitert der Questlauf, frag den Prüfungsmeister am Eingang nach Ersatz.",
+      "target": "The Trial of Chaos",
+      "veteranText": "Chimeral Inscribed Ultimatum an der Opferstelle → Trial of Chaos"
+    },
+    {
+      "id": "a3-chaos-trial",
+      "act": "Act 3",
+      "zone": "Trial of Chaos",
+      "zoneMatch": [
+        "trial of chaos"
+      ],
+      "exactZone": true,
+      "cue": "Trial für Ascendancy",
+      "instruction": "Mit Inscribed Ultimatum starten, wenn Boss-Schaden und Recovery für die Prüfung reichen.",
+      "target": "Ascendancy-Punkte",
+      "kind": "Trial-Check",
+      "status": "rule",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Miss die gesamte Zeit samt Anreise und vergleiche den Gewinn des nächsten Ascendancy-Knotens auf der restlichen Route.",
+      "highlight": "Inscribed Ultimatum"
+    },
+    {
+      "id": "a3-machinarium",
+      "act": "Act 3",
+      "zone": "Jiquani's Machinarium",
+      "zoneMatch": [
+        "jiquani's machinarium"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Small Soul Core bei Alva → Stone Altar → weiteren Kern für Jiquani's Sanctum",
+      "instruction": "Nimm den ersten kleinen Seelenkern bei Alva und setze ihn am Stone Altar ein. Such in den Seitenräumen weitere kleine Kerne. Halte einen für die Tür zum Jiquani's Sanctum bereit.",
+      "target": "Jiquani's Sanctum",
+      "veteranText": "Small Soul Core bei Alva → Stone Altar → weiteren Kern für Jiquani's Sanctum"
+    },
+    {
+      "id": "a3-blackjaw",
+      "act": "Act 3",
+      "zone": "Jiquani's Machinarium",
+      "zoneMatch": [
+        "jiquani's machinarium"
+      ],
+      "exactZone": true,
+      "cue": "Kleine Soul Cores und Blackjaw",
+      "instruction": "Small Soul Cores für Türen nutzen. Einen für Blackjaws Seitenraum einplanen.",
+      "target": "+10 % Fire Resistance",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Blackjaw’s Flame Core benutzen. Prüfe beim Abzweig, wo die Story weitergeht und welche Tür du für den Bonus aufmachst.",
+      "highlight": "Blackjaws Seitenraum"
+    },
+    {
+      "id": "a3-zi-coatl",
+      "act": "Act 3",
+      "zone": "Jiquani's Sanctum",
+      "zoneMatch": [
+        "jiquani's sanctum"
+      ],
+      "exactZone": true,
+      "cue": "Zwei Generatoren, dann Zicoatl",
+      "instruction": "Medium Soul Cores einsetzen, Zicoatl besiegen und den Large Soul Core mitnehmen.",
+      "target": "Stone Altar in Jungle Ruins",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der große Core gehört zum Altar in den Jungle Ruins. Den Beacon für die Nebenquest kannst du beim Rückweg separat mitnehmen.",
+      "highlight": "Large Soul Core mitnehmen"
+    },
+    {
+      "id": "a3-matlan",
+      "act": "Act 3",
+      "zone": "Matlan Waterways",
+      "zoneMatch": [
+        "matlan waterways"
+      ],
+      "exactZone": true,
+      "cue": "Druckplatten bis zum Questmarker",
+      "instruction": "Den Druckplatten bis zum Questmarker am Ende folgen.",
+      "target": "Drowned City über Ziggurat Encampment",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://www.pathofexile.com/forum/view-thread/3932540",
+      "note": "Geh anschließend zu Alva unten im Ziggurat Encampment. Der Zugang zum Azak Bog liegt an den Matlan Waterways.",
+      "highlight": "Druckplatten"
+    },
+    {
+      "id": "a3-ignagduk",
+      "act": "Act 3",
+      "zone": "Azak Bog",
+      "zoneMatch": [
+        "azak bog"
+      ],
+      "exactZone": true,
+      "cue": "Ignagduk für 30 Spirit",
+      "instruction": "Ignagduk besiegen, permanente Belohnung benutzen und den Speer bei Servi abgeben.",
+      "target": "+30 Spirit",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Vorab festlegen, welchen Spirit-Skill der Bonus freischaltet. Für HC den Boss erst nach einem stabilen Schadenstest angehen.",
+      "highlight": "permanente Belohnung benutzen"
+    },
+    {
+      "id": "a3-drowned-city",
+      "act": "Act 3",
+      "zone": "Drowned City",
+      "zoneMatch": [
+        "drowned city"
+      ],
+      "exactZone": true,
+      "cue": "Apex of Filth für das Idol",
+      "instruction": "Apex of Filth anlaufen und das Idol der Queen of Filth mitnehmen.",
+      "target": "Temple of Kopec",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der Molten Vault ist der Abzweig zur Reforging Bench. Mektuls Hammer bei Oswald abgeben, wenn du den Crafting-Unlock eingeplant hast.",
+      "highlight": "Idol der Queen of Filth"
+    },
+    {
+      "id": "a3-molten-vault",
+      "act": "Act 3",
+      "zone": "The Molten Vault",
+      "zoneMatch": [
+        "molten vault"
+      ],
+      "exactZone": true,
+      "kind": "Optionales Ziel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Hammer of Kamasa abgeben → Reforging Bench freischalten",
+      "instruction": "Gib den Hammer of Kamasa bei Oswald im Ziggurat Encampment ab, um die Reforging Bench freizuschalten.",
+      "target": "Reforging Bench",
+      "veteranText": "Hammer of Kamasa abgeben → Reforging Bench freischalten"
+    },
+    {
+      "id": "a3-apex",
+      "act": "Act 3",
+      "zone": "Apex of Filth",
+      "zoneMatch": [
+        "apex of filth"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Temple Door Idol aufnehmen → zu Alva unten im Ziggurat Encampment",
+      "instruction": "Heb den Temple Door Idol auf. Kehre per Portal ins Ziggurat Encampment zurück und gib ihn unten an der Treppe bei Alva ab.",
+      "target": "Temple Door Idol",
+      "veteranText": "Temple Door Idol aufnehmen → zu Alva unten im Ziggurat Encampment"
+    },
+    {
+      "id": "a3-kopec",
+      "act": "Act 3",
+      "zone": "Temple of Kopec",
+      "zoneMatch": [
+        "temple of kopec"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Alva nach dem Kampf → Lager → Zeitportal",
+      "instruction": "Sprich nach dem Kampf mit Alva und warte, bis der Questschritt weitergeht. Kehre ins Ziggurat Encampment zurück und geh durch das Zeitportal.",
+      "target": "Time Portal",
+      "veteranText": "Alva nach dem Kampf → Lager → Zeitportal"
+    },
+    {
+      "id": "a3-past-camp",
+      "act": "Act 3",
+      "zone": "Ziggurat Encampment (Past)",
+      "zoneMatch": [
+        "ziggurat encampment (past)",
+        "zikkurat-lager (vergangenheit)"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Utzaal → Viper Napuatzi → Aggorat",
+      "instruction": "Betritt Utzaal, um Viper Napuatzi auf dem Weg Richtung Aggorat zu erreichen.",
+      "target": "Utzaal",
+      "veteranText": "Utzaal → Viper Napuatzi → Aggorat"
+    },
+    {
+      "id": "a3-utzaal-main",
+      "act": "Act 3",
+      "zone": "Utzaal",
+      "zoneMatch": [
+        "utzaal"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Nach Viper Napuatzi → Aggorat · Sacrificial Heart im Inventar prüfen",
+      "instruction": "Geh nach dem Kampf weiter Richtung Aggorat. Wenn du die zwei Waffenset-Punkte holen willst, prüfe am Ausgang dein Inventar auf das Sacrificial Heart.",
+      "target": "Aggorat",
+      "veteranText": "Nach Viper Napuatzi → Aggorat · Sacrificial Heart im Inventar prüfen"
+    },
+    {
+      "id": "a3-utzaal-heart",
+      "act": "Act 3",
+      "zone": "Utzaal",
+      "zoneMatch": [
+        "utzaal"
+      ],
+      "exactZone": true,
+      "cue": "Sacrificial Heart vor dem Weiterlaufen",
+      "instruction": "Auf das Quest-Item Sacrificial Heart achten und Viper Napuatzi für die Story besiegen.",
+      "target": "Herz für Aggorat",
+      "kind": "Permanenter Bonus vorbereitet",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Viper Napuatzi ist Storyroute. Das Herz brauchst du für die optionalen Punkte in Aggorat. Kontrolliere es vor dem Übergang im Inventar.",
+      "highlight": "Sacrificial Heart"
+    },
+    {
+      "id": "a3-aggorat",
+      "act": "Act 3",
+      "zone": "Aggorat",
+      "zoneMatch": [
+        "aggorat"
+      ],
+      "exactZone": true,
+      "cue": "Herz am Altar einsetzen",
+      "instruction": "Sacrificial Heart auf den Altar legen und den Dagger benutzen.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Herz aus Utzaal mitbringen. Den Split nach der Interaktion setzen, damit du den Bonus von einem bloßen Bosskill unterscheiden kannst.",
+      "highlight": "Dagger benutzen"
+    },
+    {
+      "id": "a3-aggorat-exit",
+      "act": "Act 3",
+      "zone": "Aggorat",
+      "zoneMatch": [
+        "aggorat"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "cue": "Weiter zu den Schwarzen Kammern",
+      "instruction": "Betritt die Schwarzen Kammern.",
+      "target": "The Black Chambers",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "veteranText": "Betritt die Schwarzen Kammern."
+    },
+    {
+      "id": "a3-doryani",
+      "act": "Act 3",
+      "zone": "Black Chambers",
+      "zoneMatch": [
+        "black chambers"
+      ],
+      "exactZone": true,
+      "cue": "Doryani und anschließende Abgabe",
+      "instruction": "Vor Doryani Recovery prüfen und Raum für die großen Flächen lassen.",
+      "target": "Act 3 abschließen",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Zeit am Kill erfassen. Doryani und Alva für den Übergang ansprechen, bevor du den Run als Act-3-fertig markierst.",
+      "highlight": "Raum für die großen Flächen lassen"
+    },
+    {
+      "id": "a3-mystic-refuge",
+      "act": "Act 3",
+      "zone": "Mystic Refuge",
+      "zoneMatch": [
+        "mystic refuge",
+        "mystische zuflucht"
+      ],
+      "exactZone": true,
+      "kind": "Optionales Ziel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Mystic Refuge räumen → Farrow → Runenwissen studieren",
+      "instruction": "Durchsuche die Mystic Refuge, räume die Gegner und sprich mit Farrow über den Folianten. Studiere das Runenwissen, um die Runenschmiede-Erweiterung für einzigartige Gegenstände freizuschalten.",
+      "target": "Unique Verisium Runeforging",
+      "veteranText": "Mystic Refuge räumen → Farrow → Runenwissen studieren"
+    },
+    {
+      "id": "a3-vaal-ruins",
+      "act": "Act 3",
+      "zone": "Vaal Ruins",
+      "zoneMatch": [
+        "vaal ruins"
+      ],
+      "exactZone": true,
+      "kind": "Optionales Ziel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act3_guide.html",
+      "cue": "Tempelkonsole → verbundenen Weg legen → Tempel betreten",
+      "instruction": "Benutze die Tempelkonsole, um einen verbundenen Weg für deinen ersten Tempelbesuch zu legen. Die Kampagnenroute kannst du über den Waypoint wieder aufnehmen.",
+      "target": "Temple Console",
+      "veteranText": "Tempelkonsole → verbundenen Weg legen → Tempel betreten"
+    },
+    {
+      "id": "a4-kingsmarch",
+      "act": "Act 4",
+      "zone": "Kingsmarch",
+      "zoneMatch": [
+        "kingsmarch"
+      ],
+      "exactZone": true,
+      "cue": "4 Kartenstücke → Plunder's Point am Steg freischalten",
+      "instruction": "Wenn du die vier Kartenstücke ohne den Runensucher-Dialog gesammelt hast, sprich am Steg mit Makoru beziehungsweise Rhodri, um zur Plunder's Point zu segeln.",
+      "target": "Plunder's Point",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "veteranText": "4 Kartenstücke → Plunder's Point am Steg freischalten",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-shoreline",
+      "act": "Act 4",
+      "zone": "Shoreline Hideout",
+      "zoneMatch": [
+        "shoreline hideout"
+      ],
+      "exactZone": true,
+      "kind": "Optionales Ziel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "cue": "Gebiet räumen → Ange → eigenes Versteck und Handel",
+      "instruction": "Räume das Gebiet und sprich danach mit Ange. Das schaltet das Versteck frei. Folge der Quest weiter zu Ange im eigenen Versteck für ihre Handelsfunktionen.",
+      "target": "Hideout and trading",
+      "veteranText": "Gebiet räumen → Ange → eigenes Versteck und Handel"
+    },
+    {
+      "id": "a4-isle-of-kin",
+      "act": "Act 4",
+      "zone": "Isle of Kin",
+      "zoneMatch": [
+        "isle of kin"
+      ],
+      "exactZone": true,
+      "cue": "Gehäuteter Seemann am Ufer → Kartenstück",
+      "instruction": "Such am Ufer den gehäuteten Seemann und nimm das Torn Map Piece für die Plunder's Point mit.",
+      "target": "Torn Map Piece for Plunder's Point",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "veteranText": "Gehäuteter Seemann am Ufer → Kartenstück",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-volcanic",
+      "act": "Act 4",
+      "zone": "Volcanic Warrens",
+      "zoneMatch": [
+        "volcanic warrens"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "cue": "Krutog → Questmarker prüfen → Kingsmarch",
+      "instruction": "Besiege Krutog, Lord of Kin im Thronsaal. Wenn ein Weapon Piece oder Matikis Käfig markiert ist, erledige das Ziel vor der Rückkehr nach Kingsmarch.",
+      "target": "Kingsmarch",
+      "veteranText": "Krutog → Questmarker prüfen → Kingsmarch"
+    },
+    {
+      "id": "a4-kedge-map",
+      "act": "Act 4",
+      "zone": "Kedge Bay",
+      "zoneMatch": [
+        "kedge bay"
+      ],
+      "exactZone": true,
+      "cue": "Truhe des toten Mannes → Kartenstück",
+      "instruction": "Such abseits des Strands nach der Truhe des toten Mannes oder dem Schmugglerversteck. Nimm das Torn Map Piece für die Plunder's Point mit.",
+      "target": "Torn Map Piece for Plunder's Point",
+      "kind": "Quest und permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "veteranText": "Truhe des toten Mannes → Kartenstück",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-omniphobia",
+      "act": "Act 4",
+      "zone": "Journey's End",
+      "zoneMatch": [
+        "journey's end"
+      ],
+      "exactZone": true,
+      "cue": "Freya → Totems → Omniphobie → Tujen → Buch (+2 Waffenset-Punkte) · Gemme 13",
+      "instruction": "Sprich mit Freya, nutze die Verisium Spikes an den Karui-Totems und besiege Omniphobia, Fear Manifest. Hol bei Tujen in Kingsmarch die Uncut Skill Gem (Stufe 13) und das Buch ab. Benutze das Buch für +2 Weapon Set Passive Skill Points.",
+      "target": "+2 Weapon Set Passive Skill Points",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "veteranText": "Freya → Totems → Omniphobie → Tujen → Buch (+2 Waffenset-Punkte) · Gemme 13",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-whakapanu",
+      "act": "Act 4",
+      "zone": "Whakapanu Island",
+      "zoneMatch": [
+        "whakapanu island"
+      ],
+      "exactZone": true,
+      "cue": "Great White One → Shark Fin → Kaimana in Ngakanu oder später am Steg",
+      "instruction": "Besiege in der Haigrube den Großen Weißen Hai und nimm die Shark Fin mit. Bring sie zu Kaimana in Ngakanu. Nach Tavakai findest du Kaimana am Steg von Kingsmarch.",
+      "target": "Shark Fin for Kaimana",
+      "kind": "Quest und permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "veteranText": "Great White One → Shark Fin → Kaimana in Ngakanu oder später am Steg",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-singing",
+      "act": "Act 4",
+      "zone": "Singing Caverns",
+      "zoneMatch": [
+        "singing caverns"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "cue": "Diamora → Verhüllter oder Matikis Käfig, falls markiert → Schiff",
+      "instruction": "Besiege Diamora, Song of Death. Sprich mit dem Verhüllten, wenn er erscheint, und öffne Matikis Käfig, falls er hier markiert ist. Kehre zum Schiff zurück und wähle die nächste Insel anhand der Questmarker.",
+      "target": "Kingsmarch",
+      "veteranText": "Diamora → Verhüllter oder Matikis Käfig, falls markiert → Schiff"
+    },
+    {
+      "id": "a4-prison",
+      "act": "Act 4",
+      "zone": "Abandoned Prison",
+      "zoneMatch": [
+        "abandoned prison"
+      ],
+      "exactZone": true,
+      "cue": "Chapel Key → Kapelle und Forael → Göttin → +30% Lebens- oder Manawiederherstellung durch Flaschen (wechselbar)",
+      "instruction": "Töte Totenbeschwörer, bis ein Chapel Key fällt. Öffne die Kapelle, räume die Gegner um Forael und wähle an der Goddess of Justice +30% erhöhte Lebenswiederherstellung durch life flasks oder +30% erhöhte Manawiederherstellung durch mana flasks. Die Wahl lässt sich dort später ändern.",
+      "target": "Goddess of Justice",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "veteranText": "Chapel Key → Kapelle und Forael → Göttin → +30% Lebens- oder Manawiederherstellung durch Flaschen (wechselbar)",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-solitary",
+      "act": "Act 4",
+      "zone": "Solitary Confinement",
+      "zoneMatch": [
+        "solitary confinement"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "cue": "Gefangener → bei Heilung Balliste benutzen → Questmarker → Kingsmarch",
+      "instruction": "Besiege den Gefangenen. Wenn er unverwundbar wird und sich zu heilen beginnt, schieß mit einer Balliste am Arenarand auf ihn. Sprich danach mit dem Verhüllten, wenn er erscheint, und kehre nach Kingsmarch zurück.",
+      "target": "Kingsmarch",
+      "veteranText": "Gefangener → bei Heilung Balliste benutzen → Questmarker → Kingsmarch"
+    },
+    {
+      "id": "a4-shrike",
+      "act": "Act 4",
+      "zone": "Shrike Island",
+      "zoneMatch": [
+        "shrike island"
+      ],
+      "exactZone": true,
+      "cue": "Leichennest · aufgespießter Karui → Kartenstück",
+      "instruction": "Prüfe das Leichennest mit dem aufgespießten Karui und nimm das Torn Map Piece für die Plunder's Point mit.",
+      "target": "Torn Map Piece for Plunder's Point",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "veteranText": "Leichennest · aufgespießter Karui → Kartenstück",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-hinekora-mana",
+      "act": "Act 4",
+      "zone": "Eye of Hinekora",
+      "zoneMatch": [
+        "eye of hinekora"
+      ],
+      "exactZone": true,
+      "cue": "Navalis Rast am Checkpoint → Altar benutzen → +5% maximales Mana",
+      "instruction": "Such nach den drei Prüfungen am Checkpoint nach dem Abzweig zu Navalis Rast. Interagiere dort mit dem Altar, um dauerhaft +5% maximales Mana zu erhalten.",
+      "target": "+5% Maximum Mana",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "veteranText": "Navalis Rast am Checkpoint → Altar benutzen → +5% maximales Mana",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-halls-yama",
+      "act": "Act 4",
+      "zone": "Halls of the Dead",
+      "zoneMatch": [
+        "halls of the dead"
+      ],
+      "exactZone": true,
+      "cue": "Yama → Silver Coin → Trial of the Ancestors",
+      "instruction": "Besiege Yama the White. Heb die Silver Coin auf und nimm den Ausgang zur Trial of the Ancestors.",
+      "target": "Trial of the Ancestors",
+      "kind": "Permanente Boni und Questkette",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "veteranText": "Yama → Silver Coin → Trial of the Ancestors"
+    },
+    {
+      "id": "a4-hinekora-points",
+      "act": "Act 4",
+      "zone": "Trial of the Ancestors",
+      "zoneMatch": [
+        "trial of the ancestors"
+      ],
+      "exactZone": true,
+      "cue": "Navali → Hinekoras Tätowierung benutzen → +2 Waffenset-Punkte",
+      "instruction": "Sprich mit Navali und Hinekora. Nimm die Tattoo of Hinekora mit und benutze sie für +2 Weapon Set Passive Skill Points. Danach kannst du zur Inselroute zurückkehren.",
+      "target": "+2 Weapon Set Passive Skill Points",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "veteranText": "Navali → Hinekoras Tätowierung benutzen → +2 Waffenset-Punkte"
+    },
+    {
+      "id": "a4-plunders",
+      "act": "Act 4",
+      "zone": "Plunder's Point",
+      "zoneMatch": [
+        "plunder's point"
+      ],
+      "exactZone": true,
+      "cue": "Dannig → Sprengladungen → Expedition → Deserted Post → Farrow und Foliant",
+      "instruction": "Ruf Dannig am Ausgrabungsplatz herbei. Platziere die Sprengladungen, zünde sie bei Dannig und räume die Expedition. Betritt danach die Deserted Post, ruf Farrow herbei und hol das Runenschmiedewissen aus dem Folianten.",
+      "target": "Verisium Anvil",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "veteranText": "Dannig → Sprengladungen → Expedition → Deserted Post → Farrow und Foliant",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "a4-arastas",
+      "act": "Act 4",
+      "zone": "Arastas",
+      "zoneMatch": [
+        "arastas"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "cue": "Torvian · Felswürfe in Priesterplattformen lenken → Ausgrabungsstätte",
+      "instruction": "Besiege Torvian, Hand of the Saviour. Stell dich vor die Plattform eines Priesters, wenn Torvian den Felswurf vorbereitet, und weich seitlich aus, sobald er wirft. Das Geschoss kann den Priester treffen. Geh danach in die Ausgrabungsstätte.",
+      "target": "The Excavation",
+      "veteranText": "Torvian · Felswürfe in Priesterplattformen lenken → Ausgrabungsstätte"
+    },
+    {
+      "id": "a4-excavation",
+      "act": "Act 4",
+      "zone": "The Excavation",
+      "zoneMatch": [
+        "excavation"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "cue": "Benedictus → Schmiede → Verhüllter vor Ort und in Kingsmarch → Rhodri",
+      "instruction": "Besiege Benedictus, First Herald of Utopia und folge Tavakai und Makoru zur Schmiede. Sprich dort mit dem Verhüllten und kehre danach nach Kingsmarch zurück. Sprich dort erneut mit dem Verhüllten und bei den Docks mit Rhodri für die Fahrt nach Ngakanu.",
+      "target": "Ngakanu",
+      "veteranText": "Benedictus → Schmiede → Verhüllter vor Ort und in Kingsmarch → Rhodri"
+    },
+    {
+      "id": "a4-ngakanu",
+      "act": "Act 4",
+      "zone": "Ngakanu",
+      "zoneMatch": [
+        "ngakanu"
+      ],
+      "exactZone": true,
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html",
+      "cue": "Früher Besuch → Kaimana · nach der Schmiede → Rhodri → Heart of the Tribe",
+      "instruction": "Wenn die Bewohner noch friedlich sind, kannst du mit Kaimana sprechen. Für den Weg zum Heart of the Tribe kommst du nach der Schmiede in Arastas mit Rhodri zurück.",
+      "target": "Heart of the Tribe",
+      "veteranText": "Früher Besuch → Kaimana · nach der Schmiede → Rhodri → Heart of the Tribe"
+    },
+    {
+      "id": "a4-tavakai",
+      "act": "Act 4",
+      "zone": "Heart of the Tribe",
+      "zoneMatch": [
+        "heart of the tribe"
+      ],
+      "exactZone": true,
+      "cue": "Tavakai in drei Phasen → mit Tavakai sprechen → Kingsmarch → Interludes",
+      "instruction": "Besiege Tavakai, the Chieftain in allen drei Phasen. Sprich nach dem Kampf mit Tavakai, kehre nach Kingsmarch zurück und folge dem Verhüllten zu den drei Interludes.",
+      "target": "Interludes",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "veteranText": "Tavakai in drei Phasen → mit Tavakai sprechen → Kingsmarch → Interludes",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
+    },
+    {
+      "id": "i-stones-serle",
+      "act": "Interludes",
+      "zone": "Stones of Serle",
+      "zoneMatch": [
+        "stones of serle"
+      ],
+      "exactZone": true,
+      "cue": "Sechs Runed Megaliths",
+      "instruction": "Die sechs Runed Megaliths aktivieren und den Übergang zum Blackwood prüfen.",
+      "target": "The Curse of Holten",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn dir einer fehlt, geh die Karte am zuletzt geöffneten Abzweig durch. Notiere einen unnötigen Rückweg für die nächste Wiederholung.",
+      "highlight": "sechs Runed Megaliths aktivieren"
+    },
+    {
+      "id": "i-wolvenhold",
+      "act": "Interludes",
+      "zone": "Wolvenhold",
+      "zoneMatch": [
+        "wolvenhold"
+      ],
+      "exactZone": true,
+      "cue": "Oswin und Warden's Ledger",
+      "instruction": "Oswin besiegen und das Warden’s Ledger benutzen.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Der Punkte-Stopp ist ein eigener Ast der Holten-Route. Den Abschluss im Holten Estate separat abhaken.",
+      "highlight": "Warden’s Ledger benutzen"
+    },
+    {
+      "id": "i-holten-estate",
+      "act": "Interludes",
+      "zone": "Holten Estate",
+      "zoneMatch": [
+        "holten estate"
+      ],
+      "exactZone": true,
+      "cue": "Holten abschließen",
+      "instruction": "Die obere Etage erreichen und Wulfric und Elswyth besiegen.",
+      "target": "The Curse of Holten abschließen",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Den nächsten Reiseauftrag beim Hooded One prüfen. Im Run-Log die Interlude-Namen verwenden, weil du ihre Reihenfolge ändern kannst.",
+      "highlight": "obere Etage erreichen"
+    },
+    {
+      "id": "i-khari",
+      "act": "Interludes",
+      "zone": "Khari Crossing",
+      "zoneMatch": [
+        "khari crossing"
+      ],
+      "exactZone": true,
+      "cue": "Akthi, Anundr und Risu",
+      "instruction": "Akthi und Anundr besiegen und danach bei Risu abgeben.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Kontrolliere nach der Abgabe, dass die Punkte tatsächlich verfügbar sind. Der Bosskampf ist für HC ein eigener Risiko- und Zeitsplit.",
+      "highlight": "bei Risu abgeben"
+    },
+    {
+      "id": "i-skullmaw",
+      "act": "Interludes",
+      "zone": "Skullmaw Stairway",
+      "zoneMatch": [
+        "skullmaw stairway",
+        "molten shrine"
+      ],
+      "exactZone": true,
+      "cue": "Molten One's Gift",
+      "instruction": "Molten Shrine finden, Siegel aktivieren und das Geschenk benutzen.",
+      "target": "+5 % Maximum Life",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "In HC für die späteren Bosskämpfe mitnehmen. Die Seals als eigener kurzer Route-Check lohnen sich beim ersten Trainingslauf.",
+      "highlight": "Molten Shrine finden"
+    },
+    {
+      "id": "i-qimah-boon",
+      "act": "Interludes",
+      "zone": "Qimah",
+      "zoneMatch": [
+        "qimah"
+      ],
+      "exactZone": true,
+      "cue": "Orbala's Pillar für deinen Engpass",
+      "instruction": "Am Pillar den Boon passend zu Resistenzen, Attributen oder Bewegung wählen.",
+      "target": "Wechselbarer Boon",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Schließe in HC zuerst eine erkennbare Resistenzlücke. Die Auswahl lässt sich später am Pillar ändern.",
+      "highlight": "Boon passend zu Resistenzen, Attributen oder Bewegung"
+    },
+    {
+      "id": "i-qimah-reservoir",
+      "act": "Interludes",
+      "zone": "Qimah Reservoir",
+      "zoneMatch": [
+        "qimah reservoir"
+      ],
+      "exactZone": true,
+      "cue": "Azmadi und Grand Barya",
+      "instruction": "Azmadi besiegen und danach mit der Grand Barya interagieren.",
+      "target": "The Stolen Barya abschließen",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Den Boss-Split am Kill messen und das Ende erst nach der Questinteraktion abhaken.",
+      "highlight": "mit der Grand Barya interagieren"
+    },
+    {
+      "id": "i-kriar-spirit",
+      "act": "Interludes",
+      "zone": "Kriar Village",
+      "zoneMatch": [
+        "kriar village"
+      ],
+      "exactZone": true,
+      "cue": "Lythara für 40 Spirit",
+      "instruction": "Besiege Lythara und benutze den Gemcrust Skull.",
+      "target": "+40 Spirit",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Stufe der Uncut Spirit Gem kann von der Reihenfolge der Interludes abhängen.",
+      "highlight": "Spirit-Belohnung benutzen"
+    },
+    {
+      "id": "i-yeti-tusks",
+      "act": "Interludes",
+      "zone": "Howling Caves",
+      "zoneMatch": [
+        "howling caves"
+      ],
+      "exactZone": true,
+      "cue": "Icy Tusks für Hilda",
+      "instruction": "Yeti besiegen, Icy Tusks mitnehmen und die Quest bei Hilda abgeben.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Bei der Abgabe das Buch benutzen. Rakkar im Folgegebiet ist ein eigener Story-Schritt.",
+      "highlight": "Icy Tusks mitnehmen"
+    },
+    {
+      "id": "i-rakkar",
+      "act": "Interludes",
+      "zone": "Glacial Tarn",
+      "zoneMatch": [
+        "glacial tarn"
+      ],
+      "exactZone": true,
+      "cue": "Rakkar für den Weg nach oben",
+      "instruction": "Rakkar besiegen und den Ausgang Richtung Kriar Peaks nehmen.",
+      "target": "Doryani's Contingency fortsetzen",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Falls die Icy Tusks noch im Inventar sind, die Abgabe bei Hilda für den nächsten Reise-Stopp vormerken.",
+      "highlight": "Ausgang Richtung Kriar Peaks"
+    },
+    {
+      "id": "i-cuachic-vault",
+      "act": "Interludes",
+      "zone": "Cuachic Vault",
+      "zoneMatch": [
+        "cuachic vault"
+      ],
+      "exactZone": true,
+      "cue": "Zolin und Zelina",
+      "instruction": "Bossduo besiegen und den Interlude-Abschluss beim Hooded One prüfen.",
+      "target": "Doryani's Contingency abschließen",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Nach allen drei Interludes die letzte Punkteabgabe beim Hooded One und den Atlas-Unlock erledigen. Vor der ersten Map Flask, Resistenz und Gem-Stufen prüfen.",
+      "highlight": "Interlude-Abschluss beim Hooded One"
+    },
+    {
+      "id": "a2-lightless",
+      "act": "Act 2",
+      "zone": "Lightless Passage",
+      "zoneMatch": [
+        "lightless passage",
+        "lichtlose passage"
+      ],
+      "exactZone": true,
+      "cue": "Abgrundspalten bis zum Brunnen folgen",
+      "instruction": "Abgrundspalten bis zum Brunnen folgen.",
+      "target": "Lightless Passage",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "source": "https://poe2db.tw/us/Lightless_Passage",
+      "mandatory": false,
+      "veteranText": "Höhle durchqueren und zum Brunnen gehen."
+    },
+    {
+      "id": "a2-well",
+      "act": "Act 2",
+      "zone": "The Well of Souls",
+      "zoneMatch": [
+        "well of souls",
+        "brunnen der seelen",
+        "der brunnen der seelen"
+      ],
+      "exactZone": true,
+      "cue": "Entweihte Modifikatoren am Brunnen enthüllen",
+      "instruction": "Entweihte Modifikatoren am Brunnen enthüllen.",
+      "target": "The Well of Souls",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "source": "https://poe2db.tw/us/The_Well_of_Souls",
+      "mandatory": false,
+      "veteranText": "Brunnen für entweihte Modifikatoren benutzen."
+    },
+    {
+      "id": "a2-skull",
+      "act": "Act 2",
+      "zone": "Skull of the Titan",
+      "zoneMatch": [
+        "skull of the titan",
+        "schädel des titanen",
+        "runic vault",
+        "runengewölbe"
+      ],
+      "exactZone": true,
+      "cue": "Runengewölbe in Runes of Aldur finden",
+      "instruction": "Runengewölbe in Runes of Aldur finden.",
+      "target": "Skull of the Titan",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "source": "https://domistae.github.io/poe2-leveling/poe2_act2_guide.html",
+      "mandatory": false,
+      "veteranText": "Höhleneingang suchen und mit Farrow sprechen."
+    },
+    {
+      "id": "i-scorched-farmlands",
+      "act": "Interludes",
+      "zone": "Scorched Farmlands",
+      "zoneMatch": [
+        "scorched farmlands"
+      ],
+      "exactZone": true,
+      "cue": "Hexen besiegen → Stones of Serle",
+      "instruction": "Besiege die beiden Hexen und folge dem Weg zu den Stones of Serle.",
+      "compactSteps": [
+        "Hexen besiegen → Stones of Serle"
+      ],
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "source": "https://poe2db.tw/us/Interlude_Curse_of_Holten",
+      "mandatory": true
+    },
+    {
+      "id": "i-holten-chapel",
+      "act": "Interludes",
+      "zone": "Holten",
+      "zoneMatch": [
+        "holten"
+      ],
+      "exactZone": true,
+      "cue": "Kapelle → optionales Bossduo",
+      "instruction": "Aktiviere in der Kapelle den Psalm of Blood für Sigbert und Godwin oder geh direkt zum Holten Estate.",
+      "compactSteps": [
+        "Kapelle → optionales Bossduo"
+      ],
+      "kind": "Optionaler Boss",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "source": "https://poe2db.tw/us/Interlude_Curse_of_Holten",
+      "mandatory": false
+    },
+    {
+      "id": "i-etched-ravine",
+      "act": "Interludes",
+      "zone": "Etched Ravine",
+      "zoneMatch": [
+        "etched ravine"
+      ],
+      "exactZone": true,
+      "cue": "Stormgore → Cuachic Vault",
+      "instruction": "Besiege Stormgore am Ende der Schlucht und betritt den Cuachic Vault.",
+      "compactSteps": [
+        "Stormgore → Cuachic Vault"
+      ],
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "source": "https://poe2db.tw/us/Interlude_Doryanis_Contingency",
+      "mandatory": true
+    },
+    {
+      "id": "i-sel-khari",
+      "act": "Interludes",
+      "zone": "Sel Khari Sanctuary",
+      "zoneMatch": [
+        "sel khari sanctuary"
+      ],
+      "exactZone": true,
+      "cue": "Elzarah → Asala → Galai Gates",
+      "instruction": "Besiege Elzarah und sprich mit Asala. Weiter geht es zu den Galai Gates.",
+      "compactSteps": [
+        "Elzarah → Asala → Galai Gates"
+      ],
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "source": "https://poe2db.tw/us/Interlude_The_Stolen_Barya",
+      "mandatory": true
+    },
+    {
+      "id": "i-galai-gates",
+      "act": "Interludes",
+      "zone": "The Galai Gates",
+      "zoneMatch": [
+        "galai gates"
+      ],
+      "exactZone": true,
+      "cue": "Vornas besiegen → Qimah",
+      "instruction": "Besiege Vornas am Durchgang nach Qimah und folge dem Weg in die Stadt.",
+      "compactSteps": [
+        "Vornas besiegen → Qimah"
+      ],
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "source": "https://poe2db.tw/us/Interlude_The_Stolen_Barya",
+      "mandatory": true
+    }
+  ],
+  "previousClues": [
+    {
+      "id": "a1-hunting-exit",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "exactZone": true,
+      "cue": "Wegweiser zu den Farmlands",
+      "instruction": "Dem Wegweiser an der Straße zu Ogham Farmlands folgen und dort den Waypoint nehmen.",
+      "target": "Ogham Farmlands",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Markiere den Ausgang, auch wenn du Crowbell oder Freythorn zuerst mitnehmen willst.",
+      "veteranText": "Wegweiser an der Straße → Farmlands und Waypoint.",
+      "highlight": "Wegweiser an der Straße"
+    },
+    {
+      "id": "a1-hunting-blood",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Blutspur als Richtungshinweis",
+      "instruction": "Die Blutspur beim Ritualaltar zeigt grob in Richtung Crowbell. Nach dem Kill das Book of Specialisation benutzen.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Crowbell wechselt während des Kampfes die Position. Beim schweren Slam aus der Trefferfläche gehen.",
+      "veteranText": "Blutspur am Ritualaltar zeigt grob Richtung Crowbell → +2 Punkte.",
+      "highlight": "Book of Specialisation benutzen"
+    },
+    {
+      "id": "a1-grelwood-roots",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Leuchtende Wurzeln",
+      "instruction": "Den leuchtenden Wurzeln folgen.",
+      "target": "Tree of Souls",
+      "kind": "Permanente Belohnung",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Nur den markierten Weg nehmen, nicht die ganze Zone clearen."
+    },
+    {
+      "id": "a1-grelwood-river",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Fluss stromaufwärts",
+      "instruction": "Dem Fluss stromaufwärts folgen.",
+      "target": "Red Vale",
+      "kind": "Gebietseingang",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Die Zone kann gedreht sein; das Muster bleibt wichtiger als die Himmelsrichtung."
+    },
+    {
+      "id": "a1-hunting-blood",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Blutspur beim Ritualaltar",
+      "instruction": "Die Blutspur zeigt grob in Richtung der Arena.",
+      "target": "Crowbell",
+      "kind": "Pflichtboss",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Nicht nach einer festen Ecke suchen; die Spur ist der schnellere Hinweis."
+    },
+    {
+      "id": "a1-hunting-locusts",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Locust-Spur nach dem Ritual",
+      "instruction": "Nach dem Ritual fliegen die Heuschrecken in Richtung Freythorn.",
+      "target": "Freythorn",
+      "kind": "Permanente Belohnung",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Die Spur führt direkt zum nächsten relevanten Ritual-/Gebietspfad."
+    },
+    {
+      "id": "a1-hunting-signpost",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Wegweiser",
+      "instruction": "Dem Wegweiser folgen.",
+      "target": "Ogham Farmlands",
+      "kind": "Gebietseingang",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Der Wegweiser ist der zuverlässige Abzweig für die Farmen."
+    },
+    {
+      "id": "a2-traitors-parchment",
+      "act": "Act 2",
+      "zone": "Traitor's Passage",
+      "zoneMatch": [
+        "traitor's passage"
+      ],
+      "cue": "Maraketh-Pergament an einem Ast",
+      "instruction": "Dem Ast mit Pergament folgen.",
+      "target": "Balbala",
+      "kind": "Optionaler Boss/Ascendancy",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": false,
+      "note": "Der andere Ast ist der Ausgang; die Prüfung nur laufen, wenn sie in den Plan passt."
+    },
+    {
+      "id": "a2-mastodon-cracks",
+      "act": "Act 2",
+      "zone": "Mastodon Badlands",
+      "zoneMatch": [
+        "mastodon badlands"
+      ],
+      "cue": "Risse im Boden",
+      "instruction": "Den Rissen im Boden folgen.",
+      "target": "Lightless Passage / Well of Souls",
+      "kind": "Permanenter Fortschritt",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Vor Keth erledigen, wenn der Gem-Level-Vorteil bestätigt bleibt."
+    },
+    {
+      "id": "a2-titan-heads",
+      "act": "Act 2",
+      "zone": "Valley of the Titans",
+      "zoneMatch": [
+        "valley of the titans"
+      ],
+      "cue": "Riesige Titanenköpfe",
+      "instruction": "Jeden sichtbaren Kopf über den kurzen Canyon bis zum Siegel verfolgen.",
+      "target": "Ancient Seals",
+      "kind": "Permanenter Fortschritt",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Die Köpfe zeigen die Struktur der Zone bereits vom Eingang aus."
+    },
+    {
+      "id": "a3-explorers",
+      "act": "Act 3",
+      "zone": "Jungle Camps",
+      "zoneMatch": [
+        "jungle",
+        "jungle camps"
+      ],
+      "cue": "Explorer im Dschungelcamp",
+      "instruction": "Explorer ansprechen; das nächste Gebiet wird auf der Minimap markiert.",
+      "target": "Nächstes Gebiet",
+      "kind": "Gebietseingang",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Nicht nur an der Kartenkante suchen; erst NPC-Hinweis auslösen."
+    },
+    {
+      "id": "a1-grelwood-roots",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Red Vale und Runic Seals",
+      "instruction": "Nach dem Rust King die Runed Spikes bei Renly holen und die drei Runic Seals aktivieren.",
+      "target": "Tree of Souls / Grim Tangle",
+      "kind": "Questziel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die leuchtenden Wurzeln aus unserer Layoutnotiz sind ein Signal zum Testen. Der Questschritt mit den Runed Spikes gibt die Reihenfolge vor."
+    },
+    {
+      "id": "a1-cemetery-keys",
+      "act": "Act 1",
+      "zone": "Cemetery of the Eternals",
+      "zoneMatch": [
+        "cemetery of the eternals"
+      ],
+      "exactZone": true,
+      "cue": "Zwei Schlüsselhälften",
+      "instruction": "Draven und Asinia besiegen. Mit beiden Teilen das Memorial Gate bei Lachlann öffnen.",
+      "target": "Lachlann → Hunting Grounds",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Draven sitzt im Mausoleum of the Praetor, Asinia im Tomb of the Consort. Aktiviere die Abzweig-Waypoints, die auf deiner Strecke liegen."
+    },
+    {
+      "id": "a1-hunting-signpost",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Wegweiser",
+      "instruction": "Dem Wegweiser folgen.",
+      "target": "Ogham Farmlands",
+      "kind": "Gebietseingang",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": true,
+      "note": "Wegweiser als Orientierung testen. Für die Story zählt der Übergang nach Ogham Farmlands."
+    },
+    {
+      "id": "a1-ogham-village",
+      "act": "Act 1",
+      "zone": "Ogham Village",
+      "zoneMatch": [
+        "ogham village"
+      ],
+      "exactZone": true,
+      "cue": "Executioner und Leitis",
+      "instruction": "Executioner töten und Leitis befreien. Smithing Tools und Blacksmith’s Chest am Abzweig prüfen.",
+      "target": "Manor Ramparts",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Smithing Tools schalten bei Renly die Salvage Bench frei. Im SSF lohnt sich der Stopp, wenn du daraus direkt einen Sockel- oder Rune-Upgrade machst."
+    },
+    {
+      "id": "a1-geonor",
+      "act": "Act 1",
+      "zone": "Ogham Manor",
+      "zoneMatch": [
+        "ogham manor",
+        "iron manor"
+      ],
+      "exactZone": true,
+      "cue": "Geonor · Cold Res und Nebel",
+      "instruction": "Vor dem Boss Cold Res und Life Flask prüfen. Im Nebel auf Stimme und Ansturm achten.",
+      "target": "Act 1 abschließen",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Count Geonor",
+      "note": "In den Nebelphasen Raum zum seitlichen Ausweichen lassen. Split nach dem Kill nehmen und den Quest-Turn-in in der Stadt als separaten Stopp erfassen."
+    },
+    {
+      "id": "a2-mawdun-rails",
+      "act": "Act 2",
+      "zone": "Mawdun Mine",
+      "zoneMatch": [
+        "mawdun mine"
+      ],
+      "cue": "Verbundene Eisenbahnschienen",
+      "instruction": "An Kreuzungen den Abzweig nehmen, der an die Schienen angeschlossen bleibt.",
+      "target": "Hauptweg durch die Mine",
+      "kind": "Layoutregel",
+      "status": "confirmed",
+      "confidence": "hoch",
+      "mandatory": true,
+      "note": "Nicht in abgetrennte Gleis-Sackgassen abbiegen."
+    },
+    {
+      "id": "a2-traitors-parchment",
+      "act": "Act 2",
+      "zone": "Traitor's Passage",
+      "zoneMatch": [
+        "traitor's passage"
+      ],
+      "cue": "Maraketh-Pergament an einem Ast",
+      "instruction": "Dem Ast mit Pergament folgen.",
+      "target": "Balbala",
+      "kind": "Optionaler Boss/Ascendancy",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Das Pergament als Layoutsignal für Balbala testen. Ein Barya-Drop in Deshar ist die spätere Alternative."
+    },
+    {
+      "id": "a2-halani",
+      "act": "Act 2",
+      "zone": "Halani Gates",
+      "zoneMatch": [
+        "halani gates"
+      ],
+      "exactZone": true,
+      "cue": "Asala ans Tor holen",
+      "instruction": "Asala am Questmarker rufen und Jamanra in den Gates besiegen.",
+      "target": "Vastiri-Quest fortsetzen",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du später den Trial läufst, sichere seinen Waypoint am Abzweig. Jamanra hier und der spätere Act-Boss sind zwei Begegnungen."
+    },
+    {
+      "id": "a2-bone-pits",
+      "act": "Act 2",
+      "zone": "Bone Pits",
+      "zoneMatch": [
+        "bone pits"
+      ],
+      "exactZone": true,
+      "cue": "Tusks und Sun Clan Relic",
+      "instruction": "Iktab und Ekbab für die Tusks besiegen und beim Clear auf das Sun Clan Relic achten.",
+      "target": "Horn-Quest / Ancient Vows",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Das Relic bleibt ein eigener Abstecher für den Charm-Slot. Ein Filter für Quest-Items erleichtert den Rückcheck vor dem Zonenwechsel."
+    },
+    {
+      "id": "a2-mastodon-cracks",
+      "act": "Act 2",
+      "zone": "Mastodon Badlands",
+      "zoneMatch": [
+        "mastodon badlands"
+      ],
+      "cue": "Well of Souls als Crafting-Abstecher",
+      "instruction": "Bei Bedarf Lightless Passage betreten und den Well of Souls freischalten.",
+      "target": "Lightless Passage / Well of Souls",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Risse im Boden aus unserer Notiz kannst du als Layoutsignal prüfen. Plane den Abstecher, wenn ein Abyss-Craft deinen Run verbessert."
+    },
+    {
+      "id": "a2-heart-keth",
+      "act": "Act 2",
+      "zone": "Heart of Keth",
+      "zoneMatch": [
+        "heart of keth"
+      ],
+      "exactZone": true,
+      "cue": "Azarian und die Goddess Essence",
+      "instruction": "Azarian töten und die Goddess Essence of Water für die Quest entzünden.",
+      "target": "Horn-Quest",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Lass im Kampf Platz zwischen dir und den Feuerflächen. Questinteraktion vor dem Portal prüfen."
+    },
+    {
+      "id": "a2-titans-altar",
+      "act": "Act 2",
+      "zone": "Valley of the Titans",
+      "zoneMatch": [
+        "valley of the titans"
+      ],
+      "exactZone": true,
+      "cue": "Siegel und Relic Altar",
+      "instruction": "Drei Ancient Seals finden. Mit beiden Clan Relics den Altar für den Bonus nutzen.",
+      "target": "+1 Charm-Slot und wählbarer Charm-Bonus",
+      "kind": "Quest und permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die Siegel gehören zur Story. Ancient Vows ist ein eigener Stopp, den du am besten mit beiden Relics im Inventar abschließt."
+    },
+    {
+      "id": "a2-garukhan",
+      "act": "Act 2",
+      "zone": "Spires of Deshar",
+      "zoneMatch": [
+        "spires of deshar"
+      ],
+      "exactZone": true,
+      "cue": "Garukhan-Schrein vor dem Weiterweg",
+      "instruction": "Schwestern von Garukhan anklicken und Tor Gul für die Story besiegen.",
+      "target": "+10 % Lightning Resistance",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Der Resistenzbonus hilft für Jamanra. Schrein und Boss sind getrennte Interaktionen."
+    },
+    {
+      "id": "a2-jamanra",
+      "act": "Act 2",
+      "zone": "The Dreadnought",
+      "zoneMatch": [
+        "the dreadnought",
+        "dreadnought vanguard"
+      ],
+      "exactZone": true,
+      "cue": "Jamanra · Asalas Schutz",
+      "instruction": "Bei Sandsturm zu Asala. In Phase zwei die beweglichen Blitzlinien im Blick behalten.",
+      "target": "Act 2 abschließen",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Jamanra, the Abomination",
+      "note": "Prüfe Lightning Resistance, Flask und aktive Gems vor dem letzten Wagen. Trainiere das Aufsuchen des Schutzfelds auch bei weniger gutem DPS."
+    },
+    {
+      "id": "a1-riverbank",
+      "compactSteps": [
+        "WASD (empfohlen)",
+        "Verwundeter → Starterwaffe",
+        "Truhe → ersten Gem belegen",
+        "Bloated Miller → Lager"
+      ],
+      "gameplayTip": "Bewegung per Mausklick oder WASD wählen. Wir empfehlen WASD.",
+      "act": "Act 1",
+      "zone": "Riverbank",
+      "zoneMatch": [
+        "riverbank"
+      ],
+      "exactZone": true,
+      "cue": "Waffe und erster Gem",
+      "instruction": "Mit dem Verwundeten sprechen, die Starterwaffe ausrüsten und dem Weg folgen. Den ersten Skill aus der Truhe nehmen und belegen. Zügig weiterlaufen, ohne alle Gegner zu töten. Bloated Miller blockiert den Weg ins Lager.",
+      "target": "Clearfell Encampment",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Trainingssplit beim Betreten des Lagers. Leg Skill- und Flask-Tasten vor dem Start fest, damit der Vergleich beim zweiten Run passt."
+    },
+    {
+      "id": "a1-town",
+      "act": "Act 1",
+      "zone": "Clearfell Encampment",
+      "zoneMatch": [
+        "clearfell encampment"
+      ],
+      "exactZone": true,
+      "cue": "Questabgabe und Weiterreise",
+      "instruction": "Renly gibt am Start den Gem und nach Rust King die Runed Spikes. Nach Geonor zum Hooded One für Akt 2.",
+      "target": "Clearfell / Vastiri Outskirts",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Nach Rust King gibt Renly die Runed Spikes. Nach Lachlann den Ring bei Una abgeben und den Hooded One wecken. Unas Laute beim nächsten passenden Stopp abgeben."
+    },
+    {
+      "id": "a1-clearfell-exit",
+      "compactSteps": [
+        "Waypoint · The Mud Burrow",
+        "Optional: Mysterious Campsite → Uncut Skill Gem I",
+        "Optional: The Devourer → Uncut Support Gem I",
+        "Weltkarte (U) → Gebietsrand → The Grelwood"
+      ],
+      "campsiteTip": "Halte nach dem Mysterious Campsite Ausschau. Dort findest du einen Uncut Skill Gem (Stufe 1).",
+      "areaRewards": [
+        "Mysterious Campsite in Clearfell · Uncut Skill Gem (Stufe 1)",
+        "Quest in The Mud Burrow · Uncut Support Gem (Stufe 1)",
+        "Beira of the Rotten Pack · dauerhaft +10 % Kälteresistenz"
+      ],
+      "mudBurrowTip": "Der Eingang zu The Mud Burrow liegt meist direkt neben dem Waypoint. Besiege The Devourer in seinem Bau, um als Questbelohnung einen Uncut Support Gem (Stufe 1) zu erhalten. Empfohlen für Ligastarts und Anfänger.",
+      "act": "Act 1",
+      "zone": "Clearfell",
+      "zoneMatch": [
+        "clearfell"
+      ],
+      "exactZone": true,
+      "cue": "Weiter nach The Grelwood",
+      "instruction": "Aktiviere den Waypoint beim Eingang zu The Mud Burrow. Schau auf der Weltkarte (U), in welcher Richtung The Grelwood liegt. Folge dem Gebietsrand in diese Richtung, um das nächste Gebiet zu erreichen.",
+      "target": "Grelwood",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Im ersten HC-Lauf Beira für +10 % Kälteresistenz mitnehmen. Mud Burrow lohnt sich bei Gem-Bedarf."
+    },
+    {
+      "id": "a1-clearfell-beira",
+      "compactSteps": [
+        "Beira → Wolfskopf benutzen → +10 % Kälteresistenz"
+      ],
+      "act": "Act 1",
+      "zone": "Clearfell",
+      "zoneMatch": [
+        "clearfell"
+      ],
+      "exactZone": true,
+      "cue": "Beira für Kälteresistenz",
+      "instruction": "Achte auf vereiste Baumstämme. Dort findest du Beira of the Rotten Pack. Besiege sie und benutze den Head of the Winter Wolf für dauerhaft +10 % Kälteresistenz.",
+      "target": "+10 % Cold Resistance",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Guter HC-Stopp vor Geonor. Setz im Run-Log einen Haken für den benutzten Reward."
+    },
+    {
+      "id": "a1-devourer",
+      "act": "Act 1",
+      "zone": "Mud Burrow",
+      "zoneMatch": [
+        "mud burrow"
+      ],
+      "exactZone": true,
+      "cue": "Devourer bei Gem-Bedarf",
+      "instruction": "Plane den Abstecher ein, wenn dir ein Gem für den nächsten Power Spike fehlt.",
+      "target": "Devourer und Questabgabe",
+      "kind": "Gem-Abstecher",
+      "status": "rule",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Entscheide vor dem Run, welchen Gem du dort suchst. Erfasse Abstecher und Town-Turn-in zusammen."
+    },
+    {
+      "id": "a1-grelwood-roots",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Red Vale und Runic Seals",
+      "instruction": "Una beim Tree of Souls finden. Nach dem Rust King drei Runic Seals mit Renlys Runed Spikes aktivieren.",
+      "target": "Nach der Abgabe bei Una zum Grim Tangle",
+      "kind": "Questziel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die leuchtenden Wurzeln als Orientierung zum Baum prüfen. Sichere die Waypoints in Red Vale und Grim Tangle, sobald du auf die Abzweige triffst."
+    },
+    {
+      "id": "a1-grelwood-river",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Fluss stromaufwärts",
+      "instruction": "Dem Fluss stromaufwärts folgen.",
+      "target": "Red Vale",
+      "kind": "Gebietseingang",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": true,
+      "note": "Bei variierendem Layout einmal bewusst prüfen, ob der Fluss zum Red Vale führt. Ein Screenshot am Abzweig reicht."
+    },
+    {
+      "id": "a1-grelwood-mushrooms",
+      "act": "Act 1",
+      "zone": "Grelwood",
+      "zoneMatch": [
+        "grelwood"
+      ],
+      "cue": "Pilze am Boden",
+      "instruction": "Die Pilzspur zeigt den nahen Seiteneingang.",
+      "target": "Grim Tangle",
+      "kind": "Gebietseingang",
+      "status": "test",
+      "confidence": "mittel",
+      "mandatory": false,
+      "note": "Im ersten Lauf mit Screenshot und Zeitstempel bestätigen."
+    },
+    {
+      "id": "a1-red-vale-obelisks",
+      "act": "Act 1",
+      "zone": "Red Vale",
+      "zoneMatch": [
+        "red vale"
+      ],
+      "exactZone": true,
+      "cue": "Drei Obelisken, dann Rust King",
+      "instruction": "Die drei Obelisks of Rust anklicken, Rust King töten und zu Renly zurück.",
+      "target": "Runed Spikes",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Aktiviere den Waypoint. Von Renly geht es für die Runic Seals zurück nach Grelwood."
+    },
+    {
+      "id": "a1-grim-tangle",
+      "act": "Act 1",
+      "zone": "Grim Tangle",
+      "zoneMatch": [
+        "grim tangle"
+      ],
+      "exactZone": true,
+      "cue": "Durch zum Friedhof",
+      "instruction": "Den Ausgang zum Cemetery of the Eternals suchen. Ervig ist ein Support-Gem-Abstecher.",
+      "target": "Cemetery of the Eternals",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du den Gem einplanst, miss den Umweg inklusive Boss."
+    },
+    {
+      "id": "a1-grim-caskets",
+      "act": "Act 1",
+      "zone": "Grim Tangle",
+      "zoneMatch": [
+        "grim tangle"
+      ],
+      "exactZone": true,
+      "cue": "Särge als Wegsignal testen",
+      "instruction": "Die Sargspur als Orientierung Richtung Cemetery prüfen.",
+      "target": "Cemetery of the Eternals",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Vergleiche die Spur in mehreren Instanzen mit dem tatsächlichen Ausgang."
+    },
+    {
+      "id": "a1-cemetery-keys",
+      "act": "Act 1",
+      "zone": "Cemetery of the Eternals",
+      "zoneMatch": [
+        "cemetery of the eternals"
+      ],
+      "exactZone": true,
+      "cue": "Zwei Schlüsselhälften",
+      "instruction": "Beide Memorial Key Pieces sammeln, das Tor bei Lachlann öffnen und ihn danach besiegen.",
+      "target": "Lachlann → Hunting Grounds",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Draven sitzt im Mausoleum of the Praetor, Asinia im Tomb of the Consort. Nimm Lachlanns Ring für Una mit."
+    },
+    {
+      "id": "a1-mausoleum-draven",
+      "act": "Act 1",
+      "zone": "Mausoleum of the Praetor",
+      "zoneMatch": [
+        "mausoleum of the praetor"
+      ],
+      "exactZone": true,
+      "cue": "Dravens Schlüsselhälfte",
+      "instruction": "Draven besiegen, seine Memorial Key Piece aufheben und zum Friedhof zurück.",
+      "target": "Cemetery of the Eternals",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du die zweite Hälfte schon hast, geh direkt zum Memorial Gate."
+    },
+    {
+      "id": "a1-mausoleum-layout",
+      "act": "Act 1",
+      "zone": "Mausoleum of the Praetor",
+      "zoneMatch": [
+        "mausoleum of the praetor"
+      ],
+      "exactZone": true,
+      "cue": "Das Rad in der Mitte",
+      "instruction": "Wenn du das Rad findest, laufe vom Eingang durch das Rad weiter Richtung Außenwand.",
+      "target": "Dravens Arena",
+      "kind": "Layoutregel",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Das Muster ist eine Suchhilfe. Prüfe den tatsächlichen Weg im Trainingslauf."
+    },
+    {
+      "id": "a1-tomb-asinia",
+      "act": "Act 1",
+      "zone": "Tomb of the Consort",
+      "zoneMatch": [
+        "tomb of the consort"
+      ],
+      "exactZone": true,
+      "cue": "Asinias Schlüsselhälfte",
+      "instruction": "Asinia besiegen, ihre Memorial Key Piece mitnehmen und zum Friedhof zurück.",
+      "target": "Cemetery of the Eternals",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Für das Memorial Gate brauchst du beide Hälften. Welche Gruft du zuerst machst, ist egal."
+    },
+    {
+      "id": "a1-hunting-exit",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "exactZone": true,
+      "cue": "Den Ausgang zu den Farmlands sichern",
+      "instruction": "Ogham Farmlands betreten und den Waypoint nehmen. Crowbell und Freythorn nach Bedarf einplanen.",
+      "target": "Ogham Farmlands",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Komm beim Rückweg vom Abstecher direkt per Waypoint wieder auf die Storyroute."
+    },
+    {
+      "id": "a1-hunting-blood",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Crowbell für +2 Punkte",
+      "instruction": "Crowbell durch seine Arenen verfolgen und das Book of Specialisation benutzen.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Für die Story optional. Die Blutspur beim Ritualaltar gibt die ungefähre Richtung an."
+    },
+    {
+      "id": "a1-hunting-locusts",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Flugrichtung nach Freythorn",
+      "instruction": "Nach dem Ritual fliegen die Heuschrecken in Richtung Freythorn.",
+      "target": "Freythorn",
+      "kind": "Abstecher für Spirit",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Locust-Spur ist ein Layoutsignal zum Gegenprüfen. Entscheide vorher, ob die 30 Spirit deinen nächsten Skill aktivieren."
+    },
+    {
+      "id": "a1-hunting-signpost",
+      "act": "Act 1",
+      "zone": "Hunting Grounds",
+      "zoneMatch": [
+        "hunting grounds"
+      ],
+      "cue": "Wegweiser",
+      "instruction": "Dem Wegweiser folgen.",
+      "target": "Ogham Farmlands",
+      "kind": "Gebietseingang",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": true,
+      "note": "Wegweiser als Orientierung testen. Für die Story zählt der Übergang nach Ogham Farmlands.",
+      "exactZone": true
+    },
+    {
+      "id": "a1-freythorn-rituals",
+      "act": "Act 1",
+      "zone": "Freythorn",
+      "zoneMatch": [
+        "freythorn",
+        "freydorn"
+      ],
+      "exactZone": true,
+      "cue": "Drei kleine Rituale vor dem großen Altar",
+      "instruction": "Kleine Rituale abschließen, King in the Mists töten und Gembloom Skull benutzen.",
+      "target": "+30 Spirit",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "In HC im Ritualkreis Platz zum Ausweichen behalten. Für den Boss die beiden Bewegungsmarkierungen im nächsten Hinweis merken."
+    },
+    {
+      "id": "a1-king-markings",
+      "act": "Act 1",
+      "zone": "Freythorn",
+      "zoneMatch": [
+        "freythorn",
+        "freydorn"
+      ],
+      "exactZone": true,
+      "cue": "King in the Mists · Rot und Violett",
+      "instruction": "Violett in Bewegung bleiben. Bei Rot zum Ablauf der Markierung stillstehen.",
+      "target": "Ritual of Dance / Ritual of Meditation",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Bei Dance löst Stehenbleiben den Root aus. Bei Meditation ist Bewegung beim Ablauf riskant. Plane deinen Platz dafür früh."
+    },
+    {
+      "id": "a1-farmlands-exit",
+      "act": "Act 1",
+      "zone": "Ogham Farmlands",
+      "zoneMatch": [
+        "ogham farmlands"
+      ],
+      "exactZone": true,
+      "cue": "Weiter zum Dorf",
+      "instruction": "Zum Ausgang nach Ogham Village. Unas Laute liegt in einem Haus beim Checkpoint.",
+      "target": "Ogham Village",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die Laute beim nächsten Stadtbesuch abgeben und das Buch benutzen."
+    },
+    {
+      "id": "a1-una-lute",
+      "act": "Act 1",
+      "zone": "Ogham Farmlands",
+      "zoneMatch": [
+        "ogham farmlands"
+      ],
+      "exactZone": true,
+      "cue": "Unas Laute mitnehmen",
+      "instruction": "Una’s Lute Box beim Haus suchen und die Laute bei Una abgeben.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Bündle die Abgabe mit dem nächsten Stadtbesuch. Punkte erst abhaken, wenn das Buch benutzt ist."
+    },
+    {
+      "id": "a1-ogham-village",
+      "act": "Act 1",
+      "zone": "Ogham Village",
+      "zoneMatch": [
+        "ogham village"
+      ],
+      "exactZone": true,
+      "cue": "Executioner und Leitis",
+      "instruction": "Executioner besiegen, den Hebel betätigen, Leitis befreien und zu den Manor Ramparts weiter.",
+      "target": "Manor Ramparts",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Beim ersten SSF-Charakter beim Schmiedehaus vorbeigehen, wenn du die Salvage Bench dafür einplanst."
+    },
+    {
+      "id": "a1-smithing-tools",
+      "act": "Act 1",
+      "zone": "Ogham Village",
+      "zoneMatch": [
+        "ogham village"
+      ],
+      "exactZone": true,
+      "cue": "Werkzeug für Renly",
+      "instruction": "Die gepflasterte Straße beim Suchen nach dem Schmiedehaus als Orientierung nehmen.",
+      "target": "Salvage Bench",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Smithing Tools bei Renly abgeben. Beim ersten SSF-Charakter lohnt sich der Unlock für spätere Sockel-Upgrades."
+    },
+    {
+      "id": "a1-ramparts",
+      "act": "Act 1",
+      "zone": "Manor Ramparts",
+      "zoneMatch": [
+        "manor ramparts"
+      ],
+      "exactZone": true,
+      "cue": "Eingang zum Anwesen",
+      "instruction": "Zum Ogham Manor durchlaufen. Jetzt Kälteresistenz und Life Flask für Geonor prüfen.",
+      "target": "Ogham Manor",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der Galgen beim Checkpoint ist ein optionaler Support-Gem-Stopp."
+    },
+    {
+      "id": "a1-candlemass",
+      "act": "Act 1",
+      "zone": "Ogham Manor",
+      "zoneMatch": [
+        "ogham manor",
+        "iron manor"
+      ],
+      "exactZone": true,
+      "cue": "Candlemass für Leben",
+      "instruction": "Candlemass besiegen und die permanente Lebensbelohnung benutzen.",
+      "target": "+20 Maximum Life",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Einplanen, wenn der Kampf sauber läuft. Den Geonor-Split getrennt nehmen, damit der Abstecher messbar bleibt."
+    },
+    {
+      "id": "a1-geonor",
+      "act": "Act 1",
+      "zone": "Ogham Manor",
+      "zoneMatch": [
+        "ogham manor",
+        "iron manor"
+      ],
+      "exactZone": true,
+      "cue": "Geonor · Cold Res und Nebel",
+      "instruction": "Geonor besiegen. Cold Res und Life Flask prüfen. Im Nebel auf den Ansturm nach seiner Stimme achten.",
+      "target": "Clearfell Encampment → Vastiri Outskirts",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Count Geonor",
+      "note": "In den Nebelphasen Raum zum seitlichen Ausweichen lassen. Split nach dem Kill nehmen und den Quest-Turn-in in der Stadt als separaten Stopp erfassen."
+    },
+    {
+      "id": "a2-outskirts",
+      "act": "Act 2",
+      "zone": "Vastiri Outskirts",
+      "zoneMatch": [
+        "vastiri outskirts"
+      ],
+      "exactZone": true,
+      "cue": "Rathbreaker mit freiem Rückweg",
+      "instruction": "Rathbreaker besiegen, Abstand zu Fernkämpfern halten und danach mit Zarka sprechen.",
+      "target": "Ardura Caravan",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Life Flask auffüllen und vor dem Boss eine freie Ausweichlinie sichern. Den ersten Stadtstopp für Waffe, Flask und Gem bündeln."
+    },
+    {
+      "id": "a2-caravan",
+      "act": "Act 2",
+      "zone": "Ardura Caravan",
+      "zoneMatch": [
+        "ardura caravan"
+      ],
+      "exactZone": true,
+      "cue": "Nächsten Queststopp wählen",
+      "instruction": "Mit Asala sprechen und den nächsten Ort auf der Desert Map wählen. Questitems bei Zarka abgeben.",
+      "target": "Desert Map",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · The Trail of Corruption (Akt 2)",
+      "note": "Start: Mawdun Quarry. Nach Rudja mit Risu und Asala reden. Nach dem Aktboss draußen zum Hooded One und mit Asala nach Sandswept Marsh reisen."
+    },
+    {
+      "id": "a2-caravan-horn",
+      "act": "Act 2",
+      "zone": "Ardura Caravan",
+      "zoneMatch": [
+        "ardura caravan"
+      ],
+      "exactZone": true,
+      "cue": "Horn am Sandsturm benutzen",
+      "instruction": "Nach Tusks, Essence of Water und Flame Ruby das Horn bei Zarka holen. Zum Sandsturm reisen und das Horn benutzen.",
+      "target": "Deshar",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · The Trail of Corruption (Akt 2)",
+      "note": "Die Questmarkierung zeigt den Interaktionspunkt an der Karawane. Danach bei Asala weiterreisen."
+    },
+    {
+      "id": "a2-quarry",
+      "act": "Act 2",
+      "zone": "Mawdun Quarry",
+      "zoneMatch": [
+        "mawdun quarry"
+      ],
+      "exactZone": true,
+      "cue": "Zum Eingang der Mine",
+      "instruction": "Über die Brücken und Checkpoints zum Eingang der Mawdun Mine.",
+      "target": "Mawdun Mine",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die Faridun War Cache beim Checkpoint ist ein kurzer Umweg, wenn du einen Artificer’s Orb brauchst."
+    },
+    {
+      "id": "a2-mawdun-rescue",
+      "act": "Act 2",
+      "zone": "Mawdun Mine",
+      "zoneMatch": [
+        "mawdun mine"
+      ],
+      "exactZone": true,
+      "cue": "Risu aus dem Käfig holen",
+      "instruction": "Rudja besiegen, Risu befreien und danach bei der Karawane abgeben.",
+      "target": "Questfortschritt in der Karawane",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Nimm den Waypoint auf der Route und bleib an Kreuzungen an verbundenen Gleisen. Die Gleisnotiz funktioniert als Orientierung bei gedrehten Layouts."
+    },
+    {
+      "id": "a2-mawdun-rails",
+      "act": "Act 2",
+      "zone": "Mawdun Mine",
+      "zoneMatch": [
+        "mawdun mine"
+      ],
+      "cue": "Verbundene Eisenbahnschienen",
+      "instruction": "An Kreuzungen den Abzweig nehmen, der an die Schienen angeschlossen bleibt.",
+      "target": "Hauptweg durch die Mine",
+      "kind": "Layoutregel",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Nicht in abgetrennte Gleis-Sackgassen abbiegen.",
+      "exactZone": true
+    },
+    {
+      "id": "a2-traitors-exit",
+      "act": "Act 2",
+      "zone": "Traitor's Passage",
+      "zoneMatch": [
+        "traitor's passage"
+      ],
+      "exactZone": true,
+      "cue": "Weiter zu den Halani Gates",
+      "instruction": "Dem Hauptweg über die Treppen folgen und den Ausgang zu den Halani Gates nehmen.",
+      "target": "Halani Gates",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Papiersiegel markieren den Balbala-Abzweig. Wenn du dort abbiegst, öffnest du ihre Arena über die Runic Seals."
+    },
+    {
+      "id": "a2-traitors-parchment",
+      "act": "Act 2",
+      "zone": "Traitor's Passage",
+      "zoneMatch": [
+        "traitor's passage"
+      ],
+      "cue": "Maraketh-Pergament an einem Ast",
+      "instruction": "Dem Ast mit Pergament folgen.",
+      "target": "Balbala",
+      "kind": "Optionaler Boss/Ascendancy",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Das Pergament als Layoutsignal für Balbala testen. Ein Barya-Drop in Deshar ist die spätere Alternative.",
+      "exactZone": true
+    },
+    {
+      "id": "a2-halani",
+      "act": "Act 2",
+      "zone": "Halani Gates",
+      "zoneMatch": [
+        "halani gates"
+      ],
+      "exactZone": true,
+      "cue": "Asala ans Tor holen",
+      "instruction": "Asala die Tore öffnen lassen, Jamanra bekämpfen und nach dem Sandsturm zur Karawane zurück.",
+      "target": "Drei Questäste für das Horn",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der Trial-Waypoint lässt sich beim nächsten Karawanenstopp sichern. Jamanra hier und der spätere Aktboss sind zwei Kämpfe."
+    },
+    {
+      "id": "a2-mastodon-main",
+      "act": "Act 2",
+      "zone": "Mastodon Badlands",
+      "zoneMatch": [
+        "mastodon badlands"
+      ],
+      "exactZone": true,
+      "cue": "Zu den Bone Pits",
+      "instruction": "Den Weg zu den Bone Pits nehmen. Dort liegen die Mastodon Tusks für das Horn.",
+      "target": "Bone Pits",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Für den ersten Vergleichslauf diesen Ast vor Keth und Valley of the Titans laufen."
+    },
+    {
+      "id": "a2-mastodon-cracks",
+      "act": "Act 2",
+      "zone": "Mastodon Badlands",
+      "zoneMatch": [
+        "mastodon badlands"
+      ],
+      "cue": "Well of Souls als Crafting-Abstecher",
+      "instruction": "Bei Bedarf Lightless Passage betreten und den Well of Souls freischalten.",
+      "target": "Lightless Passage / Well of Souls",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Risse im Boden aus unserer Notiz kannst du als Layoutsignal prüfen. Plane den Abstecher, wenn ein Abyss-Craft deinen Run verbessert.",
+      "exactZone": true
+    },
+    {
+      "id": "a2-bone-pits",
+      "act": "Act 2",
+      "zone": "Bone Pits",
+      "zoneMatch": [
+        "bone pits"
+      ],
+      "exactZone": true,
+      "cue": "Tusks und Sun Clan Relic",
+      "instruction": "Iktab und Ekbab besiegen und die Mastodon Tusks bei Zarka abgeben.",
+      "target": "Erstes Questitem für das Horn",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du den Charm-Slot einplanst, sammel beim Durchlaufen das Sun Clan Relic ein."
+    },
+    {
+      "id": "a2-keth-exit",
+      "act": "Act 2",
+      "zone": "Keth",
+      "zoneMatch": [
+        "keth"
+      ],
+      "exactZone": true,
+      "cue": "Abstieg in die Lost City",
+      "instruction": "Den Eingang zur Lost City nehmen. Der Weg zum Questboss Azarian führt durch die Buried Shrines.",
+      "target": "The Lost City",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Das Kabala Clan Relic auf dem Weg einsammeln, wenn du den Charm-Slot einplanst."
+    },
+    {
+      "id": "a2-keth-kabala",
+      "act": "Act 2",
+      "zone": "Keth",
+      "zoneMatch": [
+        "keth"
+      ],
+      "exactZone": true,
+      "cue": "Kabala und das Clan Relic",
+      "instruction": "Kabala für das Buch töten. Beim Durchlaufen von Keth nach dem Kabala Clan Relic schauen.",
+      "target": "+2 Waffen-Set-Passivpunkte / Ancient Vows",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Keth ist auch ein Ausgangspunkt der Storyroute über Lost City und Buried Shrines. Der Boss und das Relic sind getrennte Ziele."
+    },
+    {
+      "id": "a2-lost-city",
+      "act": "Act 2",
+      "zone": "Lost City",
+      "zoneMatch": [
+        "lost city"
+      ],
+      "exactZone": true,
+      "cue": "Weiter zu den Buried Shrines",
+      "instruction": "In der Lost City den Ausgang zu den Buried Shrines suchen.",
+      "target": "Buried Shrines",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Das Golden Tomb lohnt sich, wenn du einen Uncut Spirit Gem für den Build brauchst."
+    },
+    {
+      "id": "a2-heart-keth",
+      "act": "Act 2",
+      "zone": "Buried Shrines",
+      "zoneMatch": [
+        "buried shrines",
+        "heart of keth"
+      ],
+      "exactZone": true,
+      "cue": "Azarian und die Goddess Essence",
+      "instruction": "Azarian besiegen, Halani mit den Everburning Cinders entzünden und die Essence of Water mitnehmen.",
+      "target": "Essence of Water zu Zarka",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Buried Shrines",
+      "note": "Halte im Kampf eine freie Ausweichlinie zwischen den Feuerflächen. Die Essence fällt nach der Interaktion."
+    },
+    {
+      "id": "a2-titans-seals",
+      "act": "Act 2",
+      "zone": "Valley of the Titans",
+      "zoneMatch": [
+        "valley of the titans"
+      ],
+      "exactZone": true,
+      "cue": "Drei Siegel für den Grotto-Eingang",
+      "instruction": "Drei Ancient Seals aktivieren und danach den Titan Grotto betreten.",
+      "target": "Titan Grotto",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Die drei Siegel gehören zur Horn-Quest. Die Clan Relics gehören zum Altar."
+    },
+    {
+      "id": "a2-titans-altar",
+      "act": "Act 2",
+      "zone": "Valley of the Titans",
+      "zoneMatch": [
+        "valley of the titans"
+      ],
+      "exactZone": true,
+      "cue": "Ancient Vows für den Charm-Slot",
+      "instruction": "Das Sun Clan Relic und das Kabala Clan Relic am Altar einsetzen und einen Bonus wählen.",
+      "target": "+1 Charm-Slot und wählbarer Charm-Bonus",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · Ancient Vows",
+      "note": "Wähle +30 % Charm Charges gained oder +30 % Charm Effect Duration. Wechsel später an der Statue möglich."
+    },
+    {
+      "id": "a2-titan-heads",
+      "act": "Act 2",
+      "zone": "Valley of the Titans",
+      "zoneMatch": [
+        "valley of the titans"
+      ],
+      "cue": "Riesige Titanenköpfe",
+      "instruction": "Jeden sichtbaren Kopf über den kurzen Canyon bis zum Siegel verfolgen.",
+      "target": "Ancient Seals",
+      "kind": "Permanenter Fortschritt",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": true,
+      "note": "Die Titanenköpfe als Signal für die drei Siegel testen. Den Relic Altar separat auf der Minimap im Blick behalten."
+    },
+    {
+      "id": "a2-titan-grotto",
+      "act": "Act 2",
+      "zone": "Titan Grotto",
+      "zoneMatch": [
+        "titan grotto"
+      ],
+      "exactZone": true,
+      "cue": "Zalmarath und die Flame Ruby",
+      "instruction": "Zalmarath besiegen, die Flame Ruby mitnehmen und bei Zarka abgeben.",
+      "target": "Drittes Questitem für das Horn",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Prüfe vor dem Rückweg, ob du die Flame Ruby aufgehoben hast."
+    },
+    {
+      "id": "a2-deshar-exit",
+      "act": "Act 2",
+      "zone": "Deshar",
+      "zoneMatch": [
+        "deshar"
+      ],
+      "exactZone": true,
+      "cue": "Von Deshar in den Path of Mourning",
+      "instruction": "Den Ausgang zum Path of Mourning nehmen. Am Fallen Dekhara den Brief für Shambrin mitnehmen.",
+      "target": "Path of Mourning",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der Barya-Abstecher lohnt sich, wenn du die erste Ascendancy noch brauchst."
+    },
+    {
+      "id": "a2-deshar-letter",
+      "act": "Act 2",
+      "zone": "Deshar",
+      "zoneMatch": [
+        "deshar"
+      ],
+      "exactZone": true,
+      "cue": "Brief beim Fallen Dekhara",
+      "instruction": "Lihl Limas Brief mitnehmen und bei Shambrin abgeben.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Falls du den ersten Trial spät planst, prüfe den Level-28-Barya der Watchful Twins in Deshar. Die Abgabe des Briefs beim nächsten Karawanenstopp bündeln."
+    },
+    {
+      "id": "a2-deshar-barya",
+      "act": "Act 2",
+      "zone": "Deshar",
+      "zoneMatch": [
+        "deshar"
+      ],
+      "exactZone": true,
+      "cue": "Später Barya bei den Watchful Twins",
+      "instruction": "Wenn du noch einen Barya brauchst, die beiden Geier beim Kartenmarker Watchful Twins töten.",
+      "target": "Djinn Barya für Trial of the Sekhemas",
+      "kind": "Trial-Zugang",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · Deshar",
+      "note": "Miss den Umweg und den Trial gemeinsam. So kannst du ihn mit dem frühen Balbala-Start vergleichen."
+    },
+    {
+      "id": "a2-mourning",
+      "act": "Act 2",
+      "zone": "Path of Mourning",
+      "zoneMatch": [
+        "path of mourning"
+      ],
+      "exactZone": true,
+      "cue": "In die Spires of Deshar",
+      "instruction": "Den Durchgang zu den Spires nehmen. Die Hushed Urn bei Bedarf für einen Support Gem mitnehmen.",
+      "target": "Spires of Deshar",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Wenn du den Umweg läufst, zähle den Kampf am Gefäß beim Split mit."
+    },
+    {
+      "id": "a2-tor-gul",
+      "act": "Act 2",
+      "zone": "Spires of Deshar",
+      "zoneMatch": [
+        "spires of deshar"
+      ],
+      "exactZone": true,
+      "cue": "Tor Gul öffnet den Weg zum Dreadnought",
+      "instruction": "Tor Gul besiegen und bei Asala in der Karawane den nächsten Queststopp öffnen.",
+      "target": "The Dreadnought",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Tor Gul",
+      "note": "Achte auf physische Treffer, Feuerflächen und Gift. Den Garukhan-Schrein für Jamanra auf dem Weg mitnehmen."
+    },
+    {
+      "id": "a2-garukhan",
+      "act": "Act 2",
+      "zone": "Spires of Deshar",
+      "zoneMatch": [
+        "spires of deshar"
+      ],
+      "exactZone": true,
+      "cue": "Garukhan-Schrein für Blitzresistenz",
+      "instruction": "Den Schrein der Sisters of Garukhan anklicken.",
+      "target": "+10 % Lightning Resistance",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Sinnvoll vor Jamanra. Prüfe den Wert beim nächsten Gear-Wechsel."
+    },
+    {
+      "id": "a2-sekhemas",
+      "act": "Act 2",
+      "zone": "Trial of the Sekhemas",
+      "zoneMatch": [
+        "trial of the sekhemas"
+      ],
+      "exactZone": true,
+      "cue": "Erste Ascendancy gezielt timen",
+      "instruction": "Honor-Reserve, Flask und Gear prüfen. Wähle Räume mit überschaubarem Risiko.",
+      "target": "Erstes Ascendancy-Paar",
+      "kind": "Trial-Check",
+      "status": "rule",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Vergleiche im Training zwei Starts. Mit Balbalas Barya früh starten oder nach Deshar mit besserem Gear. Notiere die Trial-Zeit und den Effekt auf den nächsten Boss."
+    },
+    {
+      "id": "a2-jamanra",
+      "act": "Act 2",
+      "zone": "The Dreadnought",
+      "zoneMatch": [
+        "the dreadnought",
+        "the dreadnaught"
+      ],
+      "exactZone": true,
+      "cue": "Jamanra · Asalas Schutz",
+      "instruction": "Jamanra auf dem letzten Wagen besiegen. Beim Sandsturm in Asalas Schutzfeld.",
+      "target": "Sandswept Marsh über die Ardura Caravan",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Jamanra, the Abomination",
+      "note": "Lightning Resistance und Flasks vor dem Boss prüfen. In Phase zwei Platz zu Blitzlinien und Portalen lassen."
+    },
+    {
+      "id": "a3-explorers",
+      "act": "Act 3",
+      "zone": "Jungle Ruins / Infested Barrens",
+      "zoneMatch": [
+        "jungle ruins",
+        "infested barrens"
+      ],
+      "cue": "Dschungelcamp als Orientierung",
+      "instruction": "Beim Camp nach dem Explorer und der Questmarkierung für den Ausgang schauen.",
+      "target": "Nächstes Gebiet",
+      "kind": "Gebietseingang",
+      "status": "test",
+      "confidence": "im Run prüfen",
+      "mandatory": false,
+      "note": "Prüfe den NPC-Hinweis im aktuellen Layout. Die Vaal Beacons bleiben das eigene Questziel."
+    },
+    {
+      "id": "a3-expedition-record",
+      "act": "Act 3",
+      "zone": "Temple of Chaos area",
+      "zoneMatch": [
+        "temple of chaos",
+        "chimeral wetlands"
+      ],
+      "cue": "Expedition Record anklicken",
+      "instruction": "Das Buch lesen, um die Position auf der Minimap aufzudecken.",
+      "target": "Temple of Chaos",
+      "kind": "Trial-Zugang",
+      "status": "test",
+      "confidence": "mittel",
+      "mandatory": false,
+      "note": "Mit 1.0-Version und tatsächlichem Gebietsnamen verifizieren."
+    },
+    {
+      "id": "a2-jamanra",
+      "act": "Act 2",
+      "zone": "The Dreadnought",
+      "zoneMatch": [
+        "the dreadnought",
+        "the dreadnaught"
+      ],
+      "exactZone": true,
+      "cue": "Jamanra · Asalas Schutz",
+      "instruction": "Jamanra auf dem letzten Wagen besiegen. Beim Sandsturm in Asalas Schutzfeld.",
+      "target": "Sandswept Marsh über die Ardura Caravan",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · Jamanra, the Abomination",
+      "note": "Lightning Resistance und Flasks vor dem Boss prüfen. In Phase zwei Platz zu Blitzlinien und Portalen lassen.",
+      "veteranText": "Jamanra auf dem letzten Wagen. Sandsturm → ins Feld bei Asala.",
+      "highlight": "in Asalas Schutzfeld"
+    },
+    {
+      "id": "a3-matlan",
+      "act": "Act 3",
+      "zone": "Matlan Waterways",
+      "zoneMatch": [
+        "matlan waterways"
+      ],
+      "exactZone": true,
+      "cue": "Kanalhebel für Drowned City",
+      "instruction": "Den Druckplatten folgen und am Ende den Canal Lever ziehen.",
+      "target": "Drowned City über Ziggurat Encampment",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "source": "PoE2 Wiki · The Matlan Waterways",
+      "note": "Der Hebel entwässert Utzaal. Azak Bog für Spirit und der Beacon für die Vaal Ruins sind eigene Abstecher.",
+      "highlight": "Canal Lever ziehen"
+    },
+    {
+      "id": "a3-zi-coatl",
+      "act": "Act 3",
+      "zone": "Jiquani's Sanctum",
+      "zoneMatch": [
+        "jiquani's sanctum"
+      ],
+      "exactZone": true,
+      "cue": "Zwei Generatoren, dann Zicoatl",
+      "instruction": "Medium Soul Cores einsetzen, Zicoatl besiegen und den Large Soul Core mitnehmen.",
+      "target": "Large Soul Core für Matlan",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der große Core gehört zum Altar in den Jungle Ruins. Den Beacon für die Nebenquest kannst du beim Rückweg separat mitnehmen.",
+      "highlight": "Large Soul Core mitnehmen"
+    },
+    {
+      "id": "a3-drowned-city",
+      "act": "Act 3",
+      "zone": "Drowned City",
+      "zoneMatch": [
+        "drowned city",
+        "apex of filth"
+      ],
+      "exactZone": true,
+      "cue": "Apex of Filth für das Idol",
+      "instruction": "Apex of Filth anlaufen und das Idol der Queen of Filth mitnehmen.",
+      "target": "Temple of Kopec",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Der Molten Vault ist der Abzweig zur Reforging Bench. Mektuls Hammer bei Oswald abgeben, wenn du den Crafting-Unlock eingeplant hast.",
+      "highlight": "Idol der Queen of Filth"
+    },
+    {
+      "id": "a4-kingsmarch",
+      "act": "Act 4",
+      "zone": "Kingsmarch",
+      "zoneMatch": [
+        "kingsmarch"
+      ],
+      "exactZone": true,
+      "cue": "Vier Torn Maps für Plunder's Point",
+      "instruction": "Je eine Map in Whakapanu, Shrike, Isle of Kin und Kedge Bay sichern.",
+      "target": "Plunder's Point freischalten",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Vor jeder Abfahrt prüfen, welche Map schon abgegeben ist. Farrows Runeseeker-Quest im selben Hafenstopp mitnehmen, wenn der Crafting-Unlock im Plan steht.",
+      "highlight": "Je eine Map"
+    },
+    {
+      "id": "a4-whakapanu",
+      "act": "Act 4",
+      "zone": "Whakapanu Island",
+      "zoneMatch": [
+        "whakapanu island"
+      ],
+      "exactZone": true,
+      "cue": "Torn Map und Shark-Fin-Entscheidung",
+      "instruction": "Torn Map beim Petrified Pirate sichern. Shark Pit für den Defensivbonus einplanen.",
+      "target": "Torn Map / permanente Defence Lesson",
+      "kind": "Quest und permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Shark Fin von The Great White One bei Kaimana abgeben. Wahl anhand deines Armour-, Evasion- oder ES-Setups treffen.",
+      "highlight": "Torn Map beim Petrified Pirate"
+    },
+    {
+      "id": "a4-shrike",
+      "act": "Act 4",
+      "zone": "Shrike Island",
+      "zoneMatch": [
+        "shrike island"
+      ],
+      "exactZone": true,
+      "cue": "Corpse Nest prüfen",
+      "instruction": "Torn Map aus dem Corpse Nest sichern und den Questweg Richtung Abandoned Prison verfolgen.",
+      "target": "Torn Map / weiterer Inselpfad",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Trenne den Fund der Karte vom Zeitaufwand für den Inselboss. Das macht Rückwege im nächsten Durchlauf messbar.",
+      "highlight": "Torn Map aus dem Corpse Nest"
+    },
+    {
+      "id": "a4-prison",
+      "act": "Act 4",
+      "zone": "Abandoned Prison",
+      "zoneMatch": [
+        "abandoned prison"
+      ],
+      "exactZone": true,
+      "cue": "Goddess of Justice für Flasks",
+      "instruction": "Chapel Key und Forael für die Chapel einplanen. Bei der Goddess die Flask-Wahl treffen.",
+      "target": "Life- oder Mana-Flask-Recovery",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Wahl lässt sich an der Goddess wechseln. Nimm Life Recovery als HC-Default, wenn Mana deine Rotation bereits trägt.",
+      "highlight": "Bei der Goddess die Flask-Wahl"
+    },
+    {
+      "id": "a4-isle-of-kin",
+      "act": "Act 4",
+      "zone": "Isle of Kin",
+      "zoneMatch": [
+        "isle of kin"
+      ],
+      "exactZone": true,
+      "cue": "Torn Map beim Flayed Sailor",
+      "instruction": "Map Piece beim Flayed Sailor sichern und den aktiven Inselquest-Schritt abschließen.",
+      "target": "Torn Map",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Nutze die Questanzeige für zusätzliche Unlocks. Kehre vor der nächsten Abfahrt zur Abgabe nach Kingsmarch zurück, falls die Karte noch offen ist.",
+      "highlight": "Map Piece beim Flayed Sailor"
+    },
+    {
+      "id": "a4-hinekora-mana",
+      "act": "Act 4",
+      "zone": "Eye of Hinekora",
+      "zoneMatch": [
+        "eye of hinekora"
+      ],
+      "exactZone": true,
+      "cue": "Silent Hall für Mana",
+      "instruction": "Matikis Weg durch die Prüfungen verfolgen und im Silent Hall Respekt erweisen.",
+      "target": "+5 % Maximum Mana",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Das ist ein eigener Reward innerhalb der Hinekora-Kette. Plane den ganzen Abstecher mit den Tattoos und der späteren Punktebelohnung.",
+      "highlight": "im Silent Hall Respekt erweisen"
+    },
+    {
+      "id": "a4-halls-yama",
+      "act": "Act 4",
+      "zone": "Halls of the Dead",
+      "zoneMatch": [
+        "halls of the dead"
+      ],
+      "exactZone": true,
+      "cue": "Tattoo-Wahl und Yamas Silver Coin",
+      "instruction": "Tests für Tattoos mitnehmen. Yama besiegen und den Silver Coin für den Trial nehmen.",
+      "target": "Trial of the Ancestors",
+      "kind": "Permanente Boni und Questkette",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · Trial of the Ancestors (Quest)",
+      "note": "Die drei Tattoo-Wahlen lösen je ein Resistenz- oder Attributproblem. Yamas Kill und der anschließende Trial sind dieselbe +2-Punkte-Kette.",
+      "highlight": "Tests für Tattoos"
+    },
+    {
+      "id": "a4-hinekora-points",
+      "act": "Act 4",
+      "zone": "Trial of the Ancestors",
+      "zoneMatch": [
+        "trial of the ancestors"
+      ],
+      "exactZone": true,
+      "cue": "Tattoo of Hinekora benutzen",
+      "instruction": "Mit Yamas Silver Coin in den Trial. Bei Navali die Quest abschließen und das Tattoo benutzen.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "source": "PoE2 Wiki · Trial of the Ancestors (Quest)",
+      "note": "Den +2-Bonus einmal für die gesamte Yama/Trial-Kette zählen.",
+      "highlight": "Tattoo benutzen"
+    },
+    {
+      "id": "a4-kedge-map",
+      "act": "Act 4",
+      "zone": "Kedge Bay",
+      "zoneMatch": [
+        "kedge bay"
+      ],
+      "exactZone": true,
+      "cue": "Vierte Karte und Dark Mists",
+      "instruction": "Torn Map aus Dead Man’s Chest sichern. Für die Punkte Freyas Dark-Mists-Kette verfolgen.",
+      "target": "Torn Map / Journey's End",
+      "kind": "Quest und permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Du kannst Karte und Punkte getrennt in der Checkliste führen. Die Karte öffnet mit den anderen drei Plunder’s Point.",
+      "highlight": "Torn Map aus Dead Man’s Chest"
+    },
+    {
+      "id": "a4-omniphobia",
+      "act": "Act 4",
+      "zone": "Journey's End",
+      "zoneMatch": [
+        "journey's end"
+      ],
+      "exactZone": true,
+      "cue": "Omniphobia und Tujen",
+      "instruction": "Dark Mists fortsetzen, Omniphobia besiegen und die Quest bei Tujen abschließen.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Belohnung nach der Abgabe benutzen. Kontrolliere danach die beiden +2-Ketten in Akt 4.",
+      "highlight": "Quest bei Tujen abschließen"
+    },
+    {
+      "id": "a4-plunders",
+      "act": "Act 4",
+      "zone": "Plunder's Point",
+      "zoneMatch": [
+        "plunder's point"
+      ],
+      "exactZone": true,
+      "cue": "Deserted Post beim Runeseeker",
+      "instruction": "Auf dem Weg nach Arastas den Deserted Post für Farrows Crafting-Kette mitnehmen, falls offen.",
+      "target": "Verisium Anvil / Questweg",
+      "kind": "Crafting-Unlock",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Der Abstecher ist für SSF wertvoll, wenn du den Anvil unmittelbar einsetzt. Die Inselroute beginnt nach der Abgabe aller vier Torn Maps.",
+      "highlight": "Deserted Post für Farrows Crafting-Kette"
+    },
+    {
+      "id": "a4-tavakai",
+      "act": "Act 4",
+      "zone": "Heart of the Tribe",
+      "zoneMatch": [
+        "heart of the tribe",
+        "ngakanu"
+      ],
+      "exactZone": true,
+      "cue": "Tavakai und Hooded One",
+      "instruction": "Tavakai besiegen, mit ihm sprechen und beim Hooded One die Interludes öffnen.",
+      "target": "Act 4 abschließen",
+      "kind": "Boss-Check",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Prüfe Recovery und Resistenzen vor dem Kampf. Nach dem Übergang die Resistenzen für das gewählte Interlude erneut im Charakterfenster lesen.",
+      "highlight": "beim Hooded One die Interludes öffnen"
+    },
+    {
+      "id": "i-kriar-spirit",
+      "act": "Interludes",
+      "zone": "Kriar Village",
+      "zoneMatch": [
+        "kriar village"
+      ],
+      "exactZone": true,
+      "cue": "Lythara für 40 Spirit",
+      "instruction": "Lythara besiegen und die Spirit-Belohnung benutzen.",
+      "target": "+40 Spirit",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Doryani’s Contingency ist eine sinnvolle erste Wahl, wenn diese Spirit-Stufe deinen Build sofort verbessert.",
+      "highlight": "Spirit-Belohnung benutzen"
+    },
+    {
+      "id": "i-yeti-tusks",
+      "act": "Interludes",
+      "zone": "Glacial Tarn",
+      "zoneMatch": [
+        "glacial tarn"
+      ],
+      "exactZone": true,
+      "cue": "Icy Tusks für Hilda",
+      "instruction": "Yeti besiegen, Icy Tusks mitnehmen und die Quest bei Hilda abgeben.",
+      "target": "+2 Waffen-Set-Passivpunkte",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Bei der Abgabe das Buch benutzen. Rakkar im Folgegebiet ist ein eigener Story-Schritt.",
+      "highlight": "Icy Tusks mitnehmen"
+    },
+    {
+      "id": "i-rakkar",
+      "act": "Interludes",
+      "zone": "Howling Caves",
+      "zoneMatch": [
+        "howling caves"
+      ],
+      "exactZone": true,
+      "cue": "Rakkar für den Weg nach oben",
+      "instruction": "Rakkar besiegen und den Ausgang Richtung Kriar Peaks nehmen.",
+      "target": "Doryani's Contingency fortsetzen",
+      "kind": "Fortschritt",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": true,
+      "note": "Falls die Icy Tusks noch im Inventar sind, die Abgabe bei Hilda für den nächsten Reise-Stopp vormerken.",
+      "highlight": "Ausgang Richtung Kriar Peaks"
+    },
+    {
+      "id": "i-kriar-spirit",
+      "act": "Interludes",
+      "zone": "Kriar Village",
+      "zoneMatch": [
+        "kriar village"
+      ],
+      "exactZone": true,
+      "cue": "Lythara für 40 Spirit",
+      "instruction": "Besiege Lythara und benutze den Gemcrust Skull.",
+      "target": "+40 Spirit",
+      "kind": "Permanenter Bonus",
+      "status": "reference",
+      "confidence": "Quellenstand",
+      "mandatory": false,
+      "note": "Die Stufe der Uncut Spirit Gem kann von der Reihenfolge der Interludee abhängen.",
+      "highlight": "Spirit-Belohnung benutzen"
+    }
+  ]
+}

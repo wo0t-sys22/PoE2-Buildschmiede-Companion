@@ -1,0 +1,5100 @@
+{
+  "format": "buildschmiede-editor",
+  "version": 1,
+  "build": {
+    "id": "varashta-archon",
+    "name": "Archon Djinn · Varashta",
+    "author": "terence_",
+    "phaseId": "start",
+    "sources": [
+      "guide",
+      "variant-hive",
+      "video",
+      "starter",
+      "dominion"
+    ],
+    "overlaySources": {
+      "guide": {
+        "label": "terence_ · Mobalytics",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63"
+      },
+      "video": {
+        "label": "terence_ · T15 & Archon Djinn",
+        "url": "https://www.youtube.com/watch?v=VhAG-jEyry8"
+      },
+      "starter": {
+        "label": "terence_ · Kampagne / Campaign",
+        "url": "https://www.youtube.com/watch?v=VnpTOQghkPA"
+      },
+      "dominion": {
+        "label": "terence_ · Dominion",
+        "url": "https://www.youtube.com/watch?v=x_ogmje1YuQ"
+      },
+      "variant-crit": {
+        "label": "Mobalytics · 100% Crit Djinn",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2Ce617493b-32cf-4652-88b0-3784ca7a868d"
+      },
+      "variant-trade": {
+        "label": "Mobalytics · Trade Version (budget)",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2C5a4c757c-d6c0-4ab5-98d4-7a60c975aa06"
+      },
+      "variant-hive": {
+        "label": "Mobalytics · Fire Trap für Hive Fortress (Offensiv)",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2C7df96f45-24a1-4d45-9c4c-9ccc49cb5335"
+      },
+      "variant-navira": {
+        "label": "Mobalytics · Endgame - min max + Navira (Defensiv)",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2C1"
+      },
+      "variant-start": {
+        "label": "Mobalytics · Level 1-20",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2Cdefault-variant"
+      },
+      "variant-kelari": {
+        "label": "Mobalytics · Level 21 - Djinn Varashta",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2Cbce9ae74-57ec-4fc0-99b7-1969bf77c7c8"
+      },
+      "variant-shield": {
+        "label": "Mobalytics · Level 31 - Switch auf Energy Shield",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2C4"
+      },
+      "variant-archon": {
+        "label": "Mobalytics · Level 40 - Archon of Undeath",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2C2"
+      },
+      "variant-puppet": {
+        "label": "Mobalytics · Level 65 - Puppet Master",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2C3"
+      },
+      "variant-budget": {
+        "label": "Mobalytics · Endgame - Level 90 Budget",
+        "url": "https://mobalytics.gg/poe-2/profile/terence-l68q8s/builds/01af72b2-8ac8-47b5-a2b7-9f6657534c63?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2C42a9c262-2ee4-4a84-b62c-ba00cc993975"
+      },
+      "ed": {
+        "label": "terence_ · 02:45 · Essence Drain",
+        "url": "https://www.youtube.com/watch?v=VnpTOQghkPA&t=165s"
+      },
+      "bone": {
+        "label": "terence_ · 09:20 · Bonestorm",
+        "url": "https://www.youtube.com/watch?v=VnpTOQghkPA&t=560s"
+      },
+      "djinn": {
+        "label": "terence_ · 12:58 · Kelari",
+        "url": "https://www.youtube.com/watch?v=VnpTOQghkPA&t=778s"
+      },
+      "commands": {
+        "label": "terence_ · 05:09 · Kelari",
+        "url": "https://www.youtube.com/watch?v=VhAG-jEyry8&t=309s"
+      },
+      "gems": {
+        "label": "terence_ · 09:51 · Gems",
+        "url": "https://www.youtube.com/watch?v=VhAG-jEyry8&t=591s"
+      },
+      "passives": {
+        "label": "terence_ · 15:35 · Archon & Puppet Master",
+        "url": "https://www.youtube.com/watch?v=VhAG-jEyry8&t=935s"
+      },
+      "equipment": {
+        "label": "terence_ · 20:07 · Gear",
+        "url": "https://www.youtube.com/watch?v=VhAG-jEyry8&t=1207s"
+      }
+    },
+    "editorial": {
+      "overview": {
+        "de": [
+          "In der Kampagne kämpfst du zunächst selbst. Nach der ersten Aszendenz bekommt Kelari seine eigenen Befehle. Im Endspiel bestimmen seine Abklingzeiten, wann du angreifst und wann du ausweichst.",
+          "Mobalytics fasst die Passiven der Waffensets im Spielexport zusammen. Der Baum jeder Phase zeigt diese gemeinsame Auswahl und die zugehörige Aszendenz."
+        ],
+        "hybrid": [
+          "In der Kampagne kämpfst du zunächst selbst. Nach der ersten Aszendenz bekommt Kelari seine eigenen Befehle. Im Endspiel bestimmen seine Abklingzeiten, wann du angreifst und wann du ausweichst.",
+          "Mobalytics fasst die Passiven der Waffensets im Spielexport zusammen. Der Baum jeder Phase zeigt diese gemeinsame Auswahl und die zugehörige Aszendenz."
+        ],
+        "en": [
+          "You cast your own damage spells through the opening acts. After ascending, Kelari takes over. Learn the rhythm of his commands so you know when to attack and when you can move.",
+          "The Mobalytics game export combines weapon-set passives. Each phase displays those nodes together and keeps the ascendancy separate."
+        ]
+      },
+      "strengths": {
+        "de": [
+          "Die ersten Zauber funktionieren schon mit einfachen Funden. Ein Wechsel der Fertigkeit bereitet dich auf den nächsten Kampf vor, auch wenn noch kein besserer Gegenstand gefallen ist.",
+          "Kelari greift auf Befehl an. Zwischen zwei Befehlen kannst du die Position wechseln, während seine Sandkopien noch explodieren."
+        ],
+        "hybrid": [
+          "Die ersten Zauber funktionieren schon mit einfachen Funden. Ein Wechsel der Fertigkeit bereitet dich auf den nächsten Kampf vor, auch wenn noch kein besserer Gegenstand gefallen ist.",
+          "Kelari greift auf Befehl an. Zwischen zwei Befehlen kannst du die Position wechseln, während seine Sandkopien noch explodieren."
+        ],
+        "en": [
+          "The opening spells work with common drops. Changing skills gives you a way to tackle a tougher fight while you wait for an upgrade.",
+          "Kelari attacks on command. You can reposition between orders while his sand copies are still exploding."
+        ]
+      },
+      "weaknesses": {
+        "de": [
+          "Bis zur ersten Aszendenz spielst du drei kurze Zauberphasen. Dafür brauchst du unterschiedliche Gemmen und einen Zauberstab mit Chaosbolzen.",
+          "Die letzten vier Varianten sind Alternativen mit eigener Ausrüstung. Wer auf Energieschild als einzige Lebensreserve umstellt, muss ihn bereits auf der Ausrüstung tragen."
+        ],
+        "hybrid": [
+          "Bis zur ersten Aszendenz spielst du drei kurze Zauberphasen. Dafür brauchst du unterschiedliche Gemmen und einen Zauberstab mit Chaos Bolt.",
+          "Die letzten vier Varianten sind Alternativen mit eigener Ausrüstung. Wer auf Energieschild als einzige Lebensreserve umstellt, muss ihn bereits auf der Ausrüstung tragen."
+        ],
+        "en": [
+          "There are three brief spell setups before your first ascendancy. Keep the required gems and a wand that grants Chaos Bolt.",
+          "The four specialist versions use different gear. Before relying entirely on Energy Shield for survival, check how much your equipped items actually provide."
+        ]
+      }
+    },
+    "importProvenance": {
+      "sourceFormat": "Mobalytics · Path of Exile 2 Build Planner (.build)",
+      "exported": "2026-11-21",
+      "sourceArchiveSha256": "ed576ad7219826515559ca1e62d7ff94a781a905c228346f5446d65da6a6c6af",
+      "passiveMapping": "https://github.com/grindinggear/poe2-skilltree-export/commit/bd87e6512c92b868542eddfb1ba4ea8b6dc2da36",
+      "variants": 10,
+      "requestedVariant": "hive",
+      "weaponSetPassives": "unspecified-in-source"
+    },
+    "className": "Sorceress",
+    "ascendancy": "Disciple of Varashta",
+    "gear": {
+      "main1": {
+        "sourceName": "Withered Wand",
+        "base": "Withered Wand",
+        "sourceText": "Withered Wand\nGain 4 Life per enemy killed\n35% increased Spell Damage\n+1 to Level of all Chaos Spell Skills",
+        "levelInterval": [
+          1,
+          100
+        ]
+      },
+      "main2": {
+        "sourceName": "Changeling Talisman",
+        "base": "Changeling Talisman",
+        "sourceText": "Changeling Talisman\nAdds 1 to 13 Lightning Damage\nCauses 21% increased Stun Buildup\n40% increased Physical Damage\nAdds 2 to 5 Physical Damage",
+        "levelInterval": [
+          1,
+          100
+        ]
+      },
+      "off1": {
+        "sourceName": "Devotional Sceptre",
+        "base": "Devotional Sceptre",
+        "sourceText": "Devotional Sceptre\nAllies in your Presence deal 45% increased Damage\n+1 to Level of all Minion Skills",
+        "levelInterval": [
+          45,
+          100
+        ]
+      },
+      "helm": {
+        "sourceName": "Horned Crown",
+        "base": "Horned Crown",
+        "sourceText": "Horned Crown\n+20 to maximum Life\n+1 to Level of all Minion Skills",
+        "levelInterval": [
+          10,
+          100
+        ]
+      },
+      "body": {
+        "sourceName": "Pilgrim Vestments",
+        "base": "Pilgrim Vestments",
+        "sourceText": "Pilgrim Vestments\n+7 to maximum Life\n3.1 Life Regeneration per second\n+5 to Intelligence\n21% increased Armour and Energy Shield",
+        "levelInterval": [
+          1,
+          100
+        ]
+      },
+      "gloves": {
+        "sourceName": "Ringmail Gauntlets",
+        "base": "Ringmail Gauntlets",
+        "sourceText": "Ringmail Gauntlets\n+6% to Cold Resistance\nAdds 1 to 4 Lightning damage to Attacks",
+        "levelInterval": [
+          6,
+          100
+        ]
+      },
+      "boots": {
+        "sourceName": "Rough Greaves",
+        "base": "Rough Greaves",
+        "sourceText": "Rough Greaves\n+10 to maximum Life\n10% increased Movement Speed\n+5 to Strength\n+23 to Armour\n+6 to Stun Threshold",
+        "levelInterval": [
+          1,
+          100
+        ]
+      },
+      "amulet": {
+        "sourceName": "Crimson Amulet",
+        "base": "Crimson Amulet",
+        "sourceText": "Crimson Amulet\n+20 to maximum Life\n+6% to Cold Resistance\n3% increased Spell Damage"
+      },
+      "belt": {
+        "sourceName": "Rawhide Belt",
+        "base": "Rawhide Belt",
+        "sourceText": "Rawhide Belt\n2.1 Life Regeneration per second\n5 to 7 Physical Thorns damage"
+      },
+      "ring1": {
+        "sourceName": "Lazuli Ring",
+        "base": "Lazuli Ring",
+        "sourceText": "Lazuli Ring\n+6% to Cold Resistance\nAdds 1 to 3 Physical Damage to Attacks"
+      },
+      "flask1": {
+        "sourceName": "Greater Life Flask",
+        "base": "Greater Life Flask",
+        "sourceText": "Greater Life Flask\nGains 0.15 Charges per Second\nGrants 51% of Life Recovery to Minions",
+        "levelInterval": [
+          10,
+          100
+        ]
+      },
+      "flask2": {
+        "sourceName": "Greater Mana Flask",
+        "base": "Greater Mana Flask",
+        "sourceText": "Greater Mana Flask\n41% increased Amount Recovered",
+        "levelInterval": [
+          10,
+          100
+        ]
+      },
+      "charm1": {
+        "sourceName": "Ruby Charm",
+        "base": "Ruby Charm",
+        "levelInterval": [
+          5,
+          100
+        ]
+      }
+    },
+    "gems": [
+      {
+        "id": "FrostBombPlayer",
+        "sockets": [],
+        "level": 2
+      },
+      {
+        "id": "SparkPlayer",
+        "sockets": [
+          {
+            "id": "SupportUnleashPlayer"
+          }
+        ],
+        "level": 2
+      },
+      {
+        "id": "ContagionPlayer",
+        "sockets": [
+          {
+            "id": "SupportUnleashPlayer"
+          }
+        ],
+        "level": 1
+      }
+    ],
+    "tree": {
+      "main": [
+        "4739",
+        "18845",
+        "1755",
+        "41965",
+        "51184",
+        "57710",
+        "53975",
+        "33254",
+        "55104",
+        "19125",
+        "29502",
+        "36302",
+        "22290",
+        "32404",
+        "5501",
+        "15618",
+        "56935",
+        "34058",
+        "36286",
+        "41130",
+        "8397",
+        "14033",
+        "34553",
+        "47555",
+        "39886"
+      ],
+      "I": [],
+      "II": [],
+      "asc": []
+    },
+    "phases": [
+      {
+        "id": "start",
+        "min_level": 1,
+        "range": "1–5",
+        "name": "Erste Gegnergruppen",
+        "names": {
+          "de": "Erste Gegnergruppen",
+          "en": "First packs",
+          "hybrid": "Erste Gegnergruppen"
+        },
+        "sources": [
+          "variant-start",
+          "starter"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Triff den vordersten Gegner mit [[gem%3AContagionPlayer|Verseuchung]] und wirke dann [[gem%3ASparkPlayer|Funken]] in die Gruppe. Hebe einen Zauberstab mit [[gem%3AWeaponGrantedChaosboltPlayer|Chaosbolzen]] für Stufe 6 auf."
+            ],
+            "hybrid": [
+              "Triff den vordersten Gegner mit [[gem%3AContagionPlayer|Contagion]] und wirke dann [[gem%3ASparkPlayer|Spark]] in die Gruppe. Hebe einen Zauberstab mit [[gem%3AWeaponGrantedChaosboltPlayer|Chaos%20Bolt]] für Stufe 6 auf."
+            ],
+            "en": [
+              "Cast [[gem%3AContagionPlayer|Contagion]] on the first enemy in a pack, then send [[gem%3ASparkPlayer|Spark]] through the group. Keep a [[gem%3AWeaponGrantedChaosboltPlayer|Chaos%20Bolt]] wand for level 6."
+            ]
+          },
+          "playstyle": {
+            "de": [
+              "Lege [[gem%3AFrostBombPlayer|Frostbombe]] dort ab, wo ein zäher Gegner gleich stehen wird. Die Explosion kommt mit Verzögerung."
+            ],
+            "hybrid": [
+              "Lege [[gem%3AFrostBombPlayer|Frost%20Bomb]] dort ab, wo ein zäher Gegner gleich stehen wird. Die Explosion kommt mit Verzögerung."
+            ],
+            "en": [
+              "Place [[gem%3AFrostBombPlayer|Frost%20Bomb]] where a tough enemy is about to stand. Give it time to detonate."
+            ]
+          },
+          "tree": {
+            "de": [
+              "Der Baum ist das Ziel für Stufe 20. Du kannst dir beim Aufsteigen die nächsten verbundenen Knoten einzeln ansehen."
+            ],
+            "hybrid": [
+              "Der Baum ist das Ziel für Stufe 20. Du kannst dir beim Aufsteigen die nächsten verbundenen Knoten einzeln ansehen."
+            ],
+            "en": [
+              "This tree is the target for level 20. As you level up, follow the connected nodes one point at a time."
+            ]
+          },
+          "gear": {
+            "de": [
+              "Bewegungsgeschwindigkeit auf [[item%3Aboots|Stiefeln]] spart Zeit zwischen den Kämpfen. Die Gegenstände im Inventar sind Beispiele für diese Kampagnenphase."
+            ],
+            "hybrid": [
+              "Bewegungsgeschwindigkeit auf [[item%3Aboots|Stiefeln]] spart Zeit zwischen den Kämpfen. Die Gegenstände im Inventar sind Beispiele für diese Kampagnenphase."
+            ],
+            "en": [
+              "Movement speed on [[item%3Aboots|boots]] cuts the time between packs. The inventory contains example gear for this part of the campaign."
+            ]
+          }
+        },
+        "sourceVariantId": "default-variant",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "",
+          "gear": {
+            "main1": {
+              "sourceName": "Withered Wand",
+              "base": "Withered Wand",
+              "sourceText": "Withered Wand\nGain 4 Life per enemy killed\n35% increased Spell Damage\n+1 to Level of all Chaos Spell Skills",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "main2": {
+              "sourceName": "Changeling Talisman",
+              "base": "Changeling Talisman",
+              "sourceText": "Changeling Talisman\nAdds 1 to 13 Lightning Damage\nCauses 21% increased Stun Buildup\n40% increased Physical Damage\nAdds 2 to 5 Physical Damage",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Devotional Sceptre",
+              "base": "Devotional Sceptre",
+              "sourceText": "Devotional Sceptre\nAllies in your Presence deal 45% increased Damage\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                45,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Horned Crown",
+              "base": "Horned Crown",
+              "sourceText": "Horned Crown\n+20 to maximum Life\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Pilgrim Vestments",
+              "base": "Pilgrim Vestments",
+              "sourceText": "Pilgrim Vestments\n+7 to maximum Life\n3.1 Life Regeneration per second\n+5 to Intelligence\n21% increased Armour and Energy Shield",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Ringmail Gauntlets",
+              "base": "Ringmail Gauntlets",
+              "sourceText": "Ringmail Gauntlets\n+6% to Cold Resistance\nAdds 1 to 4 Lightning damage to Attacks",
+              "levelInterval": [
+                6,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Rough Greaves",
+              "base": "Rough Greaves",
+              "sourceText": "Rough Greaves\n+10 to maximum Life\n10% increased Movement Speed\n+5 to Strength\n+23 to Armour\n+6 to Stun Threshold",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Crimson Amulet",
+              "base": "Crimson Amulet",
+              "sourceText": "Crimson Amulet\n+20 to maximum Life\n+6% to Cold Resistance\n3% increased Spell Damage"
+            },
+            "belt": {
+              "sourceName": "Rawhide Belt",
+              "base": "Rawhide Belt",
+              "sourceText": "Rawhide Belt\n2.1 Life Regeneration per second\n5 to 7 Physical Thorns damage"
+            },
+            "ring1": {
+              "sourceName": "Lazuli Ring",
+              "base": "Lazuli Ring",
+              "sourceText": "Lazuli Ring\n+6% to Cold Resistance\nAdds 1 to 3 Physical Damage to Attacks"
+            },
+            "flask1": {
+              "sourceName": "Greater Life Flask",
+              "base": "Greater Life Flask",
+              "sourceText": "Greater Life Flask\nGains 0.15 Charges per Second\nGrants 51% of Life Recovery to Minions",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Greater Mana Flask",
+              "base": "Greater Mana Flask",
+              "sourceText": "Greater Mana Flask\n41% increased Amount Recovered",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "charm1": {
+              "sourceName": "Ruby Charm",
+              "base": "Ruby Charm",
+              "levelInterval": [
+                5,
+                100
+              ]
+            }
+          },
+          "gems": [
+            {
+              "id": "FrostBombPlayer",
+              "sockets": [],
+              "level": 2
+            },
+            {
+              "id": "SparkPlayer",
+              "sockets": [
+                {
+                  "id": "SupportUnleashPlayer"
+                }
+              ],
+              "level": 2
+            },
+            {
+              "id": "ContagionPlayer",
+              "sockets": [
+                {
+                  "id": "SupportUnleashPlayer"
+                }
+              ],
+              "level": 1
+            }
+          ],
+          "tree": {
+            "main": [
+              "4739",
+              "18845",
+              "1755",
+              "41965",
+              "51184",
+              "57710",
+              "53975",
+              "33254",
+              "55104",
+              "19125",
+              "29502",
+              "36302",
+              "22290",
+              "32404",
+              "5501",
+              "15618",
+              "56935",
+              "34058",
+              "36286",
+              "41130",
+              "8397",
+              "14033",
+              "34553",
+              "47555",
+              "39886"
+            ],
+            "I": [],
+            "II": [],
+            "asc": []
+          }
+        }
+      },
+      {
+        "id": "chaos",
+        "min_level": 6,
+        "range": "6–13",
+        "name": "Chaos für Gruppen und Bosse",
+        "names": {
+          "de": "Chaos für Gruppen und Bosse",
+          "en": "Chaos spells",
+          "hybrid": "Chaos für Gruppen und Bosse"
+        },
+        "sources": [
+          "variant-start",
+          "ed"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Rüste [[gem%3AEssenceDrainPlayer|Entkr%C3%A4ften]] aus. Belege einen Gegner mit [[gem%3AContagionPlayer|Verseuchung]] und triff dasselbe Ziel mit Entkräften."
+            ],
+            "hybrid": [
+              "Rüste [[gem%3AEssenceDrainPlayer|Essence%20Drain]] aus. Belege einen Gegner mit [[gem%3AContagionPlayer|Contagion]] und triff dasselbe Ziel mit Essence Drain."
+            ],
+            "en": [
+              "Equip [[gem%3AEssenceDrainPlayer|Essence%20Drain]]. Cast [[gem%3AContagionPlayer|Contagion]] on one enemy, then hit that same target with Essence Drain."
+            ]
+          },
+          "why": {
+            "de": [
+              "Stirbt dieser Gegner, kann die Gruppe beide Schadenseffekte übernehmen. Damit lohnt es sich, ein verwundbares Ziel zuerst auszuschalten."
+            ],
+            "hybrid": [
+              "Stirbt dieser Gegner, kann die Gruppe beide Schadenseffekte übernehmen. Damit lohnt es sich, ein verwundbares Ziel zuerst auszuschalten."
+            ],
+            "en": [
+              "When that enemy dies, both damage effects can spread through the pack. Starting with a weaker target makes the chain easier to trigger."
+            ]
+          },
+          "gems": {
+            "de": [
+              "Bei einzelnen Gegnern schießt du [[gem%3AWeaponGrantedChaosboltPlayer|Chaosbolzen]], während [[gem%3AEssenceDrainPlayer|Entkr%C3%A4ften]] weiter Schaden verursacht. Der Bolzen kommt vom Zauberstab."
+            ],
+            "hybrid": [
+              "Bei einzelnen Gegnern schießt du [[gem%3AWeaponGrantedChaosboltPlayer|Chaos%20Bolt]], während [[gem%3AEssenceDrainPlayer|Essence%20Drain]] weiter Schaden verursacht. Der Bolzen kommt vom Zauberstab."
+            ],
+            "en": [
+              "Against a lone enemy, use [[gem%3AWeaponGrantedChaosboltPlayer|Chaos%20Bolt]] while [[gem%3AEssenceDrainPlayer|Essence%20Drain]] keeps ticking. The bolt comes from the wand."
+            ]
+          }
+        },
+        "sourceVariantId": "default-variant",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "",
+          "gear": {
+            "main1": {
+              "sourceName": "Withered Wand",
+              "base": "Withered Wand",
+              "sourceText": "Withered Wand\nGain 4 Life per enemy killed\n35% increased Spell Damage\n+1 to Level of all Chaos Spell Skills",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "main2": {
+              "sourceName": "Changeling Talisman",
+              "base": "Changeling Talisman",
+              "sourceText": "Changeling Talisman\nAdds 1 to 13 Lightning Damage\nCauses 21% increased Stun Buildup\n40% increased Physical Damage\nAdds 2 to 5 Physical Damage",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Devotional Sceptre",
+              "base": "Devotional Sceptre",
+              "sourceText": "Devotional Sceptre\nAllies in your Presence deal 45% increased Damage\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                45,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Horned Crown",
+              "base": "Horned Crown",
+              "sourceText": "Horned Crown\n+20 to maximum Life\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Pilgrim Vestments",
+              "base": "Pilgrim Vestments",
+              "sourceText": "Pilgrim Vestments\n+7 to maximum Life\n3.1 Life Regeneration per second\n+5 to Intelligence\n21% increased Armour and Energy Shield",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Ringmail Gauntlets",
+              "base": "Ringmail Gauntlets",
+              "sourceText": "Ringmail Gauntlets\n+6% to Cold Resistance\nAdds 1 to 4 Lightning damage to Attacks",
+              "levelInterval": [
+                6,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Rough Greaves",
+              "base": "Rough Greaves",
+              "sourceText": "Rough Greaves\n+10 to maximum Life\n10% increased Movement Speed\n+5 to Strength\n+23 to Armour\n+6 to Stun Threshold",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Crimson Amulet",
+              "base": "Crimson Amulet",
+              "sourceText": "Crimson Amulet\n+20 to maximum Life\n+6% to Cold Resistance\n3% increased Spell Damage"
+            },
+            "belt": {
+              "sourceName": "Rawhide Belt",
+              "base": "Rawhide Belt",
+              "sourceText": "Rawhide Belt\n2.1 Life Regeneration per second\n5 to 7 Physical Thorns damage"
+            },
+            "ring1": {
+              "sourceName": "Lazuli Ring",
+              "base": "Lazuli Ring",
+              "sourceText": "Lazuli Ring\n+6% to Cold Resistance\nAdds 1 to 3 Physical Damage to Attacks"
+            },
+            "flask1": {
+              "sourceName": "Greater Life Flask",
+              "base": "Greater Life Flask",
+              "sourceText": "Greater Life Flask\nGains 0.15 Charges per Second\nGrants 51% of Life Recovery to Minions",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Greater Mana Flask",
+              "base": "Greater Mana Flask",
+              "sourceText": "Greater Mana Flask\n41% increased Amount Recovered",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "charm1": {
+              "sourceName": "Ruby Charm",
+              "base": "Ruby Charm",
+              "levelInterval": [
+                5,
+                100
+              ]
+            }
+          },
+          "gems": [
+            {
+              "id": "ContagionPlayer",
+              "sockets": [
+                {
+                  "id": "SupportUnleashPlayer"
+                }
+              ],
+              "level": 1
+            },
+            {
+              "id": "EssenceDrainPlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportZenithPlayer"
+                }
+              ],
+              "level": 4
+            },
+            {
+              "id": "WeaponGrantedChaosboltPlayer",
+              "sockets": [
+                {
+                  "id": "SupportUnleashPlayer"
+                },
+                {
+                  "id": "SupportZenithPlayer"
+                }
+              ],
+              "level": 4
+            },
+            {
+              "id": "WolfPouncePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [],
+              "level": 3
+            }
+          ],
+          "tree": {
+            "main": [
+              "4739",
+              "18845",
+              "1755",
+              "41965",
+              "51184",
+              "57710",
+              "53975",
+              "33254",
+              "55104",
+              "19125",
+              "29502",
+              "36302",
+              "22290",
+              "32404",
+              "5501",
+              "15618",
+              "56935",
+              "34058",
+              "36286",
+              "41130",
+              "8397",
+              "14033",
+              "34553",
+              "47555",
+              "39886"
+            ],
+            "I": [],
+            "II": [],
+            "asc": []
+          }
+        }
+      },
+      {
+        "id": "bone",
+        "min_level": 14,
+        "range": "14–20",
+        "name": "Knochensturm gegen Bosse",
+        "names": {
+          "de": "Knochensturm gegen Bosse",
+          "en": "Bonestorm for bosses",
+          "hybrid": "Knochensturm gegen Bosse"
+        },
+        "sources": [
+          "variant-start",
+          "bone",
+          "djinn"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Gib deinem [[gem%3ASummonSkeletalSnipersPlayer|Skelett-Scharfsch%C3%BCtzen]] den Befehl für den [[gem%3ASummonSkeletalSnipersPlayer|Gaspfeil]]. Seine Unterstützung [[gem%3ASupportCorrosionPlayer|Korrosion]] bereitet den Gegner für [[gem%3ABonestormPlayer|Knochensturm]] vor."
+            ],
+            "hybrid": [
+              "Gib deinem [[gem%3ASummonSkeletalSnipersPlayer|Skeletal%20Sniper]] den Befehl für den [[gem%3ASummonSkeletalSnipersPlayer|Gas%20Arrow]]. Seine Unterstützung [[gem%3ASupportCorrosionPlayer|Corrosion]] bereitet den Gegner für [[gem%3ABonestormPlayer|Bonestorm]] vor."
+            ],
+            "en": [
+              "Command the [[gem%3ASummonSkeletalSnipersPlayer|Skeletal%20Sniper]] to fire its [[gem%3ASummonSkeletalSnipersPlayer|gas%20arrow]]. [[gem%3ASupportCorrosionPlayer|Corrosion]] on the sniper sets up your [[gem%3ABonestormPlayer|Bonestorm]] hit."
+            ]
+          },
+          "playstyle": {
+            "de": [
+              "Sobald die Rüstung des Ziels gebrochen ist, kanalisiere [[gem%3ABonestormPlayer|Knochensturm]] und lass die Geschosse los. Gegen bewegliche Gruppen bleibt deine Chaos-Kombination verfügbar."
+            ],
+            "hybrid": [
+              "Sobald die Rüstung des Ziels gebrochen ist, kanalisiere [[gem%3ABonestormPlayer|Bonestorm]] und lass die Geschosse los. Gegen bewegliche Gruppen bleibt deine Chaos-Kombination verfügbar."
+            ],
+            "en": [
+              "Once the target's armour is broken, channel [[gem%3ABonestormPlayer|Bonestorm]] and release the projectiles. Keep your chaos combination for moving packs."
+            ]
+          },
+          "quests": {
+            "de": [
+              "Schließe die erste Aszendenzprüfung ab, bevor du auf [[gem%3ASummonSandDjinnPlayer|Kelari]] wechselst. Falls du sie erst nach Stufe 21 spielst, kannst du diese Phase so lange beibehalten."
+            ],
+            "hybrid": [
+              "Schließe die erste Aszendenzprüfung ab, bevor du auf [[gem%3ASummonSandDjinnPlayer|Kelari]] wechselst. Falls du sie erst nach Stufe 21 spielst, kannst du diese Phase so lange beibehalten."
+            ],
+            "en": [
+              "Complete your first ascendancy trial before switching to [[gem%3ASummonSandDjinnPlayer|Kelari]]. If you reach level 21 first, keep using this setup until you finish the trial."
+            ]
+          }
+        },
+        "sourceVariantId": "default-variant",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "",
+          "gear": {
+            "main1": {
+              "sourceName": "Withered Wand",
+              "base": "Withered Wand",
+              "sourceText": "Withered Wand\nGain 4 Life per enemy killed\n35% increased Spell Damage\n+1 to Level of all Chaos Spell Skills",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "main2": {
+              "sourceName": "Changeling Talisman",
+              "base": "Changeling Talisman",
+              "sourceText": "Changeling Talisman\nAdds 1 to 13 Lightning Damage\nCauses 21% increased Stun Buildup\n40% increased Physical Damage\nAdds 2 to 5 Physical Damage",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Devotional Sceptre",
+              "base": "Devotional Sceptre",
+              "sourceText": "Devotional Sceptre\nAllies in your Presence deal 45% increased Damage\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                45,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Horned Crown",
+              "base": "Horned Crown",
+              "sourceText": "Horned Crown\n+20 to maximum Life\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Pilgrim Vestments",
+              "base": "Pilgrim Vestments",
+              "sourceText": "Pilgrim Vestments\n+7 to maximum Life\n3.1 Life Regeneration per second\n+5 to Intelligence\n21% increased Armour and Energy Shield",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Ringmail Gauntlets",
+              "base": "Ringmail Gauntlets",
+              "sourceText": "Ringmail Gauntlets\n+6% to Cold Resistance\nAdds 1 to 4 Lightning damage to Attacks",
+              "levelInterval": [
+                6,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Rough Greaves",
+              "base": "Rough Greaves",
+              "sourceText": "Rough Greaves\n+10 to maximum Life\n10% increased Movement Speed\n+5 to Strength\n+23 to Armour\n+6 to Stun Threshold",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Crimson Amulet",
+              "base": "Crimson Amulet",
+              "sourceText": "Crimson Amulet\n+20 to maximum Life\n+6% to Cold Resistance\n3% increased Spell Damage"
+            },
+            "belt": {
+              "sourceName": "Rawhide Belt",
+              "base": "Rawhide Belt",
+              "sourceText": "Rawhide Belt\n2.1 Life Regeneration per second\n5 to 7 Physical Thorns damage"
+            },
+            "ring1": {
+              "sourceName": "Lazuli Ring",
+              "base": "Lazuli Ring",
+              "sourceText": "Lazuli Ring\n+6% to Cold Resistance\nAdds 1 to 3 Physical Damage to Attacks"
+            },
+            "flask1": {
+              "sourceName": "Greater Life Flask",
+              "base": "Greater Life Flask",
+              "sourceText": "Greater Life Flask\nGains 0.15 Charges per Second\nGrants 51% of Life Recovery to Minions",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Greater Mana Flask",
+              "base": "Greater Mana Flask",
+              "sourceText": "Greater Mana Flask\n41% increased Amount Recovered",
+              "levelInterval": [
+                10,
+                100
+              ]
+            },
+            "charm1": {
+              "sourceName": "Ruby Charm",
+              "base": "Ruby Charm",
+              "levelInterval": [
+                5,
+                100
+              ]
+            }
+          },
+          "gems": [
+            {
+              "id": "ContagionPlayer",
+              "sockets": [
+                {
+                  "id": "SupportUnleashPlayer"
+                }
+              ],
+              "level": 1
+            },
+            {
+              "id": "EssenceDrainPlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportZenithPlayer"
+                }
+              ],
+              "level": 4
+            },
+            {
+              "id": "WeaponGrantedChaosboltPlayer",
+              "sockets": [
+                {
+                  "id": "SupportUnleashPlayer"
+                },
+                {
+                  "id": "SupportZenithPlayer"
+                }
+              ],
+              "level": 4
+            },
+            {
+              "id": "BonestormPlayer",
+              "levelInterval": [
+                14,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportBrutalityPlayer"
+                },
+                {
+                  "id": "SupportZenithPlayer"
+                }
+              ],
+              "level": 5
+            },
+            {
+              "id": "SummonSkeletalSnipersPlayer",
+              "sockets": [
+                {
+                  "id": "SupportCorrosionPlayer"
+                },
+                {
+                  "id": "SupportLastGaspPlayer"
+                }
+              ],
+              "level": 20
+            },
+            {
+              "id": "WolfPouncePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [],
+              "level": 3
+            }
+          ],
+          "tree": {
+            "main": [
+              "4739",
+              "18845",
+              "1755",
+              "41965",
+              "51184",
+              "57710",
+              "53975",
+              "33254",
+              "55104",
+              "19125",
+              "29502",
+              "36302",
+              "22290",
+              "32404",
+              "5501",
+              "15618",
+              "56935",
+              "34058",
+              "36286",
+              "41130",
+              "8397",
+              "14033",
+              "34553",
+              "47555",
+              "39886"
+            ],
+            "I": [],
+            "II": [],
+            "asc": []
+          }
+        }
+      },
+      {
+        "id": "kelari",
+        "min_level": 21,
+        "range": "21–30",
+        "name": "Kelari übernimmt",
+        "names": {
+          "de": "Kelari übernimmt",
+          "en": "Switch to Kelari",
+          "hybrid": "Kelari übernimmt"
+        },
+        "sources": [
+          "variant-kelari",
+          "djinn",
+          "commands"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Wähle die Jüngerin von Varashta und schalte [[gem%3ASummonSandDjinnPlayer|Kelari]] mit seiner Barya frei. Lege [[gem%3AKelariDeceptionVarashta|Kelaris%20T%C3%A4uschung]] auf eine gut erreichbare Taste."
+            ],
+            "hybrid": [
+              "Wähle die Disciple of Varashta und schalte [[gem%3ASummonSandDjinnPlayer|Kelari]] mit seiner Barya frei. Lege [[gem%3AKelariDeceptionVarashta|Kelari's%20Deception]] auf eine gut erreichbare Taste."
+            ],
+            "en": [
+              "Choose Disciple of Varashta and unlock [[gem%3ASummonSandDjinnPlayer|Kelari]] through his Barya. Put [[gem%3AKelariDeceptionVarashta|Kelari%E2%80%99s%20Deception]] on a key you can reach while moving."
+            ]
+          },
+          "playstyle": {
+            "de": [
+              "Schicke die Sandkopie in die Gruppe und wechsle deine Position. [[gem%3ASummonSandDjinnPlayer|Kelari]] braucht für den nächsten Angriff einen neuen Befehl."
+            ],
+            "hybrid": [
+              "Schicke die Sandkopie in die Gruppe und wechsle deine Position. [[gem%3ASummonSandDjinnPlayer|Kelari]] braucht für den nächsten Angriff einen neuen Befehl."
+            ],
+            "en": [
+              "Send a sand copy into the pack and reposition. Give [[gem%3ASummonSandDjinnPlayer|Kelari]] another command when you want him to attack again."
+            ]
+          },
+          "gear": {
+            "de": [
+              "Am [[item%3Amain1|Zepter]] werden zusätzliche Stufen für Kreaturenfertigkeiten und Wille interessant. Prüfe nach dem Wechsel, welche deiner dauerhaften Kreaturen du aktivieren kannst."
+            ],
+            "hybrid": [
+              "Am [[item%3Amain1|Zepter]] werden zusätzliche Stufen für Kreaturenfertigkeiten und Spirit interessant. Prüfe nach dem Wechsel, welche deiner dauerhaften Kreaturen du aktivieren kannst."
+            ],
+            "en": [
+              "Look for minion skill levels and Spirit on your [[item%3Amain1|sceptre]]. Check which persistent minions you can keep active after swapping equipment."
+            ]
+          },
+          "quests": {
+            "de": [
+              "Setze im Tal der Titanen beide Relikte in das Medaillon. Die von terence_ gewählte Seite gewährt einen zusätzlichen Phiolenplatz und 30 % mehr gewonnene Phiolenfüllungen."
+            ],
+            "hybrid": [
+              "Setze im Valley of the Titans beide Relikte in das Medaillon. Die von terence_ gewählte Seite gewährt einen zusätzlichen Charm Slot und 30 % mehr gewonnene Charm Charges."
+            ],
+            "en": [
+              "Place both relics in the Valley of the Titans medallion. The side chosen by terence_ grants an extra charm slot together with 30% increased charm charges gained."
+            ]
+          }
+        },
+        "sourceVariantId": "bce9ae74-57ec-4fc0-99b7-1969bf77c7c8",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Omen Sceptre",
+              "base": "Omen Sceptre",
+              "sourceText": "Omen Sceptre\nAllies in your Presence deal 45% increased Damage\n33% increased Spirit\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Pelage Targe",
+              "base": "Pelage Targe",
+              "sourceText": "Pelage Targe\n+20 to maximum Life\n+6% to Fire Resistance\n+11% to Lightning Resistance\n+25 to Stun Threshold\n+9 to Armour\n+6 to Evasion Rating\n21% increased Armour and Evasion",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Brimmed Helm",
+              "base": "Brimmed Helm",
+              "sourceText": "Brimmed Helm\n+11 to Accuracy Rating\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                5,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Bone Raiment",
+              "base": "Bone Raiment",
+              "sourceText": "Bone Raiment\n+6% to Lightning Resistance\n+30 to Spirit\n11 to 17 Physical Thorns damage",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Aged Cuffs",
+              "base": "Aged Cuffs",
+              "sourceText": "Aged Cuffs\n+20 to maximum Life\n+6% to Fire Resistance\nGain 2 Life per Enemy Hit with Attacks\n+25 to maximum Mana\n+61 to Accuracy Rating\n+1 to Level of all Melee Skills",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Mail Sabatons",
+              "base": "Mail Sabatons",
+              "sourceText": "Mail Sabatons\n+16% to Fire Resistance\n15% increased Movement Speed",
+              "levelInterval": [
+                6,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Lapis Amulet",
+              "base": "Lapis Amulet",
+              "sourceText": "Lapis Amulet\n+30 to Spirit\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "belt": {
+              "sourceName": "Rawhide Belt",
+              "base": "Rawhide Belt",
+              "sourceText": "Rawhide Belt\n+6% to Cold Resistance\n+6% to Lightning Resistance"
+            },
+            "ring1": {
+              "sourceName": "Ruby Ring",
+              "base": "Ruby Ring",
+              "sourceText": "Ruby Ring\n+15 to maximum Mana\n9% increased Cast Speed",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "ring2": {
+              "sourceName": "Topaz Ring",
+              "base": "Topaz Ring",
+              "sourceText": "Topaz Ring\n+11% to Cold Resistance\n+15 to maximum Mana",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "flask1": {
+              "sourceName": "Grand Life Flask",
+              "base": "Grand Life Flask",
+              "sourceText": "Grand Life Flask\n31% increased Charges\n51% more Recovery if used while on Low Life",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Grand Mana Flask",
+              "base": "Grand Mana Flask",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "charm1": {
+              "sourceName": "Silver Charm",
+              "base": "Silver Charm",
+              "sourceText": "Silver Charm\n23% reduced Charges per use\n16% increased Duration",
+              "levelInterval": [
+                10,
+                100
+              ]
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportBiddingPlayer"
+                },
+                {
+                  "id": "SupportBrutalityPlayer"
+                }
+              ],
+              "level": 8
+            },
+            {
+              "id": "WolfPouncePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportMarkForDeathPlayer"
+                }
+              ],
+              "level": 6
+            },
+            {
+              "id": "RavenousSwarmPlayer",
+              "levelInterval": [
+                10,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportCorrosionPlayer"
+                }
+              ],
+              "level": 6
+            },
+            {
+              "id": "SummonSkeletalSnipersPlayer",
+              "sockets": [
+                {
+                  "id": "SupportCorrosionPlayer"
+                },
+                {
+                  "id": "SupportArmourDemolisherPlayer"
+                }
+              ],
+              "level": 8
+            },
+            {
+              "id": "OrbOfStormsPlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLivingLightningPlayer"
+                },
+                {
+                  "id": "SupportShockPlayer"
+                }
+              ],
+              "level": 7
+            },
+            {
+              "id": "SummonSkeletalFrostMagesPlayer",
+              "levelInterval": [
+                14,
+                100
+              ],
+              "sockets": [],
+              "level": 6
+            },
+            {
+              "id": "MalicePlayer",
+              "sockets": [],
+              "level": 6
+            },
+            {
+              "id": "ShieldBlockPlayer",
+              "sockets": [],
+              "level": 1
+            }
+          ],
+          "tree": {
+            "main": [
+              "4739",
+              "22419",
+              "18407",
+              "47555",
+              "39886",
+              "56935",
+              "34058",
+              "59376",
+              "46358",
+              "30979",
+              "44733",
+              "10742",
+              "8357",
+              "38972",
+              "28458",
+              "22393",
+              "1447",
+              "14945",
+              "1433",
+              "31238",
+              "48552",
+              "95",
+              "8737",
+              "41511",
+              "35560",
+              "25927",
+              "32847",
+              "6077",
+              "35645",
+              "36286",
+              "41130",
+              "14033",
+              "34553",
+              "7960"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "13289",
+              "23265"
+            ]
+          }
+        }
+      },
+      {
+        "id": "shield",
+        "min_level": 31,
+        "range": "31–39",
+        "name": "Auf Energieschild umsteigen",
+        "names": {
+          "de": "Auf Energieschild umsteigen",
+          "en": "Build up Energy Shield",
+          "hybrid": "Auf Energieschild umsteigen"
+        },
+        "sources": [
+          "variant-shield",
+          "starter"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Vergleiche deinen Energieschild vor und nach dem Ausrüsten [[item%3Aoff1|des%20Schilds]]. Die Vorlage trägt zu diesem Zeitpunkt weiter Leben und Widerstände auf der Rüstung."
+            ],
+            "hybrid": [
+              "Vergleiche deinen Energieschild vor und nach dem Ausrüsten [[item%3Aoff1|des%20Schilds]]. Die Vorlage trägt zu diesem Zeitpunkt weiter Leben und Widerstände auf der Rüstung."
+            ],
+            "en": [
+              "Check your Energy Shield before and after equipping [[item%3Aoff1|the%20shield]]. This version still carries life and resistances on its armour."
+            ]
+          },
+          "gems": {
+            "de": [
+              "[[gem%3AWolfPouncePlayer|Sprung]] hilft dir, Abstand zu gewinnen. [[gem%3ASummonSandDjinnPlayer|Kelari]] bleibt dein Hauptangriff, auch wenn du dich zwischendurch auf das Blocken konzentrierst."
+            ],
+            "hybrid": [
+              "[[gem%3AWolfPouncePlayer|Pounce]] hilft dir, Abstand zu gewinnen. [[gem%3ASummonSandDjinnPlayer|Kelari]] bleibt dein Hauptangriff, auch wenn du dich zwischendurch auf das Blocken konzentrierst."
+            ],
+            "en": [
+              "Use [[gem%3AWolfPouncePlayer|Pounce]] to open space. [[gem%3ASummonSandDjinnPlayer|Kelari]] remains your main attack while you spend time moving or blocking."
+            ]
+          },
+          "quests": {
+            "de": [
+              "In den Giftgrüften in Akt 3 wählt terence_ 25 % erhöhte Betäubungsschwelle. Damit muss ein Treffer mehr bewirken, um dich zu betäuben."
+            ],
+            "hybrid": [
+              "In den Venom Crypts in Akt 3 wählt terence_ 25 % erhöhte Betäubungsschwelle. Damit muss ein Treffer mehr bewirken, um dich zu betäuben."
+            ],
+            "en": [
+              "In Act 3, the Venom Crypts choice in the guide grants 25% increased Stun Threshold. A hit then needs to do more to stun you."
+            ]
+          }
+        },
+        "sourceVariantId": "4",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Rattling Sceptre",
+              "base": "Rattling Sceptre",
+              "sourceText": "Rattling Sceptre\nAllies in your Presence have 5% increased Attack Speed\nAllies in your Presence deal 35% increased Damage\nAllies in your Presence have 10% increased Critical Damage Bonus\n20% increased Spirit\n+1 to Level of all Minion Skills\nAllies in your Presence deal 3 to 6 added Attack Fire Damage",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "main2": {
+              "sourceName": "Familial Talisman",
+              "base": "Familial Talisman",
+              "sourceText": "Familial Talisman\nGrants 4 Life per Enemy Hit\n65% increased Physical Damage",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Emblem Crest Shield",
+              "base": "Emblem Crest Shield",
+              "sourceText": "Emblem Crest Shield\n+20 to maximum Life\n+16% to Lightning Resistance\n+5 to Intelligence\n1 to 3 Physical Thorns damage\n+47 to Armour\n+16 to maximum Energy Shield",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Wrapped Greathelm",
+              "base": "Wrapped Greathelm",
+              "sourceText": "Wrapped Greathelm\n+20 to maximum Life\n+52 to Armour\n+61 to Accuracy Rating\n15% increased Critical Hit Chance\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Keth Raiment",
+              "base": "Keth Raiment",
+              "sourceText": "Keth Raiment\n+60 to maximum Life\n+16% to Fire Resistance\n+6% to Lightning Resistance\n+13 to Intelligence",
+              "levelInterval": [
+                28,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Sombre Gloves",
+              "base": "Sombre Gloves",
+              "sourceText": "Sombre Gloves\n+4% to Chaos Resistance\n+11% to Lightning Resistance\n+8 to maximum Energy Shield\nAdds 1 to 16 Lightning damage to Attacks",
+              "levelInterval": [
+                12,
+                100
+              ]
+            },
+            "boots": {
+              "unique": "The Infinite Pursuit",
+              "sourceName": "The Infinite Pursuit"
+            },
+            "amulet": {
+              "sourceName": "Azure Amulet",
+              "base": "Azure Amulet",
+              "sourceText": "Azure Amulet\n1 Life Regeneration per second\n+49 to maximum Mana\n8% increased Spell Damage\n+1 to Level of all Minion Skills\n15% increased Armour\n10% of Damage taken Recouped as Mana"
+            },
+            "belt": {
+              "sourceName": "Rawhide Belt",
+              "base": "Rawhide Belt",
+              "sourceText": "Rawhide Belt\n+20 to maximum Life\n+6% to Lightning Resistance\n+21 to Strength\n+108 to Armour\n+50 to Stun Threshold"
+            },
+            "ring1": {
+              "sourceName": "Topaz Ring",
+              "base": "Topaz Ring",
+              "sourceText": "Topaz Ring\n+40 to maximum Life\nGain 2 Mana per enemy killed\n13% increased Lightning Damage\n9% increased Cast Speed\n+52 to Evasion Rating\nLeech 6% of Physical Attack Damage as Life",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "ring2": {
+              "sourceName": "Ruby Ring",
+              "base": "Ruby Ring",
+              "sourceText": "Ruby Ring\nGain 10 Life per enemy killed\n30% increased Mana Regeneration Rate\n+16% to Lightning Resistance\n+35 to maximum Mana",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "flask1": {
+              "sourceName": "Colossal Life Flask",
+              "base": "Colossal Life Flask",
+              "sourceText": "Colossal Life Flask\nGains 0.2 Charges per Second\n46% increased Amount Recovered",
+              "levelInterval": [
+                30,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Colossal Mana Flask",
+              "base": "Colossal Mana Flask",
+              "sourceText": "Colossal Mana Flask\n17% reduced Charges per use\n41% increased Amount Recovered",
+              "levelInterval": [
+                30,
+                100
+              ]
+            },
+            "charm1": {
+              "sourceName": "Ruby Charm",
+              "base": "Ruby Charm",
+              "levelInterval": [
+                5,
+                100
+              ]
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportBiddingPlayer"
+                },
+                {
+                  "id": "SupportBrutalityPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "ShieldBlockPlayer",
+              "sockets": [],
+              "level": 1
+            },
+            {
+              "id": "WolfPouncePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportMarkForDeathPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "OrbOfStormsPlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLivingLightningPlayer"
+                },
+                {
+                  "id": "SupportShockPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "WolfPackPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportLoyaltyPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "RavenousSwarmPlayer",
+              "levelInterval": [
+                10,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayer"
+                },
+                {
+                  "id": "SupportCorrosionPlayer"
+                },
+                {
+                  "id": "SupportArmourBreakPlayer"
+                }
+              ],
+              "level": 6
+            }
+          ],
+          "tree": {
+            "main": [
+              "56935",
+              "34058",
+              "59376",
+              "46358",
+              "30979",
+              "44733",
+              "1433",
+              "31238",
+              "48552",
+              "7960",
+              "50104",
+              "37594",
+              "8983",
+              "33612",
+              "40200",
+              "61842",
+              "33240",
+              "50483",
+              "45343",
+              "57021",
+              "8957",
+              "95",
+              "8737",
+              "41511",
+              "25927",
+              "32847",
+              "6077",
+              "35645",
+              "36286",
+              "14033",
+              "34553",
+              "44871",
+              "30346",
+              "34006",
+              "15408",
+              "2254",
+              "14666",
+              "9642",
+              "57710",
+              "39037",
+              "517",
+              "35560",
+              "22419",
+              "23382",
+              "39886",
+              "18407",
+              "47555"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "13289",
+              "23265",
+              "34207",
+              "64591"
+            ]
+          }
+        }
+      },
+      {
+        "id": "archon",
+        "min_level": 40,
+        "range": "40–64",
+        "name": "Untoter Archon",
+        "names": {
+          "de": "Untoter Archon",
+          "en": "Archon of Undeath",
+          "hybrid": "Untoter Archon"
+        },
+        "sources": [
+          "variant-archon",
+          "passives",
+          "commands"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Suche im Baum [[node%3A26926|Untoter%20Archon]]. Jeder eingesetzte Befehl hat mit diesem Knoten eine Chance von 15 %, den Archon zu gewähren."
+            ],
+            "hybrid": [
+              "Suche im Baum [[node%3A26926|Archon%20of%20Undeath]]. Jeder eingesetzte Befehl hat mit diesem Knoten eine Chance von 15 %, den Archon zu gewähren."
+            ],
+            "en": [
+              "Find [[node%3A26926|Archon%20of%20Undeath]] on the tree. With this passive, using a command gives you a 15% chance to gain the Archon."
+            ]
+          },
+          "playstyle": {
+            "de": [
+              "Nutze [[gem%3ASummonSandDjinnPlayer|Kelari]] für bewegliche Ziele. Wo Gegner länger stehen, gib [[gem%3ASummonFireDjinnPlayer|Ruzhan]] den Befehl für eine Falle. Beide Befehle helfen dir, den Archon auszulösen."
+            ],
+            "hybrid": [
+              "Nutze [[gem%3ASummonSandDjinnPlayer|Kelari]] für bewegliche Ziele. Wo Gegner länger stehen, gib [[gem%3ASummonFireDjinnPlayer|Ruzhan]] den Befehl für eine Falle. Beide Befehle helfen dir, den Archon auszulösen."
+            ],
+            "en": [
+              "Use [[gem%3ASummonSandDjinnPlayer|Kelari]] on moving targets. When enemies stay in one place, order [[gem%3ASummonFireDjinnPlayer|Ruzhan]] to lay a trap there. Both commands can trigger the Archon."
+            ]
+          },
+          "quests": {
+            "de": [
+              "Tawhoa, Tasalio und Ngamahu geben in den Hallen der Toten jeweils 5 % Widerstand gegen Blitz, Kälte und Feuer.",
+              "Gib Kaimana die Haiflosse von der Insel Whakapanu. Für Stammesmedizin empfiehlt terence_ Kaoms Lektion mit 30 % erhöhter Rüstung, Ausweichwert und Energieschild.",
+              "In Qimah ist für Tabanas Säule der Bonus von 5 % auf alle Elementarwiderstände ausgewählt."
+            ],
+            "hybrid": [
+              "Tawhoa, Tasalio und Ngamahu geben in den Hallen der Toten jeweils 5 % Widerstand gegen Blitz, Kälte und Feuer.",
+              "Gib Kaimana die Haiflosse von der Insel Whakapanu. Für Tribal Medicine empfiehlt terence_ Kaom's Lesson mit 30 % erhöhter Rüstung, Ausweichwert und Energieschild.",
+              "In Qimah ist für Tabanas Säule der Bonus von 5 % auf alle Elementarwiderstände ausgewählt."
+            ],
+            "en": [
+              "In the Halls of the Dead the guide selects 5% Lightning, Cold and Fire Resistance from Tawhoa, Tasalio and Ngamahu respectively.",
+              "Return the Shark Fin from Whakapanu Island to Kaimana. For Tribal Medicine, terence_ recommends Kaom’s Lesson, which grants 30% increased Armour, Evasion and Energy Shield.",
+              "At Tabana’s Pillar in Qimah, the guide selects 5% to all Elemental Resistances."
+            ]
+          }
+        },
+        "sourceVariantId": "2",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Rattling Sceptre",
+              "base": "Rattling Sceptre",
+              "sourceText": "Rattling Sceptre\nAllies in your Presence have 5% increased Attack Speed\nAllies in your Presence deal 35% increased Damage\nAllies in your Presence have 10% increased Critical Damage Bonus\n20% increased Spirit\n+1 to Level of all Minion Skills\nAllies in your Presence deal 3 to 6 added Attack Fire Damage",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "main2": {
+              "sourceName": "Familial Talisman",
+              "base": "Familial Talisman",
+              "sourceText": "Familial Talisman\nGrants 4 Life per Enemy Hit\n65% increased Physical Damage",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Emblem Crest Shield",
+              "base": "Emblem Crest Shield",
+              "sourceText": "Emblem Crest Shield\n+20 to maximum Life\n+16% to Lightning Resistance\n+5 to Intelligence\n1 to 3 Physical Thorns damage\n+47 to Armour\n+16 to maximum Energy Shield",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Wrapped Greathelm",
+              "base": "Wrapped Greathelm",
+              "sourceText": "Wrapped Greathelm\n+20 to maximum Life\n+52 to Armour\n+61 to Accuracy Rating\n15% increased Critical Hit Chance\n+1 to Level of all Minion Skills",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Keth Raiment",
+              "base": "Keth Raiment",
+              "sourceText": "Keth Raiment\n+60 to maximum Life\n+16% to Fire Resistance\n+6% to Lightning Resistance\n+13 to Intelligence",
+              "levelInterval": [
+                28,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Sombre Gloves",
+              "base": "Sombre Gloves",
+              "sourceText": "Sombre Gloves\n+4% to Chaos Resistance\n+11% to Lightning Resistance\n+8 to maximum Energy Shield\nAdds 1 to 16 Lightning damage to Attacks",
+              "levelInterval": [
+                12,
+                100
+              ]
+            },
+            "boots": {
+              "unique": "The Infinite Pursuit",
+              "sourceName": "The Infinite Pursuit"
+            },
+            "amulet": {
+              "sourceName": "Azure Amulet",
+              "base": "Azure Amulet",
+              "sourceText": "Azure Amulet\n1 Life Regeneration per second\n+49 to maximum Mana\n8% increased Spell Damage\n+1 to Level of all Minion Skills\n15% increased Armour\n10% of Damage taken Recouped as Mana"
+            },
+            "belt": {
+              "sourceName": "Rawhide Belt",
+              "base": "Rawhide Belt",
+              "sourceText": "Rawhide Belt\n+20 to maximum Life\n+6% to Lightning Resistance\n+21 to Strength\n+108 to Armour\n+50 to Stun Threshold"
+            },
+            "ring1": {
+              "sourceName": "Topaz Ring",
+              "base": "Topaz Ring",
+              "sourceText": "Topaz Ring\n+40 to maximum Life\nGain 2 Mana per enemy killed\n13% increased Lightning Damage\n9% increased Cast Speed\n+52 to Evasion Rating\nLeech 6% of Physical Attack Damage as Life",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "ring2": {
+              "sourceName": "Ruby Ring",
+              "base": "Ruby Ring",
+              "sourceText": "Ruby Ring\nGain 10 Life per enemy killed\n30% increased Mana Regeneration Rate\n+16% to Lightning Resistance\n+35 to maximum Mana",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "flask1": {
+              "sourceName": "Colossal Life Flask",
+              "base": "Colossal Life Flask",
+              "sourceText": "Colossal Life Flask\nGains 0.2 Charges per Second\n46% increased Amount Recovered",
+              "levelInterval": [
+                30,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Colossal Mana Flask",
+              "base": "Colossal Mana Flask",
+              "sourceText": "Colossal Mana Flask\n17% reduced Charges per use\n41% increased Amount Recovered",
+              "levelInterval": [
+                30,
+                100
+              ]
+            },
+            "charm1": {
+              "sourceName": "Ruby Charm",
+              "base": "Ruby Charm",
+              "levelInterval": [
+                5,
+                100
+              ]
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportBiddingPlayerTwo"
+                },
+                {
+                  "id": "SupportBrutalityPlayerTwo"
+                },
+                {
+                  "id": "SupportMusterPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "SummonFireDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportBiddingPlayerTwo"
+                },
+                {
+                  "id": "SupportRearmPlayer"
+                },
+                {
+                  "id": "SupportMusterPlayer"
+                }
+              ]
+            },
+            {
+              "id": "SummonSkeletalWarriorsPlayer",
+              "sockets": [],
+              "level": 4
+            },
+            {
+              "id": "ShieldBlockPlayer",
+              "sockets": [],
+              "level": 1
+            },
+            {
+              "id": "SummonSkeletalSnipersPlayer",
+              "sockets": [
+                {
+                  "id": "SupportMultishotPlayer"
+                },
+                {
+                  "id": "SupportBiddingPlayer"
+                },
+                {
+                  "id": "SupportCorrosionPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "WolfPouncePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportMarkForDeathPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "OrbOfStormsPlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLivingLightningPlayer"
+                },
+                {
+                  "id": "SupportShockPlayer"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "WolfPackPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportLoyaltyPlayer"
+                }
+              ],
+              "level": 10
+            },
+            {
+              "id": "RavenousSwarmPlayer",
+              "levelInterval": [
+                10,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayer"
+                },
+                {
+                  "id": "SupportCorrosionPlayer"
+                },
+                {
+                  "id": "SupportArmourBreakPlayer"
+                }
+              ],
+              "level": 6
+            }
+          ],
+          "tree": {
+            "main": [
+              "56935",
+              "34058",
+              "59376",
+              "46358",
+              "30979",
+              "44733",
+              "1433",
+              "31238",
+              "48552",
+              "7960",
+              "50104",
+              "37594",
+              "8983",
+              "33612",
+              "40200",
+              "61842",
+              "33240",
+              "50483",
+              "45343",
+              "57021",
+              "8957",
+              "95",
+              "8737",
+              "41511",
+              "25927",
+              "32847",
+              "6077",
+              "35645",
+              "36286",
+              "14033",
+              "34553",
+              "47168",
+              "54521",
+              "45885",
+              "4345",
+              "14598",
+              "50837",
+              "43979",
+              "26926",
+              "45333",
+              "59362",
+              "50720",
+              "11376",
+              "44871",
+              "30346",
+              "34006",
+              "15408",
+              "2254",
+              "14666",
+              "9642",
+              "57710",
+              "39037",
+              "517",
+              "4748",
+              "17973",
+              "22419",
+              "23382",
+              "39886",
+              "18407",
+              "47555"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "13289",
+              "23265",
+              "34207",
+              "64591"
+            ]
+          }
+        }
+      },
+      {
+        "id": "puppet",
+        "min_level": 65,
+        "range": "65–89",
+        "name": "Erste Karten mit Strippenzieher",
+        "names": {
+          "de": "Erste Karten mit Strippenzieher",
+          "en": "Puppet Master for early maps",
+          "hybrid": "Erste Karten mit Strippenzieher"
+        },
+        "sources": [
+          "variant-puppet",
+          "commands",
+          "passives",
+          "equipment"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Baue mit deinen Befehlen Strippenzieher-Stapel auf. Beobachte in einer Karte, wie viele Stapel bis zur nächsten Gruppe erhalten bleiben."
+            ],
+            "hybrid": [
+              "Baue mit deinen Befehlen Puppet Master-Stapel auf. Beobachte in einer Karte, wie viele Stapel bis zur nächsten Gruppe erhalten bleiben."
+            ],
+            "en": [
+              "Use commands to build Puppet Master stacks. In a map, watch how many are still active when you reach the next pack."
+            ]
+          },
+          "gems": {
+            "de": [
+              "[[gem%3APainOfferingPlayer|Schmerzopfer]] spießt ein Skelett auf. Setze es dort, wo deine anderen Kreaturen für den nächsten Kampf nahe genug am Opfer bleiben."
+            ],
+            "hybrid": [
+              "[[gem%3APainOfferingPlayer|Pain%20Offering]] spießt ein Skelett auf. Setze es dort, wo deine anderen Kreaturen für den nächsten Kampf nahe genug am Opfer bleiben."
+            ],
+            "en": [
+              "[[gem%3APainOfferingPlayer|Pain%20Offering]] skewers one skeleton. Place it where your other minions will stay near the spike for the fight."
+            ]
+          },
+          "gear": {
+            "de": [
+              "Schau dir den [[item%3Aoff1|Fokus]] der Vorlage an. Er verbindet Energieschild, Widerstände und zwei zusätzliche Stufen für Kreaturenfertigkeiten in einem Platz."
+            ],
+            "hybrid": [
+              "Schau dir den [[item%3Aoff1|Fokus]] der Vorlage an. Er verbindet Energieschild, Widerstände und zwei zusätzliche Stufen für Kreaturenfertigkeiten in einem Platz."
+            ],
+            "en": [
+              "Inspect the example [[item%3Aoff1|focus]]. Its Energy Shield, resistances and two extra minion skill levels all come from the same slot."
+            ]
+          }
+        },
+        "sourceVariantId": "3",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Omen Sceptre",
+              "base": "Omen Sceptre",
+              "sourceText": "Omen Sceptre\n+125 to maximum Mana\nAllies in your Presence deal 90% increased Damage\n46% increased Presence Area of Effect\n+4 to Level of all Minion Skills\nAllies in your Presence deal 11 to 18 added Attack Cold Damage\nAllies in your Presence Regenerate 29.1 Life per second",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "main2": {
+              "unique": "Atziri's Rule",
+              "sourceName": "Atziri's Rule"
+            },
+            "off1": {
+              "sourceName": "Tasalian Focus",
+              "base": "Tasalian Focus",
+              "sourceText": "Tasalian Focus\n+21% to Cold Resistance\n+36% to Lightning Resistance\n+71 to maximum Energy Shield\n+33 to maximum Mana\n+2 to Level of all Minion Skills\n131% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Divine Crown",
+              "base": "Divine Crown",
+              "sourceText": "Divine Crown\n15% increased Rarity of Items found\n+40 to maximum Life\n+21 to Strength\n+86 to Armour\n+26 to maximum Energy Shield\n+2 to Level of all Minion Skills\n80% increased Armour and Energy Shield",
+              "levelInterval": [
+                75,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Vile Robe",
+              "base": "Vile Robe",
+              "sourceText": "Vile Robe\n+25 to Intelligence\n+80 to maximum Energy Shield\nHits against you have 42% reduced Critical Damage Bonus\n+26 to maximum Energy Shield\n6% increased Spirit Reservation Efficiency of Skills\n140% increased Energy Shield",
+              "levelInterval": [
+                65,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Vaal Gloves",
+              "base": "Vaal Gloves",
+              "sourceText": "Vaal Gloves\n15% increased Rarity of Items found\n+30 to maximum Life\n16% increased Energy Shield Recharge Rate\n+52 to maximum Energy Shield\n92% increased Energy Shield\nLeech 7% of Physical Attack Damage as Mana",
+              "levelInterval": [
+                75,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Sekhema Sandals",
+              "base": "Sekhema Sandals",
+              "sourceText": "Sekhema Sandals\n12% increased Energy Shield Recharge Rate\n+16% to Fire Resistance\n+26% to Lightning Resistance\n30% increased Movement Speed\n+52 to maximum Energy Shield\n80% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Lapis Amulet",
+              "base": "Lapis Amulet",
+              "sourceText": "Lapis Amulet\n+42 to maximum Energy Shield\n15% increased Global Armour, Evasion and Energy Shield\n+3 to Level of all Minion Skills\n21% increased maximum Energy Shield\n16% of Damage taken Recouped as Mana\nMinions have 12% increased Cooldown Recovery Rate",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "belt": {
+              "sourceName": "Plate Belt",
+              "base": "Plate Belt",
+              "sourceText": "Plate Belt\n+120 to maximum Life\n+36% to Fire Resistance\n+31% to Cold Resistance\n22% increased Charm Effect Duration\n29% increased Charm Charges gained\nCharms gain 0.1 charges per Second",
+              "levelInterval": [
+                24,
+                100
+              ]
+            },
+            "ring1": {
+              "sourceName": "Ruby Ring",
+              "base": "Ruby Ring",
+              "sourceText": "Ruby Ring\n+70 to maximum Life\n+36% to Fire Resistance\n+31% to Cold Resistance\n+21% to Lightning Resistance\n+142 to Evasion Rating\nMinions deal 15% increased Damage if you've Hit Recently",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "ring2": {
+              "sourceName": "Prismatic Ring",
+              "base": "Prismatic Ring",
+              "sourceText": "Prismatic Ring\n11% increased Rarity of Items found\n18% increased Lightning Damage\n+36% to Cold Resistance\n+31% to Lightning Resistance\n+105 to maximum Mana\nMinions deal 15% increased Damage if you've Hit Recently",
+              "levelInterval": [
+                35,
+                100
+              ]
+            },
+            "flask1": {
+              "sourceName": "Transcendent Life Flask",
+              "base": "Transcendent Life Flask",
+              "sourceText": "Transcendent Life Flask\n26% reduced Charges per use\n61% more Recovery if used while on Low Life",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Ultimate Mana Flask",
+              "base": "Ultimate Mana Flask",
+              "sourceText": "Ultimate Mana Flask\n31% increased Charges\n61% increased Amount Recovered",
+              "levelInterval": [
+                60,
+                100
+              ]
+            },
+            "charm1": {
+              "sourceName": "Dousing Charm",
+              "base": "Dousing Charm",
+              "sourceText": "Dousing Charm\n23% increased Charges\nAlso grants 205 Guard",
+              "levelInterval": [
+                32,
+                100
+              ]
+            },
+            "charm2": {
+              "sourceName": "Thawing Charm",
+              "base": "Thawing Charm",
+              "sourceText": "Thawing Charm\n23% increased Charges gained\n21% increased Duration",
+              "levelInterval": [
+                12,
+                100
+              ]
+            },
+            "charm3": {
+              "sourceName": "Silver Charm",
+              "base": "Silver Charm",
+              "sourceText": "Silver Charm\nGains 0.15 Charges per Second\nRecover 8 Life when Used",
+              "levelInterval": [
+                10,
+                100
+              ]
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportMusterPlayer"
+                },
+                {
+                  "id": "SupportBiddingPlayerThree"
+                },
+                {
+                  "id": "SupportHeftPlayer"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                }
+              ],
+              "level": 20
+            },
+            {
+              "id": "MalicePlayer",
+              "sockets": [
+                {
+                  "id": "SupportUpwellingPlayer"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                }
+              ],
+              "level": 17
+            },
+            {
+              "id": "ShieldBlockPlayer",
+              "sockets": [],
+              "level": 1
+            },
+            {
+              "id": "WolfPackPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportElementalArmyPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 17
+            },
+            {
+              "id": "EnfeeblePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCurseEffectPlayer"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                }
+              ],
+              "level": 16
+            },
+            {
+              "id": "WolfPouncePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportMarkForDeathPlayerTwo"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayer"
+                }
+              ],
+              "level": 17
+            },
+            {
+              "id": "PainOfferingPlayer",
+              "levelInterval": [
+                14,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportMeatShieldPlayerTwo"
+                },
+                {
+                  "id": "SupportDanseMacabrePlayer"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                }
+              ],
+              "level": 17
+            },
+            {
+              "id": "SummonSkeletalSnipersPlayer",
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportElementalArmyPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 17
+            },
+            {
+              "id": "SummonSkeletalClericsPlayer",
+              "levelInterval": [
+                52,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportElementalArmyPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 17
+            },
+            {
+              "id": "SummonSkeletalFrostMagesPlayer",
+              "levelInterval": [
+                14,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportElementalArmyPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 17
+            },
+            {
+              "id": "BlinkReservationPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [],
+              "level": 18
+            }
+          ],
+          "tree": {
+            "main": [
+              "44871",
+              "30346",
+              "34006",
+              "15408",
+              "2254",
+              "14666",
+              "9642",
+              "517",
+              "39037",
+              "11672",
+              "48030",
+              "62436",
+              "3215",
+              "57710",
+              "8616",
+              "46819",
+              "61419",
+              "3025",
+              "38732",
+              "17672",
+              "35896",
+              "47155",
+              "17394",
+              "49088",
+              "49512",
+              "15885",
+              "22783",
+              "17501",
+              "54036",
+              "30720",
+              "11679",
+              "7424",
+              "36994",
+              "27491",
+              "1823",
+              "61042",
+              "54453",
+              "19006",
+              "39461",
+              "229",
+              "46365",
+              "4748",
+              "17973",
+              "5314",
+              "62723",
+              "13123",
+              "14258",
+              "29009",
+              "59362",
+              "50720",
+              "11376",
+              "45885",
+              "4345",
+              "14598",
+              "50837",
+              "43979",
+              "26926",
+              "54521",
+              "47168",
+              "50104",
+              "37594",
+              "8983",
+              "33612",
+              "40200",
+              "61842",
+              "33240",
+              "50483",
+              "45343",
+              "57021",
+              "8957",
+              "1433",
+              "95",
+              "8737",
+              "6077",
+              "35645",
+              "41511",
+              "35560",
+              "25927",
+              "32847",
+              "7960",
+              "48552",
+              "31238",
+              "6006",
+              "38105",
+              "44299",
+              "14686",
+              "53795",
+              "62210",
+              "5695",
+              "32309",
+              "59070",
+              "44733",
+              "23382"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "13289",
+              "23265",
+              "30265",
+              "46091",
+              "64223",
+              "56857"
+            ]
+          }
+        }
+      },
+      {
+        "id": "budget",
+        "min_level": 90,
+        "range": "90+",
+        "name": "Budget mit Kelari und Navira",
+        "names": {
+          "de": "Budget mit Kelari und Navira",
+          "en": "Kelari and Navira on a budget",
+          "hybrid": "Budget mit Kelari und Navira"
+        },
+        "sources": [
+          "variant-budget",
+          "gems",
+          "equipment"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Spiele [[gem%3ASummonSandDjinnPlayer|Kelari]] zusammen mit [[gem%3ASummonWaterDjinnPlayer|Navira]]. Lege Naviras Befehl so, dass du ihn in gefährlichen Momenten auslösen kannst."
+            ],
+            "hybrid": [
+              "Spiele [[gem%3ASummonSandDjinnPlayer|Kelari]] zusammen mit [[gem%3ASummonWaterDjinnPlayer|Navira]]. Lege Naviras Befehl so, dass du ihn in gefährlichen Momenten auslösen kannst."
+            ],
+            "en": [
+              "Pair [[gem%3ASummonSandDjinnPlayer|Kelari]] with [[gem%3ASummonWaterDjinnPlayer|Navira]]. Keep Navira’s command within reach for moments when you need recovery."
+            ]
+          },
+          "why": {
+            "de": [
+              "[[gem%3ASupportMusterPlayer|Zusammentreiben]] belohnt verschiedene Arten wiederbelebender Kreaturen. Deshalb enthält diese Variante mehrere unterschiedliche Skelette.",
+              "Die vier weiteren Endspielvarianten kannst du von Hand wählen. Sie ersetzen Ausrüstung, Gemmen und Passiven für unterschiedliche Ziele."
+            ],
+            "hybrid": [
+              "[[gem%3ASupportMusterPlayer|Muster]] belohnt verschiedene Arten wiederbelebender Kreaturen. Deshalb enthält diese Variante mehrere unterschiedliche Skelette.",
+              "Die vier weiteren Endspielvarianten kannst du von Hand wählen. Sie ersetzen Ausrüstung, Gemmen und Passiven für unterschiedliche Ziele."
+            ],
+            "en": [
+              "[[gem%3ASupportMusterPlayer|Muster]] scales with the number of different reviving minion types you summon. This is why the setup includes several kinds of skeleton.",
+              "Four specialist versions are available from the phase selector. Each has its own gear, gems and passives."
+            ]
+          }
+        },
+        "sourceVariantId": "42a9c262-2ee4-4a84-b62c-ba00cc993975",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Rattling Sceptre",
+              "base": "Rattling Sceptre",
+              "sourceText": "Rattling Sceptre\n+110 to maximum Mana\nAllies in your Presence have 9% increased Attack Speed\nAllies in your Presence have 10% increased Critical Damage Bonus\n33% increased Spirit\n+2 to Level of all Minion Skills",
+              "levelInterval": [
+                1,
+                100
+              ]
+            },
+            "main2": {
+              "sourceName": "Primal Talisman",
+              "base": "Primal Talisman",
+              "sourceText": "Primal Talisman\nAdds 1 to 36 Lightning Damage\n14% increased Attack Speed",
+              "levelInterval": [
+                28,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Tasalian Focus",
+              "base": "Tasalian Focus",
+              "sourceText": "Tasalian Focus\n+16% to Chaos Resistance\n+31 to Intelligence\n+25 to maximum Energy Shield\n45% increased Spell Damage\n+2 to Level of all Minion Skills\n68% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Jade Tiara",
+              "base": "Jade Tiara",
+              "sourceText": "Jade Tiara\n+21 to Intelligence\n+52 to maximum Energy Shield\n+33 to maximum Mana\n25% increased Archon Buff duration\n+2 to Level of all Minion Skills\n140% increased Energy Shield",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Vile Robe",
+              "base": "Vile Robe",
+              "sourceText": "Vile Robe\n+36% to Fire Resistance\n+36% to Cold Resistance\n+80 to maximum Energy Shield\n+205 to Stun Threshold\n27% increased Energy Shield",
+              "levelInterval": [
+                65,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Opulent Gloves",
+              "base": "Opulent Gloves",
+              "sourceText": "Opulent Gloves\n+36% to Fire Resistance\n+6% to Lightning Resistance\nAdds 6 to 12 Physical Damage to Attacks\n+34 to maximum Energy Shield\n10% increased Critical Damage Bonus",
+              "levelInterval": [
+                70,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Runeforged Sandsworn Sandals",
+              "base": "Runeforged Sandsworn Sandals",
+              "sourceText": "Runeforged Sandsworn Sandals\n+41% to Fire Resistance\n30% increased Movement Speed\n+42 to maximum Energy Shield\n80% increased Energy Shield\n+13% to Fire and Chaos Resistances",
+              "levelInterval": [
+                75,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Solar Amulet",
+              "base": "Solar Amulet",
+              "sourceText": "Solar Amulet\n+70 to maximum Life\n+25 to Intelligence\n+42 to maximum Energy Shield\n20% increased Critical Hit Chance\n+2 to Level of all Minion Skills\n33% increased maximum Energy Shield",
+              "levelInterval": [
+                30,
+                100
+              ]
+            },
+            "belt": {
+              "sourceName": "Utility Belt",
+              "base": "Utility Belt",
+              "sourceText": "Utility Belt\n+120 to maximum Life\n+26% to Cold Resistance\n4% increased Charm Effect Duration\n35% increased Flask Mana Recovery rate\n+13% to Lightning and Chaos Resistances",
+              "levelInterval": [
+                55,
+                100
+              ]
+            },
+            "ring1": {
+              "sourceName": "Topaz Ring",
+              "base": "Topaz Ring",
+              "sourceText": "Topaz Ring\n+85 to maximum Life\n+26% to Fire Resistance\n+26% to Lightning Resistance\n+25 to maximum Mana\n+11 to Accuracy Rating",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "ring2": {
+              "sourceName": "Topaz Ring",
+              "base": "Topaz Ring",
+              "sourceText": "Topaz Ring\n+70 to maximum Life\n+21% to Fire Resistance\n+21 to Strength\n+21 to Intelligence\n+125 to maximum Mana",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "flask1": {
+              "sourceName": "Transcendent Life Flask",
+              "base": "Transcendent Life Flask",
+              "sourceText": "Transcendent Life Flask\n29% reduced Charges per use\n56% increased Recovery rate",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Ultimate Mana Flask",
+              "base": "Ultimate Mana Flask",
+              "sourceText": "Ultimate Mana Flask\n26% reduced Charges per use\n56% increased Recovery rate",
+              "levelInterval": [
+                60,
+                100
+              ]
+            },
+            "charm1": {
+              "sourceName": "Thawing Charm",
+              "base": "Thawing Charm",
+              "sourceText": "Thawing Charm\n20% reduced Charges per use\n16% increased Duration",
+              "levelInterval": [
+                12,
+                100
+              ]
+            },
+            "charm2": {
+              "sourceName": "Amethyst Charm",
+              "base": "Amethyst Charm",
+              "sourceText": "Amethyst Charm\n21% Chance to gain a Charge when you kill an enemy\nRecover 63 Life when Used",
+              "levelInterval": [
+                40,
+                100
+              ]
+            },
+            "charm3": {
+              "sourceName": "Stone Charm",
+              "base": "Stone Charm",
+              "sourceText": "Stone Charm\n31% increased Charges\n16% increased Duration",
+              "levelInterval": [
+                8,
+                100
+              ]
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportHeftPlayer"
+                },
+                {
+                  "id": "SupportBiddingPlayerThree"
+                },
+                {
+                  "id": "SupportMusterPlayer"
+                },
+                {
+                  "id": "SupportHulkingMinionsPlayer"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "SummonWaterDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportBiddingPlayerThree"
+                },
+                {
+                  "id": "SupportPersistentGroundPlayerThree"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                },
+                {
+                  "id": "SupportColdMasteryPlayer"
+                }
+              ],
+              "level": 21
+            },
+            {
+              "id": "SummonSkeletalWarriorsPlayer",
+              "sockets": [
+                {
+                  "id": "SupportDeathmarchPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 19
+            },
+            {
+              "id": "SummonSkeletalBrutesPlayer",
+              "levelInterval": [
+                52,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportCullingStrikePlayerTwo"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 19
+            },
+            {
+              "id": "SummonSkeletalStormMagesPlayer",
+              "levelInterval": [
+                41,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                },
+                {
+                  "id": "SupportOverchargePlayer"
+                },
+                {
+                  "id": "SupportPersistentGroundPlayerThree"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "SummonSkeletalClericsPlayer",
+              "levelInterval": [
+                52,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                },
+                {
+                  "id": "SupportMeatShieldPlayerTwo"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "PainOfferingPlayer",
+              "levelInterval": [
+                14,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportMeatShieldPlayerTwo"
+                },
+                {
+                  "id": "SupportElementalArmyPlayer"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportSacrificalOfferingPlayer"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "WolfPackPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLoyaltyPlayer"
+                },
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                },
+                {
+                  "id": "SupportMaimPlayer"
+                }
+              ],
+              "level": 17
+            },
+            {
+              "id": "SummonSkeletalReaversPlayer",
+              "levelInterval": [
+                31,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "SummonSkeletalFrostMagesPlayer",
+              "levelInterval": [
+                14,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "SummonSkeletalSnipersPlayer",
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportEssenceHarvestPlayer"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "WolfPouncePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportMarkForDeathPlayerTwo"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayer"
+                },
+                {
+                  "id": "SupportHolyDescentPlayer"
+                },
+                {
+                  "id": "SupportEternalMarkPlayer"
+                }
+              ],
+              "level": 17
+            }
+          ],
+          "tree": {
+            "main": [
+              "44871",
+              "30346",
+              "34006",
+              "15408",
+              "2254",
+              "14666",
+              "9642",
+              "517",
+              "39037",
+              "11672",
+              "48030",
+              "62436",
+              "3215",
+              "41372",
+              "6715",
+              "116",
+              "65393",
+              "2732",
+              "16790",
+              "57710",
+              "8616",
+              "46819",
+              "61419",
+              "49512",
+              "15885",
+              "22783",
+              "18160",
+              "26945",
+              "15809",
+              "31175",
+              "54036",
+              "30720",
+              "11679",
+              "7424",
+              "36994",
+              "27491",
+              "4061",
+              "29432",
+              "44733",
+              "1433",
+              "31238",
+              "48552",
+              "7960",
+              "50104",
+              "47168",
+              "6006",
+              "38105",
+              "44299",
+              "49455",
+              "13537",
+              "54521",
+              "45885",
+              "59362",
+              "62677",
+              "46554",
+              "10131",
+              "3251",
+              "21984",
+              "40313",
+              "58363",
+              "55938",
+              "56844",
+              "40929",
+              "43633",
+              "50816",
+              "37974",
+              "62230",
+              "19355",
+              "50720",
+              "43557",
+              "11376",
+              "34199",
+              "4345",
+              "14598",
+              "50837",
+              "43979",
+              "26926",
+              "45333",
+              "59781",
+              "37594",
+              "8983",
+              "33612",
+              "40200",
+              "61842",
+              "33240",
+              "50483",
+              "45343",
+              "57021",
+              "8957",
+              "5695",
+              "32309",
+              "59070",
+              "43842",
+              "28092",
+              "17061",
+              "31773",
+              "14686",
+              "53795",
+              "62210",
+              "19318",
+              "42825",
+              "21404",
+              "4931",
+              "95",
+              "8737",
+              "41511",
+              "35560",
+              "25927",
+              "32847",
+              "6077",
+              "35645",
+              "1823",
+              "4748",
+              "17973"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "13289",
+              "32705",
+              "30265",
+              "43426",
+              "46091",
+              "64223",
+              "56857",
+              "23265"
+            ]
+          }
+        }
+      },
+      {
+        "id": "trade",
+        "min_level": 101,
+        "range": "",
+        "name": "Handelsvariante mit Ruzhan",
+        "names": {
+          "de": "Handelsvariante mit Ruzhan",
+          "en": "Trade budget with Ruzhan",
+          "hybrid": "Handelsvariante mit Ruzhan"
+        },
+        "sources": [
+          "variant-trade",
+          "gems",
+          "equipment"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Vergleiche die Handelspreise für das [[item%3Amain1|Zepter]] und den [[item%3Aoff1|Fokus]] mit deinen eigenen Funden. Beginne beim Platz, der dir zusätzliche Stufen für [[gem%3ASummonSandDjinnPlayer|Kelari]] und [[gem%3ASummonFireDjinnPlayer|Ruzhan]] bringt."
+            ],
+            "hybrid": [
+              "Vergleiche die Handelspreise für das [[item%3Amain1|Zepter]] und den [[item%3Aoff1|Fokus]] mit deinen eigenen Funden. Beginne beim Platz, der dir zusätzliche Stufen für [[gem%3ASummonSandDjinnPlayer|Kelari]] und [[gem%3ASummonFireDjinnPlayer|Ruzhan]] bringt."
+            ],
+            "en": [
+              "Compare the example [[item%3Amain1|sceptre]] and [[item%3Aoff1|focus]] with what you already own before shopping. Start with the slot that increases both djinns’ skill levels."
+            ]
+          },
+          "playstyle": {
+            "de": [
+              "Belege [[gem%3AAscendancyCommandFireDjinnFireRunes|Ruzhans%20Falle]] und [[gem%3AKelariDeceptionVarashta|Kelaris%20T%C3%A4uschung]] getrennt. Mit zwei Tasten kannst du die Falle legen und zugleich [[gem%3ASummonSandDjinnPlayer|Kelari]] gezielt in die nächste Gruppe schicken."
+            ],
+            "hybrid": [
+              "Belege [[gem%3AAscendancyCommandFireDjinnFireRunes|Ruzhan's%20Trap]] und [[gem%3AKelariDeceptionVarashta|Kelari's%20Deception]] getrennt. Mit zwei Tasten kannst du die Falle legen und zugleich [[gem%3ASummonSandDjinnPlayer|Kelari]] gezielt in die nächste Gruppe schicken."
+            ],
+            "en": [
+              "Bind [[gem%3AAscendancyCommandFireDjinnFireRunes|Ruzhan%E2%80%99s%20Trap]] and [[gem%3AKelariDeceptionVarashta|Kelari%E2%80%99s%20Deception]] separately. You can set a trap in one spot and send [[gem%3ASummonSandDjinnPlayer|Kelari]] into the next pack."
+            ]
+          },
+          "tree": {
+            "de": [
+              "Die Vorlage nimmt den [[node%3A56349|Schl%C3%BCsselstein%2C%20der%20dein%20maximales%20Leben%20auf%201%20setzt]]. Prüfe deinen Energieschild, bevor du diesen Wechsel im Spiel übernimmst."
+            ],
+            "hybrid": [
+              "Die Vorlage nimmt den [[node%3A56349|Schl%C3%BCsselstein%2C%20der%20dein%20maximales%20Leben%20auf%201%20setzt]]. Prüfe deinen Energieschild, bevor du diesen Wechsel im Spiel übernimmst."
+            ],
+            "en": [
+              "This variant takes the [[node%3A56349|keystone%20that%20sets%20maximum%20life%20to%201]]. Check your Energy Shield before making that change in game."
+            ]
+          }
+        },
+        "sourceVariantId": "5a4c757c-d6c0-4ab5-98d4-7a60c975aa06",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Omen Sceptre",
+              "base": "Omen Sceptre",
+              "sourceText": "Omen Sceptre\n+28 to Intelligence\n+15 to maximum Mana\n46% increased Presence Area of Effect\n1% increased Spirit\n+4 to Level of all Minion Skills\nAllies in your Presence deal 12 to 18 added Attack Fire Damage",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Tasalian Focus",
+              "base": "Tasalian Focus",
+              "sourceText": "Tasalian Focus\n+31% to Lightning Resistance\n+71 to maximum Energy Shield\n+69 to maximum Mana\n+2 to Level of all Minion Skills\n80% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Jade Tiara",
+              "base": "Jade Tiara",
+              "sourceText": "Jade Tiara\n+21 to Intelligence\n+52 to maximum Energy Shield\n+33 to maximum Mana\n+2 to Level of all Minion Skills\n140% increased Energy Shield",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Vile Robe",
+              "base": "Vile Robe",
+              "sourceText": "Vile Robe\n+36% to Fire Resistance\n+21% to Lightning Resistance\n+8 to maximum Energy Shield\n+4 to maximum Energy Shield\n107% increased Energy Shield",
+              "levelInterval": [
+                65,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Sirenscale Gloves",
+              "base": "Sirenscale Gloves",
+              "sourceText": "Sirenscale Gloves\n12% increased Rarity of Items found\n+33 to maximum Life\n+16% to Fire Resistance\n+31% to Cold Resistance\n+34 to maximum Energy Shield\n33% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Sandsworn Sandals",
+              "base": "Sandsworn Sandals",
+              "sourceText": "Sandsworn Sandals\n+36% to Fire Resistance\n35% increased Movement Speed\n+34 to maximum Energy Shield\n41% reduced Shock duration on you\n80% increased Energy Shield",
+              "levelInterval": [
+                75,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Lunar Amulet",
+              "base": "Lunar Amulet",
+              "sourceText": "Lunar Amulet\n60% increased Mana Regeneration Rate\n+31% to Lightning Resistance\n+52 to maximum Energy Shield\n+4 to Level of all Minion Skills\nMinions deal 15% increased Damage if you've Hit Recently",
+              "levelInterval": [
+                14,
+                100
+              ]
+            },
+            "belt": {
+              "sourceName": "Double Belt",
+              "base": "Double Belt",
+              "sourceText": "Double Belt\n+21% to Cold Resistance\n+29 to maximum Mana\nMinions have 18% increased Area of Effect\n17% increased Flask Life Recovery rate",
+              "levelInterval": [
+                44,
+                100
+              ]
+            },
+            "ring1": {
+              "sourceName": "Pearl Ring",
+              "base": "Pearl Ring",
+              "sourceText": "Pearl Ring\n+9% to all Elemental Resistances\nAdds 1 to 28 Lightning damage to Attacks\n25% increased Cold Damage\nMinions have 15% increased Critical Damage Bonus",
+              "levelInterval": [
+                32,
+                100
+              ]
+            },
+            "ring2": {
+              "unique": "Ventor's Gamble",
+              "sourceName": "Ventor's Gamble"
+            },
+            "flask1": {
+              "sourceName": "Transcendent Life Flask",
+              "base": "Transcendent Life Flask",
+              "sourceText": "Transcendent Life Flask\n29% reduced Charges per use\n56% increased Recovery rate",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Ultimate Mana Flask",
+              "base": "Ultimate Mana Flask",
+              "sourceText": "Ultimate Mana Flask\n26% reduced Charges per use\n56% increased Recovery rate",
+              "levelInterval": [
+                60,
+                100
+              ]
+            },
+            "charm1": {
+              "unique": "Nascent Hope",
+              "sourceName": "Nascent Hope"
+            },
+            "charm2": {
+              "unique": "Rite of Passage",
+              "sourceName": "Rite of Passage"
+            },
+            "charm3": {
+              "unique": "The Fall of the Axe",
+              "sourceName": "The Fall of the Axe"
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonFireDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportFirePenetrationPlayerTwo"
+                },
+                {
+                  "id": "SupportAddedFireDamagePlayer"
+                },
+                {
+                  "id": "SupportLongFusePlayerTwo"
+                },
+                {
+                  "id": "SupportBiddingPlayerTwo"
+                },
+                {
+                  "id": "SupportRearmPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportKurgalsLeashPlayer",
+                  "levelInterval": [
+                    25,
+                    100
+                  ]
+                },
+                {
+                  "id": "SupportBiddingPlayerTwo"
+                },
+                {
+                  "id": "SupportBlindsidePlayer"
+                },
+                {
+                  "id": "SupportVoranasSiege",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                },
+                {
+                  "id": "SupportAddedLightningDamagePlayer"
+                }
+              ]
+            },
+            {
+              "id": "KelariDeceptionVarashta",
+              "sockets": []
+            },
+            {
+              "id": "AscendancyCommandFireDjinnFireRunes",
+              "sockets": []
+            },
+            {
+              "id": "MalicePlayer",
+              "sockets": [
+                {
+                  "id": "SupportStrongHeartedPlayer"
+                },
+                {
+                  "id": "SupportUpwellingPlayerTwo"
+                },
+                {
+                  "id": "SupportHerDeclarationPlayer",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "SummonSpectrePlayer",
+              "sockets": [
+                {
+                  "id": "SupportWildshardsPlayerTwo"
+                },
+                {
+                  "id": "SupportPiercePlayerThree"
+                },
+                {
+                  "id": "SupportProjectileAccelerationPlayerThree"
+                },
+                {
+                  "id": "SupportElectrocutePlayer"
+                },
+                {
+                  "id": "SupportAddedLightningDamagePlayer"
+                }
+              ],
+              "level": 19
+            },
+            {
+              "id": "ConvalescencePlayer",
+              "levelInterval": [
+                10,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCooldownRecoveryPlayerTwo"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "BlasphemyPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "CurseOfRepulsionPlayer",
+                  "kind": "skill"
+                },
+                {
+                  "id": "SupportBlindPlayerTwo"
+                },
+                {
+                  "id": "SupportNeuralOverloadPlayer"
+                },
+                {
+                  "id": "SupportLivingLightningPlayerTwo"
+                },
+                {
+                  "id": "SupportCullingStrikePlayerTwo"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "TornadoPlayer",
+              "levelInterval": [
+                41,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportExpandPlayer"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                },
+                {
+                  "id": "SupportSlowPotencyPlayer"
+                },
+                {
+                  "id": "SupportCatalysingElementsPlayer"
+                }
+              ],
+              "level": 16
+            },
+            {
+              "id": "RefutationPlayer",
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCooldownRecoveryPlayerTwo"
+                },
+                {
+                  "id": "SupportEfficiencyPlayerTwo"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "EnfeeblePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCurseEffectPlayer"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                },
+                {
+                  "id": "SupportHexBloomPlayer"
+                }
+              ],
+              "level": 19
+            }
+          ],
+          "tree": {
+            "main": [
+              "44871",
+              "30346",
+              "34006",
+              "15408",
+              "2254",
+              "14666",
+              "9642",
+              "517",
+              "39037",
+              "11672",
+              "48030",
+              "62436",
+              "3215",
+              "41372",
+              "6715",
+              "116",
+              "65393",
+              "2732",
+              "16790",
+              "57710",
+              "56935",
+              "34058",
+              "36286",
+              "14033",
+              "34553",
+              "8616",
+              "46819",
+              "61419",
+              "5314",
+              "29009",
+              "59362",
+              "62677",
+              "46554",
+              "10131",
+              "3251",
+              "21984",
+              "61403",
+              "56349",
+              "40313",
+              "58363",
+              "55938",
+              "41394",
+              "33345",
+              "61923",
+              "16256",
+              "50816",
+              "39567",
+              "37974",
+              "62230",
+              "19355",
+              "50720",
+              "43557",
+              "11376",
+              "34199",
+              "45885",
+              "54521",
+              "13537",
+              "49455",
+              "44299",
+              "38105",
+              "6006",
+              "47168",
+              "50104",
+              "37594",
+              "8983",
+              "33612",
+              "40200",
+              "61842",
+              "33240",
+              "50483",
+              "45343",
+              "57021",
+              "8957",
+              "7960",
+              "48552",
+              "31238",
+              "1433",
+              "95",
+              "8737",
+              "41511",
+              "35560",
+              "25927",
+              "32847",
+              "6077",
+              "35645",
+              "14686",
+              "53795",
+              "62210",
+              "19318",
+              "58789",
+              "13307",
+              "3894",
+              "4345",
+              "14598",
+              "50837",
+              "43979",
+              "26926",
+              "45333",
+              "54733",
+              "7104",
+              "49512",
+              "15885",
+              "22783",
+              "18160",
+              "26945",
+              "15809",
+              "31175",
+              "54036",
+              "30720",
+              "11679",
+              "7424",
+              "36994",
+              "1823",
+              "61042",
+              "54453",
+              "19006",
+              "39461",
+              "229",
+              "46365"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "13289",
+              "34207",
+              "30265",
+              "64591",
+              "23265",
+              "46091",
+              "64223",
+              "56857"
+            ]
+          }
+        }
+      },
+      {
+        "id": "hive",
+        "min_level": 101,
+        "range": "",
+        "name": "Schwarmfestung mit Ruzhans Falle",
+        "names": {
+          "de": "Schwarmfestung mit Ruzhans Falle",
+          "en": "Hive Fortress trap setup",
+          "hybrid": "Hive Fortress mit Ruzhan’s Trap"
+        },
+        "sources": [
+          "variant-hive",
+          "video",
+          "gems"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "Lass [[gem%3ASummonFireDjinnPlayer|Ruzhan]] sein Schwert dorthin werfen, wo die Gegner zusammenlaufen. Sie lösen die Bodenrunen beim Betreten aus. Schicke [[gem%3ASummonSandDjinnPlayer|Kelari]] in die nächste Gruppe, während die Runen liegen."
+            ],
+            "hybrid": [
+              "Lass [[gem%3ASummonFireDjinnPlayer|Ruzhan]] sein Schwert dorthin werfen, wo die Gegner zusammenlaufen. Sie lösen die Bodenrunen beim Betreten aus. Schicke [[gem%3ASummonSandDjinnPlayer|Kelari]] in die nächste Gruppe, während die Runen liegen."
+            ],
+            "en": [
+              "Have [[gem%3ASummonFireDjinnPlayer|Ruzhan]] throw his sword where enemies are converging. They trigger the runes by walking over them. You can send [[gem%3ASummonSandDjinnPlayer|Kelari]] to the next pack while the runes are on the ground."
+            ]
+          },
+          "why": {
+            "de": [
+              "[[gem%3ASupportLongFusePlayerTwo|Langer%20Z%C3%BCnder%20II]] verzögert die Explosion und erhöht ihren Schaden. [[gem%3ASupportRearmPlayerTwo|Wiederbewaffnung%20II]] gibt der ausgelösten Falle eine Chance, erneut scharf zu werden."
+            ],
+            "hybrid": [
+              "[[gem%3ASupportLongFusePlayerTwo|Long%20Fuse%20II]] verzögert die Explosion und erhöht ihren Schaden. [[gem%3ASupportRearmPlayerTwo|Rearm%20II]] gibt der ausgelösten Falle eine Chance, erneut scharf zu werden."
+            ],
+            "en": [
+              "[[gem%3ASupportLongFusePlayerTwo|Long%20Fuse%20II]] trades a later detonation for a harder hit. [[gem%3ASupportRearmPlayerTwo|Rearm%20II]] gives a triggered trap a chance to arm again."
+            ]
+          },
+          "gems": {
+            "de": [
+              "Für seinen [[gem%3ASummonSpectrePlayer|Schemen]] wählt terence_ den Angetriebenen Eiferer aus der Ausgehöhlten Schlucht. Plane laut Guide 55 Wille pro Exemplar ein."
+            ],
+            "hybrid": [
+              "Für seinen [[gem%3ASummonSpectrePlayer|Schemen]] wählt terence_ den Powered Zealot aus der Etched Ravine. Plane laut Guide 55 Spirit pro Exemplar ein."
+            ],
+            "en": [
+              "For the [[gem%3ASummonSpectrePlayer|spectre]], terence_ uses a Powered Zealot found in Etched Ravine. His guide budgets 55 Spirit per minion."
+            ]
+          }
+        },
+        "sourceVariantId": "7df96f45-24a1-4d45-9c4c-9ccc49cb5335",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Omen Sceptre",
+              "base": "Omen Sceptre",
+              "sourceText": "Omen Sceptre\n+28 to Intelligence\n+15 to maximum Mana\n8% increased Spirit\n50% increased Presence Area of Effect\n+4 to Level of all Minion Skills\nAllies in your Presence deal 14 to 21 added Attack Fire Damage",
+              "levelInterval": [
+                16,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Tasalian Focus",
+              "base": "Tasalian Focus",
+              "sourceText": "Tasalian Focus\n+31% to Lightning Resistance\n+71 to maximum Energy Shield\n+69 to maximum Mana\n+2 to Level of all Minion Skills\n80% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Jade Tiara",
+              "base": "Jade Tiara",
+              "sourceText": "Jade Tiara\n+21 to Intelligence\n+52 to maximum Energy Shield\n+33 to maximum Mana\n+2 to Level of all Minion Skills\n140% increased Energy Shield",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Flowing Raiment",
+              "base": "Flowing Raiment",
+              "sourceText": "Flowing Raiment\n+31% to Fire Resistance\n+36% to Lightning Resistance\n+30 to Spirit\n+91 to maximum Energy Shield\n80% increased Energy Shield\n+9 to Strength and Dexterity",
+              "levelInterval": [
+                70,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Sirenscale Gloves",
+              "base": "Sirenscale Gloves",
+              "sourceText": "Sirenscale Gloves\n12% increased Rarity of Items found\n+33 to maximum Life\n+16% to Fire Resistance\n+31% to Cold Resistance\n+34 to maximum Energy Shield\n33% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Runeforged Sandsworn Sandals",
+              "base": "Runeforged Sandsworn Sandals",
+              "sourceText": "Runeforged Sandsworn Sandals\n+36% to Cold Resistance\n30% increased Movement Speed\n+42 to maximum Energy Shield\n80% increased Energy Shield",
+              "levelInterval": [
+                75,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Lunar Amulet",
+              "base": "Lunar Amulet",
+              "sourceText": "Lunar Amulet\n40% increased Mana Regeneration Rate\n+21 to Strength\n35% increased Energy Shield from Equipped Body Armour\n+3 to Level of all Minion Skills\n39% increased maximum Energy Shield",
+              "levelInterval": [
+                14,
+                100
+              ]
+            },
+            "belt": {
+              "sourceName": "Ornate Belt",
+              "base": "Ornate Belt",
+              "sourceText": "Ornate Belt\n+21% to Fire Resistance\n+31% to Lightning Resistance\n64 to 98 Physical Thorns damage\nMinions deal 45% increased Damage with Command Skills\nGain 6% of Maximum Mana as Armour\nMinions have 44% increased Immobilisation buildup",
+              "levelInterval": [
+                31,
+                100
+              ]
+            },
+            "ring1": {
+              "sourceName": "Prismatic Ring",
+              "base": "Prismatic Ring",
+              "sourceText": "Prismatic Ring\n30% increased Mana Regeneration Rate\nMinions deal 22% increased Damage\n+36% to Fire Resistance\n+11% to Lightning Resistance\nAdds 10 to 18 Physical Damage to Attacks\nMinions have 19% increased maximum Life",
+              "levelInterval": [
+                35,
+                100
+              ]
+            },
+            "ring2": {
+              "sourceName": "Prismatic Ring",
+              "base": "Prismatic Ring",
+              "sourceText": "Prismatic Ring\n60% increased Mana Regeneration Rate\nAdds 4 to 8 Physical Damage to Attacks\n25% increased Chaos Damage\nMinions have 21% increased Critical Hit Chance\nMinions have 26% increased Critical Damage Bonus",
+              "levelInterval": [
+                35,
+                100
+              ]
+            },
+            "flask1": {
+              "sourceName": "Transcendent Life Flask",
+              "base": "Transcendent Life Flask",
+              "sourceText": "Transcendent Life Flask\n29% reduced Charges per use\n56% increased Recovery rate",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Ultimate Mana Flask",
+              "base": "Ultimate Mana Flask",
+              "sourceText": "Ultimate Mana Flask\n39% increased Charges\n46% increased Recovery rate",
+              "levelInterval": [
+                60,
+                100
+              ]
+            },
+            "charm1": {
+              "unique": "The Black Cat",
+              "sourceName": "The Black Cat"
+            },
+            "charm2": {
+              "sourceName": "Thawing Charm",
+              "base": "Thawing Charm",
+              "sourceText": "Thawing Charm\n20% reduced Charges per use\n16% increased Duration",
+              "levelInterval": [
+                12,
+                100
+              ]
+            },
+            "charm3": {
+              "unique": "Nascent Hope",
+              "sourceName": "Nascent Hope"
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonFireDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportFirePenetrationPlayerTwo"
+                },
+                {
+                  "id": "SupportAddedFireDamagePlayer"
+                },
+                {
+                  "id": "SupportLongFusePlayerTwo"
+                },
+                {
+                  "id": "SupportBiddingPlayerTwo"
+                },
+                {
+                  "id": "SupportRearmPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportAddedColdDamagePlayer"
+                },
+                {
+                  "id": "SupportBiddingPlayerTwo"
+                },
+                {
+                  "id": "SupportHulkingMinionsPlayer"
+                },
+                {
+                  "id": "SupportBlindsidePlayer"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "KelariDeceptionVarashta",
+              "sockets": []
+            },
+            {
+              "id": "AscendancyCommandFireDjinnFireRunes",
+              "sockets": []
+            },
+            {
+              "id": "MalicePlayer",
+              "sockets": [
+                {
+                  "id": "SupportHerDeclarationPlayer",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportUpwellingPlayerTwo"
+                },
+                {
+                  "id": "SupportClarityPlayer"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "SummonSpectrePlayer",
+              "sockets": [
+                {
+                  "id": "SupportWildshardsPlayerTwo"
+                },
+                {
+                  "id": "SupportPiercePlayerThree"
+                },
+                {
+                  "id": "SupportProjectileAccelerationPlayerThree"
+                },
+                {
+                  "id": "SupportElectrocutePlayer"
+                },
+                {
+                  "id": "SupportBreachlordsRift",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                }
+              ],
+              "level": 19
+            },
+            {
+              "id": "RefutationPlayer",
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCooldownRecoveryPlayerTwo"
+                },
+                {
+                  "id": "SupportEfficiencyPlayerTwo"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "TornadoPlayer",
+              "levelInterval": [
+                41,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportExpandPlayer"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                },
+                {
+                  "id": "SupportSlowPotencyPlayer"
+                },
+                {
+                  "id": "SupportCatalysingElementsPlayer"
+                }
+              ],
+              "level": 16
+            },
+            {
+              "id": "BlasphemyPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "CurseOfRepulsionPlayer",
+                  "kind": "skill"
+                },
+                {
+                  "id": "SupportBlindPlayerTwo"
+                },
+                {
+                  "id": "SupportNeuralOverloadPlayer"
+                },
+                {
+                  "id": "SupportLivingLightningPlayerTwo"
+                },
+                {
+                  "id": "SupportCullingStrikePlayerTwo"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "FrostBombPlayer",
+              "sockets": [],
+              "level": 18
+            },
+            {
+              "id": "EnfeeblePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCurseEffectPlayer"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                },
+                {
+                  "id": "SupportHexBloomPlayer"
+                }
+              ],
+              "level": 19
+            },
+            {
+              "id": "ConvalescencePlayer",
+              "levelInterval": [
+                10,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCooldownRecoveryPlayerTwo"
+                }
+              ],
+              "level": 18
+            }
+          ],
+          "tree": {
+            "main": [
+              "44871",
+              "30346",
+              "34006",
+              "15408",
+              "2254",
+              "14666",
+              "9642",
+              "517",
+              "39037",
+              "11672",
+              "48030",
+              "62436",
+              "3215",
+              "41372",
+              "6715",
+              "116",
+              "65393",
+              "2732",
+              "16790",
+              "57710",
+              "8616",
+              "46819",
+              "61419",
+              "3025",
+              "38732",
+              "17672",
+              "35896",
+              "47155",
+              "17394",
+              "49088",
+              "5314",
+              "29009",
+              "59362",
+              "62677",
+              "47759",
+              "46554",
+              "10131",
+              "3251",
+              "21984",
+              "61403",
+              "56349",
+              "40313",
+              "58363",
+              "55938",
+              "41394",
+              "44669",
+              "39280",
+              "32951",
+              "50816",
+              "37974",
+              "62230",
+              "19355",
+              "50720",
+              "43557",
+              "11376",
+              "34199",
+              "45885",
+              "54521",
+              "13537",
+              "49455",
+              "44299",
+              "38105",
+              "6006",
+              "47168",
+              "50104",
+              "37594",
+              "8983",
+              "33612",
+              "40200",
+              "61842",
+              "33240",
+              "50483",
+              "45343",
+              "57021",
+              "8957",
+              "7960",
+              "48552",
+              "31238",
+              "10452",
+              "1878",
+              "14328",
+              "1433",
+              "95",
+              "8737",
+              "41511",
+              "35560",
+              "25927",
+              "32847",
+              "6077",
+              "35645",
+              "14686",
+              "53795",
+              "62210",
+              "19318",
+              "58789",
+              "13307",
+              "3894",
+              "4345",
+              "14598",
+              "50837",
+              "43979",
+              "26926",
+              "45333",
+              "54733",
+              "7104",
+              "49512",
+              "15885",
+              "22783",
+              "18160",
+              "26945",
+              "15809",
+              "31175",
+              "54036",
+              "30720",
+              "11679",
+              "7424",
+              "36994",
+              "1823"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "34207",
+              "64591",
+              "30265",
+              "46091",
+              "64223",
+              "56857",
+              "13289",
+              "23265"
+            ]
+          }
+        }
+      },
+      {
+        "id": "navira",
+        "min_level": 101,
+        "range": "",
+        "name": "Defensiv mit Navira",
+        "names": {
+          "de": "Defensiv mit Navira",
+          "en": "Defensive Navira",
+          "hybrid": "Defensiv mit Navira"
+        },
+        "sources": [
+          "variant-navira",
+          "equipment",
+          "dominion"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "[[node%3A43426|Naviras%20Brunnen]] ergänzt Kelaris Angriffe mit Erholung. Platziere den Brunnen dort, wo du während eines längeren Kampfes stehen kannst."
+            ],
+            "hybrid": [
+              "[[node%3A43426|Navira's%20Well]] ergänzt Kelaris Angriffe mit Erholung. Platziere den Brunnen dort, wo du während eines längeren Kampfes stehen kannst."
+            ],
+            "en": [
+              "[[node%3A43426|Navira%E2%80%99s%20Well]] adds recovery to [[gem%3ASummonSandDjinnPlayer|Kelari]]’s attacks. Place it where you can stay during a long fight."
+            ]
+          },
+          "gear": {
+            "de": [
+              "Das [[item%3Amain1|Beispielzepter]] erhöht die maximale Zahl an Strippenzieher-Stapeln um vier. Prüfe beim Vergleichen eines Ersatzes auch den Willen für deine Kreaturen."
+            ],
+            "hybrid": [
+              "Das [[item%3Amain1|Beispielzepter]] erhöht die maximale Zahl an Puppet Master-Stapeln um vier. Prüfe beim Vergleichen eines Ersatzes auch den Spirit für deine Kreaturen."
+            ],
+            "en": [
+              "The example [[item%3Amain1|sceptre]] adds four to your maximum Puppet Master stacks. When comparing a replacement, also check how much Spirit it leaves for minions."
+            ]
+          },
+          "tree": {
+            "de": [
+              "Der Baum kombiniert den [[node%3A56349|Schl%C3%BCsselstein%20f%C3%BCr%201%20maximales%20Leben]] mit Energieschild. Sieh dir im [[item%3Aoff1|Fokus]] und in der [[item%3Abody|K%C3%B6rperr%C3%BCstung]] die flachen und prozentualen Schildwerte zusammen an."
+            ],
+            "hybrid": [
+              "Der Baum kombiniert den [[node%3A56349|Schl%C3%BCsselstein%20f%C3%BCr%201%20maximales%20Leben]] mit Energieschild. Sieh dir im [[item%3Aoff1|Fokus]] und in der [[item%3Abody|K%C3%B6rperr%C3%BCstung]] die flachen und prozentualen Schildwerte zusammen an."
+            ],
+            "en": [
+              "The tree combines the [[node%3A56349|one-life%20keystone]] with Energy Shield. Inspect the flat and percentage Energy Shield rolls together on the [[item%3Aoff1|focus]] and [[item%3Abody|body%20armour]]."
+            ]
+          }
+        },
+        "sourceVariantId": "1",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Shrine Sceptre",
+              "base": "Shrine Sceptre",
+              "sourceText": "Shrine Sceptre\n+42 to maximum Mana\nAllies in your Presence deal 90% increased Damage\nAllies in your Presence have 35% increased Critical Hit Chance\n96% increased Spirit\n+4 to Level of all Minion Skills\n+4 maximum stacks of Puppet Master",
+              "levelInterval": [
+                26,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Tasalian Focus",
+              "base": "Tasalian Focus",
+              "sourceText": "Tasalian Focus\n+21% to Cold Resistance\n+36% to Lightning Resistance\n+71 to maximum Energy Shield\n+33 to maximum Mana\n+2 to Level of all Minion Skills\n131% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Divine Crown",
+              "base": "Divine Crown",
+              "sourceText": "Divine Crown\n+40 to maximum Life\n+41% to Lightning Resistance\n40% increased Archon Buff duration\n+86 to Armour\n+26 to maximum Energy Shield\n+2 to Level of all Minion Skills\n80% increased Armour and Energy Shield",
+              "levelInterval": [
+                75,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Vile Robe",
+              "base": "Vile Robe",
+              "sourceText": "Vile Robe\n+57 to Spirit\n+25 to Intelligence\n+80 to maximum Energy Shield\nHits against you have 42% reduced Critical Damage Bonus\n6% increased Spirit Reservation Efficiency of Skills\n101% increased Energy Shield",
+              "levelInterval": [
+                65,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Sirenscale Gloves",
+              "base": "Sirenscale Gloves",
+              "sourceText": "Sirenscale Gloves\n+41% to Fire Resistance\n+41% to Cold Resistance\n+41% to Lightning Resistance\n+80 to maximum Energy Shield\n+25 to maximum Mana\n45% increased maximum Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Sekhema Sandals",
+              "base": "Sekhema Sandals",
+              "sourceText": "Sekhema Sandals\n12% increased Energy Shield Recharge Rate\n+16% to Fire Resistance\n+26% to Lightning Resistance\n30% increased Movement Speed\n+71 to maximum Energy Shield\n80% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Lapis Amulet",
+              "base": "Lapis Amulet",
+              "sourceText": "Lapis Amulet\n60% increased Mana Regeneration Rate\n+42 to maximum Energy Shield\n20% increased Global Armour, Evasion and Energy Shield\n+3 to Level of all Minion Skills\n21% increased maximum Energy Shield\nMinions have 12% increased Cooldown Recovery Rate",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "belt": {
+              "sourceName": "Plate Belt",
+              "base": "Plate Belt",
+              "sourceText": "Plate Belt\n+36% to Fire Resistance\n+31% to Cold Resistance\n20% increased effect of Archon Buffs on you\nMinions deal 53% increased Damage with Command Skills\nCharms gain 0.1 charges per Second\n+2 to Level of all Minion Skills",
+              "levelInterval": [
+                24,
+                100
+              ]
+            },
+            "ring1": {
+              "sourceName": "Ruby Ring",
+              "base": "Ruby Ring",
+              "sourceText": "Ruby Ring\n60% increased Mana Regeneration Rate\nMinions deal 19% increased Damage\n+31% to Cold Resistance\nMinions have 29% increased Critical Hit Chance\nMinions Break Armour equal to 2% of Physical damage dealt",
+              "levelInterval": [
+                8,
+                100
+              ]
+            },
+            "ring2": {
+              "sourceName": "Prismatic Ring",
+              "base": "Prismatic Ring",
+              "sourceText": "Prismatic Ring\n60% increased Mana Regeneration Rate\n+37 to maximum Runic Ward\n+36% to Cold Resistance\n+105 to maximum Mana\nMinions have 31% increased Critical Damage Bonus",
+              "levelInterval": [
+                35,
+                100
+              ]
+            },
+            "flask1": {
+              "sourceName": "Transcendent Life Flask",
+              "base": "Transcendent Life Flask",
+              "sourceText": "Transcendent Life Flask\n26% reduced Charges per use\n61% more Recovery if used while on Low Life",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "flask2": {
+              "unique": "Lavianga's Spirits",
+              "sourceName": "Lavianga's Spirits"
+            },
+            "charm1": {
+              "sourceName": "Thawing Charm",
+              "base": "Thawing Charm",
+              "levelInterval": [
+                12,
+                100
+              ]
+            },
+            "charm2": {
+              "unique": "The Black Cat",
+              "sourceName": "The Black Cat"
+            },
+            "charm3": {
+              "unique": "Rite of Passage",
+              "sourceName": "Rite of Passage"
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportBiddingPlayerTwo"
+                },
+                {
+                  "id": "SupportBlindsidePlayer"
+                },
+                {
+                  "id": "SupportVoranasSiege",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                },
+                {
+                  "id": "SupportKurgalsLeashPlayer",
+                  "levelInterval": [
+                    25,
+                    100
+                  ]
+                },
+                {
+                  "id": "SupportAddedColdDamagePlayer"
+                }
+              ],
+              "level": 20
+            },
+            {
+              "id": "MalicePlayer",
+              "sockets": [
+                {
+                  "id": "SupportUpwellingPlayerTwo"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportHerDeclarationPlayer",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                }
+              ],
+              "level": 19
+            },
+            {
+              "id": "SummonSpectrePlayer",
+              "sockets": [
+                {
+                  "id": "SupportPiercePlayerThree"
+                },
+                {
+                  "id": "SupportElectrocutePlayer"
+                },
+                {
+                  "id": "SupportBreachlordsRift",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                },
+                {
+                  "id": "SupportWildshardsPlayerTwo"
+                },
+                {
+                  "id": "SupportTecrodsRevengePlayer",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                }
+              ],
+              "level": 20
+            },
+            {
+              "id": "BlasphemyPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "CurseOfRepulsionPlayer",
+                  "kind": "skill"
+                },
+                {
+                  "id": "SupportBlindPlayerTwo"
+                },
+                {
+                  "id": "SupportMaimPlayer"
+                },
+                {
+                  "id": "SupportCullingStrikePlayerTwo"
+                },
+                {
+                  "id": "SupportLivingLightningPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "DespairPlayer",
+              "levelInterval": [
+                31,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportCurseEffectPlayer"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                },
+                {
+                  "id": "SupportHexBloomPlayer"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "EnfeeblePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportCurseEffectPlayer"
+                },
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                },
+                {
+                  "id": "SupportHexBloomPlayer"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "BlinkReservationPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [],
+              "level": 18
+            },
+            {
+              "id": "RefutationPlayer",
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                },
+                {
+                  "id": "SupportCooldownRecoveryPlayerTwo"
+                }
+              ]
+            }
+          ],
+          "tree": {
+            "main": [
+              "44871",
+              "30346",
+              "34006",
+              "15408",
+              "2254",
+              "14666",
+              "9642",
+              "517",
+              "39037",
+              "11672",
+              "48030",
+              "62436",
+              "3215",
+              "57710",
+              "1433",
+              "31238",
+              "48552",
+              "7960",
+              "50104",
+              "47168",
+              "44299",
+              "49455",
+              "13537",
+              "54521",
+              "58789",
+              "13307",
+              "3894",
+              "45885",
+              "59362",
+              "62677",
+              "47759",
+              "46554",
+              "10131",
+              "3251",
+              "21984",
+              "61403",
+              "56349",
+              "50816",
+              "37974",
+              "62230",
+              "50720",
+              "43557",
+              "11376",
+              "34199",
+              "37594",
+              "8983",
+              "33612",
+              "40200",
+              "61842",
+              "33240",
+              "50483",
+              "45343",
+              "57021",
+              "8957",
+              "42825",
+              "21404",
+              "4931",
+              "8616",
+              "46819",
+              "61419",
+              "49512",
+              "15885",
+              "22783",
+              "18160",
+              "26945",
+              "15809",
+              "31175",
+              "54036",
+              "30720",
+              "4748",
+              "17973",
+              "5314",
+              "29009",
+              "41372",
+              "6715",
+              "116",
+              "10452",
+              "1878",
+              "14328",
+              "18959",
+              "65393",
+              "2732",
+              "16790",
+              "95",
+              "8737",
+              "41511",
+              "35560",
+              "6077",
+              "35645",
+              "25927",
+              "32847",
+              "14686",
+              "53795",
+              "62210",
+              "19318",
+              "54733",
+              "7104",
+              "4345",
+              "14598",
+              "50837",
+              "43979",
+              "26926",
+              "45333",
+              "4456",
+              "34058",
+              "36286",
+              "14033",
+              "34553",
+              "40313",
+              "58363",
+              "55938",
+              "41394",
+              "6006",
+              "38105",
+              "19355",
+              "44669",
+              "39280",
+              "32951",
+              "46358",
+              "59376",
+              "11679",
+              "61042",
+              "56935",
+              "49357",
+              "44733",
+              "30979",
+              "38856",
+              "50423"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "13289",
+              "30265",
+              "23265",
+              "46091",
+              "64223",
+              "56857",
+              "32705",
+              "43426"
+            ]
+          }
+        }
+      },
+      {
+        "id": "crit",
+        "min_level": 101,
+        "range": "",
+        "name": "Kelari auf kritische Treffer auslegen",
+        "names": {
+          "de": "Kelari auf kritische Treffer auslegen",
+          "en": "Critical-hit Kelari",
+          "hybrid": "Kelari auf kritische Treffer auslegen"
+        },
+        "sources": [
+          "variant-crit",
+          "gems",
+          "dominion"
+        ],
+        "editorial": {
+          "next": {
+            "de": [
+              "In der Krit-Variante entfällt [[gem%3AAscendancyCommandFireDjinnFireRunes|Ruzhans%20Falle]]. Prüfe zuerst Kelaris fünf Unterstützungen. Das Ziel von 100 % kritischer Trefferchance bezieht sich auf den fertig ausgerüsteten Djinn."
+            ],
+            "hybrid": [
+              "In der Krit-Variante entfällt [[gem%3AAscendancyCommandFireDjinnFireRunes|Ruzhans%20Falle]]. Prüfe zuerst Kelaris fünf Unterstützungen. Das Ziel von 100 % kritischer Trefferchance bezieht sich auf den fertig ausgerüsteten Djinn."
+            ],
+            "en": [
+              "The crit variant drops [[gem%3AAscendancyCommandFireDjinnFireRunes|Ruzhan%E2%80%99s%20Trap]]. Start with [[gem%3ASummonSandDjinnPlayer|Kelari]]’s five supports. The 100% critical chance in the variant name is a target for the fully equipped djinn."
+            ]
+          },
+          "gems": {
+            "de": [
+              "[[gem%3ASupportKurgalsLeashPlayer|Kurgals%20Leine]] gewährt dir und [[gem%3ASummonSandDjinnPlayer|Kelari]] nach einem Befehl unheilige Macht. Der [[gem%3ASummonSkeletalClericsPlayer|Skelettkleriker]] übernimmt in dieser Variante die Unterstützung der übrigen Kreaturen."
+            ],
+            "hybrid": [
+              "[[gem%3ASupportKurgalsLeashPlayer|Kurgal's%20Leash]] gewährt dir und [[gem%3ASummonSandDjinnPlayer|Kelari]] nach einem Befehl unheilige Macht. Der [[gem%3ASummonSkeletalClericsPlayer|Skelettkleriker]] übernimmt in dieser Variante die Unterstützung der übrigen Kreaturen."
+            ],
+            "en": [
+              "[[gem%3ASupportKurgalsLeashPlayer|Kurgal%E2%80%99s%20Leash]] grants Unholy Might to you and [[gem%3ASummonSandDjinnPlayer|Kelari]] when you issue a command. This version also runs a [[gem%3ASummonSkeletalClericsPlayer|Skeletal%20Cleric]] to support the other minions."
+            ]
+          },
+          "gear": {
+            "de": [
+              "Das [[item%3Amain1|Zepter]] des Autors erhöht die Stufen von Kreaturenfertigkeiten um vier, sein [[item%3Aoff1|Fokus]] um zwei. Kontrolliere nach jedem Wechsel auch Kelaris angezeigte Werte."
+            ],
+            "hybrid": [
+              "Das [[item%3Amain1|Zepter]] des Autors erhöht die Stufen von Kreaturenfertigkeiten um vier, sein [[item%3Aoff1|Fokus]] um zwei. Kontrolliere nach jedem Wechsel auch Kelaris angezeigte Werte."
+            ],
+            "en": [
+              "The example [[item%3Amain1|sceptre]] adds four minion skill levels and the [[item%3Aoff1|focus]] adds two. Check [[gem%3ASummonSandDjinnPlayer|Kelari]]’s displayed stats after each change."
+            ]
+          }
+        },
+        "sourceVariantId": "e617493b-32cf-4652-88b0-3784ca7a868d",
+        "setup": {
+          "className": "Sorceress",
+          "ascendancy": "Disciple of Varashta",
+          "gear": {
+            "main1": {
+              "sourceName": "Shrine Sceptre",
+              "base": "Shrine Sceptre",
+              "sourceText": "Shrine Sceptre\n60% increased Mana Regeneration Rate\n+42 to maximum Mana\nAllies in your Presence deal 90% increased Damage\n96% increased Spirit\n+4 to Level of all Minion Skills",
+              "levelInterval": [
+                26,
+                100
+              ]
+            },
+            "off1": {
+              "sourceName": "Tasalian Focus",
+              "base": "Tasalian Focus",
+              "sourceText": "Tasalian Focus\n+80 to maximum Energy Shield\n+27 to maximum Mana\n25% increased Cast Speed\n+2 to Level of all Minion Skills\n134% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "helm": {
+              "sourceName": "Ancestral Tiara",
+              "base": "Ancestral Tiara",
+              "sourceText": "Ancestral Tiara\n16% increased Rarity of Items found\n+31% to Cold Resistance\n+26% to Lightning Resistance\n+52 to maximum Energy Shield\n+2 to Level of all Minion Skills\n68% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "body": {
+              "sourceName": "Vile Robe",
+              "base": "Vile Robe",
+              "sourceText": "Vile Robe\n+36% to Fire Resistance\n+21% to Lightning Resistance\n+8 to maximum Energy Shield\n+4 to maximum Energy Shield\n107% increased Energy Shield",
+              "levelInterval": [
+                65,
+                100
+              ]
+            },
+            "gloves": {
+              "sourceName": "Sirenscale Gloves",
+              "base": "Sirenscale Gloves",
+              "sourceText": "Sirenscale Gloves\n15% increased Rarity of Items found\n+40 to maximum Life\n+36% to Lightning Resistance\n+25 to Intelligence\n+52 to maximum Energy Shield\n27% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "boots": {
+              "sourceName": "Runeforged Sekhema Sandals",
+              "base": "Runeforged Sekhema Sandals",
+              "sourceText": "Runeforged Sekhema Sandals\n15% increased Rarity of Items found\n+41% to Fire Resistance\n35% increased Movement Speed\n+25 to Intelligence\n+52 to maximum Energy Shield\n80% increased Energy Shield",
+              "levelInterval": [
+                80,
+                100
+              ]
+            },
+            "amulet": {
+              "sourceName": "Lunar Amulet",
+              "base": "Lunar Amulet",
+              "sourceText": "Lunar Amulet\n45% increased Mana Regeneration Rate\n+36% to Cold Resistance\n+52 to maximum Energy Shield\n+4 to Level of all Minion Skills\nMinions deal 15% increased Damage if you've Hit Recently",
+              "levelInterval": [
+                14,
+                100
+              ]
+            },
+            "belt": {
+              "sourceName": "Heavy Belt",
+              "base": "Heavy Belt",
+              "sourceText": "Heavy Belt\n+100 to maximum Life\n+31 to Strength\n+268 to Armour\nMinions have 21% increased Area of Effect\nMinions deal 45% increased Damage with Command Skills\nMinions have 44% increased Immobilisation buildup",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "ring1": {
+              "sourceName": "Pearl Ring",
+              "base": "Pearl Ring",
+              "sourceText": "Pearl Ring\n+9% to all Elemental Resistances\nAdds 1 to 28 Lightning damage to Attacks\n25% increased Cold Damage\nMinions have 15% increased Critical Damage Bonus",
+              "levelInterval": [
+                32,
+                100
+              ]
+            },
+            "ring2": {
+              "unique": "Ventor's Gamble",
+              "sourceName": "Ventor's Gamble"
+            },
+            "flask1": {
+              "sourceName": "Transcendent Life Flask",
+              "base": "Transcendent Life Flask",
+              "sourceText": "Transcendent Life Flask\n29% reduced Charges per use\n56% increased Recovery rate",
+              "levelInterval": [
+                50,
+                100
+              ]
+            },
+            "flask2": {
+              "sourceName": "Ultimate Mana Flask",
+              "base": "Ultimate Mana Flask",
+              "sourceText": "Ultimate Mana Flask\n26% reduced Charges per use\n56% increased Recovery rate",
+              "levelInterval": [
+                60,
+                100
+              ]
+            },
+            "charm1": {
+              "unique": "Nascent Hope",
+              "sourceName": "Nascent Hope"
+            },
+            "charm2": {
+              "unique": "Rite of Passage",
+              "sourceName": "Rite of Passage"
+            },
+            "charm3": {
+              "unique": "The Fall of the Axe",
+              "sourceName": "The Fall of the Axe"
+            }
+          },
+          "gems": [
+            {
+              "id": "SummonSandDjinnPlayer",
+              "sockets": [
+                {
+                  "id": "SupportKurgalsLeashPlayer",
+                  "levelInterval": [
+                    25,
+                    100
+                  ]
+                },
+                {
+                  "id": "SupportHulkingMinionsPlayer"
+                },
+                {
+                  "id": "SupportBiddingPlayerThree"
+                },
+                {
+                  "id": "SupportVoranasSiege",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                },
+                {
+                  "id": "SupportBlindsidePlayer"
+                }
+              ]
+            },
+            {
+              "id": "KelariDeceptionVarashta",
+              "sockets": []
+            },
+            {
+              "id": "PurityOfLightningPlayer",
+              "sockets": [
+                {
+                  "id": "SupportHerDeclarationPlayer",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                },
+                {
+                  "id": "SupportUpwellingPlayerTwo"
+                },
+                {
+                  "id": "SupportClarityPlayerTwo"
+                },
+                {
+                  "id": "SupportStrongHeartedPlayer"
+                },
+                {
+                  "id": "SupportCoolheadedPlayer"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "BlinkSandPlayer",
+              "sockets": [],
+              "level": 16
+            },
+            {
+              "id": "RefutationPlayer",
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCooldownRecoveryPlayerTwo"
+                },
+                {
+                  "id": "SupportEfficiencyPlayerTwo"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                }
+              ]
+            },
+            {
+              "id": "EnfeeblePlayer",
+              "levelInterval": [
+                6,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCurseEffectPlayer"
+                },
+                {
+                  "id": "SupportMagnifiedAreaPlayerTwo"
+                },
+                {
+                  "id": "SupportHexBloomPlayer"
+                }
+              ],
+              "level": 19
+            },
+            {
+              "id": "SummonSpectrePlayer",
+              "sockets": [
+                {
+                  "id": "SupportWildshardsPlayerTwo"
+                },
+                {
+                  "id": "SupportPiercePlayerThree"
+                },
+                {
+                  "id": "SupportProjectileAccelerationPlayerThree"
+                },
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportRakiatasFlowPlayer",
+                  "levelInterval": [
+                    65,
+                    100
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SummonSkeletalClericsPlayer",
+              "levelInterval": [
+                52,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "SupportLastGaspPlayer"
+                },
+                {
+                  "id": "SupportRapidCastingPlayerTwo"
+                },
+                {
+                  "id": "SupportDeathmarchPlayer"
+                },
+                {
+                  "id": "SupportMinionMasteryPlayer"
+                }
+              ],
+              "level": 20
+            },
+            {
+              "id": "ConvalescencePlayer",
+              "levelInterval": [
+                10,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "ProlongedDurationSupportPlayerTwo"
+                },
+                {
+                  "id": "SupportCooldownRecoveryPlayerTwo"
+                }
+              ],
+              "level": 18
+            },
+            {
+              "id": "BlasphemyPlayer",
+              "levelInterval": [
+                26,
+                100
+              ],
+              "sockets": [
+                {
+                  "id": "CurseOfRepulsionPlayer",
+                  "kind": "skill"
+                },
+                {
+                  "id": "SupportBlindPlayerTwo"
+                },
+                {
+                  "id": "SupportNeuralOverloadPlayer"
+                },
+                {
+                  "id": "SupportLivingLightningPlayerTwo"
+                },
+                {
+                  "id": "SupportCullingStrikePlayerTwo"
+                }
+              ],
+              "level": 18
+            }
+          ],
+          "tree": {
+            "main": [
+              "44871",
+              "30346",
+              "34006",
+              "15408",
+              "2254",
+              "14666",
+              "9642",
+              "517",
+              "39037",
+              "11672",
+              "48030",
+              "62436",
+              "3215",
+              "41372",
+              "6715",
+              "116",
+              "65393",
+              "2732",
+              "16790",
+              "57710",
+              "8616",
+              "43576",
+              "7971",
+              "1468",
+              "14324",
+              "46819",
+              "61419",
+              "5314",
+              "29009",
+              "59362",
+              "62677",
+              "46554",
+              "10131",
+              "3251",
+              "21984",
+              "61403",
+              "56349",
+              "40313",
+              "58363",
+              "55938",
+              "41394",
+              "50816",
+              "37974",
+              "62230",
+              "19355",
+              "50720",
+              "43557",
+              "11376",
+              "34199",
+              "45885",
+              "54521",
+              "13537",
+              "49455",
+              "44299",
+              "38105",
+              "6006",
+              "47168",
+              "50104",
+              "37594",
+              "8983",
+              "33612",
+              "40200",
+              "61842",
+              "33240",
+              "50483",
+              "45343",
+              "57021",
+              "8957",
+              "7960",
+              "23382",
+              "35408",
+              "24767",
+              "38596",
+              "31925",
+              "48552",
+              "31238",
+              "10452",
+              "1878",
+              "14328",
+              "18959",
+              "42825",
+              "21404",
+              "4931",
+              "1433",
+              "95",
+              "8737",
+              "41511",
+              "35560",
+              "25927",
+              "32847",
+              "6077",
+              "35645",
+              "14686",
+              "53795",
+              "62210",
+              "19318",
+              "4345",
+              "14598",
+              "50837",
+              "43979",
+              "26926",
+              "54733",
+              "7104",
+              "49512",
+              "15885",
+              "22783",
+              "18160",
+              "26945",
+              "15809",
+              "31175",
+              "54036",
+              "30720"
+            ],
+            "I": [],
+            "II": [],
+            "asc": [
+              "56783",
+              "13289",
+              "30265",
+              "23265",
+              "46091",
+              "64223",
+              "56857",
+              "36891"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+﻿PoE2 Ingame Guide
+Kampagne, Bosse, Builds & Atlas · Stand v.0.19.0 · Patch 0.5.5f
+
+SCHNELLSTART
+
+1. Rechtsklick auf die ZIP und „Alle extrahieren“ wählen.
+2. Im entpackten Ordner „PoE2 Guide starten“ doppelklicken.
+3. Path of Exile 2 öffnen und ein Gebiet betreten. Für die Anzeige über
+   dem Spiel „Fenster“ oder „Randloses Fenster“ nutzen.
+
+Beim ersten Start öffnet sich der Willkommensdialog für Sprache,
+Ansichtsmodus und Kachelhintergrund. Danach erscheint das HUD.
+Bei späteren Starts öffnet sich das HUD direkt, sofern der
+Willkommensdialog nicht für jeden Start aktiviert ist.
+Die Online-Guides findest du auf https://buildschmiede.de/.
+Voraussetzung ist Python 3.10 oder neuer für Windows mit Tcl/Tk.
+Doppelklicke einmal auf „Voraussetzungen installieren.cmd“. Die Datei
+prüft Python und öffnet ein Tk-Testfenster unsichtbar im Hintergrund.
+Falls nötig, lädt sie Python mit Tcl/Tk für dein Benutzerkonto herunter.
+Öffne danach „PoE2 Guide starten.cmd“.
+
+IM OVERLAY
+
+Quest zeigt zuerst Wege und Erkennungsmerkmale und darunter das Ziel.
+Dauerhafte Boni sind grün. Die Boss-Links stehen unter den Hinweisen.
+Boss zeigt Angriffe, Ausweichbewegungen und sichere Momente zum Kontern.
+Build zeigt Leveling und Ausrüstung für Supporting Fire, Archon Varashta,
+Twister Spirit Walker und Whirling Assault. Unter „Automatisch“ wählst du
+die Build-Phase. Der Doktorhut öffnet Wissen mit Suche und Kategorien.
+Ab dem zweiten Profil findest du dort den Atlas.
+Version und Port stehen unter Optionen. Bei Konflikten wählt der Guide
+automatisch einen freien Port.
+
+Im Quest-Reiter hakst du Aufgaben direkt ab. Klicke eine Überschrift zum Einklappen.
+Das HUD speichert deine Häkchen auf diesem PC.
+Eine frische Checkliste beginnst du unter Optionen → Kampagne.
+Ab Profil 3 findest du die Tastenkürzel unter Wissen.
+Stash Affinity und weitere Einsteiger-Tipps stehen auf Ausführlich.
+
+Ausführlich erklärt die Schritte. Kompakt zeigt die wichtigsten Stichpunkte.
+Der Guide startet mit Ausführlich und speichert deine Auswahl.
+
+F8 blendet das Overlay ein oder aus.
+F9 wechselt zwischen Spielmodus und Bearbeiten. Im Spielmodus bleiben
+Reiter, Boss-Links und Schaltflächen anklickbar. Klicks auf den Text
+und freie Flächen gehen an PoE2. Längeren Text kannst du in beiden
+Modi mit dem Mausrad direkt über dem Text scrollen.
+F10 und „Companion beenden“ in den Optionen schließen den Guide.
+Strg+Umschalt+F9 holt die Bedienung zurück. Du kannst dafür auch dieselbe
+Startdatei noch einmal öffnen.
+
+Im Bearbeitungsmodus die Gebietsüberschrift zum Verschieben ziehen.
+Unter Optionen → HUD & Anzeige stellst du Breite, Höhe und Zoom ein.
+Das HUD nutzt höchstens 20 Prozent der Monitorbreite.
+
+HILFE
+
+• Gebiet wird nicht erkannt: In Optionen „Client.txt wählen“ anklicken.
+  Die Datei liegt im Ordner „logs“ deiner PoE2-Installation.
+• Timer: F6 für Start, Pause und Weiter, F7 für Reset auf 00:00.
+  F4 startet und stoppt die separate Boss-Zeit. Die Belegung steht
+  unter Optionen → Tastenkürzel. Dort kannst du sie ändern.
+• Update: Die ZIP in einen eigenen Ordner entpacken und den neuen Starter
+  öffnen. Der geladene Stand steht unter Optionen. Bei einer Meldung zum
+  alten Guide diesen mit F10 beenden und den neuen Starter erneut öffnen.
+  Kopiere bei beendetem Guide den bisherigen Ordner app\userdata
+  in den entpackten v.0.19.0-Ordner unter app.
+  OBS-Browserquelle: http://127.0.0.1:8765/race-overlay.html
+  Falls nötig, setze den Port aus den Optionen ein.
+  Mehr zur Datenübernahme steht in app\README.md.
+• Diagnose: app\userdata\overlay_fehler.txt.
+
+Im Ordner „app“ liegen Programm, Daten und die ausführliche Anleitung.

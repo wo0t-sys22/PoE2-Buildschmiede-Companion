@@ -1,0 +1,1100 @@
+{
+  "patch": "0.5.5f",
+  "areaChecklists": {
+    "a1-ramparts": [
+      {
+        "id": "run:ramparts-gallows",
+        "title": {
+          "de": "Optional · Galgen → Unterstützungsgemme",
+          "en": "Optional · The Gallows → Support Gem"
+        }
+      }
+    ],
+    "a1-ogham-village": [
+      {
+        "id": "boss:executioner",
+        "title": {
+          "de": "Henker → Hebel → Leitis → Festungsmauern des Herrenhauses · Wegpunkt",
+          "en": "The Executioner → lever → Leitis → The Manor Ramparts · Waypoint"
+        }
+      },
+      {
+        "id": "route:a1-ogham-village",
+        "title": {
+          "de": "Leitis im Lager → ungeschnittene Fertigkeitengemme (Stufe 5)",
+          "en": "Leitis in town → Uncut Skill Gem (Level 5)"
+        }
+      },
+      {
+        "id": "route:a1-smithing-tools",
+        "title": {
+          "de": "Optional · Renlys Werkstatt → Schmiedewerkzeuge → Renly → Verwertungswerkbank",
+          "en": "Optional · Renly's Workshop → Smithing Tools → Renly → Salvage Bench"
+        }
+      },
+      {
+        "id": "run:ogham-blacksmith-chest",
+        "title": {
+          "de": "Optional · Schmiedetruhe → Sphäre des Kunsthandwerkers + Leere Rune → Rune bei Renly wählen",
+          "en": "Optional · Blacksmith's Chest → Artificer's Orb + Blank Rune → choose rune at Renly"
+        }
+      }
+    ],
+    "a1-farmlands-exit": [
+      {
+        "id": "run:farmlands-waypoint",
+        "title": {
+          "de": "Wegpunkt aktivieren",
+          "en": "Activate Waypoint"
+        }
+      },
+      {
+        "id": "route:a1-una-lute",
+        "title": {
+          "de": "Unas Laute abgeben und Buch benutzen",
+          "en": "Return Una's Lute and use the book"
+        }
+      },
+      {
+        "id": "run:farmlands-crop-circle",
+        "title": {
+          "de": "Optional · Kornkreis",
+          "en": "Optional · Crop Circle"
+        }
+      }
+    ],
+    "a1-hunting-exit": [
+      {
+        "id": "route:a1-hunting-blood",
+        "title": {
+          "de": "Glockenkrähe besiegen → Buch benutzen · 2 passive Punkte für Waffensets",
+          "en": "Defeat Crowbell → use book · 2 weapon set points"
+        }
+      },
+      {
+        "id": "run:hunting-dryadic",
+        "title": {
+          "de": "Optional · Dryadisches Ritual → seltener Gegner → Unterstützungsgemme I",
+          "en": "Optional · Dryadic Ritual → rare monster → Uncut Support Gem I"
+        }
+      }
+    ],
+    "a1-mausoleum-draven": [
+      {
+        "id": "run:mausoleum-forgotten-riches",
+        "title": {
+          "de": "Optional · Versteckte Reichtümer → Säulenschalter → Gold + Truhen",
+          "en": "Optional · Forgotten Riches → pillar switch → gold + chests"
+        }
+      },
+      {
+        "id": "boss:draven",
+        "title": {
+          "de": "Mausoleum des Prätors → Draven → Schlüsselstück",
+          "en": "Mausoleum of the Praetor → Draven → key piece"
+        }
+      }
+    ],
+    "a1-tomb-asinia": [
+      {
+        "id": "run:tomb-haunted-treasure",
+        "title": {
+          "de": "Optional · Umkämpfter Schatz → seltener Gegner → Unterstützungsgemme I",
+          "en": "Optional · Haunted Treasure → rare monster → Uncut Support Gem I"
+        }
+      },
+      {
+        "id": "boss:asinia",
+        "title": {
+          "de": "Grabmal der Gemahlin → Asinia → Schlüsselstück",
+          "en": "Tomb of the Consort → Asinia → key piece"
+        }
+      }
+    ],
+    "a1-cemetery-keys": [
+      {
+        "id": "boss:asinia",
+        "title": {
+          "de": "Grabmal der Gemahlin → Asinia → Schlüsselstück",
+          "en": "Tomb of the Consort → Asinia → key piece"
+        }
+      },
+      {
+        "id": "boss:draven",
+        "title": {
+          "de": "Mausoleum des Prätors → Draven → Schlüsselstück",
+          "en": "Mausoleum of the Praetor → Draven → key piece"
+        }
+      },
+      {
+        "id": "run:cemetery-sarcophagus",
+        "title": {
+          "de": "Optional · Uralte Ruine → Eisenring / Lazuliring",
+          "en": "Optional · Ancient Ruins → Iron Ring / Lazuli Ring"
+        }
+      },
+      {
+        "id": "boss:lachlann",
+        "title": {
+          "de": "Tor des Mahnmals → Lachlann besiegen → Ring zu Una",
+          "en": "Memorial Gate → defeat Lachlann → ring to Una"
+        }
+      }
+    ],
+    "a1-grim-tangle": [
+      {
+        "id": "boss:ervig",
+        "title": {
+          "de": "Optional · Ervig → Unterstützungsgemme I",
+          "en": "Optional · Ervig → Uncut Support Gem I"
+        }
+      }
+    ],
+    "a1-red-vale-obelisks": [
+      {
+        "id": "run:red-vale-waypoint",
+        "title": {
+          "de": "Wegpunkt aktivieren",
+          "en": "Activate waypoint"
+        }
+      },
+      {
+        "id": "route:a1-red-vale-obelisks",
+        "title": {
+          "de": "Erste zwei Obelisken aus Rost → je eine Rune",
+          "en": "First two Obelisks of Rust → one rune each"
+        }
+      },
+      {
+        "id": "boss:rust-king",
+        "title": {
+          "de": "Dritter Obelisk → Rostkönig besiegen → dritte Rune",
+          "en": "Third obelisk → defeat the Rust King → third rune"
+        }
+      },
+      {
+        "id": "run:red-vale-renly",
+        "title": {
+          "de": "Renly → Runenstacheln",
+          "en": "Renly → Runed Spikes"
+        }
+      }
+    ],
+    "a1-clearfell-exit": [
+      {
+        "id": "run:clearfell-waypoint",
+        "title": {
+          "de": "Wegpunkt bei The Mud Burrow aktivieren",
+          "en": "Activate waypoint near The Mud Burrow"
+        }
+      },
+      {
+        "id": "run:clearfell-campsite",
+        "title": {
+          "de": "Optional · Mysterious Campsite → Skill Gem einsammeln",
+          "en": "Optional · Mysterious Campsite → collect Skill Gem"
+        }
+      },
+      {
+        "id": "run:beira-reward",
+        "title": {
+          "de": "Beira besiegen → Wolfskopf benutzen (+10 % Kälteresistenz)",
+          "en": "Defeat Beira → use wolf head (+10% Cold Resistance)"
+        }
+      },
+      {
+        "id": "run:devourer-support",
+        "title": {
+          "de": "Optional · The Devourer besiegen → Support Gem bei Renly abholen",
+          "en": "Optional · defeat The Devourer → collect Support Gem from Renly"
+        }
+      }
+    ],
+    "a1-geonor": [
+      {
+        "id": "route:a1-candlemass",
+        "title": {
+          "de": "Essenz der Kerzenmasse benutzen",
+          "en": "Consume Candlemass' Essence"
+        }
+      },
+      {
+        "id": "boss:geonor",
+        "title": {
+          "de": "Akt-1-Endboss besiegen und nach Akt 2 weiterreisen",
+          "en": "Defeat the Act 1 final boss and continue to Act 2"
+        }
+      }
+    ],
+    "a1-freythorn-rituals": [
+      {
+        "id": "route:a1-freythorn-rituals",
+        "title": {
+          "de": "Rituale abschließen und den König erreichen",
+          "en": "Complete rituals and reach the King"
+        }
+      },
+      {
+        "id": "run:freythorn-reward",
+        "title": {
+          "de": "Blühenden Gemmenschädel benutzen",
+          "en": "Use the Gembloom Skull"
+        }
+      },
+      {
+        "id": "run:freythorn-finn-charm",
+        "title": {
+          "de": "Phiole bei Finn abholen",
+          "en": "Claim a charm from Finn"
+        }
+      }
+    ]
+  },
+  "palette": {
+    "normal": "#a9b2bd",
+    "life_flask": "#d94b50",
+    "mana_flask": "#499be0",
+    "magic": "#8888ff",
+    "rare": "#ffff77",
+    "unique": "#af6025",
+    "gem": "#1ba29b",
+    "support": "#1ba29b",
+    "currency": "#aa9e82",
+    "quest": "#4ae63a",
+    "mod": "#8888ff",
+    "crafted": "#b8daf2",
+    "fractured": "#a29162"
+  },
+  "hotkeys": [
+    {
+      "group": "controls",
+      "key": "Linksklick / WASD",
+      "de": "Bewegen · je nach Eingabeprofil",
+      "en": "Move · depends on input profile"
+    },
+    {
+      "group": "controls",
+      "key": "Leertaste",
+      "de": "Ausweichrolle · halten für Sprint",
+      "en": "Dodge roll · hold to sprint"
+    },
+    {
+      "group": "controls",
+      "key": "1 / 2",
+      "de": "Life Flask / Mana Flask",
+      "en": "Life Flask / Mana Flask"
+    },
+    {
+      "group": "controls",
+      "key": "Shift",
+      "de": "Angriff im Stehen",
+      "en": "Attack in place"
+    },
+    {
+      "group": "controls",
+      "key": "Linke / mittlere / rechte Maustaste",
+      "de": "Skills auf der Maus",
+      "en": "Skills on the mouse"
+    },
+    {
+      "group": "controls",
+      "key": "Q W E R T",
+      "de": "Skill-Leiste · Klicksteuerung",
+      "en": "Skill bar · click to move"
+    },
+    {
+      "group": "controls",
+      "key": "Q E R T F",
+      "de": "Skill-Leiste · WASD",
+      "en": "Skill bar · WASD"
+    },
+    {
+      "group": "controls",
+      "key": "Strg + Skill-Taste",
+      "de": "Zweite Skill-Leiste",
+      "en": "Secondary skill bar"
+    },
+    {
+      "group": "controls",
+      "key": "6 / 7",
+      "de": "Temporäre Skills",
+      "en": "Temporary skills"
+    },
+    {
+      "group": "controls",
+      "key": "X",
+      "de": "Waffenset wechseln · Standard",
+      "en": "Swap weapon sets · default"
+    },
+    {
+      "group": "controls",
+      "key": "D",
+      "de": "Minen zünden · Klicksteuerung",
+      "en": "Detonate mines · click to move"
+    },
+    {
+      "group": "controls",
+      "key": "Alt / Z",
+      "de": "Bodenlabels hervorheben / Hervorhebung umschalten",
+      "en": "Highlight ground labels / toggle highlighting"
+    },
+    {
+      "group": "controls",
+      "key": "F",
+      "de": "Aufhebetaste · Klicksteuerung, wenn aktiviert",
+      "en": "Pickup key · click to move, if enabled"
+    },
+    {
+      "group": "menus",
+      "key": "I / C / G / P",
+      "de": "Inventar / Charakter / Skills / Passive Tree",
+      "en": "Inventory / Character / Skills / Passive tree"
+    },
+    {
+      "group": "menus",
+      "key": "U / Strg + U",
+      "de": "Weltkarte und Quests / Atlas Passive Tree",
+      "en": "World map and quests / Atlas passive tree"
+    },
+    {
+      "group": "menus",
+      "key": "Tab / Pfeiltasten",
+      "de": "Kartenoverlay / Kartenoverlay verschieben",
+      "en": "Toggle area map / pan area map"
+    },
+    {
+      "group": "menus",
+      "key": "O / Esc",
+      "de": "Optionen / Menü oder NPC-Dialog überspringen",
+      "en": "Options / menu or skip NPC dialogue"
+    },
+    {
+      "group": "menus",
+      "key": "Leertaste",
+      "de": "Offene UI-Fenster schließen",
+      "en": "Close open UI panels"
+    },
+    {
+      "group": "menus",
+      "key": "Bild ↑ / Bild ↓",
+      "de": "Kamera zoomen",
+      "en": "Zoom camera"
+    },
+    {
+      "group": "menus",
+      "key": "J / L / H",
+      "de": "Social / Ladder / Challenges",
+      "en": "Social / Ladder / Challenges"
+    },
+    {
+      "group": "menus",
+      "key": "K / N / M",
+      "de": "Cosmetics / MTX-Stash / Shop",
+      "en": "Cosmetics / MTX stash / Shop"
+    },
+    {
+      "group": "menus",
+      "key": "V",
+      "de": "League-Interaktion",
+      "en": "League interaction"
+    },
+    {
+      "group": "menus",
+      "key": "F1 / F8",
+      "de": "Performance-Anzeige / Screenshot",
+      "en": "Performance metrics / screenshot"
+    },
+    {
+      "group": "stash",
+      "key": "Strg + Linksklick",
+      "de": "Item oder Stapel verschieben · Stash Affinity greift",
+      "en": "Move item or stack · uses stash affinity"
+    },
+    {
+      "group": "stash",
+      "key": "Strg + Shift + Linksklick",
+      "de": "Ins offene Stash-Tab legen · Affinity umgehen",
+      "en": "Move to the open stash tab · bypass affinity"
+    },
+    {
+      "group": "stash",
+      "key": "Strg + Rechtsklick",
+      "de": "Alle Stapel desselben Currency-Typs verschieben",
+      "en": "Move all stacks of this currency type"
+    },
+    {
+      "group": "stash",
+      "key": "Shift + Linksklick",
+      "de": "Stapel teilen; mit Stapel am Cursor einzeln ablegen",
+      "en": "Split stack; place individual items while holding a stack"
+    },
+    {
+      "group": "stash",
+      "key": "Strg + F",
+      "de": "Suchfeld in Stash, beim Händler oder im Tree fokussieren",
+      "en": "Focus search in stash, vendor or tree"
+    },
+    {
+      "group": "stash",
+      "key": "← / → · Mausrad über Tab-Leiste",
+      "de": "Stash-Tab wechseln · Mausrad bei ausgeblendeter Tab-Liste",
+      "en": "Switch stash tabs · scroll when the tab list is hidden"
+    },
+    {
+      "group": "stash",
+      "key": "Alt / Shift",
+      "de": "Beim Hover erweiterte Itemdaten / ausgerüstetes Item vergleichen",
+      "en": "Advanced item details / compare equipped item while hovering"
+    },
+    {
+      "group": "stash",
+      "key": "Strg + C",
+      "de": "Itemtext unter dem Cursor kopieren",
+      "en": "Copy the hovered item's text"
+    },
+    {
+      "group": "stash",
+      "key": "Rechtsklick → Linksklick",
+      "de": "Orb oder Scroll auswählen und aufs Ziel anwenden",
+      "en": "Select an orb or scroll and apply it to the target"
+    },
+    {
+      "group": "stash",
+      "key": "Shift halten",
+      "de": "Aktive Currency wiederholt anwenden",
+      "en": "Keep the active currency selected for repeated use"
+    },
+    {
+      "group": "npc",
+      "key": "Strg + Linksklick",
+      "de": "Hooded One oder Doryani · Inventar identifizieren",
+      "en": "Hooded One or Doryani · identify inventory"
+    },
+    {
+      "group": "npc",
+      "key": "Alt + Linksklick",
+      "de": "Hooded One · Passives zurücksetzen",
+      "en": "Hooded One · refund passives"
+    },
+    {
+      "group": "npc",
+      "key": "Alt + Linksklick",
+      "de": "Händler · Kaufen/Verkaufen, auch bei Doryani",
+      "en": "Vendor · buy/sell, including Doryani"
+    },
+    {
+      "group": "npc",
+      "key": "Strg + Linksklick",
+      "de": "Una und andere Händler mit Disenchant · direkt entzaubern",
+      "en": "Una and other disenchant vendors · open disenchant"
+    },
+    {
+      "group": "npc",
+      "key": "Strg + Linksklick",
+      "de": "Händler ohne Disenchant · Handel öffnen",
+      "en": "Vendor without disenchant · open buy/sell"
+    },
+    {
+      "group": "npc",
+      "key": "Strg + Shift + Linksklick",
+      "de": "Beim Händler einen ganzen angebotenen Stapel kaufen",
+      "en": "Buy a full available stack from a vendor"
+    },
+    {
+      "group": "npc",
+      "key": "Strg + Alt + Linksklick",
+      "de": "Doryani · Atlas-Respec",
+      "en": "Doryani · refund Atlas passives"
+    },
+    {
+      "group": "travel",
+      "key": "Strg + Linksklick",
+      "de": "Gebietseingang oder Waypoint-Ziel · Instanz auswählen",
+      "en": "Area entrance or waypoint destination · select instance"
+    },
+    {
+      "group": "travel",
+      "key": "Strg + Linksklick",
+      "de": "Atlas-Schnellreise-Button · zur Stadt",
+      "en": "Atlas quick travel button · travel to town"
+    },
+    {
+      "group": "skills",
+      "key": "Rechtsklick",
+      "de": "Uncut Gem · Gemcutting öffnen",
+      "en": "Uncut Gem · open gemcutting"
+    },
+    {
+      "group": "skills",
+      "key": "G → Rechtsklick",
+      "de": "Persistent-Skill-Icon · Buff/Minion aktivieren",
+      "en": "Persistent skill icon · enable buff or minion"
+    },
+    {
+      "group": "skills",
+      "key": "Rechtsklick auf I / II",
+      "de": "Dieselbe Waffe in beiden Waffensets verwenden",
+      "en": "Use the same weapon in both sets"
+    },
+    {
+      "group": "skills",
+      "key": "Strg + Shift + Linksklick",
+      "de": "Auf zugewiesenem Skill · Skill-Kosmetik",
+      "en": "On assigned skill · skill cosmetics"
+    },
+    {
+      "group": "chat",
+      "key": "Enter / Strg + Enter",
+      "de": "Chat / letzter Whisper-Empfänger",
+      "en": "Chat / last whisper recipient"
+    },
+    {
+      "group": "chat",
+      "key": "Shift + Enter / Strg + Shift + Enter",
+      "de": "Global / Party-Chat",
+      "en": "Global / party chat"
+    },
+    {
+      "group": "chat",
+      "key": "Strg + Alt + Linksklick",
+      "de": "Item im Chat verlinken",
+      "en": "Link item in chat"
+    },
+    {
+      "group": "trade",
+      "key": "/",
+      "de": "Market öffnen · englische Tastenreferenz",
+      "en": "Open Market · English keyboard reference",
+      "only": "trade",
+      "verify": true
+    },
+    {
+      "group": "trade",
+      "key": "Shift + Alt + Linksklick",
+      "de": "Über ein Item die Market-Suche befüllen",
+      "en": "Search the market using the item under the cursor",
+      "only": "trade"
+    },
+    {
+      "group": "trade",
+      "key": "Strg-Klick / Alt-Klick / Strg + Alt-Klick",
+      "de": "Ange · Currency Exchange / Gamble / Merchant-Fenster",
+      "en": "Ange · exchange / gamble / merchant window",
+      "only": "trade"
+    },
+    {
+      "group": "trade",
+      "key": "Strg + Linksklick",
+      "de": "Currency Exchange · Currency ins Angebotsfeld übernehmen",
+      "en": "Currency exchange · put currency in the offer field",
+      "only": "trade"
+    },
+    {
+      "group": "verify",
+      "key": "Optionen → Eingabe",
+      "de": "Direct Minions, League Panel, Hilfe und B am eigenen Layout prüfen",
+      "en": "Check Direct Minions, league panel, help and B on your layout",
+      "verify": true
+    },
+    {
+      "group": "verify",
+      "key": "Optional belegen",
+      "de": "Portal, Ritual, Delirium, Trial/Ultimatum und Attribut-Schnellauswahl im Client prüfen",
+      "en": "Check portal, Ritual, Delirium, trial / Ultimatum and attribute allocation in the client",
+      "verify": true
+    },
+    {
+      "group": "verify",
+      "key": "Zu testen",
+      "de": "Crossbow-Reload und mögliche Doppelbelegung von F8 mit dem Overlay",
+      "en": "Crossbow reload and a possible F8 conflict with the overlay",
+      "verify": true
+    }
+  ],
+  "hotkey_groups": {
+    "controls": {
+      "de": "Bewegung & Kampf",
+      "en": "Movement & combat"
+    },
+    "menus": {
+      "de": "Menüs & HUD",
+      "en": "Menus & HUD"
+    },
+    "stash": {
+      "de": "Stash, Items & Crafting",
+      "en": "Stash, items & crafting"
+    },
+    "npc": {
+      "de": "NPCs & Händler",
+      "en": "NPCs & vendors"
+    },
+    "travel": {
+      "de": "Reise & Instanzen",
+      "en": "Travel & instances"
+    },
+    "skills": {
+      "de": "Gems & Waffensets",
+      "en": "Gems & weapon sets"
+    },
+    "chat": {
+      "de": "Chat",
+      "en": "Chat"
+    },
+    "trade": {
+      "de": "Trade",
+      "en": "Trade"
+    },
+    "verify": {
+      "de": "Im Client prüfen",
+      "en": "Check in client"
+    }
+  },
+  "quick_keys": {
+    "stash": {
+      "group": "stash",
+      "key": "Strg + Linksklick",
+      "de": "Item einlagern · Affinity greift",
+      "en": "Stash item · affinity applies"
+    },
+    "split": {
+      "group": "stash",
+      "key": "Shift + Linksklick",
+      "de": "Stapel teilen",
+      "en": "Split stack"
+    },
+    "search": {
+      "group": "stash",
+      "key": "Strg + F",
+      "de": "Händler- oder Stash-Suche",
+      "en": "Vendor or stash search"
+    },
+    "identify": {
+      "group": "npc",
+      "key": "Strg + Linksklick",
+      "de": "Hooded One · nach Freischaltung alles identifizieren",
+      "en": "Hooded One · identify all once unlocked"
+    },
+    "doryani": {
+      "group": "npc",
+      "key": "Strg + Linksklick",
+      "de": "Doryani · alles identifizieren",
+      "en": "Doryani · identify all"
+    },
+    "atlas": {
+      "group": "menus",
+      "key": "Strg + U",
+      "de": "Atlas Passive Tree",
+      "en": "Atlas passive tree"
+    },
+    "vendor": {
+      "group": "npc",
+      "key": "Alt + Linksklick",
+      "de": "NPC-Händler · Kaufen und verkaufen",
+      "en": "NPC vendor · open buy/sell"
+    }
+  },
+  "hubs": {
+    "clearfell": [
+      "Clearfell Encampment"
+    ],
+    "town": [
+      "Ardura Caravan",
+      "Ziggurat Encampment",
+      "Kingsmarch",
+      "The Refuge",
+      "The Khari Bazaar",
+      "The Glade"
+    ],
+    "ziggurat": [
+      "The Ziggurat Refuge",
+      "Endgame Town"
+    ],
+    "hideout": [
+      "Hideout"
+    ]
+  },
+  "tips": [
+    {
+      "id": "affinity",
+      "title": {
+        "de": "Stash Affinity setzen",
+        "en": "Set stash affinity"
+      },
+      "body": {
+        "de": "Rechtsklick auf einen Stash-Tab → Currency oder Gem auswählen. Das geht auch mit normalen Tabs. Strg + Linksklick sortiert ein. Strg + Shift + Linksklick legt ins offene Tab.",
+        "en": "Right-click a stash tab and pick Currency or Gem. Regular tabs work. Ctrl-click uses affinity. Ctrl+Shift-click moves the item to the open tab."
+      },
+      "scope": "setup",
+      "at": [
+        "clearfell",
+        "hideout"
+      ]
+    },
+    {
+      "id": "filter",
+      "title": {
+        "de": "Kampagnenfilter wählen",
+        "en": "Choose a campaign loot filter"
+      },
+      "body": {
+        "de": "Unter Optionen → Spiel einen eher lockeren Filter wählen. Beim Leveling sind brauchbare Basen, Gems und Currency wichtig.",
+        "en": "Pick a permissive item filter in the game options. Keep useful bases, gems and currency visible while leveling."
+      },
+      "scope": "setup",
+      "at": [
+        "clearfell",
+        "hideout"
+      ]
+    },
+    {
+      "id": "vendor",
+      "title": {
+        "de": "Waffenbasis und Stiefel prüfen",
+        "en": "Check weapon bases and boots"
+      },
+      "body": {
+        "de": "Ein Teil des Händlerangebots wechselt beim Level-up. In Clearfell zuerst Renly für Martial-Gear und Una für Caster-Gear und Flasks prüfen.",
+        "en": "Part of the vendor stock refreshes on level-up. In Clearfell try Renly for martial gear and Una for caster gear and flasks."
+      },
+      "scope": "run",
+      "at": [
+        "clearfell"
+      ]
+    },
+    {
+      "id": "return",
+      "title": {
+        "de": "Quest abgeben und weiter",
+        "en": "Turn in quests and continue"
+      },
+      "body": {
+        "de": "Im Questlog prüfen, ob Renly, Una oder der Hooded One auf eine Abgabe wartet.",
+        "en": "Check the quest log for turn-ins with Renly, Una or the Hooded One."
+      },
+      "scope": "run",
+      "at": [
+        "clearfell"
+      ]
+    },
+    {
+      "id": "sort",
+      "title": {
+        "de": "Verkaufen, Disenchant oder Salvage",
+        "en": "Sell, disenchant or salvage"
+      },
+      "body": {
+        "de": "Verkaufen bringt Gold, Disenchant Shards. Gear mit Qualität oder Rune Sockets für die Salvage Bench prüfen. Die Smithing Tools aus Ogham Village schalten sie bei Renly frei.",
+        "en": "Sell for gold, disenchant for shards. Check gear with quality or rune sockets for the Salvage Bench. Bring Renly the Smithing Tools from Ogham Village to unlock it."
+      },
+      "scope": "tip",
+      "at": [
+        "clearfell",
+        "hideout"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": {
+        "de": "Gute weiße Base verbessern",
+        "en": "Upgrade a useful normal base"
+      },
+      "body": {
+        "de": "Orb of Transmutation gibt einer brauchbaren weißen Base den ersten Mod. Orb of Augmentation kann einem Magic Item mit freiem Platz einen Mod hinzufügen.",
+        "en": "Orb of Transmutation adds the first mod to a useful normal base. Orb of Augmentation can add a mod to a magic item with room for it."
+      },
+      "scope": "tip",
+      "at": [
+        "clearfell",
+        "hideout"
+      ]
+    },
+    {
+      "id": "flasks",
+      "title": {
+        "de": "Vor dem Weiterlaufen Flasks prüfen",
+        "en": "Check flasks before moving on"
+      },
+      "body": {
+        "de": "Der Brunnen füllt deine Life Flask und Mana Flask auf. Charms lösen bei ihrer Bedingung automatisch aus.",
+        "en": "The well refills your Life Flask and Mana Flask. Charms trigger automatically when their condition is met."
+      },
+      "scope": "tip",
+      "at": [
+        "clearfell",
+        "town",
+        "ziggurat",
+        "hideout"
+      ]
+    },
+    {
+      "id": "weapon-set",
+      "title": {
+        "de": "Gems und Waffenset prüfen",
+        "en": "Check gems and weapon sets"
+      },
+      "body": {
+        "de": "Skill grau? Im Skills-Fenster mit G die Waffe, Attribute und das Set prüfen. Rechtsklick auf ein Persistent-Skill-Icon aktiviert den Buff. Das aktive Set braucht genug Spirit.",
+        "en": "Grey skill? Press G and check weapon, attributes and sets. Right-click a persistent skill icon to enable it. Check Spirit in the active set."
+      },
+      "scope": "tip",
+      "at": [
+        "clearfell",
+        "town",
+        "ziggurat",
+        "hideout"
+      ]
+    },
+    {
+      "id": "sprint",
+      "title": {
+        "de": "Sprint auf freien Wegen",
+        "en": "Sprint on clear paths"
+      },
+      "body": {
+        "de": "Leertaste halten, um nach der Rolle zu sprinten. Ein Treffer kann dich beim Sprint zu Boden werfen. Eine separate Rolle ohne Sprint ist optional belegbar.",
+        "en": "Hold Space after rolling to sprint. A hit while sprinting can knock you down. A separate roll-only bind is available."
+      },
+      "scope": "tip",
+      "at": [
+        "clearfell"
+      ]
+    },
+    {
+      "id": "geonor",
+      "title": {
+        "de": "Kälteresistenz, Flask und Charm prüfen",
+        "en": "Check Cold Resistance, flask and charm"
+      },
+      "body": {
+        "de": "Vor Geonor deine Kälteresistenz im Charakterfenster prüfen. Life Flask auffüllen und einen passenden Charm einsetzen.",
+        "en": "Check Cold Resistance before Geonor. Refill the Life Flask and equip a suitable charm."
+      },
+      "scope": "run",
+      "at": [
+        "ogham manor"
+      ]
+    },
+    {
+      "id": "beira-reward",
+      "title": {
+        "de": "Beiras Belohnung benutzen · +10 % Cold Resistance",
+        "en": "Use Beira’s reward · +10% Cold Resistance"
+      },
+      "body": {
+        "de": "Den Head of the Winter Wolf im Inventar benutzen, nachdem Beira erledigt ist.",
+        "en": "Use the Head of the Winter Wolf after fighting Beira."
+      },
+      "scope": "run",
+      "at": [
+        "clearfell zone"
+      ]
+    },
+    {
+      "id": "freythorn-reward",
+      "title": {
+        "de": "Gembloom Skull benutzen · +30 Spirit",
+        "en": "Use the Gembloom Skull · +30 Spirit"
+      },
+      "body": {
+        "de": "Nach The King in the Mists den Gembloom Skull im Inventar benutzen.",
+        "en": "Use the Gembloom Skull after the King in the Mists."
+      },
+      "scope": "run",
+      "at": [
+        "freythorn"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "boots-16",
+      "scope": "general",
+      "title": {
+        "de": "iLvl 16 · 15 % Movement Speed",
+        "en": "iLvl 16 · 15% Movement Speed"
+      },
+      "body": {
+        "de": "Ab diesem Item Level kann der Roll auf Boots vorkommen. Beim Händler nach Movement Speed suchen.",
+        "en": "Boots at this item level can roll it. Look for Movement Speed at the vendor."
+      },
+      "source": "boots"
+    },
+    {
+      "id": "boots-33",
+      "scope": "general",
+      "title": {
+        "de": "iLvl 33 · 20 % Movement Speed",
+        "en": "iLvl 33 · 20% Movement Speed"
+      },
+      "body": {
+        "de": "Ein gezieltes Upgrade, wenn die restlichen Werte zum Build passen.",
+        "en": "A targeted upgrade if the other stats fit the build."
+      },
+      "source": "boots"
+    },
+    {
+      "id": "support-2",
+      "scope": "general",
+      "title": {
+        "de": "Drop-Level 16 · Uncut Support Gem II",
+        "en": "Drop level 16 · Uncut Support Gem II"
+      },
+      "body": {
+        "de": "Prüfe im Gemcutting, welche Supports dein aktuelles Setup tatsächlich verbessern.",
+        "en": "Check gemcutting for supports that improve your current setup."
+      },
+      "source": "uncut"
+    },
+    {
+      "id": "support-3",
+      "scope": "general",
+      "title": {
+        "de": "Drop-Level 33 · Uncut Support Gem III",
+        "en": "Drop level 33 · Uncut Support Gem III"
+      },
+      "body": {
+        "de": "Ein passender Support und seine Attributanforderungen entscheiden, ob sich der Wechsel lohnt.",
+        "en": "Check whether a suitable support is worth switching to and whether its attribute requirements are met."
+      },
+      "source": "uncut"
+    },
+    {
+      "id": "monk-swap",
+      "scope": "whirling-assault",
+      "stage": "swap",
+      "title": {
+        "de": "Charakterlevel 41 · Whirling Assault",
+        "en": "Character level 41 · Whirling Assault"
+      },
+      "body": {
+        "de": "Uncut Skill Gem Level 11 und Quarterstaff. Erst gegen normale Gegner testen. Wechseln, wenn Mana und Angriffstempo passen.",
+        "en": "Uncut Skill Gem level 11 and a Quarterstaff. Test on normal enemies and switch once mana and attack speed feel right."
+      },
+      "source": "monk"
+    },
+    {
+      "id": "varashta-swap",
+      "scope": "varashta-archon",
+      "stage": "djinn",
+      "title": {
+        "de": "Nach dem Trial · auf Djinn wechseln",
+        "en": "After the trial · switch to Djinn"
+      },
+      "body": {
+        "de": "Wechsel erst mit den nötigen Ascendancy-Punkten, Kelari, Supports und genug Spirit.",
+        "en": "Switch after the required Ascendancy points, Kelari, supports and Spirit are ready."
+      },
+      "source": "r17"
+    },
+    {
+      "id": "tactician-swap",
+      "scope": "tactician-supporting-fire",
+      "stage": "swap",
+      "title": {
+        "de": "Supporting Fire · Sceptre-Setup prüfen",
+        "en": "Supporting Fire · check the sceptre setup"
+      },
+      "body": {
+        "de": "Ascendancy und Sceptre vor dem Wechsel prüfen. Crossbow behalten, bis Supporting Fire im Run zuverlässig läuft.",
+        "en": "Check Ascendancy and sceptre first. Keep the crossbow until Supporting Fire works reliably."
+      },
+      "source": "r17"
+    },
+    {
+      "id": "huntress-sets",
+      "scope": "twister-spirit-walker",
+      "stage": "act2",
+      "title": {
+        "de": "Twister · zwei Waffensets zuweisen",
+        "en": "Twister · assign both weapon sets"
+      },
+      "body": {
+        "de": "Barrage und Ice-Tipped Arrows vorbereiten. Schneller Setup-Speer in Set 1, Schadens-Speer in Set 2. Kälte-Konvertierung testen.",
+        "en": "Set up Barrage and Ice-Tipped Arrows. Fast setup spear in set 1, damage spear in set 2. Check cold conversion."
+      },
+      "source": "r17"
+    }
+  ],
+  "sources": {
+    "palette": {
+      "label": "PoE2DB · Tooltip-Farben",
+      "url": "https://poe2db.tw/us/Wiki_editor"
+    },
+    "hotkeys": {
+      "label": "Mobalytics · Hotkeys",
+      "url": "https://mobalytics.gg/poe-2/guides/hotkeys"
+    },
+    "stash": {
+      "label": "PoE2 Wiki · Stash",
+      "url": "https://www.poe2wiki.net/wiki/Stash"
+    },
+    "bulk": {
+      "label": "GGG · Bulk Transfer",
+      "url": "https://www.pathofexile.com/forum/view-thread/3781189"
+    },
+    "game": {
+      "label": "PoE2DB · Ingame-Tipps",
+      "url": "https://poe2db.tw/us/HelpfulTips"
+    },
+    "boots": {
+      "label": "ExileDB · Movement Speed",
+      "url": "https://exiledb.com/mods/boots"
+    },
+    "uncut": {
+      "label": "PoE2 Wiki · Uncut Gems",
+      "url": "https://www.poe2wiki.net/wiki/Uncut_Gem"
+    },
+    "monk": {
+      "label": "PoE2DB · Whirling Assault",
+      "url": "https://poe2db.tw/us/Whirling_Assault"
+    },
+    "r17": {
+      "label": "R17 · Builddaten",
+      "url": ""
+    }
+  },
+  "search": {
+    "general": {
+      "en": "movement speed",
+      "de": "bewegungsgeschwindigkeit"
+    },
+    "whirling-assault": {
+      "en": "quarterstaff|movement speed",
+      "de": "kampfstab|bewegungsgeschwindigkeit"
+    },
+    "tactician-supporting-fire": {
+      "en": "crossbow|movement speed",
+      "de": "armbrust|bewegungsgeschwindigkeit"
+    },
+    "varashta-archon": {
+      "en": "wand|movement speed",
+      "de": "zauberstab|bewegungsgeschwindigkeit"
+    },
+    "twister-spirit-walker": {
+      "en": "spear|movement speed",
+      "de": "speer|bewegungsgeschwindigkeit"
+    }
+  },
+  "quick_contexts": {
+    "clearfell": [
+      "stash",
+      "search",
+      "vendor"
+    ],
+    "town": [
+      "stash",
+      "identify",
+      "split"
+    ],
+    "hideout": [
+      "stash",
+      "search",
+      "atlas"
+    ],
+    "ziggurat": [
+      "doryani",
+      "stash",
+      "atlas"
+    ]
+  }
+}

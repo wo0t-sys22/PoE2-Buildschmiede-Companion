@@ -1,0 +1,61 @@
+{
+  "arenas": [
+    {
+      "areas": ["Solitary Confinement"],
+      "phase": "campaign",
+      "id": "prisoner",
+      "source": "https://www.poe2wiki.net/wiki/Solitary_Confinement"
+    },
+    {
+      "areas": ["Heart of the Tribe"],
+      "phase": "campaign",
+      "id": "tavakai",
+      "source": "https://www.poe2wiki.net/wiki/Heart_of_the_Tribe"
+    },
+    {
+      "areas": ["The Burning Monolith"],
+      "phase": "endgame",
+      "id": "arbiter-of-ash",
+      "name": "The Arbiter of Ash",
+      "areaUrl": "https://poe2db.tw/us/The_Burning_Monolith",
+      "cue": "A flame seed floats down into a marked circle. Several can fall in succession.",
+      "response": "Stand inside its circle when the seed lands. Move to the next circle as soon as the first one explodes.",
+      "de": {
+        "name": "Der Richter der Asche",
+        "cue": "Ein Flammensamen sinkt in einen markierten Kreis. Mehrere Samen können nacheinander fallen.",
+        "response": "Stell dich beim Einschlag in den Kreis. Sobald der erste Samen explodiert, wechsle in den nächsten Kreis."
+      },
+      "source": "https://metaroad.gg/poe2/bosses/poe2-arbiter-of-ash"
+    },
+    {
+      "areas": ["Twisted Domain"],
+      "phase": "endgame",
+      "id": "xesht",
+      "name": "Xesht, We That Are One",
+      "areaUrl": "https://poe2db.tw/us/Twisted_Domain",
+      "cue": "A hand follows you from above. The ground beneath you glows purple before it slams down.",
+      "response": "Keep moving until the hand lands. If you are still inside the mark as it drops, roll out of it.",
+      "de": {
+        "name": "Xesht, Wir die Eins sind",
+        "cue": "Eine Hand folgt dir von oben. Kurz vor dem Schlag leuchtet der Boden unter dir violett.",
+        "response": "Bleib in Bewegung, bis die Hand einschlägt. Stehst du beim Fallen noch auf der Markierung, rolle seitlich heraus."
+      },
+      "source": "https://mobalytics.gg/poe-2/guides/eravin-breach-guide"
+    },
+    {
+      "areas": ["Crux of Nothingness"],
+      "phase": "endgame",
+      "id": "crux-king",
+      "name": "The King in the Mists",
+      "areaUrl": "https://poe2db.tw/us/Crux_of_Nothingness",
+      "cue": "The boss sends you into a maze. A glowing wisp moves when you approach it.",
+      "response": "Follow the wisp. When it fades, look down the same passage for the next one. The purple door leads back to the fight.",
+      "de": {
+        "name": "Der König in den Nebeln",
+        "cue": "Du landest in einem Rankenlabyrinth. Ein Irrlicht setzt sich in Bewegung, sobald du näher kommst.",
+        "response": "Folge ihm. Erlischt es, suche im selben Gang nach dem nächsten Irrlicht. Die violette Tür führt zurück in die Arena."
+      },
+      "source": "https://mobalytics.gg/poe-2/guides/king-in-the-mists-pinnacle"
+    }
+  ]
+}

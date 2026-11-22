@@ -1,0 +1,138 @@
+:root {
+  color-scheme: dark;
+  --gold: #dfc68c;
+  --bronze: #b9a488;
+  --edge: #806744;
+  --muted: #c8c1b1;
+  --text: #f2ede2;
+  --danger: #efb3aa;
+  --info: #87ecff;
+  --quest: #8eb6ff;
+  --bonus: #a0ee7d;
+  --display: "Fontin Small Caps", Fontin, Constantia, Georgia, serif;
+  --body: Fontin, Constantia, Georgia, serif;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; background: transparent; }
+body {
+  overflow: hidden;
+  color: var(--text);
+  font-family: var(--body);
+  text-shadow: -1px 0 #0b0908, 1px 0 #0b0908, 0 1px #0b0908, 0 2px 3px #0b0908;
+}
+.panel {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: min(500px, calc(100vw - 44px));
+  max-height: calc(100vh - 44px);
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+.title {
+  margin: 0;
+  padding: 4px 13px;
+  color: var(--gold);
+  font: bold 22px/1.12 var(--display);
+  background: #211b14;
+  border: 1px solid var(--edge);
+  overflow-wrap: anywhere;
+}
+.top .view-name {
+  color: var(--gold);
+  padding: 4px 10px;
+  align-self: stretch;
+  font: bold 13px var(--body);
+  background: #1e1b17;
+  border: 1px solid var(--edge);
+  cursor: pointer;
+}
+.race { padding: 2px 4px; }
+.race-context, .metrics {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 9px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+.race-context { justify-content: space-between; margin-bottom: 2px; }
+.status { color: var(--bonus); }
+.status.prep { color: var(--gold); }
+.metrics div { display: flex; align-items: baseline; gap: 3px; }
+.metrics dt { color: var(--bronze); }
+.metrics dd { margin: 0; color: var(--text); font-variant-numeric: tabular-nums; }
+.progress { height: 1px; margin: 4px 0 0; }
+.fill { height: 100%; width: 0; background: #be9f63; opacity: .75; }
+.tracker-nav, .atlas-guide .tracker-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 6px; }
+.tracker-nav button, .tracker-nav a, .panel .atlas-guide button:not([data-atlas-copy]) {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  text-shadow: inherit;
+  font: 12px/1.2 var(--body);
+  cursor: pointer;
+  padding: 4px 5px;
+}
+.tracker-nav a { text-decoration: underline; }
+.tracker-nav button[aria-pressed="true"], .tracker-nav button:hover,
+.panel .atlas-guide button[aria-pressed="true"] { color: var(--gold); }
+.tracker-nav button { background: #1e1b17; border: 1px solid #806744a0; }
+.tracker-nav button[aria-pressed="true"] { background: #4a3c26; }
+.panel .atlas-guide[data-current="endgame"], .panel .atlas-checkpoints div {
+  background: transparent;
+  border-color: #80674475;
+}
+.panel .atlas-guide .atlas-panel { border-block-start: 1px solid #80674485; border-inline: 0; border-block-end: 0; }
+.panel .atlas-guide select, .panel select { background: #1a1612; color: var(--text); border: 1px solid var(--edge); }
+.panel :is(button, a, select, summary):focus-visible { outline: 2px solid var(--info); outline-offset: 2px; }
+#campaignGuide, #atlasGuide { min-height: 0; }
+#campaignGuide {
+  margin-top: 5px;
+  overflow: auto;
+  scrollbar-color: var(--edge) transparent;
+}
+.next, .route-item {
+  position: relative;
+  margin: 0;
+  padding: 2px 4px 4px 23px;
+  font: 16px/1.28 var(--display);
+  overflow-wrap: anywhere;
+}
+.next::before, .route-item::before {
+  content: "";
+  position: absolute;
+  inset: 8px auto auto 2px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--gold);
+  transform: translateX(4px) rotate(45deg);
+}
+.route-item { --accent: var(--muted); }
+.route-item[data-category="story"] { --accent: var(--quest); }
+.route-item:is([data-category="audio"], [data-category="route"], [data-category="test"]) { --accent: var(--info); }
+.route-item[data-category="bonus"] { --accent: var(--bonus); }
+.route-item[data-danger] { --accent: var(--danger); }
+.route-item :is(.route-heading, .route-target, mark) { color: var(--accent); background: transparent; }
+.route-item:is([data-category="audio"], [data-category="route"]) .route-copy { color: var(--info); }
+.group-title { font: bold 14px/1.2 var(--display); margin: 3px 4px 1px; }
+.group-title.is-layout { color: var(--info); }
+.group-title.is-quest, .next { color: var(--quest); }
+.route-heading { margin: 0 0 2px; font: bold 16px/1.25 var(--display); }
+.route-target { font-size: 13px; }
+.guide-companion { margin-top: 1px; }
+.guide-companion .companion-card { border: 0; padding-inline: 6px; color: var(--text); }
+.guide-companion .companion-card dl { font-family: var(--display); }
+.guide-companion .companion-card button { background: transparent; color: var(--gold); text-shadow: inherit; border: 0; }
+@media (max-width: 550px) {
+  .panel { inset-block-start: 8px; inset-inline-start: 8px; width: calc(100vw - 16px); max-height: calc(100vh - 16px); }
+  .title { font-size: 22px; }
+}

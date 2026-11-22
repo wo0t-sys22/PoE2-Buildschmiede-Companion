@@ -1,0 +1,32 @@
+.companion-card {
+  padding: 7px 8px;
+  color: var(--text, #f2ede2);
+  font: 14px/1.38 var(--body, "Segoe UI", Inter, sans-serif);
+}
+.companion-card > :first-child { margin-top: 0; }
+.companion-card :is(p, h3, h4, dl, ol, ul, details) { margin-block: 3px 7px; }
+.companion-card :is(h3, h4, summary, dt) { color: var(--gold, #dfc68c); }
+.companion-card h3 { font: bold 18px/1.2 Georgia, serif; }
+.companion-card h4 { font-size: 14px; }
+.companion-card small { color: var(--muted, #c8c1b1); }
+.companion-card label { display: flex; align-items: center; gap: 6px; margin-block: 3px 7px; }
+.companion-card select { max-width: 100%; min-width: 0; font: inherit; }
+.companion-card dd { margin-inline-start: 0; }
+.companion-card a { color: var(--info, #a9d3e3); }
+.companion-card li + li { margin-block-start: 3px; }
+.companion-card :is(ul, ol) { padding-inline-start: 18px; }
+.companion-card summary { cursor: pointer; }
+.companion-card .companion-attacks dt { color: var(--danger, #efb3aa); }
+.companion-card .companion-attacks dd { margin-bottom: 5px; }
+.companion-attacks .boss-cue { color: #e4bc77; }
+.companion-attacks .boss-response { color: #93d69c; }
+.companion-card [data-companion-open] {
+  font: inherit;
+  color: var(--gold, #dfc68c);
+  background: transparent;
+  border: 1px solid var(--edge, #806744);
+  padding: 4px 7px;
+  cursor: pointer;
+}
+.companion-index { margin-block: 6px; }
+.companion-index > summary { cursor: pointer; color: var(--gold, #dfc68c); }

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenaustausch · Buildschmiede</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {min-height:100vh;background:radial-gradient(ellipse at 100% 0%,#2d261a,transparent 45%),var(--background)}
+    .exchange {max-width:56rem;margin:auto;padding:clamp(1.25rem,5vw,4rem) 1.25rem}
+    .exchange header {display:flex;align-items:center;gap:1rem;margin-bottom:2.25rem}
+    .exchange header img {width:3.5rem;height:3.5rem;object-fit:contain}
+    .exchange header p {margin-top:.5rem;color:var(--muted)}
+    .exchange section {padding:clamp(1rem,3vw,1.7rem);border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+    .exchange section + section {margin-top:1rem}
+    .exchange section > * + * {margin-top:1rem}
+    .exchange label {display:block;font-weight:600}
+    .exchange select,.exchange input {display:block;color:var(--text);max-width:100%;margin-top:.4rem}
+    .exchange select {min-width:min(18rem,100%);padding:.55rem;border:1px solid var(--line);border-radius:.3rem;background:var(--background)}
+    .exchange .current {display:flex;align-items:end;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .exchange code {display:block;overflow-wrap:anywhere;color:var(--gold-bright)}
+    .exchange #revision {overflow-wrap:anywhere;color:var(--muted)}
+    .exchange .status {min-height:1.5em;color:var(--gold-bright);margin:1rem 0}
+    .exchange .status[data-error="true"] {color:#ffb49f}
+    .exchange details ul {padding-inline-start:1.35rem;overflow-wrap:anywhere}
+  </style>
+  <script src="datenaustausch.js" defer></script>
+</head>
+<body>
+  <main class="exchange">
+    <header>
+      <img src="images/buildschmiede-mark.png" alt="">
+      <div><h1 data-i18n="title">Datenaustausch</h1><p data-i18n="intro">Gemeinsame Daten für Companion und WordPress.</p></div>
+    </header>
+    <section aria-labelledby="active-title">
+      <h2 id="active-title" data-i18n="current">Aktiver Datensatz</h2>
+      <div class="current">
+        <label><span data-i18n="select">Datensatz wählen</span>
+          <select id="dataset">
+            <option value="campaign.live.v2.json" data-i18n="campaign">Kampagne</option>
+            <option value="bosses.json" data-i18n="bosses">Bosse</option>
+            <option value="terms.json" data-i18n="terms">Spielbegriffe</option>
+            <option value="lexicon.v1.json" data-i18n="lexicon">Lexikon</option>
+            <option value="currency.v1.json" data-i18n="currency">Währungen und Materialien</option>
+            <option value="game-translations.de.v1.json" data-i18n="translations">Deutsche Spielübersetzungen</option>
+          </select>
+        </label>
+        <button class="button secondary" id="download" type="button" data-i18n="download">JSON herunterladen</button>
+      </div>
+      <code id="canonical"></code><p id="revision"></p>
+    </section>
+    <section aria-labelledby="import-title">
+      <h2 id="import-title" data-i18n="import">JSON importieren</h2>
+      <label for="upload" data-i18n="choose">Datei für die Vorschau auswählen</label>
+      <input id="upload" type="file" accept=".json,application/json">
+      <div id="preview" hidden>
+        <strong id="delta"></strong>
+        <details id="examples" hidden><summary data-i18n="sample">Beispiele aus der Datei</summary><ul id="entries"></ul></details>
+      </div>
+      <button id="apply" class="button primary" type="button" disabled data-i18n="apply">Geprüfte Änderungen übernehmen</button>
+    </section>
+    <p role="status" aria-live="polite" class="status" id="status"></p>
+  </main>
+</body>
+</html>

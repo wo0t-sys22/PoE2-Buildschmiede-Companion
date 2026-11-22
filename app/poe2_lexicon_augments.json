@@ -1,0 +1,5366 @@
+{
+  "currency.adept-rune": {
+    "armour": {
+      "de": [
+        "+9 zu Geschick"
+      ],
+      "en": [
+        "+9 to Dexterity"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+9 zu Geschick"
+      ],
+      "en": [
+        "+9 to Dexterity"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+9 zu Geschick"
+      ],
+      "en": [
+        "+9 to Dexterity"
+      ]
+    }
+  },
+  "currency.aldurs-legacy": {
+    "armour": {
+      "de": [
+        "Beim Einfassen in einen einzigartigen kalguurischen oder ezomytischen Gegenstand wird der Gegenstand zerstört und eine Rune erzeugt, die die Macht dieses Gegenstands enthält"
+      ],
+      "en": [
+        "When socketed into a Unique Kalguuran or Ezomyte item, destroys the item to create a Rune imbued with that item's power"
+      ]
+    },
+    "caster": {
+      "de": [
+        "Beim Einfassen in einen einzigartigen kalguurischen oder ezomytischen Gegenstand wird der Gegenstand zerstört und eine Rune erzeugt, die die Macht dieses Gegenstands enthält"
+      ],
+      "en": [
+        "When socketed into a Unique Kalguuran or Ezomyte item, destroys the item to create a Rune imbued with that item's power"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Beim Einfassen in einen einzigartigen kalguurischen oder ezomytischen Gegenstand wird der Gegenstand zerstört und eine Rune erzeugt, die die Macht dieses Gegenstands enthält"
+      ],
+      "en": [
+        "When socketed into a Unique Kalguuran or Ezomyte item, destroys the item to create a Rune imbued with that item's power"
+      ]
+    }
+  },
+  "currency.amanamus-gaze": {
+    "body armour": {
+      "de": [
+        "+2 zu Rüstung pro 1 Wille"
+      ],
+      "en": [
+        "+2 to Armour per 1 Spirit"
+      ]
+    },
+    "boots": {
+      "de": [
+        "1% erhöhte Bewegungsgeschwindigkeit pro 15 Wille, bis zu einem Maximum von 40%",
+        "Andere Modifikatoren für die Bewegungsgeschwindigkeit, mit Ausnahme von Sprinten, werden nicht angewendet"
+      ],
+      "en": [
+        "1% increased Movement Speed per 15 Spirit, up to a maximum of 40%",
+        "Other Modifiers to Movement Speed except for Sprinting do not apply"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Entfernt eine schädigende Beeinträchtigung, wenn Ihr eine Befehls-Fertigkeit benutzt"
+      ],
+      "en": [
+        "Remove a Damaging Ailment when you use a Command Skill"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-animosity": {
+    "talisman": {
+      "de": [
+        "Erhaltet 2 Macht des Druiden, wenn Ihr einen seltenen oder einzigartigen Gegner schwer betäubt",
+        "Verbunden: 40% erhöhter Betäubungsaufbau"
+      ],
+      "en": [
+        "Gain 2 Druidic Prowess when you Heavy Stun a Rare or Unique Enemy",
+        "Bonded: 40% increased Stun Buildup"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-control": {
+    "quarterstaff": {
+      "de": [
+        "50% erhöhter Immobilisierungsaufbau",
+        "Verbunden: 30% erhöhter Schaden gegen immobilisierte Gegner"
+      ],
+      "en": [
+        "50% increased Immobilisation buildup",
+        "Bonded: 30% increased Damage against Immobilised Enemies"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-decay": {
+    "wand": {
+      "de": [
+        "25% erhöhte Magnitude von Verkümmerung",
+        "Verbunden: 15% Chance, dass Ihr einen ähnlichen Betrag von Instabilität wiedererhaltet, wenn Instabilität auf Euch detoniert"
+      ],
+      "en": [
+        "25% increased Withered Magnitude",
+        "Bonded: 15% chance that when Volatility on you explodes, you regain an equivalent amount of Volatility"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-detonation": {
+    "crossbow": {
+      "de": [
+        "Granaten haben 10% Chance, ein zweites Mal aktiviert zu werden",
+        "Verbunden: 40% erhöhte Nachladegeschwindigkeit von Armbrüsten"
+      ],
+      "en": [
+        "Grenades have 10% chance to activate a second time",
+        "Bonded: 40% increased Crossbow Reload Speed"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-discovery": {
+    "staff": {
+      "de": [
+        "30% Chance, einen zusätzlichen Überrest zu erzeugen",
+        "Verbunden: +1 zu maximaler Anzahl von Elementarinfusionen"
+      ],
+      "en": [
+        "30% chance to create an additional Remnant",
+        "Bonded: +1 to maximum number of Elemental Infusions"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-dueling": {
+    "buckler": {
+      "de": [
+        "30% erhöhte Magnitude der Pariert-Schwächung",
+        "Verbunden: 15% erhöhte Blockchance"
+      ],
+      "en": [
+        "30% increased Parried Debuff Magnitude",
+        "Bonded: 15% increased Block chance"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-prowess": {
+    "spear": {
+      "de": [
+        "30% Chance, eine zusätzliche Ladung zu erhalten, wenn Ihr eine Ladung erhaltet",
+        "Verbunden: 30% verlängerte Dauer von Widerstands-, Raserei- und Energie-Ladungen"
+      ],
+      "en": [
+        "30% chance when you gain a Charge to gain an additional Charge",
+        "Bonded: 30% increased Endurance, Frenzy and Power Charge Duration"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-retaliation": {
+    "shield": {
+      "de": [
+        "8% erhöhte Angriffsgeschwindigkeit, wenn Ihr kürzlich geblockt habt",
+        "Verbunden: +3% zu maximaler Blockchance"
+      ],
+      "en": [
+        "8% increased Attack Speed if you have Blocked Recently",
+        "Bonded: +3% to maximum Block chance"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-shattering": {
+    "one hand mace": {
+      "de": [
+        "40% erhöhte Wirkung von vollständig zerbrochener Rüstung",
+        "Verbunden: Zerbrecht 50% erhöhte Rüstung"
+      ],
+      "en": [
+        "40% increased effect of Fully Broken Armour",
+        "Bonded: Break 50% increased Armour"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-splinters": {
+    "bow": {
+      "de": [
+        "+50% übertreffende Chance, einen zusätzlichen Pfeil zu feuern",
+        "Verbunden: 30% erhöhte Projektilgeschwindigkeit"
+      ],
+      "en": [
+        "+50% Surpassing chance to fire an additional Arrow",
+        "Bonded: 30% increased Projectile Speed"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-the-horde": {
+    "sceptre": {
+      "de": [
+        "Kreaturen haben 8% erhöhte Angriffs- und Zaubergeschwindigkeit",
+        "Verbunden: Kreaturen haben 10% erhöhte Bewegungsgeschwindigkeit"
+      ],
+      "en": [
+        "Minions have 8% increased Attack and Cast Speed",
+        "Bonded: Minions have 10% increased Movement Speed"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-the-titan": {
+    "two hand mace": {
+      "de": [
+        "10% Chance, dass Hieb-Fertigkeiten, die Ihr selbst benutzt, ein zusätzliches Nachbeben verursachen",
+        "Verbunden: 15% vergrößerter Wirkungsbereich von Angriffen"
+      ],
+      "en": [
+        "10% chance for Slam Skills you use yourself to cause an additional Aftershock",
+        "Bonded: 15% increased Area of Effect for Attacks"
+      ]
+    }
+  },
+  "currency.ancient-rune-of-witchcraft": {
+    "focus": {
+      "de": [
+        "40% vergrößerter Wirkungsbereich von Flüchen",
+        "Verbunden: 15% schnellere Aktivierung von Flüchen"
+      ],
+      "en": [
+        "40% increased Area of Effect of Curses",
+        "Bonded: 15% faster Curse Activation"
+      ]
+    }
+  },
+  "currency.astrids-creativity": {
+    "armour": {
+      "de": [
+        "Kann über 1 zusätzlichen angefertigten Modifikator verfügen"
+      ],
+      "en": [
+        "Can have 1 additional Crafted Modifier"
+      ]
+    },
+    "caster": {
+      "de": [
+        "Kann über 1 zusätzlichen angefertigten Modifikator verfügen"
+      ],
+      "en": [
+        "Can have 1 additional Crafted Modifier"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Kann über 1 zusätzlichen angefertigten Modifikator verfügen"
+      ],
+      "en": [
+        "Can have 1 additional Crafted Modifier"
+      ]
+    }
+  },
+  "currency.atmohuas-soul-core-of-retreat": {
+    "body armour": {
+      "de": [
+        "Erhaltet zusätzliche Schwelle für Beeinträchtigungen in Höhe von 15% des maximalen Energieschilds",
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 15% des maximalen Energieschilds"
+      ],
+      "en": [
+        "Gain additional Ailment Threshold equal to 15% of maximum Energy Shield",
+        "Gain additional Stun Threshold equal to 15% of maximum Energy Shield"
+      ]
+    },
+    "focus": {
+      "de": [
+        "Erhaltet zusätzliche Schwelle für Beeinträchtigungen in Höhe von 15% des maximalen Energieschilds",
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 15% des maximalen Energieschilds"
+      ],
+      "en": [
+        "Gain additional Ailment Threshold equal to 15% of maximum Energy Shield",
+        "Gain additional Stun Threshold equal to 15% of maximum Energy Shield"
+      ]
+    }
+  },
+  "currency.bear-idol": {
+    "helmet": {
+      "de": [
+        "10% vergrößerter Wirkungsbereich",
+        "Verbunden: 12% erhöhte Reservierungseffizienz von Gefährten-Fertigkeiten"
+      ],
+      "en": [
+        "10% increased Area of Effect",
+        "Bonded: 12% increased Reservation Efficiency of Companion Skills"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz verursachen 12 bis 18 zusätzlichen physischen-Angriffsschaden",
+        "Verbunden: 40% erhöhter Angriffsschaden, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence deal 12 to 18 added Attack Physical Damage",
+        "Bonded: 40% increased Attack Damage while Shapeshifted"
+      ]
+    }
+  },
+  "currency.betrayal-of-aldur": {
+    "caster": {
+      "bound": true,
+      "de": [
+        "Wandelt alle Feuer-, Kälte- und Blitz-Modifikatoren auf dem Gegenstand in entsprechende Chaos-Modifikatoren um",
+        "Verbunden: 25% erhöhter Chaosschaden"
+      ],
+      "en": [
+        "Transforms all Fire, Cold and Lightning modifiers on the item into equivalent Chaos modifiers",
+        "Bonded: 25% increased Chaos Damage"
+      ]
+    },
+    "weapon": {
+      "bound": true,
+      "de": [
+        "Wandelt alle Feuer-, Kälte- und Blitz-Modifikatoren auf dem Gegenstand in entsprechende Chaos-Modifikatoren um",
+        "Verbunden: 25% erhöhter Chaosschaden"
+      ],
+      "en": [
+        "Transforms all Fire, Cold and Lightning modifiers on the item into equivalent Chaos modifiers",
+        "Bonded: 25% increased Chaos Damage"
+      ]
+    }
+  },
+  "currency.boar-idol": {
+    "gloves": {
+      "de": [
+        "Erhaltet 1 Rausch bei Nahkampftreffer",
+        "Verbunden: 25% beschleunigte Abklingzeit-Rate von Kriegsschreien"
+      ],
+      "en": [
+        "Gain 1 Rage on Melee Hit",
+        "Bonded: 25% increased Warcry Cooldown Recovery Rate"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz regenerieren 0.5% Eures maximalen Lebens pro Sekunde",
+        "Verbunden: 25% erhöhte Lebensregenerations-Rate, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence Regenerate 0.5% of your Maximum Life per second",
+        "Bonded: 25% increased Life Regeneration rate while Shapeshifted"
+      ]
+    }
+  },
+  "currency.body-rune": {
+    "armour": {
+      "de": [
+        "+45 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+45 to maximum Life",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "+40 zu maximalem Energieschild",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "+40 to maximum Energy Shield",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+40 zu maximalem Energieschild",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "+40 to maximum Energy Shield",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "4% des physischen Schadens werden als Leben geraubt",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "Leeches 4% of Physical Damage as Life",
+        "Bonded: 5% increased maximum Life"
+      ]
+    }
+  },
+  "currency.breath-of-aldur": {
+    "caster": {
+      "bound": true,
+      "de": [
+        "Beim Einfassen werden alle Feuer- und Blitz-Modifikatoren in entsprechende Kälte-Modifikatoren umgewandelt",
+        "Verbunden: 25% erhöhter Kälteschaden"
+      ],
+      "en": [
+        "When socketed, transforms all Fire and Lightning modifiers to equivalent Cold modifiers",
+        "Bonded: 25% increased Cold Damage"
+      ]
+    },
+    "weapon": {
+      "bound": true,
+      "de": [
+        "Beim Einfassen werden alle Feuer- und Blitz-Modifikatoren in entsprechende Kälte-Modifikatoren umgewandelt",
+        "Verbunden: 25% erhöhter Kälteschaden"
+      ],
+      "en": [
+        "When socketed, transforms all Fire and Lightning modifiers to equivalent Cold modifiers",
+        "Bonded: 25% increased Cold Damage"
+      ]
+    }
+  },
+  "currency.cadigans-epiphany": {
+    "gloves": {
+      "bound": true,
+      "de": [
+        "Zerstört alle Augmentationsfassungen auf dem Gegenstand, um eine Juwelenfassung zu erzeugen"
+      ],
+      "en": [
+        "Destroys all Augment Sockets on the item to create a Jewel Socket"
+      ]
+    }
+  },
+  "currency.carved-cunning": {
+    "body armour": {
+      "de": [
+        "Verhindert zusätzlich 5 % des Schadens von abgewendeten Treffern, wenn du kürzlich keine Treffer abgewendet hast.",
+        "Verbunden: 8% erhöhter Abwendungswert"
+      ],
+      "en": [
+        "Prevent +5% of Damage from Deflected Hits if you've Deflected no Hits Recently",
+        "Bonded: 8% increased Deflection Rating"
+      ]
+    },
+    "boots": {
+      "de": [
+        "Erhaltet Ansturm für 4 Sekunden, wenn Eure Male aktiviert werden",
+        "Verbunden: Stärkungen auf Euch klingen 10% langsamer ab"
+      ],
+      "en": [
+        "Gain Onslaught for 4 seconds when your Marks Activate",
+        "Bonded: Buffs on you expire 10% slower"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Gegner bei vollem Leben können Euren Treffern nicht ausweichen",
+        "Verbunden: 30% erhöhte globale Treffgenauigkeit"
+      ],
+      "en": [
+        "Enemies which are on Full Life cannot Evade your Hits",
+        "Bonded: 30% increased Accuracy Rating"
+      ]
+    }
+  },
+  "currency.carved-majesty": {
+    "body armour": {
+      "de": [
+        "+3 zu Wille pro Götze, der in Eurer Ausrüstung eingefasst ist",
+        "Verbunden: 5% erhöhter Wille"
+      ],
+      "en": [
+        "+3 to Spirit per Idol socketed in your Equipment",
+        "Bonded: 5% increased Spirit"
+      ]
+    },
+    "boots": {
+      "de": [
+        "1% erhöhte Bewegungsgeschwindigkeit während des Sprintens pro dauerhafter Kreatur",
+        "Verbunden: Kreaturen haben 12% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "1% increased Movement Speed while Sprinting per Persistent Minion",
+        "Bonded: Minions have 12% increased maximum Life"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Gefährten erhalten Ansturm für 4 Sekunden bei Treffer gegen Eure Maltragenden Ziele",
+        "Verbunden: Gefährten verursachen 30% erhöhten Schaden"
+      ],
+      "en": [
+        "Companions gain Onslaught for 4 seconds on Hitting your Marked targets",
+        "Bonded: Companions deal 30% increased Damage"
+      ]
+    }
+  },
+  "currency.carved-mischief": {
+    "body armour": {
+      "de": [
+        "200% erhöhte Betäubungsschwelle, wenn Ihr kürzlich betäubt wurdet",
+        "Verbunden: 25% erhöhte Betäubungsschwelle"
+      ],
+      "en": [
+        "200% increased Stun Threshold if you've been Stunned Recently",
+        "Bonded: 25% increased Stun Threshold"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "+5% zu maximaler Blockchance, wenn Ihr mit einem gehobenen Schild kürzlich geblockt habt",
+        "Verbunden: 20% erhöhte Blockchance"
+      ],
+      "en": [
+        "+5% to maximum Block chance if you've Blocked with a raised Shield Recently",
+        "Bonded: 20% increased Block chance"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Erhaltet Wache für 4 Sekunden in Höhe von 10% des maximalen Lebens bei erlittenem schweren Treffer",
+        "Verbunden: Stärkungen auf Euch klingen 10% langsamer ab"
+      ],
+      "en": [
+        "Gain Guard equal to 10% of maximum Life for 4 seconds on taking Savage Hit",
+        "Bonded: Buffs on you expire 10% slower"
+      ]
+    }
+  },
+  "currency.carved-tenacity": {
+    "boots": {
+      "de": [
+        "Eure Geschwindigkeit ist unbeeinträchtigt von Verlangsamungen während des Sprintens",
+        "Verbunden: 8% erhöhte Bewegungsgeschwindigkeit während des Sprintens"
+      ],
+      "en": [
+        "Your speed is Unaffected by Slows while Sprinting",
+        "Bonded: 8% increased Movement Speed while Sprinting"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Gegner, die Ihr kritisch trefft, erhalten 100% verringerte Lebensregenerations-Rate für 4 Sekunden",
+        "Verbunden: 15% erhöhte kritische Trefferchance"
+      ],
+      "en": [
+        "Enemies you Critically Hit get 100% reduced Life Regeneration Rate for 4 seconds",
+        "Bonded: 15% increased Critical Hit Chance"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Gegner haben keinen Bonus für kritische Treffer für 4 Sekunden, nachdem Ihr sie geblendet habt",
+        "Verbunden: 20% erhöhte Blendwirkung"
+      ],
+      "en": [
+        "Enemies have no Critical Damage Bonus for 4 seconds after you Blind them",
+        "Bonded: 20% increased Blind Effect"
+      ]
+    }
+  },
+  "currency.cat-idol": {
+    "gloves": {
+      "de": [
+        "25% erhöhte globale Treffgenauigkeit",
+        "Verbunden: 30% erhöhte erhaltene Phiolenfüllungen"
+      ],
+      "en": [
+        "25% increased Accuracy Rating",
+        "Bonded: 30% increased Charm Charges gained"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz haben 14% erhöhte kritische Trefferchance",
+        "Verbunden: 25% erhöhte kritische Trefferchance, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence have 14% increased Critical Hit Chance",
+        "Bonded: 25% increased Critical Hit Chance while Shapeshifted"
+      ]
+    }
+  },
+  "currency.charging-rune": {
+    "armour": {
+      "de": [
+        "12% erhöhte Runenschutz-Regenerationsrate",
+        "Verbunden: Regeneriert 15 Runenschutz pro Sekunde"
+      ],
+      "en": [
+        "12% increased Runic Ward Regeneration Rate",
+        "Bonded: Regenerate 15 Runic Ward per second"
+      ]
+    }
+  },
+  "currency.cholotls-soul-core-of-war": {
+    "bow": {
+      "de": [
+        "20% erhöhte Projektilgeschwindigkeit"
+      ],
+      "en": [
+        "20% increased Projectile Speed"
+      ]
+    }
+  },
+  "currency.citaqualotls-soul-core-of-foulness": {
+    "weapon": {
+      "de": [
+        "Fügt 19 bis 29 Chaosschaden hinzu"
+      ],
+      "en": [
+        "Adds 19 to 29 Chaos damage"
+      ]
+    }
+  },
+  "currency.citaqualotls-thesis": {
+    "body armour": {
+      "de": [
+        "Ihr gewinnt 50% des erlittenen Schadens von Euren Opfern als Leben wieder"
+      ],
+      "en": [
+        "You Recoup 50% of Damage taken by your Offerings as Life"
+      ]
+    },
+    "boots": {
+      "de": [
+        "Opfert 10% Eures maximalen Lebens, um dieselbe Menge an Wache zu erhalten, wenn Ihr die Ausweichrolle benutzt"
+      ],
+      "en": [
+        "Sacrifice 10% of maximum Life to gain that much Guard when you Dodge Roll"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Eine Eurer dauerhaften Kreaturen wird wiederbelebt, wenn ein Opfer abläuft"
+      ],
+      "en": [
+        "One of your Persistent Minions revives when an Offering expires"
+      ]
+    }
+  },
+  "currency.countess-seskes-rune-of-archery": {
+    "bow": {
+      "de": [
+        "Angriffe mit Bögen feuern einen zusätzlichen Pfeil",
+        "Verbunden: 20% erhöhte Projektilgeschwindigkeit"
+      ],
+      "en": [
+        "Bow Attacks fire an additional Arrow",
+        "Bonded: 20% increased Projectile Speed"
+      ]
+    }
+  },
+  "currency.courtesan-mannans-rune-of-cruelty": {
+    "gloves": {
+      "de": [
+        "20% erhöhte Magnitude von schädigenden Beeinträchtigungen, die Ihr verursacht",
+        "Verbunden: 15% verlängerte Dauer von schädigenden Beeinträchtigungen bei Gegnern"
+      ],
+      "en": [
+        "20% increased Magnitude of Damaging Ailments you inflict",
+        "Bonded: 15% increased Duration of Damaging Ailments on Enemies"
+      ]
+    }
+  },
+  "currency.craiceanns-rune-of-recovery": {
+    "body armour": {
+      "de": [
+        "30% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: Erhaltet zusätzliche Schwelle für Beeinträchtigungen in Höhe von 50% des maximalen Energieschilds",
+        "Verbunden: Erhaltet zusätzliche Betäubungsschwelle in Höhe von 50% des maximalen Energieschilds"
+      ],
+      "en": [
+        "30% increased Energy Shield Recharge Rate",
+        "Bonded: Gain additional Ailment Threshold equal to 50% of maximum Energy Shield",
+        "Bonded: Gain additional Stun Threshold equal to 50% of maximum Energy Shield"
+      ]
+    }
+  },
+  "currency.craiceanns-rune-of-warding": {
+    "body armour": {
+      "de": [
+        "50% verringerte Wirkung von Flüchen auf Euch",
+        "Verbunden: 8% erhöhte Fluch-Magnituden"
+      ],
+      "en": [
+        "50% reduced effect of Curses on you",
+        "Bonded: 8% increased Curse Magnitudes"
+      ]
+    }
+  },
+  "currency.desert-rune": {
+    "armour": {
+      "de": [
+        "+14% zu Feuerwiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+14% to Fire Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 8% des Schadens als extra Feuerschaden",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Gain 8% of Damage as Extra Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 8% des Schadens als extra Feuerschaden",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Gain 8% of Damage as Extra Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 7 bis 11 Feuerschaden hinzu",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Adds 7 to 11 Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    }
+  },
+  "currency.emergent-instinct": {
+    "body armour": {
+      "de": [
+        "Dornenschaden ist günstig gegen Ziele mit vollständig zerbrochener Rüstung",
+        "Verbunden: 30% erhöhter Dornenschaden"
+      ],
+      "en": [
+        "Thorns Damage is Lucky against targets with Fully Broken Armour",
+        "Bonded: 30% increased Thorns damage"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Regeneriert 5% des maximalen Lebens pro Sekunde, wenn Ihr kürzlich eine Befehls-Fertigkeit benutzt habt",
+        "Verbunden: 20% erhöhte Lebensregenerations-Rate"
+      ],
+      "en": [
+        "Regenerate 5% of maximum Life per Second if you have used a Command Skill Recently",
+        "Bonded: 20% increased Life Regeneration rate"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Geblendete, verstümmelte und blutende Ziele können Euren Treffern nicht ausweichen",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Targets that are Blinded, Maimed, and Bleeding cannot Evade your Hits",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    }
+  },
+  "currency.emergent-possibility": {
+    "body armour": {
+      "de": [
+        "15 % des Chaosschadens von Treffern werden als Schaden eines zufälligen Elements erlitten.",
+        "Verbunden: +13% zu Chaoswiderstand"
+      ],
+      "en": [
+        "15% of Chaos Damage from Hits taken as a Damage of a random Element",
+        "Bonded: +13% to Chaos Resistance"
+      ]
+    },
+    "boots": {
+      "de": [
+        "50% erhöhte Runenschutz-Regenerationsrate während des Sprintens",
+        "Verbunden: 15% erhöhte Runenschutz-Kosteneffizienz"
+      ],
+      "en": [
+        "50% increased Runic Ward Regeneration Rate while Sprinting",
+        "Bonded: 15% increased Runic Ward Cost Efficiency"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Verursacht 1 % des Schadens als zusätzlichen Schaden eines zufälligen Elements pro Rune in ausgerüsteten Gegenständen.",
+        "Verbunden: 20% erhöhter Elementarschaden"
+      ],
+      "en": [
+        "Gain 1% of Damage as Extra Damage of a random Element per Rune Socketed in Equipped Items",
+        "Bonded: 20% increased Elemental Damage"
+      ]
+    }
+  },
+  "currency.emergent-protection": {
+    "boots": {
+      "de": [
+        "Wenn Ihr aufhört zu sprinten, erhaltet für 4 Sekunden Wache in Höhe von 4% des maximalen Lebens pro Sekunde, die Ihr gesprintet seid, bis zu einem Maximum von 20%",
+        "Verbunden: 20% erhöhte erhaltene Wache"
+      ],
+      "en": [
+        "When you stop Sprinting, gain Guard equal to 4% of maximum Life per second spent Sprinting, up to a maximum of 20%, for 4 seconds",
+        "Bonded: 20% increased Guard gained"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Banner gewähren auch 2% des regenerierten Lebens pro Sekunde für betroffene Ziele",
+        "Verbunden: Regeneriert 0.5% des Lebens pro Sekunde"
+      ],
+      "en": [
+        "Banners also grant 2% of Life Regenerated per second to affected targets",
+        "Bonded: Regenerate 0.5% of maximum Life per second"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Erhaltet 1 Widerstands-Ladung, wenn Ihr niedriges Leben erreicht, nur einmal alle 2 Sekunden",
+        "Verbunden: 40% verlängerte Dauer von Widerstands-Ladungen"
+      ],
+      "en": [
+        "Gain 1 Endurance Charge on reaching Low Life, only once every 2 seconds",
+        "Bonded: 40% increased Endurance Charge Duration"
+      ]
+    }
+  },
+  "currency.emergent-vigour": {
+    "body armour": {
+      "de": [
+        "Gewährt maximalen Energieschild in Höhe von 50 % der gesamten Stärkeanforderungen der ausgerüsteten Rüstungsteile.",
+        "Verbunden: +20 zu Stärke"
+      ],
+      "en": [
+        "Gain Maximum Energy Shield equal to 50% of total Strength Requirements of Equipped Armour Items",
+        "Bonded: +20 to Strength"
+      ]
+    },
+    "boots": {
+      "de": [
+        "Treffer gegen Euch haben keinen Bonus für kritische Treffer während auf Geweihtem Boden",
+        "Verbunden: Von Euch erzeugter Geweihter Boden hat 20% erhöhte Wirkung"
+      ],
+      "en": [
+        "Hits against you have no Critical Damage Bonus while on Consecrated Ground",
+        "Bonded: 20% increased Effect of Consecrated Ground you create"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "+1 zu maximalem Leben pro 8 Rüstung auf ausgerüstetem Helm",
+        "Verbunden: +20 zu Wille"
+      ],
+      "en": [
+        "+1 to maximum Life per 8 Armour on Equipped Helmet",
+        "Bonded: +20 to Spirit"
+      ]
+    }
+  },
+  "currency.estazuntis-soul-core-of-convalescence": {
+    "boots": {
+      "de": [
+        "12% erhöhte Geschwindigkeit von Wiedergewinnungs-Effekten"
+      ],
+      "en": [
+        "12% increased speed of Recoup Effects"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "8% of Damage taken Recouped as Life"
+      ]
+    }
+  },
+  "currency.farruls-rune-of-grace": {
+    "boots": {
+      "de": [
+        "8% erhöhter Abwendungswert, während Ihr in Bewegung seid",
+        "Verbunden: Verhindert +3% des Schadens von abgewendeten Treffern"
+      ],
+      "en": [
+        "8% increased Deflection Rating while moving",
+        "Bonded: Prevent +3% of Damage from Deflected Hits"
+      ]
+    }
+  },
+  "currency.farruls-rune-of-the-chase": {
+    "boots": {
+      "de": [
+        "5% erhöhte Bewegungsgeschwindigkeit",
+        "Verbunden: 10% beschleunigte Abklingzeit-Rate"
+      ],
+      "en": [
+        "5% increased Movement Speed",
+        "Bonded: 10% increased Cooldown Recovery Rate"
+      ]
+    }
+  },
+  "currency.farruls-rune-of-the-hunt": {
+    "weapon": {
+      "de": [
+        "50% erhöhter Angriffsschaden gegen seltene oder einzigartige Gegner",
+        "Verbunden: +1 zur Stufe aller Angriffsfertigkeiten"
+      ],
+      "en": [
+        "50% increased Attack Damage against Rare or Unique Enemies",
+        "Bonded: +1 to Level of all Attack Skills"
+      ]
+    }
+  },
+  "currency.fenumus-rune-of-agony": {
+    "staff": {
+      "de": [
+        "Verursacht 13% des Schadens als extra Chaosschaden",
+        "Verbunden: Verursacht 8% des Schadens als extra physischen Schaden"
+      ],
+      "en": [
+        "Gain 13% of Damage as Extra Chaos Damage",
+        "Bonded: Gain 8% of Damage as Extra Physical Damage"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 13% des Schadens als extra Chaosschaden",
+        "Verbunden: Verursacht 8% des Schadens als extra physischen Schaden"
+      ],
+      "en": [
+        "Gain 13% of Damage as Extra Chaos Damage",
+        "Bonded: Gain 8% of Damage as Extra Physical Damage"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Verursacht 13% des Schadens als extra Chaosschaden",
+        "Verbunden: Verursacht 8% des Schadens als extra physischen Schaden"
+      ],
+      "en": [
+        "Gain 13% of Damage as Extra Chaos Damage",
+        "Bonded: Gain 8% of Damage as Extra Physical Damage"
+      ]
+    }
+  },
+  "currency.fenumus-rune-of-draining": {
+    "gloves": {
+      "de": [
+        "20% erhöhte Magnitude von Verkümmerung",
+        "Verbunden: +7% zu Chaoswiderstand"
+      ],
+      "en": [
+        "20% increased Withered Magnitude",
+        "Bonded: +7% to Chaos Resistance"
+      ]
+    }
+  },
+  "currency.fenumus-rune-of-spinning": {
+    "gloves": {
+      "de": [
+        "8% erhöhte Zaubergeschwindigkeit",
+        "Verbunden: 20% erhöhte Manakosteneffizienz bei niedrigem Mana"
+      ],
+      "en": [
+        "8% increased Cast Speed",
+        "Bonded: 20% increased Mana Cost Efficiency while on Low Mana"
+      ]
+    }
+  },
+  "currency.fox-idol": {
+    "body armour": {
+      "de": [
+        "In diesen Gegenstand eingefasste Götzen erhalten die Vorteile ihrer verbundenen Modifikatoren",
+        "Verbunden: +5% zur Qualität aller Fertigkeiten"
+      ],
+      "en": [
+        "Idols socketed in this item gain the benefits of their Bonded modifiers",
+        "Bonded: +5% to Quality of all Skills"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "50% vergrößerter Präsenz-Wirkungsbereich",
+        "Verbunden: Kreaturen haben 30% vergrößerten Wirkungsbereich"
+      ],
+      "en": [
+        "50% increased Presence Area of Effect",
+        "Bonded: Minions have 30% increased Area of Effect"
+      ]
+    }
+  },
+  "currency.glacial-rune": {
+    "armour": {
+      "de": [
+        "+14% zu Kältewiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+14% to Cold Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 8% des Schadens als extra Kälteschaden",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Gain 8% of Damage as Extra Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 8% des Schadens als extra Kälteschaden",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Gain 8% of Damage as Extra Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 6 bis 10 Kälteschaden hinzu",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Adds 6 to 10 Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    }
+  },
+  "currency.greater-adept-rune": {
+    "armour": {
+      "de": [
+        "+12 zu Geschick"
+      ],
+      "en": [
+        "+12 to Dexterity"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+12 zu Geschick"
+      ],
+      "en": [
+        "+12 to Dexterity"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+12 zu Geschick"
+      ],
+      "en": [
+        "+12 to Dexterity"
+      ]
+    }
+  },
+  "currency.greater-body-rune": {
+    "armour": {
+      "de": [
+        "+60 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+60 to maximum Life",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "+50 zu maximalem Energieschild",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "+50 to maximum Energy Shield",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+50 zu maximalem Energieschild",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "+50 to maximum Energy Shield",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "5% des physischen Schadens werden als Leben geraubt",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "Leeches 5% of Physical Damage as Life",
+        "Bonded: 5% increased maximum Life"
+      ]
+    }
+  },
+  "currency.greater-charging-rune": {
+    "armour": {
+      "de": [
+        "16% erhöhte Runenschutz-Regenerationsrate",
+        "Verbunden: Regeneriert 20 Runenschutz pro Sekunde"
+      ],
+      "en": [
+        "16% increased Runic Ward Regeneration Rate",
+        "Bonded: Regenerate 20 Runic Ward per second"
+      ]
+    }
+  },
+  "currency.greater-desert-rune": {
+    "armour": {
+      "de": [
+        "+18% zu Feuerwiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+18% to Fire Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 10% des Schadens als extra Feuerschaden",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Gain 10% of Damage as Extra Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 10% des Schadens als extra Feuerschaden",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Gain 10% of Damage as Extra Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 13 bis 16 Feuerschaden hinzu",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Adds 13 to 16 Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    }
+  },
+  "currency.greater-glacial-rune": {
+    "armour": {
+      "de": [
+        "+18% zu Kältewiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+18% to Cold Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 10% des Schadens als extra Kälteschaden",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Gain 10% of Damage as Extra Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 10% des Schadens als extra Kälteschaden",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Gain 10% of Damage as Extra Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 9 bis 15 Kälteschaden hinzu",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Adds 9 to 15 Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    }
+  },
+  "currency.greater-inspiration-rune": {
+    "armour": {
+      "de": [
+        "18% erhöhte Manaregenerations-Rate",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "18% increased Mana Regeneration Rate",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "30% erhöhte Manaregenerations-Rate",
+        "Verbunden: 16% erhöhte Manakosteneffizienz"
+      ],
+      "en": [
+        "30% increased Mana Regeneration Rate",
+        "Bonded: 16% increased Mana Cost Efficiency"
+      ]
+    },
+    "wand": {
+      "de": [
+        "30% erhöhte Manaregenerations-Rate",
+        "Verbunden: 16% erhöhte Manakosteneffizienz"
+      ],
+      "en": [
+        "30% increased Mana Regeneration Rate",
+        "Bonded: 16% increased Mana Cost Efficiency"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Erhaltet 30 Mana pro getötetem Gegner",
+        "Verbunden: 12% der Manakosten von Fertigkeiten werden in Lebenskosten umgewandelt"
+      ],
+      "en": [
+        "Gain 30 Mana per enemy killed",
+        "Bonded: 12% of Skill Mana Costs Converted to Life Costs"
+      ]
+    }
+  },
+  "currency.greater-iron-rune": {
+    "armour": {
+      "de": [
+        "18% erhöhte Rüstung, Ausweichen und Energieschild",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "18% increased Armour, Evasion and Energy Shield",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "30% erhöhter Zauberschaden",
+        "Verbunden: Zerbrecht Rüstung bei kritischem Zaubertreffer in Höhe von 12% des verursachten physischen Schadens"
+      ],
+      "en": [
+        "30% increased Spell Damage",
+        "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+      ]
+    },
+    "wand": {
+      "de": [
+        "30% erhöhter Zauberschaden",
+        "Verbunden: Zerbrecht Rüstung bei kritischem Zaubertreffer in Höhe von 12% des verursachten physischen Schadens"
+      ],
+      "en": [
+        "30% increased Spell Damage",
+        "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "18% erhöhter physischer Schaden",
+        "Verbunden: 20% erhöhte Wirkung von vollständig zerbrochener Rüstung"
+      ],
+      "en": [
+        "18% increased Physical Damage",
+        "Bonded: 20% increased effect of Fully Broken Armour"
+      ]
+    }
+  },
+  "currency.greater-mind-rune": {
+    "armour": {
+      "de": [
+        "+40 zu maximalem Mana",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+40 to maximum Mana",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "+75 zu maximalem Mana",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "+75 to maximum Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+75 zu maximalem Mana",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "+75 to maximum Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "4% des physischen Schadens werden als Mana geraubt",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "Leeches 4% of Physical Damage as Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    }
+  },
+  "currency.greater-rebirth-rune": {
+    "armour": {
+      "de": [
+        "Regeneriert 0.45% des Lebens pro Sekunde",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "Regenerate 0.45% of maximum Life per second",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "10% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: 8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "10% increased Energy Shield Recharge Rate",
+        "Bonded: 8% of Damage taken Recouped as Life"
+      ]
+    },
+    "wand": {
+      "de": [
+        "10% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: 8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "10% increased Energy Shield Recharge Rate",
+        "Bonded: 8% of Damage taken Recouped as Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Erhaltet 35 Leben pro getötetem Gegner",
+        "Verbunden: Regeneriert 0.4% des Lebens pro Sekunde"
+      ],
+      "en": [
+        "Gain 35 Life per enemy killed",
+        "Bonded: Regenerate 0.4% of maximum Life per second"
+      ]
+    }
+  },
+  "currency.greater-resolve-rune": {
+    "armour": {
+      "de": [
+        "+12 zu Intelligenz"
+      ],
+      "en": [
+        "+12 to Intelligence"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+12 zu Intelligenz"
+      ],
+      "en": [
+        "+12 to Intelligence"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+12 zu Intelligenz"
+      ],
+      "en": [
+        "+12 to Intelligence"
+      ]
+    }
+  },
+  "currency.greater-robust-rune": {
+    "armour": {
+      "de": [
+        "+12 zu Stärke"
+      ],
+      "en": [
+        "+12 to Strength"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+12 zu Stärke"
+      ],
+      "en": [
+        "+12 to Strength"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+12 zu Stärke"
+      ],
+      "en": [
+        "+12 to Strength"
+      ]
+    }
+  },
+  "currency.greater-rune-of-alacrity": {
+    "armour": {
+      "de": [
+        "Schwächungen auf Euch klingen 8% schneller ab",
+        "Verbunden: 15% erhöhte Schwelle für elementare Beeinträchtigungen"
+      ],
+      "en": [
+        "Debuffs on you expire 8% faster",
+        "Bonded: 15% increased Elemental Ailment Threshold"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "8% erhöhte Fertigkeitengeschwindigkeit",
+        "Verbunden: 15% erhöhte Reservierungseffizienz von Herold-Fertigkeiten"
+      ],
+      "en": [
+        "8% increased Skill Speed",
+        "Bonded: 15% increased Reservation Efficiency of Herald Skills"
+      ]
+    }
+  },
+  "currency.greater-rune-of-leadership": {
+    "armour": {
+      "de": [
+        "Kreaturen erleiden 10% des physischen Schadens als Blitzschaden",
+        "Verbunden: Kreaturen haben +10% zu allen Elementarwiderständen"
+      ],
+      "en": [
+        "Minions take 10% of Physical Damage as Lightning Damage",
+        "Bonded: Minions have +10% to all Elemental Resistances"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Kreaturen verursachen 10% ihres physischen Schadens als extra Blitzschaden",
+        "Verbunden: Kreaturen verursachen 20% erhöhten Schaden"
+      ],
+      "en": [
+        "Minions gain 10% of their Physical Damage as Extra Lightning Damage",
+        "Bonded: Minions deal 20% increased Damage"
+      ]
+    }
+  },
+  "currency.greater-rune-of-nobility": {
+    "armour": {
+      "de": [
+        "10% verringerte Wirkung von Schock auf Euch",
+        "Verbunden: 10% verkürzte Schockdauer bei Euch"
+      ],
+      "en": [
+        "10% reduced effect of Shock on you",
+        "Bonded: 10% reduced Shock duration on you"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Angriffe mit dieser Waffe haben 10% Chance, Anfälligkeit zu verursachen",
+        "Verbunden: 20% erhöhte Wirkung von Anfälligkeit"
+      ],
+      "en": [
+        "Attacks with this Weapon have 10% chance to inflict Exposure",
+        "Bonded: 20% increased Exposure Effect"
+      ]
+    }
+  },
+  "currency.greater-rune-of-tithing": {
+    "armour": {
+      "de": [
+        "1 bis 100 Blitz-Dornenschaden",
+        "Verbunden: 15% erhöhter Dornenschaden"
+      ],
+      "en": [
+        "1 to 100 Lightning Thorns damage",
+        "Bonded: 15% increased Thorns damage"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Meta-Fertigkeiten erhalten 10% erhöhte Energie",
+        "Verbunden: Heraufbeschwörte Zauber haben 25% Chance, halb so viel Energie zu verbrauchen"
+      ],
+      "en": [
+        "Meta Skills gain 10% increased Energy",
+        "Bonded: Invocated Spells have 25% chance to consume half as much Energy"
+      ]
+    }
+  },
+  "currency.greater-stone-rune": {
+    "armour": {
+      "de": [
+        "+100 zur Betäubungsschwelle",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+100 to Stun Threshold",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 14% des maximalen Energieschilds",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Gain additional Stun Threshold equal to 14% of maximum Energy Shield",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 14% des maximalen Energieschilds",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Gain additional Stun Threshold equal to 14% of maximum Energy Shield",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Bewirkt 40% erhöhten Betäubungsaufbau",
+        "Verbunden: 40% erhöhter Schaden gegen immobilisierte Gegner"
+      ],
+      "en": [
+        "Causes 40% increased Stun Buildup",
+        "Bonded: 40% increased Damage against Immobilised Enemies"
+      ]
+    }
+  },
+  "currency.greater-storm-rune": {
+    "armour": {
+      "de": [
+        "+18% zu Blitzwiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+18% to Lightning Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 10% des Schadens als extra Blitzschaden",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Gain 10% of Damage as Extra Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 10% des Schadens als extra Blitzschaden",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Gain 10% of Damage as Extra Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 1 bis 30 Blitzschaden hinzu",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Adds 1 to 30 Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    }
+  },
+  "currency.greater-vision-rune": {
+    "armour": {
+      "de": [
+        "16% erhöhte Lebens- und Manawiederherstellung von Fläschchen",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "16% increased Life and Mana Recovery from Flasks",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "24% erhöhte kritische Trefferchance von Zaubern",
+        "Verbunden: 25% erhöhter Bonus für kritische Treffer"
+      ],
+      "en": [
+        "24% increased Critical Hit Chance for Spells",
+        "Bonded: 25% increased Critical Damage Bonus"
+      ]
+    },
+    "wand": {
+      "de": [
+        "24% erhöhte kritische Trefferchance von Zaubern",
+        "Verbunden: 25% erhöhter Bonus für kritische Treffer"
+      ],
+      "en": [
+        "24% increased Critical Hit Chance for Spells",
+        "Bonded: 25% increased Critical Damage Bonus"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+120 zu Treffgenauigkeit",
+        "Verbunden: Angriffe haben +1% zu kritischer Trefferchance"
+      ],
+      "en": [
+        "+120 to Accuracy Rating",
+        "Bonded: Attacks have +1% to Critical Hit Chance"
+      ]
+    }
+  },
+  "currency.greater-ward-rune": {
+    "armour": {
+      "de": [
+        "+25 zu maximalem Runenschutz",
+        "Verbunden: 15% erhöhte globale Rüstung, Ausweichwert und Energieschild"
+      ],
+      "en": [
+        "+25 to maximum Runic Ward",
+        "Bonded: 15% increased Global Armour, Evasion and Energy Shield"
+      ]
+    }
+  },
+  "currency.guatelitzis-soul-core-of-endurance": {
+    "staff": {
+      "de": [
+        "50% Chance, eine zusätzliche Widerstands-Ladung zu erhalten, wenn Ihr eine Widerstands-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain an Endurance Charge to gain an additional Endurance Charge"
+      ]
+    },
+    "wand": {
+      "de": [
+        "50% Chance, eine zusätzliche Widerstands-Ladung zu erhalten, wenn Ihr eine Widerstands-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain an Endurance Charge to gain an additional Endurance Charge"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "50% Chance, eine zusätzliche Widerstands-Ladung zu erhalten, wenn Ihr eine Widerstands-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain an Endurance Charge to gain an additional Endurance Charge"
+      ]
+    }
+  },
+  "currency.guatelitzis-thesis": {
+    "body armour": {
+      "de": [
+        "10% des verhinderten physischen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "10% of Physical Damage prevented Recouped as Life"
+      ]
+    },
+    "boots": {
+      "de": [
+        "Verliert 5% des maximalen Lebens pro Sekunde während des Sprintens",
+        "25% erhöhte Bewegungsgeschwindigkeit während des Sprintens"
+      ],
+      "en": [
+        "Lose 5% of maximum Life per second while Sprinting",
+        "25% increased Movement Speed while Sprinting"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Erhaltet Rüstung in Höhe von 35% der Lebensverlusts von Treffern in den letzten 8 Sekunden"
+      ],
+      "en": [
+        "Gain Armour equal to 35% of Life Lost from Hits in the past 8 seconds"
+      ]
+    }
+  },
+  "currency.hawk-idol": {
+    "body armour": {
+      "de": [
+        "10% erhöhter Abwendungswert",
+        "Verbunden: +12% zu Kältewiderstand"
+      ],
+      "en": [
+        "10% increased Deflection Rating",
+        "Bonded: +12% to Cold Resistance"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Gefährten haben 12% erhöhte Angriffsgeschwindigkeit",
+        "Verbunden: 8% erhöhte Angriffsgeschwindigkeit, während sich Euer Gefährte in Eurer Präsenz befindet"
+      ],
+      "en": [
+        "Companions have 12% increased Attack Speed",
+        "Bonded: 8% increased Attack Speed while your Companion is in your Presence"
+      ]
+    }
+  },
+  "currency.hayoxis-soul-core-of-heatproofing": {
+    "helmet": {
+      "de": [
+        "+40% der Rüstung werden auch auf Kälteschaden angewendet"
+      ],
+      "en": [
+        "+40% of Armour also applies to Cold Damage"
+      ]
+    }
+  },
+  "currency.hedgewitch-assandras-rune-of-wisdom": {
+    "staff": {
+      "de": [
+        "+1 zur Stufe aller Zauberfertigkeiten",
+        "Verbunden: Archon-Wiederherstellungszeit läuft 30% schneller ab"
+      ],
+      "en": [
+        "+1 to Level of all Spell Skills",
+        "Bonded: Archon recovery period expires 30% faster"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+1 zur Stufe aller Zauberfertigkeiten",
+        "Verbunden: Archon-Wiederherstellungszeit läuft 30% schneller ab"
+      ],
+      "en": [
+        "+1 to Level of all Spell Skills",
+        "Bonded: Archon recovery period expires 30% faster"
+      ]
+    }
+  },
+  "currency.idol-of-alira": {
+    "helmet": {
+      "de": [
+        "15% Chance, eine zusätzliche Energie-Ladung zu erhalten, wenn Ihr eine Energie-Ladung erhaltet",
+        "Verbunden: +1 zu maximaler Anzahl von Energie-Ladungen"
+      ],
+      "en": [
+        "15% chance when you gain a Power Charge to gain an additional Power Charge",
+        "Bonded: +1 to Maximum Power Charges"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Wenn Ihr eine Energie-Ladung erhalten würdet, erhalten diese Ladung stattdessen Verbündete in Eurer Präsenz",
+        "Verbunden: 40% erhöhter maximaler Energieschild, wenn Ihr kürzlich eine Energie-Ladung verbraucht habt"
+      ],
+      "en": [
+        "If you would gain a Power Charge, Allies in your Presence gain that Charge instead",
+        "Bonded: 40% increased maximum Energy Shield if you've consumed a Power Charge Recently"
+      ]
+    }
+  },
+  "currency.idol-of-eeshta": {
+    "helmet": {
+      "de": [
+        "15% erhöhte Kosteneffizienz",
+        "Verbunden: Meta-Fertigkeiten haben 15% erhöhte Reservierungseffizienz"
+      ],
+      "en": [
+        "15% increased Cost Efficiency",
+        "Bonded: Meta Skills have 15% increased Reservation Efficiency"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "15% erhöhte Manawiederherstellungs-Rate, während sich Euer Gefährte in Eurer Präsenz befindet",
+        "Verbunden: 8% erhöhte Lebenswiederherstellungs-Rate, während sich Euer Gefährte in Eurer Präsenz befindet"
+      ],
+      "en": [
+        "15% increased Mana Recovery rate while your Companion is in your Presence",
+        "Bonded: 8% increased Life Recovery Rate while your Companion is in your Presence"
+      ]
+    }
+  },
+  "currency.idol-of-egrin": {
+    "helmet": {
+      "de": [
+        "Gegner, die Ihr Verflucht, erleiden 6% erhöhten Schaden",
+        "Verbunden: 20% vergrößerter Wirkungsbereich von Flüchen"
+      ],
+      "en": [
+        "Enemies you Curse take 6% increased Damage",
+        "Bonded: 20% increased Area of Effect of Curses"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "20% verlängerte Fluchdauer",
+        "Verbunden: Fluchbereiche treten nach 20% verringerter Verzögerung auf"
+      ],
+      "en": [
+        "20% increased Curse Duration",
+        "Bonded: Curse zones erupt after 20% reduced delay"
+      ]
+    }
+  },
+  "currency.idol-of-eramir": {
+    "body armour": {
+      "de": [
+        "Fertigkeiten haben 10% Chance, Ladungen nicht zu entfernen, aber sie trotzdem als verbraucht zu zählen",
+        "Verbunden: 15% Chance, dass Phiolen bei Nutzung keine Füllungen verbrauchen"
+      ],
+      "en": [
+        "Skills have 10% chance to not remove Charges but still count as consuming them",
+        "Bonded: 15% chance for Charms you use to not consume Charges"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz teilen Ladungen mit Euch",
+        "Verbunden: 25% verlängerte Dauer von Widerstands-, Raserei- und Energie-Ladungen"
+      ],
+      "en": [
+        "Allies in your Presence share Charges with you",
+        "Bonded: 25% increased Endurance, Frenzy and Power Charge Duration"
+      ]
+    }
+  },
+  "currency.idol-of-greust": {
+    "buckler": {
+      "de": [
+        "Erhaltet Abwendungswert in Höhe von 20% des Ausweichwerts",
+        "Verbunden: 12% erhöhter Schaden für jeden Typ von elementarer Beeinträchtigung auf dem Gegner"
+      ],
+      "en": [
+        "Gain Deflection Rating equal to 20% of Evasion Rating",
+        "Bonded: 12% increased Damage for each type of Elemental Ailment on Enemy"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Gefährten verursachen 10% mehr Schaden für jeden verschiedenen Typ eines toten Gefährten, den Ihr habt",
+        "Verbunden: Stellt 3% des maximalen Lebens wieder her, wenn eine Eurer Kreaturen wiederbelebt wird"
+      ],
+      "en": [
+        "Companions deal 10% more Damage for each different type of dead Companion you have",
+        "Bonded: Recover 3% of maximum Life when one of your Minions is Revived"
+      ]
+    },
+    "shield": {
+      "de": [
+        "+25% der Rüstung werden auch auf Elementarschaden angewendet",
+        "Verbunden: 12% erhöhter Schaden für jeden Typ von elementarer Beeinträchtigung auf dem Gegner"
+      ],
+      "en": [
+        "+25% of Armour also applies to Elemental Damage",
+        "Bonded: 12% increased Damage for each type of Elemental Ailment on Enemy"
+      ]
+    }
+  },
+  "currency.idol-of-grold": {
+    "boots": {
+      "de": [
+        "50% erhöhter Gesamt-Stärkegrad, der von Kriegsschreien berechnet wird",
+        "Verbunden: 30% erhöhte Ruhm-Generierung"
+      ],
+      "en": [
+        "50% increased total Power counted by Warcries",
+        "Bonded: 30% increased Glory generation"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "15% erhöhter Schaden für jeden unterschiedlichen Gefährten in Eurer Präsenz",
+        "Verbunden: 15% erhöhte Reservierungseffizienz von Gefährten-Fertigkeiten"
+      ],
+      "en": [
+        "15% increased Damage per each different Companion in your Presence",
+        "Bonded: 15% increased Reservation Efficiency of Companion Skills"
+      ]
+    }
+  },
+  "currency.idol-of-kraityn": {
+    "gloves": {
+      "de": [
+        "15% Chance, eine zusätzliche Raserei-Ladung zu erhalten, wenn Ihr eine Raserei-Ladung erhaltet",
+        "Verbunden: +1 zu maximaler Anzahl von Raserei-Ladungen"
+      ],
+      "en": [
+        "15% chance when you gain a Frenzy Charge to gain an additional Frenzy Charge",
+        "Bonded: +1 to Maximum Frenzy Charges"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Wenn Ihr eine Raserei-Ladung erhalten würdet, erhalten diese Ladung stattdessen Verbündete in Eurer Präsenz",
+        "Verbunden: 40% erhöhter Ausweichwert, wenn Ihr kürzlich eine Raserei-Ladung verbraucht habt"
+      ],
+      "en": [
+        "If you would gain a Frenzy Charge, Allies in your Presence gain that Charge instead",
+        "Bonded: 40% increased Evasion Rating if you've consumed a Frenzy Charge Recently"
+      ]
+    }
+  },
+  "currency.idol-of-maxarius": {
+    "body armour": {
+      "de": [
+        "+1 Phiolen-Platz",
+        "Verbunden: Sturm-Fertigkeiten haben +1 zum Maximum"
+      ],
+      "en": [
+        "+1 Charm Slot",
+        "Bonded: Storm Skills have +1 to Limit"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Fläschchen erhalten 0.2 Füllungen pro Sekunde",
+        "Verbunden: 20% erhöhte Lebens- und Manawiederherstellung von Fläschchen"
+      ],
+      "en": [
+        "Flasks gain 0.2 charges per Second",
+        "Bonded: 20% increased Life and Mana Recovery from Flasks"
+      ]
+    }
+  },
+  "currency.idol-of-oak": {
+    "boots": {
+      "de": [
+        "15% Chance, eine zusätzliche Widerstands-Ladung zu erhalten, wenn Ihr eine Widerstands-Ladung erhaltet",
+        "Verbunden: +1 zu maximaler Anzahl von Widerstands-Ladungen"
+      ],
+      "en": [
+        "15% chance when you gain an Endurance Charge to gain an additional Endurance Charge",
+        "Bonded: +1 to Maximum Endurance Charges"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Wenn Ihr eine Widerstands-Ladung erhalten würdet, erhalten diese Ladung stattdessen Verbündete in Eurer Präsenz",
+        "Verbunden: 40% erhöhte Rüstung, wenn Ihr kürzlich eine Widerstands-Ladung verbraucht habt"
+      ],
+      "en": [
+        "If you would gain an Endurance Charge, Allies in your Presence gain that Charge instead",
+        "Bonded: 40% increased Armour if you've consumed an Endurance Charge Recently"
+      ]
+    }
+  },
+  "currency.idol-of-ralakesh": {
+    "helmet": {
+      "de": [
+        "8% erhöhte Reservierungseffizienz von Kreaturen-Fertigkeiten",
+        "Verbunden: Kreaturen werden 8% schneller wiederbelebt"
+      ],
+      "en": [
+        "8% increased Reservation Efficiency of Minion Skills",
+        "Bonded: Minions Revive 8% faster"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "40% erhöhte Rüstung, Ausweichwert und Energieschild, während sich Euer Gefährte in Eurer Präsenz befindet",
+        "Verbunden: Gefährten haben 25% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "40% increased Armour, Evasion and Energy Shield while your Companion is in your Presence",
+        "Bonded: Companions have 25% increased maximum Life"
+      ]
+    }
+  },
+  "currency.idol-of-silk": {
+    "buckler": {
+      "de": [
+        "Verbunden: 30% erhöhte Reichweite für Parieren"
+      ],
+      "en": [
+        "Bonded: 30% increased Parry Range"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Gefährten in Eurer Präsenz erhalten 1 Rausch bei Treffer",
+        "Verbunden: Gefährten haben 30% vergrößerten Wirkungsbereich"
+      ],
+      "en": [
+        "Companions in your Presence gain 1 Rage on hit",
+        "Bonded: Companions have 30% increased Area of Effect"
+      ]
+    },
+    "shield": {
+      "de": [
+        "15% erhöhte Blockchance, während sich Euer Gefährte in Eurer Präsenz befindet",
+        "Verbunden: +3% zu maximaler Blockchance"
+      ],
+      "en": [
+        "15% increased Block chance while your Companion is in your Presence",
+        "Bonded: +3% to maximum Block chance"
+      ]
+    }
+  },
+  "currency.idol-of-sirrius": {
+    "gloves": {
+      "de": [
+        "8% erhöhte Angriffsgeschwindigkeit",
+        "Verbunden: 20% verringerte verlangsamende Wirkung von Schwächungen auf Euch"
+      ],
+      "en": [
+        "8% increased Attack Speed",
+        "Bonded: 20% reduced Slowing Potency of Debuffs on You"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz haben 8% erhöhte Bewegungsgeschwindigkeit",
+        "Verbunden: 4% erhöhte Bewegungsgeschwindigkeit"
+      ],
+      "en": [
+        "Allies in your Presence have 8% increased Movement Speed",
+        "Bonded: 4% increased Movement Speed"
+      ]
+    }
+  },
+  "currency.idol-of-the-martyr": {
+    "martial weapon wand or staff": {
+      "de": [
+        "25% verringerter Wille",
+        "Meta-Fertigkeiten erhalten 40% erhöhte Energie",
+        "Verbunden: Heraufbeschwörte Fertigkeiten haben 25% erhöhte maximale Energie",
+        "Verbunden: Meta-Fertigkeiten haben 25% verringerte Reservierungseffizienz"
+      ],
+      "en": [
+        "25% reduced Spirit",
+        "Meta Skills gain 40% increased Energy",
+        "Bonded: Invocated skills have 25% increased Maximum Energy",
+        "Bonded: Meta Skills have 25% reduced Reservation Efficiency"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "40% verkleinerter Präsenz-Wirkungsbereich",
+        "Aura-Fertigkeiten haben 25% erhöhte Magnituden",
+        "Verbunden: Verbündete in Eurer Präsenz regenerieren 3% Eures maximalen Lebens pro Sekunde",
+        "Verbunden: 25% verringerte Lebensregenerations-Rate"
+      ],
+      "en": [
+        "40% reduced Presence Area of Effect",
+        "Aura Skills have 25% increased Magnitudes",
+        "Bonded: Allies in your Presence Regenerate 3% of your Maximum Life per second",
+        "Bonded: 25% reduced Life Regeneration rate"
+      ]
+    }
+  },
+  "currency.idol-of-the-pharisee": {
+    "martial weapon wand or staff": {
+      "de": [
+        "30% verringertes maximales Mana",
+        "Verursacht 2% des Schadens als extra physischen Schaden pro zehn Prozent fehlendem Mana",
+        "Verbunden: 30% verringerte Manakosteneffizienz",
+        "Verbunden: 12% erhöhte Fertigkeitengeschwindigkeit bei niedrigem Mana"
+      ],
+      "en": [
+        "30% reduced maximum Mana",
+        "Gain 2% of Damage as Extra Physical Damage per ten percent missing Mana",
+        "Bonded: 30% reduced Mana Cost Efficiency",
+        "Bonded: 12% increased Skill Speed while on Low Mana"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "30% verringerte Manakosteneffizienz von Befehls-Fertigkeiten",
+        "Kreaturen verursachen 60% erhöhten Schaden mit Befehls-Fertigkeiten",
+        "Verbunden: 25% verringerte Reservierungseffizienz von Kreaturen-Fertigkeiten",
+        "Verbunden: Temporäre Kreaturen-Fertigkeiten haben +2 zum Maximum von beschworenen Kreaturen"
+      ],
+      "en": [
+        "30% reduced Mana Cost Efficiency of Command Skills",
+        "Minions deal 60% increased Damage with Command Skills",
+        "Bonded: 25% reduced Reservation Efficiency of Minion Skills",
+        "Bonded: Temporary Minion Skills have +2 to Limit of Minions summoned"
+      ]
+    }
+  },
+  "currency.idol-of-the-sycophant": {
+    "martial weapon wand or staff": {
+      "de": [
+        "-20% zu allen Elementarwiderständen",
+        "Verursacht 20% des Schadens als extra Schaden eines zufälligen Elements",
+        "Verbunden: -20% zu Chaoswiderstand",
+        "Verbunden: Verursacht 20% des Schadens als extra Chaosschaden"
+      ],
+      "en": [
+        "-20% to all Elemental Resistances",
+        "Gain 20% of Damage as Extra Damage of a random Element",
+        "Bonded: -20% to Chaos Resistance",
+        "Bonded: Gain 20% of Damage as Extra Chaos Damage"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Gefährten in Eurer Präsenz haben -20% zu allen Elementarwiderständen",
+        "Gefährten in Eurer Präsenz verursachen 20% des Schadens als extra Schaden eines zufälligen Elements",
+        "Verbunden: Verbündete in Eurer Präsenz erhalten 20% des Schadens als extra Chaosschaden",
+        "Verbunden: Gefährten in Eurer Präsenz haben -20% zu Chaoswiderstand"
+      ],
+      "en": [
+        "Companions in your Presence have -20% to all Elemental Resistances",
+        "Companions in your Presence Gain 20% of Damage as Extra Damage of a random Element",
+        "Bonded: Allies in your Presence Gain 20% of Damage as Extra Chaos Damage",
+        "Bonded: Companions in your Presence have -20% to Chaos Resistance"
+      ]
+    }
+  },
+  "currency.idol-of-thruldana": {
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz verursachen 13 bis 27 zusätzlichen Chaos-Angriffsschaden",
+        "Verbunden: 15% erhöhte Magnitude von Verkümmerung"
+      ],
+      "en": [
+        "Allies in your Presence deal 13 to 27 added Attack Chaos Damage",
+        "Bonded: 15% increased Withered Magnitude"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "25% verkürzte Giftdauer",
+        "Ziele können von +1 Eurer Gifte gleichzeitig betroffen sein",
+        "Verbunden: Verursacht 13% des physischen Schadens als extra Chaosschaden"
+      ],
+      "en": [
+        "25% reduced Poison Duration",
+        "Targets can be affected by +1 of your Poisons at the same time",
+        "Bonded: Gain 13% of Physical Damage as extra Chaos Damage"
+      ]
+    }
+  },
+  "currency.idol-of-yeena": {
+    "boots": {
+      "de": [
+        "30% verlängerte Fertigkeitseffektdauer mit Pflanzen-Fertigkeiten",
+        "Verbunden: Pflanzen haben 25% Chance, sofort zu überwachsen, wenn sich zum ersten Mal in Eurer Präsenz befinden"
+      ],
+      "en": [
+        "30% increased Skill Effect Duration with Plant Skills",
+        "Bonded: Plants have a 25% chance to immediately Overgrow when they enter your Presence for the first time"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Pflanzen haben 25% Chance, sofort zu überwachsen, wenn sich zum ersten Mal in Eurer Präsenz befinden",
+        "Verbunden: 30% verlängerte Fertigkeitseffektdauer mit Pflanzen-Fertigkeiten"
+      ],
+      "en": [
+        "Plants have a 25% chance to immediately Overgrow when they enter your Presence for the first time",
+        "Bonded: 30% increased Skill Effect Duration with Plant Skills"
+      ]
+    }
+  },
+  "currency.inspiration-rune": {
+    "armour": {
+      "de": [
+        "15% erhöhte Manaregenerations-Rate",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "15% increased Mana Regeneration Rate",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "25% erhöhte Manaregenerations-Rate",
+        "Verbunden: 16% erhöhte Manakosteneffizienz"
+      ],
+      "en": [
+        "25% increased Mana Regeneration Rate",
+        "Bonded: 16% increased Mana Cost Efficiency"
+      ]
+    },
+    "wand": {
+      "de": [
+        "25% erhöhte Manaregenerations-Rate",
+        "Verbunden: 16% erhöhte Manakosteneffizienz"
+      ],
+      "en": [
+        "25% increased Mana Regeneration Rate",
+        "Bonded: 16% increased Mana Cost Efficiency"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Erhaltet 20 Mana pro getötetem Gegner",
+        "Verbunden: 12% der Manakosten von Fertigkeiten werden in Lebenskosten umgewandelt"
+      ],
+      "en": [
+        "Gain 20 Mana per enemy killed",
+        "Bonded: 12% of Skill Mana Costs Converted to Life Costs"
+      ]
+    }
+  },
+  "currency.ire-of-aldur": {
+    "caster": {
+      "bound": true,
+      "de": [
+        "Wandelt alle Feuer- und Kälte-Modifikatoren auf dem Gegenstand in entsprechende Blitz-Modifikatoren um",
+        "Verbunden: 25% erhöhter Blitzschaden"
+      ],
+      "en": [
+        "Transforms all Fire and Cold modifiers on the item into equivalent Lightning modifiers",
+        "Bonded: 25% increased Lightning Damage"
+      ]
+    },
+    "weapon": {
+      "bound": true,
+      "de": [
+        "Wandelt alle Feuer- und Kälte-Modifikatoren auf dem Gegenstand in entsprechende Blitz-Modifikatoren um",
+        "Verbunden: 25% erhöhter Blitzschaden"
+      ],
+      "en": [
+        "Transforms all Fire and Cold modifiers on the item into equivalent Lightning modifiers",
+        "Bonded: 25% increased Lightning Damage"
+      ]
+    }
+  },
+  "currency.iron-rune": {
+    "armour": {
+      "de": [
+        "16% erhöhte Rüstung, Ausweichen und Energieschild",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "16% increased Armour, Evasion and Energy Shield",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "25% erhöhter Zauberschaden",
+        "Verbunden: Zerbrecht Rüstung bei kritischem Zaubertreffer in Höhe von 12% des verursachten physischen Schadens"
+      ],
+      "en": [
+        "25% increased Spell Damage",
+        "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+      ]
+    },
+    "wand": {
+      "de": [
+        "25% erhöhter Zauberschaden",
+        "Verbunden: Zerbrecht Rüstung bei kritischem Zaubertreffer in Höhe von 12% des verursachten physischen Schadens"
+      ],
+      "en": [
+        "25% increased Spell Damage",
+        "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "16% erhöhter physischer Schaden",
+        "Verbunden: 20% erhöhte Wirkung von vollständig zerbrochener Rüstung"
+      ],
+      "en": [
+        "16% increased Physical Damage",
+        "Bonded: 20% increased effect of Fully Broken Armour"
+      ]
+    }
+  },
+  "currency.jiquanis-thesis": {
+    "boots": {
+      "de": [
+        "Erhöhungen und Verringerungen der Bewegungsgeschwindigkeit gelten auch für die Energieschild-Wiederaufladungsrate."
+      ],
+      "en": [
+        "Increases and Reductions to Movement Speed also apply to Energy Shield Recharge Rate"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Die Energieschild-Wiederaufladung beginnt nach insgesamt 2.000 verbrauchtem Mana, höchstens einmal alle 2 Sekunden."
+      ],
+      "en": [
+        "Energy Shield Recharge starts after spending a total of 2000 Mana, no more than once every 2 seconds"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "+1 zu maximalem Mana pro 2 Energieschild auf dem ausgerüsteten Helm."
+      ],
+      "en": [
+        "+1 to maximum Mana per 2 Item Energy Shield on Equipped Helmet"
+      ]
+    }
+  },
+  "currency.katlas-gloom": {
+    "gloves": {
+      "bound": true,
+      "de": [
+        "Kann Verfall-Modifikatoren annehmen",
+        "Verbunden: 25% verringerte Wirkung von nicht schädigenden Beeinträchtigungen auf Euch"
+      ],
+      "en": [
+        "Can roll Decay modifiers",
+        "Bonded: 25% reduced Effect of Non-Damaging Ailments on you"
+      ]
+    }
+  },
+  "currency.kolrs-hunt": {
+    "gloves": {
+      "bound": true,
+      "de": [
+        "Kann Scharfschützen-Modifikatoren annehmen",
+        "Verbunden: 20% erhöhter Projektilschaden"
+      ],
+      "en": [
+        "Can roll Marksman modifiers",
+        "Bonded: 20% increased Projectile Damage"
+      ]
+    }
+  },
+  "currency.kurgals-gaze": {
+    "boots": {
+      "de": [
+        "15% erhöhte Manakosteneffizienz, wenn Ihr kürzlich nicht die Ausweichrolle benutzt habt"
+      ],
+      "en": [
+        "15% increased Mana Cost Efficiency if you haven't Dodge Rolled Recently"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "40% erhöhte Wirkung von Arkane Woge auf Euch"
+      ],
+      "en": [
+        "40% increased effect of Arcane Surge on you"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Erhöhungen und Verringerungen der Lebensregenerations-Rate gelten auch für die Manaregenerations-Rate"
+      ],
+      "en": [
+        "Increases and Reductions to Life Regeneration Rate also apply to Mana Regeneration Rate"
+      ]
+    }
+  },
+  "currency.lady-hestras-rune-of-winter": {
+    "weapon": {
+      "de": [
+        "Fügt 19 bis 28 Kälteschaden gegen unterkühlte Gegner hinzu",
+        "Verbunden: +2% zu maximalem Kältewiderstand"
+      ],
+      "en": [
+        "Adds 19 to 28 Cold Damage against Chilled Enemies",
+        "Bonded: +2% to Maximum Cold Resistance"
+      ]
+    }
+  },
+  "currency.lesser-adept-rune": {
+    "armour": {
+      "de": [
+        "+6 zu Geschick"
+      ],
+      "en": [
+        "+6 to Dexterity"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+6 zu Geschick"
+      ],
+      "en": [
+        "+6 to Dexterity"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+6 zu Geschick"
+      ],
+      "en": [
+        "+6 to Dexterity"
+      ]
+    }
+  },
+  "currency.lesser-body-rune": {
+    "armour": {
+      "de": [
+        "+30 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+30 to maximum Life",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "+30 zu maximalem Energieschild",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "+30 to maximum Energy Shield",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+30 zu maximalem Energieschild",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "+30 to maximum Energy Shield",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "3% des physischen Schadens werden als Leben geraubt",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "Leeches 3% of Physical Damage as Life",
+        "Bonded: 5% increased maximum Life"
+      ]
+    }
+  },
+  "currency.lesser-charging-rune": {
+    "armour": {
+      "de": [
+        "8% erhöhte Runenschutz-Regenerationsrate",
+        "Verbunden: Regeneriert 10 Runenschutz pro Sekunde"
+      ],
+      "en": [
+        "8% increased Runic Ward Regeneration Rate",
+        "Bonded: Regenerate 10 Runic Ward per second"
+      ]
+    }
+  },
+  "currency.lesser-desert-rune": {
+    "armour": {
+      "de": [
+        "+10% zu Feuerwiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+10% to Fire Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 6% des Schadens als extra Feuerschaden",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Gain 6% of Damage as Extra Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 6% des Schadens als extra Feuerschaden",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Gain 6% of Damage as Extra Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 4 bis 6 Feuerschaden hinzu",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Adds 4 to 6 Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    }
+  },
+  "currency.lesser-glacial-rune": {
+    "armour": {
+      "de": [
+        "+10% zu Kältewiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+10% to Cold Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 6% des Schadens als extra Kälteschaden",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Gain 6% of Damage as Extra Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 6% des Schadens als extra Kälteschaden",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Gain 6% of Damage as Extra Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 3 bis 5 Kälteschaden hinzu",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Adds 3 to 5 Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    }
+  },
+  "currency.lesser-inspiration-rune": {
+    "armour": {
+      "de": [
+        "12% erhöhte Manaregenerations-Rate",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "12% increased Mana Regeneration Rate",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "20% erhöhte Manaregenerations-Rate",
+        "Verbunden: 16% erhöhte Manakosteneffizienz"
+      ],
+      "en": [
+        "20% increased Mana Regeneration Rate",
+        "Bonded: 16% increased Mana Cost Efficiency"
+      ]
+    },
+    "wand": {
+      "de": [
+        "20% erhöhte Manaregenerations-Rate",
+        "Verbunden: 16% erhöhte Manakosteneffizienz"
+      ],
+      "en": [
+        "20% increased Mana Regeneration Rate",
+        "Bonded: 16% increased Mana Cost Efficiency"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Erhaltet 10 Mana pro getötetem Gegner",
+        "Verbunden: 12% der Manakosten von Fertigkeiten werden in Lebenskosten umgewandelt"
+      ],
+      "en": [
+        "Gain 10 Mana per enemy killed",
+        "Bonded: 12% of Skill Mana Costs Converted to Life Costs"
+      ]
+    }
+  },
+  "currency.lesser-iron-rune": {
+    "armour": {
+      "de": [
+        "14% erhöhte Rüstung, Ausweichen und Energieschild",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "14% increased Armour, Evasion and Energy Shield",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "20% erhöhter Zauberschaden",
+        "Verbunden: Zerbrecht Rüstung bei kritischem Zaubertreffer in Höhe von 12% des verursachten physischen Schadens"
+      ],
+      "en": [
+        "20% increased Spell Damage",
+        "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+      ]
+    },
+    "wand": {
+      "de": [
+        "20% erhöhter Zauberschaden",
+        "Verbunden: Zerbrecht Rüstung bei kritischem Zaubertreffer in Höhe von 12% des verursachten physischen Schadens"
+      ],
+      "en": [
+        "20% increased Spell Damage",
+        "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "14% erhöhter physischer Schaden",
+        "Verbunden: 20% erhöhte Wirkung von vollständig zerbrochener Rüstung"
+      ],
+      "en": [
+        "14% increased Physical Damage",
+        "Bonded: 20% increased effect of Fully Broken Armour"
+      ]
+    }
+  },
+  "currency.lesser-mind-rune": {
+    "armour": {
+      "de": [
+        "+20 zu maximalem Mana",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+20 to maximum Mana",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "+45 zu maximalem Mana",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "+45 to maximum Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+45 zu maximalem Mana",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "+45 to maximum Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "2% des physischen Schadens werden als Mana geraubt",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "Leeches 2% of Physical Damage as Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    }
+  },
+  "currency.lesser-rebirth-rune": {
+    "armour": {
+      "de": [
+        "Regeneriert 0.35% des Lebens pro Sekunde",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "Regenerate 0.35% of maximum Life per second",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "6% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: 8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "6% increased Energy Shield Recharge Rate",
+        "Bonded: 8% of Damage taken Recouped as Life"
+      ]
+    },
+    "wand": {
+      "de": [
+        "6% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: 8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "6% increased Energy Shield Recharge Rate",
+        "Bonded: 8% of Damage taken Recouped as Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Erhaltet 15 Leben pro getötetem Gegner",
+        "Verbunden: Regeneriert 0.4% des Lebens pro Sekunde"
+      ],
+      "en": [
+        "Gain 15 Life per enemy killed",
+        "Bonded: Regenerate 0.4% of maximum Life per second"
+      ]
+    }
+  },
+  "currency.lesser-resolve-rune": {
+    "armour": {
+      "de": [
+        "+6 zu Intelligenz"
+      ],
+      "en": [
+        "+6 to Intelligence"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+6 zu Intelligenz"
+      ],
+      "en": [
+        "+6 to Intelligence"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+6 zu Intelligenz"
+      ],
+      "en": [
+        "+6 to Intelligence"
+      ]
+    }
+  },
+  "currency.lesser-robust-rune": {
+    "armour": {
+      "de": [
+        "+6 zu Stärke"
+      ],
+      "en": [
+        "+6 to Strength"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+6 zu Stärke"
+      ],
+      "en": [
+        "+6 to Strength"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+6 zu Stärke"
+      ],
+      "en": [
+        "+6 to Strength"
+      ]
+    }
+  },
+  "currency.lesser-stone-rune": {
+    "armour": {
+      "de": [
+        "+50 zur Betäubungsschwelle",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+50 to Stun Threshold",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 10% des maximalen Energieschilds",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Gain additional Stun Threshold equal to 10% of maximum Energy Shield",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 10% des maximalen Energieschilds",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Gain additional Stun Threshold equal to 10% of maximum Energy Shield",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Bewirkt 20% erhöhten Betäubungsaufbau",
+        "Verbunden: 40% erhöhter Schaden gegen immobilisierte Gegner"
+      ],
+      "en": [
+        "Causes 20% increased Stun Buildup",
+        "Bonded: 40% increased Damage against Immobilised Enemies"
+      ]
+    }
+  },
+  "currency.lesser-storm-rune": {
+    "armour": {
+      "de": [
+        "+10% zu Blitzwiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+10% to Lightning Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 6% des Schadens als extra Blitzschaden",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Gain 6% of Damage as Extra Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 6% des Schadens als extra Blitzschaden",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Gain 6% of Damage as Extra Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 1 bis 10 Blitzschaden hinzu",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Adds 1 to 10 Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    }
+  },
+  "currency.lesser-vision-rune": {
+    "armour": {
+      "de": [
+        "8% erhöhte Lebens- und Manawiederherstellung von Fläschchen",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "8% increased Life and Mana Recovery from Flasks",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "16% erhöhte kritische Trefferchance von Zaubern",
+        "Verbunden: 25% erhöhter Bonus für kritische Treffer"
+      ],
+      "en": [
+        "16% increased Critical Hit Chance for Spells",
+        "Bonded: 25% increased Critical Damage Bonus"
+      ]
+    },
+    "wand": {
+      "de": [
+        "16% erhöhte kritische Trefferchance von Zaubern",
+        "Verbunden: 25% erhöhter Bonus für kritische Treffer"
+      ],
+      "en": [
+        "16% increased Critical Hit Chance for Spells",
+        "Bonded: 25% increased Critical Damage Bonus"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+60 zu Treffgenauigkeit",
+        "Verbunden: Angriffe haben +1% zu kritischer Trefferchance"
+      ],
+      "en": [
+        "+60 to Accuracy Rating",
+        "Bonded: Attacks have +1% to Critical Hit Chance"
+      ]
+    }
+  },
+  "currency.lesser-ward-rune": {
+    "armour": {
+      "de": [
+        "+15 zu maximalem Runenschutz",
+        "Verbunden: 15% erhöhte globale Rüstung, Ausweichwert und Energieschild"
+      ],
+      "en": [
+        "+15 to maximum Runic Ward",
+        "Bonded: 15% increased Global Armour, Evasion and Energy Shield"
+      ]
+    }
+  },
+  "currency.masterwork-rune": {
+    "armour": {
+      "de": [
+        "Wertet eine eingefasste Rune auf"
+      ],
+      "en": [
+        "Upgrades a socketed Rune"
+      ]
+    },
+    "caster": {
+      "de": [
+        "Wertet eine eingefasste Rune auf"
+      ],
+      "en": [
+        "Upgrades a socketed Rune"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Wertet eine eingefasste Rune auf"
+      ],
+      "en": [
+        "Upgrades a socketed Rune"
+      ]
+    }
+  },
+  "currency.medveds-tending": {
+    "body armour": {
+      "bound": true,
+      "de": [
+        "Kann Seelen-Modifikatoren annehmen",
+        "Verbunden: 3% erhöhtes maximales Leben",
+        "Verbunden: 3% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "Can roll Soul modifiers",
+        "Bonded: 3% increased maximum Life",
+        "Bonded: 3% increased maximum Mana"
+      ]
+    }
+  },
+  "currency.mind-rune": {
+    "armour": {
+      "de": [
+        "+30 zu maximalem Mana",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+30 to maximum Mana",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "+60 zu maximalem Mana",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "+60 to maximum Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+60 zu maximalem Mana",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "+60 to maximum Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "3% des physischen Schadens werden als Mana geraubt",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "Leeches 3% of Physical Damage as Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    }
+  },
+  "currency.opilotis-soul-core-of-assault": {
+    "staff": {
+      "de": [
+        "50% Chance, eine zusätzliche Raserei-Ladung zu erhalten, wenn Ihr eine Raserei-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain a Frenzy Charge to gain an additional Frenzy Charge"
+      ]
+    },
+    "wand": {
+      "de": [
+        "50% Chance, eine zusätzliche Raserei-Ladung zu erhalten, wenn Ihr eine Raserei-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain a Frenzy Charge to gain an additional Frenzy Charge"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "50% Chance, eine zusätzliche Raserei-Ladung zu erhalten, wenn Ihr eine Raserei-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain a Frenzy Charge to gain an additional Frenzy Charge"
+      ]
+    }
+  },
+  "currency.owl-idol": {
+    "focus": {
+      "de": [
+        "12% beschleunigte Abklingzeit-Rate",
+        "Verbunden: 20% erhöhte Wirkung von Archon-Stärkungen auf Euch"
+      ],
+      "en": [
+        "12% increased Cooldown Recovery Rate",
+        "Bonded: 20% increased effect of Archon Buffs on you"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz haben 10% erhöhte Zaubergeschwindigkeit",
+        "Verbunden: 10% erhöhte Fertigkeitengeschwindigkeit, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence have 10% increased Cast Speed",
+        "Bonded: 10% increased Skill Speed while Shapeshifted"
+      ]
+    }
+  },
+  "currency.ox-idol": {
+    "buckler": {
+      "de": [
+        "15% erhöhte Blockchance",
+        "Verbunden: 15% Chance, dass Schaden von Gegnern, die Euch treffen, ungünstig ist"
+      ],
+      "en": [
+        "15% increased Block chance",
+        "Bonded: 15% chance for Damage of Enemies Hitting you to be Unlucky"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz haben +12% zu allen Elementarwiderständen",
+        "Verbunden: +20% der Rüstung werden auch auf Elementarschaden angewendet, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence have +12% to all Elemental Resistances",
+        "Bonded: +20% of Armour also applies to Elemental Damage while Shapeshifted"
+      ]
+    },
+    "shield": {
+      "de": [
+        "15% erhöhte Blockchance",
+        "Verbunden: 15% Chance, dass Schaden von Gegnern, die Euch treffen, ungünstig ist"
+      ],
+      "en": [
+        "15% increased Block chance",
+        "Bonded: 15% chance for Damage of Enemies Hitting you to be Unlucky"
+      ]
+    }
+  },
+  "currency.panther-idol": {
+    "body armour": {
+      "de": [
+        "+10% der Rüstung werden auch auf Chaosschaden angewendet",
+        "Verbunden: +8% zu Chaoswiderstand"
+      ],
+      "en": [
+        "+10% of Armour also applies to Chaos Damage",
+        "Bonded: +8% to Chaos Resistance"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Kreaturen haben +20% zu Chaoswiderstand",
+        "Verbunden: Kreaturen haben 20% zusätzliche physische Schadensminderung"
+      ],
+      "en": [
+        "Minions have +20% to Chaos Resistance",
+        "Bonded: Minions have 20% additional Physical Damage Reduction"
+      ]
+    }
+  },
+  "currency.passion-of-aldur": {
+    "caster": {
+      "bound": true,
+      "de": [
+        "Wandelt alle Kälte- und Blitz-Modifikatoren auf dem Gegenstand in entsprechende Feuer-Modifikatoren um",
+        "Verbunden: 25% erhöhter Feuerschaden"
+      ],
+      "en": [
+        "Transforms all Cold and Lightning modifiers on the item into equivalent Fire modifiers",
+        "Bonded: 25% increased Fire Damage"
+      ]
+    },
+    "weapon": {
+      "bound": true,
+      "de": [
+        "Wandelt alle Kälte- und Blitz-Modifikatoren auf dem Gegenstand in entsprechende Feuer-Modifikatoren um",
+        "Verbunden: 25% erhöhter Feuerschaden"
+      ],
+      "en": [
+        "Transforms all Cold and Lightning modifiers on the item into equivalent Fire modifiers",
+        "Bonded: 25% increased Fire Damage"
+      ]
+    }
+  },
+  "currency.perfect-adept-rune": {
+    "armour": {
+      "de": [
+        "+15 zu Geschick"
+      ],
+      "en": [
+        "+15 to Dexterity"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+15 zu Geschick"
+      ],
+      "en": [
+        "+15 to Dexterity"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+15 zu Geschick"
+      ],
+      "en": [
+        "+15 to Dexterity"
+      ]
+    }
+  },
+  "currency.perfect-body-rune": {
+    "armour": {
+      "de": [
+        "+75 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+75 to maximum Life",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "+60 zu maximalem Energieschild",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "+60 to maximum Energy Shield",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+60 zu maximalem Energieschild",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "+60 to maximum Energy Shield",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "6% des physischen Schadens werden als Leben geraubt",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "Leeches 6% of Physical Damage as Life",
+        "Bonded: 5% increased maximum Life"
+      ]
+    }
+  },
+  "currency.perfect-charging-rune": {
+    "armour": {
+      "de": [
+        "20% erhöhte Runenschutz-Regenerationsrate",
+        "Verbunden: Regeneriert 25 Runenschutz pro Sekunde"
+      ],
+      "en": [
+        "20% increased Runic Ward Regeneration Rate",
+        "Bonded: Regenerate 25 Runic Ward per second"
+      ]
+    }
+  },
+  "currency.perfect-desert-rune": {
+    "armour": {
+      "de": [
+        "+22% zu Feuerwiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+22% to Fire Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 12% des Schadens als extra Feuerschaden",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Gain 12% of Damage as Extra Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 12% des Schadens als extra Feuerschaden",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Gain 12% of Damage as Extra Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 17 bis 20 Feuerschaden hinzu",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Adds 17 to 20 Fire Damage",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    }
+  },
+  "currency.perfect-glacial-rune": {
+    "armour": {
+      "de": [
+        "+22% zu Kältewiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+22% to Cold Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 12% des Schadens als extra Kälteschaden",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Gain 12% of Damage as Extra Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 12% des Schadens als extra Kälteschaden",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Gain 12% of Damage as Extra Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 16 bis 20 Kälteschaden hinzu",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "Adds 16 to 20 Cold Damage",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    }
+  },
+  "currency.perfect-inspiration-rune": {
+    "armour": {
+      "de": [
+        "21% erhöhte Manaregenerations-Rate",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "21% increased Mana Regeneration Rate",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "35% erhöhte Manaregenerations-Rate",
+        "Verbunden: 16% erhöhte Manakosteneffizienz"
+      ],
+      "en": [
+        "35% increased Mana Regeneration Rate",
+        "Bonded: 16% increased Mana Cost Efficiency"
+      ]
+    },
+    "wand": {
+      "de": [
+        "35% erhöhte Manaregenerations-Rate",
+        "Verbunden: 16% erhöhte Manakosteneffizienz"
+      ],
+      "en": [
+        "35% increased Mana Regeneration Rate",
+        "Bonded: 16% increased Mana Cost Efficiency"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Erhaltet 40 Mana pro getötetem Gegner",
+        "Verbunden: 12% der Manakosten von Fertigkeiten werden in Lebenskosten umgewandelt"
+      ],
+      "en": [
+        "Gain 40 Mana per enemy killed",
+        "Bonded: 12% of Skill Mana Costs Converted to Life Costs"
+      ]
+    }
+  },
+  "currency.perfect-iron-rune": {
+    "armour": {
+      "de": [
+        "20% erhöhte Rüstung, Ausweichwert und Energieschild",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "20% increased Armour, Evasion and Energy Shield",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "35% erhöhter Zauberschaden",
+        "Verbunden: Zerbrecht Rüstung bei kritischem Zaubertreffer in Höhe von 12% des verursachten physischen Schadens"
+      ],
+      "en": [
+        "35% increased Spell Damage",
+        "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+      ]
+    },
+    "wand": {
+      "de": [
+        "35% erhöhter Zauberschaden",
+        "Verbunden: Zerbrecht Rüstung bei kritischem Zaubertreffer in Höhe von 12% des verursachten physischen Schadens"
+      ],
+      "en": [
+        "35% increased Spell Damage",
+        "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "20% erhöhter physischer Schaden",
+        "Verbunden: 20% erhöhte Wirkung von vollständig zerbrochener Rüstung"
+      ],
+      "en": [
+        "20% increased Physical Damage",
+        "Bonded: 20% increased effect of Fully Broken Armour"
+      ]
+    }
+  },
+  "currency.perfect-mind-rune": {
+    "armour": {
+      "de": [
+        "+50 zu maximalem Mana",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+50 to maximum Mana",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "+90 zu maximalem Mana",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "+90 to maximum Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    },
+    "wand": {
+      "de": [
+        "+90 zu maximalem Mana",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "+90 to maximum Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "5% des physischen Schadens werden als Mana geraubt",
+        "Verbunden: 5% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "Leeches 5% of Physical Damage as Mana",
+        "Bonded: 5% increased maximum Mana"
+      ]
+    }
+  },
+  "currency.perfect-rebirth-rune": {
+    "armour": {
+      "de": [
+        "Regeneriert 0.5% des Lebens pro Sekunde",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "Regenerate 0.5% of maximum Life per second",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "12% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: 8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "12% increased Energy Shield Recharge Rate",
+        "Bonded: 8% of Damage taken Recouped as Life"
+      ]
+    },
+    "wand": {
+      "de": [
+        "12% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: 8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "12% increased Energy Shield Recharge Rate",
+        "Bonded: 8% of Damage taken Recouped as Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Erhaltet 45 Leben pro getötetem Gegner",
+        "Verbunden: Regeneriert 0.4% des Lebens pro Sekunde"
+      ],
+      "en": [
+        "Gain 45 Life per enemy killed",
+        "Bonded: Regenerate 0.4% of maximum Life per second"
+      ]
+    }
+  },
+  "currency.perfect-resolve-rune": {
+    "armour": {
+      "de": [
+        "+15 zu Intelligenz"
+      ],
+      "en": [
+        "+15 to Intelligence"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+15 zu Intelligenz"
+      ],
+      "en": [
+        "+15 to Intelligence"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+15 zu Intelligenz"
+      ],
+      "en": [
+        "+15 to Intelligence"
+      ]
+    }
+  },
+  "currency.perfect-robust-rune": {
+    "armour": {
+      "de": [
+        "+15 zu Stärke"
+      ],
+      "en": [
+        "+15 to Strength"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+15 zu Stärke"
+      ],
+      "en": [
+        "+15 to Strength"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+15 zu Stärke"
+      ],
+      "en": [
+        "+15 to Strength"
+      ]
+    }
+  },
+  "currency.perfect-stone-rune": {
+    "armour": {
+      "de": [
+        "+125 zur Betäubungsschwelle",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+125 to Stun Threshold",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 16% des maximalen Energieschilds",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Gain additional Stun Threshold equal to 16% of maximum Energy Shield",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 16% des maximalen Energieschilds",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Gain additional Stun Threshold equal to 16% of maximum Energy Shield",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Bewirkt 50% erhöhten Betäubungsaufbau",
+        "Verbunden: 40% erhöhter Schaden gegen immobilisierte Gegner"
+      ],
+      "en": [
+        "Causes 50% increased Stun Buildup",
+        "Bonded: 40% increased Damage against Immobilised Enemies"
+      ]
+    }
+  },
+  "currency.perfect-storm-rune": {
+    "armour": {
+      "de": [
+        "+22% zu Blitzwiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+22% to Lightning Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 12% des Schadens als extra Blitzschaden",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Gain 12% of Damage as Extra Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 12% des Schadens als extra Blitzschaden",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Gain 12% of Damage as Extra Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 1 bis 40 Blitzschaden hinzu",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Adds 1 to 40 Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    }
+  },
+  "currency.perfect-vision-rune": {
+    "armour": {
+      "de": [
+        "20% erhöhte Lebens- und Manawiederherstellung von Fläschchen",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "20% increased Life and Mana Recovery from Flasks",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "28% erhöhte kritische Trefferchance von Zaubern",
+        "Verbunden: 25% erhöhter Bonus für kritische Treffer"
+      ],
+      "en": [
+        "28% increased Critical Hit Chance for Spells",
+        "Bonded: 25% increased Critical Damage Bonus"
+      ]
+    },
+    "wand": {
+      "de": [
+        "28% erhöhte kritische Trefferchance von Zaubern",
+        "Verbunden: 25% erhöhter Bonus für kritische Treffer"
+      ],
+      "en": [
+        "28% increased Critical Hit Chance for Spells",
+        "Bonded: 25% increased Critical Damage Bonus"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+150 zu Treffgenauigkeit",
+        "Verbunden: Angriffe haben +1% zu kritischer Trefferchance"
+      ],
+      "en": [
+        "+150 to Accuracy Rating",
+        "Bonded: Attacks have +1% to Critical Hit Chance"
+      ]
+    }
+  },
+  "currency.perfect-ward-rune": {
+    "armour": {
+      "de": [
+        "+30 zu maximalem Runenschutz",
+        "Verbunden: 15% erhöhte globale Rüstung, Ausweichwert und Energieschild"
+      ],
+      "en": [
+        "+30 to maximum Runic Ward",
+        "Bonded: 15% increased Global Armour, Evasion and Energy Shield"
+      ]
+    }
+  },
+  "currency.primate-idol": {
+    "helmet": {
+      "de": [
+        "Kreaturen haben 15% erhöhtes maximales Leben",
+        "Verbunden: Überreste können aus 30% weiterer Entfernung aufgesammelt werden"
+      ],
+      "en": [
+        "Minions have 15% increased maximum Life",
+        "Bonded: Remnants can be collected from 30% further away"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz verursachen 40% erhöhten Schaden",
+        "Verbunden: 40% erhöhter Schaden, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence deal 40% increased Damage",
+        "Bonded: 40% increased Damage while Shapeshifted"
+      ]
+    }
+  },
+  "currency.quipolatls-soul-core-of-flow": {
+    "helmet": {
+      "de": [
+        "8% verlängerte Fertigkeitseffektdauer",
+        "8% beschleunigte Abklingzeit-Rate"
+      ],
+      "en": [
+        "8% increased Skill Effect Duration",
+        "8% increased Cooldown Recovery Rate"
+      ]
+    }
+  },
+  "currency.quipolatls-thesis": {
+    "body armour": {
+      "de": [
+        "+75% der Rüstung werden bei vollem Energieschild auch auf Chaosschaden angewendet"
+      ],
+      "en": [
+        "+75% of Armour also applies to Chaos Damage while on full Energy Shield"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Eure Energieschild-Wideraufladung beginnt, wenn Eure Kreaturen erneuert werden"
+      ],
+      "en": [
+        "Your Energy Shield Recharge starts when your Minions are Reformed"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "Eine zufällige Fertigkeit, die Ruhm erfordert, generiert 50% ihres maximalen Ruhms, wenn Eure Male aktiviert werden"
+      ],
+      "en": [
+        "A random Skill that requires Glory generates 50% of its maximum Glory when your Marks Activate"
+      ]
+    }
+  },
+  "currency.rabbit-idol": {
+    "body armour": {
+      "de": [
+        "12% erhöhte Seltenheit gefundener Gegenstände",
+        "Verbunden: 10% erhöhte Menge fallen gelassenen Goldes von getöteten Gegnern"
+      ],
+      "en": [
+        "12% increased Rarity of Items found",
+        "Bonded: 10% increased Quantity of Gold Dropped by Slain Enemies"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "15% erhöhter Wille",
+        "Verbunden: Kreaturen haben 30% beschleunigte Abklingzeit-Rate für Befehls-Fertigkeiten"
+      ],
+      "en": [
+        "15% increased Spirit",
+        "Bonded: Minions have 30% increased Cooldown Recovery Rate for Command Skills"
+      ]
+    }
+  },
+  "currency.raven-touched-shard": {
+    "helmet": {
+      "bound": true,
+      "de": [
+        "Rabenberührt"
+      ],
+      "en": [
+        "Raven-Touched"
+      ]
+    }
+  },
+  "currency.rebirth-rune": {
+    "armour": {
+      "de": [
+        "Regeneriert 0.4% des Lebens pro Sekunde",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "Regenerate 0.4% of maximum Life per second",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "8% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: 8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "8% increased Energy Shield Recharge Rate",
+        "Bonded: 8% of Damage taken Recouped as Life"
+      ]
+    },
+    "wand": {
+      "de": [
+        "8% erhöhte Energieschild-Wiederaufladungsrate",
+        "Verbunden: 8% des erlittenen Schadens werden als Leben wiedergewonnen"
+      ],
+      "en": [
+        "8% increased Energy Shield Recharge Rate",
+        "Bonded: 8% of Damage taken Recouped as Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Erhaltet 25 Leben pro getötetem Gegner",
+        "Verbunden: Regeneriert 0.4% des Lebens pro Sekunde"
+      ],
+      "en": [
+        "Gain 25 Life per enemy killed",
+        "Bonded: Regenerate 0.4% of maximum Life per second"
+      ]
+    }
+  },
+  "currency.resolve-rune": {
+    "armour": {
+      "de": [
+        "+9 zu Intelligenz"
+      ],
+      "en": [
+        "+9 to Intelligence"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+9 zu Intelligenz"
+      ],
+      "en": [
+        "+9 to Intelligence"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+9 zu Intelligenz"
+      ],
+      "en": [
+        "+9 to Intelligence"
+      ]
+    }
+  },
+  "currency.robust-rune": {
+    "armour": {
+      "de": [
+        "+9 zu Stärke"
+      ],
+      "en": [
+        "+9 to Strength"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+9 zu Stärke"
+      ],
+      "en": [
+        "+9 to Strength"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+9 zu Stärke"
+      ],
+      "en": [
+        "+9 to Strength"
+      ]
+    }
+  },
+  "currency.rune-of-accumulation": {
+    "bow": {
+      "de": [
+        "Beim Treffen eines Gegners wird für 20 Sekunden maximaler zusätzlicher Kälteschaden in Höhe des gegnerischen Stärkegrads verursacht, bis zu insgesamt 32",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "On Hitting an enemy, gains maximum added Cold damage equal to the enemy's Power for 20 seconds, up to a total of 32",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "crossbow": {
+      "de": [
+        "Beim Treffen eines Gegners wird für 20 Sekunden maximaler zusätzlicher Kälteschaden in Höhe des gegnerischen Stärkegrads verursacht, bis zu insgesamt 32",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "On Hitting an enemy, gains maximum added Cold damage equal to the enemy's Power for 20 seconds, up to a total of 32",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Erhaltet 3 Leben pro Gegner, der mit Angriffen getroffen wird",
+        "Erhaltet 1 Mana pro Gegner, der mit Angriffen getroffen wird",
+        "Verbunden: +30 zu maximalem Leben",
+        "Verbunden: +30 zu maximalem Mana"
+      ],
+      "en": [
+        "Gain 3 Life per Enemy Hit with Attacks",
+        "Gain 1 Mana per Enemy Hit with Attacks",
+        "Bonded: +30 to maximum Life",
+        "Bonded: +30 to maximum Mana"
+      ]
+    },
+    "spear": {
+      "de": [
+        "Beim Treffen eines Gegners wird für 20 Sekunden maximaler zusätzlicher Kälteschaden in Höhe des gegnerischen Stärkegrads verursacht, bis zu insgesamt 32",
+        "Verbunden: 30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "On Hitting an enemy, gains maximum added Cold damage equal to the enemy's Power for 20 seconds, up to a total of 32",
+        "Bonded: 30% increased Freeze Buildup"
+      ]
+    }
+  },
+  "currency.rune-of-acrobatics": {
+    "boots": {
+      "de": [
+        "+0.3 Meter zur Ausweichrollen-Distanz",
+        "Verbunden: 30% erhöhte Rüstung, wenn Ihr kürzlich nicht die Ausweichrolle benutzt habt"
+      ],
+      "en": [
+        "+0.3 metres to Dodge Roll distance",
+        "Bonded: 30% increased Armour if you haven't Dodge Rolled Recently"
+      ]
+    },
+    "caster": {
+      "de": [
+        "Fläschchen erhalten 0.2 Füllungen pro Sekunde",
+        "Verbunden: Phiolen erhalten 0.25 Füllungen pro Sekunde"
+      ],
+      "en": [
+        "Flasks gain 0.2 charges per Second",
+        "Bonded: Charms gain 0.25 charges per Second"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fläschchen erhalten 0.2 Füllungen pro Sekunde",
+        "Verbunden: Phiolen erhalten 0.25 Füllungen pro Sekunde"
+      ],
+      "en": [
+        "Flasks gain 0.2 charges per Second",
+        "Bonded: Charms gain 0.25 charges per Second"
+      ]
+    }
+  },
+  "currency.rune-of-confrontation": {
+    "quarterstaff": {
+      "de": [
+        "Erhaltet 4 Rausch bei Nahkampftreffer",
+        "-10 zu maximalem Rausch"
+      ],
+      "en": [
+        "Gain 4 Rage on Melee Hit",
+        "-10 to Maximum Rage"
+      ]
+    },
+    "spear": {
+      "de": [
+        "Erhaltet 4 Rausch bei Nahkampftreffer",
+        "-10 zu maximalem Rausch"
+      ],
+      "en": [
+        "Gain 4 Rage on Melee Hit",
+        "-10 to Maximum Rage"
+      ]
+    }
+  },
+  "currency.rune-of-consistency": {
+    "caster": {
+      "de": [
+        "50% erhöhter Zauberschaden, während sich Euer Gefährte in Eurer Präsenz befindet",
+        "Verbunden: 8% erhöhte Manawiederherstellungs-Rate, während sich Euer Gefährte in Eurer Präsenz befindet"
+      ],
+      "en": [
+        "50% increased Spell Damage while your Companion is in your Presence",
+        "Bonded: 8% increased Mana Recovery rate while your Companion is in your Presence"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "200% erhöhte kritische Trefferchance",
+        "Ihr habt keinen Bonus für kritische Treffer",
+        "Verbunden: Treffer gegen Euch haben 25% verringerten Bonus für kritische Treffer"
+      ],
+      "en": [
+        "200% increased Critical Hit Chance",
+        "You have no Critical Damage Bonus",
+        "Bonded: Hits against you have 25% reduced Critical Damage Bonus"
+      ]
+    }
+  },
+  "currency.rune-of-culmination": {
+    "gloves": {
+      "de": [
+        "50% Chance, bei Treffer eine zusätzliche Kombo aufzubauen",
+        "Verbunden: 5% erhöhte Angriffsgeschwindigkeit"
+      ],
+      "en": [
+        "50% chance to build an additional Combo on Hit",
+        "Bonded: 5% increased Attack Speed"
+      ]
+    },
+    "one hand mace": {
+      "de": [
+        "Würfelt nur den minimalen oder maximalen Schadenswert für physischen Schaden",
+        "Verbunden: 20% verlängerte Blutungsdauer"
+      ],
+      "en": [
+        "Rolls only the minimum or maximum Damage value for Physical Damage",
+        "Bonded: 20% increased Bleeding Duration"
+      ]
+    },
+    "quarterstaff": {
+      "de": [
+        "Würfelt nur den minimalen oder maximalen Schadenswert für physischen Schaden",
+        "Verbunden: 20% verlängerte Blutungsdauer"
+      ],
+      "en": [
+        "Rolls only the minimum or maximum Damage value for Physical Damage",
+        "Bonded: 20% increased Bleeding Duration"
+      ]
+    }
+  },
+  "currency.rune-of-foundations": {
+    "body armour": {
+      "de": [
+        "+30 zu Rüstung",
+        "+30 zu Ausweichwert",
+        "+10 zu maximalem Energieschild",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+30 to Armour",
+        "+30 to Evasion Rating",
+        "+10 to maximum Energy Shield",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    }
+  },
+  "currency.rune-of-reach": {
+    "helmet": {
+      "de": [
+        "Von Euch erzeugte Überreste haben 15% erhöhte Wirkung",
+        "Verbunden: Stellt 3% des maximalen Manas wieder her, wenn Ihr einen Überrest einsammelt"
+      ],
+      "en": [
+        "Remnants you create have 15% increased effect",
+        "Bonded: Recover 3% of Maximum Mana when you collect a Remnant"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Von Euch erzeugte Überreste haben 25% verringerte Wirkung",
+        "Überreste können aus 50% weiterer Entfernung aufgesammelt werden",
+        "Verbunden: 20% erhöhte Wirkung von Anfälligkeit"
+      ],
+      "en": [
+        "Remnants you create have 25% reduced effect",
+        "Remnants can be collected from 50% further away",
+        "Bonded: 20% increased Exposure Effect"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Von Euch erzeugte Überreste haben 25% verringerte Wirkung",
+        "Überreste können aus 50% weiterer Entfernung aufgesammelt werden",
+        "Verbunden: 20% erhöhte Wirkung von Anfälligkeit"
+      ],
+      "en": [
+        "Remnants you create have 25% reduced effect",
+        "Remnants can be collected from 50% further away",
+        "Bonded: 20% increased Exposure Effect"
+      ]
+    }
+  },
+  "currency.rune-of-renown": {
+    "caster": {
+      "de": [
+        "Archon-Wiederherstellungszeit läuft 30% schneller ab",
+        "Verbunden: 30% verlängerte Archondauer"
+      ],
+      "en": [
+        "Archon recovery period expires 30% faster",
+        "Bonded: 30% increased Archon Buff duration"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "50% erhöhte Ruhm-Generierung",
+        "Verbunden: Banner-Fertigkeiten haben 20% erhöhte Aura-Magnituden"
+      ],
+      "en": [
+        "50% increased Glory generation",
+        "Bonded: Banner Skills have 20% increased Aura Magnitudes"
+      ]
+    }
+  },
+  "currency.rune-of-the-blossom": {
+    "body armour": {
+      "de": [
+        "+50 zu Wille",
+        "-1 zu Wille pro 2 Stufen",
+        "Verbunden: 5% erhöhte Wille-Reservierungseffizienz von Fertigkeiten"
+      ],
+      "en": [
+        "+50 to Spirit",
+        "-1 to Spirit per 2 Levels",
+        "Bonded: 5% increased Spirit Reservation Efficiency"
+      ]
+    }
+  },
+  "currency.rune-of-the-hunt": {
+    "boots": {
+      "de": [
+        "8% erhöhte Bewegungsgeschwindigkeit während des Sprintens",
+        "Verbunden: 50% erhöhte Betäubungserholung"
+      ],
+      "en": [
+        "8% increased Movement Speed while Sprinting",
+        "Bonded: 50% increased Stun Recovery"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Gefährten verursachen 30% erhöhten Schaden",
+        "Verbunden: 8% erhöhte Manawiederherstellungs-Rate, während sich Euer Gefährte in Eurer Präsenz befindet"
+      ],
+      "en": [
+        "Companions deal 30% increased Damage",
+        "Bonded: 8% increased Mana Recovery rate while your Companion is in your Presence"
+      ]
+    }
+  },
+  "currency.rune-of-the-prism": {
+    "body armour": {
+      "de": [
+        "-10% zu allen maximalen Elementarwiderständen",
+        "+20% zu allen Elementarwiderständen",
+        "Verbunden: 20% des Schadens werden zuerst vom Mana statt vom Leben abgezogen"
+      ],
+      "en": [
+        "-10% to all Maximum Elemental Resistances",
+        "+20% to all Elemental Resistances",
+        "Bonded: 20% of Damage is taken from Mana before Life"
+      ]
+    }
+  },
+  "currency.rune-of-vital-flame": {
+    "one hand mace": {
+      "de": [
+        "Fügt 13 bis 16 Feuerschaden hinzu",
+        "15% der Manakosten von Fertigkeiten werden in Lebenskosten umgewandelt",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Adds 13 to 16 Fire Damage",
+        "15% of Skill Mana Costs Converted to Life Costs",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "talisman": {
+      "de": [
+        "Fügt 13 bis 16 Feuerschaden hinzu",
+        "15% der Manakosten von Fertigkeiten werden in Lebenskosten umgewandelt",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Adds 13 to 16 Fire Damage",
+        "15% of Skill Mana Costs Converted to Life Costs",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    },
+    "two hand mace": {
+      "de": [
+        "Fügt 13 bis 16 Feuerschaden hinzu",
+        "15% der Manakosten von Fertigkeiten werden in Lebenskosten umgewandelt",
+        "Verbunden: 30% erhöhte Magnitude von Entzünden"
+      ],
+      "en": [
+        "Adds 13 to 16 Fire Damage",
+        "15% of Skill Mana Costs Converted to Life Costs",
+        "Bonded: 30% increased Ignite Magnitude"
+      ]
+    }
+  },
+  "currency.rune-of-vitality": {
+    "buckler": {
+      "de": [
+        "Stellt 15 Leben wieder her, wenn Ihr blockt",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "Recover 15 Life when you Block",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "caster": {
+      "de": [
+        "+80 zu maximalem Leben",
+        "Verbunden: 15% erhöhte Menge von geraubtem Leben"
+      ],
+      "en": [
+        "+80 to maximum Life",
+        "Bonded: 15% increased amount of Life Leeched"
+      ]
+    },
+    "shield": {
+      "de": [
+        "Stellt 15 Leben wieder her, wenn Ihr blockt",
+        "Verbunden: 5% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "Recover 15 Life when you Block",
+        "Bonded: 5% increased maximum Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+80 zu maximalem Leben",
+        "Verbunden: 15% erhöhte Menge von geraubtem Leben"
+      ],
+      "en": [
+        "+80 to maximum Life",
+        "Bonded: 15% increased amount of Life Leeched"
+      ]
+    }
+  },
+  "currency.saqawals-rune-of-erosion": {
+    "helmet": {
+      "de": [
+        "25% erhöhte Wirkung von Anfälligkeit",
+        "Verbunden: 15% erhöhte Magnitude von nicht schädigenden Beeinträchtigungen, die Ihr verursacht"
+      ],
+      "en": [
+        "25% increased Exposure Effect",
+        "Bonded: 15% increased Magnitude of Non-Damaging Ailments you inflict"
+      ]
+    }
+  },
+  "currency.saqawals-rune-of-memory": {
+    "helmet": {
+      "de": [
+        "2% erhöhter Erfahrungsgewinn",
+        "Verbunden: +10% zu allen Elementarwiderständen"
+      ],
+      "en": [
+        "2% increased Experience gain",
+        "Bonded: +10% to all Elemental Resistances"
+      ]
+    }
+  },
+  "currency.saqawals-rune-of-the-sky": {
+    "staff": {
+      "de": [
+        "Verursacht 5% des Schadens als extra Schaden von allen Elementen",
+        "Verbunden: 12 % Chance beim Aufsammeln einer elementaren Infusion auf eine weitere Infusion desselben Typs."
+      ],
+      "en": [
+        "Gain 5% of Damage as Extra Damage of all Elements",
+        "Bonded: 12% chance when collecting an Elemental Infusion to gain an additional Elemental Infusion of the same type"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 5% des Schadens als extra Schaden von allen Elementen",
+        "Verbunden: 12 % Chance beim Aufsammeln einer elementaren Infusion auf eine weitere Infusion desselben Typs."
+      ],
+      "en": [
+        "Gain 5% of Damage as Extra Damage of all Elements",
+        "Bonded: 12% chance when collecting an Elemental Infusion to gain an additional Elemental Infusion of the same type"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Verursacht 5% des Schadens als extra Schaden von allen Elementen",
+        "Verbunden: 8% Chance, eine zusätzliche zufällige Ladung zu erhalten, wenn Ihr eine Ladung erhaltet"
+      ],
+      "en": [
+        "Gain 5% of Damage as Extra Damage of all Elements",
+        "Bonded: 8% chance to gain an additional random Charge when you gain a Charge"
+      ]
+    }
+  },
+  "currency.serles-triumph": {
+    "armour": {
+      "bound": true,
+      "de": [
+        "+1 Suffix-Modifikator erlaubt"
+      ],
+      "en": [
+        "+1 Suffix Modifier allowed"
+      ]
+    },
+    "caster": {
+      "bound": true,
+      "de": [
+        "+1 Suffix-Modifikator erlaubt"
+      ],
+      "en": [
+        "+1 Suffix Modifier allowed"
+      ]
+    },
+    "weapon": {
+      "bound": true,
+      "de": [
+        "+1 Suffix-Modifikator erlaubt"
+      ],
+      "en": [
+        "+1 Suffix Modifier allowed"
+      ]
+    }
+  },
+  "currency.snake-idol": {
+    "gloves": {
+      "de": [
+        "8% erhöhte Fluch-Magnituden",
+        "Verbunden: Von Euch erzeugte Überreste haben 15% erhöhte Wirkung"
+      ],
+      "en": [
+        "8% increased Curse Magnitudes",
+        "Bonded: Remnants you create have 15% increased effect"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz haben 10% erhöhte Angriffsgeschwindigkeit",
+        "Verbunden: 10% erhöhte Fertigkeitengeschwindigkeit, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence have 10% increased Attack Speed",
+        "Bonded: 10% increased Skill Speed while Shapeshifted"
+      ]
+    }
+  },
+  "currency.soul-core-of-atmohua": {
+    "armour": {
+      "de": [
+        "Wandelt 20% der Anforderungen in Stärke um"
+      ],
+      "en": [
+        "Convert 20% of Requirements to Strength"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Wandelt 20% der Anforderungen in Stärke um"
+      ],
+      "en": [
+        "Convert 20% of Requirements to Strength"
+      ]
+    }
+  },
+  "currency.soul-core-of-azcapa": {
+    "gloves": {
+      "de": [
+        "10% erhöhte Menge fallen gelassenen Goldes von getöteten Gegnern"
+      ],
+      "en": [
+        "10% increased Quantity of Gold Dropped by Slain Enemies"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+15 zu Wille"
+      ],
+      "en": [
+        "+15 to Spirit"
+      ]
+    }
+  },
+  "currency.soul-core-of-cholotl": {
+    "armour": {
+      "de": [
+        "Wandelt 20% der Anforderungen in Geschick um"
+      ],
+      "en": [
+        "Convert 20% of Requirements to Dexterity"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Wandelt 20% der Anforderungen in Geschick um"
+      ],
+      "en": [
+        "Convert 20% of Requirements to Dexterity"
+      ]
+    }
+  },
+  "currency.soul-core-of-citaqualotl": {
+    "armour": {
+      "de": [
+        "+5% zu allen Elementarwiderständen"
+      ],
+      "en": [
+        "+5% to all Elemental Resistances"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "30% erhöhter Elementarschaden mit Angriffsfertigkeiten"
+      ],
+      "en": [
+        "30% increased Elemental Damage with Attacks"
+      ]
+    }
+  },
+  "currency.soul-core-of-jiquani": {
+    "body armour": {
+      "de": [
+        "3% erhöhtes maximales Leben"
+      ],
+      "en": [
+        "3% increased maximum Life"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Stellt bei Tötung 2% des Lebens wieder her"
+      ],
+      "en": [
+        "Recover 2% of maximum Life on Kill"
+      ]
+    }
+  },
+  "currency.soul-core-of-opiloti": {
+    "helmet": {
+      "de": [
+        "20% erhöhte erhaltene Phiolenfüllungen"
+      ],
+      "en": [
+        "20% increased Charm Charges gained"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "15% Chance, bei Treffer Bluten zu verursachen"
+      ],
+      "en": [
+        "15% chance to cause Bleeding on Hit"
+      ]
+    }
+  },
+  "currency.soul-core-of-puhuarte": {
+    "gloves": {
+      "de": [
+        "+1% zu maximalem Feuerwiderstand"
+      ],
+      "en": [
+        "+1% to Maximum Fire Resistance"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "30% erhöhte Magnitude von Entflammbarkeit"
+      ],
+      "en": [
+        "30% increased Flammability Magnitude"
+      ]
+    }
+  },
+  "currency.soul-core-of-quipolatl": {
+    "boots": {
+      "de": [
+        "15% verringerte verlangsamende Wirkung von Schwächungen auf Euch"
+      ],
+      "en": [
+        "15% reduced Slowing Potency of Debuffs on You"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "5% erhöhte Angriffsgeschwindigkeit"
+      ],
+      "en": [
+        "5% increased Attack Speed"
+      ]
+    }
+  },
+  "currency.soul-core-of-tacati": {
+    "armour": {
+      "de": [
+        "+11% zu Chaoswiderstand"
+      ],
+      "en": [
+        "+11% to Chaos Resistance"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "15% Chance, bei Treffer mit dieser Waffe zu vergiften"
+      ],
+      "en": [
+        "15% chance to Poison on Hit with this weapon"
+      ]
+    }
+  },
+  "currency.soul-core-of-ticaba": {
+    "body armour": {
+      "de": [
+        "Treffer gegen Euch haben 20% verringerten Bonus für kritische Treffer"
+      ],
+      "en": [
+        "Hits against you have 20% reduced Critical Damage Bonus"
+      ]
+    },
+    "buckler": {
+      "de": [
+        "Treffer gegen Euch haben 20% verringerten Bonus für kritische Treffer"
+      ],
+      "en": [
+        "Hits against you have 20% reduced Critical Damage Bonus"
+      ]
+    },
+    "shield": {
+      "de": [
+        "Treffer gegen Euch haben 20% verringerten Bonus für kritische Treffer"
+      ],
+      "en": [
+        "Hits against you have 20% reduced Critical Damage Bonus"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+5% zu Bonus für kritische Treffer"
+      ],
+      "en": [
+        "+5% to Critical Damage Bonus"
+      ]
+    }
+  },
+  "currency.soul-core-of-topotante": {
+    "boots": {
+      "de": [
+        "25% erhöhte Schwelle für elementare Beeinträchtigungen"
+      ],
+      "en": [
+        "25% increased Elemental Ailment Threshold"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Angriffe mit dieser Waffe durchdringen 15% Elementarwiderstände"
+      ],
+      "en": [
+        "Attacks with this Weapon Penetrate 15% Elemental Resistances"
+      ]
+    }
+  },
+  "currency.soul-core-of-tzamoto": {
+    "helmet": {
+      "de": [
+        "+1% zu maximalem Kältewiderstand"
+      ],
+      "en": [
+        "+1% to Maximum Cold Resistance"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "30% erhöhter Einfrierungsaufbau"
+      ],
+      "en": [
+        "30% increased Freeze Buildup"
+      ]
+    }
+  },
+  "currency.soul-core-of-xopec": {
+    "boots": {
+      "de": [
+        "+1% zu maximalem Blitzwiderstand"
+      ],
+      "en": [
+        "+1% to Maximum Lightning Resistance"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "30% erhöhte Chance auf Schocken"
+      ],
+      "en": [
+        "30% increased chance to Shock"
+      ]
+    }
+  },
+  "currency.soul-core-of-zalatl": {
+    "helmet": {
+      "de": [
+        "3% erhöhtes maximales Mana"
+      ],
+      "en": [
+        "3% increased maximum Mana"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Verliert bei Tötung 2% des Manas"
+      ],
+      "en": [
+        "Recover 2% of maximum Mana on Kill"
+      ]
+    }
+  },
+  "currency.soul-core-of-zantipi": {
+    "armour": {
+      "de": [
+        "Wandelt 20% der Anforderungen in Intelligenz um"
+      ],
+      "en": [
+        "Convert 20% of Requirements to Intelligence"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Wandelt 20% der Anforderungen in Intelligenz um"
+      ],
+      "en": [
+        "Convert 20% of Requirements to Intelligence"
+      ]
+    }
+  },
+  "currency.stag-idol": {
+    "helmet": {
+      "de": [
+        "Projektile haben 15% Chance, sich aufzugabeln",
+        "Verbunden: Projektile haben 25% Chance auf ein zusätzliches Projektil bei der Aufgabelung"
+      ],
+      "en": [
+        "Projectiles have 15% chance to Fork",
+        "Bonded: Projectiles have 25% chance for an additional Projectile when Forking"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz verursachen 1 bis 40 zusätzlichen Blitz-Angriffsschaden",
+        "Verbunden: 40% erhöhter Angriffsschaden, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence deal 1 to 40 added Attack Lightning Damage",
+        "Bonded: 40% increased Attack Damage while Shapeshifted"
+      ]
+    }
+  },
+  "currency.stoat-idol": {
+    "body armour": {
+      "de": [
+        "5% des erlittenen Schadens umgehen den Energieschild",
+        "Verbunden: +12% zu Blitzwiderstand"
+      ],
+      "en": [
+        "5% of Damage taken bypasses Energy Shield",
+        "Bonded: +12% to Lightning Resistance"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Gefährten haben 25% erhöhtes maximales Leben",
+        "Verbunden: 25% erhöhter Schaden, während sich Euer Gefährte in Eurer Präsenz befindet"
+      ],
+      "en": [
+        "Companions have 25% increased maximum Life",
+        "Bonded: 25% increased Damage while your Companion is in your Presence"
+      ]
+    }
+  },
+  "currency.stone-rune": {
+    "armour": {
+      "de": [
+        "+75 zur Betäubungsschwelle",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+75 to Stun Threshold",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 12% des maximalen Energieschilds",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Gain additional Stun Threshold equal to 12% of maximum Energy Shield",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Erhaltet zusätzliche Betäubungsschwelle in Höhe von 12% des maximalen Energieschilds",
+        "Verbunden: 30% erhöhter Immobilisierungsaufbau"
+      ],
+      "en": [
+        "Gain additional Stun Threshold equal to 12% of maximum Energy Shield",
+        "Bonded: 30% increased Immobilisation buildup"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Bewirkt 30% erhöhten Betäubungsaufbau",
+        "Verbunden: 40% erhöhter Schaden gegen immobilisierte Gegner"
+      ],
+      "en": [
+        "Causes 30% increased Stun Buildup",
+        "Bonded: 40% increased Damage against Immobilised Enemies"
+      ]
+    }
+  },
+  "currency.storm-rune": {
+    "armour": {
+      "de": [
+        "+14% zu Blitzwiderstand",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "+14% to Lightning Resistance",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Verursacht 8% des Schadens als extra Blitzschaden",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Gain 8% of Damage as Extra Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Verursacht 8% des Schadens als extra Blitzschaden",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Gain 8% of Damage as Extra Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "Fügt 1 bis 20 Blitzschaden hinzu",
+        "Verbunden: 30% erhöhte Magnitude von Schock, den Ihr verursacht"
+      ],
+      "en": [
+        "Adds 1 to 20 Lightning Damage",
+        "Bonded: 30% increased Magnitude of Shock you inflict"
+      ]
+    }
+  },
+  "currency.tacatis-soul-core-of-affliction": {
+    "helmet": {
+      "de": [
+        "Gegner, die Ihr Verflucht, haben -5% zu Chaoswiderstand"
+      ],
+      "en": [
+        "Enemies you Curse have -5% to Chaos Resistance"
+      ]
+    }
+  },
+  "currency.tecrods-gaze": {
+    "body armour": {
+      "de": [
+        "Regeneriert 1.5% des Lebens pro Sekunde"
+      ],
+      "en": [
+        "Regenerate 1.5% of maximum Life per second"
+      ]
+    },
+    "boots": {
+      "de": [
+        "10% erhöhte Bewegungsgeschwindigkeit bei niedrigem Leben"
+      ],
+      "en": [
+        "10% increased Movement Speed when on Low Life"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "25% erhöhte Lebenskosteneffizienz"
+      ],
+      "en": [
+        "25% increased Life Cost Efficiency"
+      ]
+    }
+  },
+  "currency.thane-girts-rune-of-wildness": {
+    "staff": {
+      "de": [
+        "25% Chance, dass Zauberfertigkeiten 2 zusätzliche Projektile feuern",
+        "Verbunden: Jeder Rausch gewährt auch 1% erhöhten Zauberschaden"
+      ],
+      "en": [
+        "25% chance for Spell Skills to fire 2 additional Projectiles",
+        "Bonded: Every Rage also grants 1% increased Spell Damage"
+      ]
+    },
+    "wand": {
+      "de": [
+        "25% Chance, dass Zauberfertigkeiten 2 zusätzliche Projektile feuern",
+        "Verbunden: Jeder Rausch gewährt auch 1% erhöhten Zauberschaden"
+      ],
+      "en": [
+        "25% chance for Spell Skills to fire 2 additional Projectiles",
+        "Bonded: Every Rage also grants 1% increased Spell Damage"
+      ]
+    }
+  },
+  "currency.thane-grannells-rune-of-mastery": {
+    "gloves": {
+      "de": [
+        "30% erhöhte Magnitude von nicht schädigenden Beeinträchtigungen, die Ihr verursacht",
+        "Verbunden: 15% verlängerte Dauer von Beeinträchtigungen bei Gegnern"
+      ],
+      "en": [
+        "30% increased Magnitude of Non-Damaging Ailments you inflict",
+        "Bonded: 15% increased Duration of Elemental Ailments on Enemies"
+      ]
+    }
+  },
+  "currency.thane-lelds-rune-of-spring": {
+    "weapon": {
+      "de": [
+        "Fügt gegen geschockte Gegner 1 bis 60 Blitzschaden hinzu",
+        "Verbunden: +2% zu maximalem Blitzwiderstand"
+      ],
+      "en": [
+        "Adds 1 to 60 Lightning Damage against Shocked Enemies",
+        "Bonded: +2% to Maximum Lightning Resistance"
+      ]
+    }
+  },
+  "currency.thane-myrks-rune-of-summer": {
+    "weapon": {
+      "de": [
+        "Fügt Angriffen gegen entzündete Gegner 23 bis 34 physischen Schaden hinzu",
+        "Verbunden: +2% zu maximalem Feuerwiderstand"
+      ],
+      "en": [
+        "Adds 23 to 34 Fire Damage to Attacks against Ignited Enemies",
+        "Bonded: +2% to Maximum Fire Resistance"
+      ]
+    }
+  },
+  "currency.the-greatwolfs-rune-of-claws": {
+    "gloves": {
+      "de": [
+        "Fügt Angriffen 5 bis 12 physischen Schaden hinzu",
+        "Verbunden: Spalten-Fertigkeiten haben +2 zum Maximum"
+      ],
+      "en": [
+        "Adds 5 to 12 Physical Damage to Attacks",
+        "Bonded: Fissure Skills have +2 to Limit"
+      ]
+    }
+  },
+  "currency.the-greatwolfs-rune-of-willpower": {
+    "body armour": {
+      "de": [
+        "15% des Schadens werden zuerst vom Mana statt vom Leben abgezogen",
+        "Verbunden: 8% des maximalen Lebens werden in Energieschild umgewandelt"
+      ],
+      "en": [
+        "15% of Damage is taken from Mana before Life",
+        "Bonded: 8% of Maximum Life Converted to Energy Shield"
+      ]
+    }
+  },
+  "currency.thruds-might": {
+    "caster": {
+      "bound": true,
+      "de": [
+        "Kann Zerstörungs-Modifikatoren annehmen",
+        "Verbunden: +5% zu allen Elementarwiderständen"
+      ],
+      "en": [
+        "Can roll Destruction modifiers",
+        "Bonded: +5% to all Elemental Resistances"
+      ]
+    },
+    "weapon": {
+      "bound": true,
+      "de": [
+        "Kann Zerstörungs-Modifikatoren annehmen",
+        "Verbunden: +5% zu allen Elementarwiderständen"
+      ],
+      "en": [
+        "Can roll Destruction modifiers",
+        "Bonded: +5% to all Elemental Resistances"
+      ]
+    }
+  },
+  "currency.topotantes-soul-core-of-dampening": {
+    "gloves": {
+      "de": [
+        "+40% der Rüstung werden auch auf Feuerschaden angewendet"
+      ],
+      "en": [
+        "+40% of Armour also applies to Fire Damage"
+      ]
+    }
+  },
+  "currency.tzamotos-soul-core-of-ferocity": {
+    "helmet": {
+      "de": [
+        "+4 zu maximalem Rausch"
+      ],
+      "en": [
+        "+4 to Maximum Rage"
+      ]
+    }
+  },
+  "currency.uhtreds-sidereus": {
+    "boots": {
+      "bound": true,
+      "de": [
+        "Kann Chronomantie-Modifikatoren annehmen",
+        "Verbunden: 10% beschleunigte Abklingzeit-Rate"
+      ],
+      "en": [
+        "Can roll Chronomancy modifiers",
+        "Bonded: 10% increased Cooldown Recovery Rate"
+      ]
+    }
+  },
+  "currency.ulamans-gaze": {
+    "body armour": {
+      "de": [
+        "Verhindert +3% des Schadens von abgewendeten Treffern"
+      ],
+      "en": [
+        "Prevent +3% of Damage from Deflected Hits"
+      ]
+    },
+    "gloves": {
+      "de": [
+        "Kritische Trefferchance ist günstig gegen parierte Gegner"
+      ],
+      "en": [
+        "Critical Hit chance is Lucky against Parried enemies"
+      ]
+    },
+    "helmet": {
+      "de": [
+        "+1 zu Treffgenauigkeit pro 1 Gegenstand-Ausweichwert auf dem ausgerüsteten Helm"
+      ],
+      "en": [
+        "+1 to Accuracy Rating per 1 Item Evasion Rating on Equipped Helmet"
+      ]
+    }
+  },
+  "currency.uromotis-soul-core-of-attenuation": {
+    "boots": {
+      "de": [
+        "15% verlängerte Fluchdauer",
+        "15% verlängerte Giftdauer"
+      ],
+      "en": [
+        "15% increased Curse Duration",
+        "15% increased Poison Duration"
+      ]
+    }
+  },
+  "currency.vision-rune": {
+    "armour": {
+      "de": [
+        "12% erhöhte Lebens- und Manawiederherstellung von Fläschchen",
+        "Verbunden: +20 zu maximalem Leben",
+        "Verbunden: +20 zu maximalem Mana"
+      ],
+      "en": [
+        "12% increased Life and Mana Recovery from Flasks",
+        "Bonded: +20 to maximum Life",
+        "Bonded: +20 to maximum Mana"
+      ]
+    },
+    "staff": {
+      "de": [
+        "20% erhöhte kritische Trefferchance von Zaubern",
+        "Verbunden: 25% erhöhter Bonus für kritische Treffer"
+      ],
+      "en": [
+        "20% increased Critical Hit Chance for Spells",
+        "Bonded: 25% increased Critical Damage Bonus"
+      ]
+    },
+    "wand": {
+      "de": [
+        "20% erhöhte kritische Trefferchance von Zaubern",
+        "Verbunden: 25% erhöhter Bonus für kritische Treffer"
+      ],
+      "en": [
+        "20% increased Critical Hit Chance for Spells",
+        "Bonded: 25% increased Critical Damage Bonus"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "+90 zu Treffgenauigkeit",
+        "Verbunden: Angriffe haben +1% zu kritischer Trefferchance"
+      ],
+      "en": [
+        "+90 to Accuracy Rating",
+        "Bonded: Attacks have +1% to Critical Hit Chance"
+      ]
+    }
+  },
+  "currency.voranas-carnage": {
+    "helmet": {
+      "bound": true,
+      "de": [
+        "Kann Berserkerhafte Modifikatoren annehmen",
+        "Verbunden: Erhaltet 2 Rausch bei Nahkampftreffer"
+      ],
+      "en": [
+        "Can roll Berserking modifiers",
+        "Bonded: Gain 2 Rage on Melee Hit"
+      ]
+    }
+  },
+  "currency.ward-rune": {
+    "armour": {
+      "de": [
+        "+20 zu maximalem Runenschutz",
+        "Verbunden: 15% erhöhte globale Rüstung, Ausweichwert und Energieschild"
+      ],
+      "en": [
+        "+20 to maximum Runic Ward",
+        "Bonded: 15% increased Global Armour, Evasion and Energy Shield"
+      ]
+    }
+  },
+  "currency.warding-rune-of-annihilation": {
+    "weapon": {
+      "de": [
+        "Angriffe verbrauchen 5% Eures maximalen Runenschutzes, wenn möglich, um dieselbe Menge an zusätzlichem physischen Schaden zu verursachen",
+        "Verbunden: 10% verringerte Runenschutz-Kosteneffizienz"
+      ],
+      "en": [
+        "Attacks spend 5% of your maximum Runic Ward if possible to gain that much added Physical damage",
+        "Bonded: 10% reduced Runic Ward Cost Efficiency"
+      ]
+    }
+  },
+  "currency.warding-rune-of-armature": {
+    "weapon": {
+      "de": [
+        "Erhaltet maximalen Runenschutz in Höhe von 15% des maximalen Schadens dieser Waffe",
+        "Verbunden: 5% erhöhte Angriffsgeschwindigkeit, während Euch Runenschutz fehlt"
+      ],
+      "en": [
+        "Gain maximum Runic Ward equal to 15% of this Weapon's maximum damage",
+        "Bonded: 5% increased Attack Speed while missing Runic Ward"
+      ]
+    }
+  },
+  "currency.warding-rune-of-bodyguards": {
+    "sceptre": {
+      "de": [
+        "Kreaturen in Eurer Präsenz haben Ansturm, während Ihr bei niedrigem Runenschutz seid",
+        "Verbunden: Der Schaden von Gegnern, die Euch treffen, ist ungünstig, wenn",
+        "Verbunden: Euer Runenschutz kürzlich beschädigt wurde"
+      ],
+      "en": [
+        "Minions in your Presence have Onslaught while you are on Low Runic Ward",
+        "Bonded: Damage of Enemies Hitting you is Unlucky if",
+        "Bonded: your Runic Ward has been damaged Recently"
+      ]
+    }
+  },
+  "currency.warding-rune-of-courage": {
+    "helmet": {
+      "de": [
+        "25% erhöhte Rüstung und Ausweichwert bei niedrigem Runenschutz",
+        "Verbunden: 20% erhöhte Rüstung und Ausweichwert bei niedrigem Leben"
+      ],
+      "en": [
+        "25% increased Armour and Evasion Rating while on Low Runic Ward",
+        "Bonded: 20% increased Armour and Evasion Rating when on Low Life"
+      ]
+    }
+  },
+  "currency.warding-rune-of-desperation": {
+    "staff": {
+      "de": [
+        "Zauberschaden durchdringt 25% der gegnerischen Elementarwiderstände bei niedrigem Runenschutz",
+        "Verbunden: 12% erhöhter Elementarschaden"
+      ],
+      "en": [
+        "Spell damage Penetrates 25% of enemy Elemental Resistances while on Low Runic Ward",
+        "Bonded: 12% increased Elemental Damage"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Zauberschaden durchdringt 25% der gegnerischen Elementarwiderstände bei niedrigem Runenschutz",
+        "Verbunden: 12% erhöhter Elementarschaden"
+      ],
+      "en": [
+        "Spell damage Penetrates 25% of enemy Elemental Resistances while on Low Runic Ward",
+        "Bonded: 12% increased Elemental Damage"
+      ]
+    }
+  },
+  "currency.warding-rune-of-disintegration": {
+    "weapon": {
+      "de": [
+        "Angriffe zerbrechen Rüstung in Höhe von 15% des maximalen Runenschutzes",
+        "Verbunden: Zerbrecht 10% erhöhte Rüstung"
+      ],
+      "en": [
+        "Attacks Break Armour equal to 15% of maximum Runic Ward",
+        "Bonded: Break 10% increased Armour"
+      ]
+    }
+  },
+  "currency.warding-rune-of-equinox": {
+    "caster": {
+      "de": [
+        "40% weniger Manaregenerations-Rate",
+        "Manawiederherstellung durch Regeneration wird auch auf den Runenschutz angewendet",
+        "Verbunden: 20% erhöhte Runenschutz-Regenerationsrate, wenn Ihr kürzlich einen kritischen Treffer gelandet habt"
+      ],
+      "en": [
+        "40% less Mana Regeneration Rate",
+        "Mana Recovery from Regeneration is also applied to Runic Ward",
+        "Bonded: 20% increased Runic Ward Regeneration Rate if you've dealt a Critical Hit Recently"
+      ]
+    }
+  },
+  "currency.warding-rune-of-glancing": {
+    "body armour": {
+      "de": [
+        "+3 zu Abwendungswert pro 10 maximalem Runenschutz",
+        "Verbunden: Verhindert +1% des Schadens von abgewendeten Treffern"
+      ],
+      "en": [
+        "+3 to Deflection Rating per 10 maximum Runic Ward",
+        "Bonded: Prevent +1% of Damage from Deflected Hits"
+      ]
+    }
+  },
+  "currency.warding-rune-of-heart": {
+    "body armour": {
+      "de": [
+        "Erhaltet 5% des maximalen Lebens als extra maximalen Runenschutz",
+        "Verbunden: 1% mehr Runenschutz-Regenerationsrate pro 2 maximalem Runenschutz, der kürzlich durch Treffer verloren wurde, bis zu 100% mehr"
+      ],
+      "en": [
+        "Gain 5% of maximum Life as Extra maximum Runic Ward",
+        "Bonded: 1% more Runic Ward Regeneration rate per 2% of maximum Runic Ward lost from Hits Recently, up to 100% more"
+      ]
+    }
+  },
+  "currency.warding-rune-of-hollowing": {
+    "caster": {
+      "de": [
+        "Erhaltet 15% des maximalen Lebens als extra maximalen Runenschutz",
+        "15% weniger maximales Leben",
+        "Verbunden: +1% zu allen maximalen Elementarwiderständen bei vollem Runenschutz"
+      ],
+      "en": [
+        "Gain 15% of maximum Life as Extra maximum Runic Ward",
+        "15% less maximum Life",
+        "Bonded: +1% to all Maximum Elemental Resistances while on full Runic Ward"
+      ]
+    }
+  },
+  "currency.warding-rune-of-nourishment": {
+    "armour": {
+      "de": [
+        "15% der Lebenswiederherstellung von Fläschchen werden auch auf den Runenschutz angewendet",
+        "Verbunden: 15% erhöhte Lebenswiederherstellung von Fläschchen"
+      ],
+      "en": [
+        "15% Life Recovery from Flasks also applies to Runic Ward",
+        "Bonded: 15% increased Life Recovery from Flasks"
+      ]
+    }
+  },
+  "currency.warding-rune-of-obsession": {
+    "wand": {
+      "de": [
+        "Sämtlicher erlittener Schaden umgeht den Runenschutz",
+        "Runenschutz-Regenerationsrate ist verdoppelt",
+        "Verbunden: 12% erhöhter maximaler Runenschutz"
+      ],
+      "en": [
+        "All damage taken bypasses Runic Ward",
+        "Runic Ward Regeneration Rate is doubled",
+        "Bonded: 12% increased maximum Runic Ward"
+      ]
+    }
+  },
+  "currency.warding-rune-of-protection": {
+    "armour": {
+      "de": [
+        "Alle 4 Sekunden erhaltet Ihr für 2 Sekunden Wache in Höhe von 20% des maximalen Runenschutzes",
+        "Verbunden: 8% erhöhte erhaltene Wache"
+      ],
+      "en": [
+        "Every 4 seconds, gain Guard equal to 20% of maximum Runic Ward for 2 seconds",
+        "Bonded: 8% increased Guard gained"
+      ]
+    }
+  },
+  "currency.warding-rune-of-reinforcement": {
+    "armour": {
+      "de": [
+        "20% erhöhter Runenschutz",
+        "Verbunden: Erhaltet 2% des maximalen Lebens als extra maximalen Runenschutz"
+      ],
+      "en": [
+        "20% increased Runic Ward",
+        "Bonded: Gain 2% of maximum Life as Extra maximum Runic Ward"
+      ]
+    }
+  },
+  "currency.warding-rune-of-salvaging": {
+    "sceptre": {
+      "de": [
+        "Stellt 3% des maximalen Runenschutzes wieder her, wenn eine Eurer wiederbelebenden Kreaturen getötet wird",
+        "Verbunden: Stellt 3% des maximalen Lebens wieder her, wenn eine Eurer Kreaturen wiederbelebt wird"
+      ],
+      "en": [
+        "Recover 3% of maximum Runic Ward when one of your Reviving Minions is Killed",
+        "Bonded: Recover 3% of maximum Life when one of your Minions is Revived"
+      ]
+    }
+  },
+  "currency.warding-rune-of-stability": {
+    "buckler": {
+      "de": [
+        "+4 zu Betäubungsschwelle pro 10 maximalem Runenschutz",
+        "Verbunden: 15% erhöhter Betäubungsaufbau, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "+4 to Stun Threshold per 10 maximum Runic Ward",
+        "Bonded: 15% increased Stun buildup while Shapeshifted"
+      ]
+    },
+    "shield": {
+      "de": [
+        "+4 zu Betäubungsschwelle pro 10 maximalem Runenschutz",
+        "Verbunden: 15% erhöhter Betäubungsaufbau, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "+4 to Stun Threshold per 10 maximum Runic Ward",
+        "Bonded: 15% increased Stun buildup while Shapeshifted"
+      ]
+    }
+  },
+  "currency.warding-rune-of-symbiosis": {
+    "boots": {
+      "de": [
+        "1% erhöhte Energieschild-Wiederaufladungsrate pro 30 maximalem Runenschutz",
+        "Verbunden: Regeneriert 1% des Energieschilds pro Sekunde"
+      ],
+      "en": [
+        "1% increased Energy Shield Recharge Rate per 30 maximum Runic Ward",
+        "Bonded: Regenerate 1% of maximum Energy Shield per second"
+      ]
+    }
+  },
+  "currency.wolf-idol": {
+    "gloves": {
+      "de": [
+        "15% erhöhte Magnitude von Bluten, das Ihr verursacht",
+        "Verbunden: 25% verringerte Magnitude von Bluten auf Euch"
+      ],
+      "en": [
+        "15% increased Magnitude of Bleeding you inflict",
+        "Bonded: 25% reduced Magnitude of Bleeding on You"
+      ]
+    },
+    "sceptre": {
+      "de": [
+        "Verbündete in Eurer Präsenz haben 20% erhöhten Bonus für kritische Treffer",
+        "Verbunden: 25% erhöhte kritische Trefferchance, während Ihr verwandelt seid"
+      ],
+      "en": [
+        "Allies in your Presence have 20% increased Critical Damage Bonus",
+        "Bonded: 25% increased Critical Hit Chance while Shapeshifted"
+      ]
+    }
+  },
+  "currency.xipocados-soul-core-of-dominion": {
+    "sceptre": {
+      "de": [
+        "Kreaturen verursachen 40% erhöhten Schaden mit Befehls-Fertigkeiten"
+      ],
+      "en": [
+        "Minions deal 40% increased Damage with Command Skills"
+      ]
+    },
+    "staff": {
+      "de": [
+        "Kreaturen verursachen 40% erhöhten Schaden mit Befehls-Fertigkeiten"
+      ],
+      "en": [
+        "Minions deal 40% increased Damage with Command Skills"
+      ]
+    },
+    "wand": {
+      "de": [
+        "Kreaturen verursachen 40% erhöhten Schaden mit Befehls-Fertigkeiten"
+      ],
+      "en": [
+        "Minions deal 40% increased Damage with Command Skills"
+      ]
+    }
+  },
+  "currency.xopecs-soul-core-of-power": {
+    "staff": {
+      "de": [
+        "50% Chance, eine zusätzliche Energie-Ladung zu erhalten, wenn Ihr eine Energie-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain a Power Charge to gain an additional Power Charge"
+      ]
+    },
+    "wand": {
+      "de": [
+        "50% Chance, eine zusätzliche Energie-Ladung zu erhalten, wenn Ihr eine Energie-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain a Power Charge to gain an additional Power Charge"
+      ]
+    },
+    "weapon": {
+      "de": [
+        "50% Chance, eine zusätzliche Energie-Ladung zu erhalten, wenn Ihr eine Energie-Ladung erhaltet"
+      ],
+      "en": [
+        "50% chance when you gain a Power Charge to gain an additional Power Charge"
+      ]
+    }
+  },
+  "currency.zalatls-soul-core-of-insulation": {
+    "boots": {
+      "de": [
+        "+40% der Rüstung werden auch auf Blitzschaden angewendet"
+      ],
+      "en": [
+        "+40% of Armour also applies to Lightning Damage"
+      ]
+    }
+  }
+}

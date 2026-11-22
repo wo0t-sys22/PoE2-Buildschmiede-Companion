@@ -1,0 +1,2159 @@
+{
+  "patch": "0.5.5",
+  "affixes": {
+    "weapon-phys": [
+      {
+        "sources": [
+          {
+            "label": "Bow",
+            "url": "https://exiledb.com/mods/bows"
+          },
+          {
+            "label": "Crossbow",
+            "url": "https://exiledb.com/mods/crossbows"
+          },
+          {
+            "label": "One Hand Mace",
+            "url": "https://exiledb.com/mods/one-hand-maces"
+          },
+          {
+            "label": "Talisman",
+            "url": "https://exiledb.com/mods/talismans"
+          },
+          {
+            "label": "Quarterstaff",
+            "url": "https://exiledb.com/mods/quarterstaves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Merciless",
+            "ilvl": 82,
+            "roll": "(170–179)% increased Physical Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Tyrannical",
+            "ilvl": 75,
+            "roll": "(155–169)% increased Physical Damage",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Cruel",
+            "ilvl": 60,
+            "roll": "(135–154)% increased Physical Damage",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "bow-flat-phys": [
+      {
+        "sources": [
+          {
+            "label": "Bow",
+            "url": "https://exiledb.com/mods/bows"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Flaring",
+            "ilvl": 75,
+            "roll": "Adds (26–39) to (44–66) Physical Damage",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Tempered",
+            "ilvl": 65,
+            "roll": "Adds (21–31) to (36–53) Physical Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Razor-sharp",
+            "ilvl": 60,
+            "roll": "Adds (16–24) to (28–42) Physical Damage",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "bow-flat-lightning": [
+      {
+        "sources": [
+          {
+            "label": "Bow",
+            "url": "https://exiledb.com/mods/bows"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Vapourising",
+            "ilvl": 81,
+            "roll": "Adds (1–12) to (202–234) Lightning Damage",
+            "game_tier": 10
+          },
+          {
+            "rank": 2,
+            "name": "Electrocuting",
+            "ilvl": 75,
+            "roll": "Adds (1–10) to (157–196) Lightning Damage",
+            "game_tier": 9
+          },
+          {
+            "rank": 3,
+            "name": "Discharging",
+            "ilvl": 65,
+            "roll": "Adds (1–8) to (111–152) Lightning Damage",
+            "game_tier": 8
+          }
+        ],
+        "count": 10,
+        "restriction": ""
+      }
+    ],
+    "bow-speed": [
+      {
+        "sources": [
+          {
+            "label": "Bow",
+            "url": "https://exiledb.com/mods/bows"
+          },
+          {
+            "label": "Crossbow",
+            "url": "https://exiledb.com/mods/crossbows"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Acclaim",
+            "ilvl": 37,
+            "roll": "(17–19)% increased Attack Speed",
+            "game_tier": 5
+          },
+          {
+            "rank": 2,
+            "name": "of Renown",
+            "ilvl": 30,
+            "roll": "(14–16)% increased Attack Speed",
+            "game_tier": 4
+          },
+          {
+            "rank": 3,
+            "name": "of Mastery",
+            "ilvl": 22,
+            "roll": "(11–13)% increased Attack Speed",
+            "game_tier": 3
+          }
+        ],
+        "count": 5,
+        "restriction": ""
+      }
+    ],
+    "bow-levels": [
+      {
+        "sources": [
+          {
+            "label": "Bow",
+            "url": "https://exiledb.com/mods/bows"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Sniper",
+            "ilvl": 81,
+            "roll": "+4 to Level of all Projectile Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 2,
+            "name": "of the Marksman",
+            "ilvl": 55,
+            "roll": "+3 to Level of all Projectile Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 3,
+            "name": "of the Sharpshooter",
+            "ilvl": 36,
+            "roll": "+2 to Level of all Projectile Skills",
+            "game_tier": 2
+          }
+        ],
+        "count": 4,
+        "restriction": ""
+      }
+    ],
+    "wand-spell": [
+      {
+        "sources": [
+          {
+            "label": "Wand",
+            "url": "https://exiledb.com/mods/wands"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Runic",
+            "ilvl": 80,
+            "roll": "(105–119)% increased Spell Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Glyphic",
+            "ilvl": 70,
+            "roll": "(90–104)% increased Spell Damage",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Incanter's",
+            "ilvl": 60,
+            "roll": "(75–89)% increased Spell Damage",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "wand-cast": [
+      {
+        "sources": [
+          {
+            "label": "Wand",
+            "url": "https://exiledb.com/mods/wands"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Finesse",
+            "ilvl": 80,
+            "roll": "(33–35)% increased Cast Speed",
+            "game_tier": 7
+          },
+          {
+            "rank": 2,
+            "name": "of Prestidigitation",
+            "ilvl": 70,
+            "roll": "(29–32)% increased Cast Speed",
+            "game_tier": 6
+          },
+          {
+            "rank": 3,
+            "name": "of Legerdemain",
+            "ilvl": 60,
+            "roll": "(25–28)% increased Cast Speed",
+            "game_tier": 5
+          }
+        ],
+        "count": 7,
+        "restriction": ""
+      }
+    ],
+    "wand-levels": [
+      {
+        "sources": [
+          {
+            "label": "Wand",
+            "url": "https://exiledb.com/mods/wands"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Wizard",
+            "ilvl": 78,
+            "roll": "+4 to Level of all Spell Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 2,
+            "name": "of the Sorcerer",
+            "ilvl": 55,
+            "roll": "+3 to Level of all Spell Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 3,
+            "name": "of the Enchanter",
+            "ilvl": 25,
+            "roll": "+2 to Level of all Spell Skills",
+            "game_tier": 2
+          }
+        ],
+        "count": 4,
+        "restriction": ""
+      }
+    ],
+    "wand-lightning": [
+      {
+        "sources": [
+          {
+            "label": "Wand",
+            "url": "https://exiledb.com/mods/wands"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Thunder",
+            "ilvl": 81,
+            "roll": "+5 to Level of all Lightning Spell Skills",
+            "game_tier": 5
+          },
+          {
+            "rank": 2,
+            "name": "of Voltage",
+            "ilvl": 55,
+            "roll": "+4 to Level of all Lightning Spell Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 3,
+            "name": "of Electricity",
+            "ilvl": 36,
+            "roll": "+3 to Level of all Lightning Spell Skills",
+            "game_tier": 3
+          }
+        ],
+        "count": 5,
+        "restriction": ""
+      }
+    ],
+    "staff-spell": [
+      {
+        "sources": [
+          {
+            "label": "Staff",
+            "url": "https://exiledb.com/mods/staves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Runic",
+            "ilvl": 80,
+            "roll": "(209–238)% increased Spell Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Glyphic",
+            "ilvl": 70,
+            "roll": "(189–208)% increased Spell Damage",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Incanter's",
+            "ilvl": 60,
+            "roll": "(149–188)% increased Spell Damage",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "staff-levels": [
+      {
+        "sources": [
+          {
+            "label": "Staff",
+            "url": "https://exiledb.com/mods/staves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Sorcerer",
+            "ilvl": 78,
+            "roll": "+(5–6) to Level of all Spell Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 2,
+            "name": "of the Evoker",
+            "ilvl": 55,
+            "roll": "+4 to Level of all Spell Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 3,
+            "name": "of the Enchanter",
+            "ilvl": 25,
+            "roll": "+3 to Level of all Spell Skills",
+            "game_tier": 2
+          }
+        ],
+        "count": 4,
+        "restriction": ""
+      }
+    ],
+    "staff-lightning": [
+      {
+        "sources": [
+          {
+            "label": "Staff",
+            "url": "https://exiledb.com/mods/staves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Thunder",
+            "ilvl": 81,
+            "roll": "+7 to Level of all Lightning Spell Skills",
+            "game_tier": 5
+          },
+          {
+            "rank": 2,
+            "name": "of Voltage",
+            "ilvl": 55,
+            "roll": "+(5–6) to Level of all Lightning Spell Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 3,
+            "name": "of Electricity",
+            "ilvl": 36,
+            "roll": "+(3–4) to Level of all Lightning Spell Skills",
+            "game_tier": 3
+          }
+        ],
+        "count": 5,
+        "restriction": ""
+      }
+    ],
+    "staff-speed": [
+      {
+        "sources": [
+          {
+            "label": "Staff",
+            "url": "https://exiledb.com/mods/staves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Finesse",
+            "ilvl": 80,
+            "roll": "(50–52)% increased Cast Speed",
+            "game_tier": 7
+          },
+          {
+            "rank": 2,
+            "name": "of Prestidigitation",
+            "ilvl": 70,
+            "roll": "(44–49)% increased Cast Speed",
+            "game_tier": 6
+          },
+          {
+            "rank": 3,
+            "name": "of Legerdemain",
+            "ilvl": 60,
+            "roll": "(38–43)% increased Cast Speed",
+            "game_tier": 5
+          }
+        ],
+        "count": 7,
+        "restriction": ""
+      }
+    ],
+    "sceptre-spirit": [
+      {
+        "sources": [
+          {
+            "label": "Sceptre",
+            "url": "https://exiledb.com/mods/sceptres"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "King's",
+            "ilvl": 82,
+            "roll": "(61–65)% increased Spirit",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Prince's",
+            "ilvl": 75,
+            "roll": "(56–60)% increased Spirit",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Duke's",
+            "ilvl": 60,
+            "roll": "(51–55)% increased Spirit",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "sceptre-ally-damage": [
+      {
+        "sources": [
+          {
+            "label": "Sceptre",
+            "url": "https://exiledb.com/mods/sceptres"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Empowering",
+            "ilvl": 82,
+            "roll": "Allies in your Presence deal (105–119)% increased Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Inspirational",
+            "ilvl": 70,
+            "roll": "Allies in your Presence deal (90–104)% increased Damage",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Motivating",
+            "ilvl": 60,
+            "roll": "Allies in your Presence deal (75–89)% increased Damage",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "sceptre-minion": [
+      {
+        "sources": [
+          {
+            "label": "Sceptre",
+            "url": "https://exiledb.com/mods/sceptres"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Slavedriver",
+            "ilvl": 78,
+            "roll": "+4 to Level of all Minion Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 2,
+            "name": "of the Overseer",
+            "ilvl": 55,
+            "roll": "+3 to Level of all Minion Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 3,
+            "name": "of the Despot",
+            "ilvl": 25,
+            "roll": "+2 to Level of all Minion Skills",
+            "game_tier": 2
+          }
+        ],
+        "count": 4,
+        "restriction": ""
+      }
+    ],
+    "crossbow-flat": [
+      {
+        "sources": [
+          {
+            "label": "Crossbow",
+            "url": "https://exiledb.com/mods/crossbows"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Flaring",
+            "ilvl": 75,
+            "roll": "Adds (37–55) to (63–94) Physical Damage",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Tempered",
+            "ilvl": 65,
+            "roll": "Adds (29–44) to (50–75) Physical Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Razor-sharp",
+            "ilvl": 60,
+            "roll": "Adds (23–35) to (39–59) Physical Damage",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "crossbow-levels": [
+      {
+        "sources": [
+          {
+            "label": "Crossbow",
+            "url": "https://exiledb.com/mods/crossbows"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Sniper",
+            "ilvl": 81,
+            "roll": "+5 to Level of all Projectile Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 2,
+            "name": "of the Marksman",
+            "ilvl": 55,
+            "roll": "+4 to Level of all Projectile Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 3,
+            "name": "of the Sharpshooter",
+            "ilvl": 36,
+            "roll": "+3 to Level of all Projectile Skills",
+            "game_tier": 2
+          }
+        ],
+        "count": 4,
+        "restriction": ""
+      }
+    ],
+    "melee-flat": [
+      {
+        "sources": [
+          {
+            "label": "Quarterstaff",
+            "url": "https://exiledb.com/mods/quarterstaves"
+          },
+          {
+            "label": "Talisman",
+            "url": "https://exiledb.com/mods/talismans"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Flaring",
+            "ilvl": 75,
+            "roll": "Adds (37–55) to (63–94) Physical Damage",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Tempered",
+            "ilvl": 65,
+            "roll": "Adds (29–44) to (50–75) Physical Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Razor-sharp",
+            "ilvl": 60,
+            "roll": "Adds (23–35) to (39–59) Physical Damage",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "mace-flat": [
+      {
+        "sources": [
+          {
+            "label": "One Hand Mace",
+            "url": "https://exiledb.com/mods/one-hand-maces"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Flaring",
+            "ilvl": 75,
+            "roll": "Adds (26–39) to (44–66) Physical Damage",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Tempered",
+            "ilvl": 65,
+            "roll": "Adds (21–31) to (36–53) Physical Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Razor-sharp",
+            "ilvl": 60,
+            "roll": "Adds (16–24) to (28–42) Physical Damage",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "melee-speed": [
+      {
+        "sources": [
+          {
+            "label": "One Hand Mace",
+            "url": "https://exiledb.com/mods/one-hand-maces"
+          },
+          {
+            "label": "Quarterstaff",
+            "url": "https://exiledb.com/mods/quarterstaves"
+          },
+          {
+            "label": "Talisman",
+            "url": "https://exiledb.com/mods/talismans"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Celebration",
+            "ilvl": 77,
+            "roll": "(26–28)% increased Attack Speed",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "of Infamy",
+            "ilvl": 60,
+            "roll": "(23–25)% increased Attack Speed",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "of Fame",
+            "ilvl": 45,
+            "roll": "(20–22)% increased Attack Speed",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "melee-levels": [
+      {
+        "sources": [
+          {
+            "label": "Quarterstaff",
+            "url": "https://exiledb.com/mods/quarterstaves"
+          },
+          {
+            "label": "Talisman",
+            "url": "https://exiledb.com/mods/talismans"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of War",
+            "ilvl": 81,
+            "roll": "+5 to Level of all Melee Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 2,
+            "name": "of Battle",
+            "ilvl": 55,
+            "roll": "+4 to Level of all Melee Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 3,
+            "name": "of Conflict",
+            "ilvl": 36,
+            "roll": "+3 to Level of all Melee Skills",
+            "game_tier": 2
+          }
+        ],
+        "count": 4,
+        "restriction": ""
+      }
+    ],
+    "mace-levels": [
+      {
+        "sources": [
+          {
+            "label": "One Hand Mace",
+            "url": "https://exiledb.com/mods/one-hand-maces"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of War",
+            "ilvl": 81,
+            "roll": "+4 to Level of all Melee Skills",
+            "game_tier": 4
+          },
+          {
+            "rank": 2,
+            "name": "of Battle",
+            "ilvl": 55,
+            "roll": "+3 to Level of all Melee Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 3,
+            "name": "of Conflict",
+            "ilvl": 36,
+            "roll": "+2 to Level of all Melee Skills",
+            "game_tier": 2
+          }
+        ],
+        "count": 4,
+        "restriction": ""
+      }
+    ],
+    "body-life": [
+      {
+        "sources": [
+          {
+            "label": "Body Armour",
+            "url": "https://exiledb.com/mods/body-armours"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Prime",
+            "ilvl": 80,
+            "roll": "+(200–214) to maximum Life",
+            "game_tier": 13
+          },
+          {
+            "rank": 2,
+            "name": "Rapturous",
+            "ilvl": 75,
+            "roll": "+(190–199) to maximum Life",
+            "game_tier": 12
+          },
+          {
+            "rank": 3,
+            "name": "Vigorous",
+            "ilvl": 70,
+            "roll": "+(175–189) to maximum Life",
+            "game_tier": 11
+          }
+        ],
+        "count": 13,
+        "restriction": ""
+      }
+    ],
+    "body-armour": [
+      {
+        "sources": [
+          {
+            "label": "Body Armour",
+            "url": "https://exiledb.com/mods/body-armours"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Impenetrable",
+            "ilvl": 75,
+            "roll": "(101–110)% increased Armour",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Impregnable",
+            "ilvl": 65,
+            "roll": "(92–100)% increased Armour",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Girded",
+            "ilvl": 60,
+            "roll": "(80–91)% increased Armour",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": "Armour"
+      }
+    ],
+    "body-es": [
+      {
+        "sources": [
+          {
+            "label": "Body Armour",
+            "url": "https://exiledb.com/mods/body-armours"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Resplendent",
+            "ilvl": 79,
+            "roll": "+(91–96) to maximum Energy Shield",
+            "game_tier": 11
+          },
+          {
+            "rank": 2,
+            "name": "Incandescent",
+            "ilvl": 70,
+            "roll": "+(81–90) to maximum Energy Shield",
+            "game_tier": 10
+          },
+          {
+            "rank": 3,
+            "name": "Scintillating",
+            "ilvl": 65,
+            "roll": "+(74–80) to maximum Energy Shield",
+            "game_tier": 9
+          }
+        ],
+        "count": 11,
+        "restriction": "Energy Shield and Armour/Evasion/Energy Shield"
+      }
+    ],
+    "body-spirit": [
+      {
+        "sources": [
+          {
+            "label": "Body Armour",
+            "url": "https://exiledb.com/mods/body-armours"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Queen's",
+            "ilvl": 78,
+            "roll": "+(57–61) to Spirit",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Princess'",
+            "ilvl": 65,
+            "roll": "+(54–56) to Spirit",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Duchess'",
+            "ilvl": 60,
+            "roll": "+(51–53) to Spirit",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "helmet-life": [
+      {
+        "sources": [
+          {
+            "label": "Helmet",
+            "url": "https://exiledb.com/mods/helmets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Fecund",
+            "ilvl": 65,
+            "roll": "+(150–174) to maximum Life",
+            "game_tier": 10
+          },
+          {
+            "rank": 2,
+            "name": "Athlete's",
+            "ilvl": 60,
+            "roll": "+(120–149) to maximum Life",
+            "game_tier": 9
+          },
+          {
+            "rank": 3,
+            "name": "Virile",
+            "ilvl": 54,
+            "roll": "+(100–119) to maximum Life",
+            "game_tier": 8
+          }
+        ],
+        "count": 10,
+        "restriction": ""
+      }
+    ],
+    "helmet-minions": [
+      {
+        "sources": [
+          {
+            "label": "Helmet",
+            "url": "https://exiledb.com/mods/helmets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Despot",
+            "ilvl": 41,
+            "roll": "+2 to Level of all Minion Skills",
+            "game_tier": 2
+          },
+          {
+            "rank": 2,
+            "name": "of the Taskmaster",
+            "ilvl": 5,
+            "roll": "+1 to Level of all Minion Skills",
+            "game_tier": 1
+          }
+        ],
+        "count": 2,
+        "restriction": ""
+      }
+    ],
+    "helmet-es": [
+      {
+        "sources": [
+          {
+            "label": "Helmet",
+            "url": "https://exiledb.com/mods/helmets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Dazzling",
+            "ilvl": 60,
+            "roll": "+(61–73) to maximum Energy Shield",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Blazing",
+            "ilvl": 54,
+            "roll": "+(48–60) to maximum Energy Shield",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Pulsing",
+            "ilvl": 46,
+            "roll": "+(42–47) to maximum Energy Shield",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "helmet-rarity": [
+      {
+        "sources": [
+          {
+            "label": "Helmet",
+            "url": "https://exiledb.com/mods/helmets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Hoarder's",
+            "ilvl": 47,
+            "roll": "(16–19)% increased Rarity of Items found",
+            "game_tier": 3
+          },
+          {
+            "rank": 2,
+            "name": "Collector's",
+            "ilvl": 29,
+            "roll": "(12–15)% increased Rarity of Items found",
+            "game_tier": 2
+          },
+          {
+            "rank": 3,
+            "name": "Magpie's",
+            "ilvl": 10,
+            "roll": "(8–11)% increased Rarity of Items found",
+            "game_tier": 1
+          }
+        ],
+        "count": 3,
+        "restriction": ""
+      }
+    ],
+    "helmet-rarity-suffix": [
+      {
+        "sources": [
+          {
+            "label": "Helmet",
+            "url": "https://exiledb.com/mods/helmets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Archaeology",
+            "ilvl": 40,
+            "roll": "(15–18)% increased Rarity of Items found",
+            "game_tier": 3
+          },
+          {
+            "rank": 2,
+            "name": "of Raiding",
+            "ilvl": 24,
+            "roll": "(11–14)% increased Rarity of Items found",
+            "game_tier": 2
+          },
+          {
+            "rank": 3,
+            "name": "of Plunder",
+            "ilvl": 3,
+            "roll": "(6–10)% increased Rarity of Items found",
+            "game_tier": 1
+          }
+        ],
+        "count": 3,
+        "restriction": ""
+      }
+    ],
+    "gloves-life": [
+      {
+        "sources": [
+          {
+            "label": "Gloves",
+            "url": "https://exiledb.com/mods/gloves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Athlete's",
+            "ilvl": 60,
+            "roll": "+(120–149) to maximum Life",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Virile",
+            "ilvl": 54,
+            "roll": "+(100–119) to maximum Life",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Rotund",
+            "ilvl": 46,
+            "roll": "+(85–99) to maximum Life",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "gloves-melee": [
+      {
+        "sources": [
+          {
+            "label": "Gloves",
+            "url": "https://exiledb.com/mods/gloves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Dueling",
+            "ilvl": 41,
+            "roll": "+2 to Level of all Melee Skills",
+            "game_tier": 2
+          },
+          {
+            "rank": 2,
+            "name": "of Combat",
+            "ilvl": 5,
+            "roll": "+1 to Level of all Melee Skills",
+            "game_tier": 1
+          }
+        ],
+        "count": 2,
+        "restriction": ""
+      }
+    ],
+    "gloves-phys": [
+      {
+        "sources": [
+          {
+            "label": "Gloves",
+            "url": "https://exiledb.com/mods/gloves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Flaring",
+            "ilvl": 75,
+            "roll": "Adds (12–19) to (22–32) Physical Damage to Attacks",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Tempered",
+            "ilvl": 65,
+            "roll": "Adds (10–15) to (18–26) Physical Damage to Attacks",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Razor-sharp",
+            "ilvl": 60,
+            "roll": "Adds (7–11) to (14–20) Physical Damage to Attacks",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "gloves-lightning": [
+      {
+        "sources": [
+          {
+            "label": "Gloves",
+            "url": "https://exiledb.com/mods/gloves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Electrocuting",
+            "ilvl": 75,
+            "roll": "Adds (1–4) to (60–71) Lightning damage to Attacks",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Discharging",
+            "ilvl": 65,
+            "roll": "Adds (1–3) to (48–59) Lightning damage to Attacks",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Shocking",
+            "ilvl": 60,
+            "roll": "Adds (1–2) to (41–47) Lightning damage to Attacks",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "gloves-speed": [
+      {
+        "sources": [
+          {
+            "label": "Gloves",
+            "url": "https://exiledb.com/mods/gloves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Renown",
+            "ilvl": 60,
+            "roll": "(14–16)% increased Attack Speed",
+            "game_tier": 4
+          },
+          {
+            "rank": 2,
+            "name": "of Mastery",
+            "ilvl": 37,
+            "roll": "(11–13)% increased Attack Speed",
+            "game_tier": 3
+          },
+          {
+            "rank": 3,
+            "name": "of Ease",
+            "ilvl": 22,
+            "roll": "(8–10)% increased Attack Speed",
+            "game_tier": 2
+          }
+        ],
+        "count": 4,
+        "restriction": ""
+      }
+    ],
+    "gloves-es": [
+      {
+        "sources": [
+          {
+            "label": "Gloves",
+            "url": "https://exiledb.com/mods/gloves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Blazing",
+            "ilvl": 54,
+            "roll": "+(48–60) to maximum Energy Shield",
+            "game_tier": 7
+          },
+          {
+            "rank": 2,
+            "name": "Pulsing",
+            "ilvl": 46,
+            "roll": "+(42–47) to maximum Energy Shield",
+            "game_tier": 6
+          },
+          {
+            "rank": 3,
+            "name": "Radiating",
+            "ilvl": 33,
+            "roll": "+(36–41) to maximum Energy Shield",
+            "game_tier": 5
+          }
+        ],
+        "count": 7,
+        "restriction": "Energy Shield and Armour/Evasion/Energy Shield"
+      }
+    ],
+    "boots-speed": [
+      {
+        "sources": [
+          {
+            "label": "Boots",
+            "url": "https://exiledb.com/mods/boots"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Hellion's",
+            "ilvl": 82,
+            "roll": "35% increased Movement Speed",
+            "game_tier": 6
+          },
+          {
+            "rank": 2,
+            "name": "Cheetah's",
+            "ilvl": 65,
+            "roll": "30% increased Movement Speed",
+            "game_tier": 5
+          },
+          {
+            "rank": 3,
+            "name": "Gazelle's",
+            "ilvl": 46,
+            "roll": "25% increased Movement Speed",
+            "game_tier": 4
+          }
+        ],
+        "count": 6,
+        "restriction": ""
+      }
+    ],
+    "boots-life": [
+      {
+        "sources": [
+          {
+            "label": "Boots",
+            "url": "https://exiledb.com/mods/boots"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Athlete's",
+            "ilvl": 60,
+            "roll": "+(120–149) to maximum Life",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Virile",
+            "ilvl": 54,
+            "roll": "+(100–119) to maximum Life",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Rotund",
+            "ilvl": 46,
+            "roll": "+(85–99) to maximum Life",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "boots-es": [
+      {
+        "sources": [
+          {
+            "label": "Boots",
+            "url": "https://exiledb.com/mods/boots"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Blazing",
+            "ilvl": 54,
+            "roll": "+(48–60) to maximum Energy Shield",
+            "game_tier": 7
+          },
+          {
+            "rank": 2,
+            "name": "Pulsing",
+            "ilvl": 46,
+            "roll": "+(42–47) to maximum Energy Shield",
+            "game_tier": 6
+          },
+          {
+            "rank": 3,
+            "name": "Radiating",
+            "ilvl": 33,
+            "roll": "+(36–41) to maximum Energy Shield",
+            "game_tier": 5
+          }
+        ],
+        "count": 7,
+        "restriction": "Energy Shield and Armour/Evasion/Energy Shield"
+      }
+    ],
+    "ring-life": [
+      {
+        "sources": [
+          {
+            "label": "Ring",
+            "url": "https://exiledb.com/mods/rings"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Virile",
+            "ilvl": 54,
+            "roll": "+(100–119) to maximum Life",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Rotund",
+            "ilvl": 46,
+            "roll": "+(85–99) to maximum Life",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Robust",
+            "ilvl": 38,
+            "roll": "+(70–84) to maximum Life",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "ring-lightning": [
+      {
+        "sources": [
+          {
+            "label": "Ring",
+            "url": "https://exiledb.com/mods/rings"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Electrocuting",
+            "ilvl": 75,
+            "roll": "Adds (1–4) to (60–71) Lightning damage to Attacks",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Discharging",
+            "ilvl": 65,
+            "roll": "Adds (1–3) to (48–59) Lightning damage to Attacks",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Shocking",
+            "ilvl": 60,
+            "roll": "Adds (1–2) to (41–47) Lightning damage to Attacks",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "ring-all-res": [
+      {
+        "sources": [
+          {
+            "label": "Ring",
+            "url": "https://exiledb.com/mods/rings"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Rainbow",
+            "ilvl": 68,
+            "roll": "+(15–16)% to all Elemental Resistances",
+            "game_tier": 5
+          },
+          {
+            "rank": 2,
+            "name": "of Variegation",
+            "ilvl": 54,
+            "roll": "+(12–14)% to all Elemental Resistances",
+            "game_tier": 4
+          },
+          {
+            "rank": 3,
+            "name": "of the Kaleidoscope",
+            "ilvl": 40,
+            "roll": "+(9–11)% to all Elemental Resistances",
+            "game_tier": 3
+          }
+        ],
+        "count": 5,
+        "restriction": ""
+      }
+    ],
+    "amulet-life": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Athlete's",
+            "ilvl": 60,
+            "roll": "+(120–149) to maximum Life",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Virile",
+            "ilvl": 54,
+            "roll": "+(100–119) to maximum Life",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Rotund",
+            "ilvl": 46,
+            "roll": "+(85–99) to maximum Life",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "amulet-life-pct": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Confident",
+            "ilvl": 75,
+            "roll": "(7–8)% increased maximum Life",
+            "game_tier": 3
+          },
+          {
+            "rank": 2,
+            "name": "Optimistic",
+            "ilvl": 60,
+            "roll": "(5–6)% increased maximum Life",
+            "game_tier": 2
+          },
+          {
+            "rank": 3,
+            "name": "Hopeful",
+            "ilvl": 33,
+            "roll": "(3–4)% increased maximum Life",
+            "game_tier": 1
+          }
+        ],
+        "count": 3,
+        "restriction": ""
+      }
+    ],
+    "amulet-es": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Incandescent",
+            "ilvl": 80,
+            "roll": "+(80–89) to maximum Energy Shield",
+            "game_tier": 10
+          },
+          {
+            "rank": 2,
+            "name": "Scintillating",
+            "ilvl": 70,
+            "roll": "+(71–79) to maximum Energy Shield",
+            "game_tier": 9
+          },
+          {
+            "rank": 3,
+            "name": "Dazzling",
+            "ilvl": 65,
+            "roll": "+(62–70) to maximum Energy Shield",
+            "game_tier": 8
+          }
+        ],
+        "count": 10,
+        "restriction": ""
+      }
+    ],
+    "amulet-spirit": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Countess'",
+            "ilvl": 54,
+            "roll": "+(47–50) to Spirit",
+            "game_tier": 5
+          },
+          {
+            "rank": 2,
+            "name": "Marchioness'",
+            "ilvl": 46,
+            "roll": "+(43–46) to Spirit",
+            "game_tier": 4
+          },
+          {
+            "rank": 3,
+            "name": "Viscountess'",
+            "ilvl": 33,
+            "roll": "+(38–42) to Spirit",
+            "game_tier": 3
+          }
+        ],
+        "count": 5,
+        "restriction": ""
+      }
+    ],
+    "amulet-attrs": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://poe2database.com/mods/all-attributes"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Infinite",
+            "ilvl": 82,
+            "roll": "+(23–24) to all Attributes",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "of the Multiverse",
+            "ilvl": 75,
+            "roll": "+(21–22) to all Attributes",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "of the Universe",
+            "ilvl": 66,
+            "roll": "+(19–20) to all Attributes",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ],
+    "amulet-all-res": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Span",
+            "ilvl": 80,
+            "roll": "+(17–18)% to all Elemental Resistances",
+            "game_tier": 6
+          },
+          {
+            "rank": 2,
+            "name": "of the Rainbow",
+            "ilvl": 68,
+            "roll": "+(15–16)% to all Elemental Resistances",
+            "game_tier": 5
+          },
+          {
+            "rank": 3,
+            "name": "of Variegation",
+            "ilvl": 54,
+            "roll": "+(12–14)% to all Elemental Resistances",
+            "game_tier": 4
+          }
+        ],
+        "count": 6,
+        "restriction": ""
+      }
+    ],
+    "amulet-spells": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Sorcerer",
+            "ilvl": 75,
+            "roll": "+3 to Level of all Spell Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 2,
+            "name": "of the Enchanter",
+            "ilvl": 41,
+            "roll": "+2 to Level of all Spell Skills",
+            "game_tier": 2
+          },
+          {
+            "rank": 3,
+            "name": "of the Mage",
+            "ilvl": 10,
+            "roll": "+1 to Level of all Spell Skills",
+            "game_tier": 1
+          }
+        ],
+        "count": 3,
+        "restriction": ""
+      }
+    ],
+    "amulet-projectiles": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Sharpshooter",
+            "ilvl": 75,
+            "roll": "+3 to Level of all Projectile Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 2,
+            "name": "of the Fletcher",
+            "ilvl": 41,
+            "roll": "+2 to Level of all Projectile Skills",
+            "game_tier": 2
+          },
+          {
+            "rank": 3,
+            "name": "of the Archer",
+            "ilvl": 5,
+            "roll": "+1 to Level of all Projectile Skills",
+            "game_tier": 1
+          }
+        ],
+        "count": 3,
+        "restriction": ""
+      }
+    ],
+    "amulet-minions": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of the Overseer",
+            "ilvl": 75,
+            "roll": "+3 to Level of all Minion Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 2,
+            "name": "of the Despot",
+            "ilvl": 41,
+            "roll": "+2 to Level of all Minion Skills",
+            "game_tier": 2
+          },
+          {
+            "rank": 3,
+            "name": "of the Taskmaster",
+            "ilvl": 5,
+            "roll": "+1 to Level of all Minion Skills",
+            "game_tier": 1
+          }
+        ],
+        "count": 3,
+        "restriction": ""
+      }
+    ],
+    "amulet-melee": [
+      {
+        "sources": [
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Battle",
+            "ilvl": 75,
+            "roll": "+3 to Level of all Melee Skills",
+            "game_tier": 3
+          },
+          {
+            "rank": 2,
+            "name": "of Dueling",
+            "ilvl": 41,
+            "roll": "+2 to Level of all Melee Skills",
+            "game_tier": 2
+          },
+          {
+            "rank": 3,
+            "name": "of Combat",
+            "ilvl": 5,
+            "roll": "+1 to Level of all Melee Skills",
+            "game_tier": 1
+          }
+        ],
+        "count": 3,
+        "restriction": ""
+      }
+    ],
+    "fire-res": [
+      {
+        "sources": [
+          {
+            "label": "Body Armour",
+            "url": "https://exiledb.com/mods/body-armours"
+          },
+          {
+            "label": "Ring",
+            "url": "https://exiledb.com/mods/rings"
+          },
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Tzteosh",
+            "ilvl": 82,
+            "roll": "+(41–45)% to Fire Resistance",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "of Magma",
+            "ilvl": 71,
+            "roll": "+(36–40)% to Fire Resistance",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "of the Volcano",
+            "ilvl": 60,
+            "roll": "+(31–35)% to Fire Resistance",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "cold-res": [
+      {
+        "sources": [
+          {
+            "label": "Body Armour",
+            "url": "https://exiledb.com/mods/body-armours"
+          },
+          {
+            "label": "Ring",
+            "url": "https://exiledb.com/mods/rings"
+          },
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Haast",
+            "ilvl": 82,
+            "roll": "+(41–45)% to Cold Resistance",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "of the Ice",
+            "ilvl": 71,
+            "roll": "+(36–40)% to Cold Resistance",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "of the Polar Bear",
+            "ilvl": 60,
+            "roll": "+(31–35)% to Cold Resistance",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "lightning-res": [
+      {
+        "sources": [
+          {
+            "label": "Body Armour",
+            "url": "https://exiledb.com/mods/body-armours"
+          },
+          {
+            "label": "Ring",
+            "url": "https://exiledb.com/mods/rings"
+          },
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Ephij",
+            "ilvl": 82,
+            "roll": "+(41–45)% to Lightning Resistance",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "of the Lightning",
+            "ilvl": 71,
+            "roll": "+(36–40)% to Lightning Resistance",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "of the Maelstrom",
+            "ilvl": 60,
+            "roll": "+(31–35)% to Lightning Resistance",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "chaos-res": [
+      {
+        "sources": [
+          {
+            "label": "Body Armour",
+            "url": "https://exiledb.com/mods/body-armours"
+          },
+          {
+            "label": "Ring",
+            "url": "https://exiledb.com/mods/rings"
+          },
+          {
+            "label": "Amulet",
+            "url": "https://exiledb.com/mods/amulets"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "of Bameth",
+            "ilvl": 81,
+            "roll": "+(24–27)% to Chaos Resistance",
+            "game_tier": 6
+          },
+          {
+            "rank": 2,
+            "name": "of Exile",
+            "ilvl": 68,
+            "roll": "+(20–23)% to Chaos Resistance",
+            "game_tier": 5
+          },
+          {
+            "rank": 3,
+            "name": "of Expulsion",
+            "ilvl": 56,
+            "roll": "+(16–19)% to Chaos Resistance",
+            "game_tier": 4
+          }
+        ],
+        "count": 6,
+        "restriction": ""
+      }
+    ],
+    "quarterstaff-phys-percent": [
+      {
+        "sources": [
+          {
+            "label": "Quarterstaff",
+            "url": "https://exiledb.com/mods/quarterstaves"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Merciless",
+            "ilvl": 82,
+            "roll": "(170–179)% increased Physical Damage",
+            "game_tier": 8
+          },
+          {
+            "rank": 2,
+            "name": "Tyrannical",
+            "ilvl": 75,
+            "roll": "(155–169)% increased Physical Damage",
+            "game_tier": 7
+          },
+          {
+            "rank": 3,
+            "name": "Cruel",
+            "ilvl": 60,
+            "roll": "(135–154)% increased Physical Damage",
+            "game_tier": 6
+          }
+        ],
+        "count": 8,
+        "restriction": ""
+      }
+    ],
+    "ring-flat-phys": [
+      {
+        "sources": [
+          {
+            "label": "Ring",
+            "url": "https://exiledb.com/mods/rings"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "Flaring",
+            "ilvl": 75,
+            "roll": "Adds (12–19) to (22–32) Physical Damage to Attacks",
+            "game_tier": 9
+          },
+          {
+            "rank": 2,
+            "name": "Tempered",
+            "ilvl": 65,
+            "roll": "Adds (10–15) to (18–26) Physical Damage to Attacks",
+            "game_tier": 8
+          },
+          {
+            "rank": 3,
+            "name": "Razor-sharp",
+            "ilvl": 60,
+            "roll": "Adds (7–11) to (14–20) Physical Damage to Attacks",
+            "game_tier": 7
+          }
+        ],
+        "count": 9,
+        "restriction": ""
+      }
+    ]
+  }
+}

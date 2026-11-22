@@ -1,0 +1,64 @@
+{
+  "headings": {
+    "Layout": "layout",
+    "Quest": "quest",
+    "Questbelohnungen": "quest-rewards",
+    "Permanenter Bonus": "permanent-bonus",
+    "Optionale Ziele": "optional-objectives",
+    "Settings / Gameplay": "gameplay",
+    "Tipps": "tips"
+  },
+  "tones": {
+    "info": "#6da9ff",
+    "quest": "#f2cd69",
+    "success": "#56dc88",
+    "optional": "#c4a9f5",
+    "gameplay_title": "#e0e6ed",
+    "danger": "#ff6e69",
+    "gold": "#edc36b"
+  },
+  "headingTones": {
+    "Layout": "info",
+    "Quest": "quest",
+    "Questbelohnungen": "quest",
+    "Permanenter Bonus": "success",
+    "Optionale Ziele": "optional",
+    "Settings / Gameplay": "gameplay_title",
+    "Tipps": "gameplay_title"
+  },
+  "overlayTones": {
+    "info": "#90b1d8",
+    "quest": "#d4bf94",
+    "success": "#a0c9a7",
+    "optional": "#b5a5c8",
+    "gameplay_title": "#e0e6ed",
+    "danger": "#dc9891",
+    "gold": "#d4bc94"
+  },
+  "termOverrides": {
+    "info": "#6da9ff",
+    "blue": "#a0c3ff",
+    "gold": "#edc36b",
+    "optional": "#c4a9f5",
+    "gameplay": "#e0e6ed"
+  },
+  "publication": {
+    "areas": [
+      "a1-riverbank",
+      "a1-town",
+      "a1-grelwood-river",
+      "a1-red-vale-obelisks",
+      "a1-grim-tangle",
+      "a1-cemetery-keys",
+      "a1-mausoleum-draven",
+      "a1-tomb-asinia",
+      "a1-hunting-exit",
+      "a1-freythorn-rituals",
+      "a1-farmlands-exit",
+      "a1-ogham-village",
+      "a1-ramparts",
+      "a1-geonor"
+    ],
+    "towns": ["a1-town", "a2-caravan"]
+  }
+}

@@ -1,0 +1,83 @@
+PoE2 Ingame Guide für Linux
+Kampagne, Bosse, Builds & Atlas · Stand v.0.19.0 · Patch 0.5.5f
+
+VORSCHAU: Die Linux-Fassung ist noch nicht im Spiel abgenommen.
+Rückmeldungen über „Feedback geben“ in den Optionen helfen sehr.
+
+SCHNELLSTART
+
+1. Das Archiv auf dem Linux-System in einen eigenen Ordner im
+   Home-Verzeichnis entpacken, zum Beispiel im Terminal:
+     tar -xzf PoE2-Companion-v.0.19.0-Linux.tar.gz
+   Nicht in einen freigegebenen VM-Ordner, auf einen USB-Stick oder eine
+   Windows-Partition entpacken: Dort gehen die Ausführungsrechte verloren.
+2. Im Terminal in den Ordner wechseln und den Guide starten:
+     cd PoE2-Companion-v.0.19.0-Linux
+     sh PoE2-Guide-starten.sh
+   „sh …“ funktioniert immer, auch wenn die Datei nicht als ausführbar
+   markiert ist.
+3. Path of Exile 2 über Steam (Proton) im Fenster oder randlosen Fenster
+   starten und ein Gebiet betreten.
+
+Danach bequemer: „sh Desktop-Eintrag-anlegen.sh“ legt einmalig den Eintrag
+„PoE2 Companion“ im Anwendungsmenü an. Ein Doppelklick auf die .sh-Datei
+öffnet sie je nach Dateimanager nur als Text, der Menüeintrag startet sicher.
+
+Startet der Guide nicht, zeigt der Starter den Grund an, ohne Terminal als
+Fenster. Details stehen in app/userdata/start.log und
+app/userdata/overlay_fehler.txt.
+
+Voraussetzung ist Python 3.10 oder neuer mit Tkinter:
+  Debian/Ubuntu: sudo apt install python3 python3-tk
+  Fedora:        sudo dnf install python3 python3-tkinter
+  Arch, CachyOS, Manjaro, EndeavourOS:  sudo pacman -S python tk
+
+DESKTOP UND WAYLAND
+
+Der Guide nutzt X11. Unter Wayland läuft er automatisch über XWayland,
+wie PoE2 unter Proton auch. KDE Plasma und GNOME bringen XWayland mit.
+Bei unscharfer oder falsch skalierter Anzeige mit zwei Monitoren einen
+festen Faktor setzen, zum Beispiel:
+  POE2_SCALE=1.5 sh PoE2-Guide-starten.sh
+KDE: Anzeige-Einstellungen → Legacy-Anwendungen (X11) →
+„Selbst skalieren lassen“ verhindert unscharfe Darstellung.
+
+PROTON
+
+Viele Overlays brauchen eine bestimmte Proton-Version. Getestet unter
+CachyOS mit „Proton Hotfix“: In Steam bei Path of Exile 2 unter
+Eigenschaften → Kompatibilität → Bestimmtes Steam Play Kompatibilitäts-
+tool erzwingen → „Proton Hotfix“ wählen.
+
+UNTERSCHIEDE ZU WINDOWS
+
+• Der HUD-Hintergrund ist durchsichtig wie unter Windows. Dafür zeigt der
+  Guide sein Bild in einem eigenen transparenten X11-Fenster (wie Electron-
+  Overlays, z. B. Exiled Exchange, unter XWayland). Das braucht einen
+  Desktop mit Compositing, KDE Plasma und GNOME haben das.
+  Unter Optionen → Anzeige → „Durchsichtiger Hintergrund“ lässt es sich
+  abschalten (deckender Hintergrund, wirkt nach Neustart). Notschalter,
+  falls das HUD sich nicht mehr bedienen lässt:
+    POE2_SHAPE=0 sh PoE2-Guide-starten.sh
+• Der Regler „Transparenz“ macht das ganze HUD durchscheinend (benötigt
+  einen Desktop mit Compositing, KDE Plasma und GNOME haben das).
+• Im Spielmodus (F9) sind Reiter, Boss-Links und Schaltflächen anklickbar,
+  Klicks auf Text und freie Flächen gehen an PoE2.
+• Scrollen mit dem Mausrad funktioniert im Bearbeitungsmodus (F9).
+
+HOTKEYS
+
+F8 blendet das Overlay ein oder aus, F9 wechselt zwischen Spielmodus und
+Bearbeiten, F10 beendet den Guide, Strg+Umschalt+F9 holt die Bedienung
+zurück. F6 und F7 steuern den Übungstimer, F4 die Boss-Zeit.
+Belegt ein anderes Programm eine Taste, steht das im Fehlerprotokoll.
+
+HILFE
+
+• Gebiet wird nicht erkannt: In Optionen „Client.txt wählen“ anklicken.
+  Die Datei liegt im Ordner „logs“ der PoE2-Installation, etwa unter
+  ~/.local/share/Steam/steamapps/common/Path of Exile 2/logs/
+• OBS-Browserquelle: http://127.0.0.1:8765/race-overlay.html
+• Diagnose: app/userdata/overlay_fehler.txt
+
+Im Ordner „app“ liegen Programm, Daten und die ausführliche Anleitung.
