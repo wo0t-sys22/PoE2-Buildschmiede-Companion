@@ -1,66 +1,37 @@
-# PoE2 Ingame Guide v.0.19.0 · Buildschmiede Companion
+PoE2 Buildschmiede Companion
+Der Buildschmiede Companion ist ein Overlay für Path of Exile 2. Es erkennt dein aktuelles Gebiet und bringt Kampagnen- und Boss-Guides, Build-Phasen, Lexikon und Atlas direkt ins Spiel. Crafting-Helfer, Affix-Suche und weitere Werkzeuge sind ebenfalls griffbereit.
 
-Ein Overlay für **Path of Exile 2** mit Kampagnenguide, Boss-Guides, Build-Import, Lexikon und Atlas, direkt über dem Spiel. Die Texte gibt es in Deutsch, Englisch und Hybrid. Grundlage ist Patch 0.5.5f.
+Du entscheidest, was du sehen willst. Reiter, Schnellzugriffe und viele Guide-Elemente lassen sich einzeln ein- und ausblenden. Dazu kommen Themes, einstellbare Größe und Transparenz sowie kompakte und ausführliche Ansichten. Die Guides gibt es auf Deutsch, auf Englisch und im Hybridmodus mit deutschen Erklärungen und englischen Spielbegriffen.
 
-Die Online-Guides findest du auf [buildschmiede.de](https://buildschmiede.de/).
+Die aktuelle Beta v.0.19.0 enthält den Datenstand von Patch 0.5.5f. Der Companion ist für PoE 2 1.0 gedacht. Die neuen Inhalte pflegen wir schrittweise ein, sobald uns die Spieldaten vorliegen. Online-Guides auf buildschmiede.de
+Download & Start
+Die fertigen Pakete und ihre SHA-256-Prüfsummen findest du unter Releases.
+Paket	So startest du
+Windows 10/11 · Setup	Die EXE installiert den Companion für dein Benutzerkonto und bringt Python und Tcl/Tk mit. Das Beta-Setup ist unsigniert. Falls Windows beim Start warnt oder das Setup blockiert, kannst du das portable ZIP verwenden.
+Windows 10/11 · Portabel	ZIP vollständig entpacken, einmal Voraussetzungen installieren.cmd ausführen und danach PoE2 Guide starten.cmd öffnen. Das erste Skript prüft Python und Tcl/Tk und richtet sie bei Bedarf ein.
+Linux · X11 oder XWayland	Archiv entpacken, Python 3.10+ mit Tkinter bereitstellen und sh PoE2-Guide-starten.sh ausführen. sh Desktop-Eintrag-anlegen.sh legt optional einen Menüeintrag an.
 
-## Download
 
-Die fertigen Pakete liegen unter **[Releases](../../releases)**:
+Der Windows-Client lief auf unserem Testsystem bisher stabil. Eine frühere R18-Version lief unter CachyOS. Für die aktuelle Linux-Beta stehen breitere Tests zu Stabilität und Funktionsumfang noch aus.
 
-| System | Datei |
-| --- | --- |
-| Windows 10/11 (portabel) | `PoE2-Companion-<Version>-Windows.zip` |
-| Windows 10/11 (Setup, unsigniert) | `PoE2-Companion-<Version>-Setup.exe` |
-| Linux (X11 oder XWayland) | `PoE2-Companion-<Version>-Linux.tar.gz` |
+[Windows-Kurzanleitung](Windows/LIES%20MICH.txt) · [Linux-Kurzanleitung](Linux/LIES%20MICH.txt)
+Bedienung
+Taste	Funktion
+F8	Overlay ein- oder ausblenden
+F9	Zwischen Spielmodus und Bearbeiten wechseln
+F10	Companion beenden
+F6 / F7	Übungstimer starten, pausieren oder fortsetzen / zurücksetzen
 
-Jedes Release enthält eine `SHA256SUMS.txt` mit den Prüfsummen.
 
-## Start
-
-**Windows (portabel)**
-1. ZIP entpacken (Rechtsklick → „Alle extrahieren“).
-2. Einmal `Voraussetzungen installieren.cmd` öffnen. Das Skript prüft Python 3.10+ mit Tcl/Tk und installiert es bei Bedarf für dein Benutzerkonto.
-3. `PoE2 Guide starten.cmd` öffnen.
-
-**Windows (Setup)**
-
-Das Setup installiert den Companion für dein Benutzerkonto und bringt Python und Tcl/Tk mit.
-
-**Linux**
-1. Archiv entpacken.
-2. Python 3.10+ mit Tkinter installieren, z. B. `sudo apt install python3 python3-tk` oder `sudo pacman -S python tk`.
-3. `sh PoE2-Guide-starten.sh` ausführen. `sh Desktop-Eintrag-anlegen.sh` legt optional einen Menüeintrag an.
-
-> Die Linux-Fassung ist noch nicht auf echter Hardware getestet. Rückmeldungen sind willkommen.
-
-Aus diesem Repository startest du den Companion genauso: unter Windows über `Windows\PoE2 Guide starten.cmd`, unter Linux über `sh Linux/PoE2-Guide-starten.sh`. Die Starter finden den gemeinsamen Ordner `app/` automatisch.
-
-## Bedienung
-
-| Taste | Funktion |
-| --- | --- |
-| F8 | Overlay ein- oder ausblenden |
-| F9 | Spielmodus oder Bearbeiten |
-| F10 | Guide beenden |
-| F6 / F7 | Timer starten und pausieren / zurücksetzen |
-
-Die ausführliche Anleitung steht in [app/README.md](app/README.md). Kurzfassungen liegen in [Windows/LIES MICH.txt](Windows/LIES%20MICH.txt) und [Linux/LIES MICH.txt](Linux/LIES%20MICH.txt).
-
-## Aufbau
-
-| Ordner | Inhalt |
-| --- | --- |
-| `app/` | Programm und Daten für beide Systeme. `app/plattform/` enthält das Fenster-Backend für Windows und Linux. |
-| `Windows/` | Starter, Python-Prüfung und Kurzanleitung für Windows |
-| `Linux/` | Starter, Menüeintrag und Kurzanleitung für Linux |
-
-Persönliche Einstellungen und Fortschritt speichert der Companion lokal in `app/userdata/`. Dieser Ordner wird nicht versioniert.
-
-## Rechtliches
-
+Fehlt dir eine Einstellung oder läuft unter Linux etwas anders als erwartet? Beschreib uns gern, was dir aufgefallen ist. Feedback auf GitHub
+Aus dem Repository starten
+app/ enthält das Programm und die gemeinsamen Daten. Die Starter in Windows/ und Linux/ finden diesen Ordner automatisch.
+- Windows – Windows\PoE2 Guide starten.cmd
+- Linux – sh Linux/PoE2-Guide-starten.sh
+Einstellungen und Fortschritt liegen lokal in app/userdata/. Dieser Ordner wird nicht versioniert.
+Rechtliches
 © Buildschmiede. Alle Rechte am eigenen Code und an den eigenen Texten vorbehalten. Der Quellcode ist zur Ansicht veröffentlicht. Für Nutzung, Änderung oder Weitergabe außerhalb des normalen Gebrauchs des Tools bitte vorher anfragen.
 
 Spieldaten, Grafiken und weitere Inhalte stammen von Dritten. Quellen und Lizenzen stehen in [DRITTANBIETER.md](DRITTANBIETER.md).
 
-Dies ist ein Fanprojekt und steht in keiner Verbindung zu Grinding Gear Games. Path of Exile ist eine Marke von Grinding Gear Games.
+Dies ist ein unabhängiges Fanprojekt. Path of Exile ist eine Marke von Grinding Gear Games.
