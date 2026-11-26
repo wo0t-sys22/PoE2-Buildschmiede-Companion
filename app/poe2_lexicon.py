@@ -7,6 +7,7 @@ import gzip
 import json
 from pathlib import Path
 import re
+from typing import NamedTuple
 from urllib.parse import urlencode, urlsplit
 
 from poe2_game_de import apply_game_de
@@ -18,14 +19,16 @@ from poe2_website_content import lexicon_index, validate_lexicon
 LEXICON_URL = "https://buildschmiede.de/lexikon/"
 DATA_DIR = Path(__file__).parent
 GROUPS = {
-    "all": ("Alle", "Alle", "All"),
     "terms": ("Begriffe", "Begriffe", "Terms"),
-    "mechanics": ("Mechaniken", "Mechaniken", "Mechanics"),
-    "nodes": ("Fertigkeiten & Passivbaum", "Skills & Passives", "Skills & Passives"),
+    "league": ("Liga-Mechaniken", "Liga-Mechaniken", "League mechanics"),
+    "currency": ("Währungen & Materialien", "Währungen & Materialien", "Currencies & Materials"),
+    "skills": ("Fertigkeiten", "Fertigkeiten", "Skills"),
+    "supports": ("Unterstützungen", "Unterstützungen", "Support Gems"),
+    "passives": ("Passive", "Passive", "Passives"),
     "items": ("Gegenstände", "Gegenstände", "Items"),
-    "affixes": ("Affixe", "Affixe", "Affixes"),
-    "pools": ("Modifikatorlisten", "Modpools", "Mod pools"),
+    "mods": ("Affixe", "Affixe", "Affixes"),
 }
+MECHANICS_LABELS = ("Spielmechaniken", "Spielmechaniken", "Game mechanics")
 TOPICS = {
     "currency": ("Währung & Gemmen", "Währung & Gemmen", "Currency & Gems"),
     "normal": ("Ausrüstung", "Ausrüstung", "Equipment"),
@@ -106,6 +109,28 @@ def lexicon_prose(value, language):
 
 def web_url(language, fragment="", **params):
     return LEXICON_URL + "?" + urlencode({"sprache": language, **params}) + ("#" + fragment if fragment else "")
+
+
+@lru_cache(maxsize=1)
+def league_guides():
+    with (DATA_DIR / "shared-data" / "league-mechanics.v1.json").open(encoding="utf-8") as source:
+        document = json.load(source)
+    return {row["id"]: {**row, "patch": document["patch"]} for row in document["entries"]}
+
+
+@lru_cache(maxsize=1)
+def lexicon_guides():
+    path = DATA_DIR / "shared-data" / "lexicon-guides.v1.json"
+    try:
+        with path.open(encoding="utf-8") as source:
+            data = json.load(source)
+    except (OSError, ValueError):
+        return {}, {}
+    if isinstance(data, dict) and data.get("schema") == "buildschmiede.lexicon-guides.v1":
+        terms, targets = data.get("terms"), data.get("targets")
+        if isinstance(terms, dict) and isinstance(targets, dict):
+            return terms, targets
+    return {}, {}
 
 
 @lru_cache(maxsize=1)
@@ -242,14 +267,20 @@ def base_items():
     return {row["name"]: row for row in catalogue()["items"] if "kind" not in row}
 
 
-def affix_weight(row, base):
+def affix_weight_rule(row, base):
     tags = base["tags"]
-    return next((value for tag, value in row.get("weights", ()) if tag == "default" or tag in tags), None)
+    return next((rule for rule in row.get("weights", ()) if rule[0] == "default" or rule[0] in tags), None)
+
+
+def affix_weight(row, base):
+    rule = affix_weight_rule(row, base)
+    return rule[1] if rule else None
 
 
 def affix_applies(row, base):
-    if base.get("kind") in {"waystone", "tablet"}:
-        return row["category"] == base["kind"] + "s"
+    if (kind := base.get("kind")) in {"waystone", "tablet"}:
+        names = {kind.title() + "s", base["name"], base.get("modBase")}
+        return row["category"] == kind + "s" and not names.isdisjoint(row["bases"])
     if row.get("weights"):
         return (affix_weight(row, base) or 0) > 0
     return base["name"] in row["bases"]
@@ -289,17 +320,32 @@ def affix_rows(data):
         yield sorted(rows, key=lambda row: -row["level"])
 
 
-def profile_rows(data):
-    for profile in data["profiles"].values():
+class ProfileVariant(NamedTuple):
+    tier: int | str | None
+    level: int
+    names_en: tuple[str, ...]
+    names_de: tuple[str, ...]
+    stats_en: tuple[str, ...]
+    stats_de: tuple[str, ...]
+    weight: int | None
+    ident: str
+    tags: tuple[str, ...]
+
+
+def profile_rows(data, profile_ids):
+    for profile_id in profile_ids:
+        profile = data["profiles"][profile_id]
         de, en, url_de, url_en, sections = profile[:5]
         for section_de, section_en, families in sections:
-            for _, rows in families:
+            for family, rows in families:
                 variants = []
                 for tier, level, names_en, names_de, stats_en, stats_de, tags, weight, ident, *rest in rows:
                     en_names = tuple(name for label in names_en if (name := public_name(label, ident)))
                     de_names = tuple(name for label in names_de if (name := public_name(label, ident)))
                     en_stats, de_stats = public_stats(stats_en), public_stats(stats_de)
                     if en_names or de_names or en_stats or de_stats:
-                        variants.append((tier, level, en_names, de_names, en_stats, de_stats, weight))
+                        public_tags = tuple(dict.fromkeys(tag for tag in tags if tag != "default"))
+                        variants.append(ProfileVariant(tier, level, en_names, de_names, en_stats, de_stats,
+                                                       weight, ident, public_tags))
                 if variants:
-                    yield (de, en), (url_de, url_en), (section_de, section_en), variants
+                    yield family, (de, en), (url_de, url_en), (section_de, section_en), variants

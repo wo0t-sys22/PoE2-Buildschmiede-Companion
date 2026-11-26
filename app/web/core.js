@@ -1,7 +1,7 @@
 const runKey = 'poe2-r17-run-v1';
 const preferencesKey = 'poe2-r17-preferences-v1';
 const snapshotKey = 'poe2-r17-snapshot-v1';
-export const RELEASE_VERSION = '0.19.0';
+export const RELEASE_VERSION = '0.21.0';
 export const RELEASE_LABEL = `v.${RELEASE_VERSION}`;
 let language = 'de';
 let itemTerms = new Map();
@@ -65,7 +65,6 @@ export function itemText(value, role) {
 }
 
 export const languages = ['de', 'en', 'hybrid'];
-export const views = ['transfer', 'home', 'campaign', 'builds', 'atlas', 'respec', 'overview', 'live'];
 
 export function setLanguage(value) {
   language = languages.includes(value) ? value : 'de';
@@ -126,15 +125,6 @@ export const icon = (name, className = '') =>
 
 export const badge = (text, tone = 'neutral') =>
   `<span class="badge badge--${tone}">${esc(text)}</span>`;
-
-export function viewLabel(view) {
-  return ({
-    transfer: tr('Website-Transfer', 'Website transfer'),
-    home: tr('Start', 'Home'), overview: tr('Run-Übersicht', 'Run overview'), campaign: tr('Kampagne', 'Campaign'),
-    builds: 'Builds', atlas: 'Endgame & Atlas', live: tr('Live-Daten', 'Live data'),
-    respec: tr('Respec-Rechner', 'Respec Calculator', 'Respec Calculator'),
-  })[view];
-}
 
 export const unknown = () => tr('Unbekannt', 'Unknown');
 export const reference = () => tr('0.5.5f · Referenz', '0.5.5f · Reference');
@@ -315,14 +305,16 @@ export async function assetJson(filename) {
   return response.json();
 }
 
-export async function loadGuide() {
-  const [companion, atlas, arenas, tiers, bossLanguages, termData, sectionStyle, respec, tips, guide, catalog] = await Promise.all([
-    assetJson('poe2_campaign_companion.json'),
-    assetJson('poe2_endgame_atlas.json'), assetJson('poe2_boss_arenas.json'),
-    assetJson('poe2_r18_tiers.json'), assetJson('poe2_boss_languages.json'), assetJson('terms.json'),
-    assetJson('companion-section-style.json'), assetJson('poe2_respec.json'),
-    assetJson('poe2_campaign_tips.json'), assetJson('poe2_r18_guide.json'), assetJson('poe2_language_pilot.json'),
-  ]);
+export const guideFiles = [
+  'poe2_campaign_companion.json', 'poe2_endgame_atlas.json', 'poe2_boss_arenas.json',
+  'poe2_r18_tiers.json', 'poe2_boss_languages.json', 'terms.json',
+  'companion-section-style.json', 'poe2_respec.json',
+  'poe2_campaign_tips.json', 'poe2_r18_guide.json', 'poe2_language_pilot.json',
+];
+
+export async function loadGuide(readAsset = assetJson) {
+  const [companion, atlas, arenas, tiers, bossLanguages, termData, sectionStyle, respec, tips, guide, catalog] =
+    await Promise.all(guideFiles.map(readAsset));
   loadItemTerms(guide, termData.terms);
   return { tips, companion, atlas, arenas, guide, tiers, catalog, bossLanguages, sectionStyle, respec,
     termCatalog: termData.terms };

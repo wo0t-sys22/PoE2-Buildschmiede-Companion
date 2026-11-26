@@ -1,0 +1,687 @@
+{
+  "schema": "buildschmiede.faq.v1",
+  "entries": [
+    {
+      "id": "stash-tabs",
+      "topic": "basics",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Welche Truhenfächer lohnen sich zuerst?",
+        "en": "Which stash tabs should I buy first?",
+        "hybrid": "Welche Stash Tabs lohnen sich zuerst?"
+      },
+      "answer": {
+        "de": "Spiele erst, bis du weißt, was deine Truhe füllt. Stapeln sich Währungen, hilft das Währungsfach. Im Atlas sortiert das Kartenfach deine Wegsteine. Für Tafeln, Splitter und Prüfungszugänge lohnt sich das Fragmentfach. Willst du Ausrüstung über Ange auch offline verkaufen, ist ein Händlerfach sinnvoll. In SSF entfällt dieser Kaufgrund. Ein Quad-Fach spart Sortierzeit, wenn du nach mehreren Karten gesammelt aufräumst.",
+        "en": "Play until you can see what fills your stash. A Currency Tab helps with piles of currency. In the Atlas, a Map Tab sorts Waystones and a Fragment Tab holds Tablets, Splinters and trial access items. A Merchant’s Tab is useful if you want to sell gear through Ange while offline. In SSF you can skip that purchase. A Quad Tab saves sorting time if you empty your inventory after each map and sort several runs together.",
+        "hybrid": "Schau zuerst, was deinen Stash füllt. Für Currency nimm einen Currency Tab, für Waystones im Atlas einen Map Tab. Tablets, Splinters und Zugänge zu Trials passen in einen Fragment Tab. Wenn du Gear über Ange auch offline verkaufen möchtest, hilft ein Merchant’s Tab. In SSF entfällt dieser Kaufgrund. Ein Quad Tab spart Zeit, wenn du erst nach mehreren Maps sortierst."
+      },
+      "aliases": [
+        "Stashes",
+        "Stash kaufen",
+        "Truhe",
+        "Truhenfach",
+        "Truhenfächer",
+        "Truhenfach kaufen",
+        "Stashtabs",
+        "Currency Tab",
+        "Map Tab",
+        "Merchant Tab",
+        "Quad Tab",
+        "SSF",
+        "Trade"
+      ],
+      "target": {
+        "path": "/grundlagen/handel-waehrungsmarkt/",
+        "anchor": "faq-stash-tabs",
+        "dependency": ""
+      },
+      "source_slides": [
+        19
+      ],
+      "sources": [
+        "https://www.pathofexile.com/forum/view-thread/3932540",
+        "https://www.youtube.com/watch?v=aiD_IuWKRtI",
+        "https://www.poe2wiki.net/wiki/Asynchronous_trading"
+      ]
+    },
+    {
+      "id": "amulet-anoint",
+      "topic": "mechanics",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Wie weihe ich mein Amulett, wenn der Rechtsklick auf eine Emotion nicht mehr funktioniert?",
+        "en": "How do I anoint an amulet now that right-clicking an emotion no longer works?",
+        "hybrid": "Wie kann ich mein Amulett wieder anointen?"
+      },
+      "answer": {
+        "de": "Folge „Seltsame Reflexion“ zum Ältesten Madox an der Welken Weide. Nimm seine Delirium-Tafel, besiege fünf deliriöse Kartenbosse und kehre zu ihm zurück. An der Karaffe des Wahnsinns setzt du das Amulett und drei Flüssige Emotionen in der Reihenfolge des gewünschten Rezepts ein. Prüfe den angezeigten passiven Knoten und bestätige. Der Große Spiegel folgt erst danach in der Quest.",
+        "en": "Follow Strange Reflection to Elder Madox at the Withered Willow. Take his Delirium Tablet, defeat five delirious map bosses and return to him. At the Decanter of Madness, insert the amulet and three Liquid Emotions in the order required by the recipe. Check the passive shown in the preview before confirming. The Grand Mirror comes later in the quest.",
+        "hybrid": "Folge Strange Reflection zu Elder Madox an der Withered Willow. Hol sein Delirium Tablet, besiege fünf delirious Map Bosses und geh zurück. Am Decanter of Madness legst du das Amulett und drei Liquid Emotions in Rezeptreihenfolge ein. Prüfe das Notable in der Vorschau und bestätige. Der Grand Mirror kommt erst später."
+      },
+      "aliases": [
+        "Amulett weihen",
+        "einflößen",
+        "Einflößung",
+        "anoint",
+        "annoint",
+        "anointen",
+        "erneunt",
+        "instil",
+        "instill",
+        "salben",
+        "Withered Widow",
+        "Withered Willow",
+        "Welke Weide",
+        "Verwelkte Weide",
+        "Decanter of Madness",
+        "Karaffe des Wahnsinns"
+      ],
+      "target": {
+        "path": "/lexikon/?thema=league",
+        "anchor": "begriff-delirium",
+        "dependency": "mechanics"
+      },
+      "source_slides": [
+        20,
+        36
+      ],
+      "sources": [
+        "https://poe2db.tw/de/Strange_Reflection",
+        "https://poe2dat.com/de/quests/act-10",
+        "https://www.pathofexile.com/forum/view-thread/3932540"
+      ]
+    },
+    {
+      "id": "dominion",
+      "topic": "mechanics",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Warum fehlt Herrschaft im Passivbaum und wie bekomme ich es?",
+        "en": "Why is Dominion missing from my passive tree and how do I get it?",
+        "hybrid": "Warum finde ich Dominion nicht im Passive Tree?"
+      },
+      "answer": {
+        "de": "Herrschaft ist eine bedeutende passive Fertigkeit, die du in 0.5.5 durch Weihen eines Amuletts erhältst. Lege an der Karaffe zuerst Wirkungsvollen Flüssigen Groll, dann Konzentriertes Flüssiges Leiden und zuletzt Konzentrierte Flüssige Isolation ein. Kontrolliere, ob die Vorschau „Herrschaft“ anzeigt, bevor du die Emotionen verbrauchst.",
+        "en": "Dominion is an instil-only notable in 0.5.5. At the Decanter of Madness, use Potent Liquid Contempt first, Concentrated Liquid Suffering second and Concentrated Liquid Isolation third. Check that the preview says Dominion before spending the emotions.",
+        "hybrid": "Dominion ist in 0.5.5 ein Anoint für dein Amulett. Die Reihenfolge am Decanter ist Potent Liquid Contempt, Concentrated Liquid Suffering, Concentrated Liquid Isolation. Achte auf „Concentrated“ bei beiden letzten Zutaten und bestätige erst, wenn die Vorschau Dominion zeigt."
+      },
+      "aliases": [
+        "Dominion",
+        "Herrschaft",
+        "geheimer Anoint",
+        "hidden notable",
+        "Archon buffs",
+        "Dominion recipe",
+        "Concentrated Liquid Suffering",
+        "Concentrated Liquid Isolation",
+        "Dominion Rezept"
+      ],
+      "target": {
+        "path": "/lexikon/",
+        "anchor": "begriff-dominion",
+        "dependency": ""
+      },
+      "source_slides": [
+        35
+      ],
+      "sources": [
+        "https://exiledb.com/passives/dominion",
+        "https://poe2db.tw/de/Dominion"
+      ]
+    },
+    {
+      "id": "ruzhans-trap",
+      "topic": "builds",
+      "patch": "0.5 · Archon Djinn",
+      "question": {
+        "de": "Kann ich Terences Varashta mit Ruzhans Falle spielen?",
+        "en": "Can I use Ruzhan’s Trap with Terence’s Varashta build?",
+        "hybrid": "Kann ich in Terences Varashta Ruzhan’s Trap spielen?"
+      },
+      "answer": {
+        "de": "Ja. In Terences ursprünglichem Archon-Djinn-Guide für 0.5 ist die Falle eine Variante. Sie gibt Ruzhan einen Befehl, der Feuerrunen legt. Für schnelleres Räumen oder zusätzlichen Schaden empfiehlt die Folie im Softcore-Handel den Fallenpfad schon mit Aufstiegspunkten 3 und 4. Im Hardcore-Selbstfund bevorzugt Terence an dieser Stelle Defensive. Du kannst die Falle später wählen, wenn dein Charakter die Begegnungen sicher übersteht.",
+        "en": "Yes. The original 0.5 Archon Djinn guide treats the trap as an option. It gives Ruzhan a command that lays fire runes. For faster clearing or extra burst in Softcore Trade, the guide offers the trap branch as early as Ascendancy points three and four. Terence’s Hardcore SSF route spends those points on defence. You can add the trap later if your character already survives the content comfortably.",
+        "hybrid": "Ja. Im 0.5-Guide für Archon Djinn ist Ruzhan’s Trap optional. Der Command legt Fire Runes und kann Clear und Burst verbessern. Für SC Trade zeigt die Folie den Trap-Pfad bereits mit Ascendancy-Punkten 3 und 4. Terences HCSSF-Variante nimmt an der Stelle Defense. Wenn dein Setup stabil läuft, kannst du Trap später nachholen."
+      },
+      "aliases": [
+        "Ruzhans Trap",
+        "Ruzhan’s Trap",
+        "Ruzhan Trap",
+        "Ruzhans Falle",
+        "Ruthless Trap",
+        "Varasta",
+        "Varashta",
+        "Djinn",
+        "terence",
+        "HCSSF",
+        "Feuerfalle",
+        "Fire Trap",
+        "Archon Djinn"
+      ],
+      "target": {
+        "path": "/build-klassen/",
+        "anchor": "faq-ruzhans-trap",
+        "dependency": ""
+      },
+      "build": "varashta-archon",
+      "source_slides": [
+        22
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=VhAG-jEyry8",
+        "https://poe2db.tw/us/Ruzhans_Trap"
+      ]
+    },
+    {
+      "id": "construct-maps",
+      "topic": "mechanics",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Wo suche ich nach Wirkungsvollem Flüssigem Groll?",
+        "en": "Where should I look for Potent Liquid Contempt?",
+        "hybrid": "Wo farme ich Potent Liquid Contempt?"
+      },
+      "answer": {
+        "de": "Aktiviere einen Großen Spiegel und wähle die Atlas-Passive „Du jagst mir keine Angst mehr ein!“. Stirbt ein einzigartiges Konstrukt im aktiven Delirium-Nebel, gibt ihm die Passive 5 % Chance auf Groll. Die Fundliste zeigt 15 gemeldete Karten und die zugehörigen Bosse. Bei Reservoir und Forge berichten Spieler auch von Melancholie. Prüfe den Einzelfall in der Tabelle, bevor du dich auf eine Karte festlegst.",
+        "en": "Activate a Grand Mirror and allocate “You can’t scare me anymore!” on the Atlas. The passive gives a unique Construct killed inside active Delirium fog a 5% chance to drop Contempt. The list pairs 15 reported maps with their bosses. Players reported Melancholy in Reservoir and Forge, so check each map’s evidence before committing to a route.",
+        "hybrid": "Aktiviere einen Grand Mirror und nimm die Atlas-Passive „You can’t scare me anymore!“. Sie gibt Unique Constructs beim Tod im aktiven Delirium Fog 5 % Chance auf Contempt. In der Fundliste siehst du 15 gemeldete Maps mit Boss und Beleglage. Für Reservoir und Forge gibt es auch Berichte über Melancholy."
+      },
+      "aliases": [
+        "Potent Liquid Contempt",
+        "Groll",
+        "Konstruktbosse",
+        "Construct bosses",
+        "Construction Bosse",
+        "Konstrukt Fundorte",
+        "Reservoir",
+        "Forge",
+        "You can’t scare me anymore"
+      ],
+      "target": {
+        "path": "/lexikon/?fundliste=konstrukte",
+        "anchor": "konstrukt-fundorte",
+        "dependency": "constructs"
+      },
+      "source_slides": [
+        38
+      ],
+      "sources": [
+        "https://poe2db.tw/Atlas_passive_skill",
+        "https://poe2db.tw/us/Monster_Category",
+        "https://www.reddit.com/r/PathOfExile2/comments/1u1cdvi/regex_for_liquid_contempt_farming/"
+      ]
+    },
+    {
+      "id": "loot-craft-sell",
+      "topic": "tools",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Woran erkenne ich, ob ich einen Fund behalten, herstellen oder verkaufen sollte?",
+        "en": "How do I decide whether to keep, craft or sell a drop?",
+        "hybrid": "Fund behalten, craften oder verkaufen?"
+      },
+      "answer": {
+        "de": "Vergleiche die Basis und die passenden Modifikatoren mit deinem nächsten Ausrüstungsziel. Im Crafting-Helfer siehst du, was bei der Gegenstandsstufe möglich ist. Prüfe, ob für den Zielwert noch ein Präfix oder Suffix frei ist. Ist der Fund nach einem Zwischenschritt schon tragbar oder gut verkäuflich, vergleiche den aktuellen Handelswert mit den Mehrkosten und dem Risiko für deinen Schlüsselwert.",
+        "en": "Compare the base and useful modifiers with the upgrade you need. The crafting helper shows what the Item Level permits. Check whether the target has a free Prefix or Suffix slot. If a step made the item wearable or easy to sell, compare its current trade value with the extra currency and the risk of losing your key modifier.",
+        "hybrid": "Vergleiche die Base und passenden Mods mit deinem nächsten Gear-Upgrade. Der Crafting-Helfer zeigt dir, was bei diesem Item Level rollen kann. Prüfe, ob für den Ziel-Mod noch ein Prefix oder Suffix frei ist. Ist der Drop nach einem Schritt schon tragbar oder gut verkäuflich, vergleiche den aktuellen Trade-Preis mit der zusätzlichen Currency und dem Risiko für deinen Key-Mod."
+      },
+      "aliases": [
+        "Lootbewertung",
+        "Behalten craften verkaufen",
+        "Item Guide",
+        "Crafting-Helfer",
+        "price check",
+        "item level",
+        "ilvl",
+        "Prefixes",
+        "Suffixes",
+        "Focus Craft",
+        "Craft or sell"
+      ],
+      "target": {
+        "path": "/grundlagen/crafting-basis-itemlevel-affixe/",
+        "anchor": "crafting-helfer",
+        "dependency": ""
+      },
+      "source_slides": [
+        23,
+        30
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=F4iCdi601NU",
+        "https://www.pathofexile.com/forum/view-thread/3932540"
+      ]
+    },
+    {
+      "id": "build-import",
+      "topic": "tools",
+      "patch": "0.5 · Companion 0.21",
+      "question": {
+        "de": "Wie öffne ich eine .build-Datei im Spiel oder im Companion?",
+        "en": "How do I open a .build file in the game or the Companion?",
+        "hybrid": "Wie importiere ich eine .build-Datei ins Spiel oder ins Overlay?"
+      },
+      "answer": {
+        "de": "Für den Windows-Spielclient kopierst du die gewünschte .build-Datei in deinen Dokumente-Ordner unter My Games/Path of Exile 2/BuildPlanner. Öffne den Passivbaum, wähle den Guide und prüfe eine Gemme oder einen Knoten der gewünschten Variante. Für das Overlay öffnest du das Build Import Interface und wählst „Build importieren“. Dort kannst du die .build-Datei direkt auswählen oder einen Exportcode aus Path of Building 2 über dessen eigenen Import einfügen.",
+        "en": "For the Windows game client, place the .build file under My Games/Path of Exile 2/BuildPlanner in your Documents folder. Open the passive tree, select the guide and check a gem or passive from the variant you wanted. For the overlay, open the Build Import Interface and choose “Import build”. Pick the .build file directly, or use the separate Path of Building 2 option to paste a PoB export code.",
+        "hybrid": "Für den Windows-Client kopierst du die .build-Datei unter My Games/Path of Exile 2/BuildPlanner in deinen Dokumente-Ordner. Wähle den Guide im Passive Tree und prüfe an einem Gem oder Node die Variante. Im Overlay geht es über das Build Import Interface und „Build importieren“. Dort öffnest du die .build-Datei direkt. Für einen PoB2-Code gibt es einen eigenen Import."
+      },
+      "aliases": [
+        "Buildplaner",
+        "Build Planner",
+        "Build Import",
+        "Build importieren",
+        ".build",
+        "PoB",
+        "Path of Building",
+        "Import Interface",
+        "Mobalytics",
+        "Varianten",
+        "Build import interface"
+      ],
+      "target": {
+        "path": "/companion-hilfe/",
+        "anchor": "companion-start",
+        "dependency": ""
+      },
+      "source_slides": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sources": [
+        "https://www.pathofexile.com/forum/view-thread/3932540",
+        "https://mobalytics.gg/poe-2/guides/build-files"
+      ]
+    },
+    {
+      "id": "weapon-sets",
+      "topic": "basics",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Wie benutze ich dieselbe Waffe in beiden Waffensätzen?",
+        "en": "How do I use the same weapon in both weapon sets?",
+        "hybrid": "Wie spiele ich beide Weapon Sets mit derselben Waffe?"
+      },
+      "answer": {
+        "de": "Öffne am PC das Inventar. Klicke mit der rechten Maustaste auf den Waffensatz-Umschalter am belegten Waffenplatz. Die Waffe wird jetzt in beiden Sätzen genutzt. In den Fertigkeitsdetails kannst du anschließend festlegen, welcher Satz beim Einsatz einer bestimmten Fertigkeit aktiv sein soll.",
+        "en": "On PC, open your inventory and right-click the weapon-set toggle on the occupied weapon slot. The weapon is now shared between both sets. Open a skill’s details to assign the weapon set that should be active when you use it.",
+        "hybrid": "Öffne am PC dein Inventar und klicke mit rechts auf den Weapon-Set-Umschalter am belegten Waffenplatz. Jetzt nutzen beide Sets dieselbe Waffe. In den Skill-Details legst du fest, welches Set der jeweilige Skill aktiviert."
+      },
+      "aliases": [
+        "Waffensets",
+        "Waffensätze",
+        "beide Sets",
+        "selbe Waffe",
+        "weapon swap",
+        "weapon set lock",
+        "one weapon both sets"
+      ],
+      "target": {
+        "path": "/grundlagen/waffensets/",
+        "anchor": "zuweisung",
+        "dependency": ""
+      },
+      "source_slides": [
+        21
+      ],
+      "sources": [
+        "https://poe2source.com/learn/poe2/foundations/weapon-swap"
+      ]
+    },
+    {
+      "id": "atlas-start",
+      "topic": "atlas",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Die Kampagne ist fertig. Was mache ich im Atlas als Erstes?",
+        "en": "I have finished the campaign. What is my first Atlas objective?",
+        "hybrid": "Story fertig: Wie starte ich meine erste Map?"
+      },
+      "answer": {
+        "de": "Hol dir in der Zikkurat-Zuflucht bei Doryani den ersten Wegstein. Setze ihn in den Kartenapparat ein und öffne eine erreichbare Karte. Arbeite dich zum ersten Wegbereiter-Turm vor. Sein Leuchtfeuer weist den Weg zur Festung. Die nächsten Wegpunkte findest du im Atlas-Guide.",
+        "en": "Get your first Waystone from Doryani in the Ziggurat Refuge. Use it in the Map Device to open a connected map. Head towards the first Precursor Tower and activate its beacon to locate the Fortress. The Atlas guide shows the next milestones.",
+        "hybrid": "Hol bei Doryani im Ziggurat Refuge deinen ersten Waystone. Öffne am Map Device eine erreichbare Map und arbeite dich zum ersten Precursor Tower vor. Sein Beacon zeigt zur Fortress. Im Atlas-Guide findest du danach die weiteren Wege."
+      },
+      "aliases": [
+        "erster Wegstein",
+        "Kampagne fertig",
+        "erste Map",
+        "Atlas starten",
+        "erste Atlasquest",
+        "first map",
+        "Endgame starten",
+        "Wegbereiter-Turm"
+      ],
+      "target": {
+        "path": "/endgame-atlas/",
+        "anchor": "atlas-start",
+        "dependency": ""
+      },
+      "source_slides": [
+        27,
+        29
+      ],
+      "sources": [
+        "https://www.pathofexile.com/forum/view-thread/3932540",
+        "https://poe2db.tw/de/Legacy_of_the_Precursors"
+      ]
+    },
+    {
+      "id": "atlas-masters",
+      "topic": "atlas",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Wie beginne ich die Aufträge von Doryani, Hilda und Jado?",
+        "en": "How do I start Doryani’s, Hilda’s and Jado’s Atlas quests?",
+        "hybrid": "Wo starten die Atlas Master Quests von Doryani, Hilda und Jado?"
+      },
+      "answer": {
+        "de": "Doryanis Forschungsreihe beginnt an einem Verderbten Nexus. Der Fleischgewordene Zorn ist ein spätes Ziel dieser Reihe. Für Hildas Jagd suchst du ihren Lagerplatz südwestlich des Atlasstarts und folgst den Spuren der vier Großen Bestien. Jados Reihe beginnt an der Anomalie beim Versiegelten Gewölbe nahe dem Start. In der Questvorschau kannst du jeden Meister einzeln öffnen.",
+        "en": "Doryani’s Science starts at a Corrupted Nexus. Immured Fury is a late objective on his route. Hilda’s Hunting starts at her camp southwest of the Atlas start and leads to four Great Beasts. For Jado’s Spycraft, look for the Sealed Vault anomaly near the starting area. Open each master’s route in the quest preview for the remaining steps.",
+        "hybrid": "Doryanis Science startet an einem Corrupted Nexus. Immured Fury gehört ans Ende seiner Reihe. Hildas Quest beginnt an ihrem Camp südwestlich vom Atlasstart und führt zu vier Great Beasts. Für Jado suchst du die Anomaly am Sealed Vault in Startnähe. In der Questvorschau kannst du die Master getrennt durchgehen."
+      },
+      "aliases": [
+        "Doryani",
+        "Jado",
+        "Hilda",
+        "Immured Fury",
+        "Fleischgewordener Zorn",
+        "Atlas Master",
+        "Atlasmeister",
+        "Atlas Master Quest Guide"
+      ],
+      "target": {
+        "path": "/endgame-atlas/",
+        "anchor": "atlas-questvorschau",
+        "dependency": "atlas"
+      },
+      "source_slides": [
+        29
+      ],
+      "sources": [
+        "https://poe2db.tw/de/Doryanis_Science",
+        "https://poe2db.tw/de/Hildas_Hunting",
+        "https://poe2db.tw/de/Jados_Spycraft"
+      ]
+    },
+    {
+      "id": "ritual-audience",
+      "topic": "atlas",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Wo benutze ich die Audienz mit dem König?",
+        "en": "Where do I use An Audience with the King?",
+        "hybrid": "Wo benutze ich An Audience with the King?"
+      },
+      "answer": {
+        "de": "Folge Aoifes Ritualquest nach Caer Tarth westlich des Atlasstarts. Behalte die Audienz im Inventar. Am passenden Ziel auf dem Atlas wählst du die Aktion zum Aufdecken des Kerns des Nichts. Sie verbraucht die Audienz. Erreiche das aufgedeckte Gebiet und besiege dort den König in den Nebeln. Für die Quest bringst du seinen Kopf zum Abbild in Caer Tarth.",
+        "en": "Follow Aoife’s Ritual quest to Caer Tarth, west of the Atlas start. Keep the Audience in your inventory. At the appropriate Atlas location, use the action to reveal The Crux of Nothingness. This consumes the Audience. Reach the revealed area and defeat the King in the Mists. For the quest, take his head back to the effigy in Caer Tarth.",
+        "hybrid": "Folge Aoifes Ritual Quest nach Caer Tarth westlich vom Atlasstart. Lass die Audience im Inventar. Nutze am passenden Atlasziel „Reveal The Crux of Nothingness“. Das verbraucht die Audience. Erreiche das Gebiet, besiege den King in the Mists und bring seinen Kopf für die Quest zum Effigy in Caer Tarth."
+      },
+      "aliases": [
+        "Audience with the King",
+        "An Audience with the King",
+        "Audienz mit dem König",
+        "King in the Mists",
+        "König in den Nebeln",
+        "Crux of Nothingness",
+        "Caer Tarth"
+      ],
+      "target": {
+        "path": "/endgame-atlas/",
+        "anchor": "atlas-ritual.king",
+        "dependency": "atlas"
+      },
+      "source_slides": [
+        26,
+        43
+      ],
+      "sources": [
+        "https://poe2db.tw/de/Legacy_of_the_Maji",
+        "https://www.pathofexile.com/forum/view-thread/4000864"
+      ]
+    },
+    {
+      "id": "breachstone",
+      "topic": "atlas",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Wofür brauche ich den Riss-Stein in Ailiths Quest?",
+        "en": "What do I do with the Breachstone in Ailith’s quest?",
+        "hybrid": "Wie nutze ich den Breachstone in Ailiths Quest?"
+      },
+      "answer": {
+        "de": "Im Kloster der Hüter führt Ailith dich zuerst zum Genesisbaum. Stabilisiere anschließend fünf Risse für sie. Nimm den Riss-Stein von Ailith und benutze ihn, um die Riss-Stadt auf dem Atlas aufzudecken. Reise dorthin und hilf ihr gegen die Schwarmgeborenen. Die Audienz mit dem König gehört zur separaten Ritualquest.",
+        "en": "At the Monastery of the Keepers, Ailith first introduces the Genesis Tree. Stabilise five Breaches for her, then take her Breachstone and use it to reveal the Breach City on the Atlas. Travel there and help her fight the Hiveborn. An Audience with the King belongs to the separate Ritual quest.",
+        "hybrid": "Im Monastery of the Keepers zeigt Ailith dir den Genesis Tree. Stabilisiere fünf Breaches und nimm ihren Breachstone. Damit deckst du die Breach City auf dem Atlas auf. Reise hin und hilf Ailith gegen die Hiveborn. Die Audience with the King gehört zu Ritual."
+      },
+      "aliases": [
+        "Breach Stone",
+        "Breachstone",
+        "Riss-Stein",
+        "Rissstein",
+        "Breach City",
+        "Riss-Stadt",
+        "Ailith",
+        "Einladung",
+        "Breach Zugang"
+      ],
+      "target": {
+        "path": "/endgame-atlas/",
+        "anchor": "atlas-breach.stone",
+        "dependency": "atlas"
+      },
+      "source_slides": [
+        43
+      ],
+      "sources": [
+        "https://poe2db.tw/de/Keepers_of_the_Flame",
+        "https://www.pathofexile.com/forum/view-thread/3932540"
+      ]
+    },
+    {
+      "id": "tablet-slots",
+      "topic": "atlas",
+      "patch": "0.5.5f",
+      "question": {
+        "de": "Wie bekomme ich einen vierten Tafelplatz für eine Karte?",
+        "en": "How do I get a fourth tablet slot for a map?",
+        "hybrid": "Wann kann ich vier Tablets auf einer Map nutzen?"
+      },
+      "answer": {
+        "de": "Die Wegstein-Modifikatoren bestimmen zuerst die gewöhnlichen Plätze. Für den zusätzlichen Platz brauchst du die Atlas-Passive „Industrielle Fortschritte“. Sie setzt den Abschluss des Brennenden Monolithen voraus und wirkt auf Stadtkarten ab Gebietsstufe 75. Sind drei reguläre Plätze verfügbar und die Bedingungen erfüllt, kannst du dort eine vierte Tafel einsetzen.",
+        "en": "Waystone modifiers determine the regular slots. For an additional slot you need the Industrial Improvements Atlas notable. It requires completing the Burning Monolith and applies to City maps of area level 75 or higher. If your Waystone already opens three slots, these conditions allow a fourth tablet.",
+        "hybrid": "Die Waystone Mods bestimmen deine normalen Slots. „Industrial Improvements“ gibt auf City Maps ab Area Level 75 einen zusätzlichen Slot, wenn du den Burning Monolith abgeschlossen hast. Mit drei regulären Slots kannst du dort also ein viertes Tablet einsetzen."
+      },
+      "aliases": [
+        "Industrial Improvements",
+        "Industrial Improvement",
+        "City Maps",
+        "vier Tablets",
+        "vier Tafeln",
+        "four tablets",
+        "vierter Slot",
+        "Tablet Slots",
+        "City Biome",
+        "Industrielle Fortschritte"
+      ],
+      "target": {
+        "path": "/endgame-atlas/",
+        "anchor": "atlas-tablet-slots",
+        "dependency": ""
+      },
+      "source_slides": [
+        45
+      ],
+      "sources": [
+        "https://poe2db.tw/Atlas_passive_skill",
+        "https://metabot.gg/en/path-of-exile-2/atlas-tree/atlas-industrial-improvements",
+        "https://raiddex.com/de/path-of-exile-2/passive/industrielle-fortschritte"
+      ]
+    },
+    {
+      "id": "league-choice",
+      "topic": "mechanics",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Welche Liga-Mechanik hilft mir bei meinem nächsten Ausrüstungsziel?",
+        "en": "Which league mechanic fits my next upgrade?",
+        "hybrid": "Welche League Mechanic soll ich für mein Gear spielen?"
+      },
+      "answer": {
+        "de": "Überlege zuerst, welcher Schritt fehlt. Für eine Amulett-Weihe liefert Delirium Flüssige Emotionen. Im Abgrund suchst du Knochen und bestimmte Omen für entweihte Modifikatoren. Im Riss kannst du mit dem Genesisbaum auf Schmuck und Katalysatoren hinarbeiten. Bei Ritualen entscheidest du mit Tribut, welches Angebot du nimmst oder zurückstellst. In SSF hilft dir das eigene Ziel bei der Wahl. Im Handel vergleichst du zusätzlich den aktuellen Wert der Belohnungen.",
+        "en": "Start with the upgrade you need. Delirium supplies Liquid Emotions for amulet instils. Abyss offers bones and specific omens for Desecrated modifiers. In Breach, the Genesis Tree lets you work towards jewellery and catalysts. Ritual lets you spend Tribute to choose or defer an offer. In SSF, pick the reward your build needs. In Trade, also check current prices before committing to a farm.",
+        "hybrid": "Geh vom gewünschten Upgrade aus. Für den Amulet-Anoint brauchst du Liquid Emotions aus Delirium. Abyss liefert Bones und bestimmte Omens für Desecrated Mods. Über Breach und den Genesis Tree kommst du an Jewellery und Catalysts. Bei Ritual entscheidest du mit Tribute, was du kaufst oder deferst. In SSF zählt dein nächster Fortschritt, in Trade zusätzlich der aktuelle Preis."
+      },
+      "aliases": [
+        "Liga Mechanik",
+        "League Mechanic",
+        "farming",
+        "Farmingstrategien",
+        "SSF Farming",
+        "Was farmen",
+        "Juicing",
+        "Mechanic Loot",
+        "Delirium Ritual Abyss Breach"
+      ],
+      "target": {
+        "path": "/lexikon/?thema=league",
+        "anchor": "lexikon-filter",
+        "dependency": "mechanics"
+      },
+      "source_slides": [
+        31,
+        32,
+        33,
+        41
+      ],
+      "sources": [
+        "https://www.pathofexile.com/forum/view-thread/3932540",
+        "https://www.pathofexile.com/forum/view-thread/4000864"
+      ]
+    },
+    {
+      "id": "azak-bog",
+      "topic": "campaign",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Wo finde ich den Zugang zum Azak-Moor in Akt 3?",
+        "en": "Where is the entrance to the Azak Bog in Act 3?",
+        "hybrid": "Wie komme ich in Akt 3 ins Azak Bog?"
+      },
+      "answer": {
+        "de": "Der Zugang zum Azak-Moor zweigt in 0.5.5 von den Matlan-Wasserwegen ab. Erkunde das Moor und aktiviere den Wegpunkt. Hier findest du Ignagduk, die Moorhexe. Die Übersicht der Kampagnenbelohnungen zeigt dir den zugehörigen dauerhaften Bonus.",
+        "en": "In 0.5.5, the entrance to the Azak Bog branches off the Matlan Waterways in Act 3. Enter the bog and activate the waypoint. Ignagduk, the Bog Witch, is the boss to look for here. The campaign rewards guide lists the permanent bonus for this encounter.",
+        "hybrid": "Der Zugang zum Azak Bog zweigt in 0.5.5 von den Matlan Waterways in Akt 3 ab. Aktiviere im Bog den Waypoint. Hier findest du Ignagduk, the Bog Witch. In den Campaign Rewards siehst du den zugehörigen permanenten Bonus."
+      },
+      "aliases": [
+        "Azak-Moor",
+        "Azak Bog",
+        "Matlan Waterways",
+        "Ignagduk",
+        "Bog Witch",
+        "Act 3",
+        "Akt drei",
+        "Wegpunkt Moor"
+      ],
+      "target": {
+        "path": "/grundlagen/kampagnenbelohnungen/",
+        "anchor": "akt-3",
+        "dependency": ""
+      },
+      "source_slides": [
+        13
+      ],
+      "sources": [
+        "https://poe2db.tw/de/The_Azak_Bog",
+        "https://www.poe2wiki.net/wiki/The_Matlan_Waterways"
+      ]
+    },
+    {
+      "id": "runeseeker",
+      "topic": "campaign",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Warum finde ich den Verisium-Amboss nicht an der alten Stelle in Akt 1?",
+        "en": "Why can’t I find the Verisium Anvil at the old Act 1 location?",
+        "hybrid": "Wo schalte ich den Verisium Anvil außerhalb der Runes-of-Aldur-Liga frei?"
+      },
+      "answer": {
+        "de": "Prüfe die Liga deines Charakters. Die frühen Routen in den Akten 1 bis 3 stammen aus der ursprünglichen Liga Runen von Aldur. Seit 0.5.5 schaltest du den Verisium-Amboss außerhalb dieser Liga über den Abschluss von „The Runeseeker“ in Akt 4 frei. Danach kann Farrow in deinem Versteck stehen.",
+        "en": "Check your character’s league. The early Act 1–3 routes were part of the original Runes of Aldur league. From 0.5.5 onwards, outside that league, complete The Runeseeker in Act 4 to unlock the Verisium Anvil. After the unlock, Farrow can be placed in your hideout.",
+        "hybrid": "Prüfe zuerst deine League. Die alten Akt-1-bis-3-Routen gehören zur ursprünglichen Runes of Aldur League. Außerhalb dieser League schaltest du seit 0.5.5 den Verisium Anvil nach The Runeseeker in Akt 4 frei. Dann kannst du Farrow in dein Hideout holen."
+      },
+      "aliases": [
+        "Runeseeker",
+        "Runensucher",
+        "Runen von Aldur",
+        "Runes of Aldur",
+        "Amboss",
+        "Verisium Anvil",
+        "Runesteine",
+        "Aldur Forge"
+      ],
+      "target": {
+        "path": "/lexikon/?thema=league",
+        "anchor": "begriff-aldur",
+        "dependency": "mechanics"
+      },
+      "source_slides": [
+        14,
+        15,
+        16
+      ],
+      "sources": [
+        "https://www.pathofexile.com/forum/view-thread/4000864"
+      ]
+    },
+    {
+      "id": "ci-heavy-buffer",
+      "topic": "builds",
+      "patch": "0.5.5",
+      "question": {
+        "de": "Warum sterbe ich nach dem Wechsel zu Chaos-Impfung trotz vollem Energieschild?",
+        "en": "Why can I die with full Energy Shield after switching to Chaos Inoculation?",
+        "hybrid": "Warum sterbe ich mit CI trotz vollem Energy Shield?"
+      },
+      "answer": {
+        "de": "Prüfe im Passivbaum zuerst „Starker Puffer“. Chaos-Impfung setzt dein maximales Leben auf 1. Mit Starkem Puffer umgehen 5 % des erlittenen Schadens deinen Energieschild. Dadurch kann schon der Anteil eines einzelnen Treffers den letzten Lebenspunkt kosten. Nimm diesen Knoten beim Wechsel heraus und prüfe die übrigen Effekte deiner Ausrüstung und Passivpunkte auf Lebenskosten oder weitere Schildumgehung.",
+        "en": "Check whether you have Heavy Buffer allocated. Chaos Inoculation sets your maximum life to 1. With Heavy Buffer, 5% of damage taken bypasses Energy Shield, so part of a single hit can reach that last point of life. Remove the node when switching to CI and review your other passives and gear for effects that spend life or bypass Energy Shield.",
+        "hybrid": "Prüfe im Passive Tree „Heavy Buffer“. CI setzt dein maximales Life auf 1. Mit Heavy Buffer umgehen 5 % des erlittenen Schadens dein Energy Shield. Schon ein einzelner Hit kann so deinen letzten Lebenspunkt treffen. Nimm den Node beim CI-Switch heraus und prüfe dein übriges Setup auf Life-Kosten oder weiteren ES-Bypass."
+      },
+      "aliases": [
+        "CI",
+        "Chaos Inoculation",
+        "Chaos-Impfung",
+        "Heavy Buffer",
+        "Energieschild umgehen",
+        "ES bypass",
+        "one life",
+        "1 Leben",
+        "CI sofort tot",
+        "Starker Puffer"
+      ],
+      "target": {
+        "path": "/lexikon/",
+        "anchor": "begriff-chaos-inoculation",
+        "dependency": ""
+      },
+      "source_slides": [
+        34
+      ],
+      "sources": [
+        "https://exiledb.com/passives/heavy-buffer",
+        "https://www.poe2wiki.net/wiki/Chaos_Inoculation",
+        "https://poe2db.tw/de/Heavy_Buffer"
+      ]
+    }
+  ]
+}

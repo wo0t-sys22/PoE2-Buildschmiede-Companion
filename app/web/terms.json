@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
   "terms": {
+    "website.aldur": {
+      "role": "info",
+      "routeAliases": ["Runen von Aldur", "Runes of Aldur"]
+    },
     "area.grelwood": {
       "role": "info",
       "templateKey": "grelwood",
@@ -1259,7 +1263,9 @@
         "seltener Skarabäus",
         "seltenen Skarabäus",
         "Rare Mobs",
-        "rare mob"
+        "rare mob",
+        "seltenen Abgrundgegner",
+        "rare Abyssal monster"
       ]
     },
     "npc.renly": {
@@ -1586,7 +1592,10 @@
     "rare.rare_item": {
       "role": "rare",
       "aliases": [
-        "rare item"
+        "rare item",
+        "seltener Gegenstand",
+        "seltenen Gegenstand",
+        "seltener Ausrüstungsgegenstand"
       ]
     },
     "skill.barrage": {
@@ -3147,7 +3156,10 @@
         "de": "Mastodon-Ödlande",
         "en": "Mastodon Badlands",
         "hybrid": "Mastodon Badlands"
-      }
+      },
+      "routeAliases": [
+        "Mastodon-Ödlanden"
+      ]
     },
     "act2.pits": {
       "role": "blue",
@@ -3240,7 +3252,10 @@
         "de": "Lichtlose Passage",
         "en": "Lightless Passage",
         "hybrid": "Lightless Passage"
-      }
+      },
+      "routeAliases": [
+        "Lichtlosen Passage"
+      ]
     },
     "act2.well": {
       "role": "blue",
@@ -4571,10 +4586,15 @@
     "act4.deserted": {
       "role": "info",
       "labels": {
-        "de": "Fernstation",
-        "en": "Deserted Post",
-        "hybrid": "Deserted Post"
-      }
+        "de": "Verlassener Posten",
+        "hybrid": "Deserted Post",
+        "en": "Deserted Post"
+      },
+      "routeAliases": [
+        "Verlassenen Posten",
+        "verlassenen Posten",
+        "Fernstation"
+      ]
     },
     "mod.weapon_set_passive_skill_points": {
       "role": "mod",
@@ -5321,6 +5341,83 @@
         "seltenes Perlmuttamulett",
         "seltenen Perlmuttamulett",
         "seltenes Pearlescent Amulet"
+      ]
+    },
+    "act1.lost_catacombs": {
+      "role": "blue",
+      "labels": {
+        "de": "Verschollene Katakomben",
+        "hybrid": "Lost Catacombs",
+        "en": "Lost Catacombs"
+      },
+      "routeAliases": [
+        "Verschollenen Katakomben",
+        "verschollenen Katakomben"
+      ]
+    },
+    "act2.abyssal_depths": {
+      "role": "blue",
+      "labels": {
+        "de": "Abgründige Tiefen",
+        "hybrid": "Abyssal Depths",
+        "en": "Abyssal Depths"
+      },
+      "routeAliases": [
+        "Abgründigen Tiefen",
+        "abgründigen Tiefen"
+      ]
+    },
+    "website.abyss": {
+      "role": "info",
+      "labels": {
+        "de": "Abgrund",
+        "hybrid": "Abyss",
+        "en": "Abyss"
+      },
+      "routeAliases": [
+        "Abgründen",
+        "Abgründe",
+        "Abysses",
+        "Abgrundspalte",
+        "Abgrundspalten",
+        "Abgrundgrube",
+        "Abgrundgruben",
+        "Abyss Pit"
+      ]
+    },
+    "website.desecrated_modifier": {
+      "role": "mod",
+      "labels": {
+        "de": "Entweihter Modifikator",
+        "hybrid": "Desecrated Modifier",
+        "en": "Desecrated Modifier"
+      },
+      "routeAliases": [
+        "entweihter Modifikator",
+        "entweihten Modifikator",
+        "entweihte Modifikatoren",
+        "Desecrated Modifiers",
+        "entweihtem Modifikator",
+        "Entweihung",
+        "Desecration"
+      ]
+    },
+    "currency.gnawed_rib": {
+      "role": "currency",
+      "labels": {
+        "de": "Angenagte Rippe",
+        "hybrid": "Gnawed Rib",
+        "en": "Gnawed Rib"
+      },
+      "routeAliases": [
+        "Angenagten Rippe"
+      ]
+    },
+    "rare.rare_armour": {
+      "role": "rare",
+      "aliases": [
+        "rare armour",
+        "seltene Rüstung"
       ]
     }
   },

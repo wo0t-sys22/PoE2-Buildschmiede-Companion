@@ -27,25 +27,9 @@
       "label": "PoE2DB Act 4",
       "url": "https://poe2db.tw/us/Act_4"
     },
-    "holten-db": {
-      "label": "PoE2DB Holten",
-      "url": "https://poe2db.tw/us/Interlude_Curse_of_Holten"
-    },
-    "vastiri-db": {
-      "label": "PoE2DB Vastiri",
-      "url": "https://poe2db.tw/us/Interlude_The_Stolen_Barya"
-    },
     "chaos-db": {
       "label": "PoE2DB Trial of Chaos",
       "url": "https://poe2db.tw/us/The_Trial_of_Chaos"
-    },
-    "interlude-db": {
-      "label": "PoE2DB Interludes",
-      "url": "https://poe2db.tw/us/Interlude"
-    },
-    "kriar-db": {
-      "label": "PoE2DB Kriar",
-      "url": "https://poe2db.tw/us/Interlude_Doryanis_Contingency"
     },
     "areagne": {
       "label": "PoE2DB Areagne",
@@ -222,18 +206,6 @@
     "act4-vault": {
       "label": "PoE Vault · Act 4",
       "url": "https://www.poe-vault.com/poe2/guides/act-4-boss-guide"
-    },
-    "ogham-vault": {
-      "label": "PoE Vault · Holten",
-      "url": "https://www.poe-vault.com/poe2/guides/ogham-interlude-boss-guide"
-    },
-    "kriar-vault": {
-      "label": "PoE Vault · Kriar",
-      "url": "https://www.poe-vault.com/poe2/guides/kriar-interlude-boss-guide"
-    },
-    "vastiri-vault": {
-      "label": "PoE Vault · Vastiri",
-      "url": "https://www.poe-vault.com/poe2/guides/vastiri-interlude-boss-guide"
     },
     "chaos-vault": {
       "label": "PoE Vault · Trial of Chaos",
@@ -2486,7 +2458,7 @@
       "aliases": [],
       "name": "Tavakai, the Chieftain",
       "required": true,
-      "reward": "Sprich mit Tavakai und kehre nach Kingsmarch zurück. Dort beginnen die Zwischenakte.",
+      "reward": "Sprich mit Tavakai und kehre nach Kingsmarch zurück.",
       "quick": "Drei Sprung-Slams vollständig abwarten. Bei Kitava-Markierung möglichst keinen Treffer kassieren.",
       "window": "",
       "prep": "",
@@ -2525,530 +2497,6 @@
         "whirling-assault": "Bell nach der Serie setzen und mit einer kurzen Whirling-Runde treffen. Bei Bodenfeuer lösen."
       },
       "rewardKind": "progress"
-    },
-    {
-      "id": "isolde-heldra",
-      "act": "Interlude · Holten",
-      "zone": "Scorched Farmlands",
-      "aliases": [],
-      "name": "Isolde & Heldra",
-      "required": true,
-      "reward": "Der Weg zu den Stones of Serle ist frei.",
-      "quick": "Beide Hexen vor dir halten. Beim Feuerstrahl seitlich ausweichen, bei der Eisnova eine Lücke suchen.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Feuerstrahl",
-          "tell": "Heldra lädt und hält einen Feuerstrahl in deine Richtung.",
-          "answer": "Schnell seitlich aus der Linie.",
-          "id": "feuerstrahl"
-        },
-        {
-          "name": "Eisnova",
-          "tell": "Isolde sammelt Eis und deckt damit Bereiche rund um sich ab.",
-          "answer": "In eine Lücke gehen. Abstand zu Wolfskadavern halten.",
-          "id": "eisnova"
-        }
-      ],
-      "sources": [
-        "ogham-vault",
-        "holten-db"
-      ],
-      "plan": "Halte beide Hexen im Bild. Stehst du zwischen ihnen, kann dich Heldras Feuerstrahl aus der sicheren Lücke in Isoldes Eis treiben.",
-      "build_tips": {
-        "whirling-assault": "Bell in den freien Winkel legen und eine Hexe konsequent fokussieren."
-      },
-      "rewardKind": "progress"
-    },
-    {
-      "id": "siora",
-      "act": "Interlude · Holten",
-      "zone": "Stones of Serle",
-      "aliases": [],
-      "name": "Siora, Blade of the Mists",
-      "required": true,
-      "reward": "Sprich mit Una. Kehre zur Dunkelheit in den Scorched Farmlands zurück, um The Blackwood zu betreten.",
-      "quick": "Arena dunkel → zum leuchtenden Megalithen.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Chaos-Sunder",
-          "tell": "Sie orientiert sich zu dir und setzt zum schweren Schwertschlag an.",
-          "answer": "Seitlich aus der Richtung der Furche.",
-          "id": "chaos-sunder"
-        },
-        {
-          "name": "Sturm",
-          "tell": "Sie verschwindet am Rand, bevor sie wieder aus dem Sturm angreift.",
-          "answer": "Lauf zum leuchtenden Megalithen, um die Arena wieder zu erhellen.",
-          "id": "sturm"
-        }
-      ],
-      "sources": [
-        "ogham-vault",
-        "holten-db"
-      ],
-      "plan": "Halte dir einen Weg durch die Mitte offen. Am dunklen Rand nimmst du Schaden, auch wenn Sioras Klingen dich verfehlen.",
-      "build_tips": {
-        "whirling-assault": "Whirling erst beim sichtbaren Boss und mit Platz zum Ausweichen starten."
-      },
-      "rewardKind": "progress"
-    },
-    {
-      "id": "sigbert-godwin",
-      "act": "Interlude · Holten",
-      "zone": "Holten",
-      "aliases": [],
-      "name": "Sigbert & Godwin",
-      "required": false,
-      "reward": "Armourer’s Scrap.",
-      "quick": "Godwin allein → aus dem großen Kreis. Sigbert allein → drei Hammerschläge abwarten.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Göttliche Nova",
-          "tell": "Ist Sigbert gefallen, kann Godwin stehen bleiben und einen großen Kreis um sich ziehen.",
-          "answer": "Den Radius ganz verlassen.",
-          "id": "gottliche-nova"
-        },
-        {
-          "name": "Eisspitzen",
-          "tell": "Sigbert setzt kleinere Bodenzeichen mit der Waffe.",
-          "answer": "Auf die freie Seite wechseln, bis die Spitzen hoch sind.",
-          "id": "eisspitzen"
-        },
-        {
-          "name": "Hammerfolge",
-          "tell": "Wenn Godwin fällt, kann Sigbert dreimal zuschlagen. Von jedem Treffer breiten sich Eissplitter aus.",
-          "answer": "Halte Abstand für alle drei Schläge. Weiche durch die Lücken zwischen den Splittern aus.",
-          "id": "hammerfolge"
-        }
-      ],
-      "sources": [
-        "ogham-vault",
-        "interlude-db"
-      ],
-      "plan": "Behalte beide vor dir. Wer übrig bleibt, bekommt einen neuen Angriff: Godwin eine Flächennova, Sigbert eine Folge von Hammerschlägen.",
-      "build_tips": {
-        "whirling-assault": "Bell nur setzen, wenn beide Schlaglinien aus deinem Rückweg raus sind."
-      },
-      "rewardKind": "drop"
-    },
-    {
-      "id": "oswin",
-      "act": "Interlude · Holten",
-      "zone": "Wolvenhold",
-      "aliases": [],
-      "name": "Oswin, the Dread Warden",
-      "required": false,
-      "reward": "Benutze das Warden’s Ledger für zwei Waffen-Set-Passivpunkte.",
-      "quick": "Wenn Oswin eine Glocke stellt, Abstand. Eisspitzen bleiben danach gefährlich.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Glockenschlag",
-          "tell": "Oswin stellt die Glocke frontal auf und schlägt mit beiden Äxten hinein.",
-          "answer": "Aus dem Bereich bevor sie explodiert.",
-          "id": "glockenschlag"
-        },
-        {
-          "name": "Eisflächen",
-          "tell": "Spikes wachsen von Bodenstellen oder ringförmig um ihn.",
-          "answer": "Zwischen den sichtbaren Stellen bleiben und die Eisränder abwarten.",
-          "id": "eisflachen"
-        }
-      ],
-      "sources": [
-        "ogham-vault",
-        "interlude-db"
-      ],
-      "plan": "Lass dir gegenüber der Glocke Platz. Ihre Explosion reicht weiter als der sichtbare Glockenkörper.",
-      "build_tips": {
-        "whirling-assault": "Deine Bell erst nach seiner Frostglocke einsetzen."
-      },
-      "afterFight": "",
-      "rewardKind": "drop"
-    },
-    {
-      "id": "elswyth-wulfric",
-      "act": "Interlude · Holten",
-      "zone": "Holten Estate",
-      "aliases": [],
-      "name": "Thane Wulfric & Lady Elswyth",
-      "required": true,
-      "reward": "Der Auftrag in Holten ist abgeschlossen.",
-      "quick": "Knochenkäfig → ein Wandstück zerstören. Der überlebende Gegner wird stärker.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Elswyths Nahkampffolge",
-          "tell": "Sie schließt auf und setzt mehrere Treffer aneinander.",
-          "answer": "Bis zum letzten Treffer in Bewegung bleiben.",
-          "id": "elswyths-nahkampffolge"
-        },
-        {
-          "name": "Überlappung",
-          "tell": "Wulfric nähert sich von der anderen Seite während Elswyth angreift.",
-          "answer": "Zur offenen Flanke wechseln, bis beide wieder vor dir liegen.",
-          "id": "uberlappung"
-        },
-        {
-          "name": "Elswyths Knochenkäfig",
-          "tell": "Eine Knochenwand schließt sich rings um dich. Kurz darauf fallen Splitter hinein.",
-          "answer": "Zerstöre ein einziges Wandstück und lauf durch die Öffnung.",
-          "id": "knochenkaefig"
-        }
-      ],
-      "sources": [
-        "ogham-vault",
-        "interlude-db"
-      ],
-      "plan": "Der Überlebende erhält verstärkte Angriffe. Schwäche beide, solange du sie zusammen treffen kannst, um diese letzte Phase kurz zu halten.",
-      "build_tips": {
-        "whirling-assault": "Bell für eine ruhige Position nutzen. Einen Gegner gezielt finishen, statt jedem Treffer hinterherzulaufen."
-      },
-      "rewardKind": "progress"
-    },
-    {
-      "id": "lythara",
-      "act": "Interlude · Kriar",
-      "zone": "Kriar Village",
-      "aliases": [],
-      "name": "Lythara, the Wayward Spear",
-      "required": false,
-      "reward": "+40 Spirit für den Ausbau",
-      "quick": "Beim Giftstoß quer ausweichen, Rückweg sauber halten.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Giftstoß",
-          "tell": "Sie lädt den Speer und setzt zum Vorstoß an, aus dem zwei Schlangen entstehen.",
-          "answer": "Beim Stoß seitlich rollen.",
-          "id": "giftstoss"
-        },
-        {
-          "name": "Sprung mit Giftwürfen",
-          "tell": "Sie springt zurück und verteilt Pfützen im Fächer.",
-          "answer": "Über freien Boden herangehen und keine Pfütze schneiden.",
-          "id": "sprung-mit-giftwurfen"
-        }
-      ],
-      "sources": [
-        "kriar-vault",
-        "kriar-db"
-      ],
-      "plan": "Kämpfe etwas abseits der Wand. Ihr geworfener Speer kann dort Geschosse zurück in die Arena schicken.",
-      "build_tips": {
-        "whirling-assault": "Whirling von der trockenen Flanke auf kurzem Weg spielen."
-      },
-      "rewardText": "Benutze Gemcrust Skull für dauerhaft +40 Maximum Spirit. Dazu gibt es eine Uncut Spirit Gem auf Stufe 14.",
-      "rewardKind": "drop"
-    },
-    {
-      "id": "yeti",
-      "act": "Interlude · Kriar",
-      "zone": "Howling Caves",
-      "aliases": [],
-      "name": "The Abominable Yeti",
-      "required": false,
-      "reward": "Bring die Icy Tusks zu Hilda. Benutze ihr Buch für zwei Waffen-Set-Passivpunkte.",
-      "quick": "Säulenlinie und Rollbahn beide seitlich ausweichen.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Kältefurche",
-          "tell": "Er hebt die Säule und schlägt eine Linie vor sich in den Boden.",
-          "answer": "Weich quer zur Säule aus. Wenn du gerade zurückläufst, bleibst du in der Furche.",
-          "id": "kaltefurche"
-        },
-        {
-          "name": "Rollangriff",
-          "tell": "Er wirft sich in eine auf dich gerichtete Rolle.",
-          "answer": "Geh seitlich aus der Bahn. Greif von hinten an, sobald die Rolle endet.",
-          "id": "rollangriff"
-        }
-      ],
-      "sources": [
-        "kriar-vault",
-        "kriar-db"
-      ],
-      "plan": "",
-      "build_tips": {
-        "whirling-assault": "Bell nach der Rolle auf der gegenüberliegenden Seite des Einschlags setzen."
-      },
-      "afterFight": "",
-      "rewardKind": "quest"
-    },
-    {
-      "id": "rakkar",
-      "act": "Interlude · Kriar",
-      "zone": "Glacial Tarn",
-      "aliases": [],
-      "name": "Rakkar, the Frozen Talon",
-      "required": true,
-      "reward": "Der Weg zu den Kriar Peaks ist frei.",
-      "quick": "Beim Abheben in Bewegung bleiben. Im Eiskäfig durch freie Felder.",
-      "window": "",
-      "prep": "Schutz vor Einfrieren hilft dir, zwischen den Eisspitzen beweglich zu bleiben.",
-      "attacks": [
-        {
-          "name": "Sturzflug",
-          "tell": "Er verschwindet nach oben und stürzt auf deine Position zurück.",
-          "answer": "In Bewegung bleiben und beim Landen quer ausweichen.",
-          "id": "sturzflug"
-        },
-        {
-          "name": "Eiskäfig",
-          "tell": "Er schützt sich und löst wiederholt Boden-Spikes aus.",
-          "answer": "Freie Felder wechseln, bis die Pulse enden.",
-          "id": "eiskafig"
-        },
-        {
-          "name": "Schneeball",
-          "tell": "Eine Schneekugel wird auf einer Spiralbahn größer.",
-          "answer": "Außerhalb ihrer nächsten Bahn weiterlaufen.",
-          "id": "schneeball"
-        }
-      ],
-      "sources": [
-        "kriar-vault",
-        "kriar-db"
-      ],
-      "plan": "Lass die wachsende Schneekugel an dir vorbeiziehen, bevor du zur Landestelle läufst. Auf ihrer Spiralbahn kann sie den Rückweg kreuzen.",
-      "build_tips": {
-        "whirling-assault": "Bell an die Landestelle legen, wenn die anderen Eisflächen weg sind."
-      },
-      "prepBeforeFight": true,
-      "rewardKind": "progress"
-    },
-    {
-      "id": "stormgore",
-      "act": "Interlude · Kriar",
-      "zone": "Etched Ravine",
-      "aliases": [],
-      "name": "Stormgore, the Guardian",
-      "required": true,
-      "reward": "Der Ausgang führt zum Cuachic Vault.",
-      "quick": "Dreier-Slam mit Verzögerung. Beim Blitzatem die Flanke wechseln.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Dreierkombo",
-          "tell": "Zwei Slams kommen schnell, der dritte später.",
-          "answer": "Für den letzten die Rolle bis zur Slam-Bewegung zurückhalten.",
-          "id": "dreierkombo"
-        },
-        {
-          "name": "Blitzatem",
-          "tell": "Er beugt sich vor und zieht einen Blitzfächer.",
-          "answer": "Lauf seitlich um ihn herum und warte den abschließenden Axthieb ab.",
-          "id": "blitzatem"
-        }
-      ],
-      "sources": [
-        "kriar-vault",
-        "kriar-db"
-      ],
-      "plan": "Bleib beim Blitzatem seitlich in Bewegung. Auch wenn die Blitze nachlassen, folgt noch ein Schwung mit der Axt.",
-      "build_tips": {
-        "whirling-assault": "Whirling erst nach dem dritten Slam in die freie Flanke lenken."
-      },
-      "rewardKind": "progress"
-    },
-    {
-      "id": "zolin-zelina",
-      "act": "Interlude · Kriar",
-      "zone": "Cuachic Vault",
-      "aliases": [
-        "The Cuachic Vault"
-      ],
-      "name": "Zolin & Zelina",
-      "required": true,
-      "reward": "Ruf Doryani, um diesen Zwischenakt abzuschließen.",
-      "quick": "Rote Kreise früh verlassen und beim Doppelboss die freie Seite verteidigen.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Roter Jagdkreis",
-          "tell": "Zelina setzt einen großen roten Kreis und greift darin mit Teleports an.",
-          "answer": "Den Kreis rasch ganz verlassen.",
-          "id": "roter-jagdkreis"
-        },
-        {
-          "name": "Klauen-Kombo",
-          "tell": "Zelina stößt vor und setzt mehrere Klauentreffer hintereinander.",
-          "answer": "Seitlich weiterlaufen, bis die Serie endet.",
-          "id": "klauen-kombo"
-        },
-        {
-          "name": "Große Zielmarkierung",
-          "tell": "In der Arena entstehen kräftige Markierungen während der Doppelphase.",
-          "answer": "Wechsle auf die nächste freie Stelle, bevor du wieder ausholst.",
-          "id": "grosse-zielmarkierung"
-        }
-      ],
-      "sources": [
-        "kriar-vault",
-        "kriar-db"
-      ],
-      "plan": "Zelina gewinnt durch Treffer Leben zurück. Brich deinen Angriff ab, wenn sie sich zu dir teleportiert, auch wenn Zolin gerade offen steht.",
-      "build_tips": {
-        "whirling-assault": "Bell nur auf freier Fläche. Kurze Whirling-Abschnitte, bis der zweite Gegner wieder sichtbar ist."
-      },
-      "rewardKind": "progress"
-    },
-    {
-      "id": "akthi-anundr",
-      "act": "Interlude · Vastiri",
-      "zone": "Khari Crossing",
-      "aliases": [
-        "The Khari Crossing"
-      ],
-      "name": "Akthi & Anundr",
-      "required": false,
-      "reward": "Hol bei Risu das Buch ab und benutze es für zwei Fertigkeitspunkte für Waffensets.",
-      "quick": "Ein Ziel fokussieren. Beim Auftauchen des Wurms zur Seite.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Schwanz-Slam",
-          "tell": "Akthi holt sichtbar mit dem Schwanz aus.",
-          "answer": "Quer zur Stirnseite weiterlaufen.",
-          "id": "schwanz-slam"
-        },
-        {
-          "name": "Sandwurm",
-          "tell": "Anundr gräbt sich ein und stößt mit Geschossen und Larven aus dem Boden.",
-          "answer": "Über freie Fläche aus dem Auftauchort, dann auf Gift und Schwanz achten.",
-          "id": "sandwurm"
-        }
-      ],
-      "sources": [
-        "vastiri-vault",
-        "interlude-db"
-      ],
-      "plan": "Konzentriere dich auf einen der beiden. Solange Anundr unter dem Sand ist, achte beim Angriff auf Akthi auf die nächste Auftauchstelle.",
-      "build_tips": {
-        "whirling-assault": "Bell an einem freien Randstück stellen. Mit einer kurzen Whirling-Bahn beide treffen, wenn es sich ergibt."
-      },
-      "rewardKind": "quest"
-    },
-    {
-      "id": "elzarah",
-      "act": "Interlude · Vastiri",
-      "zone": "Sel Khari Sanctuary",
-      "aliases": [],
-      "name": "Elzarah, the Cobra Lord",
-      "required": true,
-      "reward": "Sprich mit Asala, damit es zu den Galai Gates weitergeht.",
-      "quick": "Aus dem Ankerkegel und den Feuerwirbeln bleiben.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Anker-Sunder",
-          "tell": "Er schlägt mit dem Anker eine Linie und kann dabei neue Vulkanstellen erzeugen.",
-          "answer": "Quer zur Linie auf freien Boden.",
-          "id": "anker-sunder"
-        },
-        {
-          "name": "Kanonensalve",
-          "tell": "Er dreht ein Rad und richtet die Salve auf dich.",
-          "answer": "Seitlich aus seinem Schusskorridor ausweichen.",
-          "id": "kanonensalve"
-        }
-      ],
-      "sources": [
-        "vastiri-vault",
-        "vastiri-db"
-      ],
-      "plan": "Ein Wirbel kann sich an einer Staubkugel entzünden. Halte dir eine freie Bahn offen, bevor sich beide kreuzen.",
-      "build_tips": {
-        "whirling-assault": "Bell erst in einer Ecke nutzen, wenn der Wirbel dort vorbeigezogen ist."
-      },
-      "rewardKind": "progress"
-    },
-    {
-      "id": "vornas",
-      "act": "Interlude · Vastiri",
-      "zone": "The Galai Gates",
-      "aliases": [
-        "Galai Gates"
-      ],
-      "name": "Vornas, the Fell Flame",
-      "required": true,
-      "reward": "Der Weg nach Qimah ist frei.",
-      "quick": "Brüllen → vier Schläge. Zwischen den Furchen weiterlaufen.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Sunder-Kegel",
-          "tell": "Auf den ersten Schlag vor sich lässt Vornas eine Drehung mit breitem Bodenriss folgen.",
-          "answer": "Seitlich bis aus dem Kegel herausgehen.",
-          "id": "sunder-kegel"
-        },
-        {
-          "name": "Bodenfurchen",
-          "tell": "Mehrere aufeinanderfolgende Slams lassen gefährliche Flächen zurück.",
-          "answer": "Mit der Serie mitlaufen und die offenen Streifen benutzen.",
-          "id": "bodenfurchen"
-        }
-      ],
-      "sources": [
-        "vastiri-vault",
-        "vastiri-db"
-      ],
-      "plan": "Plane nach dem Brüllen vier Einschläge ein. Die Furchen bleiben liegen, also lenke die Serie am Rand der freien Fläche entlang.",
-      "build_tips": {
-        "whirling-assault": "Whirling kurz halten. Lass keine Furchen zwischen dir und der nächsten sicheren Fläche."
-      },
-      "rewardKind": "progress"
-    },
-    {
-      "id": "azmadi",
-      "act": "Interlude · Vastiri",
-      "zone": "Qimah Reservoir",
-      "aliases": [],
-      "name": "Azmadi, the Faridun Prince",
-      "required": true,
-      "reward": "Interagiere nach dem Sieg mit der Grand Barya, um den Auftrag fortzusetzen.",
-      "quick": "Schwertwurf und Folge-Teleports komplett abwarten.",
-      "window": "",
-      "prep": "",
-      "attacks": [
-        {
-          "name": "Schwertwurf",
-          "tell": "Sein Schwert fliegt durch deine Position. Er ruft es zurück oder teleportiert ihm bei der späteren Serie nach.",
-          "answer": "Quer aus der Linie und die gesamte Folge zählen lassen.",
-          "id": "schwertwurf"
-        },
-        {
-          "name": "Schwert-Sunder",
-          "tell": "Er rammt das Schwert in den Boden und zieht eine Furche aus der Vorderseite.",
-          "answer": "Zur Flanke rollen und erst nach dem Einschlag zurück.",
-          "id": "schwert-sunder"
-        }
-      ],
-      "sources": [
-        "vastiri-vault",
-        "interlude-db"
-      ],
-      "plan": "Nach dem Zeitstopp verändert sich der Schwertwurf. Behalte die Klinge im Blick, denn der nächste Angriff kann von ihrem neuen Standort kommen.",
-      "build_tips": {
-        "whirling-assault": "Bell für ein Fenster nach dem letzten Teleport sparen."
-      },
-      "rewardKind": "progress"
     }
   ],
   "builds": [
@@ -3063,7 +2511,7 @@
       ],
       "glossary": {
         "Command": "Ein Befehl für deine Minions. Supporting Fire verschießt seine Salven, wenn du den Befehl am Zielort auslöst.",
-        "Muster": "Der Support belohnt verschiedene Minion-Typen. Prüfe aktive Minions und ihren Spirit-Verbrauch im Skills-Fenster.",
+        "Muster": "Für Muster zählt jede beschworene Art von Reviving Minion einmal. Prüfe im Skills Panel, welche Arten in deinem aktuellen Weapon Set aktiv sind.",
         "Bidding": "Support für Command Skills. Kürzere Wartezeiten helfen, wenn du zwischen den Salven auf Cooldown stehst."
       },
       "stages": [
@@ -3113,11 +2561,25 @@
           "label": "Ab Level 37 · Wechsel auf Supporting Fire",
           "quick": "Mit Unleash Hell! auf Supporting Fire wechseln. Bidding zuerst für die Salvenfrequenz prüfen.",
           "next": "Supporting Fire einsetzen, sobald der Ascendancy-Knoten und das Sceptre-Setup bereit sind. Die alte Crossbow behalten, bis der Wechsel läuft.",
-          "skills": [
-            "Unleash Hell! gibt dir Supporting Fire. Lege den Command auf eine Taste und platziere die Salven dort, wo der Boss stehen bleibt.",
-            "Linke den verfügbaren Bidding-Support. Muster lohnt sich, wenn mehrere unterschiedliche Minions tatsächlich aktiv sind.",
-            "Minion Skill Levels skalieren die Salven. Stärke erhöht ihren Schaden und Geschick vergrößert den getroffenen Bereich."
-          ],
+          "editorial": {
+            "gems": {
+              "de": [
+                "Unleash Hell! gibt dir Unterstützendes Feuer. Lege den Befehl auf eine Taste und platziere die Salven dort, wo der Boss stehen bleibt.",
+                "Sockle Auf Geheiß für die Abklingzeit der Befehle. Zusammentreiben zählt jede beschworene Art wiederbelebender Kreaturen einmal. Zwei Skelettkrieger zählen als eine Art.",
+                "Fertigkeitsstufen für Kreaturen skalieren die Salven. Stärke erhöht ihren Schaden und Geschick vergrößert den getroffenen Bereich."
+              ],
+              "hybrid": [
+                "Unleash Hell! gibt dir Supporting Fire. Lege den Command auf eine Taste und platziere die Salven dort, wo der Boss stehen bleibt.",
+                "Sockle Bidding für die Command-Abklingzeit. Muster zählt jede beschworene Art von Reviving Minion einmal. Zwei Skeletal Warriors zählen als eine Art.",
+                "Minion Skill Levels skalieren die Salven. Strength erhöht ihren Schaden und Dexterity vergrößert den getroffenen Bereich."
+              ],
+              "en": [
+                "Unleash Hell! grants Supporting Fire. Bind the Command and place volleys where the boss will stop.",
+                "Socket Bidding for Command Cooldown Recovery Rate. Muster counts each type of Reviving Minion you have summoned once. Two Skeletal Warriors count as one type.",
+                "Minion Skill Levels scale the volleys. Strength increases their damage and Dexterity increases the affected area."
+              ]
+            }
+          },
           "passives": [
             "Wechsle von Grenade- auf Minion-, Command- und Attribut-Punkte. Nimm erreichbare Defensive mit, bis das neue Setup stabil ist.",
             "Ein langsamer Boss ist ein guter Test für die Zeit zwischen zwei Salven. Passe erst dann den Cooldown und den Tree an."
@@ -3134,13 +2596,25 @@
         {
           "id": "interludes",
           "min_level": 55,
-          "label": "Interludes · Bereit für erste Maps",
+          "label": "Kampagnenende · Bereit für erste Maps",
           "quick": "Eine stabile Supporting-Fire-Rotation und defensive Ausrüstung in die Maps mitnehmen.",
           "next": "Elemental Resistances nach der Kampagne im Charakterfenster prüfen und die erste Map mit einfachen Mods testen.",
-          "skills": [
-            "Salven in den Laufweg von Packs legen. Bei Bossen Deckung für den Cooldown suchen und erst in der nächsten Pause neu zielen.",
-            "Prüfe, dass die für Muster eingeplanten Minions beim Waffenwechsel aktiv bleiben."
-          ],
+          "editorial": {
+            "gems": {
+              "de": [
+                "Lege die Salven in den Laufweg von Gegnergruppen. Suche bei Bossen während der Abklingzeit Deckung und ziele beim nächsten freien Angriffsfenster neu.",
+                "Wechsle durch beide Waffensets. Zähle für Zusammentreiben die Arten wiederbelebender Kreaturen, die im jeweiligen Set beschworen bleiben."
+              ],
+              "hybrid": [
+                "Salven in den Laufweg von Packs legen. Bei Bossen Deckung für den Cooldown suchen und erst in der nächsten Pause neu zielen.",
+                "Wechsle beide Weapon Sets durch und zähle für Muster die noch aktiven Arten von Reviving Minions."
+              ],
+              "en": [
+                "Place volleys in the path of packs. Against bosses, find cover during cooldown and aim again in the next opening.",
+                "Switch between both weapon sets. For Muster, count the types of Reviving Minion that remain summoned in each set."
+              ]
+            }
+          },
           "passives": [
             "Command Cooldown und Stärke erhöhen, wenn Bidding und der aktuelle Tree den Bossrhythmus noch ausbremsen.",
             "In den ersten Maps auf dem stabilen Life-Setup bleiben. Für den späten CI-Umbau erst passende ES-Stücke sammeln."
@@ -3230,11 +2704,25 @@
           "label": "Nach dem Trial · Varashta-Switch",
           "quick": "Barya of Kelari nehmen. Mit dem Sand-Djinn klare Ziele und sichere Bossfenster nutzen.",
           "next": "Nach dem Trial die Phase manuell wählen, sobald Kelari, Links und Spirit passen. Erst dann die Spell-Ausrüstung austauschen.",
-          "skills": [
-            "Barya of Kelari schaltet den Sand-Djinn frei. Setze seine Commands für Packs ein und reserviere Kelari's Deception für freie Bossfenster.",
-            "Cooldowns im Skill-Panel prüfen. Setze einen zweiten verfügbaren Command in die Lücke und bleib während des Cooldowns in Bewegung.",
-            "Den Wechsel zunächst ohne seltene Archon- oder Puppet-Master-Affixe testen. Sie folgen im Atlas."
-          ],
+          "editorial": {
+            "gems": {
+              "de": [
+                "Barya von Kelari schaltet den Sand-Dschinn frei. Für Kelaris Täuschung brauchst du zusätzlich den gleichnamigen Aszendenzpunkt. Fehlt der Befehl in der Fertigkeitenleiste, prüfe zuerst diesen Punkt.",
+                "Prüfe die Abklingzeiten im Fertigkeitenfenster. Überbrücke die Wartezeit mit einem zweiten verfügbaren Befehl und bleib in Bewegung.",
+                "Teste den Wechsel zunächst ohne seltene Archon- oder Puppet-Master-Affixe. Sie folgen im Atlas."
+              ],
+              "hybrid": [
+                "Barya of Kelari schaltet den Sand Djinn frei. Für Kelari’s Deception brauchst du zusätzlich den gleichnamigen Ascendancy-Knoten. Fehlt der Command in der Skill-Leiste, prüfe zuerst diesen Knoten.",
+                "Cooldowns im Skill-Panel prüfen. Setze einen zweiten verfügbaren Command in die Lücke und bleib während des Cooldowns in Bewegung.",
+                "Den Wechsel zunächst ohne seltene Archon- oder Puppet-Master-Affixe testen. Sie folgen im Atlas."
+              ],
+              "en": [
+                "Barya of Kelari grants the Sand Djinn. To use Kelari’s Deception, allocate the separate Ascendancy node of the same name. If the Command is missing from your skill bar, check that node first.",
+                "Check cooldowns in the skill panel. Fill the gap with another available Command and keep moving during cooldowns.",
+                "Test the switch without rare Archon or Puppet Master affixes first. Those upgrades come in the Atlas."
+              ]
+            }
+          },
           "passives": [
             "Auf Minion Damage, Command-Nutzung und genügend Defensive umstellen. Spell Damage aus dem alten Setup kann bei der Umstellung wegfallen.",
             "Jeden weiteren Djinn-Knoten passend zur tatsächlich genutzten Rotation wählen."
@@ -3292,10 +2780,22 @@
           "label": "Level 15–28 · Akt 2",
           "quick": "Ice-Tipped Arrows neben Twister in Set 2 legen. Auf Set 1 den Wirbel aufbauen.",
           "next": "Hole Barrage und Ice-Tipped Arrows aus Level-5-Gems. Stelle die Waffenzuordnung im Skill-Fenster ein.",
-          "skills": [
-            "Vor Twister Ice-Tipped Arrows wirken. Frost Nexus übernimmt später den kalten Boden, damit Parry und Fangs of Frost Platz machen können.",
-            "Barrage beim nächsten dichten Pack oder für einen Boss einsetzen. Freezing Mark und War Banner für dein sicheres Trefferfenster bereithalten."
-          ],
+          "editorial": {
+            "gems": {
+              "de": [
+                "Baue den Wirbel mit Wirbelnder Schlag in Set 1 auf. Aktiviere in Set 2 Eisspitzenpfeile und wirf Wirbelwind hindurch. Behalte Parieren und Fänge des Frosts für Bosse, bis Wirbelwind mit Frostnexus Gegner einfriert und unterkühlenden Boden erzeugt.",
+                "Setze Barrage gegen eine dichte Gegnergruppe oder einen Boss ein. Halte Einfrierendes Mal und Kriegsbanner für ein sicheres Angriffsfenster bereit."
+              ],
+              "hybrid": [
+                "Baue mit Whirling Slash in Set 1 den Whirlwind auf. In Set 2 aktivierst du Ice-Tipped Arrows und wirfst Twister hindurch. Bis ein mit Frost Nexus unterstützter Twister Gegner einfriert und Chilled Ground erzeugt, behältst du Parry und Fangs of Frost für Bosse.",
+                "Barrage beim nächsten dichten Pack oder für einen Boss einsetzen. Freezing Mark und War Banner für dein sicheres Trefferfenster bereithalten."
+              ],
+              "en": [
+                "Build the whirlwind with Whirling Slash in set 1. In set 2, cast Ice-Tipped Arrows and throw Twister through it. Keep Parry and Fangs of Frost for bosses until Twister supported by Frost Nexus freezes enemies and creates Chilled Ground.",
+                "Use Barrage for a dense pack or boss. Keep Freezing Mark and War Banner ready for a safe damage window."
+              ]
+            }
+          },
           "passives": [
             "Für Spirit Walker nach dem ersten Trial Vivid Stampede einplanen. Die Waffenset-Punkte entsprechend dem Leveling-Planner verteilen.",
             "Wenn der Aufbau von Whirling Slash zu lange dauert, Attack Speed in Set 1 und Defensive auf Rüstung prüfen."
@@ -3308,7 +2808,7 @@
         {
           "id": "act3plus",
           "min_level": 29,
-          "label": "Level 29–58+ · Akt 3 & Interludes",
+          "label": "Level 29–58+ · Ab Akt 3",
           "quick": "Twister weiter hochstufen. Kältepaket und Waffenwechsel vor jeder größeren Boss-Arena prüfen.",
           "next": "Sichere die zwei Speere für die ersten Maps. Wendest du Ice-Tipped Arrows an und Twister bleibt physisch, prüfe zuerst Set 2.",
           "skills": [
@@ -3362,17 +2862,56 @@
           "next": "Sammle den zweiten Tier-1 Skill Gem für Frozen Locus und Glacial Cascade. Vor Geonor einen Kälteresistenzring und deine Life Flask prüfen.",
           "loadout": {
             "gems": [
-              { "skill": { "id": "FrozenLocusPlayer" } },
-              { "skill": { "id": "GlacialCascadePlayer" }, "supports": [{ "id": "SupportAddedColdDamagePlayer" }] },
-              { "skill": { "id": "TempestBellPlayer" } }
+              {
+                "skill": {
+                  "id": "FrozenLocusPlayer"
+                }
+              },
+              {
+                "skill": {
+                  "id": "GlacialCascadePlayer"
+                },
+                "supports": [
+                  {
+                    "id": "SupportAddedColdDamagePlayer"
+                  }
+                ]
+              },
+              {
+                "skill": {
+                  "id": "TempestBellPlayer"
+                }
+              }
             ],
             "items": [
-              { "slot": "boots", "goal": "Stiefel mit Bewegungsgeschwindigkeit", "base": "Boots", "mod": "MovementVelocity1" }
+              {
+                "slot": "boots",
+                "goal": "Stiefel mit Bewegungsgeschwindigkeit",
+                "base": "Boots",
+                "mod": "MovementVelocity1"
+              }
             ],
             "passives": {
               "main": [
-                { "id": "44683", "name": "Monk" },
-                { "id": "10364" }, { "id": "42857" }, { "id": "7576" }, { "id": "33866" }, { "id": "49220" }
+                {
+                  "id": "44683",
+                  "name": "Monk"
+                },
+                {
+                  "id": "10364"
+                },
+                {
+                  "id": "42857"
+                },
+                {
+                  "id": "7576"
+                },
+                {
+                  "id": "33866"
+                },
+                {
+                  "id": "49220"
+                }
               ]
             }
           }
@@ -3399,12 +2938,34 @@
           "next": "Wenn du dich für Sekhemas bereit fühlst, hol Balbalas Barya für die erste Ascendancy. Runic Meridians helfen, wenn du brauchbare Runen für fehlende Defensive hast.",
           "loadout": {
             "gems": [
-              { "skill": { "id": "IceStrikePlayer" } },
-              { "skill": { "id": "FrostBombPlayer" } },
-              { "skill": { "id": "TempestBellPlayer" } }
+              {
+                "skill": {
+                  "id": "IceStrikePlayer"
+                }
+              },
+              {
+                "skill": {
+                  "id": "FrostBombPlayer"
+                }
+              },
+              {
+                "skill": {
+                  "id": "TempestBellPlayer"
+                }
+              }
             ],
             "passives": {
-              "ascendancy": [{ "id": "11495" }, { "id": "20437" }, { "id": "39552" }]
+              "ascendancy": [
+                {
+                  "id": "11495"
+                },
+                {
+                  "id": "20437"
+                },
+                {
+                  "id": "39552"
+                }
+              ]
             }
           }
         },
@@ -3454,7 +3015,7 @@
         {
           "id": "late",
           "min_level": 54,
-          "label": "Level 54+ · Interludes & Map Entry",
+          "label": "Level 54+ · Kampagnenende und erste Maps",
           "quick": "Whirling für Clear, Bell für einzelne Ziele. Erst stabil in die ersten Maps, dann Waffen- und Amulett-Breakpoints farmen.",
           "skills": [
             "Kurze Whirling-Einsätze nutzen, wenn der Boss seine Angriffsfolge noch nicht beendet hat. Nach einem echten Stun oder Phasenfenster Bell und längeren Burst nutzen.",

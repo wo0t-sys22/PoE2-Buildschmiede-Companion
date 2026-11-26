@@ -216,36 +216,6 @@
       "status": "provisional"
     },
     {
-      "id": "interlude-1",
-      "version": "0.5.5 baseline",
-      "phase": "campaign",
-      "name": "Interlude I",
-      "targetLevel": "53",
-      "targetTime": "",
-      "objective": "Nur als aktueller Trainingsabschnitt. Für 1.0 ersetzen",
-      "status": "provisional"
-    },
-    {
-      "id": "interlude-2",
-      "version": "0.5.5 baseline",
-      "phase": "campaign",
-      "name": "Interlude II",
-      "targetLevel": "55",
-      "targetTime": "",
-      "objective": "Nur als aktueller Trainingsabschnitt. Für 1.0 ersetzen",
-      "status": "provisional"
-    },
-    {
-      "id": "interlude-3",
-      "version": "0.5.5 baseline",
-      "phase": "campaign",
-      "name": "Interlude III / Atlas Unlock",
-      "targetLevel": "58",
-      "targetTime": "",
-      "objective": "Aktuellen Atlas-Einstieg und Map-Device-Zeit messen",
-      "status": "provisional"
-    },
-    {
       "id": "a5-boss",
       "version": "1.0",
       "phase": "campaign",
@@ -358,7 +328,7 @@
     {
       "id": "tip-resists",
       "phase": "campaign",
-      "title": "Resistenzen vor Interludes prüfen",
+      "title": "Resistenzen vor Bosskämpfen prüfen",
       "text": "Nach den Kampagnenabschnitten verschieben sich die defensiven Anforderungen. Vor dem Boss lieber ein Upgrade kaufen oder craften als später zu sterben.",
       "status": "provisional",
       "source": "0.5.5 Campaign Walkthrough"

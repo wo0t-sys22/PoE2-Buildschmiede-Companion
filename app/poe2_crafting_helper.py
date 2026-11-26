@@ -3,15 +3,19 @@
 from dataclasses import dataclass
 from functools import lru_cache
 import re
+import tkinter as tk
 
 from poe2_lexicon import catalogue, display_stats
 from poe2_overlay_controls import FlowRow
 from poe2_overlay_lookup import QUERY_LIMIT, make, search_text
+from poe2_overlay_theme_art import mix_color
 from poe2_regex import LIMIT, available, fresh, query_length, search_query, type_names
 from poe2_regex_ui import copy_regex
+from poe2_r18_features import BASE_DIR, PALETTE, read_json
 
 
 TITLE = ("Crafting-Helfer", "Crafting Helper")
+CRAFTING_TIPS = read_json(BASE_DIR / "shared-data" / "crafting-tips.v1.json")
 RARITIES = {
     "normal": ("Normal", "Normal"),
     "magic1": ("Magisch · 1 Affix", "Magic · 1 affix"),
@@ -19,6 +23,12 @@ RARITIES = {
     "rare": ("Selten", "Rare"),
 }
 SIDES = {"Prefix": ("Präfix", "prefix"), "Suffix": ("Suffix", "suffix")}
+STEP_CURRENCY = {
+    "normal": ("currency.orb_of_transmutation", "Umwandlungssphäre", "Orb of Transmutation"),
+    "magic1": ("currency.orb_of_augmentation", "Aufwertungssphäre", "Orb of Augmentation"),
+    "magic2": ("currency.regal_orb", "Hoheitliche Sphäre", "Regal Orb"),
+    "rare": ("currency.exalted_orb", "Erhabene Sphäre", "Exalted Orb"),
+}
 EXCLUDED = re.compile(r"Tablet|Waystone|Relic|Ultimatum|Strongbox|Flask|Charm|Jewel|Ruby|Diamond|Sapphire|Emerald", re.I)
 ATTRIBUTE_SUFFIX = re.compile(r"_(?:str|dex|int)(?:_(?:str|dex|int))*$")
 STAT_VALUE = re.compile(r"^[+#%()\d.,\s–—−-]+")
@@ -160,6 +170,8 @@ class CraftingHelperState:
     query: str = ""
     page: int = 0
     details: bool = False
+    show_checks: bool = False
+    show_example: bool = False
 
 
 def render_craft_helper(window, parent):
@@ -236,8 +248,47 @@ class _CraftingView:
         if not target:
             self.message(self.text("Für diese Basis und Stufe gibt es keinen passenden Mod.",
                                    "No modifier matches this base and item level."))
+        else:
+            self.draw_result(target)
+        self.draw_checks()
+        self.draw_example()
+
+    def draw_example(self):
+        expanded = self.state.show_example
+        title = self.text("Praxisbeispiel · Bewegungsgeschwindigkeit", "Example · Movement Speed")
+        self.button(f"{'▾' if expanded else '▸'} {title}", lambda: self.update(show_example=not expanded))
+        if not expanded:
             return
-        self.draw_result(target)
+        if self.language == "hybrid":
+            lines = ("Wähle reine Dex-Boots und gib Itemlevel 70 ein. Der natürliche Movement-Speed-Prefix kann 30 % rollen. Für 35 % brauchst du Itemlevel 82.",
+                     "Auf Magic Boots mit Life-Prefix kann eine Orb of Augmentation nur einen Suffix rollen. Bei einem Resistenz-Suffix kann der freie Prefix Movement Speed rollen.")
+        else:
+            lines = (self.text("Wähle reine Geschicklichkeitsstiefel und gib Gegenstandsstufe 70 ein. Das natürliche Präfix für Bewegungsgeschwindigkeit kann 30 % erreichen. Für 35 % brauchst du Gegenstandsstufe 82.",
+                               "Select pure Dexterity boots and enter item level 70. The natural Movement Speed prefix can roll 30%. The 35% tier requires item level 82."),
+                     self.text("Bei magischen Stiefeln mit Lebenspräfix kann eine Aufwertungssphäre nur ein Suffix hinzufügen. Bei einem Widerstandssuffix kann das freie Präfix Bewegungsgeschwindigkeit würfeln.",
+                               "On magic boots with a life prefix, an Orb of Augmentation can only add a suffix. With a resistance suffix, the open prefix can roll Movement Speed."))
+        for line in lines:
+            self.message(line, marker=True)
+
+    def draw_checks(self):
+        if CRAFTING_TIPS.get("schema") != "buildschmiede.crafting-tips.v1":
+            return
+        expanded = self.state.show_checks
+        title = CRAFTING_TIPS["title"][self.language]
+        self.button(f"{'▾' if expanded else '▸'} {title}", lambda: self.update(show_checks=not expanded))
+        if not expanded:
+            return
+        variant = "compact" if self.window.guide_mode == "veteran" else "detail"
+        for check in CRAFTING_TIPS["checks"]:
+            self.message(check[variant][self.language], marker=True)
+        if not self.window.lookup_category_available("lexicon"):
+            return
+        links = FlowRow(self.parent, bg=self.parent.cget("background"), gap=self.px(4))
+        links.pack(fill="x", pady=(self.px(4), 0))
+        for ident in CRAFTING_TIPS["lexicon"]:
+            entry = self.window.app.term_tips.build_lexicon_entry(("term", ident))
+            if entry:
+                self.window.small_button(links, entry.title, lambda entry=entry: self.window._pick_lookup(entry))
 
     def draw_field(self, field, title, choices):
         caption = dict(choices)[getattr(self.state, field)]
@@ -287,11 +338,19 @@ class _CraftingView:
 
     def draw_result(self, target):
         state = self.state
-        self.message(self.text("Nächster Schritt", "Next step"), tone="gold", points=13, padding=self.px(6))
-        self.message(next_step(state.rarity, target.side, self.language), tone="info", points=11)
-        self.message(self.text("Der Zielwert ist ein möglicher Ausgang. Welche Modifikation entsteht, ist zufällig.",
-                               "The target modifier is a possible outcome. The actual modifier is random."),
-                     tone="muted", points=10)
+        theme = self.window.theme
+        background = mix_color(self.parent.cget("background"), theme.accent, 0.1)
+        result = tk.Frame(self.parent, bg=background, highlightbackground=theme.accent, highlightthickness=1)
+        result.guide_card_color = background
+        result.pack(fill="x", pady=(self.px(3), self.px(6)))
+        ident, german, english = STEP_CURRENCY[state.rarity]
+        currency = german if self.language == "de" else english
+        self.window.pack_message(result, self.text("Nächster Schritt", "Next step"), tone="gold", points=13)
+        self.window.pack_message(result, next_step(state.rarity, target.side, self.language),
+                                 term_refs={currency: ident}, manual_colors={currency: PALETTE["currency"]})
+        self.window.pack_message(result, self.text("Der Zielwert ist ein möglicher Ausgang. Welche Modifikation entsteht, ist zufällig.",
+                                                   "The target modifier is a possible outcome. The actual modifier is random."),
+                                 tone="muted", points=10)
         indicator = "▾" if state.details else "▸"
         self.button(f"{indicator} {self.text('Ziel-Mod und Roll prüfen', 'Inspect target roll')}",
                     lambda: self.update(details=not state.details))

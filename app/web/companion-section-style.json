@@ -57,8 +57,16 @@
       "a1-farmlands-exit",
       "a1-ogham-village",
       "a1-ramparts",
-      "a1-geonor"
+      "a1-geonor",
+      "a1-lost-catacombs",
+      "a2-lightless",
+      "a2-well",
+      "a2-abyssal-depths",
+      "a4-deserted-post"
     ],
-    "towns": ["a1-town", "a2-caravan"]
+    "towns": [
+      "a1-town",
+      "a2-caravan"
+    ]
   }
 }

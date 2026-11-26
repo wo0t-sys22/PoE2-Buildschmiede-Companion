@@ -19,6 +19,11 @@ class ThemeTreatment:
 CLASSIC = ThemeTreatment()
 
 
+def mix_color(base, accent, amount):
+    return "#" + "".join(f"{round(int(base[i:i+2], 16) * (1 - amount) + int(accent[i:i+2], 16) * amount):02x}"
+                         for i in (1, 3, 5))
+
+
 def paint_header(canvas, theme, width, height, px):
     if width < px(20) or height < px(10):
         return

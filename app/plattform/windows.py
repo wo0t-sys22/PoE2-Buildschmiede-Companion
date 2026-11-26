@@ -88,6 +88,8 @@ class WindowsOverlay:
                                 w.HWND, w.HWND, c.c_int, c.c_int, c.c_int, c.c_int, w.UINT)
         self.get_style = _bind(user, "GetWindowLongW", w.LONG, w.HWND, c.c_int)
         self.set_style = _bind(user, "SetWindowLongW", w.LONG, w.HWND, c.c_int, w.LONG)
+        set_window_long = "SetWindowLongPtrW" if c.sizeof(c.c_void_p) == 8 else "SetWindowLongW"
+        self.set_window_long_ptr = _bind(user, set_window_long, c.c_ssize_t, w.HWND, c.c_int, c.c_ssize_t)
         self.set_layered = _bind(user, "SetLayeredWindowAttributes", w.BOOL, w.HWND, w.COLORREF, w.BYTE, w.DWORD)
         self.register = _bind(user, "RegisterHotKey", w.BOOL, w.HWND, c.c_int, w.UINT, w.UINT)
         self.unregister = _bind(user, "UnregisterHotKey", w.BOOL, w.HWND, c.c_int)
@@ -289,8 +291,14 @@ class WindowsOverlay:
         if not self.set_style(hwnd, -20, style) and c.get_last_error():
             raise c.WinError(c.get_last_error())
 
-    def set_click_mode(self, window, enabled, *, no_activate=False, alpha=255):
+    def set_click_mode(self, window, enabled, *, no_activate=False, alpha=255, owner=None):
         hwnd = self.hwnd(window)
+        if owner is not None:
+            # An owned window stays above its guide even if Tk raises the guide
+            # while returning focus from a dialog. This does not make it a child.
+            c.set_last_error(0)
+            if not self.set_window_long_ptr(hwnd, -8, self.hwnd(owner)) and c.get_last_error():  # GWLP_HWNDPARENT
+                raise c.WinError(c.get_last_error())
         original = self._style(hwnd)
         desired = (original | self.LAYERED | self.TOOL_WINDOW) & ~self.PASS_THROUGH
         if enabled:

@@ -505,7 +505,7 @@ class LinuxOverlay:
         """Mouse input only inside the rectangles (window coordinates); None: whole window."""
         self._shape(self._xid(window), SHAPE_INPUT, rectangles)
 
-    def set_click_mode(self, window, enabled, *, no_activate=False, alpha=255):
+    def set_click_mode(self, window, enabled, *, no_activate=False, alpha=255, owner=None):
         self.set_opacity(window, alpha)
         # Play mode starts without input; the guide's InputRegion then adds its buttons.
         self.set_input_region(window, () if enabled else None)

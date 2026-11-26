@@ -41,7 +41,7 @@ function render() {
     <div class="hud-mode">${icon('shield')}<span>${tr('Spielmodus', 'Game mode')} <b>${esc([phase, run.mode].filter(Boolean).join(' · ') || unknown())}</b></span><span>HC SSF <b>${esc(hcSsf(run))}</b></span></div>
     <div class="hud-next"><span class="eyebrow">${icon('flag')}${tr('Nächste Aktion', 'Next action')}</span><strong>${itemText(next || unknown())}</strong></div>
   </section>`;
-  const outer = isObs ? body : `<header class="preview-head"><a href="./" class="button secondary">${icon('prev')}${tr('Kontrollzentrum', 'Control centre')}</a>${badge(`${RELEASE_LABEL} · Overlay`, 'gold')}</header>${body}`;
+  const outer = isObs ? body : `<header class="preview-head">${badge(`${RELEASE_LABEL} · Overlay`, 'gold')}</header>${body}`;
   if (outer !== lastMarkup) {
     root.innerHTML = outer;
     lastMarkup = outer;

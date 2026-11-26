@@ -4,7 +4,7 @@ Der **Buildschmiede Companion** ist ein Overlay für Path of Exile 2. Es erkennt
 
 Du entscheidest, was du sehen willst. Reiter, Schnellzugriffe und viele Guide-Elemente lassen sich einzeln ein- und ausblenden. Dazu kommen Themes, einstellbare Größe und Transparenz sowie kompakte und ausführliche Ansichten. Die Guides gibt es auf Deutsch, auf Englisch und im Hybridmodus mit deutschen Erklärungen und englischen Spielbegriffen.
 
-Die aktuelle Beta **v.0.19.0** enthält den Datenstand von **Patch 0.5.5f**. Der Companion ist für PoE 2 **1.0** gedacht. Die neuen Inhalte pflegen wir schrittweise ein, sobald uns die Spieldaten vorliegen.
+Die aktuelle Beta **v.0.23.0** enthält den Datenstand von **Patch 0.5.5f**. Der Companion ist für PoE 2 **1.0** gedacht. Die neuen Inhalte pflegen wir schrittweise ein, sobald uns die Spieldaten vorliegen.
 
 [Online-Guides auf buildschmiede.de](https://buildschmiede.de/)
 

@@ -1,0 +1,415 @@
+{
+  "schema_version": 2,
+  "id": "delirium-konstrukt-fundorte",
+  "titel": "Wo finde ich Konstrukt-Bosse für Wirkungsvollen Flüssigen Groll?",
+  "spiel": "Path of Exile 2",
+  "quellfolie": 38,
+  "stand": "0.5-Reihe, einschließlich Abgleich mit 0.5.5",
+  "geprueft_am": "2026-11-26",
+  "gegenstand": {
+    "de": "Wirkungsvoller Flüssiger Groll",
+    "en": "Potent Liquid Contempt",
+    "spiel_id": "EndgameDistilledEmotion3",
+    "quelle": "https://poe2db.tw/de/Potent_Liquid_Contempt"
+  },
+  "hinweis_de": "Die Community nennt 15 Karten, deren Bosse in den Spieldaten das Merkmal „construct“ tragen. Der Delirium-Atlas nennt für einzigartige Gegner der Kategorie Konstrukt 5 % Chance auf Wirkungsvollen Flüssigen Groll im aktiven Nebel. Für Stausee und Schmiede melden Spieler Melancholie. Im Begräbnismoor steht derselbe Boss wie im Stausee. Die Einträge zeigen, was pro Karte belegt ist.",
+  "hinweis_hybrid": "Die Liste zeigt 15 Community-Kandidaten mit dem Tag „construct“. Die Atlas-Passive gibt einzigartigen Constructs im Delirium Fog 5 % Chance auf Potent Liquid Contempt. In Reservoir und Forge berichten Spieler von Melancholy. Burial Bog teilt seinen Boss mit Reservoir. Prüfe bei der Auswahl den Status jeder Map.",
+  "hinweis_en": "The list covers 15 community suggestions whose bosses carry a construct tag. The Atlas notable grants a 5% chance for unique enemies in the Construct category to drop Potent Liquid Contempt when killed in active fog. Players report Melancholy in Reservoir and Forge. Burial Bog shares its boss with Reservoir. Each entry states what the available evidence supports.",
+  "regel": {
+    "passive_de": "Du jagst mir keine Angst mehr ein!",
+    "passive_en": "You can't scare me anymore!",
+    "freischaltung": "Großen Spiegel aktivieren",
+    "voraussetzung": "Passive zuweisen. Das einzigartige Konstrukt muss im Delirium-Nebel sterben.",
+    "chance_durch_passive_pro_geeignetem_gegner": 0.05,
+    "quellen": [
+      "https://poe2db.tw/de/Monster_Category",
+      "https://poe2database.com/passives/you-cant-scare-me-anymore",
+      "https://poe2db.tw/us/Monster_Category"
+    ],
+    "nachweisgrenze": "Das Spielglossar ordnet jedem Monster genau eine Monsterkategorie zu. Ein Monster kann mehrere allgemeine Tags tragen. Die Kartenbelegung und der Tag „construct“ ergeben deshalb zunächst einen Kandidaten. Die genaue Zuordnung zur Dropregel und ein konkreter Contempt-Drop für den jeweiligen Boss sind getrennte Nachweise."
+  },
+  "versionsnotiz": {
+    "patch": "0.5.5",
+    "detail": "Der Nebel eines Großen Spiegels breitet sich auf zehn Karten aus. Für die Kartenauswahl ist weiter der Tod des passenden Gegners im Nebel maßgeblich. Die Zahl der betroffenen Karten sagt nichts über die Dropchance aus.",
+    "quelle": "https://www.pathofexile.com/forum/view-thread/4000864",
+    "vor_1_0_pruefen": [
+      "Karte und Boss",
+      "Für die Atlas-Passive wirksame Monsterkategorie",
+      "Zurechenbare Funde mit Boss, Patch und aktivem Nebel",
+      "Freischaltung und Text der Passiven"
+    ]
+  },
+  "herkunft": {
+    "auswahl": "0.5 Game Guide.pptx, Folie 38. Die Reihenfolge folgt dem Deck.",
+    "community_vergleich": [
+      {
+        "quelle": "https://www.reddit.com/r/PathOfExile2/comments/1u1cdvi/regex_for_liquid_contempt_farming/",
+        "datum": "2026-06-09",
+        "befund": "Die Suchliste enthält dieselben 15 Gebiete. In den Kommentaren berichten zwei Spieler für Reservoir und ein weiterer Spieler für Forge von Melancholy. Der Listenautor meldet einen Contempt-Fund ohne Ortsangabe."
+      },
+      {
+        "quelle": "https://www.youtube.com/watch?v=RE9_SlCF4lk",
+        "befund": "Die Beschreibung des SSF-Varashta-Guides zu 0.5.5 nennt dieselben 15 Suchbegriffe. Eine Übernahme aus derselben Quelle ist möglich."
+      }
+    ],
+    "umfang": "Alle 15 Vorschläge von Folie 38 geprüft. Die Liste beansprucht keine Vollständigkeit für sämtliche Atlasgebiete oder Spezialbegegnungen."
+  },
+  "karten": [
+    {
+      "quellbezeichnung": "Assembly",
+      "karte_en": "The Assembly",
+      "karte_de": "Die Fertigungsanlage",
+      "boss_en": "Tetzcatl, the Blazing Guardian",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/The_Assembly",
+        "suchbegriff_im_monsterregister": "Tetzcatl, the Blazing Guardian",
+        "lokalisierung": "https://poe2db.tw/de/The_Assembly",
+        "patch_0_5_5f": "https://metabot.gg/en/path-of-exile-2/areas/the-assembly",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "the-assembly",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Burial Bog",
+      "karte_en": "Burial Bog",
+      "karte_de": "Begräbnismoor",
+      "boss_en": "Grudgelash, Vile Thorn",
+      "gepruefter_tag": "construct",
+      "status": "Prüffall · gleicher Boss wie in Reservoir",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Burial_Bog",
+        "suchbegriff_im_monsterregister": "Grudgelash, Vile Thorn",
+        "lokalisierung": "https://poe2db.tw/de/Burial_Bog",
+        "patch_0_5_5f": "https://metabot.gg/en/path-of-exile-2/areas/burial-bog",
+        "merkmale_boss": "https://poe2db.tw/us/Tags",
+        "spielerbericht_oder_quervergleich": [
+          "https://poe2db.tw/us/Reservoir",
+          "https://www.reddit.com/r/PathOfExile2/comments/1u1cdvi/comment/oukf97w/",
+          "https://www.reddit.com/r/PathOfExile2/comments/1u1cdvi/comment/pgg2zzd/"
+        ]
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "einordnung": "Hier erscheint ebenfalls Grudgelash. Die beiden Melancholy-Beobachtungen stammen ausdrücklich aus Reservoir. Sie sind ein Grund, Burial Bog vor einer Farmempfehlung gesondert zu testen.",
+      "slug": "burial-bog",
+      "evidence_class": "review",
+      "detail": {
+        "de": "Hier erscheint ebenfalls Grudgelash. Die beiden Melancholy-Beobachtungen stammen ausdrücklich aus Reservoir. Sie sind ein Grund, Burial Bog vor einer Farmempfehlung gesondert zu testen.",
+        "hybrid": "Hier steht derselbe Boss wie in Reservoir. Die beiden Berichte über Melancholy stammen aus Reservoir. Für Burial Bog fehlt ein eigener Fundbeleg.",
+        "en": "This map shares its boss with Reservoir. Both Melancholy reports concern Reservoir. A drop from this boss in Burial Bog still needs confirmation."
+      }
+    },
+    {
+      "quellbezeichnung": "Crimson Shores",
+      "karte_en": "Crimson Shores",
+      "karte_de": "Purpurküste",
+      "boss_en": "Volkhar, the Emberborn",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Crimson_Shores",
+        "suchbegriff_im_monsterregister": "Volkhar, the Emberborn",
+        "lokalisierung": "https://poe2db.tw/de/Crimson_Shores",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "crimson-shores",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Crypt",
+      "karte_en": "Crypt",
+      "karte_de": "Beinhaus",
+      "boss_en": "Meltwax, Mockery of Faith",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Crypt",
+        "suchbegriff_im_monsterregister": "Meltwax, Mockery of Faith",
+        "lokalisierung": "https://poe2db.tw/de/Crypt",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "crypt",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Forge",
+      "karte_en": "Forge",
+      "karte_de": "Schmiede",
+      "boss_en": "Vastweld, the Colossal Guardian",
+      "gepruefter_tag": "construct",
+      "status": "Widersprüchlich · ein Melancholy-Bericht",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Forge",
+        "suchbegriff_im_monsterregister": "Vastweld, the Colossal Guardian",
+        "lokalisierung": "https://poe2db.tw/de/Forge",
+        "patch_0_5_5f": "https://metabot.gg/en/path-of-exile-2/areas/forge",
+        "merkmale_boss": "https://poe2db.tw/us/Tags",
+        "spielerbericht_oder_quervergleich": [
+          "https://www.reddit.com/r/PathOfExile2/comments/1u1cdvi/comment/orpnqom/"
+        ]
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "einordnung": "Ein Spieler meldet aus Forge Melancholy. Vastweld trägt die Tags construct und humanoid. Eine Contempt-Zuordnung für den regulären Kartenboss ist offen.",
+      "slug": "forge",
+      "evidence_class": "conflicting",
+      "detail": {
+        "de": "Ein Spieler meldet aus Forge Melancholy. Vastweld trägt die Tags construct und humanoid. Eine Contempt-Zuordnung für den regulären Kartenboss ist offen.",
+        "hybrid": "Ein Spieler meldet Melancholy aus Forge. Vastweld trägt die Tags construct und humanoid. Ob dieser Boss auch Contempt fallen lässt, ist offen.",
+        "en": "One player reported Melancholy in Forge. Vastweld has both construct and humanoid tags. Whether he can also drop Contempt remains open."
+      }
+    },
+    {
+      "quellbezeichnung": "Greenhouse",
+      "karte_en": "Greenhouse",
+      "karte_de": "Gewächshaus",
+      "boss_en": "Rootgrasp, the Hateful Forest",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Greenhouse",
+        "suchbegriff_im_monsterregister": "Rootgrasp, the Hateful Forest",
+        "lokalisierung": "https://poe2db.tw/de/Greenhouse",
+        "patch_0_5_5f": "https://metabot.gg/en/path-of-exile-2/areas/greenhouse",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "greenhouse",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Lofty Summit",
+      "karte_en": "Lofty Summit",
+      "karte_de": "Hoher Gipfel",
+      "boss_en": "Oloton, the Remorseless",
+      "gepruefter_tag": "construct",
+      "status": "Prüffall · mehrere Merkmale",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Lofty_Summit",
+        "suchbegriff_im_monsterregister": "Oloton, the Remorseless",
+        "lokalisierung": "https://poe2db.tw/de/Lofty_Summit",
+        "patch_0_5_5f": "https://metabot.gg/en/path-of-exile-2/areas/lofty-summit",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "einordnung": "Oloton trägt die Tags construct und humanoid. In den geprüften Quellen fehlt ein konkreter Contempt-Fund dieses Bosses.",
+      "slug": "lofty-summit",
+      "evidence_class": "review",
+      "detail": {
+        "de": "Oloton trägt die Tags construct und humanoid. In den geprüften Quellen fehlt ein konkreter Contempt-Fund dieses Bosses.",
+        "hybrid": "Oloton trägt die Tags construct und humanoid. Welche Monster Category für die Atlas Passive zählt, ist offen.",
+        "en": "Oloton carries both construct and humanoid tags. The monster category used by the Atlas passive still needs verification."
+      }
+    },
+    {
+      "quellbezeichnung": "Overgrown",
+      "karte_en": "Overgrown",
+      "karte_de": "Überwucherter Wald",
+      "boss_en": "Tetzcatl, the Blazing Guardian",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Overgrown",
+        "suchbegriff_im_monsterregister": "Tetzcatl, the Blazing Guardian",
+        "lokalisierung": "https://poe2db.tw/de/Overgrown",
+        "patch_0_5_5f": "https://metabot.gg/en/path-of-exile-2/areas/overgrown",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "overgrown",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Ravine",
+      "karte_en": "Ravine",
+      "karte_de": "Schlucht",
+      "boss_en": "Tetzcatl, the Blazing Guardian",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Ravine",
+        "suchbegriff_im_monsterregister": "Tetzcatl, the Blazing Guardian",
+        "lokalisierung": "https://poe2db.tw/de/Waystones",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "ravine",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Reservoir",
+      "karte_en": "Reservoir",
+      "karte_de": "Stausee",
+      "boss_en": "Grudgelash, Vile Thorn",
+      "gepruefter_tag": "construct",
+      "status": "Widersprüchlich · zwei Melancholy-Berichte",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Reservoir",
+        "suchbegriff_im_monsterregister": "Grudgelash, Vile Thorn",
+        "lokalisierung": "https://poe2db.tw/de/Reservoir",
+        "merkmale_boss": "https://poe2db.tw/us/Tags",
+        "spielerbericht_oder_quervergleich": [
+          "https://www.reddit.com/r/PathOfExile2/comments/1u1cdvi/comment/oukf97w/",
+          "https://www.reddit.com/r/PathOfExile2/comments/1u1cdvi/comment/pgg2zzd/"
+        ]
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "einordnung": "Zwei Spieler berichten für Reservoir von Melancholy, einer mehrfach. Grudgelash trägt die Tags construct, humanoid und undead. Für Contempt hier als Farmziel zurückstellen. Ob dieser Boss außerdem Contempt fallen lassen kann, bleibt offen.",
+      "slug": "reservoir",
+      "evidence_class": "conflicting",
+      "detail": {
+        "de": "Zwei Spieler berichten für Reservoir von Melancholy, einer mehrfach. Grudgelash trägt die Tags construct, humanoid und undead. Für Contempt hier als Farmziel zurückstellen. Ob dieser Boss außerdem Contempt fallen lassen kann, bleibt offen.",
+        "hybrid": "Zwei Spieler melden Melancholy in Reservoir. Grudgelash trägt die Tags construct, humanoid und undead. Für einen gezielten Contempt-Farm fehlt ein bestätigter Fund.",
+        "en": "Two players reported Melancholy in Reservoir. Grudgelash carries construct, humanoid and undead tags. A Contempt drop from this boss has yet to be verified."
+      }
+    },
+    {
+      "quellbezeichnung": "Rustbowl",
+      "karte_en": "Rustbowl",
+      "karte_de": "Rosttal",
+      "boss_en": "Gozen, Rebellious Rustlord",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Rustbowl",
+        "suchbegriff_im_monsterregister": "Gozen, Rebellious Rustlord",
+        "lokalisierung": "https://poe2db.tw/de/Rustbowl",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "rustbowl",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Spider Woods",
+      "karte_en": "Spider Woods",
+      "karte_de": "Spinnenwald",
+      "boss_en": "Rootgrasp, the Hateful Forest",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Spider_Woods",
+        "suchbegriff_im_monsterregister": "Rootgrasp, the Hateful Forest",
+        "lokalisierung": "https://poe2db.tw/de/Spider_Woods",
+        "patch_0_5_5f": "https://metabot.gg/en/path-of-exile-2/areas/spider-woods",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "spider-woods",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Steppe",
+      "karte_en": "Steppe",
+      "karte_de": "Steppe",
+      "boss_en": "Gozen, Rebellious Rustlord",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Steppe",
+        "suchbegriff_im_monsterregister": "Gozen, Rebellious Rustlord",
+        "lokalisierung": "https://poe2db.tw/de/Steppe",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "steppe",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Sulphuric",
+      "karte_en": "Sulphuric Caverns",
+      "karte_de": "Schwefelkavernen",
+      "boss_en": "The Bone Colossus",
+      "gepruefter_tag": "construct",
+      "status": "Prüffall · mehrere Merkmale und zwei Bosse",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Sulphuric_Caverns",
+        "suchbegriff_im_monsterregister": "The Bone Colossus",
+        "lokalisierung": "https://poe2db.tw/de/Sulphuric_Caverns",
+        "patch_0_5_5f": "https://metabot.gg/en/path-of-exile-2/areas/sulphuric-caverns",
+        "merkmale_boss": "https://poe2db.tw/us/The_Bone_Colossus",
+        "zweiter_boss": "https://poe2db.tw/us/Lord_of_the_Pit"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "einordnung": "The Bone Colossus trägt die Tags beast, construct und undead. Der zweite Boss, Lord of the Pit, trägt human und humanoid. Die wirksame Kategorie des Knochenkolosses und ein Contempt-Fund bei diesem Gegner bleiben offen.",
+      "slug": "sulphuric-caverns",
+      "evidence_class": "review",
+      "detail": {
+        "de": "The Bone Colossus trägt die Tags beast, construct und undead. Der zweite Boss, Lord of the Pit, trägt human und humanoid. Die wirksame Kategorie des Knochenkolosses und ein Contempt-Fund bei diesem Gegner bleiben offen.",
+        "hybrid": "In dieser Map gibt es zwei Bosse. The Bone Colossus trägt beast, construct und undead als Tags. Lord of the Pit trägt human und humanoid. Die Drop-Kategorie für The Bone Colossus ist offen.",
+        "en": "This map has two bosses. The Bone Colossus carries beast, construct and undead tags. Lord of the Pit carries human and humanoid tags. The category applied to the Bone Colossus for this drop is unverified."
+      }
+    },
+    {
+      "quellbezeichnung": "Swarm",
+      "karte_en": "Swarm",
+      "karte_de": "Gewimmel",
+      "boss_en": "Volkhar, the Emberborn",
+      "gepruefter_tag": "construct",
+      "status": "Kandidat · Konstrukt-Tag belegt",
+      "quellen": {
+        "karte_boss": "https://poe2db.tw/us/Swarm",
+        "suchbegriff_im_monsterregister": "Volkhar, the Emberborn",
+        "lokalisierung": "https://poe2db.tw/de/Waystones",
+        "merkmale_boss": "https://poe2db.tw/us/Tags"
+      },
+      "dropnachweis": "Kein eindeutig diesem Kartenboss zugeordneter Contempt-Fund in den geprüften Quellen.",
+      "slug": "swarm",
+      "evidence_class": "candidate",
+      "detail": {
+        "de": "Karte, Boss und Konstrukt-Merkmal sind belegt. Ein diesem Boss zugeordneter Fund von Groll muss noch bestätigt werden.",
+        "hybrid": "Die Quellen belegen Map, Boss und construct-Tag. Ein diesem Boss zugeordneter Contempt-Drop ist noch offen.",
+        "en": "The sources document the map, boss and construct tag. A Contempt drop specifically attributed to this boss is still unverified."
+      }
+    }
+  ]
+}

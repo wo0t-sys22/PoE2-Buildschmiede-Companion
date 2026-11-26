@@ -131,12 +131,10 @@ class CampaignCompanion {
       `<dt>${esc(attack.name)}</dt><dd><b class="boss-cue">Signal ·</b> ${esc(attack.tell)}<br><b class="boss-response">Reaktion ·</b> ${esc(attack.answer)}</dd>`).join('')}</dl>
       ${boss.window ? `<p><b>Konter</b> · ${esc(boss.window)}</p>` : ''}`;
     const reward = boss.rewardText || boss.reward;
-    const act = boss.act.startsWith('Interlude') ? 'Interludes' : boss.act;
-    const areaLink = './kontrollzentrum.html?' + new URLSearchParams({ act, zone: boss.zone }) + '#campaign';
     const label = ({ drop: 'Beute', quest: 'Questbelohnung', progress: 'Fortschritt', nearby: 'In der Nähe' })[boss.rewardKind] || 'Belohnung';
     return `<h3>${esc(boss.name)}</h3><small>${boss.required ? 'Pflichtboss' : 'Optionaler Boss'}</small>
       ${full ? details : `<p>${esc(boss.quick)}</p><details><summary>Angriffe &amp; Konter</summary>${details}</details>`}
-      <p><b>Fundort</b> · <a href="${esc(areaLink)}" target="_blank" rel="noopener noreferrer">${esc(boss.zone)} →</a></p>
+      <p><b>Fundort</b> · ${esc(boss.zone)}</p>
       ${reward ? `<p><b>${label}</b> · ${esc(reward)}</p>` : ''}
       ${boss.afterFight ? `<p>${esc(boss.afterFight)}</p>` : ''}
       <details><summary>Quellen</summary><small>${this.links(boss.sources)}</small></details>`;
@@ -162,7 +160,8 @@ class CampaignCompanion {
         `<button type="button" data-companion-open="build" value="${this.esc(item.id)}" aria-pressed="${item.id === build.id}">
           <strong>${this.esc(item.name)}</strong><span>${this.esc(item.author)}</span></button>`).join('')}</div>`
       : this.select('Build', 'build', builds.map(item => [item.id, item.name]), build.id);
-    const details = `<h4>Skills &amp; Supports</h4>${this.list(stage.skills)}
+    const skills = [...(stage.editorial?.gems?.hybrid ?? []), ...(stage.skills ?? [])];
+    const details = `<h4>Skills &amp; Supports</h4>${this.list(skills)}
       <h4>Tree &amp; Ascendancy</h4>${this.list(stage.passives)}
       <h4>Gear &amp; Crafting</h4>${this.list(stage.craft, true)}
       <details><summary>Begriffe erklären</summary>${this.list(Object.entries(build.glossary || {}).map(([term, meaning]) => term + ' · ' + meaning))}</details>

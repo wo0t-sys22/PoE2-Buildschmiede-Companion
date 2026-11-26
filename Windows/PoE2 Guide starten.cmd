@@ -1,7 +1,7 @@
 @echo off
 setlocal DisableDelayedExpansion
 cd /d "%~dp0"
-title PoE2 Ingame Guide v.0.19.0
+title PoE2 Ingame Guide v.0.23.0
 
 rem Release: app\ next to this starter. Working copy: Produktiv\Windows\ next to Produktiv\app\.
 set "POE2_APP=%~dp0app"

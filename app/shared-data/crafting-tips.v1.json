@@ -1,0 +1,52 @@
+{
+  "schema": "buildschmiede.crafting-tips.v1",
+  "title": {
+    "de": "Vor dem Währungseinsatz prüfen",
+    "hybrid": "Vor dem Craft prüfen",
+    "en": "Checks before spending currency"
+  },
+  "lexicon": [
+    "website.prefix",
+    "website.suffix",
+    "website.item-level",
+    "currency.exalted_orb"
+  ],
+  "checks": [
+    {
+      "detail": {
+        "de": "Halte beim Überfahren des Gegenstands Alt und zähle die Modifikatorblöcke. Auf einer passenden Rüstung kann ein Hybrid-Präfix etwa Rüstung, Ausweichen und Leben erhöhen. Es belegt einen Präfix-Platz.",
+        "hybrid": "Halte beim Überfahren des Items Alt und zähle die Mod-Blöcke. Ein Hybrid-Mod auf einer passenden Rüstung kann Armour, Evasion und Life erhöhen und belegt dabei nur einen Prefix-Slot.",
+        "en": "Hold Alt over the item and count modifier groups. A hybrid prefix on suitable armour can add Armour, Evasion and Life while taking up one prefix slot."
+      },
+      "compact": {
+        "de": "Alt halten, Modifikatorblöcke zählen. Ein Hybrid-Modifikator belegt einen Platz.",
+        "hybrid": "Alt halten, Mod-Blöcke zählen. Ein Hybrid-Mod belegt einen Slot.",
+        "en": "Hold Alt and count modifier groups. A hybrid mod takes one slot."
+      }
+    },
+    {
+      "detail": {
+        "de": "Sind auf seltener Ausrüstung alle Präfixe belegt und ist ein Suffix frei, fügt eine Erhabene Sphäre ohne zusätzliche Effekte ein Suffix hinzu. Welcher Modifikator entsteht, bleibt Zufall.",
+        "hybrid": "Sind auf einem Rare alle Prefixes belegt und ist ein Suffix frei, rollt eine Exalted Orb ohne zusätzliche Effekte auf der Suffix-Seite. Welcher Mod kommt, bleibt Zufall.",
+        "en": "If all prefixes are occupied and a suffix is free on rare equipment, an Exalted Orb used without additional effects adds a suffix. The modifier is still random."
+      },
+      "compact": {
+        "de": "Bei vollen Präfixen würfelt eine Erhabene Sphäre ohne Zusatzeffekte ein zufälliges Suffix, wenn noch Platz ist.",
+        "hybrid": "Bei vollen Prefixes rollt eine Exalted Orb ohne Zusatzeffekte ein zufälliges Suffix, wenn noch Platz ist.",
+        "en": "On rare gear with full prefixes, an unmodified Exalted Orb adds a random suffix if a slot is free."
+      }
+    },
+    {
+      "detail": {
+        "de": "Baue Basis, Gegenstandsstufe und vorhandene Modifikatoren in einem PoE2-Emulator nach. Probiere einen teuren Schritt mehrfach. Kann ein wichtiger Wert verschwinden, entscheide vor dem Einsatz, ob du den Verlust tragen willst.",
+        "hybrid": "Baue Base, Item Level und vorhandene Mods in einem PoE2-Emulator nach. Teste teure Schritte mehrfach. Kann dein Key-Mod verschwinden, entscheide vorher, ob du dieses Risiko eingehen willst.",
+        "en": "Recreate the base, Item Level and existing modifiers in a PoE2 emulator. Try an expensive step more than once. If it can remove a key modifier, decide whether you can accept that loss before spending."
+      },
+      "compact": {
+        "de": "Basis, Gegenstandsstufe und Mods im Emulator nachbauen. Vor dem Einsatz prüfen, welche guten Werte verloren gehen können.",
+        "hybrid": "Base, Item Level und Mods im Emulator nachbauen. Vor teuren Steps den möglichen Verlust des Key-Mods prüfen.",
+        "en": "Recreate the base, Item Level and mods in the emulator. Check which useful mods an expensive step could remove."
+      }
+    }
+  ]
+}

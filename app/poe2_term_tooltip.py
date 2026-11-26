@@ -194,6 +194,16 @@ class TermTooltips:
         article = self._entries().get(term_key(phrase))
         return article[:2] if article else None
 
+    def campaign_entry(self, phrase, term_refs):
+        """Resolve a matched campaign phrase using the row's authored references first."""
+        index = self._entries()
+        key = term_key(phrase)
+        article = self._article_by_id(term_refs.get(key)) or index.get(key)
+        if article:
+            title, summary, ident = article
+            return title, summary, ident, tooltip_art_ref(self.lexicon[ident])
+        return None
+
     def spans(self, text, term_refs=None):
         index = self._entries()
         if not term_refs:
@@ -341,16 +351,11 @@ class TermTooltips:
                             canvas.link_previews[target] = self.link_entry(guide, target, with_art=True)
                         return canvas, target, canvas.link_previews[target], anchor
                 phrase = resolver(cx, cy) if resolver else term_at(boxes, cx, cy)
-                article = None
                 if phrase:
-                    key = term_key(phrase)
-                    index = self._entries()
-                    ident = getattr(canvas, "term_refs", {}).get(key)
-                    article = self._article_by_id(ident) or index.get(key)
-                if article:
-                    title, summary, ident = article
-                    record = (self.lexicon or {}).get(ident, {})
-                    return canvas, phrase, (title, summary, None, tooltip_art_ref(record)), None
+                    entry = self.campaign_entry(phrase, getattr(canvas, "term_refs", {}))
+                    if entry:
+                        title, summary, _, art = entry
+                        return canvas, phrase, (title, summary, None, art), None
         return None
 
     def link_entry(self, guide, target, *, with_art=False):

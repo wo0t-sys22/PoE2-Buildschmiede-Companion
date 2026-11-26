@@ -1,0 +1,1678 @@
+{
+  "schema": "buildschmiede.lexicon-guides.v1",
+  "terms": {
+    "cooldown-recovery-rate": [
+      "swap",
+      "stages"
+    ],
+    "amulet": [
+      "amulet-life",
+      "amulet-attrs",
+      "amulet-spirit"
+    ],
+    "exposure": [
+      "defence",
+      "tactician-grenades"
+    ],
+    "attack-speed": [
+      "crossbow-flat",
+      "bow-speed",
+      "gloves-speed"
+    ],
+    "arcanist-s-etcher": [
+      "bases",
+      "filter-gear"
+    ],
+    "crossbow": [
+      "crossbow-flat",
+      "crossbow-levels",
+      "tactician-grenades"
+    ],
+    "ascendancy": [
+      "sekhemas",
+      "djinn-skills",
+      "first-ascendancy",
+      "chaos-ascendancy"
+    ],
+    "fork": [
+      "twister-gear",
+      "stages"
+    ],
+    "split": [
+      "twister-gear",
+      "stages"
+    ],
+    "orb-of-augmentation": [
+      "craft",
+      "bases"
+    ],
+    "evasion": [
+      "defence",
+      "body-evasion-flat",
+      "body-evasion-increased"
+    ],
+    "solo-self-found": [
+      "ssf",
+      "filter-gear"
+    ],
+    "barya": [
+      "sekhemas",
+      "stages"
+    ],
+    "ailments": [
+      "defence-boss",
+      "gear-check"
+    ],
+    "movement-speed": [
+      "boots-speed",
+      "defence-boss"
+    ],
+    "bidding": [
+      "djinn-skills",
+      "stages"
+    ],
+    "lightning": [
+      "defence",
+      "lightning-res"
+    ],
+    "lightning-resistance": [
+      "lightning-res",
+      "defence-boss"
+    ],
+    "block": [
+      "defence",
+      "gear-check"
+    ],
+    "bleeding": [
+      "defence",
+      "defence-boss"
+    ],
+    "bow": [
+      "bow-flat-phys",
+      "bow-speed",
+      "twister-gear"
+    ],
+    "critical-damage-bonus": [
+      "defence",
+      "stages"
+    ],
+    "well": [
+      "controls",
+      "defence-boss"
+    ],
+    "fracturing-orb": [
+      "craft",
+      "filters"
+    ],
+    "book-of-specialisation": [
+      "una-lute",
+      "stages"
+    ],
+    "chaos": [
+      "chaos-res"
+    ],
+    "chaos-inoculation": [
+      "gear-check",
+      "djinn-gear"
+    ],
+    "chaos-orb": [
+      "craft",
+      "bases"
+    ],
+    "chaos-resistance": [
+      "chaos-res"
+    ],
+    "combo": [
+      "stages"
+    ],
+    "command": [
+      "djinn-skills",
+      "swap"
+    ],
+    "corrosion": [
+      "tactician-grenades",
+      "defence"
+    ],
+    "the-burning-monolith": [
+      "atlas",
+      "tablets"
+    ],
+    "djinn": [
+      "djinn-skills",
+      "djinn-gear"
+    ],
+    "dominion": [
+      "djinn-skills",
+      "djinn-gear"
+    ],
+    "pierce": [
+      "bow-levels",
+      "stages"
+    ],
+    "penetration": [
+      "defence",
+      "wand-lightning"
+    ],
+    "freeze": [
+      "defence"
+    ],
+    "unique": [
+      "loot",
+      "buy"
+    ],
+    "iron-citadel": [
+      "atlas",
+      "tablets"
+    ],
+    "elemental-resistances": [
+      "ring-all-res",
+      "amulet-all-res",
+      "defence-boss"
+    ],
+    "power-charges": [
+      "stages"
+    ],
+    "energy-shield": [
+      "body-es",
+      "amulet-es",
+      "gear-check"
+    ],
+    "ignite": [
+      "defence-boss",
+      "defence"
+    ],
+    "exalted-orb": [
+      "craft",
+      "filters",
+      "craft-checks"
+    ],
+    "buckler": [
+      "bases",
+      "defence"
+    ],
+    "skill-gem": [
+      "riverbank",
+      "stages"
+    ],
+    "fire": [
+      "fire-res",
+      "defence"
+    ],
+    "fire-resistance": [
+      "fire-res",
+      "defence-boss"
+    ],
+    "liquid-emotions": [
+      "tablets",
+      "bases"
+    ],
+    "focus": [
+      "body-es",
+      "djinn-gear",
+      "gear-check"
+    ],
+    "item-level": [
+      "bases",
+      "filters",
+      "craft-checks"
+    ],
+    "dexterity": [
+      "amulet-attrs"
+    ],
+    "mirrored": [
+      "loot",
+      "craft"
+    ],
+    "poison": [
+      "chaos-res"
+    ],
+    "greater-jeweller-s-orb": [
+      "stages",
+      "craft"
+    ],
+    "divine-orb": [
+      "craft",
+      "filters"
+    ],
+    "belt": [
+      "buy",
+      "gear-check"
+    ],
+    "gloves": [
+      "gloves-life",
+      "gloves-speed",
+      "gloves-melee"
+    ],
+    "hc-ssf": [
+      "ssf",
+      "defence-boss"
+    ],
+    "helmet": [
+      "helmet-life",
+      "helmet-es",
+      "helmet-minions"
+    ],
+    "regal-shard": [
+      "craft",
+      "ssf"
+    ],
+    "regal-orb": [
+      "craft",
+      "bases"
+    ],
+    "scroll-of-wisdom": [
+      "loot",
+      "filter-gear"
+    ],
+    "intelligence": [
+      "amulet-attrs",
+      "djinn-gear"
+    ],
+    "jewels": [
+      "bases"
+    ],
+    "quarterstaff": [
+      "quarterstaff-phys-percent"
+    ],
+    "catalysts": [
+      "craft",
+      "bases"
+    ],
+    "lesser-jeweller-s-orb": [
+      "riverbank",
+      "stages"
+    ],
+    "checkpoint": [
+      "riverbank",
+      "controls"
+    ],
+    "minions": [
+      "djinn-skills",
+      "djinn-gear",
+      "sceptre-minion"
+    ],
+    "glassblower-s-bauble": [
+      "defence-boss",
+      "trade"
+    ],
+    "copper-citadel": [
+      "atlas",
+      "tablets"
+    ],
+    "cold": [
+      "cold-res"
+    ],
+    "cold-resistance": [
+      "cold-res",
+      "defence-boss"
+    ],
+    "quiver": [
+      "bow-flat-phys",
+      "buy"
+    ],
+    "life": [
+      "body-life",
+      "ring-life",
+      "defence"
+    ],
+    "life-flask": [
+      "defence-boss",
+      "gear-check"
+    ],
+    "life-leech": [
+      "defence",
+      "gear-check"
+    ],
+    "magic": [
+      "craft",
+      "bases"
+    ],
+    "mana": [
+      "stages",
+      "swap"
+    ],
+    "mana-flask": [
+      "stages",
+      "gear-check"
+    ],
+    "mana-leech": [
+      "stages",
+      "gear-check"
+    ],
+    "modifier": [
+      "craft",
+      "filters"
+    ],
+    "muster": [
+      "djinn-skills",
+      "stages"
+    ],
+    "normal": [
+      "bases",
+      "craft"
+    ],
+    "perfect-jeweller-s-orb": [
+      "stages",
+      "craft"
+    ],
+    "charms": [
+      "defence-boss",
+      "gear-check"
+    ],
+    "physical-damage": [
+      "weapon-phys",
+      "ring-flat-phys",
+      "defence"
+    ],
+    "armourer-s-scrap": [
+      "bases",
+      "craft"
+    ],
+    "precursor-tablet": [
+      "tablets",
+      "atlas"
+    ],
+    "gemcutter-s-prism": [
+      "stages",
+      "swap"
+    ],
+    "projectile": [
+      "bow-levels",
+      "crossbow-levels",
+      "twister-gear"
+    ],
+    "prefix": [
+      "craft",
+      "filters",
+      "craft-checks"
+    ],
+    "puppet-master": [
+      "djinn-skills",
+      "djinn-gear"
+    ],
+    "quality": [
+      "bases",
+      "filter-gear"
+    ],
+    "frenzy-charges": [
+      "twister-gear",
+      "stages"
+    ],
+    "reservation": [
+      "djinn-gear",
+      "tactician-gear",
+      "swap"
+    ],
+    "armour": [
+      "body-armour",
+      "defence",
+      "gear-check"
+    ],
+    "armour-break": [
+      "tactician-grenades",
+      "defence"
+    ],
+    "damage-over-time": [
+      "defence"
+    ],
+    "damage-conversion": [
+      "defence",
+      "weapon-phys"
+    ],
+    "artificer-s-shard": [
+      "bases",
+      "craft"
+    ],
+    "shield": [
+      "defence",
+      "gear-check"
+    ],
+    "blacksmith-s-whetstone": [
+      "weapon-phys",
+      "bases"
+    ],
+    "shock": [
+      "lightning-res",
+      "defence"
+    ],
+    "debuff": [
+      "defence-boss",
+      "stages"
+    ],
+    "rare": [
+      "craft",
+      "loot"
+    ],
+    "rarity": [
+      "helmet-rarity",
+      "helmet-rarity-suffix",
+      "loot"
+    ],
+    "spear": [
+      "twister-gear",
+      "melee-levels"
+    ],
+    "orb-of-alchemy": [
+      "craft",
+      "bases"
+    ],
+    "orb-of-annulment": [
+      "craft",
+      "filters"
+    ],
+    "orb-of-chance": [
+      "bases",
+      "ssf"
+    ],
+    "artificer-s-orb": [
+      "bases",
+      "craft"
+    ],
+    "staff": [
+      "staff-spell",
+      "staff-levels",
+      "staff-speed"
+    ],
+    "stone-citadel": [
+      "atlas",
+      "tablets"
+    ],
+    "boots": [
+      "boots-speed",
+      "boots-life"
+    ],
+    "strength": [
+      "amulet-attrs",
+      "tactician-gear"
+    ],
+    "buff": [
+      "stages",
+      "swap"
+    ],
+    "suffix": [
+      "craft",
+      "filters",
+      "craft-checks"
+    ],
+    "talisman": [
+      "bases",
+      "buy"
+    ],
+    "culling-strike": [
+      "stages"
+    ],
+    "accuracy-rating": [
+      "defence"
+    ],
+    "trial-of-the-sekhemas": [
+      "sekhemas",
+      "djinn-skills"
+    ],
+    "chest": [
+      "riverbank",
+      "filter-gear"
+    ],
+    "transmutation-shard": [
+      "craft",
+      "ssf"
+    ],
+    "orb-of-transmutation": [
+      "craft",
+      "bases"
+    ],
+    "uncut-skill-gem": [
+      "riverbank",
+      "stages"
+    ],
+    "uncut-support-gem": [
+      "tactician-grenades",
+      "stages"
+    ],
+    "uncut-spirit-gem": [
+      "djinn-skills",
+      "tactician-gear"
+    ],
+    "chill": [
+      "cold-res",
+      "defence"
+    ],
+    "chilled-ground": [
+      "cold-res",
+      "defence-boss"
+    ],
+    "support-gem": [
+      "tactician-grenades",
+      "stages"
+    ],
+    "vaal-orb": [
+      "craft",
+      "filters"
+    ],
+    "corrupted": [
+      "craft",
+      "buy"
+    ],
+    "chain": [
+      "twister-gear",
+      "stages"
+    ],
+    "maim": [
+      "defence",
+      "stages"
+    ],
+    "weapon-set-1": [
+      "swap",
+      "stages"
+    ],
+    "weapon-set-2": [
+      "swap",
+      "stages"
+    ],
+    "waypoint": [
+      "riverbank",
+      "controls"
+    ],
+    "waystone": [
+      "atlas",
+      "tablets"
+    ],
+    "resistance": [
+      "defence-boss",
+      "ring-all-res",
+      "chaos-res"
+    ],
+    "endurance-charges": [
+      "stages",
+      "defence"
+    ],
+    "spirit": [
+      "sceptre-spirit",
+      "body-spirit",
+      "amulet-spirit",
+      "tactician-gear",
+      "djinn-gear"
+    ],
+    "currency-exchange": [
+      "trade",
+      "ssf"
+    ],
+    "cast-speed": [
+      "wand-cast",
+      "staff-speed",
+      "stages"
+    ],
+    "spell-damage": [
+      "wand-spell",
+      "staff-spell"
+    ],
+    "wand": [
+      "wand-spell",
+      "wand-cast",
+      "wand-levels"
+    ],
+    "sceptre": [
+      "sceptre-spirit",
+      "sceptre-minion",
+      "djinn-gear"
+    ],
+    "citadel": [
+      "atlas",
+      "tablets"
+    ],
+    "two-handed-axe": [
+      "melee-flat",
+      "melee-speed",
+      "melee-levels"
+    ],
+    "two-handed-mace": [
+      "mace-flat",
+      "mace-levels",
+      "bases"
+    ],
+    "abyss": [
+      "first-desecration",
+      "abyss-depths-guide",
+      "atlas-abyss-quest"
+    ],
+    "aldur": [
+      "runes-act4",
+      "runes-act1"
+    ],
+    "archnemesis": [
+      "rare-monster-route",
+      "defence"
+    ],
+    "area-of-effect": [
+      "tactician-supporting"
+    ],
+    "atziri": [
+      "vaal-temple-route",
+      "atlas-temple-quest"
+    ],
+    "azmeri-spirit": [
+      "azmeri-tablets"
+    ],
+    "breach": [
+      "atlas-breach-quest"
+    ],
+    "build": [
+      "choose-build",
+      "stages"
+    ],
+    "cooldown": [
+      "djinn-skills"
+    ],
+    "delirium": [
+      "delirium-constructs",
+      "atlas-delirium-quest"
+    ],
+    "desecrated-modifier": [
+      "first-desecration",
+      "abyss-guide",
+      "craft-checks"
+    ],
+    "essence": [
+      "essence-act2",
+      "craft"
+    ],
+    "expedition": [
+      "atlas-expedition-quest",
+      "runes-act4"
+    ],
+    "explosive-grenade": [
+      "tactician-explosive"
+    ],
+    "haunted-treasure": [
+      "haunted-treasure-route"
+    ],
+    "hit": [
+      "evasion-hit-example"
+    ],
+    "honour-resistance": [
+      "honour-route",
+      "first-ascendancy"
+    ],
+    "irradiated": [
+      "atlas-irradiation"
+    ],
+    "kelaris-deception": [
+      "djinn-skills"
+    ],
+    "keystone": [
+      "tree-node-types"
+    ],
+    "notable": [
+      "tree-node-types"
+    ],
+    "passive-tree": [
+      "tree-pathing",
+      "tree-node-types"
+    ],
+    "rare-monster": [
+      "rare-monster-route"
+    ],
+    "rarity-of-items-found": [
+      "rarity-az-bog",
+      "helmet-rarity",
+      "helmet-rarity-suffix"
+    ],
+    "ritual": [
+      "ritual-act1",
+      "atlas-ritual-quest"
+    ],
+    "supporting-fire": [
+      "tactician-supporting",
+      "tactician-gear"
+    ],
+    "tactician": [
+      "tactician-supporting",
+      "first-ascendancy"
+    ],
+    "trial-of-chaos": [
+      "chaos-trial-route",
+      "chaos-ascendancy"
+    ],
+    "twister": [
+      "twister-rotation",
+      "twister-gear"
+    ]
+  },
+  "targets": {
+    "defence": {
+      "label": {
+        "de": "Die Gefahr zuerst erkennen",
+        "en": "Identify the danger first",
+        "hybrid": "Die Gefahr zuerst erkennen"
+      },
+      "url": "/grundlagen/defensive-schadensarten/#guide-threat"
+    },
+    "defence-boss": {
+      "label": {
+        "de": "Vor dem Boss kontrollieren",
+        "en": "Check before a boss",
+        "hybrid": "Vor dem Boss kontrollieren"
+      },
+      "url": "/grundlagen/defensive-schadensarten/#guide-boss-check"
+    },
+    "gear-check": {
+      "label": {
+        "de": "Nach einem Ausrüstungswechsel nachprüfen",
+        "en": "Recheck after changing gear",
+        "hybrid": "Nach einem Ausrüstungswechsel nachprüfen"
+      },
+      "url": "/grundlagen/defensive-schadensarten/#guide-after-gear"
+    },
+    "bases": {
+      "label": {
+        "de": "Basis, Itemlevel und Anforderung unterscheiden",
+        "en": "Separate base, item level and requirement",
+        "hybrid": "Basis, Itemlevel und Anforderung unterscheiden"
+      },
+      "url": "/grundlagen/crafting-basis-itemlevel-affixe/#guide-item-bases"
+    },
+    "craft": {
+      "label": {
+        "de": "Präfix und Suffix prüfen",
+        "en": "Check prefixes and suffixes",
+        "hybrid": "Präfix und Suffix prüfen"
+      },
+      "url": "/grundlagen/crafting-basis-itemlevel-affixe/#guide-prefix-suffix"
+    },
+    "filters": {
+      "label": {
+        "de": "Die Crafting-Filter richtig lesen",
+        "en": "Read the crafting filters correctly",
+        "hybrid": "Die Crafting-Filter richtig lesen"
+      },
+      "url": "/grundlagen/crafting-basis-itemlevel-affixe/#guide-tier-filters"
+    },
+    "loot": {
+      "label": {
+        "de": "Vom Build ausgehen",
+        "en": "Start with your build",
+        "hybrid": "Vom Build ausgehen"
+      },
+      "url": "/grundlagen/lootfilter-gegenstaende/#guide-loot-build"
+    },
+    "filter-gear": {
+      "label": {
+        "de": "Filter und Anzeige abgleichen",
+        "en": "Match the filter to your needs",
+        "hybrid": "Filter und Anzeige abgleichen"
+      },
+      "url": "/grundlagen/lootfilter-gegenstaende/#guide-loot-filter"
+    },
+    "trade": {
+      "label": {
+        "de": "Währungswechsel prüfen",
+        "en": "Check a currency exchange",
+        "hybrid": "Währungswechsel prüfen"
+      },
+      "url": "/grundlagen/handel-waehrungsmarkt/#guide-market"
+    },
+    "buy": {
+      "label": {
+        "de": "Vor dem Kauf festlegen, was fehlt",
+        "en": "Define what is missing before buying",
+        "hybrid": "Vor dem Kauf festlegen, was fehlt"
+      },
+      "url": "/grundlagen/handel-waehrungsmarkt/#guide-buying"
+    },
+    "ssf": {
+      "label": {
+        "de": "In SSF anders planen",
+        "en": "Plan differently in SSF",
+        "hybrid": "In SSF anders planen"
+      },
+      "url": "/grundlagen/handel-waehrungsmarkt/#guide-ssf"
+    },
+    "controls": {
+      "label": {
+        "de": "Companion bedienen",
+        "en": "Use the companion",
+        "hybrid": "Companion bedienen"
+      },
+      "url": "/grundlagen/einstellungen-bedienung/#guide-companion-controls"
+    },
+    "stages": {
+      "label": {
+        "de": "Die Phase ist eine Checkliste",
+        "en": "A stage is a checklist",
+        "hybrid": "Die Phase ist eine Checkliste"
+      },
+      "url": "/grundlagen/buildwechsel-fehler/#guide-build-checklist"
+    },
+    "swap": {
+      "label": {
+        "de": "Nach dem Wechsel einmal vollständig prüfen",
+        "en": "Check the complete setup after transitioning",
+        "hybrid": "Nach dem Wechsel einmal vollständig prüfen"
+      },
+      "url": "/grundlagen/buildwechsel-fehler/#guide-build-swap"
+    },
+    "atlas": {
+      "label": {
+        "de": "Atlas-Progression",
+        "en": "Atlas progression",
+        "hybrid": "Atlas-Progression"
+      },
+      "url": "/endgame-atlas/#guide-atlas-progression"
+    },
+    "tablets": {
+      "label": {
+        "de": "Tablets & Farm-Ziele",
+        "en": "Tablets & farming goals",
+        "hybrid": "Tablets & Farm-Ziele"
+      },
+      "url": "/endgame-atlas/#guide-tablets"
+    },
+    "riverbank": {
+      "label": {
+        "de": "Flussufer · erster Skill",
+        "en": "Riverbank · first skill",
+        "hybrid": "Flussufer · erster Skill"
+      },
+      "url": "/kampagne/?bs_gebiet=a1-riverbank",
+      "local": {
+        "kind": "campaign",
+        "id": "a1-riverbank"
+      }
+    },
+    "una-lute": {
+      "label": {
+        "de": "Ogham-Felder · Unas Laute",
+        "en": "Ogham Farmlands · Una’s Lute",
+        "hybrid": "Ogham-Felder · Unas Laute"
+      },
+      "url": "/kampagne/?bs_gebiet=a1-farmlands-exit",
+      "local": {
+        "kind": "campaign",
+        "id": "a1-farmlands-exit"
+      }
+    },
+    "sekhemas": {
+      "label": {
+        "de": "Erste Prüfung und Aszendenz",
+        "en": "First trial and Ascendancy",
+        "hybrid": "Erste Prüfung und Aszendenz"
+      },
+      "url": "/kampagne/?bs_gebiet=a2-sekhemas",
+      "local": {
+        "kind": "campaign",
+        "id": "a2-sekhemas"
+      }
+    },
+    "tactician-gear": {
+      "label": {
+        "de": "Supporting Fire · Ausrüstung beim Wechsel",
+        "en": "Supporting Fire · gear for the swap",
+        "hybrid": "Supporting Fire · Ausrüstung beim Wechsel"
+      },
+      "url": "/builds/supporting-fire-%c2%b7-taktiker/#guide-craft-swap"
+    },
+    "tactician-grenades": {
+      "label": {
+        "de": "Supporting Fire · Setup mit Gasgranate",
+        "en": "Supporting Fire · Gas Grenade setup",
+        "hybrid": "Supporting Fire · Setup mit Gasgranate"
+      },
+      "url": "/builds/supporting-fire-%c2%b7-taktiker/#guide-skills-grenades"
+    },
+    "djinn-gear": {
+      "label": {
+        "de": "Varashta · Zepter und Wille",
+        "en": "Varashta · sceptre and Spirit",
+        "hybrid": "Varashta · Zepter und Wille"
+      },
+      "url": "/builds/archon-djinn-%c2%b7-varashta/#guide-craft-djinn"
+    },
+    "djinn-skills": {
+      "label": {
+        "de": "Varashta · Setup nach der Prüfung",
+        "en": "Varashta · setup after the trial",
+        "hybrid": "Varashta · Setup nach der Prüfung"
+      },
+      "url": "/builds/archon-djinn-%c2%b7-varashta/#guide-skills-djinn"
+    },
+    "twister-gear": {
+      "label": {
+        "de": "Twister · Ausrüstung ab Akt 3",
+        "en": "Twister · gearing from Act 3",
+        "hybrid": "Twister · Ausrüstung ab Akt 3"
+      },
+      "url": "/builds/twister-%c2%b7-spirit-walker/#guide-craft-act3plus"
+    },
+    "weapon-phys": {
+      "label": {
+        "de": "Local physical damage · Bow, Crossbow, One Hand Mace, Quarterstaff or Talisman",
+        "en": "Local physical damage · Bow, Crossbow, One Hand Mace, Quarterstaff or Talisman",
+        "hybrid": "Local physical damage · Bow, Crossbow, One Hand Mace, Quarterstaff or Talisman"
+      },
+      "url": "/endgame-atlas/#affix-weapon-phys"
+    },
+    "bow-flat-phys": {
+      "label": {
+        "de": "Added physical damage · Bow",
+        "en": "Added physical damage · Bow",
+        "hybrid": "Added physical damage · Bow"
+      },
+      "url": "/endgame-atlas/#affix-bow-flat-phys"
+    },
+    "bow-speed": {
+      "label": {
+        "de": "Attack speed · Bow or Crossbow",
+        "en": "Attack speed · Bow or Crossbow",
+        "hybrid": "Attack speed · Bow or Crossbow"
+      },
+      "url": "/endgame-atlas/#affix-bow-speed"
+    },
+    "bow-levels": {
+      "label": {
+        "de": "Projectile skill levels · Bow",
+        "en": "Projectile skill levels · Bow",
+        "hybrid": "Projectile skill levels · Bow"
+      },
+      "url": "/endgame-atlas/#affix-bow-levels"
+    },
+    "wand-spell": {
+      "label": {
+        "de": "Spell damage · Wand",
+        "en": "Spell damage · Wand",
+        "hybrid": "Spell damage · Wand"
+      },
+      "url": "/endgame-atlas/#affix-wand-spell"
+    },
+    "wand-cast": {
+      "label": {
+        "de": "Cast speed · Wand",
+        "en": "Cast speed · Wand",
+        "hybrid": "Cast speed · Wand"
+      },
+      "url": "/endgame-atlas/#affix-wand-cast"
+    },
+    "wand-levels": {
+      "label": {
+        "de": "Spell skill levels · Wand",
+        "en": "Spell skill levels · Wand",
+        "hybrid": "Spell skill levels · Wand"
+      },
+      "url": "/endgame-atlas/#affix-wand-levels"
+    },
+    "wand-lightning": {
+      "label": {
+        "de": "Lightning spell skill levels · Lightning-eligible wand",
+        "en": "Lightning spell skill levels · Lightning-eligible wand",
+        "hybrid": "Lightning spell skill levels · Lightning-eligible wand"
+      },
+      "url": "/endgame-atlas/#affix-wand-lightning"
+    },
+    "staff-spell": {
+      "label": {
+        "de": "Spell damage · Staff",
+        "en": "Spell damage · Staff",
+        "hybrid": "Spell damage · Staff"
+      },
+      "url": "/endgame-atlas/#affix-staff-spell"
+    },
+    "staff-levels": {
+      "label": {
+        "de": "Spell skill levels · Staff",
+        "en": "Spell skill levels · Staff",
+        "hybrid": "Spell skill levels · Staff"
+      },
+      "url": "/endgame-atlas/#affix-staff-levels"
+    },
+    "staff-speed": {
+      "label": {
+        "de": "Cast speed · Staff",
+        "en": "Cast speed · Staff",
+        "hybrid": "Cast speed · Staff"
+      },
+      "url": "/endgame-atlas/#affix-staff-speed"
+    },
+    "sceptre-spirit": {
+      "label": {
+        "de": "Wille als Präfix · Zepter",
+        "en": "Spirit prefix · sceptre",
+        "hybrid": "Wille als Präfix · Zepter"
+      },
+      "url": "/endgame-atlas/#affix-sceptre-spirit"
+    },
+    "sceptre-minion": {
+      "label": {
+        "de": "Minion skill levels · Sceptre",
+        "en": "Minion skill levels · Sceptre",
+        "hybrid": "Minion skill levels · Sceptre"
+      },
+      "url": "/endgame-atlas/#affix-sceptre-minion"
+    },
+    "crossbow-flat": {
+      "label": {
+        "de": "Added physical damage · Crossbow",
+        "en": "Added physical damage · Crossbow",
+        "hybrid": "Added physical damage · Crossbow"
+      },
+      "url": "/endgame-atlas/#affix-crossbow-flat"
+    },
+    "crossbow-levels": {
+      "label": {
+        "de": "Projectile skill levels · Crossbow",
+        "en": "Projectile skill levels · Crossbow",
+        "hybrid": "Projectile skill levels · Crossbow"
+      },
+      "url": "/endgame-atlas/#affix-crossbow-levels"
+    },
+    "melee-flat": {
+      "label": {
+        "de": "Added physical damage · Quarterstaff or Talisman",
+        "en": "Added physical damage · Quarterstaff or Talisman",
+        "hybrid": "Added physical damage · Quarterstaff or Talisman"
+      },
+      "url": "/endgame-atlas/#affix-melee-flat"
+    },
+    "mace-flat": {
+      "label": {
+        "de": "Added physical damage · One Hand Mace",
+        "en": "Added physical damage · One Hand Mace",
+        "hybrid": "Added physical damage · One Hand Mace"
+      },
+      "url": "/endgame-atlas/#affix-mace-flat"
+    },
+    "melee-speed": {
+      "label": {
+        "de": "Attack speed · One Hand Mace, Quarterstaff or Talisman",
+        "en": "Attack speed · One Hand Mace, Quarterstaff or Talisman",
+        "hybrid": "Attack speed · One Hand Mace, Quarterstaff or Talisman"
+      },
+      "url": "/endgame-atlas/#affix-melee-speed"
+    },
+    "melee-levels": {
+      "label": {
+        "de": "Melee skill levels · Quarterstaff or Talisman",
+        "en": "Melee skill levels · Quarterstaff or Talisman",
+        "hybrid": "Melee skill levels · Quarterstaff or Talisman"
+      },
+      "url": "/endgame-atlas/#affix-melee-levels"
+    },
+    "mace-levels": {
+      "label": {
+        "de": "Melee skill levels · One Hand Mace",
+        "en": "Melee skill levels · One Hand Mace",
+        "hybrid": "Melee skill levels · One Hand Mace"
+      },
+      "url": "/endgame-atlas/#affix-mace-levels"
+    },
+    "body-life": {
+      "label": {
+        "de": "Flat maximum Life · Any body armour",
+        "en": "Flat maximum Life · Any body armour",
+        "hybrid": "Flat maximum Life · Any body armour"
+      },
+      "url": "/endgame-atlas/#affix-body-life"
+    },
+    "body-armour": {
+      "label": {
+        "de": "Local Armour · Armour-only base",
+        "en": "Local Armour · Armour-only base",
+        "hybrid": "Local Armour · Armour-only base"
+      },
+      "url": "/endgame-atlas/#affix-body-armour"
+    },
+    "body-es": {
+      "label": {
+        "de": "Local flat Energy Shield · Pure Energy Shield or triple-defence base",
+        "en": "Local flat Energy Shield · Pure Energy Shield or triple-defence base",
+        "hybrid": "Local flat Energy Shield · Pure Energy Shield or triple-defence base"
+      },
+      "url": "/endgame-atlas/#affix-body-es"
+    },
+    "body-spirit": {
+      "label": {
+        "de": "Wille als Präfix · geeignete Körperrüstung",
+        "en": "Spirit prefix · eligible body armour",
+        "hybrid": "Wille als Präfix · geeignete Körperrüstung"
+      },
+      "url": "/endgame-atlas/#affix-body-spirit"
+    },
+    "helmet-life": {
+      "label": {
+        "de": "Flat maximum Life · Any helmet",
+        "en": "Flat maximum Life · Any helmet",
+        "hybrid": "Flat maximum Life · Any helmet"
+      },
+      "url": "/endgame-atlas/#affix-helmet-life"
+    },
+    "helmet-minions": {
+      "label": {
+        "de": "Minion skill levels · Helmet",
+        "en": "Minion skill levels · Helmet",
+        "hybrid": "Minion skill levels · Helmet"
+      },
+      "url": "/endgame-atlas/#affix-helmet-minions"
+    },
+    "helmet-es": {
+      "label": {
+        "de": "Local flat Energy Shield · Pure Energy Shield or triple-defence base",
+        "en": "Local flat Energy Shield · Pure Energy Shield or triple-defence base",
+        "hybrid": "Local flat Energy Shield · Pure Energy Shield or triple-defence base"
+      },
+      "url": "/endgame-atlas/#affix-helmet-es"
+    },
+    "helmet-rarity": {
+      "label": {
+        "de": "Item rarity · Any helmet",
+        "en": "Item rarity · Any helmet",
+        "hybrid": "Item rarity · Any helmet"
+      },
+      "url": "/endgame-atlas/#affix-helmet-rarity"
+    },
+    "helmet-rarity-suffix": {
+      "label": {
+        "de": "Item rarity · Any helmet",
+        "en": "Item rarity · Any helmet",
+        "hybrid": "Item rarity · Any helmet"
+      },
+      "url": "/endgame-atlas/#affix-helmet-rarity-suffix"
+    },
+    "gloves-life": {
+      "label": {
+        "de": "Flat maximum Life · Any gloves",
+        "en": "Flat maximum Life · Any gloves",
+        "hybrid": "Flat maximum Life · Any gloves"
+      },
+      "url": "/endgame-atlas/#affix-gloves-life"
+    },
+    "gloves-melee": {
+      "label": {
+        "de": "Melee skill levels · Gloves",
+        "en": "Melee skill levels · Gloves",
+        "hybrid": "Melee skill levels · Gloves"
+      },
+      "url": "/endgame-atlas/#affix-gloves-melee"
+    },
+    "gloves-speed": {
+      "label": {
+        "de": "Attack speed · Any gloves",
+        "en": "Attack speed · Any gloves",
+        "hybrid": "Attack speed · Any gloves"
+      },
+      "url": "/endgame-atlas/#affix-gloves-speed"
+    },
+    "boots-speed": {
+      "label": {
+        "de": "Movement speed · Any boots",
+        "en": "Movement speed · Any boots",
+        "hybrid": "Movement speed · Any boots"
+      },
+      "url": "/endgame-atlas/#affix-boots-speed"
+    },
+    "boots-life": {
+      "label": {
+        "de": "Flat maximum Life · Any boots",
+        "en": "Flat maximum Life · Any boots",
+        "hybrid": "Flat maximum Life · Any boots"
+      },
+      "url": "/endgame-atlas/#affix-boots-life"
+    },
+    "ring-life": {
+      "label": {
+        "de": "Flat maximum Life · Ring",
+        "en": "Flat maximum Life · Ring",
+        "hybrid": "Flat maximum Life · Ring"
+      },
+      "url": "/endgame-atlas/#affix-ring-life"
+    },
+    "ring-all-res": {
+      "label": {
+        "de": "All elemental resistances · Ring",
+        "en": "All elemental resistances · Ring",
+        "hybrid": "All elemental resistances · Ring"
+      },
+      "url": "/endgame-atlas/#affix-ring-all-res"
+    },
+    "amulet-life": {
+      "label": {
+        "de": "Flat maximum Life · Amulet",
+        "en": "Flat maximum Life · Amulet",
+        "hybrid": "Flat maximum Life · Amulet"
+      },
+      "url": "/endgame-atlas/#affix-amulet-life"
+    },
+    "amulet-es": {
+      "label": {
+        "de": "Global flat Energy Shield · Amulet",
+        "en": "Global flat Energy Shield · Amulet",
+        "hybrid": "Global flat Energy Shield · Amulet"
+      },
+      "url": "/endgame-atlas/#affix-amulet-es"
+    },
+    "amulet-spirit": {
+      "label": {
+        "de": "Wille als Präfix · Amulett",
+        "en": "Spirit prefix · amulet",
+        "hybrid": "Wille als Präfix · Amulett"
+      },
+      "url": "/endgame-atlas/#affix-amulet-spirit"
+    },
+    "amulet-attrs": {
+      "label": {
+        "de": "All attributes · Amulet",
+        "en": "All attributes · Amulet",
+        "hybrid": "All attributes · Amulet"
+      },
+      "url": "/endgame-atlas/#affix-amulet-attrs"
+    },
+    "amulet-all-res": {
+      "label": {
+        "de": "All elemental resistances · Amulet",
+        "en": "All elemental resistances · Amulet",
+        "hybrid": "All elemental resistances · Amulet"
+      },
+      "url": "/endgame-atlas/#affix-amulet-all-res"
+    },
+    "fire-res": {
+      "label": {
+        "de": "Fire Resistance · Armour, rings & amulets",
+        "en": "Fire Resistance · Armour, rings & amulets",
+        "hybrid": "Fire Resistance · Armour, rings & amulets"
+      },
+      "url": "/endgame-atlas/#affix-fire-res"
+    },
+    "cold-res": {
+      "label": {
+        "de": "Cold Resistance · Armour, rings & amulets",
+        "en": "Cold Resistance · Armour, rings & amulets",
+        "hybrid": "Cold Resistance · Armour, rings & amulets"
+      },
+      "url": "/endgame-atlas/#affix-cold-res"
+    },
+    "lightning-res": {
+      "label": {
+        "de": "Lightning Resistance · Armour, rings & amulets",
+        "en": "Lightning Resistance · Armour, rings & amulets",
+        "hybrid": "Lightning Resistance · Armour, rings & amulets"
+      },
+      "url": "/endgame-atlas/#affix-lightning-res"
+    },
+    "chaos-res": {
+      "label": {
+        "de": "Chaos Resistance · Armour, rings & amulets",
+        "en": "Chaos Resistance · Armour, rings & amulets",
+        "hybrid": "Chaos Resistance · Armour, rings & amulets"
+      },
+      "url": "/endgame-atlas/#affix-chaos-res"
+    },
+    "quarterstaff-phys-percent": {
+      "label": {
+        "de": "Local Physical Damage · Quarterstaff",
+        "en": "Local Physical Damage · Quarterstaff",
+        "hybrid": "Local Physical Damage · Quarterstaff"
+      },
+      "url": "/endgame-atlas/#affix-quarterstaff-phys-percent"
+    },
+    "ring-flat-phys": {
+      "label": {
+        "de": "Flat Physical Attack Damage · Ring",
+        "en": "Flat Physical Attack Damage · Ring",
+        "hybrid": "Flat Physical Attack Damage · Ring"
+      },
+      "url": "/endgame-atlas/#affix-ring-flat-phys"
+    },
+    "body-evasion-flat": {
+      "label": {
+        "de": "Flacher Ausweichwert · Körperrüstung",
+        "en": "Flat Evasion Rating · body armour",
+        "hybrid": "Flacher Ausweichwert · Körperrüstung"
+      },
+      "url": "/endgame-atlas/#affix-body-evasion-flat"
+    },
+    "body-evasion-increased": {
+      "label": {
+        "de": "Erhöhter Ausweichwert · Körperrüstung",
+        "en": "Increased Evasion Rating · body armour",
+        "hybrid": "Erhöhter Ausweichwert · Körperrüstung"
+      },
+      "url": "/endgame-atlas/#affix-body-evasion-increased"
+    },
+    "first-desecration": {
+      "label": {
+        "de": "Erste Entweihung am Brunnen der Seelen",
+        "hybrid": "Erster Desecration-Craft am Well of Souls",
+        "en": "First desecration at the Well of Souls"
+      },
+      "url": "/kampagne/?bs_gebiet=a2-well",
+      "local": {
+        "kind": "campaign",
+        "id": "a2-well"
+      }
+    },
+    "abyss-depths-guide": {
+      "label": {
+        "de": "Abgründige Tiefen erkennen und erkunden",
+        "hybrid": "Abgründige Tiefen erkennen und erkunden",
+        "en": "Find and explore the Abyssal Depths"
+      },
+      "url": "/kampagne/?bs_gebiet=a2-abyssal-depths",
+      "local": {
+        "kind": "campaign",
+        "id": "a2-abyssal-depths"
+      }
+    },
+    "abyss-guide": {
+      "label": {
+        "de": "Abgrund · Knochen und Omen",
+        "hybrid": "Abyss · Bones und Omens",
+        "en": "Abyss · Bones and Omens"
+      },
+      "url": "/lexikon/?thema=league#begriff-abyss",
+      "local": {
+        "kind": "league",
+        "id": "abyss"
+      }
+    },
+    "craft-checks": {
+      "label": {
+        "de": "Affixplätze vor dem Craft prüfen",
+        "hybrid": "Affixplätze vor dem Craft prüfen",
+        "en": "Check affix slots before crafting"
+      },
+      "url": "/grundlagen/crafting-basis-itemlevel-affixe/#crafting-vor-dem-einsatz"
+    },
+    "choose-build": {
+      "label": {
+        "de": "Einen Build nach Klasse wählen",
+        "hybrid": "Einen Build nach Klasse wählen",
+        "en": "Choose a build by class"
+      },
+      "url": "/build-klassen/"
+    },
+    "tree-pathing": {
+      "label": {
+        "de": "Pfade im Passivbaum planen",
+        "hybrid": "Pfade im Passivbaum planen",
+        "en": "Plan paths on the passive tree"
+      },
+      "url": "/grundlagen/skill-tree-passive-attribute/#passivbaum"
+    },
+    "tree-node-types": {
+      "label": {
+        "de": "Kleine Knoten, Notables und Keystones",
+        "hybrid": "Kleine Knoten, Notables und Keystones",
+        "en": "Small nodes, notables and keystones"
+      },
+      "url": "/grundlagen/skill-tree-passive-attribute/#knoten"
+    },
+    "first-ascendancy": {
+      "label": {
+        "de": "Erste Aufstiegspunkte in Akt 2",
+        "hybrid": "Erste Aufstiegspunkte in Akt 2",
+        "en": "First Ascendancy points in Act 2"
+      },
+      "url": "/grundlagen/aufstiegspunkte/#einstieg"
+    },
+    "chaos-ascendancy": {
+      "label": {
+        "de": "Aufstiegspunkte über die Chaosprüfung",
+        "hybrid": "Aufstiegspunkte über die Chaosprüfung",
+        "en": "Ascendancy points from the Trial of Chaos"
+      },
+      "url": "/grundlagen/aufstiegspunkte/#zweites-paar"
+    },
+    "chaos-trial-route": {
+      "label": {
+        "de": "Chaosprüfung in der Kampagne",
+        "hybrid": "Chaosprüfung in der Kampagne",
+        "en": "Trial of Chaos in the campaign"
+      },
+      "url": "/kampagne/?bs_gebiet=a3-chaos-trial",
+      "local": {
+        "kind": "campaign",
+        "id": "a3-chaos-trial"
+      }
+    },
+    "honour-route": {
+      "label": {
+        "de": "Ehre in der Prüfung der Sekhemas schützen",
+        "hybrid": "Ehre in der Prüfung der Sekhemas schützen",
+        "en": "Protect Honour in the Trial of the Sekhemas"
+      },
+      "url": "/kampagne/?bs_gebiet=a2-sekhemas",
+      "local": {
+        "kind": "campaign",
+        "id": "a2-sekhemas"
+      }
+    },
+    "haunted-treasure-route": {
+      "label": {
+        "de": "Geistertruhe im Grabmal der Gemahlin",
+        "hybrid": "Geistertruhe im Grabmal der Gemahlin",
+        "en": "Haunted Treasure in the Tomb of the Consort"
+      },
+      "url": "/kampagne/?bs_gebiet=a1-tomb-asinia",
+      "local": {
+        "kind": "campaign",
+        "id": "a1-tomb-asinia"
+      }
+    },
+    "rare-monster-route": {
+      "label": {
+        "de": "Beispiel im Düsteren Dickicht",
+        "hybrid": "Rare-Beispiel im Grim Tangle",
+        "en": "Rare monster example in the Grim Tangle"
+      },
+      "url": "/kampagne/?bs_gebiet=a1-grim-tangle",
+      "local": {
+        "kind": "campaign",
+        "id": "a1-grim-tangle"
+      }
+    },
+    "evasion-hit-example": {
+      "label": {
+        "de": "Ausweichen · Treffer und Schaden über Zeit",
+        "hybrid": "Ausweichen · Treffer und Schaden über Zeit",
+        "en": "Evasion · Hits and damage over time"
+      },
+      "url": "/lexikon/#begriff-evasion",
+      "local": {
+        "kind": "lexicon",
+        "id": "evasion"
+      }
+    },
+    "tactician-explosive": {
+      "label": {
+        "de": "Explosivgranate im frühen Taktiker-Setup",
+        "hybrid": "Explosivgranate im frühen Taktiker-Setup",
+        "en": "Explosive Grenade in the early Tactician setup"
+      },
+      "url": "/builds/supporting-fire-%c2%b7-taktiker/#guide-skills-start"
+    },
+    "tactician-supporting": {
+      "label": {
+        "de": "Wechsel auf Unterstützendes Feuer",
+        "hybrid": "Wechsel auf Unterstützendes Feuer",
+        "en": "Switch to Supporting Fire"
+      },
+      "url": "/builds/supporting-fire-%c2%b7-taktiker/#guide-skills-swap"
+    },
+    "twister-rotation": {
+      "label": {
+        "de": "Wirbelwind und Waffensets ab Akt 2",
+        "hybrid": "Wirbelwind und Waffensets ab Akt 2",
+        "en": "Twister and weapon sets from Act 2"
+      },
+      "url": "/builds/twister-%c2%b7-spirit-walker/#guide-skills-act2"
+    },
+    "vaal-temple-route": {
+      "label": {
+        "de": "Vaal-Leuchtfeuer und Tempelkonsole in Akt 3",
+        "hybrid": "Vaal-Leuchtfeuer und Tempelkonsole in Akt 3",
+        "en": "Vaal Beacons and Temple Console in Act 3"
+      },
+      "url": "/kampagne/?bs_gebiet=a3-vaal-ruins",
+      "local": {
+        "kind": "campaign",
+        "id": "a3-vaal-ruins"
+      }
+    },
+    "ritual-act1": {
+      "label": {
+        "de": "Ritualaltäre in Freydorn",
+        "hybrid": "Ritualaltäre in Freydorn",
+        "en": "Ritual altars in Freythorn"
+      },
+      "url": "/kampagne/?bs_gebiet=a1-freythorn-rituals",
+      "local": {
+        "kind": "campaign",
+        "id": "a1-freythorn-rituals"
+      }
+    },
+    "essence-act2": {
+      "label": {
+        "de": "Essenzbegegnung in der Mawdun-Mine",
+        "hybrid": "Essenzbegegnung in der Mawdun-Mine",
+        "en": "Essence encounter in Mawdun Mine"
+      },
+      "url": "/kampagne/?bs_gebiet=a2-mawdun-rescue",
+      "local": {
+        "kind": "campaign",
+        "id": "a2-mawdun-rescue"
+      }
+    },
+    "runes-act4": {
+      "label": {
+        "de": "Verisium-Amboss in Akt 4 freischalten",
+        "hybrid": "Verisium-Amboss in Akt 4 freischalten",
+        "en": "Unlock the Verisium Anvil in Act 4"
+      },
+      "url": "/kampagne/?bs_gebiet=a4-deserted-post",
+      "local": {
+        "kind": "campaign",
+        "id": "a4-deserted-post"
+      }
+    },
+    "runes-act1": {
+      "label": {
+        "de": "Katakomben der ursprünglichen Aldur-Liga",
+        "hybrid": "Katakomben der ursprünglichen Aldur-Liga",
+        "en": "Catacombs in the original Runes of Aldur league"
+      },
+      "url": "/kampagne/?bs_gebiet=a1-lost-catacombs",
+      "local": {
+        "kind": "campaign",
+        "id": "a1-lost-catacombs"
+      }
+    },
+    "azmeri-tablets": {
+      "label": {
+        "de": "Azmeri-Geister mit Aufsehertafeln finden",
+        "hybrid": "Azmeri-Geister mit Aufsehertafeln finden",
+        "en": "Find Azmeri Spirits with Overseer Tablets"
+      },
+      "url": "/endgame-atlas/#atlas-tablet-overseer"
+    },
+    "delirium-constructs": {
+      "label": {
+        "de": "Konstrukt-Fundliste für Flüssigen Groll",
+        "hybrid": "Konstrukt-Fundliste für Flüssigen Groll",
+        "en": "Construct locations for Potent Liquid Contempt"
+      },
+      "url": "/lexikon/?fundliste=konstrukte#konstrukt-fundorte",
+      "local": {
+        "kind": "constructs",
+        "id": ""
+      }
+    },
+    "atlas-irradiation": {
+      "label": {
+        "de": "Bestrahlung und Irradiated Tablets",
+        "hybrid": "Bestrahlung und Irradiated Tablets",
+        "en": "Irradiation and irradiated tablets"
+      },
+      "url": "/endgame-atlas/#atlas-tablet-irradiated"
+    },
+    "atlas-abyss-quest": {
+      "label": {
+        "de": "Abgrund-Quest im Atlas",
+        "hybrid": "Abgrund-Quest im Atlas",
+        "en": "Abyss quest in the Atlas"
+      },
+      "url": "/endgame-atlas/#atlas-abyss",
+      "local": {
+        "kind": "atlas",
+        "id": "atlas-abyss"
+      }
+    },
+    "atlas-breach-quest": {
+      "label": {
+        "de": "Riss-Quest im Atlas",
+        "hybrid": "Riss-Quest im Atlas",
+        "en": "Breach quest in the Atlas"
+      },
+      "url": "/endgame-atlas/#atlas-breach",
+      "local": {
+        "kind": "atlas",
+        "id": "atlas-breach"
+      }
+    },
+    "atlas-ritual-quest": {
+      "label": {
+        "de": "Ritual-Quest im Atlas",
+        "hybrid": "Ritual-Quest im Atlas",
+        "en": "Ritual quest in the Atlas"
+      },
+      "url": "/endgame-atlas/#atlas-ritual",
+      "local": {
+        "kind": "atlas",
+        "id": "atlas-ritual"
+      }
+    },
+    "atlas-delirium-quest": {
+      "label": {
+        "de": "Delirium-Quest im Atlas",
+        "hybrid": "Delirium-Quest im Atlas",
+        "en": "Delirium quest in the Atlas"
+      },
+      "url": "/endgame-atlas/#atlas-delirium",
+      "local": {
+        "kind": "atlas",
+        "id": "atlas-delirium"
+      }
+    },
+    "atlas-expedition-quest": {
+      "label": {
+        "de": "Expeditions-Quest im Atlas",
+        "hybrid": "Expeditions-Quest im Atlas",
+        "en": "Expedition quest in the Atlas"
+      },
+      "url": "/endgame-atlas/#atlas-expedition",
+      "local": {
+        "kind": "atlas",
+        "id": "atlas-expedition"
+      }
+    },
+    "atlas-temple-quest": {
+      "label": {
+        "de": "Tempel-Quest im Atlas",
+        "hybrid": "Tempel-Quest im Atlas",
+        "en": "Temple quest in the Atlas"
+      },
+      "url": "/endgame-atlas/#atlas-temple",
+      "local": {
+        "kind": "atlas",
+        "id": "atlas-temple"
+      }
+    },
+    "rarity-az-bog": {
+      "label": {
+        "de": "Seltenheitsbonus im Azak-Moor",
+        "hybrid": "Seltenheitsbonus im Azak-Moor",
+        "en": "Item rarity buff in the Azak Bog"
+      },
+      "url": "/kampagne/?bs_gebiet=a3-ignagduk",
+      "local": {
+        "kind": "campaign",
+        "id": "a3-ignagduk"
+      }
+    }
+  }
+}

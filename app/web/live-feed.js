@@ -1,7 +1,11 @@
 import { boundedText, record, emptyRun, zoneKey, normalizeRun, portNumber } from './core.js';
-import { hubKind } from './r18-panels.js';
-
 const tailSize = 256 * 1024;
+
+function hubKind(guide, zone) {
+  const key = zoneKey(zone);
+  return Object.entries(guide.hubs).find(([, names]) => names.some(name => zoneKey(name) === key))?.[0]
+    ?? (/\b(?:hideout|versteck)\b/.test(key) ? 'hideout' : null);
+}
 
 export function logIndex(data) {
   const aliases = data.tips.clues.flatMap(clue => [clue.zone, ...(clue.zoneMatch ?? [])]);

@@ -1070,13 +1070,13 @@
         "editorial": {
           "next": {
             "de": [
-              "Wähle die Jüngerin von Varashta und schalte [[gem%3ASummonSandDjinnPlayer|Kelari]] mit seiner Barya frei. Lege [[gem%3AKelariDeceptionVarashta|Kelaris%20T%C3%A4uschung]] auf eine gut erreichbare Taste."
+              "Wähle die Jüngerin von Varashta und schalte [[gem%3ASummonSandDjinnPlayer|Kelari]] mit seiner Barya frei. Belege den Aszendenzknoten für [[gem%3AKelariDeceptionVarashta|Kelaris%20T%C3%A4uschung]] und lege den Befehl auf eine gut erreichbare Taste."
             ],
             "hybrid": [
-              "Wähle die Disciple of Varashta und schalte [[gem%3ASummonSandDjinnPlayer|Kelari]] mit seiner Barya frei. Lege [[gem%3AKelariDeceptionVarashta|Kelari's%20Deception]] auf eine gut erreichbare Taste."
+              "Wähle die Disciple of Varashta und schalte [[gem%3ASummonSandDjinnPlayer|Kelari]] mit seiner Barya frei. Belege den Ascendancy-Knoten für [[gem%3AKelariDeceptionVarashta|Kelari's%20Deception]] und lege den Command auf eine gut erreichbare Taste."
             ],
             "en": [
-              "Choose Disciple of Varashta and unlock [[gem%3ASummonSandDjinnPlayer|Kelari]] through his Barya. Put [[gem%3AKelariDeceptionVarashta|Kelari%E2%80%99s%20Deception]] on a key you can reach while moving."
+              "Choose Disciple of Varashta and unlock [[gem%3ASummonSandDjinnPlayer|Kelari]] through his Barya. Allocate the Ascendancy node for [[gem%3AKelariDeceptionVarashta|Kelari%E2%80%99s%20Deception]] and bind the Command to a key you can reach while moving."
             ]
           },
           "playstyle": {

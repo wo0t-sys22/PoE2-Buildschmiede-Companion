@@ -25,6 +25,7 @@ MAPS = {CAMPAIGN: ("terms",), BOSSES: ("languages", "sources"), TERMS: ("terms",
 ROLES = set(json.loads((APP / "web/poe2_r18_guide.json").read_bytes())["palette"]) | {"blue", "gold", "info", "optional", "gameplay"}
 STYLE = json.loads((APP / "web/companion-section-style.json").read_bytes())
 HEADINGS = {key: heading for heading, key in STYLE["headings"].items()}
+RETIRED_CHAPTER = re.compile(r"\b(?:interludes?|zwischenspiele?n?|zwischenakte?n?)\b", re.IGNORECASE)
 
 
 def need(test, message):
@@ -49,6 +50,32 @@ def localized(value):
 
 def strings(value):
     return isinstance(value, list) and all(isinstance(s, str) for s in value)
+
+
+def validate_term_refs(text, refs, terms, *, context=""):
+    """Validate the author’s explicit choices against one localized line."""
+    from poe2_r18_features import term_key, term_matches
+
+    prefix = f"{context}: " if context else ""
+    need(isinstance(refs, dict), prefix + "Ungültige Begriffsreferenzen.")
+    for phrase, ident in refs.items():
+        need(isinstance(phrase, str) and bool(phrase.strip()), prefix + "Leere Begriffsreferenz.")
+        need(isinstance(ident, str) and ident in terms,
+             f"{prefix}Unbekannte Begriffs-ID {ident!r} für {phrase!r}.")
+    aliases = {term_key(phrase): ident for phrase, ident in refs.items()}
+    matched = {text[start:end]: ident for start, end, ident in term_matches(text, aliases)}
+    for phrase, ident in refs.items():
+        need(matched.get(phrase) == ident,
+             f"{prefix}{phrase!r} muss eine ganze, nicht überlappende Textstelle markieren.")
+
+
+def campaign_term_ref_fields(pages):
+    for page in pages:
+        for mode in MODES:
+            for section in page["layouts"][mode]:
+                for row in section["rows"]:
+                    for lang, refs in row.get("termRefs", {}).items():
+                        yield (page["id"], mode, section["id"], row["id"], lang), (row["text"][lang], refs)
 
 
 def validate(name, doc):
@@ -172,28 +199,94 @@ def saved_document(name, path, modified, size):
     return value
 
 
+def retired_campaign_record(row):
+    """Identify old campaign records in imports and legacy route clues."""
+    ident = str(row.get("id", ""))
+    return (ident.startswith("i-") or RETIRED_CHAPTER.search(str(row.get("act", ""))) is not None
+            or (ident == "a4-tavakai" and any(RETIRED_CHAPTER.search(str(row.get(key, "")))
+                for key in ("cue", "instruction", "target", "highlight", "note", "veteranText"))))
+
+
+def active_campaign_page(page, base):
+    if page["id"] not in ("a4-kingsmarch", "a4-tavakai"):
+        return page
+    layouts = {}
+    for mode in MODES:
+        current = base["layouts"][mode]
+        updated_rows = {row["id"]: row for section in current for row in section["rows"]}
+        sections = []
+        for section in page["layouts"][mode]:
+            rows = []
+            for row in section["rows"]:
+                if row["id"] == "run:a4-town-interludes":
+                    continue
+                if row["id"] == "route:a4-tavakai" and any(RETIRED_CHAPTER.search(row["text"][lang]) for lang in LANGS):
+                    row = updated_rows.get(row["id"], row)
+                rows.append(row)
+            sections.append({**section, "rows": rows})
+        layouts[mode] = sections
+    return {**page, "layouts": layouts}
+
+
+def active_document(name, doc):
+    if name == CAMPAIGN:
+        base_pages = records(bundled(CAMPAIGN)["pages"])
+        pages = [active_campaign_page(page, base_pages.get(page["id"])) for page in doc["pages"]
+                 if not retired_campaign_record(page)]
+        return {**doc, "pages": pages, "towns": [town for town in doc["towns"] if not retired_campaign_record(town)]}
+    if name == BOSSES:
+        bosses = [boss for boss in doc["bosses"] if not retired_campaign_record(boss)]
+        retired = [boss for boss in doc["bosses"] if retired_campaign_record(boss)]
+        retired_ids = {boss["id"] for boss in retired}
+        languages = {key: values for key, values in doc["languages"].items() if key not in retired_ids}
+        for index, boss in enumerate(bosses):
+            if boss["id"] == "tavakai" and RETIRED_CHAPTER.search(str(boss.get("reward", ""))):
+                base = next(row for row in bundled(BOSSES)["bosses"] if row["id"] == "tavakai")
+                bosses[index] = {**boss, "reward": base["reward"], "sources": [source for source in boss.get("sources", [])
+                                                                                if not RETIRED_CHAPTER.search(str(source))]}
+        tavakai = languages.get("tavakai", {})
+        if tavakai:
+            base_languages = bundled(BOSSES)["languages"]["tavakai"]
+            languages["tavakai"] = {language: {**values, "reward": base_languages[language]["reward"]}
+                                     if language in LANGS and RETIRED_CHAPTER.search(str(values.get("reward", "")))
+                                     else values for language, values in tavakai.items()}
+        used_sources = {source for boss in bosses for source in boss.get("sources", [])}
+        retired_sources = {source for boss in retired for source in boss.get("sources", [])}
+        sources = {key: source for key, source in doc["sources"].items()
+                   if key in used_sources or (key not in retired_sources and
+                                              not RETIRED_CHAPTER.search(source["label"] + " " + source["url"]))}
+        return {**doc, "bosses": bosses, "languages": languages, "sources": sources}
+    return doc
+
+
 class Exchange:
     def __init__(self, directory):
         self.directory = directory
         self.lock = RLock()
 
     def current(self, name):
+        return self.current_with_source(name)[0]
+
+    def current_with_source(self, name, *, include_retired=False):
+        """Return the current document, its path and IDs of bundled supplement pages."""
         need(name in FILES, "Unbekannte Datei.")
         path = self.directory / name
         try:
             stat=path.stat()
             saved = saved_document(name,path,stat.st_mtime_ns,stat.st_size)
+            if not include_retired:
+                saved = active_document(name, saved)
             if name == CAMPAIGN:
                 known = records(saved["pages"])
                 added = [p for p in bundled(name)["pages"] if p.get("template") and p["id"] not in known]
                 if added:
-                    return {**saved, "pages": [*saved["pages"], *added]}
-            return saved
+                    return {**saved, "pages": [*saved["pages"], *added]}, path, frozenset(p["id"] for p in added)
+            return saved, path, frozenset()
         except FileNotFoundError:
             pass
         except (ValueError,TypeError,OSError,RecursionError) as error:
             logging.warning("%s konnte nicht geladen werden. Der mitgelieferte Stand ist aktiv: %s",name,error)
-        return bundled(name)
+        return bundled(name), APP / "shared-data" / name, frozenset()
 
     def export(self, name):
         with self.lock:
@@ -204,7 +297,9 @@ class Exchange:
 
     def transfer(self, name, incoming, expected=None):
         with self.lock:
-            base = self.export(name)
+            base = self.current_with_source(name, include_retired=True)[0]
+            if name == CAMPAIGN:
+                base = {**base, "terms": self.current(TERMS)["terms"]}
             result, changed = merged(name, base, incoming)
             if name in ("lexicon.v1.json","currency.v1.json"):
                 lexicon=result if name=="lexicon.v1.json" else self.current("lexicon.v1.json")
@@ -215,13 +310,13 @@ class Exchange:
                 campaign = result if name == CAMPAIGN else self.current(CAMPAIGN)
                 for aliases in terms["areaAliases"].values():
                     need(all(ref in terms["terms"] for ref in aliases.values()), "Unbekannte Begriffs-ID in areaAliases.")
-                for page in campaign["pages"]:
-                    for sections in page["layouts"].values():
-                        for section in sections:
-                            for row in section["rows"]:
-                                for mapping in row.get("termRefs",{}).values():
-                                    need(all(ref in terms["terms"] for ref in mapping.values()),
-                                         f"{page['id']}: Begriffs-ID fehlt. Zuerst terms.json importieren.")
+                previous = dict(campaign_term_ref_fields(base["pages"])) if name == CAMPAIGN else {}
+                for location, (text, refs) in campaign_term_ref_fields(campaign["pages"]):
+                    if name == CAMPAIGN and previous.get(location) != (text, refs):
+                        validate_term_refs(text, refs, terms["terms"], context=" / ".join(location))
+                    else:
+                        need(all(ref in terms["terms"] for ref in refs.values()),
+                             f"{location[0]}: Begriffs-ID fehlt. Zuerst terms.json importieren.")
                 if name == CAMPAIGN:
                     result["terms"] = terms["terms"]
             # The preview token binds both the previous content and the selected new file.
@@ -322,78 +417,26 @@ def sections_for_mode(layout, mode):
     return [(by_id[i],metadata.get(i,{})) for i in ordered]
 
 
-def editor_layouts(old, layout, catalog):
-    """Return the same canonical page with the edited native rows and stable check IDs."""
-    layouts={}
-    for mode in MODES:
-        result=[]
-        prior=records(old["layouts"][mode])
-        for section, meta in sections_for_mode(layout, mode):
-            heading=section["heading"]
-            ident=STYLE["headings"][heading]
-            prev=prior.get(ident,{})
-            native=section["lines"] if mode=="basis" else [s for s in layout["steps"] if s["section"]==heading]
-            rows=[]
-            for index,row in enumerate(native):
-                key=row.get("id") or row.get("checkId") or f"{ident}.{index}"
-                wire={k:row[k] for k in ("checkId","kind","termRefs","accents","bossId") if k in row}
-                boss=catalog.get("bossSteps",{}).get(row.get("checkId"),{})
-                if boss and boss.get("mode",mode)==mode:
-                    wire.setdefault("bossId",boss["id"])
-                rows.append({**wire,"id":key,"text":{lang:row[lang] for lang in LANGS}})
-            wire={**prev,**meta,"id":ident,"tone":meta.get("tone",section["tone"]),
-                  "collapsed":meta.get("collapsed",False),"rows":rows,
-                  "title":meta.get("title") or prev.get("title") or
-                          {l:catalog.get("ui",{}).get(heading,{}).get(l,heading) for l in LANGS}}
-            if mode=="basis":
-                wire.pop("image",None)
-                if image:=section.get("image"):
-                    wire["image"]={"asset":"images/"+image,"position":"after_rows"}
-            if rows or wire.get("image") or (old.get("template") and ident in prior):
-                result.append(wire)
-        layouts[mode]=result
-    return {**old,"layouts":layouts}
-
-
-def save_shared_edit(collection, ident, record, catalog, store=SHARED):
-    """Shared structured pages and town-tip edits use the same atomic local document as file import."""
-    if collection not in ("areaLayouts","townTipPool"):
-        return False
-    from poe2_campaign_structure import structured_layout
-    with store.lock:
-        doc=store.export(CAMPAIGN)
-        incoming={**doc,"pages":[],"towns":[]}
-        if collection=="areaLayouts":
-            prior=records(doc["pages"]).get(ident)
-            if prior:
-                incoming["pages"]=[editor_layouts(prior,structured_layout(deepcopy(record),ident),catalog)]
-        else:
-            for town in doc["towns"]:
-                if any(tip["id"]==ident for field in ("defaults","more") for tip in town[field]):
-                    updated=deepcopy(town)
-                    for field in ("defaults","more"):
-                        for tip in updated[field]:
-                            if tip["id"]==ident:
-                                tip["layouts"]=record
-                    incoming["towns"].append(updated)
-        if not incoming["pages"] and not incoming["towns"]:
-            return False
-        digest=hashlib.sha256(json.dumps([incoming["pages"],incoming["towns"]],sort_keys=True).encode()).hexdigest()
-        incoming["source"]={**doc["source"],"revision":"local-"+digest[:16]}
-        revision=store.transfer(CAMPAIGN,incoming)["revision"]
-        store.transfer(CAMPAIGN,incoming,revision)
-        return True
+def campaign_section_rows(layout, mode):
+    for section, meta in sections_for_mode(layout, mode):
+        rows = section["lines"] if mode == "basis" else [
+            step for step in layout["steps"] if step.get("section") == section["heading"]
+        ]
+        yield section, meta, rows
 
 
 RESOURCES = {"terms.json":TERMS,"poe2_campaign_companion.json":BOSSES,
              "poe2_boss_languages.json":BOSSES,"poe2_language_pilot.json":CAMPAIGN}
 
 
-def project(name, native, store=SHARED):
+def project(name, native, store=SHARED, *, layout_sources=None):
     if name not in RESOURCES:
         return native
     key=RESOURCES[name]
-    doc=store.current(key)
+    if key == CAMPAIGN and layout_sources is not None:
+        doc, source, supplemented = store.current_with_source(key)
+    else:
+        doc = store.current(key)
     if key==TERMS:
         return {**native, **doc}
     if key==BOSSES:
@@ -411,4 +454,11 @@ def project(name, native, store=SHARED):
     # These three detailed layouts contain the reviewed WordPress edits in the initial merged release.
     reviewed={"a1-clearfell-exit","a1-devourer","a1-grelwood-river"}
     templates = {page["id"] for page in doc["pages"] if page.get("template")}
-    return apply_campaign(native,doc,reviewed | templates | changed("pages"),changed("towns"))
+    page_ids = reviewed | templates | changed("pages")
+    if layout_sources is not None:
+        layout_sources.update(dict.fromkeys(native.get("areaLayouts", {}), APP / "web" / name))
+        for page in doc["pages"]:
+            ident = page["id"]
+            if ident in page_ids:
+                layout_sources[ident] = APP / "shared-data" / CAMPAIGN if ident in supplemented else source
+    return apply_campaign(native, doc, page_ids, changed("towns"))

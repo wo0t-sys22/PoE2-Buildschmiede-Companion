@@ -150,9 +150,9 @@
       "en": "Defeat {beira} → use {wolf_head} ({cold})"
     },
     "run:devourer-support": {
-      "hybrid": "Optional · {devourer} besiegen → {support_gem} bei Renly abholen",
-      "de": "Optional · {devourer} besiegen → {support_gem} bei Renly abholen",
-      "en": "Optional · defeat {devourer} → collect {support_gem} from Renly"
+      "hybrid": "Optional · {devourer} besiegen → {support_uncut} bei Renly abholen",
+      "de": "Optional · {devourer} besiegen → {support_uncut} bei Renly abholen",
+      "en": "Optional · defeat {devourer} → collect {support_uncut} from Renly"
     }
   },
   "ui": {
@@ -458,9 +458,6 @@
       "de": "Tastenkürzel",
       "en": "Hotkeys"
     },
-    "Interludes": {
-      "de": "Zwischenspiele"
-    },
     "Checkliste": {
       "en": "Checklist"
     },
@@ -677,15 +674,6 @@
     },
     "In der Nähe": {
       "en": "Nearby"
-    },
-    "Interlude · Holten": {
-      "de": "Zwischenakt · Holten"
-    },
-    "Interlude · Kriar": {
-      "de": "Zwischenakt · Kriar"
-    },
-    "Interlude · Vastiri": {
-      "de": "Zwischenakt · Vastiri"
     }
   },
   "routes": {
@@ -758,339 +746,6 @@
         "instruction": "Look for frozen logs around Beira of the Rotten Pack. Defeat her and use the Head of the Winter Wolf for permanent +10% Cold Resistance.",
         "compactSteps": [
           "Beira → use wolf head → +10% Cold Resistance"
-        ]
-      }
-    },
-    "i-stones-serle": {
-      "de": {
-        "cue": "Sechs Runenmegalithen",
-        "instruction": "Aktiviere alle sechs Runenmegalithen. Danach führt der Weg durch den Schwarzwald weiter.",
-        "target": "Fluch von Holten",
-        "note": "Fehlt ein Megalith, prüfe die Seitenwege ab der letzten Kreuzung.",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Six Runed Megaliths",
-        "instruction": "Activate all six Runed Megaliths, then head through the Blackwood.",
-        "target": "The Curse of Holten",
-        "note": "If you are missing a megalith, check the side paths from the last junction.",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Sechs Runed Megaliths",
-        "instruction": "Aktiviere alle sechs Runed Megaliths. Danach führt der Weg durch den Blackwood weiter.",
-        "target": "The Curse of Holten",
-        "note": "Fehlt ein Megalith, prüfe die Seitenwege ab der letzten Kreuzung.",
-        "highlight": ""
-      }
-    },
-    "i-wolvenhold": {
-      "de": {
-        "cue": "Oswin und das Register des Aufsehers",
-        "instruction": "Besiege Oswin und benutze das Register des Aufsehers direkt.",
-        "target": "+2 Fertigkeitspunkte für Waffensets",
-        "note": "Das Holten-Anwesen ist danach ein eigener Questschritt.",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Oswin and the Warden's Ledger",
-        "instruction": "Defeat Oswin and use the Warden's Ledger directly.",
-        "target": "+2 Weapon Set Passive Skill Points",
-        "note": "Holten Estate is a separate quest objective.",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Oswin und das Warden's Ledger",
-        "instruction": "Besiege Oswin und benutze das Warden's Ledger direkt.",
-        "target": "+2 Weapon Set Passive Skill Points",
-        "note": "Das Holten Estate ist danach ein eigener Questschritt.",
-        "highlight": ""
-      }
-    },
-    "i-holten-estate": {
-      "de": {
-        "cue": "Holten abschließen",
-        "instruction": "Geh die Treppen hinauf und besiege Wulfric und Elswyth.",
-        "target": "Fluch von Holten abschließen",
-        "note": "Für das nächste Zwischenspiel folge den Questoptionen beim Verhüllten.",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Complete Holten",
-        "instruction": "Go up the stairs and defeat Wulfric and Elswyth.",
-        "target": "Complete The Curse of Holten",
-        "note": "Talk to the Hooded One to pick your next Interlude.",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Holten abschließen",
-        "instruction": "Geh die Treppen hinauf und besiege Wulfric und Elswyth.",
-        "target": "The Curse of Holten abschließen",
-        "note": "Für das nächste Interlude folge den Questoptionen beim Hooded One.",
-        "highlight": ""
-      }
-    },
-    "i-khari": {
-      "de": {
-        "cue": "Akthi, Anundr und Risu",
-        "instruction": "Besiege Akthi und Anundr. Hol die Belohnung bei Risu ab und benutze das Buch.",
-        "target": "+2 Fertigkeitspunkte für Waffensets",
-        "note": "",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Akthi, Anundr and Risu",
-        "instruction": "Defeat Akthi and Anundr. Collect Risu's reward and use the book.",
-        "target": "+2 Weapon Set Passive Skill Points",
-        "note": "",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Akthi, Anundr und Risu",
-        "instruction": "Besiege Akthi und Anundr. Hol die Belohnung bei Risu ab und benutze das Buch.",
-        "target": "+2 Weapon Set Passive Skill Points",
-        "note": "",
-        "highlight": ""
-      }
-    },
-    "i-skullmaw": {
-      "de": {
-        "cue": "Geschenk des Geschmolzenen",
-        "instruction": "Suche im Schrein nach der Treppe und aktiviere die Siegel. Benutze danach das Geschenk des Geschmolzenen.",
-        "target": "5 % erhöhtes maximales Leben",
-        "note": "",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Molten One's Gift",
-        "instruction": "Find the stairway in the Molten Shrine and activate the seals. Then use the Molten One's Gift.",
-        "target": "5% increased maximum Life",
-        "note": "",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Molten One's Gift",
-        "instruction": "Suche im Schrein nach der Treppe und aktiviere die Siegel. Benutze danach das Molten One's Gift.",
-        "target": "5 % erhöhtes maximales Leben",
-        "note": "",
-        "highlight": ""
-      }
-    },
-    "i-qimah-boon": {
-      "de": {
-        "cue": "Orbalas Säule",
-        "instruction": "Wähle an Orbalas Säule einen Segen, der deinem Build hilft.",
-        "target": "Wechselbarer Segen",
-        "note": "Du kannst die Wahl jederzeit an der Säule ändern.",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Orbala's Pillar",
-        "instruction": "Choose a boon from Orbala's Pillar that helps your build.",
-        "target": "Swappable boon",
-        "note": "You can switch boons by returning to the pillar.",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Orbala's Pillar",
-        "instruction": "Wähle an Orbala's Pillar einen Segen, der deinem Build hilft.",
-        "target": "Wechselbarer Segen",
-        "note": "Du kannst die Wahl jederzeit an der Säule ändern.",
-        "highlight": ""
-      }
-    },
-    "i-qimah-reservoir": {
-      "de": {
-        "cue": "Azmadi und die Große Barya",
-        "instruction": "Besiege Azmadi und interagiere danach mit der Großen Barya.",
-        "target": "Die gestohlene Barya abschließen",
-        "note": "Sprich für den Questabschluss mit Jado und Asala, sobald sie erscheinen.",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Azmadi and the Grand Barya",
-        "instruction": "Defeat Azmadi, then interact with the Grand Barya.",
-        "target": "Complete The Stolen Barya",
-        "note": "Talk to Jado and Asala when they appear to finish the quest.",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Azmadi und die Grand Barya",
-        "instruction": "Besiege Azmadi und interagiere danach mit der Grand Barya.",
-        "target": "The Stolen Barya abschließen",
-        "note": "Sprich für den Questabschluss mit Jado und Asala, sobald sie erscheinen.",
-        "highlight": ""
-      }
-    },
-    "i-kriar-spirit": {
-      "de": {
-        "cue": "Lythara und der Verkrustende Gemmenschädel",
-        "instruction": "Besiege Lythara und benutze den Verkrustenden Gemmenschädel.",
-        "target": "+40 Wille",
-        "note": "Die Stufe der ungeschnittenen Wille-Gemme kann von der Reihenfolge der Zwischenspiele abhängen.",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Lythara and the Gemcrust Skull",
-        "instruction": "Defeat Lythara and use the Gemcrust Skull.",
-        "target": "+40 Spirit",
-        "note": "The Uncut Spirit Gem's level can depend on your Interlude order.",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Lythara und der Gemcrust Skull",
-        "instruction": "Besiege Lythara und benutze den Gemcrust Skull.",
-        "target": "+40 Spirit",
-        "note": "Die Stufe der Uncut Spirit Gem kann von der Reihenfolge der Interludes abhängen.",
-        "highlight": ""
-      }
-    },
-    "i-yeti-tusks": {
-      "de": {
-        "cue": "Yeti und die Eisigen Stoßzähne",
-        "instruction": "Besiege den Yeti in den Heulenden Höhlen und nimm die Eisigen Stoßzähne mit. Gib sie Hilda und benutze das Buch.",
-        "target": "+2 Fertigkeitspunkte für Waffensets",
-        "note": "Für den Aufstieg kehrst du zum Gletschersee zurück.",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Yeti and the Icy Tusks",
-        "instruction": "Defeat the Yeti in Howling Caves and take the Icy Tusks to Hilda. Use the book she gives you.",
-        "target": "+2 Weapon Set Passive Skill Points",
-        "note": "Return to Glacial Tarn to continue up the mountain.",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Yeti und die Icy Tusks",
-        "instruction": "Besiege den Yeti in den Howling Caves und nimm die Icy Tusks mit. Gib sie Hilda und benutze das Buch.",
-        "target": "+2 Weapon Set Passive Skill Points",
-        "note": "Für den Aufstieg kehrst du zum Glacial Tarn zurück.",
-        "highlight": ""
-      }
-    },
-    "i-rakkar": {
-      "de": {
-        "cue": "Rakkar am Gletschersee",
-        "instruction": "Besiege Rakkar am Gletschersee und nimm den Ausgang zu den Kriar-Gipfeln.",
-        "target": "Doryanis Notfallplan fortsetzen",
-        "note": "",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Rakkar at Glacial Tarn",
-        "instruction": "Defeat Rakkar at Glacial Tarn and take the exit to Kriar Peaks.",
-        "target": "Continue Doryani's Contingency",
-        "note": "",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Rakkar am Glacial Tarn",
-        "instruction": "Besiege Rakkar am Glacial Tarn und nimm den Ausgang zu den Kriar Peaks.",
-        "target": "Doryani's Contingency fortsetzen",
-        "note": "",
-        "highlight": ""
-      }
-    },
-    "i-cuachic-vault": {
-      "de": {
-        "cue": "Zolin und Zelina",
-        "instruction": "Besiege Zolin und Zelina. Sprich nach dem Kampf mit dem Verhüllten, um das Zwischenspiel abzuschließen.",
-        "target": "Doryanis Notfallplan abschließen",
-        "note": "Nach allen drei Zwischenspielen holst du beim Verhüllten die letzten Fertigkeitspunkte ab und folgst der Quest zum Atlas.",
-        "highlight": ""
-      },
-      "en": {
-        "cue": "Zolin and Zelina",
-        "instruction": "Defeat Zolin and Zelina. Talk to the Hooded One after the fight to finish the Interlude.",
-        "target": "Complete Doryani's Contingency",
-        "note": "Once all three Interludes are complete, collect the last passive points from the Hooded One and follow the quest to the Atlas.",
-        "highlight": ""
-      },
-      "hybrid": {
-        "cue": "Zolin und Zelina",
-        "instruction": "Besiege Zolin und Zelina. Sprich nach dem Kampf mit dem Hooded One, um das Interlude abzuschließen.",
-        "target": "Doryani's Contingency abschließen",
-        "note": "Nach allen drei Interludes holst du beim Hooded One die letzten Fertigkeitspunkte ab und folgst der Quest zum Atlas.",
-        "highlight": ""
-      }
-    },
-    "i-scorched-farmlands": {
-      "de": {
-        "cue": "Hexen besiegen → Steine von Serle",
-        "instruction": "Besiege die beiden Hexen und nimm den Weg zu den Steinen von Serle.",
-        "compactSteps": [
-          "Hexen besiegen → Steine von Serle"
-        ]
-      },
-      "en": {
-        "cue": "Defeat witches → Stones of Serle",
-        "instruction": "Defeat the two witches and take the path to the Stones of Serle.",
-        "compactSteps": [
-          "Defeat witches → Stones of Serle"
-        ]
-      }
-    },
-    "i-holten-chapel": {
-      "de": {
-        "cue": "Kapelle → optionales Bossduo",
-        "instruction": "Aktiviere in der Kapelle den Blutpsalm, wenn du Sigbert und Godwin bekämpfen möchtest. Du kannst auch direkt zum Anwesen weitergehen.",
-        "compactSteps": [
-          "Kapelle → optionales Bossduo"
-        ]
-      },
-      "en": {
-        "cue": "Chapel → optional boss duo",
-        "instruction": "Activate the Psalm of Blood in the chapel to challenge Sigbert and Godwin. You can also go straight to the estate.",
-        "compactSteps": [
-          "Chapel → optional boss duo"
-        ]
-      }
-    },
-    "i-etched-ravine": {
-      "de": {
-        "cue": "Sturmkeil → Cuachic-Schatzkammer",
-        "instruction": "Besiege Sturmkeil am Ende der Schlucht und betritt die Cuachic-Schatzkammer.",
-        "compactSteps": [
-          "Sturmkeil → Cuachic-Schatzkammer"
-        ]
-      },
-      "en": {
-        "cue": "Stormgore → Cuachic Vault",
-        "instruction": "Defeat Stormgore at the end of the ravine and enter the Cuachic Vault.",
-        "compactSteps": [
-          "Stormgore → Cuachic Vault"
-        ]
-      }
-    },
-    "i-sel-khari": {
-      "de": {
-        "cue": "Elzarah → Asala → Galai-Tore",
-        "instruction": "Besiege Elzarah und sprich mit Asala. Weiter geht es zu den Galai-Toren.",
-        "compactSteps": [
-          "Elzarah → Asala → Galai-Tore"
-        ]
-      },
-      "en": {
-        "cue": "Elzarah → Asala → Galai Gates",
-        "instruction": "Defeat Elzarah and speak to Asala, then continue to the Galai Gates.",
-        "compactSteps": [
-          "Elzarah → Asala → Galai Gates"
-        ]
-      }
-    },
-    "i-galai-gates": {
-      "de": {
-        "cue": "Vornas besiegen → Qimah",
-        "instruction": "Besiege Vornas am Durchgang nach Qimah und folge dem Weg in die Stadt.",
-        "compactSteps": [
-          "Vornas besiegen → Qimah"
-        ]
-      },
-      "en": {
-        "cue": "Defeat Vornas → Qimah",
-        "instruction": "Defeat Vornas at the entrance to Qimah and follow the path into the city.",
-        "compactSteps": [
-          "Defeat Vornas → Qimah"
         ]
       }
     }
@@ -1768,66 +1423,6 @@
       "en": "Heart of the Tribe",
       "hybrid": "Heart of the Tribe"
     },
-    "stones of serle": {
-      "de": "Steine von Serle",
-      "en": "Stones of Serle",
-      "hybrid": "Stones of Serle"
-    },
-    "wolvenhold": {
-      "de": "Wolfsfeste",
-      "en": "Wolvenhold",
-      "hybrid": "Wolvenhold"
-    },
-    "holten estate": {
-      "de": "Holten-Anwesen",
-      "en": "Holten Estate",
-      "hybrid": "Holten Estate"
-    },
-    "glacial tarn": {
-      "de": "Gletschersee",
-      "en": "Glacial Tarn",
-      "hybrid": "Glacial Tarn"
-    },
-    "howling caves": {
-      "de": "Heulende Höhlen",
-      "en": "Howling Caves",
-      "hybrid": "Howling Caves"
-    },
-    "qimah reservoir": {
-      "de": "Qimah-Reservoir",
-      "en": "Qimah Reservoir",
-      "hybrid": "Qimah Reservoir"
-    },
-    "scorched farmlands": {
-      "de": "Verbrannte Felder",
-      "hybrid": "Scorched Farmlands",
-      "en": "Scorched Farmlands",
-      "source": "https://poe2db.tw/de/Interlude_Curse_of_Holten"
-    },
-    "holten": {
-      "de": "Holten",
-      "hybrid": "Holten",
-      "en": "Holten",
-      "source": "https://poe2db.tw/de/Interlude_Curse_of_Holten"
-    },
-    "etched ravine": {
-      "de": "Ausgehöhlte Schlucht",
-      "hybrid": "Etched Ravine",
-      "en": "Etched Ravine",
-      "source": "https://poe2db.tw/de/Interlude_Doryanis_Contingency"
-    },
-    "sel khari sanctuary": {
-      "de": "Sel-Khari-Heiligtum",
-      "hybrid": "Sel Khari Sanctuary",
-      "en": "Sel Khari Sanctuary",
-      "source": "https://poe2db.tw/de/Interlude_The_Stolen_Barya"
-    },
-    "galai gates": {
-      "de": "Die Galai-Tore",
-      "hybrid": "The Galai Gates",
-      "en": "The Galai Gates",
-      "source": "https://poe2db.tw/de/Interlude_The_Stolen_Barya"
-    },
     "red vale": {
       "de": "Das Rote Tal"
     },
@@ -1846,15 +1441,6 @@
     "hunting grounds": {
       "de": "Jagdgründe"
     },
-    "kriar village": {
-      "de": "Dorf Kriar"
-    },
-    "cuachic vault": {
-      "de": "Die Cuachic-Schatzkammer"
-    },
-    "khari crossing": {
-      "de": "Die Khari-Querung"
-    },
     "burning monolith": {
       "de": "Der Brennende Monolith"
     },
@@ -1863,6 +1449,21 @@
     },
     "crux of nothingness": {
       "de": "Der Kern des Nichts"
+    },
+    "lost catacombs": {
+      "de": "Verschollene Katakomben",
+      "hybrid": "Lost Catacombs",
+      "en": "Lost Catacombs"
+    },
+    "deserted post": {
+      "de": "Verlassener Posten",
+      "hybrid": "Deserted Post",
+      "en": "Deserted Post"
+    },
+    "abyssal depths": {
+      "de": "Abgründige Tiefen",
+      "hybrid": "Abyssal Depths",
+      "en": "Abyssal Depths"
     }
   },
   "areaLayouts": {
@@ -2795,9 +2396,42 @@
                   "Uncut Skill Gem": "term.skill_uncut"
                 },
                 "hybrid": {
+                  "Rare Monster": "monster.rare_enemy",
                   "Crop Circle": "term.crop_circle",
-                  "Uncut Skill Gem": "term.skill_uncut",
-                  "Rare Monster": "monster.rare_enemy"
+                  "Uncut Skill Gem": "term.skill_uncut"
+                }
+              }
+            },
+            {
+              "id": "a1-farmlands-lost-catacombs",
+              "kind": "paragraph",
+              "de": "Nur in der Liga Runen von Aldur: Kehre nach den drei Runensteinen zum Baum der Seelen im Grelwald zurück. Dort führt Farrow dich in die Verschollenen Katakomben.",
+              "hybrid": "Nur in Runes of Aldur: Kehre nach den drei Runestones zum Tree of Souls in The Grelwood zurück. Dort führt Farrow dich in die Lost Catacombs.",
+              "en": "Runes of Aldur only: After touching the three Runestones, return to the Tree of Souls in The Grelwood. Farrow leads you to the Lost Catacombs.",
+              "termRefs": {
+                "de": {
+                  "Runen von Aldur": "website.aldur",
+                  "Runensteinen": "act2.runestone",
+                  "Baum der Seelen": "landmark.tree_of_souls",
+                  "Grelwald": "area.grelwood",
+                  "Farrow": "act2.farrow",
+                  "Verschollenen Katakomben": "act1.lost_catacombs"
+                },
+                "hybrid": {
+                  "Runes of Aldur": "website.aldur",
+                  "Runestones": "act2.runestone",
+                  "Tree of Souls": "landmark.tree_of_souls",
+                  "The Grelwood": "area.grelwood",
+                  "Farrow": "act2.farrow",
+                  "Lost Catacombs": "act1.lost_catacombs"
+                },
+                "en": {
+                  "Runes of Aldur": "website.aldur",
+                  "Runestones": "act2.runestone",
+                  "Tree of Souls": "landmark.tree_of_souls",
+                  "The Grelwood": "area.grelwood",
+                  "Farrow": "act2.farrow",
+                  "Lost Catacombs": "act1.lost_catacombs"
                 }
               }
             }
@@ -2874,8 +2508,36 @@
             "hybrid": {
               "Optional": "term.optional",
               "Crop Circle": "term.crop_circle",
-              "Uncut Skill Gem": "term.skill_uncut",
-              "Rare Monster": "monster.rare_enemy"
+              "Rare Monster": "monster.rare_enemy",
+              "Uncut Skill Gem": "term.skill_uncut"
+            }
+          }
+        },
+        {
+          "section": "Optionale Ziele",
+          "id": "a1-farmlands-lost-catacombs",
+          "kind": "paragraph",
+          "de": "Nur Runen von Aldur · drei Runensteine → Grelwald → Verschollene Katakomben",
+          "hybrid": "Nur Runes of Aldur · drei Runestones → The Grelwood → Lost Catacombs",
+          "en": "Runes of Aldur only · three Runestones → The Grelwood → Lost Catacombs",
+          "termRefs": {
+            "de": {
+              "Runen von Aldur": "website.aldur",
+              "Runensteine": "act2.runestone",
+              "Grelwald": "area.grelwood",
+              "Verschollene Katakomben": "act1.lost_catacombs"
+            },
+            "hybrid": {
+              "Runes of Aldur": "website.aldur",
+              "Runestones": "act2.runestone",
+              "The Grelwood": "area.grelwood",
+              "Lost Catacombs": "act1.lost_catacombs"
+            },
+            "en": {
+              "Runes of Aldur": "website.aldur",
+              "Runestones": "act2.runestone",
+              "The Grelwood": "area.grelwood",
+              "Lost Catacombs": "act1.lost_catacombs"
             }
           }
         }
@@ -3264,8 +2926,8 @@
                 "hybrid": {
                   "Gebietsrand": "term.edge",
                   "Dryadic Ritual": "term.dryadic_ritual",
-                  "Uncut Support Gem": "term.support_uncut",
-                  "Rare Monster": "monster.rare_enemy"
+                  "Rare Monster": "monster.rare_enemy",
+                  "Uncut Support Gem": "term.support_uncut"
                 }
               }
             }
@@ -3340,14 +3002,14 @@
             "en": {
               "Optional": "term.optional",
               "Dryadic Ritual": "term.dryadic_ritual",
-              "Uncut Support Gem": "term.support_uncut",
-              "rare monster": "monster.rare_enemy"
+              "rare monster": "monster.rare_enemy",
+              "Uncut Support Gem": "term.support_uncut"
             },
             "hybrid": {
               "Optional": "term.optional",
               "Dryadic Ritual": "term.dryadic_ritual",
-              "Uncut Support Gem": "term.support_uncut",
-              "Rare Monster": "monster.rare_enemy"
+              "Rare Monster": "monster.rare_enemy",
+              "Uncut Support Gem": "term.support_uncut"
             }
           }
         },
@@ -3661,8 +3323,8 @@
                 },
                 "hybrid": {
                   "Haunted Treasure": "term.haunted_treasure",
-                  "Uncut Support Gem": "term.support_uncut",
-                  "Rare Monster": "monster.rare_enemy"
+                  "Rare Monster": "monster.rare_enemy",
+                  "Uncut Support Gem": "term.support_uncut"
                 }
               }
             }
@@ -3705,14 +3367,14 @@
             "en": {
               "Optional": "term.optional",
               "Haunted Treasure": "term.haunted_treasure",
-              "Uncut Support Gem": "term.support_uncut",
-              "rare monster": "monster.rare_enemy"
+              "rare monster": "monster.rare_enemy",
+              "Uncut Support Gem": "term.support_uncut"
             },
             "hybrid": {
               "Optional": "term.optional",
               "Haunted Treasure": "term.haunted_treasure",
-              "Uncut Support Gem": "term.support_uncut",
-              "Rare Monster": "monster.rare_enemy"
+              "Rare Monster": "monster.rare_enemy",
+              "Uncut Support Gem": "term.support_uncut"
             }
           }
         },
@@ -6783,21 +6445,23 @@
             },
             {
               "hybrid": "Wenn du Abyss-Crafting freischalten willst und die Spalten in deinem Spielstand da sind, folge ihnen zur Lightless Passage und von dort zum Well of Souls. Für die Hauptquest gehst du weiter in die Bone Pits.",
-              "de": "Wenn du Abyss-Crafting freischalten willst und die Spalten in deinem Spielstand da sind, folge ihnen zur Lichtlose Passage und von dort zum Brunnen der Seelen. Für die Hauptquest gehst du weiter in die Knochengruben.",
+              "de": "Wenn du Abyss-Crafting freischalten willst und die Spalten in deinem Spielstand da sind, folge ihnen zur Lichtlosen Passage und von dort zum Brunnen der Seelen. Für die Hauptquest gehst du weiter in die Knochengruben.",
               "en": "If you want to unlock Abyss crafting and the fissures are present in your game, follow them to the Lightless Passage and on to the Well of Souls. For the main quest, continue to the Bone Pits.",
               "checkId": "route:a2-mastodon-cracks",
               "termRefs": {
                 "de": {
-                  "Lichtlose Passage": "act2.lightless",
+                  "Lichtlosen Passage": "act2.lightless",
                   "Brunnen der Seelen": "act2.well",
                   "Knochengruben": "act2.pits"
                 },
                 "en": {
+                  "Abyss": "website.abyss",
                   "Lightless Passage": "act2.lightless",
                   "Well of Souls": "act2.well",
                   "Bone Pits": "act2.pits"
                 },
                 "hybrid": {
+                  "Abyss": "website.abyss",
                   "Lightless Passage": "act2.lightless",
                   "Well of Souls": "act2.well",
                   "Bone Pits": "act2.pits"
@@ -6858,14 +6522,17 @@
           "checkId": "route:a2-mastodon-cracks",
           "termRefs": {
             "de": {
+              "Abgrundspalten": "website.abyss",
               "Lichtlose Passage": "act2.lightless",
               "Brunnen der Seelen": "act2.well"
             },
             "en": {
+              "Abyss": "website.abyss",
               "Lightless Passage": "act2.lightless",
               "Well of Souls": "act2.well"
             },
             "hybrid": {
+              "Abgrundspalten": "website.abyss",
               "Lightless Passage": "act2.lightless",
               "Well of Souls": "act2.well"
             }
@@ -7929,12 +7596,15 @@
               "checkId": "run:a2-titans-abyss-xp",
               "termRefs": {
                 "hybrid": {
+                  "Abyss": "website.abyss",
                   "Ancient Seals": "quest_item.ancient_seals"
                 },
                 "de": {
+                  "Abgrund": "website.abyss",
                   "Uralten Siegeln": "quest_item.ancient_seals"
                 },
                 "en": {
+                  "Abyss": "website.abyss",
                   "Ancient Seals": "quest_item.ancient_seals"
                 }
               }
@@ -8010,9 +7680,15 @@
           "en": "Need XP → clear the Abyss if present",
           "checkId": "run:a2-titans-abyss-xp",
           "termRefs": {
-            "hybrid": {},
-            "de": {},
-            "en": {}
+            "hybrid": {
+              "Abyss": "website.abyss"
+            },
+            "de": {
+              "Abgrund": "website.abyss"
+            },
+            "en": {
+              "Abyss": "website.abyss"
+            }
           }
         }
       ]
@@ -8379,13 +8055,16 @@
               "checkId": "run:a2-deshar-extra-xp",
               "termRefs": {
                 "hybrid": {
-                  "Path of Mourning": "act2.mourning"
+                  "Path of Mourning": "act2.mourning",
+                  "Abyss": "website.abyss"
                 },
                 "de": {
-                  "Pfad der Trauernden": "act2.mourning"
+                  "Pfad der Trauernden": "act2.mourning",
+                  "Abgrund": "website.abyss"
                 },
                 "en": {
-                  "Path of Mourning": "act2.mourning"
+                  "Path of Mourning": "act2.mourning",
+                  "Abyss": "website.abyss"
                 }
               }
             }
@@ -8523,9 +8202,15 @@
           "en": "Catch up on XP → large packs in the ruins, Abyss if present",
           "checkId": "run:a2-deshar-extra-xp",
           "termRefs": {
-            "hybrid": {},
-            "de": {},
-            "en": {}
+            "hybrid": {
+              "Abyss": "website.abyss"
+            },
+            "de": {
+              "Abgrund": "website.abyss"
+            },
+            "en": {
+              "Abyss": "website.abyss"
+            }
           }
         }
       ]
@@ -9128,22 +8813,22 @@
           "tone": "info",
           "lines": [
             {
-              "hybrid": "Folge von den Abgrundspalten aus den durchgehenden Höhlengängen zum Well of Souls. Sichere den Waypoint, wenn du später zum Crafting zurückkehren willst.",
-              "de": "Folge von den Abgrundspalten aus den durchgehenden Höhlengängen zum Brunnen der Seelen. Sichere den Wegpunkt, wenn du später zum Crafting zurückkehren willst.",
-              "en": "Follow the connected cave passages from the Abyss fissures towards the Well of Souls. Tag the Waypoint if you want to return later for crafting.",
+              "de": "Aktiviere den Wegpunkt und folge den Höhlengängen bis zum Brunnen der Seelen.",
+              "hybrid": "Aktiviere den Waypoint und folge den Höhlengängen bis zum Well of Souls.",
+              "en": "Activate the Waypoint and follow the cave passages to the Well of Souls.",
               "checkId": "run:a2-lightless-layout",
               "termRefs": {
                 "de": {
-                  "Brunnen der Seelen": "act2.well",
-                  "Wegpunkt": "landmark.waypoint"
-                },
-                "en": {
-                  "Well of Souls": "act2.well",
-                  "Waypoint": "landmark.waypoint"
+                  "Wegpunkt": "landmark.waypoint",
+                  "Brunnen der Seelen": "act2.well"
                 },
                 "hybrid": {
-                  "Well of Souls": "act2.well",
-                  "Waypoint": "landmark.waypoint"
+                  "Waypoint": "landmark.waypoint",
+                  "Well of Souls": "act2.well"
+                },
+                "en": {
+                  "Waypoint": "landmark.waypoint",
+                  "Well of Souls": "act2.well"
                 }
               }
             }
@@ -9154,23 +8839,23 @@
           "tone": "optional",
           "lines": [
             {
-              "hybrid": "Der Abstecher ist optional. Willst du die Horn-Quest fortsetzen, kehre zu den Mastodon Badlands zurück und nimm den Weg in die Bone Pits.",
-              "de": "Der Abstecher ist optional. Willst du die Horn-Quest fortsetzen, kehre zu den Mastodon-Ödlande zurück und nimm den Weg in die Knochengruben.",
-              "en": "This is an optional detour. To continue the horn quest, go back to the Mastodon Badlands and take the path into the Bone Pits.",
+              "de": "Für die Nebenquest reicht der Weg zum Brunnen der Seelen. Die große Grube Richtung Norden kannst du auslassen. Die Horn-Quest führt von den Mastodon-Ödlanden in die Knochengruben.",
+              "hybrid": "Für die Nebenquest reicht der Weg zum Well of Souls. Die große Grube Richtung Norden kannst du auslassen. Die Horn-Quest führt von den Mastodon Badlands in die Bone Pits.",
+              "en": "For the side quest, head to the Well of Souls. You can skip the large pit to the north. The horn quest continues from Mastodon Badlands to the Bone Pits.",
               "checkId": "run:a2-lightless-crafting",
               "termRefs": {
                 "de": {
-                  "optional": "term.optional",
-                  "Mastodon-Ödlande": "act2.badlands",
+                  "Brunnen der Seelen": "act2.well",
+                  "Mastodon-Ödlanden": "act2.badlands",
                   "Knochengruben": "act2.pits"
                 },
-                "en": {
-                  "optional": "term.optional",
+                "hybrid": {
+                  "Well of Souls": "act2.well",
                   "Mastodon Badlands": "act2.badlands",
                   "Bone Pits": "act2.pits"
                 },
-                "hybrid": {
-                  "optional": "term.optional",
+                "en": {
+                  "Well of Souls": "act2.well",
                   "Mastodon Badlands": "act2.badlands",
                   "Bone Pits": "act2.pits"
                 }
@@ -9182,38 +8867,47 @@
       "steps": [
         {
           "section": "Layout",
-          "hybrid": "Abgrundspalten → Höhle durchqueren → Well of Souls",
-          "de": "Abgrundspalten → Höhle durchqueren → Brunnen der Seelen",
-          "en": "Abyss fissures → cross cave → Well of Souls",
+          "de": "Wegpunkt → Höhle durchqueren → Brunnen der Seelen",
+          "hybrid": "Waypoint → Höhle durchqueren → Well of Souls",
+          "en": "Waypoint → cross the cave → Well of Souls",
           "checkId": "run:a2-lightless-layout",
           "termRefs": {
             "de": {
+              "Wegpunkt": "landmark.waypoint",
               "Brunnen der Seelen": "act2.well"
             },
-            "en": {
+            "hybrid": {
+              "Waypoint": "landmark.waypoint",
               "Well of Souls": "act2.well"
             },
-            "hybrid": {
+            "en": {
+              "Waypoint": "landmark.waypoint",
               "Well of Souls": "act2.well"
             }
           }
         },
         {
           "section": "Optionale Ziele",
-          "hybrid": "Hauptroute · Mastodon Badlands → Bone Pits",
-          "de": "Hauptroute · Mastodon-Ödlande → Knochengruben",
-          "en": "Main route · Mastodon Badlands → Bone Pits",
+          "de": "Optional · zum Brunnen der Seelen. Horn-Quest · Mastodon-Ödlande → Knochengruben",
+          "hybrid": "Optional · zum Well of Souls. Horn-Quest · Mastodon Badlands → Bone Pits",
+          "en": "Optional · Well of Souls. Horn quest · Mastodon Badlands → Bone Pits",
           "checkId": "run:a2-lightless-crafting",
           "termRefs": {
             "de": {
+              "Optional": "term.optional",
+              "Brunnen der Seelen": "act2.well",
               "Mastodon-Ödlande": "act2.badlands",
               "Knochengruben": "act2.pits"
             },
-            "en": {
+            "hybrid": {
+              "Optional": "term.optional",
+              "Well of Souls": "act2.well",
               "Mastodon Badlands": "act2.badlands",
               "Bone Pits": "act2.pits"
             },
-            "hybrid": {
+            "en": {
+              "Optional": "term.optional",
+              "Well of Souls": "act2.well",
               "Mastodon Badlands": "act2.badlands",
               "Bone Pits": "act2.pits"
             }
@@ -9228,45 +8922,100 @@
           "tone": "info",
           "lines": [
             {
-              "hybrid": "Aktiviere den Waypoint, damit du den Well of Souls später direkt wieder erreichst.",
-              "de": "Aktiviere den Wegpunkt, damit du den Brunnen der Seelen später direkt wieder erreichst.",
-              "en": "Activate the Waypoint to return to the Well of Souls directly later.",
+              "de": "Aktiviere den Wegpunkt im Brunnenraum. Du erreichst ihn aus der Lichtlosen Passage und kannst später über die Weltkarte zurückkehren.",
+              "hybrid": "Aktiviere den Waypoint im Brunnenraum. Du erreichst ihn aus der Lightless Passage und kannst später über die World Map zurückkehren.",
+              "en": "Activate the Waypoint in the well chamber. You reach it through Lightless Passage and can return from the world map later.",
               "checkId": "run:a2-well-waypoint",
               "termRefs": {
                 "de": {
                   "Wegpunkt": "landmark.waypoint",
-                  "Brunnen der Seelen": "act2.well"
-                },
-                "en": {
-                  "Waypoint": "landmark.waypoint",
-                  "Well of Souls": "act2.well"
+                  "Lichtlosen Passage": "act2.lightless",
+                  "Weltkarte": "term.map"
                 },
                 "hybrid": {
                   "Waypoint": "landmark.waypoint",
-                  "Well of Souls": "act2.well"
+                  "Lightless Passage": "act2.lightless"
+                },
+                "en": {
+                  "Waypoint": "landmark.waypoint",
+                  "Lightless Passage": "act2.lightless",
+                  "world map": "term.map"
                 }
               }
             }
           ]
         },
         {
-          "heading": "Optionale Ziele",
-          "tone": "optional",
+          "heading": "Quest",
+          "tone": "quest",
           "lines": [
             {
-              "hybrid": "Interagiere mit dem Well of Souls, um entweihte Modifikatoren auf Ausrüstung enthüllen zu können. Prüfe den Gegenstand vor dem Enthüllen auf einen entweihten Modifikator.",
-              "de": "Interagiere mit dem Brunnen der Seelen, um entweihte Modifikatoren auf Ausrüstung enthüllen zu können. Prüfe den Gegenstand vor dem Enthüllen auf einen entweihten Modifikator.",
-              "en": "Interact with the Well of Souls to unlock revealing Desecrated modifiers on gear. Check that the item has a Desecrated modifier before trying to reveal it.",
+              "de": "Benutze den Brunnen der Seelen für die Nebenquest. Wenn du zuvor einen passenden Knochen angewendet hast, enthülle den Modifikator und wähle einen der drei angebotenen Werte.",
+              "hybrid": "Benutze den Well of Souls für die Nebenquest. Bringst du ein Item mit Desecrated Modifier mit, enthülle ihn und wähle einen der drei angebotenen Mods.",
+              "en": "Use the Well of Souls for the side quest. If you bring an item with a Desecrated Modifier, reveal it and choose one of the three offered modifiers.",
               "checkId": "run:a2-well-unlock",
               "termRefs": {
                 "de": {
                   "Brunnen der Seelen": "act2.well"
                 },
+                "hybrid": {
+                  "Well of Souls": "act2.well",
+                  "Desecrated Modifier": "website.desecrated_modifier"
+                },
                 "en": {
-                  "Well of Souls": "act2.well"
+                  "Well of Souls": "act2.well",
+                  "Desecrated Modifier": "website.desecrated_modifier"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Tipps",
+          "tone": "gameplay_title",
+          "lines": [
+            {
+              "de": "Besiege die Gegner an einer Abgrundspalte und dann die Welle an der Grube. Eine Abgrundtruhe kann Knochen enthalten. Rippen passen auf Rüstung, Schlüsselbeine auf Schmuck und Kieferknochen auf Waffen oder Köcher.",
+              "hybrid": "Besiege die Gegner an einer Fissure und dann die Welle am Abyss Pit. Eine Abyssal Trove kann Bones enthalten. Ribs passen auf Armour, Collarbones auf Jewellery und Jawbones auf Weapons oder Quivers.",
+              "en": "Defeat monsters around a fissure and then the wave at its Abyss pit. An Abyssal Trove can hold bones. Ribs fit armour, Collarbones fit jewellery, and Jawbones fit weapons or quivers.",
+              "id": "a2-well-first-abyss",
+              "kind": "paragraph",
+              "termRefs": {
+                "hybrid": {
+                  "Abyss Pit": "website.abyss"
+                },
+                "en": {
+                  "Abyss pit": "website.abyss"
+                },
+                "de": {
+                  "Abgrundspalte": "website.abyss"
+                }
+              }
+            },
+            {
+              "de": "Wähle für den ersten Versuch einen passenden Knochen und einen entbehrlichen seltenen Gegenstand mit freiem Affixplatz. Eine Angenagte Rippe passt auf seltene Rüstung bis Gegenstandsstufe 64. Bei vollen Affixplätzen kann die Entweihung einen vorhandenen Wert ersetzen.",
+              "hybrid": "Wähle für den ersten Versuch einen passenden Bone und ein entbehrliches Rare mit freiem Affix-Slot. Eine Gnawed Rib passt auf Rare Armour bis Item Level 64. Sind die Affix-Slots voll, kann Desecration einen vorhandenen Mod ersetzen.",
+              "en": "For a first attempt, use a matching bone on a spare rare with an open affix slot. A Gnawed Rib fits rare armour up to item level 64. If the affix slots are full, desecration can replace an existing modifier.",
+              "id": "a2-well-first-bone",
+              "kind": "paragraph",
+              "termRefs": {
+                "de": {
+                  "seltenen Gegenstand": "rare.rare_item",
+                  "Angenagte Rippe": "currency.gnawed_rib",
+                  "seltene Rüstung": "rare.rare_armour",
+                  "Entweihung": "website.desecrated_modifier"
                 },
                 "hybrid": {
-                  "Well of Souls": "act2.well"
+                  "Rare": "rare.rare",
+                  "Gnawed Rib": "currency.gnawed_rib",
+                  "Rare Armour": "rare.rare_armour",
+                  "Desecration": "website.desecrated_modifier"
+                },
+                "en": {
+                  "rare": "rare.rare",
+                  "Gnawed Rib": "currency.gnawed_rib",
+                  "rare armour": "rare.rare_armour",
+                  "desecration": "website.desecrated_modifier"
                 }
               }
             }
@@ -9276,37 +9025,84 @@
       "steps": [
         {
           "section": "Layout",
-          "hybrid": "Waypoint für spätere Besuche sichern",
-          "de": "Wegpunkt für spätere Besuche sichern",
-          "en": "Tag Waypoint for later visits",
+          "de": "Lichtlose Passage → Wegpunkt im Brunnenraum",
+          "hybrid": "Lightless Passage → Waypoint im Brunnenraum",
+          "en": "Lightless Passage → Waypoint in the well chamber",
           "checkId": "run:a2-well-waypoint",
           "termRefs": {
             "de": {
+              "Lichtlose Passage": "act2.lightless",
               "Wegpunkt": "landmark.waypoint"
             },
-            "en": {
+            "hybrid": {
+              "Lightless Passage": "act2.lightless",
               "Waypoint": "landmark.waypoint"
             },
-            "hybrid": {
+            "en": {
+              "Lightless Passage": "act2.lightless",
               "Waypoint": "landmark.waypoint"
             }
           }
         },
         {
-          "section": "Optionale Ziele",
-          "hybrid": "Well of Souls benutzen → entweihte Mods enthüllen",
-          "de": "Brunnen der Seelen benutzen → entweihte Mods enthüllen",
-          "en": "Use Well of Souls → reveal Desecrated mods",
+          "section": "Quest",
+          "de": "Brunnen der Seelen benutzen → Entweihung enthüllen → einen von drei Werten wählen",
+          "hybrid": "Well of Souls benutzen → Desecrated Modifier enthüllen → einen von drei Mods wählen",
+          "en": "Use the Well of Souls → reveal the Desecrated Modifier → choose one of three modifiers",
           "checkId": "run:a2-well-unlock",
           "termRefs": {
             "de": {
-              "Brunnen der Seelen": "act2.well"
-            },
-            "en": {
-              "Well of Souls": "act2.well"
+              "Brunnen der Seelen": "act2.well",
+              "Entweihung": "website.desecrated_modifier"
             },
             "hybrid": {
-              "Well of Souls": "act2.well"
+              "Well of Souls": "act2.well",
+              "Desecrated Modifier": "website.desecrated_modifier"
+            },
+            "en": {
+              "Well of Souls": "act2.well",
+              "Desecrated Modifier": "website.desecrated_modifier"
+            }
+          }
+        },
+        {
+          "section": "Tipps",
+          "de": "Abgrund · Gegner an Spalten → Grube räumen → Truhe auf Knochen prüfen",
+          "hybrid": "Abyss · Fissures → Pit räumen → Abyssal Trove auf Bones prüfen",
+          "en": "Abyss · clear fissures and the pit → check the trove for bones",
+          "id": "a2-well-first-abyss",
+          "kind": "paragraph",
+          "termRefs": {
+            "de": {
+              "Abgrund": "website.abyss"
+            },
+            "hybrid": {
+              "Abyss": "website.abyss"
+            },
+            "en": {
+              "Abyss": "website.abyss"
+            }
+          }
+        },
+        {
+          "section": "Tipps",
+          "de": "Entbehrliche seltene Rüstung mit freiem Affixplatz + Angenagte Rippe",
+          "hybrid": "Entbehrliches Rare Armour mit freiem Affix-Slot + Gnawed Rib",
+          "en": "Spare rare armour with an open affix slot + Gnawed Rib",
+          "id": "a2-well-first-bone",
+          "kind": "paragraph",
+          "termRefs": {
+            "de": {
+              "seltene Rüstung": "rare.rare_armour",
+              "Angenagte Rippe": "currency.gnawed_rib"
+            },
+            "hybrid": {
+              "Rare Armour": "rare.rare_armour",
+              "Gnawed Rib": "currency.gnawed_rib"
+            },
+            "en": {
+              "rare armour": "rare.rare_armour",
+              "Gnawed Rib": "currency.gnawed_rib"
             }
           }
         }
@@ -14046,23 +13842,6 @@
                   "Eye of Hinekora": "act4.eye"
                 }
               }
-            },
-            {
-              "hybrid": "Sprich nach Tavakai mit dem Hooded One und folge den Questdialogen. Wähle anschließend eines der drei Interludes in Ogham, Vastiri oder am Kriar-Gebirge.",
-              "de": "Sprich nach Tavakai mit dem Verhüllten und folge den Questdialogen. Wähle anschließend eines der drei Interludes in Ogham, Vastiri oder am Kriar-Gebirge.",
-              "en": "After Tavakai, talk to the Hooded One and follow the quest dialogue. Then choose one of the three Interludes in Ogham, Vastiri or Mount Kriar.",
-              "checkId": "run:a4-town-interludes",
-              "termRefs": {
-                "de": {
-                  "Verhüllten": "term.hooded_one"
-                },
-                "en": {
-                  "the Hooded One": "term.hooded_one"
-                },
-                "hybrid": {
-                  "Hooded One": "term.hooded_one"
-                }
-              }
             }
           ]
         },
@@ -14382,24 +14161,6 @@
               "Humming Pearl": "act4.pearl",
               "Rog": "npc.rog",
               "Elementarwiderständen": "term.town_elemental_resistance"
-            }
-          }
-        },
-        {
-          "section": "Quest",
-          "hybrid": "Nach Tavakai → Hooded One → Ogham, Vastiri oder Kriar-Gebirge",
-          "de": "Nach Tavakai → Verhüllter → Ogham, Vastiri oder Kriar-Gebirge",
-          "en": "After Tavakai → Hooded One → Ogham, Vastiri or Mount Kriar",
-          "checkId": "run:a4-town-interludes",
-          "termRefs": {
-            "en": {
-              "Hooded One": "term.hooded_one"
-            },
-            "hybrid": {
-              "Hooded One": "term.hooded_one"
-            },
-            "de": {
-              "Verhüllter": "term.hooded_one"
             }
           }
         },
@@ -16593,12 +16354,12 @@
           "lines": [
             {
               "hybrid": "Nach der Überfahrt suchst du den Ausgrabungsplatz. Der Zugang zur Deserted Post gehört zur Quest und führt hinter die Expedition.",
-              "de": "Nach der Überfahrt suchst du den Ausgrabungsplatz. Der Zugang zur Fernstation gehört zur Quest und führt hinter die Expedition.",
+              "de": "Nach der Überfahrt suchst du den Ausgrabungsplatz. Der Zugang zum Verlassenen Posten gehört zur Quest und führt hinter die Expedition.",
               "en": "After sailing in, look for the excavation site. The entrance to the Deserted Post is part of the quest beyond the Expedition encounter.",
               "checkId": "run:a4-plunders-layout",
               "termRefs": {
                 "de": {
-                  "Fernstation": "act4.deserted"
+                  "Verlassenen Posten": "act4.deserted"
                 },
                 "en": {
                   "the excavation": "act4.excavation",
@@ -16617,14 +16378,14 @@
           "lines": [
             {
               "hybrid": "Ruf Dannig am Ausgrabungsplatz herbei. Platziere die Sprengladungen, zünde sie bei Dannig und räume die Expedition. Betritt danach die Deserted Post, ruf Farrow herbei und hol das Runenschmiedewissen aus dem Folianten.",
-              "de": "Ruf Dannig am Ausgrabungsplatz herbei. Platziere die Sprengladungen, zünde sie bei Dannig und räume die Expedition. Betritt danach die Fernstation, ruf Farrow herbei und hol das Runenschmiedewissen aus dem Folianten.",
+              "de": "Ruf Dannig am Ausgrabungsplatz herbei. Platziere die Sprengladungen, zünde sie bei Dannig und räume die Expedition. Betritt danach den Verlassenen Posten, ruf Farrow herbei und hol das Runenschmiedewissen aus dem Folianten.",
               "en": "Summon Dannig at the excavation site. Place the explosives, detonate them with Dannig and clear the Expedition. Then enter the Deserted Post, summon Farrow and obtain the Runesmithing Knowledge from the tome.",
               "checkId": "route:a4-plunders",
               "termRefs": {
                 "de": {
                   "Dannig": "npc.dannig",
-                  "Fernstation": "act4.deserted",
-                  "Farrow": "act2.farrow"
+                  "Farrow": "act2.farrow",
+                  "Verlassenen Posten": "act4.deserted"
                 },
                 "en": {
                   "Dannig": "npc.dannig",
@@ -16674,12 +16435,12 @@
         {
           "section": "Layout",
           "hybrid": "Ausgrabungsplatz → Expedition → Deserted Post",
-          "de": "Ausgrabungsplatz → Expedition → Fernstation",
+          "de": "Ausgrabungsplatz → Expedition → Verlassener Posten",
           "en": "Excavation site → Expedition → Deserted Post",
           "checkId": "run:a4-plunders-layout",
           "termRefs": {
             "de": {
-              "Fernstation": "act4.deserted"
+              "Verlassener Posten": "act4.deserted"
             },
             "en": {
               "Deserted Post": "act4.deserted"
@@ -16692,14 +16453,14 @@
         {
           "section": "Quest",
           "hybrid": "Dannig → Sprengladungen → Expedition → Deserted Post → Farrow und Foliant",
-          "de": "Dannig → Sprengladungen → Expedition → Fernstation → Farrow und Foliant",
+          "de": "Dannig → Sprengladungen → Expedition → Verlassener Posten → Farrow und Foliant",
           "en": "Dannig → explosives → Expedition → Deserted Post → Farrow and tome",
           "checkId": "route:a4-plunders",
           "termRefs": {
             "de": {
               "Dannig": "npc.dannig",
-              "Fernstation": "act4.deserted",
-              "Farrow": "act2.farrow"
+              "Farrow": "act2.farrow",
+              "Verlassener Posten": "act4.deserted"
             },
             "en": {
               "Dannig": "npc.dannig",
@@ -17299,25 +17060,22 @@
           "tone": "quest",
           "lines": [
             {
-              "hybrid": "Besiege Tavakai, the Chieftain in allen drei Phasen. Sprich nach dem Kampf mit Tavakai, kehre nach Kingsmarch zurück und folge dem Hooded One zu den drei Interludes.",
-              "de": "Besiege Tavakai, der Stammesführer in allen drei Phasen. Sprich nach dem Kampf mit Tavakai, kehre nach Königsmark zurück und folge dem Verhüllten zu den drei Interludes.",
-              "en": "Defeat Tavakai, the Chieftain through all three phases. Speak to Tavakai afterwards, return to Kingsmarch and follow the Hooded One to the three Interludes.",
+              "hybrid": "Besiege Tavakai, the Chieftain in allen drei Phasen. Sprich nach dem Kampf mit Tavakai, kehre nach Kingsmarch zurück.",
+              "de": "Besiege Tavakai, der Stammesführer in allen drei Phasen. Sprich nach dem Kampf mit Tavakai, kehre nach Königsmark zurück.",
+              "en": "Defeat Tavakai, the Chieftain through all three phases. Speak to Tavakai afterwards, return to Kingsmarch.",
               "checkId": "route:a4-tavakai",
               "termRefs": {
                 "de": {
                   "Tavakai, der Stammesführer": "act4.tavakai",
-                  "Königsmark": "act3.kings",
-                  "Verhüllten": "term.hooded_one"
+                  "Königsmark": "act3.kings"
                 },
                 "en": {
                   "Tavakai, the Chieftain": "act4.tavakai",
-                  "Kingsmarch": "act3.kings",
-                  "the Hooded One": "term.hooded_one"
+                  "Kingsmarch": "act3.kings"
                 },
                 "hybrid": {
                   "Tavakai, the Chieftain": "act4.tavakai",
-                  "Kingsmarch": "act3.kings",
-                  "Hooded One": "term.hooded_one"
+                  "Kingsmarch": "act3.kings"
                 }
               }
             }
@@ -17396,9 +17154,9 @@
         },
         {
           "section": "Quest",
-          "hybrid": "Tavakai in drei Phasen → mit Tavakai sprechen → Kingsmarch → Interludes",
-          "de": "Tavakai in drei Phasen → mit Tavakai sprechen → Königsmark → Interludes",
-          "en": "Tavakai in three phases → talk to Tavakai → Kingsmarch → Interludes",
+          "hybrid": "Tavakai in drei Phasen → mit Tavakai sprechen → Kingsmarch",
+          "de": "Tavakai in drei Phasen → mit Tavakai sprechen → Königsmark",
+          "en": "Tavakai in three phases → talk to Tavakai → Kingsmarch",
           "checkId": "route:a4-tavakai",
           "termRefs": {
             "de": {
@@ -17452,128 +17210,513 @@
         }
       ]
     },
-    "i-scorched-farmlands": {
+    "a2-abyssal-depths": {
       "sections": [
         {
-          "heading": "Quest",
-          "tone": "quest",
+          "heading": "Layout",
+          "tone": "info",
           "lines": [
             {
-              "de": "Besiege die beiden Hexen und nimm den Weg zu den Steinen von Serle.",
-              "en": "Defeat the two witches and take the path to the Stones of Serle.",
-              "hybrid": "Besiege die beiden Hexen und folge dem Weg zu den Stones of Serle.",
-              "checkId": "boss:isolde-heldra"
+              "de": "Der Eingang kann sich nach einer geschlossenen Abgrundgrube öffnen. Betritt ihn, wenn du die Zusatzbeute mitnehmen willst. In den Abgründigen Tiefen gibt es Kontrollpunkte.",
+              "hybrid": "Der Eingang kann sich nach einem geschlossenen Abyss Pit öffnen. Betritt ihn für Zusatzbeute. In den Abyssal Depths gibt es Checkpoints.",
+              "en": "An entrance can open after you close an Abyss pit. Enter for optional loot. The Abyssal Depths contain checkpoints.",
+              "id": "a2-depths-access",
+              "kind": "paragraph",
+              "termRefs": {
+                "de": {
+                  "Abgrundgrube": "website.abyss",
+                  "Abgründigen Tiefen": "act2.abyssal_depths",
+                  "Kontrollpunkte": "term.checkpoint"
+                },
+                "hybrid": {
+                  "Abyss Pit": "website.abyss",
+                  "Abyssal Depths": "act2.abyssal_depths",
+                  "Checkpoints": "term.checkpoint"
+                },
+                "en": {
+                  "Abyss pit": "website.abyss",
+                  "optional": "term.optional",
+                  "Abyssal Depths": "act2.abyssal_depths",
+                  "checkpoints": "term.checkpoint"
+                }
+              }
             }
           ]
-        }
-      ],
-      "steps": [
-        {
-          "section": "Quest",
-          "de": "Hexen besiegen → Steine von Serle",
-          "en": "Defeat witches → Stones of Serle",
-          "hybrid": "Hexen besiegen → Stones of Serle",
-          "checkId": "boss:isolde-heldra"
-        }
-      ]
-    },
-    "i-holten-chapel": {
-      "sections": [
+        },
         {
           "heading": "Optionale Ziele",
           "tone": "optional",
           "lines": [
             {
-              "de": "Aktiviere in der Kapelle den Blutpsalm, wenn du Sigbert und Godwin bekämpfen möchtest. Du kannst auch direkt zum Anwesen weitergehen.",
-              "en": "Activate the Psalm of Blood in the chapel to challenge Sigbert and Godwin. You can also go straight to the estate.",
-              "hybrid": "Aktiviere in der Kapelle den Psalm of Blood für Sigbert und Godwin oder geh direkt zum Holten Estate.",
-              "checkId": "boss:sigbert-godwin"
+              "de": "Dringe zu den Truhen am Ende vor. Besiege den seltenen Abgrundgegner davor, um sie zu öffnen. In der Beute können Knochen zum Entweihen liegen.",
+              "hybrid": "Geh zu den Troves am Ende, besiege das verstärkte Rare Monster davor und öffne die Truhen. Dort können Bones für Desecration liegen.",
+              "en": "Reach the troves at the end and defeat the enhanced rare Abyssal monster guarding them. The chests can contain bones for desecration.",
+              "checkId": "run:a2-abyssal-depths-troves",
+              "termRefs": {
+                "en": {
+                  "rare Abyssal monster": "monster.rare_enemy",
+                  "desecration": "website.desecrated_modifier"
+                },
+                "hybrid": {
+                  "Rare Monster": "monster.rare_enemy",
+                  "Desecration": "website.desecrated_modifier"
+                },
+                "de": {
+                  "seltenen Abgrundgegner": "monster.rare_enemy"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Tipps",
+          "tone": "gameplay_title",
+          "lines": [
+            {
+              "de": "Fülle vor dem Betreten deine Flaschen. Stirbst du in den Tiefen, landest du wieder draußen und dieser Eingang schließt sich.",
+              "hybrid": "Fülle vor dem Betreten deine Flasks. Stirbst du in den Depths, landest du wieder draußen und dieser Eingang schließt sich.",
+              "en": "Refill your flasks before entering. If you die in the Depths, you return outside and this entrance closes.",
+              "id": "a2-depths-one-attempt",
+              "kind": "paragraph",
+              "termRefs": {
+                "en": {
+                  "flasks": "equipment.flask"
+                },
+                "hybrid": {
+                  "Flasks": "equipment.flask"
+                }
+              }
             }
           ]
         }
       ],
       "steps": [
+        {
+          "section": "Layout",
+          "de": "Optional · nach geschlossener Abgrundgrube auf Eingang achten",
+          "hybrid": "Optional · geschlossener Abyss Pit → möglichen Eingang prüfen",
+          "en": "Optional · check the closed Abyss pit for an entrance",
+          "id": "a2-depths-access",
+          "kind": "paragraph",
+          "termRefs": {
+            "de": {
+              "Optional": "term.optional",
+              "Abgrundgrube": "website.abyss"
+            },
+            "hybrid": {
+              "Optional": "term.optional",
+              "Abyss Pit": "website.abyss"
+            },
+            "en": {
+              "Optional": "term.optional",
+              "Abyss pit": "website.abyss"
+            }
+          }
+        },
         {
           "section": "Optionale Ziele",
-          "de": "Kapelle → optionales Bossduo",
-          "en": "Chapel → optional boss duo",
-          "hybrid": "Kapelle → optionales Bossduo",
-          "checkId": "boss:sigbert-godwin"
+          "de": "Optional · verstärkten seltenen Gegner besiegen → Truhen öffnen",
+          "hybrid": "Optional · verstärktes Rare Monster besiegen → Troves öffnen",
+          "en": "Optional · defeat the enhanced rare → open the troves",
+          "checkId": "run:a2-abyssal-depths-troves",
+          "termRefs": {
+            "de": {
+              "Optional": "term.optional",
+              "seltenen Gegner": "monster.rare_enemy"
+            },
+            "hybrid": {
+              "Optional": "term.optional",
+              "Rare Monster": "monster.rare_enemy"
+            },
+            "en": {
+              "Optional": "term.optional",
+              "rare": "rare.rare"
+            }
+          }
+        },
+        {
+          "section": "Tipps",
+          "de": "Vorher Flaschen auffüllen · Tod beendet diesen Versuch",
+          "hybrid": "Vorher Flasks auffüllen · Tod beendet den Versuch",
+          "en": "Refill flasks first · death ends this attempt",
+          "id": "a2-depths-one-attempt",
+          "kind": "paragraph",
+          "termRefs": {
+            "en": {
+              "flasks": "equipment.flask"
+            },
+            "hybrid": {
+              "Flasks": "equipment.flask"
+            }
+          }
         }
       ]
     },
-    "i-etched-ravine": {
+    "a4-deserted-post": {
       "sections": [
+        {
+          "heading": "Layout",
+          "tone": "info",
+          "lines": [
+            {
+              "de": "Den Zugang zum Verlassenen Posten öffnest du auf der Plündererklippe. Platziere und zünde bei Dannig die Sprengladungen und besiege die Gegner der Expedition.",
+              "hybrid": "Den Zugang zum Deserted Post öffnest du am Plunder's Point. Platziere und zünde bei Dannig die Sprengladungen und besiege die Gegner der Expedition.",
+              "en": "Open the route to the Deserted Post at Plunder's Point. Place the explosives, detonate them with Dannig and defeat the Expedition monsters.",
+              "id": "a4-deserted-post-access",
+              "kind": "paragraph",
+              "termRefs": {
+                "de": {
+                  "Verlassenen Posten": "act4.deserted",
+                  "Plündererklippe": "act4.plunder",
+                  "Dannig": "npc.dannig"
+                },
+                "hybrid": {
+                  "Deserted Post": "act4.deserted",
+                  "Plunder's Point": "act4.plunder",
+                  "Dannig": "npc.dannig"
+                },
+                "en": {
+                  "Deserted Post": "act4.deserted",
+                  "Plunder's Point": "act4.plunder",
+                  "Dannig": "npc.dannig"
+                }
+              }
+            }
+          ]
+        },
         {
           "heading": "Quest",
           "tone": "quest",
           "lines": [
             {
-              "de": "Besiege Sturmkeil am Ende der Schlucht und betritt die Cuachic-Schatzkammer.",
-              "en": "Defeat Stormgore at the end of the ravine and enter the Cuachic Vault.",
-              "hybrid": "Besiege Stormgore am Ende der Schlucht und betritt den Cuachic Vault.",
-              "checkId": "boss:stormgore"
+              "de": "Erkunde den Posten, ruf Farrow herbei und sprich mit ihm über den Folianten. Hol dir danach das Runenschmiedewissen.",
+              "hybrid": "Erkunde den Posten, ruf Farrow herbei und sprich mit ihm über den Tome. Hol dir danach Runesmithing Knowledge.",
+              "en": "Explore the post, summon Farrow and speak with him about the Tome. Then obtain the Runesmithing Knowledge.",
+              "checkId": "run:a4-deserted-post-tome",
+              "termRefs": {
+                "de": {
+                  "Farrow": "act2.farrow"
+                },
+                "hybrid": {
+                  "Farrow": "act2.farrow"
+                },
+                "en": {
+                  "Farrow": "act2.farrow"
+                }
+              }
+            },
+            {
+              "de": "In Standard und Verbotene Riten schließt du den Runensucher in Königsmark ab. Sprich mit Farrow, nimm sein Verisium und verwende den Verisium-Amboss auf einer Rüstung.",
+              "hybrid": "In Standard und Forbidden Rites schließt du The Runeseeker in Kingsmarch ab. Sprich mit Farrow, nimm sein Verisium und verwende den Verisium Anvil auf einer Rüstung.",
+              "en": "In Standard and Forbidden Rites, finish The Runeseeker in Kingsmarch. Meet Farrow, take his Verisium and use the Verisium Anvil to reforge a piece of armour.",
+              "checkId": "run:a4-deserted-post-anvil",
+              "termRefs": {
+                "de": {
+                  "Farrow": "act2.farrow",
+                  "Königsmark": "act3.kings",
+                  "Verisium-Amboss": "act4.anvil"
+                },
+                "hybrid": {
+                  "Farrow": "act2.farrow",
+                  "Kingsmarch": "act3.kings",
+                  "Verisium Anvil": "act4.anvil",
+                  "The Runeseeker": "act4.runeseeker"
+                },
+                "en": {
+                  "Farrow": "act2.farrow",
+                  "Kingsmarch": "act3.kings",
+                  "Verisium Anvil": "act4.anvil",
+                  "The Runeseeker": "act4.runeseeker"
+                }
+              }
             }
           ]
         }
       ],
       "steps": [
         {
+          "section": "Layout",
+          "de": "Plündererklippe · Expedition mit Dannig → Verlassener Posten",
+          "hybrid": "Plunder's Point · Expedition mit Dannig → Deserted Post",
+          "en": "Plunder's Point · complete Dannig's Expedition → Deserted Post",
+          "id": "a4-deserted-post-access",
+          "kind": "paragraph",
+          "termRefs": {
+            "de": {
+              "Verlassener Posten": "act4.deserted",
+              "Plündererklippe": "act4.plunder",
+              "Dannig": "npc.dannig"
+            },
+            "hybrid": {
+              "Deserted Post": "act4.deserted",
+              "Plunder's Point": "act4.plunder",
+              "Dannig": "npc.dannig"
+            },
+            "en": {
+              "Deserted Post": "act4.deserted",
+              "Plunder's Point": "act4.plunder",
+              "Dannig": "npc.dannig"
+            }
+          }
+        },
+        {
           "section": "Quest",
-          "de": "Sturmkeil → Cuachic-Schatzkammer",
-          "en": "Stormgore → Cuachic Vault",
-          "hybrid": "Stormgore → Cuachic Vault",
-          "checkId": "boss:stormgore"
+          "de": "Posten erkunden → Farrow herbeirufen → Foliant → Runenschmiedewissen",
+          "hybrid": "Posten erkunden → Farrow herbeirufen → Tome → Runesmithing Knowledge",
+          "en": "Explore → summon Farrow → discuss Tome → obtain Runesmithing Knowledge",
+          "checkId": "run:a4-deserted-post-tome",
+          "termRefs": {
+            "de": {
+              "Farrow": "act2.farrow"
+            },
+            "hybrid": {
+              "Farrow": "act2.farrow"
+            },
+            "en": {
+              "Farrow": "act2.farrow"
+            }
+          }
+        },
+        {
+          "section": "Quest",
+          "de": "Standard / Verbotene Riten · Königsmark → Farrow → Verisium → am Amboss Rüstung bearbeiten",
+          "hybrid": "Standard / Forbidden Rites · Kingsmarch → Farrow → Verisium → Anvil auf Armour",
+          "en": "Standard / Forbidden Rites · Kingsmarch → Farrow → Verisium → reforge armour",
+          "checkId": "run:a4-deserted-post-anvil",
+          "termRefs": {
+            "de": {
+              "Farrow": "act2.farrow",
+              "Königsmark": "act3.kings"
+            },
+            "hybrid": {
+              "Farrow": "act2.farrow",
+              "Kingsmarch": "act3.kings"
+            },
+            "en": {
+              "Farrow": "act2.farrow",
+              "Kingsmarch": "act3.kings"
+            }
+          }
         }
       ]
     },
-    "i-sel-khari": {
+    "a1-lost-catacombs": {
       "sections": [
+        {
+          "heading": "Layout",
+          "tone": "info",
+          "lines": [
+            {
+              "de": "Dieser Abstecher gehört zur Liga Runen von Aldur. Berühre die Runensteine im Düsteren Dickicht, in den Jagdgründen und in den Ackerlanden von Ogham. Kehre danach zum Baum der Seelen im Grelwald zurück und rufe Farrow herbei.",
+              "hybrid": "Dieser Abstecher gehört zu Runes of Aldur. Berühre die Runestones in The Grim Tangle, Hunting Grounds und Ogham Farmlands. Kehre danach zum Tree of Souls in The Grelwood zurück und rufe Farrow herbei.",
+              "en": "This detour is part of the Runes of Aldur league. Touch Runestones in The Grim Tangle, Hunting Grounds and Ogham Farmlands. Then return to the Tree of Souls in The Grelwood and summon Farrow.",
+              "id": "a1-lost-catacombs-league",
+              "kind": "paragraph",
+              "termRefs": {
+                "de": {
+                  "Runen von Aldur": "website.aldur",
+                  "Runensteine": "act2.runestone",
+                  "Ackerlanden von Ogham": "area.ogham_farmlands",
+                  "Baum der Seelen": "landmark.tree_of_souls",
+                  "Grelwald": "area.grelwood",
+                  "Farrow": "act2.farrow"
+                },
+                "hybrid": {
+                  "Runes of Aldur": "website.aldur",
+                  "Runestones": "act2.runestone",
+                  "The Grim Tangle": "landmark.grim_tangle_exit",
+                  "Hunting Grounds": "term.hunting_grounds",
+                  "Ogham Farmlands": "area.ogham_farmlands",
+                  "Tree of Souls": "landmark.tree_of_souls",
+                  "The Grelwood": "area.grelwood",
+                  "Farrow": "act2.farrow"
+                },
+                "en": {
+                  "Runes of Aldur": "website.aldur",
+                  "Runestones": "act2.runestone",
+                  "The Grim Tangle": "landmark.grim_tangle_exit",
+                  "Hunting Grounds": "term.hunting_grounds",
+                  "Ogham Farmlands": "area.ogham_farmlands",
+                  "Tree of Souls": "landmark.tree_of_souls",
+                  "The Grelwood": "area.grelwood",
+                  "Farrow": "act2.farrow"
+                }
+              }
+            }
+          ]
+        },
         {
           "heading": "Quest",
           "tone": "quest",
           "lines": [
             {
-              "de": "Besiege Elzarah und sprich mit Asala. Weiter geht es zu den Galai-Toren.",
-              "en": "Defeat Elzarah and speak to Asala, then continue to the Galai Gates.",
-              "hybrid": "Besiege Elzarah und sprich mit Asala. Weiter geht es zu den Galai Gates.",
-              "checkId": "boss:elzarah"
+              "de": "Erkunde die Verschollenen Katakomben. Ruf Farrow herbei und sprich mit ihm über den Folianten.",
+              "hybrid": "Erkunde die Lost Catacombs. Ruf Farrow herbei und sprich mit ihm über den Tome.",
+              "en": "Explore the Lost Catacombs, summon Farrow inside and ask him about the Tome.",
+              "checkId": "run:a1-lost-catacombs-farrow",
+              "termRefs": {
+                "de": {
+                  "Verschollenen Katakomben": "act1.lost_catacombs",
+                  "Farrow": "act2.farrow"
+                },
+                "hybrid": {
+                  "Lost Catacombs": "act1.lost_catacombs",
+                  "Farrow": "act2.farrow"
+                },
+                "en": {
+                  "Lost Catacombs": "act1.lost_catacombs",
+                  "Farrow": "act2.farrow"
+                }
+              }
+            },
+            {
+              "de": "Triff Farrow im Lichtfall-Lager. Nimm sein Verisium, hör ihm zu und verwende den Verisium-Amboss auf einer Rüstung.",
+              "hybrid": "Triff Farrow im Clearfell Encampment. Nimm sein Verisium, hör ihm zu und verwende den Verisium Anvil auf einer Rüstung.",
+              "en": "Meet Farrow in Clearfell Encampment. Take his Verisium, listen to him and use the Verisium Anvil to reforge a piece of armour.",
+              "checkId": "run:a1-lost-catacombs-anvil",
+              "termRefs": {
+                "de": {
+                  "Farrow": "act2.farrow",
+                  "Lichtfall-Lager": "term.clearfell_camp",
+                  "Verisium-Amboss": "act4.anvil"
+                },
+                "hybrid": {
+                  "Farrow": "act2.farrow",
+                  "Clearfell Encampment": "term.clearfell_camp",
+                  "Verisium Anvil": "act4.anvil"
+                },
+                "en": {
+                  "Farrow": "act2.farrow",
+                  "Clearfell Encampment": "term.clearfell_camp",
+                  "Verisium Anvil": "act4.anvil",
+                  "reforge": "currency.reforge"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Tipps",
+          "tone": "gameplay_title",
+          "lines": [
+            {
+              "de": "In Standard und Verbotene Riten schaltest du den Verisium-Amboss in Akt 4 über den Runensucher auf der Plündererklippe frei.",
+              "hybrid": "In Standard und Forbidden Rites schaltest du den Verisium Anvil in Akt 4 über The Runeseeker am Plunder's Point frei.",
+              "en": "In Standard and Forbidden Rites, unlock the Verisium Anvil through The Runeseeker at Plunder's Point in Act 4.",
+              "id": "a1-lost-catacombs-standard",
+              "kind": "paragraph",
+              "termRefs": {
+                "de": {
+                  "Verisium-Amboss": "act4.anvil",
+                  "Plündererklippe": "act4.plunder"
+                },
+                "hybrid": {
+                  "Verisium Anvil": "act4.anvil",
+                  "The Runeseeker": "act4.runeseeker",
+                  "Plunder's Point": "act4.plunder"
+                },
+                "en": {
+                  "Verisium Anvil": "act4.anvil",
+                  "The Runeseeker": "act4.runeseeker",
+                  "Plunder's Point": "act4.plunder"
+                }
+              }
             }
           ]
         }
       ],
       "steps": [
         {
-          "section": "Quest",
-          "de": "Elzarah → Asala → Galai-Tore",
-          "en": "Elzarah → Asala → Galai Gates",
-          "hybrid": "Elzarah → Asala → Galai Gates",
-          "checkId": "boss:elzarah"
-        }
-      ]
-    },
-    "i-galai-gates": {
-      "sections": [
-        {
-          "heading": "Quest",
-          "tone": "quest",
-          "lines": [
-            {
-              "de": "Besiege Vornas am Durchgang nach Qimah und folge dem Weg in die Stadt.",
-              "en": "Defeat Vornas at the entrance to Qimah and follow the path into the city.",
-              "hybrid": "Besiege Vornas am Durchgang nach Qimah und folge dem Weg in die Stadt.",
-              "checkId": "boss:vornas"
+          "section": "Layout",
+          "de": "Nur Runen von Aldur · drei Runensteine → Baum der Seelen → Farrow",
+          "hybrid": "Nur Runes of Aldur · drei Runestones → Tree of Souls → Farrow",
+          "en": "Runes of Aldur only · three Runestones → Tree of Souls → Farrow",
+          "id": "a1-lost-catacombs-league",
+          "kind": "paragraph",
+          "termRefs": {
+            "de": {
+              "Runen von Aldur": "website.aldur",
+              "Runensteine": "act2.runestone",
+              "Baum der Seelen": "landmark.tree_of_souls",
+              "Farrow": "act2.farrow"
+            },
+            "hybrid": {
+              "Runes of Aldur": "website.aldur",
+              "Runestones": "act2.runestone",
+              "Tree of Souls": "landmark.tree_of_souls",
+              "Farrow": "act2.farrow"
+            },
+            "en": {
+              "Runes of Aldur": "website.aldur",
+              "Runestones": "act2.runestone",
+              "Tree of Souls": "landmark.tree_of_souls",
+              "Farrow": "act2.farrow"
             }
-          ]
-        }
-      ],
-      "steps": [
+          }
+        },
         {
           "section": "Quest",
-          "de": "Vornas besiegen → Qimah",
-          "en": "Defeat Vornas → Qimah",
-          "hybrid": "Vornas besiegen → Qimah",
-          "checkId": "boss:vornas"
+          "de": "Katakomben erkunden → Farrow herbeirufen → Foliant besprechen",
+          "hybrid": "Lost Catacombs erkunden → Farrow herbeirufen → Tome",
+          "en": "Explore the Lost Catacombs → summon Farrow → discuss the Tome",
+          "checkId": "run:a1-lost-catacombs-farrow",
+          "termRefs": {
+            "de": {
+              "Farrow": "act2.farrow"
+            },
+            "hybrid": {
+              "Lost Catacombs": "act1.lost_catacombs",
+              "Farrow": "act2.farrow"
+            },
+            "en": {
+              "Lost Catacombs": "act1.lost_catacombs",
+              "Farrow": "act2.farrow"
+            }
+          }
+        },
+        {
+          "section": "Quest",
+          "de": "Lichtfall-Lager → Farrow → Verisium → am Amboss Rüstung bearbeiten",
+          "hybrid": "Clearfell Encampment → Farrow → Verisium → Anvil auf Armour",
+          "en": "Clearfell Encampment → Farrow → Verisium → reforge armour",
+          "checkId": "run:a1-lost-catacombs-anvil",
+          "termRefs": {
+            "de": {
+              "Lichtfall-Lager": "term.clearfell_camp",
+              "Farrow": "act2.farrow"
+            },
+            "hybrid": {
+              "Clearfell Encampment": "term.clearfell_camp",
+              "Farrow": "act2.farrow"
+            },
+            "en": {
+              "Clearfell Encampment": "term.clearfell_camp",
+              "Farrow": "act2.farrow",
+              "reforge": "currency.reforge"
+            }
+          }
+        },
+        {
+          "section": "Tipps",
+          "de": "Standard / Verbotene Riten · Verisium-Amboss über Plündererklippe in Akt 4",
+          "hybrid": "Standard / Forbidden Rites · Verisium Anvil über Plunder's Point in Akt 4",
+          "en": "Standard / Forbidden Rites · Verisium Anvil via Plunder's Point in Act 4",
+          "id": "a1-lost-catacombs-standard",
+          "kind": "paragraph",
+          "termRefs": {
+            "de": {
+              "Verisium-Amboss": "act4.anvil",
+              "Plündererklippe": "act4.plunder"
+            },
+            "hybrid": {
+              "Verisium Anvil": "act4.anvil",
+              "Plunder's Point": "act4.plunder"
+            },
+            "en": {
+              "Verisium Anvil": "act4.anvil",
+              "Plunder's Point": "act4.plunder"
+            }
+          }
         }
       ]
     }

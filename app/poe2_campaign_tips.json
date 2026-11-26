@@ -66,19 +66,6 @@
     "G4_5_2": "Solitary Confinement",
     "G4_7": "Shrike Island",
     "G4_town": "Kingsmarch",
-    "P1_2": "Stones of Serle",
-    "P1_5": "Wolvenhold",
-    "P1_6": "Holten Estate",
-    "P1_Town": "The Refuge",
-    "P2_1": "The Khari Crossing",
-    "P2_6": "Qimah",
-    "P2_7": "Qimah Reservoir",
-    "P2_Town": "The Khari Bazaar",
-    "P3_2": "Kriar Village",
-    "P3_3": "Glacial Tarn",
-    "P3_4": "Howling Caves",
-    "P3_7": "The Cuachic Vault",
-    "P3_Town": "The Glade",
     "Sanctum_1_Foyer_1": "Trial of the Sekhemas",
     "Sanctum_2_Foyer_3": "Trial of the Sekhemas",
     "Sanctum_3_Foyer_3": "Trial of the Sekhemas",
@@ -93,7 +80,12 @@
     "G4_3_2": "Singing Caverns",
     "G4_8a": "Arastas",
     "G4_8b": "Arastas",
-    "G4_10": "The Excavation"
+    "G4_10": "The Excavation",
+    "Abyss_Intro": "Lightless Passage",
+    "Abyss_Hub": "The Well of Souls",
+    "Abyss_Depths1": "Abyssal Depths",
+    "ExpeditionSubArea_Kalguur_Act1": "Lost Catacombs",
+    "ExpeditionSubArea_Kalguur_Act4": "Deserted Post"
   },
   "clues": [
     {
@@ -2320,214 +2312,15 @@
         "heart of the tribe"
       ],
       "exactZone": true,
-      "cue": "Tavakai in drei Phasen → mit Tavakai sprechen → Kingsmarch → Interludes",
-      "instruction": "Besiege Tavakai, the Chieftain in allen drei Phasen. Sprich nach dem Kampf mit Tavakai, kehre nach Kingsmarch zurück und folge dem Verhüllten zu den drei Interludes.",
-      "target": "Interludes",
+      "cue": "Tavakai in drei Phasen → mit Tavakai sprechen → Kingsmarch",
+      "instruction": "Besiege Tavakai, the Chieftain in allen drei Phasen. Sprich nach dem Kampf mit Tavakai, kehre nach Kingsmarch zurück.",
+      "target": "Kingsmarch",
       "kind": "Boss-Check",
       "status": "reference",
       "confidence": "Quellenstand",
       "mandatory": true,
-      "veteranText": "Tavakai in drei Phasen → mit Tavakai sprechen → Kingsmarch → Interludes",
+      "veteranText": "Tavakai in drei Phasen → mit Tavakai sprechen → Kingsmarch",
       "source": "https://domistae.github.io/poe2-leveling/poe2_act4_guide.html"
-    },
-    {
-      "id": "i-stones-serle",
-      "act": "Interludes",
-      "zone": "Stones of Serle",
-      "zoneMatch": [
-        "stones of serle"
-      ],
-      "exactZone": true,
-      "cue": "Sechs Runed Megaliths",
-      "instruction": "Die sechs Runed Megaliths aktivieren und den Übergang zum Blackwood prüfen.",
-      "target": "The Curse of Holten",
-      "kind": "Fortschritt",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": true,
-      "note": "Wenn dir einer fehlt, geh die Karte am zuletzt geöffneten Abzweig durch. Notiere einen unnötigen Rückweg für die nächste Wiederholung.",
-      "highlight": "sechs Runed Megaliths aktivieren"
-    },
-    {
-      "id": "i-wolvenhold",
-      "act": "Interludes",
-      "zone": "Wolvenhold",
-      "zoneMatch": [
-        "wolvenhold"
-      ],
-      "exactZone": true,
-      "cue": "Oswin und Warden's Ledger",
-      "instruction": "Oswin besiegen und das Warden’s Ledger benutzen.",
-      "target": "+2 Waffen-Set-Passivpunkte",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "Der Punkte-Stopp ist ein eigener Ast der Holten-Route. Den Abschluss im Holten Estate separat abhaken.",
-      "highlight": "Warden’s Ledger benutzen"
-    },
-    {
-      "id": "i-holten-estate",
-      "act": "Interludes",
-      "zone": "Holten Estate",
-      "zoneMatch": [
-        "holten estate"
-      ],
-      "exactZone": true,
-      "cue": "Holten abschließen",
-      "instruction": "Die obere Etage erreichen und Wulfric und Elswyth besiegen.",
-      "target": "The Curse of Holten abschließen",
-      "kind": "Fortschritt",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": true,
-      "note": "Den nächsten Reiseauftrag beim Hooded One prüfen. Im Run-Log die Interlude-Namen verwenden, weil du ihre Reihenfolge ändern kannst.",
-      "highlight": "obere Etage erreichen"
-    },
-    {
-      "id": "i-khari",
-      "act": "Interludes",
-      "zone": "Khari Crossing",
-      "zoneMatch": [
-        "khari crossing"
-      ],
-      "exactZone": true,
-      "cue": "Akthi, Anundr und Risu",
-      "instruction": "Akthi und Anundr besiegen und danach bei Risu abgeben.",
-      "target": "+2 Waffen-Set-Passivpunkte",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "Kontrolliere nach der Abgabe, dass die Punkte tatsächlich verfügbar sind. Der Bosskampf ist für HC ein eigener Risiko- und Zeitsplit.",
-      "highlight": "bei Risu abgeben"
-    },
-    {
-      "id": "i-skullmaw",
-      "act": "Interludes",
-      "zone": "Skullmaw Stairway",
-      "zoneMatch": [
-        "skullmaw stairway",
-        "molten shrine"
-      ],
-      "exactZone": true,
-      "cue": "Molten One's Gift",
-      "instruction": "Molten Shrine finden, Siegel aktivieren und das Geschenk benutzen.",
-      "target": "+5 % Maximum Life",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "In HC für die späteren Bosskämpfe mitnehmen. Die Seals als eigener kurzer Route-Check lohnen sich beim ersten Trainingslauf.",
-      "highlight": "Molten Shrine finden"
-    },
-    {
-      "id": "i-qimah-boon",
-      "act": "Interludes",
-      "zone": "Qimah",
-      "zoneMatch": [
-        "qimah"
-      ],
-      "exactZone": true,
-      "cue": "Orbala's Pillar für deinen Engpass",
-      "instruction": "Am Pillar den Boon passend zu Resistenzen, Attributen oder Bewegung wählen.",
-      "target": "Wechselbarer Boon",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "Schließe in HC zuerst eine erkennbare Resistenzlücke. Die Auswahl lässt sich später am Pillar ändern.",
-      "highlight": "Boon passend zu Resistenzen, Attributen oder Bewegung"
-    },
-    {
-      "id": "i-qimah-reservoir",
-      "act": "Interludes",
-      "zone": "Qimah Reservoir",
-      "zoneMatch": [
-        "qimah reservoir"
-      ],
-      "exactZone": true,
-      "cue": "Azmadi und Grand Barya",
-      "instruction": "Azmadi besiegen und danach mit der Grand Barya interagieren.",
-      "target": "The Stolen Barya abschließen",
-      "kind": "Fortschritt",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": true,
-      "note": "Den Boss-Split am Kill messen und das Ende erst nach der Questinteraktion abhaken.",
-      "highlight": "mit der Grand Barya interagieren"
-    },
-    {
-      "id": "i-kriar-spirit",
-      "act": "Interludes",
-      "zone": "Kriar Village",
-      "zoneMatch": [
-        "kriar village"
-      ],
-      "exactZone": true,
-      "cue": "Lythara für 40 Spirit",
-      "instruction": "Besiege Lythara und benutze den Gemcrust Skull.",
-      "target": "+40 Spirit",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "Die Stufe der Uncut Spirit Gem kann von der Reihenfolge der Interludes abhängen.",
-      "highlight": "Spirit-Belohnung benutzen"
-    },
-    {
-      "id": "i-yeti-tusks",
-      "act": "Interludes",
-      "zone": "Howling Caves",
-      "zoneMatch": [
-        "howling caves"
-      ],
-      "exactZone": true,
-      "cue": "Icy Tusks für Hilda",
-      "instruction": "Yeti besiegen, Icy Tusks mitnehmen und die Quest bei Hilda abgeben.",
-      "target": "+2 Waffen-Set-Passivpunkte",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "Bei der Abgabe das Buch benutzen. Rakkar im Folgegebiet ist ein eigener Story-Schritt.",
-      "highlight": "Icy Tusks mitnehmen"
-    },
-    {
-      "id": "i-rakkar",
-      "act": "Interludes",
-      "zone": "Glacial Tarn",
-      "zoneMatch": [
-        "glacial tarn"
-      ],
-      "exactZone": true,
-      "cue": "Rakkar für den Weg nach oben",
-      "instruction": "Rakkar besiegen und den Ausgang Richtung Kriar Peaks nehmen.",
-      "target": "Doryani's Contingency fortsetzen",
-      "kind": "Fortschritt",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": true,
-      "note": "Falls die Icy Tusks noch im Inventar sind, die Abgabe bei Hilda für den nächsten Reise-Stopp vormerken.",
-      "highlight": "Ausgang Richtung Kriar Peaks"
-    },
-    {
-      "id": "i-cuachic-vault",
-      "act": "Interludes",
-      "zone": "Cuachic Vault",
-      "zoneMatch": [
-        "cuachic vault"
-      ],
-      "exactZone": true,
-      "cue": "Zolin und Zelina",
-      "instruction": "Bossduo besiegen und den Interlude-Abschluss beim Hooded One prüfen.",
-      "target": "Doryani's Contingency abschließen",
-      "kind": "Fortschritt",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": true,
-      "note": "Nach allen drei Interludes die letzte Punkteabgabe beim Hooded One und den Atlas-Unlock erledigen. Vor der ersten Map Flask, Resistenz und Gem-Stufen prüfen.",
-      "highlight": "Interlude-Abschluss beim Hooded One"
     },
     {
       "id": "a2-lightless",
@@ -2546,7 +2339,8 @@
       "confidence": "Quellenstand",
       "source": "https://poe2db.tw/us/Lightless_Passage",
       "mandatory": false,
-      "veteranText": "Höhle durchqueren und zum Brunnen gehen."
+      "veteranText": "Höhle durchqueren und zum Brunnen gehen.",
+      "singleArea": true
     },
     {
       "id": "a2-well",
@@ -2566,7 +2360,8 @@
       "confidence": "Quellenstand",
       "source": "https://poe2db.tw/us/The_Well_of_Souls",
       "mandatory": false,
-      "veteranText": "Brunnen für entweihte Modifikatoren benutzen."
+      "veteranText": "Brunnen für entweihte Modifikatoren benutzen.",
+      "singleArea": true
     },
     {
       "id": "a2-skull",
@@ -2590,99 +2385,62 @@
       "veteranText": "Höhleneingang suchen und mit Farrow sprechen."
     },
     {
-      "id": "i-scorched-farmlands",
-      "act": "Interludes",
-      "zone": "Scorched Farmlands",
+      "id": "a1-lost-catacombs",
+      "act": "Act 1",
+      "zone": "Lost Catacombs",
       "zoneMatch": [
-        "scorched farmlands"
+        "lost catacombs",
+        "verschollene katakomben"
       ],
       "exactZone": true,
-      "cue": "Hexen besiegen → Stones of Serle",
-      "instruction": "Besiege die beiden Hexen und folge dem Weg zu den Stones of Serle.",
-      "compactSteps": [
-        "Hexen besiegen → Stones of Serle"
-      ],
-      "kind": "Fortschritt",
+      "cue": "Runen von Aldur · Farrow am Folianten",
+      "instruction": "Rufe Farrow in den Katakomben herbei und sprich über den Folianten.",
+      "target": "Farrow",
+      "kind": "Crafting-Unlock",
       "status": "reference",
       "confidence": "Quellenstand",
-      "source": "https://poe2db.tw/us/Interlude_Curse_of_Holten",
-      "mandatory": true
+      "source": "https://poe2dat.com/en/quests/act-1",
+      "mandatory": false,
+      "singleArea": true
     },
     {
-      "id": "i-holten-chapel",
-      "act": "Interludes",
-      "zone": "Holten",
+      "id": "a2-abyssal-depths",
+      "act": "Act 2",
+      "zone": "Abyssal Depths",
       "zoneMatch": [
-        "holten"
+        "abyssal depths",
+        "abgründige tiefen"
       ],
       "exactZone": true,
-      "cue": "Kapelle → optionales Bossduo",
-      "instruction": "Aktiviere in der Kapelle den Psalm of Blood für Sigbert und Godwin oder geh direkt zum Holten Estate.",
-      "compactSteps": [
-        "Kapelle → optionales Bossduo"
-      ],
-      "kind": "Optionaler Boss",
+      "cue": "Optional · Truhen in den Tiefen",
+      "instruction": "Besiege den seltenen Gegner vor den Truhen am Ende der Tiefen.",
+      "target": "Abyssal Troves",
+      "kind": "Crafting-Unlock",
       "status": "reference",
       "confidence": "Quellenstand",
-      "source": "https://poe2db.tw/us/Interlude_Curse_of_Holten",
-      "mandatory": false
+      "source": "https://www.poe2wiki.net/wiki/Abyssal_Depths",
+      "mandatory": false,
+      "singleArea": true
     },
     {
-      "id": "i-etched-ravine",
-      "act": "Interludes",
-      "zone": "Etched Ravine",
+      "id": "a4-deserted-post",
+      "act": "Act 4",
+      "zone": "Deserted Post",
       "zoneMatch": [
-        "etched ravine"
+        "deserted post",
+        "verlassener posten",
+        "fernstation"
       ],
       "exactZone": true,
-      "cue": "Stormgore → Cuachic Vault",
-      "instruction": "Besiege Stormgore am Ende der Schlucht und betritt den Cuachic Vault.",
-      "compactSteps": [
-        "Stormgore → Cuachic Vault"
-      ],
-      "kind": "Fortschritt",
+      "cue": "Optional · Runenschmiedewissen",
+      "instruction": "Erkunde den Posten und sprich mit Farrow über den Folianten.",
+      "target": "Verisium Anvil",
+      "kind": "Crafting-Unlock",
       "status": "reference",
       "confidence": "Quellenstand",
-      "source": "https://poe2db.tw/us/Interlude_Doryanis_Contingency",
-      "mandatory": true
-    },
-    {
-      "id": "i-sel-khari",
-      "act": "Interludes",
-      "zone": "Sel Khari Sanctuary",
-      "zoneMatch": [
-        "sel khari sanctuary"
-      ],
-      "exactZone": true,
-      "cue": "Elzarah → Asala → Galai Gates",
-      "instruction": "Besiege Elzarah und sprich mit Asala. Weiter geht es zu den Galai Gates.",
-      "compactSteps": [
-        "Elzarah → Asala → Galai Gates"
-      ],
-      "kind": "Fortschritt",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "source": "https://poe2db.tw/us/Interlude_The_Stolen_Barya",
-      "mandatory": true
-    },
-    {
-      "id": "i-galai-gates",
-      "act": "Interludes",
-      "zone": "The Galai Gates",
-      "zoneMatch": [
-        "galai gates"
-      ],
-      "exactZone": true,
-      "cue": "Vornas besiegen → Qimah",
-      "instruction": "Besiege Vornas am Durchgang nach Qimah und folge dem Weg in die Stadt.",
-      "compactSteps": [
-        "Vornas besiegen → Qimah"
-      ],
-      "kind": "Fortschritt",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "source": "https://poe2db.tw/us/Interlude_The_Stolen_Barya",
-      "mandatory": true
+      "source": "https://poe2dat.com/en/quests/act-4",
+      "mandatory": false,
+      "singleArea": true
     }
   ],
   "previousClues": [
@@ -4409,86 +4167,14 @@
       ],
       "exactZone": true,
       "cue": "Tavakai und Hooded One",
-      "instruction": "Tavakai besiegen, mit ihm sprechen und beim Hooded One die Interludes öffnen.",
-      "target": "Act 4 abschließen",
+      "instruction": "Besiege Tavakai in drei Phasen. Sprich nach dem Kampf mit ihm und kehre nach Kingsmarch zurück.",
+      "target": "Kingsmarch",
       "kind": "Boss-Check",
       "status": "reference",
       "confidence": "Quellenstand",
       "mandatory": true,
-      "note": "Prüfe Recovery und Resistenzen vor dem Kampf. Nach dem Übergang die Resistenzen für das gewählte Interlude erneut im Charakterfenster lesen.",
-      "highlight": "beim Hooded One die Interludes öffnen"
-    },
-    {
-      "id": "i-kriar-spirit",
-      "act": "Interludes",
-      "zone": "Kriar Village",
-      "zoneMatch": [
-        "kriar village"
-      ],
-      "exactZone": true,
-      "cue": "Lythara für 40 Spirit",
-      "instruction": "Lythara besiegen und die Spirit-Belohnung benutzen.",
-      "target": "+40 Spirit",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "Doryani’s Contingency ist eine sinnvolle erste Wahl, wenn diese Spirit-Stufe deinen Build sofort verbessert.",
-      "highlight": "Spirit-Belohnung benutzen"
-    },
-    {
-      "id": "i-yeti-tusks",
-      "act": "Interludes",
-      "zone": "Glacial Tarn",
-      "zoneMatch": [
-        "glacial tarn"
-      ],
-      "exactZone": true,
-      "cue": "Icy Tusks für Hilda",
-      "instruction": "Yeti besiegen, Icy Tusks mitnehmen und die Quest bei Hilda abgeben.",
-      "target": "+2 Waffen-Set-Passivpunkte",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "Bei der Abgabe das Buch benutzen. Rakkar im Folgegebiet ist ein eigener Story-Schritt.",
-      "highlight": "Icy Tusks mitnehmen"
-    },
-    {
-      "id": "i-rakkar",
-      "act": "Interludes",
-      "zone": "Howling Caves",
-      "zoneMatch": [
-        "howling caves"
-      ],
-      "exactZone": true,
-      "cue": "Rakkar für den Weg nach oben",
-      "instruction": "Rakkar besiegen und den Ausgang Richtung Kriar Peaks nehmen.",
-      "target": "Doryani's Contingency fortsetzen",
-      "kind": "Fortschritt",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": true,
-      "note": "Falls die Icy Tusks noch im Inventar sind, die Abgabe bei Hilda für den nächsten Reise-Stopp vormerken.",
-      "highlight": "Ausgang Richtung Kriar Peaks"
-    },
-    {
-      "id": "i-kriar-spirit",
-      "act": "Interludes",
-      "zone": "Kriar Village",
-      "zoneMatch": [
-        "kriar village"
-      ],
-      "exactZone": true,
-      "cue": "Lythara für 40 Spirit",
-      "instruction": "Besiege Lythara und benutze den Gemcrust Skull.",
-      "target": "+40 Spirit",
-      "kind": "Permanenter Bonus",
-      "status": "reference",
-      "confidence": "Quellenstand",
-      "mandatory": false,
-      "note": "Die Stufe der Uncut Spirit Gem kann von der Reihenfolge der Interludee abhängen.",
-      "highlight": "Spirit-Belohnung benutzen"
+      "note": "Prüfe vor dem Kampf deine Regeneration und Resistenzen.",
+      "highlight": "nach dem Kampf mit ihm"
     }
   ]
 }

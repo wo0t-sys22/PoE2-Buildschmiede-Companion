@@ -143,28 +143,18 @@ Die Lage der Arenen in Bone Pits, Lost City und Titan Grotto dient als Suchricht
 - **Shrike und Abandoned Prison.** Im Corpse Nest die Karte mitnehmen. In der Prison die Chapel und die Goddess of Justice einplanen, wenn du den Life- oder Mana-Flask-Bonus holen willst.
 - **Hinekora.** Im Silent Hall gibt es **+5 % Maximum Mana**. Die Halls of the Dead bieten Tattoos für Resistenzen oder Attribute. Yama besiegen, Silver Coin mitnehmen, im Trial of the Ancestors die Quest bei Navali abschließen und das Tattoo of Hinekora benutzen. Die gesamte Kette gibt **einmal +2 Punkte**. [Trial of the Ancestors](https://www.poe2wiki.net/wiki/Trial_of_the_Ancestors_%28Quest%29)
 - **Kedge Bay.** Torn Map und Dark Mists getrennt abhaken. Für den zweiten **+2-Punkte-Bonus** die Quest Richtung Journey’s End laufen, Omniphobia töten und bei Tujen abgeben.
-- **Bis Tavakai.** Alle vier Karten abgeben und über Plunder’s Point und die folgenden Questzonen nach Ngakanu. Nach Tavakai mit ihm und dem Hooded One sprechen. Beim Übergang in die Interludes die angezeigten Resistenzen erneut prüfen.
+- **Bis Tavakai.** Alle vier Karten abgeben und über Plunder’s Point und die folgenden Questzonen nach Ngakanu. Nach dem Kampf mit Tavakai sprechen und nach Kingsmarch zurückkehren.
 
 **SSF-Entscheidung.** Wenn du Farrows Crafting-Kette spielst, plane den Deserted Post auf dem Plunder’s-Point-Weg ein. So kannst du die nötige Abgabe mit der Reise verbinden.
 
-## Interludes und erste Maps
+## Akt 5 und 6
 
-| Interlude | Stopp mit hohem Nutzen | Abschluss |
-|---|---|---|
-| The Curse of Holten | Sechs Megaliths in den Stones of Serle. Oswin und Warden’s Ledger für **+2 Punkte**. | Wulfric und Elswyth in Holten Estate. |
-| The Stolen Barya | Khari Crossing und Risu für **+2 Punkte**. Molten One’s Gift für **+5 % Maximum Life**. Boon in Qimah nach deinem aktuellen Engpass wählen. | Azmadi im Qimah Reservoir und danach die Grand Barya. |
-| Doryani’s Contingency | Lythara für **+40 Spirit**. Icy Tusks zu Hilda für **+2 Punkte**. | Zolin und Zelina im Cuachic Vault. |
-
-Du kannst die Interludes in unterschiedlicher Reihenfolge laufen. Wenn dir 40 Spirit einen konkreten Skill freischalten, teste Doryani’s Contingency zuerst. Nach allen drei die letzte **+2-Punkte-Abgabe** beim Hooded One holen und der Atlas-Quest bis zum Unlock folgen.
-
-**Erste Maps als eigener Split.** Messzeit ab Map-Vorbereitung zählen. Halte Start- und Endbestand der Waystones, XP und Zeit im Hideout fest. Bei einem Level-up die Level mitnotieren oder absolute XP verwenden. Für einen brauchbaren Vergleich brauchst du denselben Tier-Bereich und einen ähnlichen Gearstand.
-
-## Für 1.0 vorbereiten
-
-GGG hat Akt 5 und 6 sowie den Shadow für die Vollversion angekündigt. Nutze für diese Abschnitte beim ersten Durchlauf ein kurzes Protokoll pro Zone.
+Für Akt 5 und 6 gibt es je zehn leere Gebietsseiten. Halte beim ersten Durchlauf die Route und die bestätigten Belohnungen fest.
 
 | Zone | Pflichtziel und Ausgang | Permanenter Bonus | Bossgefahr | Split / Zeitverlust |
 |---|---|---|---|---|
 |  |  |  |  |  |
+
+**Erste Maps als eigener Split.** Messzeit ab Map-Vorbereitung zählen. Halte Start- und Endbestand der Waystones, XP und Zeit im Hideout fest. Bei einem Level-up die Level mitnotieren oder absolute XP verwenden. Für einen brauchbaren Vergleich brauchst du denselben Tier-Bereich und einen ähnlichen Gearstand.
 
 Eine **Suchhilfe** beschreibt, woran du dich in Gebieten mit wechselndem Layout orientieren kannst. **Hören · beobachtet** markiert Doms Hinweis aus Red Vale.

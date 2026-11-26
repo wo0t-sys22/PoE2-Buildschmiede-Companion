@@ -1,6 +1,6 @@
 # PoE2 Ingame Guide
 
-Kampagne, Bosse, Builds und Atlas im Spiel. Dieses Paket hat den Stand **v.0.19.0** für Patch **0.5.5f**, mit Guides für Akt 1–4 und leeren Gebietsvorlagen für Akt 5 und 6.
+Kampagne, Bosse, Builds und Atlas im Spiel. **v.0.21.0** bereitet die Kampagne von PoE2 1.0 vor. Für Akt 1–4 sind Guides und für Akt 5 und 6 jeweils zehn Gebietsvorlagen enthalten.
 
 ## Funktionsumfang wählen
 
@@ -19,7 +19,7 @@ Bei einem Update mit bereits abgeschlossenem Willkommensdialog startet ein älte
 
 Ab Profil 2 findest du den Import unter **Wissen → Builds**. Unterstützt werden Buildschmiede-JSON, PoE2-Spielpläne (`.build`, auch als Varianten-ZIP von Mobalytics) und PoB2-Exporte als XML-Datei oder als Exportcode in einer Textdatei. Der Companion speichert importierte Builds lokal und zeigt den ersten importierten Build direkt im Guide. Weitere Varianten findest du in der Build-Auswahl.
 
-Im Reiter **Build** siehst du Ausrüstung, Fertigkeiten mit Supports und Passivbaum für die aktuelle Phase. Ziehe die Baumkarte mit der Maus, um sie zu verschieben. Über die Knotenliste kannst du die einzelnen Werte ansehen. Den **Build-Überblick** kannst du für den aktuellen Build ausblenden und neben der Build-Auswahl wieder einblenden.
+Im Reiter **Build** siehst du Ausrüstung, Fertigkeiten mit Supports und Passivbaum für die aktuelle Phase. Ziehe die Baumkarte mit der Maus, um sie zu verschieben. Über die Knotenliste kannst du die einzelnen Werte ansehen. Den **Build-Überblick** unter der Phasenauswahl kannst du ein- und ausblenden.
 
 Der Companion zeigt Builds als Guide. Zum Planen führt **Web-Planer öffnen ↗** ab Profil 2 zum Build-Planer auf Buildschmiede.
 
@@ -49,8 +49,8 @@ Die Gebietserkennung sucht zuerst nach dem Spiel-Log in den Steam-Bibliotheken u
 |---|---|
 | **F8** | Overlay aus- und einblenden |
 | **F9** | Zwischen Spielmodus und Bearbeiten wechseln |
-| **F6** | Übungstimer starten, pausieren oder fortsetzen |
-| **F7** | Übungstimer stoppen und auf 00:00 zurücksetzen |
+| **F6** | Speedrun-Timer starten, pausieren oder fortsetzen |
+| **F7** | Aktuellen Lauf zurücksetzen |
 | **F4** | Separate Boss-Zeit starten oder ablesen |
 | **Strg+Umschalt+F9** | Overlay anzeigen und bedienbar machen |
 | **F10** oder **Companion beenden** in den Optionen | Overlay und lokalen Dienst schließen |
@@ -64,7 +64,11 @@ Die Gebietserkennung sucht zuerst nach dem Spiel-Log in den Steam-Bibliotheken u
 
 Im Spielmodus sind die Reiter, Boss-Links und Schaltflächen direkt anklickbar. Klicks auf den Guide-Text und die freien Flächen gehen an PoE2. Fahre mit der Maus über längeren Text und scrolle dort mit dem Mausrad. **F9** ermöglicht das Verschieben am Titel. Kampagne und Atlas nutzen höchstens 20 % der Breite des jeweiligen Monitors.
 
-Unter **Optionen → Tastenkürzel** stellst du die HUD- und Timer-Tasten ein. Gib etwa `F6` oder `Strg+Alt+R` ein und wähle dort **Tastenkürzel speichern**. Ein leeres Feld deaktiviert die Belegung. Der Übungstimer zählt beim Fortsetzen ab der bisherigen Zeit. Die Boss-Zeit läuft separat und wird per Taste gestoppt. Das Kontrollzentrum zeigt die Übungszeit mit eigenen Start-, Pause- und Reset-Schaltflächen.
+Unter **Optionen → Tastenkürzel** stellst du die HUD- und Timer-Tasten ein. Gib etwa `F6` oder `Strg+Alt+R` ein und wähle dort **Tastenkürzel speichern**. Ein leeres Feld deaktiviert die Belegung. Die Boss-Zeit läuft separat und wird per Taste gestoppt.
+
+Blende die Stoppuhr ein, um die laufende Zeit rechts neben der Levelanzeige zu sehen. Ein Klick auf die Zeit öffnet das separate Speedrun-HUD mit Gesamtzeit, Aktzeiten, Abstand zur persönlichen Bestzeit und der schnellsten Zeit je Akt. Die laufende Zeit bleibt dabei im Haupt-HUD sichtbar. Beide Fenster folgen dem Regler **Optionen → HUD & Anzeige → Transparenz**. Der Timer erkennt den Wechsel in den nächsten Akt über `Client.txt` und stoppt beim erkannten Endgame-Eintritt nach Akt 6. Die gemessene Echtzeit schließt Ladezeiten ein.
+
+Starte am Flussufer und spiele alle sechs Akte ohne Timerpause, um eine persönliche Bestzeit zu setzen. Mit **Beenden** schließt du einen Lauf manuell ab. Pausierte und manuell beendete Läufe dienen der Übung. **Reset** setzt den aktuellen Lauf zurück und behält die gespeicherten Bestzeiten. Die Zeitdaten stehen in `poe2_race_state.json` unter `app/userdata/`.
 
 Kampagne, Build-Guide und Wissen teilen sich Position, Breite und Zoom. Der Doktorhut öffnet **Wissen** mit der Suche. Ab Profil 2 ist dort **Atlas** als Kategorie verfügbar. **Ausführlich / Kompakt** stellt die Tiefe der Erklärungen ein.
 
@@ -80,7 +84,7 @@ Unter **Lexikon → Gegenstände → Währung** findest du normale Währungen, L
 
 - **Quest** beginnt mit den Layout-Hinweisen, anschließend stehen Ziel, Belohnung und Abstecher. Hellblau hebt Wege und Signale hervor, Quest-Ziele erscheinen in dunklerem Blau und dauerhafte Boni in Grün. Uncut Gems sind in Cyan hervorgehoben, auch bei optionalen Belohnungen. In Red Vale hörst du etwa auf das Rauschen der Obelisken. Die Boss-Links stehen unter den Hinweisen.
 - **Boss-Guides** zeigen Vorbereitung, Kampfplan, Angriffssignale, Reaktion, das nächste Schadensfenster und verfügbare Wille-Belohnungen. Öffne einen Guide über den Boss-Link in der Kampagne oder unter **Wissen → Bosse**. Über die Suche kannst du Kämpfe auch vorab nachschlagen.
-- **Build** zeigt Skills, Supports, Passive Tree und Gear je Phase. Zur Wahl stehen **Supporting Fire · Taktiker**, **Archon Djinn · Varashta**, **Twister · Spirit Walker** und **Whirling Assault · Martial Artist**. Supporting Fire ist die erste Auswahl. Kampagne, Kontrollzentrum und OBS teilen sich die Build-Auswahl.
+- **Build** zeigt Skills, Supports, Passive Tree und Gear je Phase. Zur Wahl stehen **Supporting Fire · Taktiker**, **Archon Djinn · Varashta**, **Twister · Spirit Walker** und **Whirling Assault · Martial Artist**. Supporting Fire ist die erste Auswahl. Kampagne und OBS teilen sich die Build-Auswahl.
 
 **Archon Djinn · Varashta** von terence_ begleitet den Wechsel von den ersten Zaubern zu Kelaris Befehlen. Ab Stufe 90 bleibt die Budgetvariante automatisch aktiv. „Schwarmfestung mit Ruzhans Falle“ und die weiteren Spezialisierungen wählst du selbst. Der Build-Überblick erklärt Stärken und Schwächen. Die Fragen zur Spielweise und zu Questbelohnungen findest du bei der jeweiligen Phase.
 
@@ -110,7 +114,7 @@ Für OBS verwende `http://127.0.0.1:8765/race-overlay.html` als Browserquelle. D
 
 Das Checklisten-Signet in der HUD-Leiste schaltet die Abhakfelder um. Strukturierte Guides haben ihre Aufgaben direkt in den jeweiligen Abschnitten. Die Einträge werden mit dem aktiven Run gespeichert. Unter **Optionen → Checkliste → Neue Run-Checkliste** beginnst du einen neuen Run.
 
-**Strg+Umschalt+Alt+K** im fokussierten HUD öffnet den lokalen Datenaustausch. In der redaktionellen Arbeitsfassung findest du ihn auch unter **Website-Transfer → Datenaustausch**. Wähle Kampagne, Bosse, Begriffe, Lexikon, Währungen oder deutsche Spieldaten. Lade die aktive JSON-Datei herunter oder wähle einen Import und bestätige die Vorschau. Das HUD übernimmt importierte Daten beim nächsten Start. In WordPress verwendest du dieselbe Datei in den Buildschmiede-Werkzeugen.
+**Strg+Umschalt+Alt+K** im fokussierten HUD öffnet den lokalen Datenaustausch. Wähle Kampagne, Bosse, Begriffe, Lexikon, Währungen oder deutsche Spieldaten. Lade die aktive JSON-Datei herunter oder wähle einen Import und bestätige die Vorschau. Das HUD übernimmt importierte Daten beim nächsten Start. In WordPress verwendest du dieselbe Datei in den Buildschmiede-Werkzeugen.
 
 Ab Profil 3 findest du die Tastatur- und Mausreferenz unter **Wissen → Tastenkürzel**. Eigene HUD-Kürzel kannst du unter **Optionen → Tastenkürzel** ändern und speichern.
 

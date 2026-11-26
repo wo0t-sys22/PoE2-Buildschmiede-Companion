@@ -22,7 +22,7 @@ from poe2_build_editorial import stage_view
 from poe2_build_terms import equipped_gem_ids
 from poe2_build_import_interface import BuildImportStore, bundled_plans, guide_build, import_plans
 from poe2_companion_ui import CompanionPanel, load_companion
-from poe2_shared_content import sections_for_mode
+from poe2_shared_content import campaign_section_rows, sections_for_mode
 from poe2_boss_clips import BossClipStore
 from poe2_endgame_atlas_ui import EndgamePanel
 from poe2_experience import EXPERIENCE_LEVELS, default_guide_mode, experience_allows, saved_experience
@@ -31,10 +31,13 @@ from poe2_gif import AnimatedGif, preview_size
 from poe2_hud_icons import hud_icon
 from poe2_overlay_controls import BackgroundMirror, BrassSlider, ClickTargets, FlowRow, InputRegion, ScrollArrows, SearchCategories
 from poe2_overlay_layout import HUD_MIN_SIZE, HUD_SIZE, OverlayLayout
-from poe2_overlay_lookup import AFFIX_TIPS, CATEGORIES, PAGE_SIZE, QUERY_LIMIT, find_entries, lookup_entries
-from poe2_overlay_theme_art import CLASSIC, ThemeTreatment, paint_header, paint_rule
+from poe2_overlay_lookup import (AFFIX_TIPS, CATEGORIES, FAQ_TOPICS, PAGE_SIZE, QUERY_LIMIT, construct_catalog,
+                                 editorial_entries, find_entries, lookup_entries, make, published_terms)
+from poe2_overlay_theme_art import CLASSIC, ThemeTreatment, mix_color, paint_header, paint_rule
 from poe2_regex_ui import RegexState, render_regex
-from poe2_lexicon import merge_published_lexicon
+from poe2_speedrun import elapsed as timer_elapsed
+from poe2_speedrun_hud import SpeedrunHUD
+from poe2_lexicon import league_guides, merge_published_lexicon, web_url
 from poe2_lexicon_ui import LexiconBrowser, render_lexicon
 from poe2_overlay_version import APP_NAME, BUILD_LABEL, INSTALLED_BUILD
 from poe2_r18_features import PALETTE, bundled, hud_check_id, hub_kind, item_spans
@@ -161,11 +164,6 @@ SECTION_PALETTES = {
 }
 OVERLAY_SECTION_TONES = bundled("companion-section-style.json")["overlayTones"]
 
-def mix_color(base, accent, amount):
-    return "#" + "".join(f"{round(int(base[i:i+2], 16) * (1 - amount) + int(accent[i:i+2], 16) * amount):02x}"
-                         for i in (1, 3, 5))
-
-
 THEMES = {
     # Matched to buildschmiede.de: card #1a1d22, text #f0ede7, accent #dab568, border = 14 % white on the card.
     "Buildschmiede": Theme("#111214", "#3a3d41", "#f0ede7", "#dab568", "#1a1d22", "#3a2f1f", "#25282d", "#fff3b7",
@@ -203,7 +201,7 @@ THEMES = {
     ),
 }
 THEME_APPEARANCE = {
-    "Buildschmiede": ("off", "both", "soft"),
+    "Buildschmiede": ("translucent", "both", "strong"),
     "PoE2": ("off", "headings", "strong"),
     "Minimal": ("off", "off", "strong"),
     "Cobalt": ("translucent", "off", "strong"),
@@ -259,13 +257,21 @@ def area_clues(state, zone):
     return sorted(matches, key=lambda clue: not clue.get("mandatory"))
 
 
+def campaign_layout_id(catalog, zone, matches):
+    layouts = catalog.get("areaLayouts", {})
+    return catalog.get("sharedZones", {}).get(zone_key(zone)) or next(
+        (clue["id"] for clue in matches if clue["id"] in layouts), None
+    )
+
+
 def campaign_index(clues):
     names = {zone_key(name): name for name in server.CLIENT_AREA_IDS.values()}
     acts = {}
     for clue in clues:
         if not clue.get("zone") or clue.get("act") not in CAMPAIGN_ACTS:
             continue
-        for name in clue.get("zoneMatch") or [clue["zone"]]:
+        zone_names = [clue["zone"]] if clue.get("singleArea") else (clue.get("zoneMatch") or [clue["zone"]])
+        for name in zone_names:
             key = zone_key(name)
             title = clue["zone"] if zone_key(clue["zone"]) == key else name.title()
             acts.setdefault(clue["act"], {})[key] = names.get(key, title)
@@ -329,7 +335,7 @@ class GuideWindow:
         self.window.attributes("-topmost", True)
         self.window.protocol("WM_DELETE_WINDOW", app.close)
         if welcome_sample is None:
-            for letter, action in (("B", app._open_build_import_interface), ("K", app._open_private_control_center)):
+            for letter, action in (("B", app._open_build_import_interface), ("K", app._open_data_exchange)):
                 for key in (letter, letter.lower()):
                     self.window.bind(f"<Control-Shift-Alt-KeyPress-{key}>", action)
         self.backdrop_states = {}
@@ -341,6 +347,7 @@ class GuideWindow:
         self.guide_section = "quest"
         self.boss_return_section = self.guide_section
         self.last_content = None
+        self.missing_layout_images = set()
         self.measuring = None
         self.resize_job = None
         self.feedback_job = None
@@ -351,6 +358,7 @@ class GuideWindow:
         self.expanded_height = None
         self.lookup_choice = None
         self.lookup_category = "all"
+        self.lookup_faq_topic = ""
         self.search_categories = None
         self.lexicon = LexiconBrowser()
         self.affix_browser = AffixBrowser()
@@ -409,11 +417,13 @@ class GuideWindow:
             return self.allows("endgame") or entry.target in ("respec", "build-planner-web")
         if entry.category == "tips" and isinstance(entry.target, str) and entry.target in AFFIX_TIPS:
             return self.allows("crafting")
+        if entry.category == "faq" and not self.allows("campaign_tools"):
+            return entry.target["topic"] in {"basics", "campaign"}
         return True
 
     def lookup_category_available(self, category):
         if not self.allows("campaign_tools"):
-            return category in {"all", "campaign", "tips"}
+            return category in {"all", "campaign", "tips", "faq"}
         if category == "atlas":
             return self.allows("atlas")
         return category != "shortcuts" or self.allows("endgame")
@@ -465,7 +475,7 @@ class GuideWindow:
     def section_color(self, color):
         return SECTION_PALETTES[self.color_intensity].get(color, color)
 
-    def guide_card(self, parent, tone="gold", *, header_action=None):
+    def guide_card(self, parent, tone="gold", *, header_action=None, neutral=False):
         theme = self.theme
         accent = {"quest": QUEST, "info": INFO, "optional": OPTIONAL, "success": SUCCESS,
                   "gameplay_title": GAMEPLAY_TITLE, "danger": BOSS_MARKER, "gold": theme.accent,
@@ -475,10 +485,10 @@ class GuideWindow:
             accent = OVERLAY_SECTION_TONES.get(tone, accent)
         effects = self.welcome_sample.accents if self.welcome_sample else self.app.card_accents
         heading_color = accent if effects in {"headings", "both"} else theme.text
-        tinted = effects in {"cards", "both"} and self.card_background != "off"
+        tinted = not neutral and effects in {"cards", "both"} and self.card_background != "off"
         strong = self.color_intensity == "strong"
         backdrop_color = mix_color(theme.control, accent, 0.43 if strong else 0.25) if tinted else theme.control
-        surface = self.card_surface
+        surface = theme.control if neutral else self.card_surface
         if tinted:
             if self.card_background == "opaque":
                 surface = mix_color(theme.control, accent, 0.28 if strong else 0.16)
@@ -486,7 +496,7 @@ class GuideWindow:
                 surface = self._translucent(backdrop_color, CARD_TRANSLUCENT_OPACITY)
         treatment = theme.treatment
         card = tk.Frame(parent, bg=surface, padx=self.layout.px(treatment.card_inset))
-        card.guide_card = True
+        card.guide_card = not neutral
         card.guide_backdrop_color = backdrop_color
         card.pack(fill="x")
         if tinted and strong:
@@ -500,21 +510,15 @@ class GuideWindow:
                          highlightthickness=0, bd=0, relief="flat", overrelief="flat", activebackground=surface,
                          activeforeground=heading_color)
         if header_action:
-            label, compact_label, callback = header_action
-            action = self.small_button(heading_parent, label, callback)
-            action.configure(bg=surface, fg=theme.accent, activebackground=surface, bd=0,
+            label, callback = header_action
+            action = self.small_button(heading_parent, "", callback)
+            action.configure(textvariable=label, bg=surface, fg=theme.accent, activebackground=surface, bd=0,
                              padx=self.layout.px(4), highlightthickness=0, font=self.ui_font(9),
                              relief="flat", overrelief="flat")
             action.pack(side="right")
             button.pack(side="left", fill="x", expand=True)
-            full_width = action.winfo_reqwidth()
-            heading_font = self.title_font(13, "bold")
 
             def fit_header(event):
-                needed = full_width + heading_font.measure(button.cget("text")) + self.layout.px(18)
-                caption = label if event.width >= needed else compact_label
-                if action.cget("text") != caption:
-                    action.configure(text=caption)
                 wrap = max(self.layout.px(32), event.width - action.winfo_reqwidth() - self.layout.px(16))
                 if button.winfo_pixels(button.cget("wraplength")) != wrap:
                     button.configure(wraplength=wrap)
@@ -575,8 +579,14 @@ class GuideWindow:
 
         self.telemetry = tk.Frame(self.shell, bg=self.hud_bg)
         self.telemetry.columnconfigure(0, weight=1)
-        self.metrics = tk.Label(self.telemetry, bg=self.hud_bg, fg=self.theme.accent, anchor="e",
-                                font=self.ui_font(9, "bold"), padx=4, pady=2)
+        self.speedrun_clock = tk.Button(
+            self.telemetry, bg=self.hud_bg, activebackground=self.hud_bg,
+            fg=self.theme.accent, activeforeground=self.theme.accent, anchor="e",
+            font=self.ui_font(9, "bold"), padx=4, pady=2, bd=0, highlightthickness=0,
+            relief="flat", cursor="hand2", command=self.app.toggle_speedrun_details,
+        )
+        self.boss_metric = tk.Label(self.telemetry, bg=self.hud_bg, fg=self.theme.accent, anchor="e",
+                                    font=self.ui_font(9, "bold"), padx=4, pady=2)
         self.level_status = tk.Label(self.telemetry, bg=self.hud_bg, anchor="w", width=1,
                                      font=self.ui_font(9, "bold"), padx=4, pady=2)
         self.feedback = tk.Label(self.shell, bg=self.theme.control, fg=self.theme.accent, font=self.ui_font(9), padx=5, pady=2)
@@ -597,7 +607,7 @@ class GuideWindow:
         self.route_canvas.bind("<Configure>", self._refit_route)
         self.route_links.bind("<Configure>", self._refit_route)
         self.route_rows.bind("<Configure>", self._refit_route)
-        self.atlas_controls = FlowRow(self.body, bg=self.hud_bg, distribute=True)
+        self.atlas_controls = FlowRow(self.body, bg=self.hud_bg)
         self.atlas_back = self.small_button(self.atlas_controls, "", lambda: self._set_lookup("all"))
         self.endgame = EndgamePanel(
             self.body, ATLAS_FILE,
@@ -607,6 +617,7 @@ class GuideWindow:
             self.app.ui_family, self.app.title_family, self.layout.font, self._schedule_targets,
             fit_height=self.fit_height,
             get_language=lambda: self.app.language, on_check=self.check_atlas_item, term_tips=self.app.term_tips,
+            scale_pixels=self.layout.px,
         )
         self._style_endgame()
 
@@ -776,7 +787,8 @@ class GuideWindow:
     def apply_theme(self):
         theme = self.theme
         self._style_chrome()
-        self.metrics.configure(fg=theme.accent, font=self.ui_font(9, "bold"))
+        self.speedrun_clock.configure(fg=theme.accent, activeforeground=theme.accent, font=self.ui_font(9, "bold"))
+        self.boss_metric.configure(fg=theme.accent, font=self.ui_font(9, "bold"))
         self.level_status.configure(font=self.ui_font(9, "bold"))
         self.feedback.configure(bg=theme.control, fg=theme.accent, font=self.ui_font(9))
         self.route_scroll.colors(theme.control, theme.accent)
@@ -785,11 +797,17 @@ class GuideWindow:
         self.refresh_guide()
 
     def _style_endgame(self):
+        effects = self.welcome_sample.accents if self.welcome_sample else self.app.card_accents
+        colors = {"progression": INFO, "quests": QUEST, "crafting": "#eaaf79", "affixes": OPTIONAL,
+                  "tablets": SUCCESS, "boss": DANGER}
         self.endgame.apply_theme(self.theme, surface=self.card_surface,
                                  body_family=self.app.theme_font(theme=self.theme), heading_family=self.app.theme_font(theme=self.theme, heading=True),
                                  control_family=self.app.theme_font(theme=self.theme, fallback=self.app.ui_family),
                                  info=self.section_color(INFO), success=self.section_color(SUCCESS),
-                                 danger=self.section_color(DANGER))
+                                 danger=self.section_color(DANGER),
+                                 tab_colors={tab: self.section_color(color) for tab, color in colors.items()},
+                                 accents=effects in {"headings", "both"},
+                                 tint_sections=effects in {"cards", "both"} and self.card_background != "off")
 
     def check_atlas_item(self, task, checked):
         if self.app.check_item(task, checked):
@@ -903,7 +921,9 @@ class GuideWindow:
 
     def _sync_click_mode(self):
         if self.click_targets and self.window.winfo_viewable():
-            if self.app.click_through or self.app.menu_background != "opaque":
+            # Even with an opaque toolbar, guide controls may have a colour-key
+            # background. Keep their hit areas available while moving the HUD.
+            if self.app.color_key or self.app.click_through or self.app.menu_background != "opaque":
                 self.click_targets.show()
             else:
                 self.click_targets.hide()
@@ -1371,6 +1391,15 @@ class GuideWindow:
                 self.select_guide_section("lookup")
         return True
 
+    def campaign_area_for_layout(self, ident):
+        state = self.app.state
+        index = campaign_index(state.get("routeClues", ()))
+        for areas in index.values():
+            for key, name in areas.items():
+                if campaign_layout_id(CATALOG, name, area_clues(state, name)) == ident:
+                    return key
+        return None
+
     def pack_task(self, parent, value, task, *, on_checked=None, **options):
         if not task or not self.app.checklist_enabled:
             return self.pack_message(parent, value, **options)
@@ -1500,9 +1529,13 @@ class GuideWindow:
             self._style_tabs()
             self.refresh_guide()
 
-    def open_atlas_tab(self, tab):
+    def open_atlas_tab(self, tab, anchor=None):
         if not self.lookup_category_available("atlas"):
             return
+        if self.endgame.tab != tab:
+            self.endgame.page = 0
+        if anchor and tab == "quests":
+            self.endgame.select_quest_target(anchor)
         self.endgame.tab = tab
         self.endgame.details = False
         self.guide_section = "lookup"
@@ -1521,7 +1554,14 @@ class GuideWindow:
         return colors
 
     def _layout_image(self, parent, filename):
-        original = tk.PhotoImage(master=parent, file=str(BASE_DIR / "web" / "images" / filename))
+        try:
+            original = tk.PhotoImage(master=parent, file=str(BRAND_IMAGES / filename))
+        except tk.TclError as error:
+            if filename not in self.missing_layout_images:
+                logging.warning("Kampagnenbild %s konnte nicht geladen werden: %s", filename, error)
+                self.missing_layout_images.add(filename)
+            return
+        self.missing_layout_images.discard(filename)
         label = tk.Label(parent, image=original, anchor="w",
                          bg=getattr(parent, "guide_card_color", self.hud_bg), bd=0, padx=0, pady=0)
         label.image = original
@@ -1554,7 +1594,7 @@ class GuideWindow:
         matches = [{**clue, **translations.get(clue["id"], {}).get(language, {})} for clue in matches]
         colors = self.route_term_colors(bosses)
         diagrams = CATALOG.get("areaLayouts", {})
-        diagram_id = CATALOG.get("sharedZones",{}).get(zone_key(zone)) or next((c["id"] for c in matches if c["id"] in diagrams), None)
+        diagram_id = campaign_layout_id(CATALOG, zone, matches)
         diagram = diagrams.get(diagram_id, {})
         self.structured_guide = bool(diagram_id)
         self.integrated_tasks = set(diagram.get("removedChecks", {}).get(self.guide_mode, ()))
@@ -1708,9 +1748,7 @@ class GuideWindow:
         colors.update({name: ROLE_COLORS[TERM_CATALOG[ident]["role"]]
                        for name, ident in AREA_TERM_ALIASES.get(diagram_id, {}).items()})
         if "sections" in diagram:
-            for section, meta in sections_for_mode(diagram,self.guide_mode):
-                lines = ([step for step in diagram["steps"] if step.get("section") == section["heading"]]
-                         if short else section["lines"])
+            for section, meta, lines in campaign_section_rows(diagram, self.guide_mode):
                 image = (meta.get("image") or {}).get("asset","").split("/")[-1] if meta else (section.get("image") if not short else None)
                 if lines or image or (diagram.get("template") and meta):
                     route_message(section["heading"], tone=meta.get("tone",section["tone"]), heading=True,
@@ -1725,8 +1763,17 @@ class GuideWindow:
                         route_message(line[language], task=task, boss_ref=line.get("bossId"), tone=meta.get("tone",section["tone"]), marker=not paragraph,
                                       body_color=self.theme.text, term_colors=colors,
                                       **self.editor_markup(line))
-                    if image and visible and (BASE_DIR/"web"/"images"/image).is_file():
+                    if image and visible:
                         self._layout_image(groups[-1][3], image)
+            if diagram_id in {"a2-well", "a2-abyssal-depths"}:
+                label = display_label(("Abgrund im Lexikon", "Abyss im Lexikon", "Abyss in the glossary"), language)
+                target = "website.abyss"
+                if self.lookup_category_available("lexicon") and target in self.app.website_lexicon():
+                    action = lambda: self.open_link(("term", target))
+                else:
+                    url = web_url(language, "begriff-abyss", thema="league")
+                    action = lambda: webbrowser.open(url)
+                self.small_button(parent, label, action).pack(anchor="w", pady=4)
             if bosses:
                 self._boss_guide_title()
                 for boss in bosses:
@@ -1951,7 +1998,6 @@ class GuideWindow:
         if self.window.winfo_ismapped():
             self.layout.enforce_width()
         progress = state.get("progress", {})
-        meta = state.get("meta", {})
         zone = str(progress.get("currentAct", "") or "")
         title = CATALOG.get("areas", {}).get(zone.casefold().removeprefix("the "), {}).get(self.display_language, zone)
         if self.welcome_sample:
@@ -1961,7 +2007,7 @@ class GuideWindow:
             self._draw_header()
         level_check = state.get("levelCheck", {})
         if not self.welcome_sample:
-            self._update_metrics(progress, meta, level_check)
+            self._update_metrics(state, level_check)
         self._style_tabs()
         section = "welcome" if self.welcome_sample else self.guide_section
         lookup_route = section == "lookup" and (
@@ -1982,7 +2028,7 @@ class GuideWindow:
                 self.route_scroll.place_forget()
                 self.route.pack_forget()
                 self.route_links.pack_forget()
-                self.atlas_controls.pack(fill="x")
+                self.atlas_controls.pack(fill="x", padx=self.layout.px(6))
                 self.endgame.pack(fill="both", expand=True)
                 self.wheel_remainder = 0
             self.atlas_back.configure(text="← Categories" if self.app.language == "en" else "← Kategorien",
@@ -2140,7 +2186,15 @@ class GuideWindow:
             self.small_button(actions, "← Back to list" if english else "← Zur Liste",
                               lambda: self._set_lookup(page=self.lookup_page))
             return
-        if category != "all":
+        if category == "constructs":
+            self.small_button(actions, "← FAQ", lambda: self._set_lookup("faq", query=""))
+        elif category == "faq" and self.lookup_faq_topic:
+            self.small_button(actions, "← All questions" if english else "← Alle Fragen",
+                              lambda: self._set_faq_topic(""))
+        elif category == "faq" and first_steps:
+            self.small_button(actions, "← " + display_label(CATEGORIES["tips"], language),
+                              lambda: self._set_lookup("tips", query=""))
+        elif category != "all":
             self.small_button(actions, "← Categories" if english else "← Kategorien",
                               lambda: self._set_lookup("all"))
         if category != "all" or not first_steps:
@@ -2157,11 +2211,16 @@ class GuideWindow:
         if category != "all":
             return
         categories = {} if first_steps else {"all": ("Alles", "Alles", "All")}
-        categories.update((key, names) for key, names in CATEGORIES.items() if self.lookup_category_available(key))
+        categories.update((key, names) for key, names in CATEGORIES.items()
+                          if key != "constructs" and not (key == "faq" and first_steps)
+                          and self.lookup_category_available(key))
         keys = list(categories)
 
         def choose(index):
             category = keys[index]
+            if category == "lexicon" and self.lookup_query and not first_steps:
+                self.lexicon.query, self.lexicon.base = self.lookup_query, None
+                self.lexicon.group, self.lexicon.facet = "all", ""
             self._set_lookup(category, query="" if first_steps or category in {"tools", "atlas"} else None)
 
         self.search_categories = SearchCategories(parent, self,
@@ -2177,10 +2236,14 @@ class GuideWindow:
         if entry is not None and not self.lookup_entry_available(entry):
             return
         if category is not None:
+            if category != self.lookup_category:
+                self.lookup_faq_topic = ""
             self.lookup_category = category
         if query is not None:
             self.lookup_query = query[:QUERY_LIMIT].strip()
         self.lookup_entry = entry
+        if self.lookup_category != "lexicon" or entry is None:
+            self.lexicon.outer_results = None
         self.lexicon.variant_page = 0
         self.lexicon.show_original = False
         self.lookup_campaign_result = False
@@ -2190,9 +2253,15 @@ class GuideWindow:
     def _set_lookup_query(self, query):
         if self.lookup_category == "lexicon":
             self.lexicon.query = query[:QUERY_LIMIT].strip()
+            if self.lexicon.query and self.lexicon.base is None:
+                self.lexicon.group, self.lexicon.facet = "all", ""
             self._set_lookup()
         else:
             self._set_lookup(query=query)
+
+    def _set_faq_topic(self, topic):
+        self.lookup_faq_topic = topic
+        self._set_lookup(query="")
 
     def _open_lookup_dialog(self):
         language = self.app.language
@@ -2201,6 +2270,8 @@ class GuideWindow:
         if self.lookup_category == "lexicon":
             title = ("Lexikon durchsuchen", "Lexikon durchsuchen", "Search the lexicon")
             query = self.lexicon.query
+        elif self.lookup_category == "faq":
+            title = ("Fragen durchsuchen", "Fragen durchsuchen", "Search questions")
         self._open_input_dialog(display_label(title, language), query, self._set_lookup_query,
                                 "Search" if language == "en" else "Suchen")
 
@@ -2300,7 +2371,7 @@ class GuideWindow:
             self.lookup_choice = act, area
             self.refresh_guide()
 
-        labels = [a if language == "en" else a.replace("Act ", "Akt ").replace("Interludes", "Zwischenakte") for a in acts]
+        labels = [a if language == "en" else a.replace("Act ", "Akt ") for a in acts]
         self.companion._controls(self.route_rows, labels, acts.index(act),
                                  lambda i: choose(acts[i], next(iter(index[acts[i]]))))
         areas = list(index[act])
@@ -2337,7 +2408,7 @@ class GuideWindow:
                     ident = clue["id"]
                     for source in ("routes", "routeEdits"):
                         content.extend(guide_lines(CATALOG.get(source, {}).get(ident, {})))
-                translated_act = act.replace("Act ", "Akt ").replace("Interludes", "Zwischenakte")
+                translated_act = act.replace("Act ", "Akt ")
                 yield act, area, title, (canonical, act, translated_act, *names.values(),
                                          *term.get("aliases", ()), *term.get("routeAliases", ())), content
 
@@ -2387,13 +2458,19 @@ class GuideWindow:
                         if line:
                             self.pack_message(body, line, marker=True)
             else:
-                for line in entry.details:
+                for line in entry.details[:1] if entry.category == "faq" else entry.details:
                     if line:
                         self.pack_message(parent, line)
-                url = entry.target.get("url") if isinstance(entry.target, dict) else None
+                if entry.category == "faq":
+                    self._faq_action(parent, entry.target)
+                url = entry.url or (entry.target.get("url") if isinstance(entry.target, dict) else None)
                 if url:
                     self.small_button(parent, "Read on buildschmiede.de" if english else "Auf buildschmiede.de lesen",
                                       lambda: webbrowser.open(url)).pack(anchor="w", pady=(4, 0))
+                if entry.category == "faq":
+                    patch = entry.target["patch"]
+                    self.pack_message(parent, ("Game version" if english else "Spielstand") + " · " + patch,
+                                      tone="muted", points=9)
             return
         if self.lookup_category == "all" and not self.allows("campaign_tools"):
             return
@@ -2401,6 +2478,13 @@ class GuideWindow:
             self.pack_message(parent, "Choose a category or search all local entries." if english else
                               "Wähle eine Kategorie oder durchsuche alle lokalen Einträge.")
             return
+        if self.lookup_category == "tips" and not self.lookup_query:
+            self.small_button(parent, display_label(CATEGORIES["faq"], language),
+                              lambda: self._set_lookup("faq", query="")).pack(anchor="w", pady=4)
+        if self.lookup_category == "constructs":
+            overview = construct_catalog()
+            if overview and not self.lookup_query:
+                self.pack_message(parent, overview["hinweis_" + language])
         if self.lookup_category == "builds":
             actions = FlowRow(parent, bg=self.hud_bg, distribute=True)
             actions.pack(fill="x", pady=(0, 5))
@@ -2409,12 +2493,20 @@ class GuideWindow:
         hotkeys = [(self.app.keys.get(action) or ("Off" if english else "Aus"), ui_text(label, language),
                     (label, ui_text(label, "en"))) for action, (label, _) in HUD_HOTKEYS.items()]
         entries = lookup_entries(language, self._lookup_areas(state, index), self.companion.data, hotkeys, self.guide_mode,
-                                 website=self.app.website_lexicon())
-        matches = find_entries((entry for entry in entries if self.lookup_entry_available(entry)),
-                               self.lookup_query, self.lookup_category)
+                                 website=self.app.website_lexicon(), search_catalogue=self.lookup_category == "all")
+        available = (entry for entry in entries if self.lookup_entry_available(entry))
+        if self.lookup_category == "faq" and self.lookup_faq_topic:
+            available = (entry for entry in available
+                         if entry.category == "faq" and entry.target["topic"] == self.lookup_faq_topic)
+        matches = find_entries(available, self.lookup_query, self.lookup_category)
         if not matches:
             self.pack_message(parent, "No results" if english else "Keine Treffer")
             return
+        if self.lookup_category == "faq" and not self.lookup_query:
+            if self.lookup_faq_topic:
+                self.pack_message(parent, display_label(FAQ_TOPICS[self.lookup_faq_topic][0], language), tone="gold")
+            else:
+                self._render_faq_topics(parent, matches, language)
         start = self.lookup_page * PAGE_SIZE
         end = min(start + PAGE_SIZE, len(matches))
         self.pack_message(parent, f"{start + 1}–{end} / {len(matches)}", tone="muted", points=10)
@@ -2436,6 +2528,60 @@ class GuideWindow:
             self.small_button(pages, "Previous" if english else "Zurück", lambda: self._set_lookup(page=self.lookup_page - 1))
         if end < len(matches):
             self.small_button(pages, "Next" if english else "Weiter", lambda: self._set_lookup(page=self.lookup_page + 1))
+
+    def _render_faq_topics(self, parent, entries, language):
+        topics = {entry.target["topic"] for entry in entries}
+        controls = FlowRow(parent, bg=self.hud_bg, gap=self.layout.px(4), distribute=True)
+        controls.pack(fill="x", pady=(0, self.layout.px(6)))
+        for topic, (names, icon, tone) in FAQ_TOPICS.items():
+            if topic not in topics:
+                continue
+            label = display_label(names, language)
+            button = self.small_button(controls, label, lambda topic=topic: self._set_faq_topic(topic))
+            tone = self.section_color(tone)
+            self._set_hud_icon(button, icon, self._icon_pixels(16), tone)
+            button.configure(compound="left", anchor="w", justify="left", wraplength=self.layout.px(150),
+                             bg=mix_color(self.theme.control, tone, 0.16), fg=tone, highlightbackground=tone)
+
+    def _faq_action(self, parent, faq):
+        language = self.app.language
+        english = language == "en"
+        target = faq["target"]
+        dependency = target["dependency"]
+        anchor = target["anchor"]
+        if dependency == "constructs" and self.lookup_category_available("constructs"):
+            self.small_button(parent, display_label(CATEGORIES["constructs"], language),
+                              lambda: self._set_lookup("constructs", query="")).pack(anchor="w", pady=4)
+        elif dependency == "atlas" and self.lookup_category_available("atlas"):
+            self.small_button(parent, "Atlas quests" if english else "Atlas-Quests",
+                              lambda: self.open_atlas_tab("quests", anchor)).pack(anchor="w", pady=4)
+        elif target["path"].startswith("/lexikon/") and self.lookup_category_available("lexicon"):
+            if dependency == "mechanics" and anchor == "lexikon-filter":
+                def league_list():
+                    self.lexicon.group, self.lexicon.facet = "league", ""
+                    self.lexicon.query, self.lexicon.base = "", None
+                    self._set_lookup("lexicon", query="")
+                self.small_button(parent, "League mechanics" if english else "Liga-Mechaniken",
+                                  league_list).pack(anchor="w", pady=4)
+                return
+            slug = anchor.removeprefix("begriff-")
+            terms = self.app.website_lexicon()
+            term = next((t for t in terms.values() if t.get("slug") == slug), None)
+            if term:
+                local = next(published_terms(language, {term["id"]: term}), None)
+                if local:
+                    self.small_button(parent, local.title,
+                                      lambda: self._pick_lookup(local)).pack(anchor="w", pady=4)
+        elif faq.get("build") and self.lookup_category_available("builds"):
+            build = next((b for b in self.companion.data.get("builds", ()) if b["id"] == faq["build"]), None)
+            if build:
+                local = make("builds", build["name"], target=build)
+                self.small_button(parent, build["name"],
+                                  lambda: self._set_lookup("builds", query="", entry=local)).pack(anchor="w", pady=4)
+        elif faq["id"] == "loot-craft-sell" and self.allows("crafting"):
+            title = "Crafting Helper" if english else "Crafting-Helfer"
+            self.small_button(parent, title,
+                              lambda: self._pick_lookup(make("tools", title, "crafting-helper"))).pack(anchor="w", pady=4)
 
     def _lookup_shortcut_row(self, parent, key, title, action):
         button = self.small_button(parent, "", action)
@@ -2483,30 +2629,31 @@ class GuideWindow:
         elif entry.category == "tools":
             self._set_lookup("tools", query="", entry=entry)
         elif entry.category == "lexicon":
+            if self.lookup_category == "all":
+                self.lexicon.outer_results = self.lookup_query, self.lookup_page
             self._set_lookup("lexicon", entry=entry)
         else:
             self._set_lookup(entry=entry, page=self.lookup_page)
 
-    def _update_metrics(self, progress, meta, level_check):
+    def _update_metrics(self, state, level_check):
         if self.content_hidden:
             return
-        times = []
-        if self.allows("timers") and self.app.timer_visible:
-            clock = server.timer_snapshot({"progress": progress, "meta": meta})
-            elapsed = clock["runSeconds"]
-            running = clock["status"] == "live"
-            if running:
-                elapsed += max(0, time.time() - clock["runStartedAt"])
-            times.append(f"{'▶' if running else 'Ⅱ'} {format_time(elapsed)}")
-        if self.allows("timers") and self.app.boss_seconds is not None:
-            seconds = time.monotonic() - self.app.boss_started if self.app.boss_started else self.app.boss_seconds
-            times.append(f"Boss {format_time(seconds)}")
-        if times:
-            self.metrics.configure(text="    ".join(times))
-            if not self.metrics.winfo_manager():
-                self.metrics.grid(row=0, column=1, sticky="e")
-        elif self.metrics.winfo_manager():
-            self.metrics.grid_remove()
+        clock_text = boss_text = ""
+        if self.allows("timers"):
+            if self.app.timer_visible:
+                clock = server.timer_snapshot(state)
+                marker = "▶" if clock["status"] == "live" else "Ⅱ"
+                clock_text = f"{marker} {format_time(timer_elapsed(clock, time.time()))}"
+            if self.app.boss_seconds is not None:
+                seconds = time.monotonic() - self.app.boss_started if self.app.boss_started else self.app.boss_seconds
+                boss_text = f"Boss {format_time(seconds)}"
+        for column, (widget, text) in enumerate(((self.speedrun_clock, clock_text), (self.boss_metric, boss_text)), 1):
+            if text:
+                widget.configure(text=text)
+                if not widget.winfo_manager():
+                    widget.grid(row=0, column=column, sticky="e")
+            elif widget.winfo_manager():
+                widget.grid_remove()
 
         level = level_check.get("characterLevel")
         compare = not self.app.in_endgame and "areaLevel" in level_check
@@ -2514,7 +2661,7 @@ class GuideWindow:
                       and (compare or level is not None))
         if show_level:
             font = self.ui_font(9, "bold")
-            reserved = font.measure(self.metrics.cget("text")) + 8 if times else 0
+            reserved = sum(font.measure(text) + 8 for text in (clock_text, boss_text) if text)
             max_width = max(1, self.layout.width - reserved - 8)
             text, color = self._level_text(level_check, compare, max_width, font)
             self.level_status.configure(text=text, fg=color)
@@ -2523,7 +2670,7 @@ class GuideWindow:
         elif self.level_status.winfo_manager():
             self.level_status.grid_remove()
 
-        if times or show_level:
+        if clock_text or boss_text or show_level:
             if not self.telemetry.winfo_manager():
                 self.telemetry.grid(row=3, column=0, sticky="ew")
         elif self.telemetry.winfo_manager():
@@ -2589,6 +2736,7 @@ class GuideWindow:
                 self.endgame._fit()
         self._style_quick_icons()
         self._schedule_targets()
+        self.app._refresh_speedrun_hud()
 
 
 class StandaloneOverlay:
@@ -2660,6 +2808,8 @@ class StandaloneOverlay:
         language = self.prefs.get("language")
         self.language = language if isinstance(language, str) and language in LANGUAGES else "hybrid"
         self.timer_visible = self.prefs.get("timer") is True
+        self.speedrun_details_open = False
+        self.speedrun_hud = None
         self.auto_boss = self.prefs.get("auto_boss", True) is True
         self.boss_started = None
         self.boss_seconds = None
@@ -2716,6 +2866,7 @@ class StandaloneOverlay:
             self.auto_campaign_boss = ""
             self.term_tips.hide()
         self.current.refresh_experience()
+        self._refresh_speedrun_hud()
         if self.native:
             self.native.configure_hotkeys(self._active_bindings(timer_bindings(self.keys)))
 
@@ -2882,20 +3033,10 @@ class StandaloneOverlay:
     def api_base(self):
         return f"http://127.0.0.1:{self.http.server_port}"
 
-    @property
-    def control_center_url(self):
-        return self.api_base + server.PRODUCTIVE_CENTER_ROUTE
-
-    def _open_private_control_center(self, _event):
+    def _open_data_exchange(self, _event):
         query = f"?lang={self.language}&mode={self.mode}"
-        if server.editor_enabled():
-            if not self.allows("experimental"):
-                return "break"
-            target = self.control_center_url + query + "#transfer"
-        else:
-            target = self.api_base + "/datenaustausch.html" + query
         try:
-            webbrowser.open(target)
+            webbrowser.open(self.api_base + "/datenaustausch.html" + query)
         except (OSError, webbrowser.Error):
             logging.exception("Datenaustausch konnte nicht geöffnet werden.")
         return "break"
@@ -2954,6 +3095,7 @@ class StandaloneOverlay:
         self.theme = THEMES[name]
         self.style_theme()
         self.current.apply_theme()
+        self._refresh_speedrun_hud()
 
     def _follow_location(self):
         status = server.get_location_status()
@@ -3152,8 +3294,6 @@ class StandaloneOverlay:
             self.show_build_guide(first)
 
     def sync_state(self):
-        if server.refresh_editor_catalog():
-            self.current.last_content = None
         previous_default = self.state["guideMode"]
         self.state = server.load_state()
         self.checklist = self.confirmed_checklist(server.checklist_snapshot(self.state))
@@ -3164,6 +3304,7 @@ class StandaloneOverlay:
         self.build_id = self.state.get("guideBuild", self.build_id)
         self._follow_location()
         self.current.update(self.state)
+        self._refresh_speedrun_hud()
         if self.settings_open() and hasattr(self.settings, "refresh_manual_level"):
             self.settings.refresh_manual_level()
 
@@ -3180,9 +3321,6 @@ class StandaloneOverlay:
         try:
             if self.native and self.native.recovery_requested():
                 self.recover()
-            requests = getattr(self.http, "module_requests", None)
-            while requests and not requests.empty():
-                self.open_module(requests.get_nowait())
             while True:
                 action = self.hotkeys.get_nowait()
                 if isinstance(action, tuple):
@@ -3220,12 +3358,16 @@ class StandaloneOverlay:
         try:
             if self.visible:
                 self.current.set_click_mode(enabled)
+                if not enabled and self.color_key and not self.settings_open() and not self.current.lookup_dialog:
+                    self.current.window.focus_force()
         except (OSError, tk.TclError):
             self.click_through = old_mode
             self.current._style_quick_icons()
             logging.exception("Klickmodus konnte nicht gesetzt werden. Vorgabe: %s", enabled)
             self.current.flash("F9 nicht übernommen · Strg+Umschalt+F9 setzt Bedienung zurück.")
             return
+        if self.speedrun_hud is not None and self.speedrun_hud.visible:
+            self.speedrun_hud._sync_click_mode()
         labels = ("HUD gesperrt", "HUD locked") if enabled else ("HUD verschiebbar", "HUD movable")
         self.current.flash(labels[self.language == "en"])
 
@@ -3236,12 +3378,16 @@ class StandaloneOverlay:
         else:
             self.visible = True
             self.current.enter()
+        self._refresh_speedrun_hud()
 
     def recover(self):
         self.current.leave()
         self.click_through = False
         self.visible = True
         self.current.enter()
+        if self.speedrun_hud is not None and self.speedrun_hud.visible:
+            self.speedrun_hud._sync_click_mode()
+        self._refresh_speedrun_hud()
         self.current.flash("Bedienbar")
 
     @property
@@ -3323,6 +3469,7 @@ class StandaloneOverlay:
                 if not self.closed:
                     if self.visible:
                         self.current.enter()
+                        self._refresh_speedrun_hud()
                     if on_done is not None:
                         self.root.after_idle(on_done)
 
@@ -3696,6 +3843,7 @@ class StandaloneOverlay:
         viewport.bind("<Configure>", update_region)
         dialog.update_idletasks()
         guide.leave()
+        self._refresh_speedrun_hud()
         preview = GuideWindow(self, welcome_sample=sample())
         preview.layout.dpi = layout.dpi
         preview.layout._resize_fonts()
@@ -4093,6 +4241,8 @@ class StandaloneOverlay:
                         self.native.set_opacity(guide.window, self.overlay_alpha())
                 else:
                     guide.window.attributes("-alpha", self.overlay_alpha()/255)
+                if self.speedrun_hud is not None:
+                    self.speedrun_hud.apply_opacity()
                 guide._schedule_targets()
         bounds = layout._work_area(layout.x, layout.y, layout.width, layout.height)
         sliders = [("Transparenz", "transparency", 0, 90, self.prefs.get("transparency", 0)),
@@ -4337,7 +4487,7 @@ class StandaloneOverlay:
                 total = sum(item["act"] == act for item in store.catalogue.values())
                 size = sum(item["bytes"] for item in pending)
                 megabytes = f"{size / 1_000_000:.1f}".replace(".", clip_text(",", "."))
-                label = clip_text(act.replace("Act ", "Akt ").replace("Interludes", "Zwischenakte"), act)
+                label = clip_text(act.replace("Act ", "Akt "), act)
                 if pending:
                     label = clip_text(f"{label} herunterladen", f"Download {label}")
                     label += f" · {len(pending)}/{total} · {megabytes} MB"
@@ -4667,17 +4817,54 @@ class StandaloneOverlay:
             self.save_preferences(language=language)
             self.language = language
             guide = self.current
+            selected = guide.lookup_entry
             guide.lookup_entry = None
+            if selected and selected.category in ("faq", "constructs"):
+                guide.lookup_entry = next((entry for entry in editorial_entries(language)
+                                           if entry.category == selected.category
+                                           and entry.target["id"] == selected.target["id"]), None)
+            elif selected and selected.category == "tips" and selected.url:
+                guide.lookup_entry = next((entry for entry in editorial_entries(language)
+                                           if entry.category == "tips" and entry.target == selected.target), None)
+            elif selected and selected.category == "lexicon" and selected.target["group"] == "terms":
+                ident = selected.target["row"]["id"]
+                if ident in league_guides():
+                    term = self.website_lexicon().get(ident)
+                    if term:
+                        guide.lookup_entry = next(published_terms(language, {ident: term}), None)
             guide._draw_header()
             guide._style_nav_icons()
             guide.update(self.state)
+            self._refresh_speedrun_hud()
 
     def set_timer(self, enabled):
         self.save_preferences(timer=enabled)
         self.timer_visible = enabled
+        if not enabled:
+            self.speedrun_details_open = False
         if self.settings_open():
             self.settings.timer_visible.set(enabled)
         self.current.update(self.state)
+        self._refresh_speedrun_hud()
+
+    def toggle_speedrun_details(self):
+        self.set_speedrun_details(not self.speedrun_details_open)
+
+    def set_speedrun_details(self, enabled):
+        self.speedrun_details_open = enabled and self.timer_visible and self.allows("timers")
+        self._refresh_speedrun_hud()
+
+    def _refresh_speedrun_hud(self):
+        visible = (self.visible and self.speedrun_details_open and self.timer_visible and self.allows("timers")
+                   and not self.current.content_hidden and self.welcome is None)
+        if not visible:
+            if self.speedrun_hud is not None:
+                self.speedrun_hud.hide()
+            return
+        if self.speedrun_hud is None:
+            self.speedrun_hud = SpeedrunHUD(self)
+        self.speedrun_hud.refresh(server.speedrun_snapshot(self.state))
+        self.speedrun_hud.show()
 
     def set_level_visible(self, enabled):
         self.save_preferences(level_visible=enabled)
@@ -4732,12 +4919,13 @@ class StandaloneOverlay:
         self.prefs.pop("endgame_height_limit", None)
         self.prefs.pop("background_blur", None)
         self.prefs.pop("menu_background", None)
-        self.save_preferences(hotkeys=self.keys, language="hybrid", hidden_sections=[], hidden_build_overviews=[], checklist_enabled=True,
+        self.save_preferences(hotkeys=self.keys, language="hybrid", hidden_sections=[], checklist_enabled=True,
                               auto_boss=True, timer=False, level_visible=True, transparency=0,
                               card_background=background, card_accents=accents, color_intensity=intensity,
                               checklist_fold_completed=True, checklist_hide_completed=False,
                               hidden_hud_tabs=[], hidden_hud_quick=[], hud_quick_visible=True)
         self.language, self.checklist_enabled, self.auto_boss, self.timer_visible = "hybrid", True, True, False
+        self.speedrun_details_open = False
         if self.native:
             self.native.configure_hotkeys(self._active_bindings(timer_bindings(self.keys)))
         guide, layout = self.current, self.current.layout
@@ -4773,8 +4961,15 @@ class StandaloneOverlay:
         if not self.timer_visible:
             self.set_timer(True)
         self.sync_state()
-        label = "Timer zurückgesetzt" if action == "reset" else "Timer läuft" if clock["status"] == "live" else "Timer pausiert"
-        self.current.flash(label)
+        if action == "reset":
+            labels = ("Timer zurückgesetzt", "Timer reset")
+        elif action == "finish":
+            labels = ("Lauf beendet", "Run finished")
+        elif clock["status"] == "live":
+            labels = ("Timer läuft", "Timer running")
+        else:
+            labels = ("Timer pausiert", "Timer paused")
+        self.current.flash(labels[self.language == "en"])
 
     def control_boss_timer(self):
         if self.boss_started is None:
@@ -4796,6 +4991,8 @@ class StandaloneOverlay:
                 return
         self.closed = True
         self.term_tips.stop()
+        if self.speedrun_hud is not None:
+            self.speedrun_hud.close()
         if self.welcome is not None:
             self.welcome.destroy()
         if self.appearance_save:
@@ -4814,7 +5011,6 @@ class StandaloneOverlay:
             self.toggle_visibility()
         if IS_WINDOWS:
             self._open_taskbar_window()
-        self.http.desktop_ready = True
         if self.website_enabled:
             self.website.refresh_in_background()
         self.term_tips.start()
@@ -4852,8 +5048,6 @@ def main():
         http = server.start_local_server(DATA_DIR, port=server.PORT, allow_alternate_port=True)
         overlay = StandaloneOverlay(http, DATA_DIR, native)
         logging.info("PoE2 Ingame Guide %s gestartet.", BUILD_LABEL)
-        if server.editor_enabled():
-            logging.info("Kontrollzentrum: %s", overlay.control_center_url)
         overlay.run()
         return 0
     except Exception as error:

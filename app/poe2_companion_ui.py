@@ -65,26 +65,34 @@ class CompanionPanel:
                                              body_color=self.overlay.app.theme.text if marker else None,
                                              manual_colors=manual_colors)
 
-    def _card(self, parent, context, key, title, *, tone="gold", closed=False, pinned=False, header_action=None):
+    def _card(self, parent, context, key, title, *, tone="gold", closed=False, pinned=False,
+              neutral=False, fold_labels=None):
         title = ui_text(title, self.overlay.app.language)
-        header, body = self.overlay.guide_card(parent, tone, header_action=header_action)
+        identity = (*context, key)
+        label = tk.StringVar(parent) if fold_labels else None
+
+        def toggle():
+            folded = not self.card_folds.get(identity, closed)
+            self.card_folds[identity] = folded
+            set_fold(folded)
+            self.overlay._refit_route()
+            self.overlay._schedule_targets()
+
+        header, body = self.overlay.guide_card(parent, tone, neutral=neutral,
+                                               header_action=(label, toggle) if label is not None else None)
         if pinned:
             header.configure(text=title, cursor="", state="disabled", disabledforeground=header.cget("fg"))
             return body
-        identity = (*context, key)
 
         def set_fold(folded):
-            header.configure(text=("▸ " if folded else "▾ ") + title, command=lambda: toggle(folded))
+            header.configure(text=("▸ " if folded else "▾ ") + title, command=toggle)
+            if label is not None:
+                show, hide = fold_labels
+                label.set(show if folded else hide)
             if folded:
                 body.pack_forget()
             else:
                 body.pack(fill="x")
-
-        def toggle(folded):
-            self.card_folds[identity] = not folded
-            set_fold(not folded)
-            self.overlay._refit_route()
-            self.overlay._schedule_targets()
 
         set_fold(self.card_folds.get(identity, closed))
         return body
@@ -360,30 +368,17 @@ class CompanionPanel:
                 return selected
         return self.auto_stage(build, level)
 
-    def _set_overview_hidden(self, build_id, hidden):
-        hidden_ids = set(self.overlay.app.prefs.get("hidden_build_overviews", ()))
-        if hidden:
-            hidden_ids.add(build_id)
-        else:
-            hidden_ids.discard(build_id)
-            self.card_folds[("build", build_id, "overview")] = False
-        self.overlay.app.save_preferences(hidden_build_overviews=sorted(hidden_ids))
-        self.overlay.refresh_guide()
-
     def _build_overview(self, parent, context, build, language):
         parts = {key: editorial_lines(build, key, language) for key in BUILD_TOPICS}
         if not any(parts.values()):
             return
         english = language == "en"
-        action = None
-        if context[0] == "build":
-            label = "Hide" if english else "Ausblenden"
-            action = (label, label, lambda: self._set_overview_hidden(build["id"], True))
         body = self._card(parent, context, "overview", "Build overview" if english else "Build-Überblick",
-                          tone="info", closed=True, header_action=action)
+                          closed=True, neutral=True,
+                          fold_labels=("Show", "Hide") if english else ("Einblenden", "Ausblenden"))
         for line in parts["overview"]:
             self._row(body, line)
-        for key, glyph, tone in (("strengths", "+", "success"), ("weaknesses", "−", "danger")):
+        for key, glyph in (("strengths", "+"), ("weaknesses", "−")):
             if not parts[key]:
                 continue
             group = tk.Frame(body, bg=body.guide_card_color)
@@ -392,7 +387,9 @@ class CompanionPanel:
             content = tk.Frame(group, bg=body.guide_card_color)
             content.guide_card_color = body.guide_card_color
             content.pack(side="left", fill="x", expand=True, padx=self.overlay.layout.px(3))
-            self._row(content, f"{glyph}  {BUILD_TOPICS[key][english]}", tone=tone)
+            tk.Label(content, text=f"{glyph}  {BUILD_TOPICS[key][english]}", anchor="w",
+                     bg=body.guide_card_color, fg=self.overlay.theme.text,
+                     font=self.overlay.ui_font(11, "bold"), padx=0).pack(fill="x")
             for line in parts[key]:
                 self._row(content, line)
 
@@ -434,18 +431,8 @@ class CompanionPanel:
         self.overlay.build_gem_ids = equipped_gem_ids(stage)
         gap = self.overlay.layout.px(3)
         build_labels = [" · ".join(filter(None, (row["name"], row.get("author")))) for row in builds]
-        hidden_overview = build["id"] in self.overlay.app.prefs.get("hidden_build_overviews", ())
-        picker = parent
-        if hidden_overview and any(editorial_lines(build, key, language) for key in BUILD_TOPICS):
-            picker = tk.Frame(parent, bg=self.overlay.hud_bg)
-            picker.pack(fill="x")
-            restore = self.overlay.small_button(picker, "Show overview" if english else "Überblick einblenden",
-                                                lambda: self._set_overview_hidden(build["id"], False))
-            restore.pack(side="right", padx=(gap, 0), pady=(0, gap))
-        self._controls(picker, build_labels, builds.index(build),
+        self._controls(parent, build_labels, builds.index(build),
                        lambda index: self.overlay.app.select_build(builds[index]["id"]), gap=gap)
-        if not hidden_overview:
-            self._build_overview(parent, ("build", build["id"]), build, language)
         automatic = self.auto_stage(build, level)
         auto_mode = "Auto" if automatic["min_level"] <= min(level, 100) else ("Preview" if english else "Vorschau")
         auto_label = phase_label(automatic, language)
@@ -454,6 +441,7 @@ class CompanionPanel:
                        lambda index: self._pick_stage(stages[index - 1]["id"] if index else ""), gap=gap)
         if self.overlay.allows("campaign_tools"):
             self.planner_website_button(parent).pack(anchor="w", pady=(0, gap))
+        self._build_overview(parent, ("build", build["id"]), build, language)
         context = ("build", build["id"], stage["id"])
         compact = mode == "veteran"
         quick = stage.get("quick")

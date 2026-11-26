@@ -412,6 +412,26 @@
       "label": "Buildschmiede · Farming RegEx",
       "url": "https://buildschmiede.de/endgame-atlas/?sprache=hybrid#farming-regex",
       "status": "Reference"
+    },
+    "ggg-atlas-050": {
+      "label": "Grinding Gear Games · 0.5.0",
+      "url": "https://www.pathofexile.com/forum/view-thread/3932540",
+      "status": "Reference"
+    },
+    "ggg-atlas-055": {
+      "label": "Grinding Gear Games · 0.5.5",
+      "url": "https://www.pathofexile.com/forum/view-thread/4000864",
+      "status": "Reference"
+    },
+    "ggg-atlas-055c": {
+      "label": "Grinding Gear Games · 0.5.5c",
+      "url": "https://www.pathofexile.com/forum/view-thread/4006357",
+      "status": "Reference"
+    },
+    "quest-fortress": {
+      "label": "PoE2DB · Legacy of the Precursors",
+      "url": "https://poe2db.tw/us/Legacy_of_the_Precursors",
+      "status": "Reference"
     }
   },
   "progression": {
@@ -434,7 +454,7 @@
         "slots": 3
       }
     ],
-    "city_bonus": "Industrial Improvements grants a fourth slot on eligible City maps with three baseline slots.",
+    "city_bonus": "Industrial Improvements grants an additional tablet slot on City maps in level 75+ areas. The passive requires completing the Burning Monolith. With three regular slots you can use four tablets.",
     "stages": [
       {
         "id": "early",
@@ -443,7 +463,7 @@
         "max_tier": 5,
         "checkpoints": {
           "Elemental Res": "75% each before tougher rolls",
-          "Chaos Res": "Aim for 0% or better",
+          "Chaos Res": "Aim for 0% or better as a gearing target.",
           "Loot Filter Stage": "Regular → Semi-Strict"
         },
         "basis": [
@@ -457,8 +477,8 @@
           "Clear the first useful Tower for reveal and its Tablet. Apply Tablets in the Map Device."
         ],
         "milestones": [
-          "Reach The Ziggurat Refuge, speak to Doryani, and open your first map.",
-          "Complete a Precursor Tower and activate its beacon to reveal nearby routes and start the Fortress progression."
+          "In the Ziggurat Refuge, ask Doryani for a Waystone. Identify it, read the modifiers and open a connected map. Defeat its boss to complete it.",
+          "Reach your first Precursor Tower and activate its beacon. Follow the newly revealed route towards the Precursor Fortress."
         ],
         "quick": {
           "basis": [
@@ -479,22 +499,22 @@
         "max_tier": 10,
         "checkpoints": {
           "Elemental Res": "75% each; spare resists for map penalties",
-          "Chaos Res": "Aim for +30% or better",
+          "Chaos Res": "Aim for +30% or better as a gearing target.",
           "Loot Filter Stage": "Semi-Strict → Strict"
         },
         "basis": [
           "Run yellow stones when you can handle all their modifiers. Drop back to a safe blue if the boss takes too long or recovery struggles.",
-          "Check Tablet slots in the Map Device. Each placed tablet spends a use; empty eligible slots can add random content.",
+          "Check the tablet slots in your Map Device. Each placed tablet normally spends a use when the map opens. Each empty slot contributes to random league content, including locked slots.",
           "Choose one mechanic for gear or currency and make progress on its Atlas tree as you travel."
         ],
         "veteran": [
           "Run 3–5 safe mods once stable. Pick bossable layouts and protect net XP per hour.",
-          "Finish the western/eastern Enigma branches before attempting the Arbiter of Ash. Allocate tablet nodes when available.",
+          "For the two fragments, be present for the bosses in both Enigma Chambers. Spend Atlas points on tablet crafting once the relevant node is unlocked.",
           "Plan Tower reveals for pathing. Add one source of density at a time and reroll bad mod combinations."
         ],
         "milestones": [
-          "Follow the Fortress gates to the Enigma Chambers for the Crisis Fragments.",
-          "Defeat the Arbiter of Ash when ready. Check the tablet crafting nodes before investing in rare tablets."
+          "At the Burning Monolith, one of the three quest fragments is already in the gate. Follow the western and eastern paths to the two Enigma Chambers. Defeat Count Geonor in the Western Enigma Chamber for the Ancient Crisis Fragment and Doryani in the Eastern Enigma Chamber for the Weathered Crisis Fragment. Be present for each kill to collect your fragments, including in a party.",
+          "Place both fragments in the gate at the Burning Monolith. Defeat the Arbiter of Ash, inspect the Fourth Edict, take the lift and speak to Doryani."
         ],
         "quick": {
           "basis": [
@@ -515,7 +535,7 @@
         "max_tier": 16,
         "checkpoints": {
           "Elemental Res": "75% each; audit penetration and −max res",
-          "Chaos Res": "Aim for +50%; work toward 75%",
+          "Chaos Res": "Aim for +50% while gearing and work towards 75%.",
           "Loot Filter Stage": "Strict → Very Strict"
         },
         "basis": [
@@ -529,8 +549,8 @@
           "Keep jackpot rolls for a dedicated farm. Preserve clean backup stones and avoid testing a Pinnacle boss during an XP push."
         ],
         "milestones": [
-          "After Ash, follow the Origin Tower and the Patriarch and Matriarch Halls into the Arbiter of Divinity quest.",
-          "In 0.5.5, the non-quest Origin Core kill completes the Fortress for its owner. The quest kill advances the quest."
+          "After the Arbiter of Ash, follow Doryani's quest to the Origin Tower. Be present for both boss kills and activate the Ancient Curiosity after each one to collect the Origin Spark in the Patriarch Halls and the Origin Cradle in the Matriarch Halls.",
+          "Combine the two pieces at the reactor at the foot of the tower. Take the Origin Core up the lift and use it at the summit to fight the Arbiter of Divinity. The quest version advances the story and does not complete a Fortress section. A kill with a non-quest Origin Core completes the entire Precursor Fortress for the map owner."
         ],
         "quick": {
           "basis": [
@@ -547,10 +567,14 @@
     ],
     "source_ids": [
       "waystones",
-      "tablet-wiki"
+      "tablet-wiki",
+      "ggg-atlas-050",
+      "ggg-atlas-055",
+      "ggg-atlas-055c",
+      "quest-fortress"
     ],
     "farming": {
-      "rule": "Repeat fresh maps at the fastest safe tier that can drop the base you need. Check its item level before crafting. Reaching the threshold adds a possible roll.",
+      "rule": "Pick the lowest safe tier that can drop your target base at the required item level. For example, a tier 15 map is area level 79. Irradiation adds one monster level and a unique boss drop adds two item levels, so the boss can drop item level 82 boots. That unlocks the 35% movement speed roll on eligible boots without guaranteeing it.",
       "drop_note": "Normal and magic monsters drop at monster level. Rares add +1 iLvl and unique bosses add +2. Irradiation adds +1 monster level.",
       "early_note": "+2 Minion on helmets, +2 Melee on gloves and +2 Spell on foci already unlock at iLvl 41. Mid-tier +skill rolls on the listed weapons unlock at iLvl 55.",
       "breakpoints": [
@@ -2404,7 +2428,7 @@
             "recipe": 0,
             "skills": [
               "Drop volleys ahead of packs. Against a boss, aim where it will finish its current attack.",
-              "Use Bidding for Command cooldown and use Muster once several distinct minion types are active.",
+              "Bidding improves Command cooldown recovery. For Muster, count distinct types of summoned Reviving Minion.",
               "Keep your operating skill set equipped when checking minion and support requirements."
             ],
             "tree": [
@@ -2462,7 +2486,7 @@
         "recipes": [
           {
             "label": "Sceptre · Spirit and Minion Levels",
-            "quick": "Start with Spirit and Minion Skill Levels. Count active minion types for Muster on both weapon sets.",
+            "quick": "Check Spirit and Minion Skill Levels on the sceptre. Count the types of Reviving Minion still summoned for Muster in each weapon set.",
             "steps": [
               "Choose a sceptre you can equip on the character. Compare Spirit with your current reservation.",
               "Transmute and Augment a spare base. Keep a useful roll for Minion Skill Levels or Spirit.",
@@ -2513,7 +2537,7 @@
             "recipe": 0,
             "skills": [
               "Use a Djinn Command to clear packs while Kelari's longer single-target cast is unavailable.",
-              "Place Kelari's Deception in a boss recovery window. Use Ruzhan's Trap for clear if your chosen Ascendancy path grants it.",
+              "Once you allocate Kelari’s Deception, use the Command while the boss recovers. Use Ruzhan’s Trap for packs if your Ascendancy path grants it.",
               "Watch mana after consecutive Commands and leave room to dodge before the next cast."
             ],
             "tree": [
@@ -2672,7 +2696,7 @@
             "next": "Preview the complete crit swap in GuyThatDies' planner. Change the weapon, support links and tree as a set.",
             "recipe": 2,
             "skills": [
-              "Use the dedicated Crit Swap variant for links and rotation. Keep your previous cold setup available during the change.",
+              "The shared core is Whirling Slash in set 1 and Twister in set 2. For the full critical-strike support setup and boss rotation, open the Crit Swap variant in GuyThatDies’ linked endgame guide. Keep your previous cold setup until the switch works.",
               "On a boss, compare actual kill windows with the old set. Use movement to recover rather than forcing a longer combo."
             ],
             "tree": [
@@ -2875,7 +2899,7 @@
       ],
       "veteran": [
         "Transmute + Aug. Keep two useful mods, then Regal + Exalt up to four with both rare-crafting Atlas nodes.",
-        "Reverse Transcription and Partial Translation each grant +1 max modifier and enable rare crafting when allocated. Defeat Ash on the way to those nodes.",
+        "Reverse Transcription requires completing the Burning Monolith. Partial Translation requires defeating the Precursor Fortress pinnacle boss. Either allocated passive enables rare tablet crafting. With one you can craft up to three explicit modifiers; with both, up to four.",
         "Alchemy a normal or magic spare; use the Reforging Bench for three matching, at least magic inputs. Remaining uses combine up to the cap."
       ],
       "caveat": "Use Alchemy on normal or magic Tablets once rare crafting is available. Reforge a bad rare Tablet with matching inputs. Check the in-game currency preview.",
@@ -2889,7 +2913,7 @@
     "types": [
       {
         "id": "irradiated",
-        "label": "Irradiated",
+        "label": "Irradiated Tablet",
         "tip": "Irradiation adds one monster level to the area. Use additional copies for their rolled affixes.",
         "source_ids": [
           "tablet-affixes",
@@ -2903,7 +2927,8 @@
             "roll": "30–40% increased Quantity of Waystones found in Map",
             "max_roll": "40%",
             "rank": "S-tier",
-            "note": "Sustains Waystones. For Tablet drops use Atlas passives that specify Tablet quantity."
+            "note": "This helps with Waystone drops. It does not increase Tablet quantity. Check separate Atlas passives for that target.",
+            "roll_de": "30–40% erhöhte Menge gefundener Wegsteine in der Karte"
           },
           {
             "id": "effectiveness",
@@ -2912,7 +2937,8 @@
             "roll": "Monsters have 10–15% increased Effectiveness",
             "max_roll": "15%",
             "rank": "S-tier",
-            "note": "More reward and XP per monster, with more monster Life. Compare clear speed."
+            "note": "More reward and XP per monster, with more monster Life. Compare clear speed.",
+            "roll_de": "Monster haben 10–15% erhöhte Schlagkraft"
           },
           {
             "id": "random-mods",
@@ -2921,7 +2947,8 @@
             "roll": "Map has 1–2 additional random Modifiers",
             "max_roll": "+2",
             "rank": "Jackpot",
-            "note": "Value roll for a tested build. Treat as a danger roll for an XP push."
+            "note": "Value roll for a tested build. Treat as a danger roll for an XP push.",
+            "roll_de": "Karte verfügt über 1–2 zufällige zusätzliche Modifikatoren"
           },
           {
             "id": "rare-monsters",
@@ -2930,7 +2957,8 @@
             "roll": "Map has 25–35% increased number of Rare Monsters",
             "max_roll": "35%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Karte hat 25–35% erhöhte Anzahl seltener Monster"
           },
           {
             "id": "magic-monsters",
@@ -2939,7 +2967,8 @@
             "roll": "Map has 30–40% increased Magic Monsters",
             "max_roll": "40%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Karte hat 30–40% erhöhte magische Monster"
           },
           {
             "id": "pack-size",
@@ -2948,7 +2977,8 @@
             "roll": "5–7% increased Pack Size in Map",
             "max_roll": "7%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "5–7% erhöhte Gruppengröße in der Karte"
           },
           {
             "id": "experience",
@@ -2957,14 +2987,15 @@
             "roll": "12–18% increased Experience gain in Map",
             "max_roll": "18%",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "12–18% erhöhter Erfahrungsgewinn in der Karte"
           }
         ]
       },
       {
         "id": "ritual",
-        "label": "Ritual",
-        "tip": "Stacking more than one Ritual Tablet can add an altar in 0.5.5 if the map has room.",
+        "label": "Ritual Tablet",
+        "tip": "Using more than one Ritual Tablet adds an extra altar if the map has room. In party play, accompanying players cannot reroll their own reward selection.",
         "source_ids": [
           "ritual"
         ],
@@ -2976,7 +3007,8 @@
             "roll": "Ritual Altars allow rerolling Favours 1–3 additional times",
             "max_roll": "+3",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "Gaben von Ritual-Altäre in der Karte können 1–3 zusätzliche Male gewürfelt werden"
           },
           {
             "id": "ritual-omens",
@@ -2985,7 +3017,8 @@
             "roll": "Ritual Favours have 35–70% increased chance to be Omens",
             "max_roll": "70%",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "Ritualgaben in der Karte haben 35–70% erhöhte Chance, Omen zu sein"
           },
           {
             "id": "ritual-tribute",
@@ -2994,7 +3027,8 @@
             "roll": "Rerolling Favours costs 20–30% reduced Tribute",
             "max_roll": "30%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Das Würfeln von Gaben bei Ritual-Altären in der Karte kostet 20–30% verringerten Tribut"
           },
           {
             "id": "ritual-more-tribute",
@@ -3003,13 +3037,14 @@
             "roll": "Sacrificed monsters grant 18–30% increased Ritual Tribute",
             "max_roll": "30%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Bei Ritual-Altären geopferte Monster in der Karte gewähren 18–30% erhöhten Tribut"
           }
         ]
       },
       {
         "id": "delirium",
-        "label": "Delirium",
+        "label": "Delirium Tablet",
         "tip": "Choose open layouts. Extra copies can intensify the fog; test your clear before stacking.",
         "source_ids": [
           "delirium",
@@ -3023,7 +3058,8 @@
             "roll": "Delirium Fog spawns 15–30% increased Fracturing Mirrors",
             "max_roll": "30%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Delirium-Nebel in der Karte beschwört 15–30% erhöhte zerbrechende Spiegel"
           },
           {
             "id": "delirium-splinters",
@@ -3032,7 +3068,8 @@
             "roll": "15–30% increased Stack size of Simulacrum Splinters found in Map",
             "max_roll": "30%",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "15–30% erhöhte Stapelgröße gefundener Simulacrum-Splitter in der Karte"
           },
           {
             "id": "delirium-bosses",
@@ -3041,14 +3078,15 @@
             "roll": "Delirium Encounters are 15–30% more likely to spawn Unique Bosses",
             "max_roll": "30%",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "Delirium-Begegnungen in der Karte beschwören mit 15–30% größerer Wahrscheinlichkeit einzigartige Bosse"
           }
         ]
       },
       {
         "id": "breach",
-        "label": "Breach",
-        "tip": "Stabilise the encounter to receive the extra rare wave.",
+        "label": "Breach Tablet",
+        "tip": "With the additional rare monsters modifier, stabilising the Breach spawns extra rare enemies. The pack size modifier serves a different purpose: larger Breach packs.",
         "source_ids": [
           "breach",
           "tablet-affixes"
@@ -3057,11 +3095,12 @@
           {
             "id": "breach-rares",
             "side": "Suffix",
-            "label": "Rare monsters on stabilisation",
+            "label": "Rare monsters after stabilisation",
             "roll": "Unstable Breaches spawn 1–2 additional Rare Monsters when stabilised",
             "max_roll": "+2",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "Instabile Risse in Karten erzeugen 1–2 zusätzliche seltene Monster, wenn sie stabilisiert werden"
           },
           {
             "id": "breach-vruun",
@@ -3070,7 +3109,8 @@
             "roll": "20–50% increased chance for Unstable Breaches to contain Vruun",
             "max_roll": "50%",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "Instabile Risse in der Karte haben 20–50% erhöhte Chance, Vruun, Marschall von Xesht zu enthalten"
           },
           {
             "id": "breach-packs",
@@ -3079,13 +3119,14 @@
             "roll": "5–15% increased Breach Pack Size",
             "max_roll": "15%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Risse in der Karte haben 5–15% erhöhte Gruppengröße"
           }
         ]
       },
       {
         "id": "abyss",
-        "label": "Abyss",
+        "label": "Abyss Tablet",
         "tip": "Target extra Abysses, Abyssal rares and crafting currency. Pit rewards and additional Abysses are separate modifiers.",
         "source_ids": [
           "abyss",
@@ -3099,7 +3140,8 @@
             "roll": "Map contains 1 additional Abyss",
             "max_roll": "+1",
             "rank": "Jackpot",
-            "note": "The verified roll adds an Abyss encounter. No separate +1 Pit roll was verified."
+            "note": "The verified roll adds an Abyss encounter. No separate +1 Pit roll was verified.",
+            "roll_de": "Karte enthält 1 zusätzliche Abgründe"
           },
           {
             "id": "abyss-rares",
@@ -3108,7 +3150,8 @@
             "roll": "2–3 additional Rare Monsters spawn from Abysses",
             "max_roll": "+3",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "2–3 zusätzliche seltene Monster werden von Abgründen in der Karte beschworen"
           },
           {
             "id": "abyss-currency",
@@ -3117,7 +3160,8 @@
             "roll": "20–30% increased chance for Desecrated Currency from Abysses",
             "max_roll": "30%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "20–30% erhöhte Chance auf entweihte Währung aus Abgründen in der Karte"
           },
           {
             "id": "abyss-pit-rewards",
@@ -3126,14 +3170,15 @@
             "roll": "Abyss Pits are twice as likely to have rewards",
             "max_roll": "2×",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "Abgrund-Gruben in der Karte haben mit doppelter Wahrscheinlichkeit Belohnungen"
           }
         ]
       },
       {
         "id": "overseer",
-        "label": "Overseer",
-        "tip": "Empowers Map Bosses. Use spirit-focused rolls on known layouts where you can control the possession target.",
+        "label": "Overseer Tablet",
+        "tip": "An Overseer Tablet empowers the map boss. Unlock its drops on the Atlas passive tree if you want to find it yourself. Try a familiar boss before adding rolls for extra Azmeri Spirits.",
         "source_ids": [
           "overseer",
           "tablet-affixes"
@@ -3146,7 +3191,8 @@
             "roll": "Map contains 1–2 additional Azmeri Spirits",
             "max_roll": "+2",
             "rank": "Niche",
-            "note": ""
+            "note": "",
+            "roll_de": "Karte enthält 1–2 zusätzliche Azmeri-Geister"
           },
           {
             "id": "overseer-xp",
@@ -3155,7 +3201,8 @@
             "roll": "40–80% increased Experience from Map Bosses",
             "max_roll": "80%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Kartenbosse gewähren 40–80% erhöhte Erfahrung"
           },
           {
             "id": "overseer-loot",
@@ -3164,14 +3211,15 @@
             "roll": "13–20% increased Quantity of Items dropped by Map Bosses",
             "max_roll": "20%",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "13–20% erhöhte Menge fallen gelassener Gegenstände von Kartenbossen"
           }
         ]
       },
       {
         "id": "expedition",
-        "label": "Expedition",
-        "tip": "Available in Standard and Forbidden Rites in 0.5.5. Additional copies add encounters and Remnants.",
+        "label": "Expedition Tablet",
+        "tip": "In 0.5.5 these tablets can drop in Standard and Forbidden Rites, but not in Runes of Aldur. One adds an Expedition. The second adds a Verisium Remnant and 35% density, the third adds an Expedition, and the fourth adds another Remnant and another 35% density.",
         "source_ids": [
           "tablet-affixes"
         ],
@@ -3183,7 +3231,8 @@
             "roll": "15–25% increased Quantity of Expedition Logbooks dropped by Runic Monsters",
             "max_roll": "25%",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "15–25% erhöhte Menge fallen gelassener Expedition-Logbücher von Runenmonstern in der Karte"
           },
           {
             "id": "expedition-markers",
@@ -3192,7 +3241,8 @@
             "roll": "15–25% increased number of Runic Monster Markers",
             "max_roll": "25%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Karte enthält 15–25% erhöhte Anzahl von Markierungen für Runenmonster"
           },
           {
             "id": "expedition-verisium",
@@ -3201,13 +3251,14 @@
             "roll": "30–40% Surpassing chance for an additional Verisium Remnant",
             "max_roll": "40%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "Expeditionen in der Karte haben +30–40% übertreffende Chance, ein zusätzliches Verisium-Relikt zu enthalten"
           }
         ]
       },
       {
         "id": "temple",
-        "label": "Temple",
+        "label": "Temple Tablet",
         "tip": "Use when you can complete the Vaal Beacon and want Temple progress.",
         "source_ids": [
           "tablet-affixes",
@@ -3221,7 +3272,8 @@
             "roll": "5–10% chance for an extra Crystal from Vaal Beacons",
             "max_roll": "10%",
             "rank": "Jackpot",
-            "note": ""
+            "note": "",
+            "roll_de": "5–10% Chance, einen zusätzlichen Kristall von Vaal-Leuchtfeuern in der Karte zu erhalten"
           },
           {
             "id": "temple-chests",
@@ -3230,14 +3282,15 @@
             "roll": "30–60% increased chance for Vaal Beacon Chests to be Rare",
             "max_roll": "60%",
             "rank": "S-tier",
-            "note": ""
+            "note": "",
+            "roll_de": "30–60% erhöhte Chance, dass Vaal-Leuchtfeuer-Truhen in der Karte selten sind"
           }
         ]
       },
       {
         "id": "basic",
-        "label": "Basic",
-        "tip": "Use the same generic value rolls for clear speed, Waystone sustain or XP.",
+        "label": "Basic Tablet",
+        "tip": "This tablet uses the shared pool of general modifiers. To find Basic Tablets yourself, unlock their drops on the Atlas passive tree.",
         "source_ids": [
           "tablet-affixes",
           "atlas-update"
@@ -3257,7 +3310,7 @@
         ],
         "veteran": [
           "3–4 Irradiated copies on a safe rare. Prioritise Waystones for the map pool and add Rares/Effectiveness only at stable clear speed.",
-          "For actual Tablet sustain: Mountain Mastery (+50% in Mountains) and Propagating Secrets (+8% per affecting Tablet). Route to eligible Cities for slot four.",
+          "For tablet drops, use Mountain Mastery on Mountains or Propagating Secrets for 8% per affecting tablet. Propagating Secrets requires the Burning Monolith and applies to level 75+ areas. For a fourth slot, look for a City map with Industrial Improvements active.",
           "Use Jado's Partial Translations for 0–40% increased explicit Tablet effect. Doryani's Disengaged Safeties supplies Irradiation for a mixed setup.",
           "Ocean and Island nodes can count as another biome. Check the node's secondary biome before choosing a route."
         ],
@@ -3280,7 +3333,7 @@
         "label": "Level 100 XP Push",
         "setup": "Use two to three compatible Tablets on a familiar layout. One source of Irradiation gives +1 monster level.",
         "basis": [
-          "Start with pack size and magic monsters. Compare how quickly you finish maps before adding tougher monsters.",
+          "Start with pack size and magic monsters. Compare experience gained divided by time played across several maps of similar layouts. Include deaths and time spent between maps when comparing two setups.",
           "Use a blue stone if recovery or boss fights feel unsafe. Move to a carefully rolled rare when you have enough defences."
         ],
         "veteran": [
@@ -3371,25 +3424,25 @@
       },
       {
         "id": "value",
-        "label": "Tablet Farming & Value",
-        "pattern": "\"quantity of waystones|effectiveness|additional random modifiers|rare monsters|pack size\"",
-        "tooltip": "Stash search for common Tablet value lines. Read the whole roll before using a Tablet.",
-        "pattern_de": "\"tafel\" \"menge.*wegsteine|erhöhte schlagkraft|zufällige zusätzliche|anzahl seltener monster|gruppengröße\""
+        "label": "Useful tablet modifiers",
+        "pattern": "\"tablet\" \"quantity of waystones|pack size|experience gain in map\"",
+        "tooltip": "Paste the search in your stash. It highlights lines for Waystone quantity, pack size or experience. Read the complete item before choosing it.",
+        "pattern_de": "\"tafel\" \"menge gefundener wegsteine|gruppengröße|erfahrungsgewinn in der karte\""
       },
       {
         "id": "jackpot",
-        "label": "Jackpot League Tablet",
-        "pattern": "\"tablet\" \"rerolling favours|be omens|fracturing mirrors|simulacrum splinters|additional abyss|azmeri spirits\"",
-        "tooltip": "The requested search includes additional pit. For the verified Abyss wording, also search additional abys or spawned from abysses.",
-        "pattern_de": "\"tafel\" \"gaben.*gewürfelt|chance, omen|zerbrechende spiegel|simulacrum-splitter|zusätzliche.*abgr|azmeri-geister\""
+        "label": "Target league rewards",
+        "pattern": "\"tablet\" \"chance to be omens|simulacrum splinters|1 additional abyss\"",
+        "tooltip": "Look for Ritual Omens, Simulacrum Splinters or one additional Abyss. A reward from an Abyss Pit is a different modifier.",
+        "pattern_de": "\"tafel\" \"chance, omen zu sein|simulacrum-splitter|1 zusätzliche[nr]? abgr\""
       },
       {
         "id": "danger",
-        "label": "Danger Waystone",
-        "pattern": "\"waystone\" \"damage as extra|damage penetrates|critical hit chance|less recovery rate|mana siphoning\"",
-        "tooltip": "Flags common danger wording. Read each Waystone manually, including Penetrate, maximum resistance and reduced recovery variants.",
+        "label": "Find dangerous Waystones",
+        "pattern": "\"waystone\" \"monster damage penetrates|maximum player resistances|less recovery rate of life|monsters have [0-9]+% increased critical hit chance\"",
+        "tooltip": "This search highlights four risks: monster elemental penetration, lower maximum player resistances, less recovery and increased monster critical hit chance. Read each stone for other dangerous combinations.",
         "danger": true,
-        "pattern_de": "\"wegstein\" \"schadens als extra|durchdringt|kritische trefferchance|wiederherstellungsrate|mana entziehenden\""
+        "pattern_de": "\"wegstein\" \"monsterschaden durchdringt|maximale[nr]? spielerwiderstände|weniger lebens-, mana-|monster haben [0-9]+% erhöhte kritische trefferchance\""
       }
     ]
   },
@@ -3406,22 +3459,23 @@
         "de": [
           "Prüfe Doryanis Angebot und ob in deiner Truhe ein niedrigerer Wegstein liegt.",
           "Spiele eine Karte mit verträglichen Modifikatoren und einem bekannten Boss. Mit einem niedrigeren passenden Tier baust du deinen Vorrat wieder auf.",
-          "Am Umschmiedetisch kannst du drei Wegsteine derselben Stufe zu einem höheren Tier kombinieren. Prüfe vor dem Tausch die Voraussetzungen und behalte einen sicheren Stein als Reserve."
+          "Am Umschmiedetisch kannst du drei unverdorbene Wegsteine derselben Stufe kombinieren. Ihre Seltenheit darf unterschiedlich sein. Sind es deine letzten spielbaren Steine, behalte einen als Reserve."
         ],
         "hybrid": [
           "Doryanis Shop und Stash prüfen. Einen sicheren Waystone als Reserve behalten.",
           "Bei knapper Recovery auf einen niedrigeren Tier mit sicheren Mods und einem bekannten Boss zurückgehen.",
-          "An der Reforging Bench drei Waystones desselben Tiers zu einem höheren Tier kombinieren. Vor dem Tausch die Voraussetzungen prüfen."
+          "An der Reforging Bench kannst du drei unverdorbene Waystones desselben Tiers kombinieren. Sie dürfen unterschiedliche Rarities haben. Sind das deine letzten spielbaren Steine, behalte einen als Reserve."
         ],
         "en": [
           "Check Doryani’s stock and look for a lower-tier Waystone in your stash.",
           "Run a map with manageable mods and a familiar boss. Drop a tier if that makes your next run more reliable.",
-          "Combine three same-tier Waystones at the Reforging Bench for a higher tier. Check the recipe requirements and keep one safe stone in reserve."
+          "Use ordinary Waystones for this recipe: three uncorrupted stones of the same tier can be combined at the Reforging Bench. Their rarities can differ. Keep one spare if these are your last playable stones."
         ]
       },
       "sources": [
         "waystones",
-        "site-doryani"
+        "site-doryani",
+        "reforge"
       ]
     },
     {
@@ -3709,37 +3763,27 @@
       "Retry": "Erneut versuchen",
       "Copy a search and paste it into the stash. Read the full modifier lines before opening a map.": "Füge die kopierte Suche im Truhenfach ein. Lies die vollständigen Modifikatoren, bevor du eine Karte öffnest.",
       "Resistance and filter milestones are gearing targets. Use your character sheet in town and account for the next map's modifiers.": "Die Werte für Widerstände und Beutefilter sind Richtwerte. Prüfe dein Charakterfenster in der Stadt und rechne die Modifikatoren deiner nächsten Karte ein.",
-      "Industrial Improvements grants a fourth slot on eligible City maps with three baseline slots.": "Auf passenden Stadtkarten ab Gebietsstufe 75 kann Industrielle Fortschritte nach dem Brennenden Monolithen ein viertes Tafelfach freischalten.",
       "Waystones T1–T5": "Wegsteine T1–T5",
       "Waystones T6–T10": "Wegsteine T6–T10",
       "Waystones T11–T15+": "Wegsteine T11–T15+",
       "75% each before tougher rolls": "Jeweils 75 % anstreben, bevor du härtere Modifikatoren spielst.",
-      "Aim for 0% or better": "0 % oder mehr anpeilen.",
       "75% each; spare resists for map penalties": "Jeweils 75 %, mit Reserve für Kartenabzüge.",
-      "Aim for +30% or better": "+30 % oder mehr anpeilen.",
       "75% each; audit penetration and −max res": "Jeweils 75 %. Durchdringung und gesenkte Maximalwerte einrechnen.",
-      "Aim for +50%; work toward 75%": "Mit +50 % beginnen und 75 % anstreben.",
       "Take Doryani's first Waystone and identify it. Use a blue (magic) stone with one or two manageable modifiers while gearing.": "Nimm Doryanis ersten Wegstein, identifiziere ihn und prüfe seine Modifikatoren. Ein magischer Wegstein mit ein bis zwei passenden Mods ist ein guter Start.",
       "Try a yellow (rare) stone once bosses and recovery feel steady. More modifiers give more tablet slots and fewer revives.": "Teste einen seltenen Wegstein, sobald du Kartenbosse zuverlässig besiegst und dich im Kampf ausreichend erholst. Mehr Mods öffnen mehr Tafelfächer und lassen weniger Wiederbelebungen übrig.",
       "Build a small reserve. If drops lag, buy from Doryani or reforge three matching Waystones of the same tier when it helps.": "Lege Wegsteine als Reserve zurück. Bei knappen Drops hilft Doryanis Angebot oder das Umschmieden dreier Wegsteine derselben Stufe.",
       "Run clean 1–2-mod blues until resists and boss time are stable. Bank a fallback tier.": "Magische Wegsteine mit 1–2 sicheren Mods spielen. Niedrigere Stufe als Reserve halten.",
       "Boss and move on. Skip dangerous league encounters and avoid stacking penetration with extra damage.": "Kartenboss besiegen und weiterziehen. Durchdringung mit zusätzlichem Schaden vermeiden.",
       "Clear the first useful Tower for reveal and its Tablet. Apply Tablets in the Map Device.": "Ersten Wegbereiter-Turm für Sicht und Tafel abschließen. Tafeln in der Kartenapparat einsetzen.",
-      "Reach The Ziggurat Refuge, speak to Doryani, and open your first map.": "Sprich in der Zikkurat-Zuflucht mit Doryani. Identifiziere deinen Wegstein und öffne eine verbundene Karte. Besiege ihren Kartenboss für den Abschluss.",
-      "Complete a Precursor Tower and activate its beacon to reveal nearby routes and start the Fortress progression.": "Schließe einen Wegbereiter-Turm ab und aktiviere das Wegbereiter-Leuchtfeuer. Folge der aufgedeckten Route in Richtung Festung.",
       "Start with a blue Waystone with one or two safe modifiers.": "Beginne mit einem magischen Wegstein mit ein bis zwei gut beherrschbaren Modifikatoren.",
       "Try a rare Waystone once you can kill bosses and recover comfortably.": "Wechsle zu seltenen Wegsteinen, wenn Kartenbosse und deine Erholung zuverlässig sind.",
       "Blue maps with 1–2 safe mods. Bank a fallback tier.": "Magische Karten mit 1–2 sicheren Mods. Niedrigere Stufe als Reserve halten.",
       "Penetration + Extra Damage.": "Durchdringung zusammen mit zusätzlichem Schaden.",
       "Missing weapon upgrade? Mid-tier +skill rolls open at iLvl 55.": "Waffe fehlt? Mittlere Stufen der Fertigkeitsmodifikatoren auf den aufgeführten Waffen beginnen bei Gegenstandsstufe 55.",
       "Run yellow stones when you can handle all their modifiers. Drop back to a safe blue if the boss takes too long or recovery struggles.": "Wähle seltene Wegsteine, deren Modifikatoren du beherrschst. Wechsle auf einen sicheren magischen Stein, falls Kartenbosse oder Erholung dich ausbremsen.",
-      "Check Tablet slots in the Map Device. Each placed tablet spends a use; empty eligible slots can add random content.": "Prüfe die Tafelfächer in der Kartenapparat. Jede eingelegte Tafel verbraucht eine Nutzung. Ein gültiges leeres Fach kann zufälligen Inhalt hinzufügen.",
       "Choose one mechanic for gear or currency and make progress on its Atlas tree as you travel.": "Wähle eine Mechanik für Ausrüstung oder Währung und schalte auf deiner Route passende Atlas-Passive frei.",
       "Run 3–5 safe mods once stable. Pick bossable layouts and protect net XP per hour.": "Bei stabiler Ausrüstung 3–5 sichere Mods. Schnelle Karten mit zuverlässigen Bossen für Netto-EP pro Stunde.",
-      "Finish the western/eastern Enigma branches before attempting the Arbiter of Ash. Allocate tablet nodes when available.": "Westliche und östliche Rätselkammer vor dem Richter der Asche abschließen. Passende Tafelknoten zuweisen.",
       "Plan Tower reveals for pathing. Add one source of density at a time and reroll bad mod combinations.": "Turmsicht zur Routenplanung nutzen. Dichte schrittweise erhöhen und riskante Mod-Kombinationen aussortieren.",
-      "Follow the Fortress gates to the Enigma Chambers for the Crisis Fragments.": "Im Brennenden Monolithen steckt bereits ein Questfragment. Besiege Graf Geonor in der westlichen Rätselkammer für das Uralte und Doryani in der östlichen Rätselkammer für das Verwitterte Krisenfragment. Sei bei beiden Siegen im Gebiet.",
-      "Defeat the Arbiter of Ash when ready. Check the tablet crafting nodes before investing in rare tablets.": "Setze beide Fragmente am Brennenden Monolithen ein. Besiege den Richter der Asche, untersuche das Vierte Edikt und sprich nach der Aufzugfahrt mit Doryani.",
       "Try 3–5 manageable modifiers when bosses feel easy.": "Spiele drei bis fünf sichere Mods, sobald dir die Kartenbosse leichtfallen.",
       "Use a blue Waystone if recovery or boss damage is holding you back.": "Nimm einen magischen Wegstein, wenn Erholung oder Bossschaden nicht ausreichen.",
       "Use 3–5 safe mods and familiar bosses.": "3–5 sichere Mods mit bekannten Kartenbossen.",
@@ -3751,13 +3795,10 @@
       "Push safe net XP/h on familiar layouts. Start with pack size or magic packs; add Effectiveness only with clear-speed headroom.": "Netto-EP pro Stunde auf bekannten Karten verbessern. Erst Gruppengröße oder magische Gruppen, dann bei stabilem Tempo Schlagkraft ergänzen.",
       "Use direct Map Device stacks. Leave bonus damage, penetration, reduced recovery and nasty crit combinations out of the XP batch.": "Tafeln direkt in der Kartenapparat kombinieren. Zusatzschaden, Durchdringung, weniger Erholung und gefährliche Krit-Kombinationen für EP-Farmen aussortieren.",
       "Keep jackpot rolls for a dedicated farm. Preserve clean backup stones and avoid testing a Pinnacle boss during an XP push.": "Jackpot-Mods separat farmen. Sichere Ersatzsteine behalten und schwere Endbosse außerhalb des EP-Farmens erproben.",
-      "After Ash, follow the Origin Tower and the Patriarch and Matriarch Halls into the Arbiter of Divinity quest.": "Reise nach dem Richter der Asche zum Turm des Ursprungs. Hole den Funken des Ursprungs in den Hallen des Patriarchen und die Wiege des Ursprungs in den Hallen der Matriarchin. Aktiviere nach den Bossen jeweils die Uralte Kuriosität.",
-      "In 0.5.5, the non-quest Origin Core kill completes the Fortress for its owner. The quest kill advances the quest.": "Kombiniere beide Teile am Reaktor zum Kern des Ursprungs. Nimm den Aufzug und setze ihn für den Richter der Göttlichkeit ein. Der Questsieg bringt die Quest weiter. Der reguläre Sieg mit dem Kern des Ursprungs schließt die Festung für den Kartenbesitzer ab.",
       "For XP, start with pack size or magic monsters on a familiar layout.": "Für Erfahrung zuerst Gruppengröße oder magische Gegner auf einer bekannten Karte wählen.",
       "Advance when you can clear the next tier safely and consistently.": "Steige auf, sobald du die nächste Stufe sicher und in gleichbleibender Zeit abschließt.",
       "Take familiar layouts with Pack Size or Magic Monsters.": "Bekannte Karten mit Gruppengröße oder magischen Monstern.",
       "T11 for +3 amulet bases · T14 iLvl 78 weapons · T15 Irradiated iLvl 81–82.": "T11 für +3-Amulettbasen, T14 für Waffen mit Gegenstandsstufe 78, bestrahltes T15 für Gegenstandsstufe 81–82.",
-      "Repeat fresh maps at the fastest safe tier that can drop the base you need. Check its item level before crafting. Reaching the threshold adds a possible roll.": "Farme bekannte Karten auf der niedrigsten für deine Basis geeigneten Stufe, wenn du dort schneller und sicherer abschließt. Prüfe die Gegenstandsstufe der Basis vor dem Herstellen.",
       "Normal and magic monsters drop at monster level. Rares add +1 iLvl and unique bosses add +2. Irradiation adds +1 monster level.": "Normale und magische Monster lassen Gegenstände auf ihrer Monsterstufe fallen. Seltene Monster geben +1, einzigartige Bosse +2. Bestrahlung erhöht die Monsterstufe um 1.",
       "+2 Minion on helmets, +2 Melee on gloves and +2 Spell on foci already unlock at iLvl 41. Mid-tier +skill rolls on the listed weapons unlock at iLvl 55.": "Bereits ab Gegenstandsstufe 41 sind +2 Kreaturenstufen auf Helmen, +2 Nahkampfstufen auf Handschuhen und +2 Zauberstufen auf Foki möglich. Mittlere Fertigkeitsstufen auf den genannten Waffen beginnen bei Gegenstandsstufe 55.",
       "36–40% Fire, Cold or Lightning Resistance on an eligible single-resistance suffix.": "36–40 % Feuer-, Kälte- oder Blitzwiderstand auf einem passenden Einzelwiderstands-Suffix.",
@@ -4049,7 +4090,6 @@
       "If both mods are useful, use a Regal when rare Tablet crafting is unlocked. Exalt until the permitted cap.": "Sind beide Mods gut und ist seltenes Crafting freigeschaltet, nutze eine Hoheitliche Sphäre. Mit einer Erhabenen Sphäre kannst du bis zum erlaubten Limit ergänzen.",
       "Alchemy can reroll an eligible magic Tablet into a rare, or upgrade a normal one. Three matching unwanted tablets can be reforged.": "Die Sphäre der Alchemie kann eine zulässige normale oder magische Tafel selten machen. Drei gleiche Tafeln von mindestens magischer Seltenheit kannst du umschmieden.",
       "Transmute + Aug. Keep two useful mods, then Regal + Exalt up to four with both rare-crafting Atlas nodes.": "Umwandlungs- und Aufwertungssphäre für zwei gute Mods. Danach Hoheitliche und Erhabene Sphäre bis zum Limit einsetzen.",
-      "Reverse Transcription and Partial Translation each grant +1 max modifier and enable rare crafting when allocated. Defeat Ash on the way to those nodes.": "Umgekehrte Transkription nach dem Brennenden Monolithen, Teilübersetzung nach dem Endboss der Wegbereiter-Festung. Je Knoten +1 Mod und seltene Herstellung. Zusammen bis zu vier explizite Mods.",
       "Alchemy a normal or magic spare; use the Reforging Bench for three matching, at least magic inputs. Remaining uses combine up to the cap.": "Alchemie auf normaler oder magischer Ersatztafel. An der Umschmiedebank drei gleiche Tafeln, mindestens magisch. Restnutzungen addieren sich bis zum Limit.",
       "Use Alchemy on normal or magic Tablets once rare crafting is available. Reforge a bad rare Tablet with matching inputs. Check the in-game currency preview.": "Prüfe vor dem Verbrauch die Währungsvorschau. Für eine unbrauchbare seltene Tafel kommt das Umschmieden mit passenden Tafeln infrage.",
       "Rankings are recommendations by farming goal. Pool, roll range and mod side are patch facts.": "Die Reihenfolge sind Empfehlungen je Farmziel. Pool, Wertebereich und Affix-Seite entsprechen dem Patchstand.",
@@ -4058,12 +4098,10 @@
       "Start with a safe Waystone and one available tablet slot. The Cartographer roll helps replace the Waystone you spend.": "Starte mit einem sicheren Wegstein und einem freien Tafelfach. Ein Mod für gefundene Wegsteine hilft, den verbrauchten Stein zu ersetzen.",
       "Use Mountain Mastery and Propagating Secrets for Tablet drops. Use more slots once you can clear the additional difficulty.": "Nutze Atlas-Passive für gefundene Tafeln. Belege mehr Fächer, sobald du die zusätzliche Schwierigkeit beherrschst.",
       "3–4 Irradiated copies on a safe rare. Prioritise Waystones for the map pool and add Rares/Effectiveness only at stable clear speed.": "3–4 Bestrahlte Tafeln auf sicherem seltenem Wegstein. Für Nachschub Menge der Wegsteine priorisieren, dann seltene Gegner oder Schlagkraft ergänzen.",
-      "For actual Tablet sustain: Mountain Mastery (+50% in Mountains) and Propagating Secrets (+8% per affecting Tablet). Route to eligible Cities for slot four.": "Für Tafel-Nachschub Berg-Biom oder Geheimnisse der Vermehrung nutzen. Bei passenden Stadtkarten den vierten Platz einplanen.",
       "Use Jado's Partial Translations for 0–40% increased explicit Tablet effect. Doryani's Disengaged Safeties supplies Irradiation for a mixed setup.": "Jados Option kann bis zu 40 % Effekt expliziter Tafel-Mods hinzufügen. Doryanis Option für Bestrahlung ermöglicht gemischte Tafel-Sets.",
       "Ocean and Island nodes can count as another biome. Check the node's secondary biome before choosing a route.": "Ozean- und Inselknoten können zusätzlich zu einem anderen Biom zählen. Prüfe das zweite Biom bei der Routenwahl.",
       "Level 100 XP Push": "Erfahrung bis Stufe 100",
       "Use two to three compatible Tablets on a familiar layout. One source of Irradiation gives +1 monster level.": "Nutze zwei bis drei passende Tafeln auf einer bekannten Karte. Eine Quelle für Bestrahlung gibt +1 Monsterstufe.",
-      "Start with pack size and magic monsters. Compare how quickly you finish maps before adding tougher monsters.": "Beginne mit Gruppengröße und magischen Monstern. Vergleiche dein Tempo, bevor du schwierigere Mods hinzufügst.",
       "Use a blue stone if recovery or boss fights feel unsafe. Move to a carefully rolled rare when you have enough defences.": "Wenn Erholung oder Bosse unsicher sind, nutze einen magischen Wegstein. Wechsle zu seltenen, sobald deine Verteidigung reicht.",
       "Prioritise pack size, magic monsters and XP. Add Effectiveness only if kill time and net XP/hour still improve.": "Gruppengröße, magische Monster und Erfahrung priorisieren. Schlagkraft erst ergänzen, wenn Netto-EP pro Stunde weiter steigen.",
       "Screen every Waystone for stacked damage, penetration, crit and recovery penalties. Leave additional random modifiers for farming.": "Zusatzschaden, Durchdringung, Krit und verringerte Erholung prüfen. Zufällige Zusatzmods für separate Farmrunden zurücklegen.",
@@ -4076,22 +4114,16 @@
       "Match Delirium mirrors to your route; save stacked fog and empowered bosses for dedicated runs.": "Delirium-Spiegel auf deine Route abstimmen. Dichten Nebel und verstärkte Bosse auf separaten Karten spielen.",
       "Breach stabilisation is +1–2 rares in 0.5.5f. Abyss of Champions is +2–3 rares. Use eligible Overseer rolls for Azmeri Spirits.": "Stand 0.5.5f: Instabile Risse können nach Stabilisierung 1–2 weitere seltene Monster erzeugen. Abgründe der Champions 2–3. Für Azmeri-Geister geeignete Aufseher-Mods nutzen.",
       "Irradiation adds one monster level to the area. Use additional copies for their rolled affixes.": "Bestrahlung erhöht die Monsterstufe um 1. Weitere Exemplare lohnen sich für ihre gewürfelten Affixe.",
-      "Stacking more than one Ritual Tablet can add an altar in 0.5.5 if the map has room.": "In 0.5.5 kann ein weiteres Exemplar einen zusätzlichen Altar hinzufügen, wenn die Karte Platz hat.",
       "Choose open layouts. Extra copies can intensify the fog; test your clear before stacking.": "Wähle offene Gebiete. Mehr Tafeln können den Nebel verstärken. Prüfe dein Tempo zuerst.",
       "Breach": "Riss",
-      "Stabilise the encounter to receive the extra rare wave.": "Stabilisiere den Riss, damit die zusätzlichen seltenen Gegner erscheinen.",
       "Abyss": "Abgrund",
       "Target extra Abysses, Abyssal rares and crafting currency. Pit rewards and additional Abysses are separate modifiers.": "Zusätzliche Abgründe, seltene Gegner und entweihte Währung farmen. Belohnungen von Gruben und zusätzliche Abgründe sind verschiedene Mods.",
       "Overseer": "Aufseher",
-      "Empowers Map Bosses. Use spirit-focused rolls on known layouts where you can control the possession target.": "Verstärkt Kartenbosse. Nutze Geister-Mods auf bekannten Karten, auf denen du das Ziel der Besessenheit gezielt wählen kannst.",
-      "Available in Standard and Forbidden Rites in 0.5.5. Additional copies add encounters and Remnants.": "In 0.5.5 in Standard und Forbidden Rites verfügbar. Weitere Tafeln bringen mehr Begegnungen und Überreste.",
       "Temple": "Tempel",
       "Use when you can complete the Vaal Beacon and want Temple progress.": "Nutze die Tafel für Tempelfortschritt, wenn du das Vaal-Leuchtfeuer zuverlässig abschließt.",
       "Basic": "Basis",
-      "Use the same generic value rolls for clear speed, Waystone sustain or XP.": "Wähle allgemeine Mods nach Kartentempo, Wegstein-Nachschub oder Erfahrung.",
       "Waystones found": "Gefundene Wegsteine",
       "30–40% increased Quantity of Waystones found in Map": "30–40 % erhöhte Menge gefundener Wegsteine in der Karte",
-      "Sustains Waystones. For Tablet drops use Atlas passives that specify Tablet quantity.": "Füllt den Wegsteinvorrat. Tafeln farmst du mit Atlas-Passiven für gefundene Tafeln.",
       "Monster effectiveness": "Schlagkraft der Monster",
       "Monsters have 10–15% increased Effectiveness": "Monster haben 10–15 % erhöhte Schlagkraft",
       "More reward and XP per monster, with more monster Life. Compare clear speed.": "Mehr Ertrag und Erfahrung pro Monster bei mehr Monsterleben. Vergleiche dein Kartentempo.",
@@ -4120,7 +4152,6 @@
       "15–30% increased Stack size of Simulacrum Splinters found in Map": "15–30 % erhöhte Stapelgröße gefundener Simulacrum-Splitter in der Karte.",
       "Delirium unique bosses": "Einzigartige Delirium-Bosse",
       "Delirium Encounters are 15–30% more likely to spawn Unique Bosses": "15–30 % erhöhte Chance auf einzigartige Bosse in Delirium-Begegnungen.",
-      "Rare monsters on stabilisation": "Seltene Monster bei Stabilisierung",
       "Unstable Breaches spawn 1–2 additional Rare Monsters when stabilised": "Instabile Risse erzeugen nach Stabilisierung 1–2 zusätzliche seltene Monster.",
       "Vruun access": "Zugang zu Vruun",
       "20–50% increased chance for Unstable Breaches to contain Vruun": "20–50 % erhöhte Chance, dass instabile Risse Vruun enthalten.",
@@ -4154,12 +4185,6 @@
       "S-tier": "Sehr stark",
       "A-tier": "Stark",
       "B-tier": "Situativ",
-      "Tablet Farming & Value": "Tafeln · allgemeine Farm-Mods",
-      "Stash search for common Tablet value lines. Read the whole roll before using a Tablet.": "Breite Suche nach Nachschub, Monsterdichte und zufälligen Zusatzmods.",
-      "Jackpot League Tablet": "Liga-Tafeln · seltene Belohnungen",
-      "The requested search includes additional pit. For the verified Abyss wording, also search additional abys or spawned from abysses.": "Hebt ausgewählte Ritual-, Delirium-, Abgrund- und Geister-Mods hervor.",
-      "Danger Waystone": "Wegsteine · gefährliche Mods",
-      "Flags common danger wording. Read each Waystone manually, including Penetrate, maximum resistance and reduced recovery variants.": "Findet häufige Gefahren wie zusätzlichen Schaden, Durchdringung, kritische Treffer oder schwächere Erholung. Prüfe alle Mods von Hand.",
       "Waystone sustain": "Wegstein-Nachschub",
       "Find Irradiated Tablets that increase the quantity of Waystones found in a map.": "Finde Bestrahlte Tafeln mit erhöhter Menge gefundener Wegsteine.",
       "Experience": "Erfahrung",
@@ -4169,7 +4194,49 @@
       "Abyssal Depths": "Abgründige Tiefen",
       "Find Abyss Tablets that increase the chance for an Abyss to lead to the Abyssal Depths.": "Finde Abgrund-Tafeln mit erhöhter Chance auf Abgründige Tiefen.",
       "Breach Pack Size": "Riss-Gruppengröße",
-      "Find Breach Tablets whose modifier adds larger monster packs inside Breaches.": "Finde Riss-Tafeln mit erhöhter Gruppengröße innerhalb der Risse."
+      "Find Breach Tablets whose modifier adds larger monster packs inside Breaches.": "Finde Riss-Tafeln mit erhöhter Gruppengröße innerhalb der Risse.",
+      "Industrial Improvements grants an additional tablet slot on City maps in level 75+ areas. The passive requires completing the Burning Monolith. With three regular slots you can use four tablets.": "Industrielle Fortschritte gewährt auf Stadtkarten ab Gebietsstufe 75 einen zusätzlichen Tafelplatz. Die Atlasfertigkeit setzt den Abschluss des Brennenden Monolithen voraus. Sind drei reguläre Plätze frei, kannst du vier Tafeln einsetzen.",
+      "Pick the lowest safe tier that can drop your target base at the required item level. For example, a tier 15 map is area level 79. Irradiation adds one monster level and a unique boss drop adds two item levels, so the boss can drop item level 82 boots. That unlocks the 35% movement speed roll on eligible boots without guaranteeing it.": "Wähle eine Kartenstufe, die du sicher spielen kannst und auf der die benötigte Basis mit der passenden Gegenstandsstufe fallen kann. Beispiel: Eine Karte der Stufe 15 hat Gebietsstufe 79. Bestrahlung erhöht die Monsterstufe um eins, der Fund eines einzigartigen Bosses die Gegenstandsstufe um zwei. So kann der Boss Stiefel der Gegenstandsstufe 82 fallen lassen. Auf geeigneten Stiefeln sind damit 35 % Bewegungsgeschwindigkeit möglich.",
+      "Aim for 0% or better as a gearing target.": "Peile als Ausrüstungsziel mindestens 0 % an.",
+      "In the Ziggurat Refuge, ask Doryani for a Waystone. Identify it, read the modifiers and open a connected map. Defeat its boss to complete it.": "Sprich in der Zikkurat-Zuflucht mit Doryani. Identifiziere deinen Wegstein, lies seine Modifikatoren und öffne eine verbundene Karte. Besiege den Kartenboss, um sie abzuschließen.",
+      "Reach your first Precursor Tower and activate its beacon. Follow the newly revealed route towards the Precursor Fortress.": "Erreiche deinen ersten Wegbereiter-Turm und aktiviere sein Leuchtfeuer. Folge der aufgedeckten Route zur Festung der Wegbereiter.",
+      "Aim for +30% or better as a gearing target.": "Peile als Ausrüstungsziel mindestens +30 % an.",
+      "Check the tablet slots in your Map Device. Each placed tablet normally spends a use when the map opens. Each empty slot contributes to random league content, including locked slots.": "Prüfe die Tafelplätze im Kartengerät. Eine eingelegte Tafel verbraucht beim Öffnen der Karte normalerweise eine Nutzung. Jeder leere Platz trägt zu zufälligen Liga-Begegnungen bei, auch ein gesperrter.",
+      "For the two fragments, be present for the bosses in both Enigma Chambers. Spend Atlas points on tablet crafting once the relevant node is unlocked.": "Für die beiden Fragmente musst du beim Tod der Bosse in beiden Rätselkammern anwesend sein. Sobald die Herstellung seltener Tafeln im Atlasbaum zugänglich ist, kannst du dort Punkte vergeben.",
+      "At the Burning Monolith, one of the three quest fragments is already in the gate. Follow the western and eastern paths to the two Enigma Chambers. Defeat Count Geonor in the Western Enigma Chamber for the Ancient Crisis Fragment and Doryani in the Eastern Enigma Chamber for the Weathered Crisis Fragment. Be present for each kill to collect your fragments, including in a party.": "Am Brennenden Monolithen steckt eines der drei Aufgabenfragmente bereits im Tor. Folge den Wegen nach Westen und Osten zu den beiden Rätselkammern. Besiege Graf Geonor in der Westlichen Rätselkammer für das Uralte Krisenfragment und Doryani in der Östlichen Rätselkammer für das Verwitterte Krisenfragment. Du musst bei beiden Siegen anwesend sein, um deine Fragmente aufheben zu können. Das gilt auch in der Gruppe.",
+      "Place both fragments in the gate at the Burning Monolith. Defeat the Arbiter of Ash, inspect the Fourth Edict, take the lift and speak to Doryani.": "Setze beide Fragmente in das Tor am Brennenden Monolithen ein. Besiege den Richter der Asche, untersuche das Vierte Edikt und sprich nach der Aufzugfahrt mit Doryani.",
+      "Aim for +50% while gearing and work towards 75%.": "Peile beim Ausrüsten +50 % an und arbeite auf 75 % hin.",
+      "After the Arbiter of Ash, follow Doryani's quest to the Origin Tower. Be present for both boss kills and activate the Ancient Curiosity after each one to collect the Origin Spark in the Patriarch Halls and the Origin Cradle in the Matriarch Halls.": "Folge nach dem Richter der Asche Doryanis Aufgabe zum Turm des Ursprungs. Sei bei beiden Bosskämpfen bis zum Sieg anwesend und aktiviere danach jeweils die Uralte Kuriosität. Den Funken des Ursprungs findest du in den Hallen des Patriarchen, die Wiege des Ursprungs in den Hallen der Matriarchin.",
+      "Combine the two pieces at the reactor at the foot of the tower. Take the Origin Core up the lift and use it at the summit to fight the Arbiter of Divinity. The quest version advances the story and does not complete a Fortress section. A kill with a non-quest Origin Core completes the entire Precursor Fortress for the map owner.": "Kombiniere beide Teile am Reaktor am Fuß des Turms. Fahre mit dem Kern des Ursprungs nach oben und setze ihn auf der Spitze ein, um den Richter der Göttlichkeit zu bekämpfen. Mit dem Aufgabenkern setzt du die Geschichte fort. Ein Festungsabschnitt wird dadurch nicht abgeschlossen. Besiegst du den Richter mit einem gewöhnlichen Kern des Ursprungs, zählt die gesamte Festung für den Kartenbesitzer als abgeschlossen.",
+      "Irradiated Tablet": "Bestrahlte Tafel",
+      "This helps with Waystone drops. It does not increase Tablet quantity. Check separate Atlas passives for that target.": "Dieser Wert hilft beim Nachschub an Wegsteinen. Für mehr Tafelfunde brauchst du eigene Atlasfertigkeiten, die deren Menge erhöhen.",
+      "Ritual Tablet": "Ritual-Tafel",
+      "Using more than one Ritual Tablet adds an extra altar if the map has room. In party play, accompanying players cannot reroll their own reward selection.": "Mehr als eine Ritual-Tafel fügt einen weiteren Altar hinzu, wenn die Karte Platz hat. In einer Gruppe können Mitspieler ihre eigene Belohnungsauswahl nicht neu würfeln.",
+      "Delirium Tablet": "Delirium-Tafel",
+      "Breach Tablet": "Riss-Tafel",
+      "With the additional rare monsters modifier, stabilising the Breach spawns extra rare enemies. The pack size modifier serves a different purpose: larger Breach packs.": "Hast du den Modifikator für zusätzliche seltene Monster, erscheinen diese beim Stabilisieren des Risses. Erhöhte Gruppengröße vergrößert dagegen die Monstergruppen im Riss.",
+      "Rare monsters after stabilisation": "Seltene Monster nach der Stabilisierung",
+      "Abyss Tablet": "Abgrund-Tafel",
+      "Overseer Tablet": "Aufseher-Tafel",
+      "An Overseer Tablet empowers the map boss. Unlock its drops on the Atlas passive tree if you want to find it yourself. Try a familiar boss before adding rolls for extra Azmeri Spirits.": "Die Aufseher-Tafel verstärkt den Kartenboss. Für eigene Funde musst du die Tafel im Atlasbaum freischalten. Teste den Kampf an einem bekannten Boss, bevor du zusätzliche Azmeri-Geister einplanst.",
+      "Expedition Tablet": "Expedition-Tafel",
+      "In 0.5.5 these tablets can drop in Standard and Forbidden Rites, but not in Runes of Aldur. One adds an Expedition. The second adds a Verisium Remnant and 35% density, the third adds an Expedition, and the fourth adds another Remnant and another 35% density.": "In 0.5.5 können diese Tafeln in Standard und Verbotene Riten fallen. In Runen von Aldur fallen sie nicht. Eine Tafel fügt eine Expedition hinzu. Die zweite bringt ein Verisium-Relikt und 35 % mehr Expeditionsdichte, die dritte eine weitere Expedition und die vierte ein weiteres Relikt sowie weitere 35 % Dichte.",
+      "Temple Tablet": "Tempel-Tafel",
+      "Basic Tablet": "Basistafel",
+      "This tablet uses the shared pool of general modifiers. To find Basic Tablets yourself, unlock their drops on the Atlas passive tree.": "Diese Tafel nutzt den gemeinsamen Vorrat allgemeiner Modifikatoren. Damit Basistafeln bei dir fallen können, musst du ihren Fund im Atlasbaum freischalten.",
+      "For tablet drops, use Mountain Mastery on Mountains or Propagating Secrets for 8% per affecting tablet. Propagating Secrets requires the Burning Monolith and applies to level 75+ areas. For a fourth slot, look for a City map with Industrial Improvements active.": "Für mehr Tafelfunde nutze die Gebirgsmeisterschaft in Gebirgen oder die Atlasfertigkeit für 8 % mehr Tafeln je aktiver Tafel. Letztere setzt den Brennenden Monolithen voraus und wirkt ab Gebietsstufe 75. Den vierten Platz erhältst du auf geeigneten Stadtkarten mit Industrielle Fortschritte.",
+      "Start with pack size and magic monsters. Compare experience gained divided by time played across several maps of similar layouts. Include deaths and time spent between maps when comparing two setups.": "Beginne mit Gruppengröße und magischen Monstern. Vergleiche für mehrere ähnliche Karten den tatsächlichen Erfahrungsgewinn pro Spielstunde. Zähle für beide Varianten auch Tode und die Zeit zwischen den Karten mit.",
+      "Reverse Transcription requires completing the Burning Monolith. Partial Translation requires defeating the Precursor Fortress pinnacle boss. Either allocated passive enables rare tablet crafting. With one you can craft up to three explicit modifiers; with both, up to four.": "Umgekehrte Transkription setzt den Abschluss des Brennenden Monolithen voraus. Teilübersetzung setzt den Sieg über den Endboss der Wegbereiter-Festung voraus. Jede der beiden zugewiesenen Fertigkeiten erlaubt die Herstellung seltener Tafeln. Mit einer sind bis zu drei explizite Modifikatoren möglich, mit beiden bis zu vier.",
+      "Useful tablet modifiers": "Nützliche Tafelmodifikatoren",
+      "Paste the search in your stash. It highlights lines for Waystone quantity, pack size or experience. Read the complete item before choosing it.": "Füge den Suchtext in deiner Truhe ein. Er findet Tafeln mit Wegsteinmenge, Gruppengröße oder Erfahrungsgewinn. Lies vor der Auswahl den ganzen Gegenstand.",
+      "Target league rewards": "Gezielt Liga-Belohnungen suchen",
+      "Look for Ritual Omens, Simulacrum Splinters or one additional Abyss. A reward from an Abyss Pit is a different modifier.": "Suche nach Omen als Ritualgaben, Simulacrum-Splittern oder einem zusätzlichen Abgrund. Eine höhere Belohnungschance aus Gruben ist ein eigener Modifikator.",
+      "Find dangerous Waystones": "Gefährliche Wegsteine finden",
+      "This search highlights four risks: monster elemental penetration, lower maximum player resistances, less recovery and increased monster critical hit chance. Read each stone for other dangerous combinations.": "Dieser Suchtext markiert vier Risiken. Er findet Elementardurchdringung von Monstern, gesenkte maximale Spielerwiderstände, weniger Wiederherstellung und erhöhte kritische Trefferchance von Monstern. Lies jeden Wegstein auf weitere gefährliche Kombinationen.",
+      "Check Spirit and Minion Skill Levels on the sceptre. Count the types of Reviving Minion still summoned for Muster in each weapon set.": "Prüfe Willenskraft und Stufen der Kreaturenfertigkeiten am Zepter. Zähle in beiden Waffensets die für Zusammentreiben beschworenen Arten wiederbelebender Kreaturen.",
+      "Bidding improves Command cooldown recovery. For Muster, count distinct types of summoned Reviving Minion.": "Auf Geheiß verkürzt die Abklingzeit der Befehle. Für Zusammentreiben zählen nur verschiedene beschworene Arten wiederbelebender Kreaturen.",
+      "Once you allocate Kelari’s Deception, use the Command while the boss recovers. Use Ruzhan’s Trap for packs if your Ascendancy path grants it.": "Hast du den Aszendenzpunkt Kelaris Täuschung vergeben, nutze den Befehl in einer Erholungsphase des Bosses. Für Gegnergruppen kannst du Ruzhans Falle verwenden, wenn dein Aszendenzpfad sie freischaltet.",
+      "The shared core is Whirling Slash in set 1 and Twister in set 2. For the full critical-strike support setup and boss rotation, open the Crit Swap variant in GuyThatDies’ linked endgame guide. Keep your previous cold setup until the switch works.": "Der gemeinsame Kern ist Wirbelnder Schlag in Set 1 und Wirbelwind in Set 2. Die vollständigen Unterstützungen für kritische Treffer und die Abfolge beim Boss stehen in der Variante „Crit Swap“ in GuyThatDies’ verlinktem Endspielguide. Behalte die bisherige Kälteausrüstung bis zum erfolgreichen Wechsel."
     },
     "hybrid": {
       "Back": "Zurück",
@@ -4216,34 +4283,24 @@
       "Retry": "Erneut versuchen",
       "Copy a search and paste it into the stash. Read the full modifier lines before opening a map.": "Füge die kopierte Suche im Stash ein. Lies alle Mods, bevor du eine Map öffnest.",
       "Resistance and filter milestones are gearing targets. Use your character sheet in town and account for the next map's modifiers.": "Die Werte für Widerstände und Beutefilter sind Richtwerte. Prüfe dein Charakterfenster in der Stadt und rechne die Modifikatoren deiner nächsten Karte ein.",
-      "Industrial Improvements grants a fourth slot on eligible City maps with three baseline slots.": "Auf passenden City-Maps ab Area Level 75 kann Industrial Improvements nach dem Burning Monolith einen vierten Tablet-Slot freischalten.",
       "75% each before tougher rolls": "Jeweils 75 % anstreben, bevor du härtere Modifikatoren spielst.",
-      "Aim for 0% or better": "0 % oder mehr anpeilen.",
       "75% each; spare resists for map penalties": "Jeweils 75 %, mit Reserve für Kartenabzüge.",
-      "Aim for +30% or better": "+30 % oder mehr anpeilen.",
       "75% each; audit penetration and −max res": "Jeweils 75 %. Durchdringung und gesenkte Maximalwerte einrechnen.",
-      "Aim for +50%; work toward 75%": "Mit +50 % beginnen und 75 % anstreben.",
       "Take Doryani's first Waystone and identify it. Use a blue (magic) stone with one or two manageable modifiers while gearing.": "Nimm Doryanis ersten Waystone, identifiziere ihn und prüfe seine Modifikatoren. Ein magischer Waystone mit ein bis zwei passenden Mods ist ein guter Start.",
       "Try a yellow (rare) stone once bosses and recovery feel steady. More modifiers give more tablet slots and fewer revives.": "Teste einen seltenen Waystone, sobald du Map Bosses zuverlässig besiegst und dich im Kampf ausreichend erholst. Mehr Mods öffnen mehr Tafelfächer und lassen weniger Wiederbelebungen übrig.",
       "Build a small reserve. If drops lag, buy from Doryani or reforge three matching Waystones of the same tier when it helps.": "Lege Waystones als Reserve zurück. Bei knappen Drops hilft Doryanis Angebot oder das Umschmieden dreier Waystones derselben Stufe.",
       "Run clean 1–2-mod blues until resists and boss time are stable. Bank a fallback tier.": "Magische Waystones mit 1–2 sicheren Mods spielen. Niedrigere Stufe als Reserve halten.",
       "Boss and move on. Skip dangerous league encounters and avoid stacking penetration with extra damage.": "Map Boss besiegen und weiterziehen. Durchdringung mit zusätzlichem Schaden vermeiden.",
       "Clear the first useful Tower for reveal and its Tablet. Apply Tablets in the Map Device.": "Ersten Precursor Tower für Sicht und Tablet abschließen. Tablets in der Map Device einsetzen.",
-      "Reach The Ziggurat Refuge, speak to Doryani, and open your first map.": "Sprich in der Ziggurat Refuge mit Doryani. Identifiziere deinen Waystone und öffne eine verbundene Karte. Besiege ihren Map Boss für den Abschluss.",
-      "Complete a Precursor Tower and activate its beacon to reveal nearby routes and start the Fortress progression.": "Schließe einen Precursor Tower ab und aktiviere das Precursor Beacon. Folge der aufgedeckten Route in Richtung Festung.",
       "Start with a blue Waystone with one or two safe modifiers.": "Beginne mit einem magischen Waystone mit ein bis zwei gut beherrschbaren Modifikatoren.",
       "Try a rare Waystone once you can kill bosses and recover comfortably.": "Wechsle zu seltenen Waystones, wenn Map Bosses und deine Erholung zuverlässig sind.",
       "Blue maps with 1–2 safe mods. Bank a fallback tier.": "Magische Karten mit 1–2 sicheren Mods. Niedrigere Stufe als Reserve halten.",
       "Penetration + Extra Damage.": "Penetration zusammen mit Extra Damage.",
       "Missing weapon upgrade? Mid-tier +skill rolls open at iLvl 55.": "Waffe fehlt? Mittlere Stufen der Fertigkeitsmodifikatoren auf den aufgeführten Waffen beginnen bei Itemlevel 55.",
       "Run yellow stones when you can handle all their modifiers. Drop back to a safe blue if the boss takes too long or recovery struggles.": "Wähle seltene Waystones, deren Modifikatoren du beherrschst. Wechsle auf einen sicheren magischen Stein, falls Map Bosses oder Erholung dich ausbremsen.",
-      "Check Tablet slots in the Map Device. Each placed tablet spends a use; empty eligible slots can add random content.": "Prüfe die Tafelfächer in der Map Device. Jede eingelegte Tablet verbraucht eine Nutzung. Ein gültiges leeres Fach kann zufälligen Inhalt hinzufügen.",
       "Choose one mechanic for gear or currency and make progress on its Atlas tree as you travel.": "Wähle eine Mechanik für Ausrüstung oder Währung und schalte auf deiner Route passende Atlas-Passive frei.",
       "Run 3–5 safe mods once stable. Pick bossable layouts and protect net XP per hour.": "Bei stabiler Ausrüstung 3–5 sichere Mods. Schnelle Karten mit zuverlässigen Bossen für Netto-EP pro Stunde.",
-      "Finish the western/eastern Enigma branches before attempting the Arbiter of Ash. Allocate tablet nodes when available.": "Westliche und östliche Rätselkammer vor dem Arbiter of Ash abschließen. Passende Tafelknoten zuweisen.",
       "Plan Tower reveals for pathing. Add one source of density at a time and reroll bad mod combinations.": "Turmsicht zur Routenplanung nutzen. Dichte schrittweise erhöhen und riskante Mod-Kombinationen aussortieren.",
-      "Follow the Fortress gates to the Enigma Chambers for the Crisis Fragments.": "Im Burning Monolith steckt bereits ein Questfragment. Besiege Graf Geonor in der Western Enigma Chamber für das Uralte und Doryani in der Eastern Enigma Chamber für das Verwitterte Krisenfragment. Sei bei beiden Siegen im Gebiet.",
-      "Defeat the Arbiter of Ash when ready. Check the tablet crafting nodes before investing in rare tablets.": "Setze beide Fragmente am Burning Monolith ein. Besiege den Arbiter of Ash, untersuche das Vierte Edikt und sprich nach der Aufzugfahrt mit Doryani.",
       "Try 3–5 manageable modifiers when bosses feel easy.": "Spiele drei bis fünf sichere Mods, sobald dir die Map Bosses leichtfallen.",
       "Use a blue Waystone if recovery or boss damage is holding you back.": "Nimm einen magischen Waystone, wenn Erholung oder Bossschaden nicht ausreichen.",
       "Use 3–5 safe mods and familiar bosses.": "3–5 sichere Mods mit bekannten Kartenbossen.",
@@ -4255,13 +4312,10 @@
       "Push safe net XP/h on familiar layouts. Start with pack size or magic packs; add Effectiveness only with clear-speed headroom.": "Netto-EP pro Stunde auf bekannten Karten verbessern. Erst Pack Size oder magische Gruppen, dann bei stabilem Tempo Effectiveness ergänzen.",
       "Use direct Map Device stacks. Leave bonus damage, penetration, reduced recovery and nasty crit combinations out of the XP batch.": "Tablets direkt in der Map Device kombinieren. Zusatzschaden, Durchdringung, weniger Erholung und gefährliche Krit-Kombinationen für EP-Farmen aussortieren.",
       "Keep jackpot rolls for a dedicated farm. Preserve clean backup stones and avoid testing a Pinnacle boss during an XP push.": "Jackpot-Mods separat farmen. Sichere Ersatzsteine behalten und schwere Endbosse außerhalb des EP-Farmens erproben.",
-      "After Ash, follow the Origin Tower and the Patriarch and Matriarch Halls into the Arbiter of Divinity quest.": "Reise nach dem Arbiter of Ash zum Origin Tower. Hole den Origin Spark in den Patriarch Halls und die Origin Cradle in den Matriarch Halls. Aktiviere nach den Bossen jeweils die Uralte Kuriosität.",
-      "In 0.5.5, the non-quest Origin Core kill completes the Fortress for its owner. The quest kill advances the quest.": "Kombiniere beide Teile am Reaktor zum Origin Core. Nimm den Aufzug und setze ihn für den Arbiter of Divinity ein. Der Questsieg bringt die Quest weiter. Der reguläre Sieg mit dem Origin Core schließt die Festung für den Kartenbesitzer ab.",
       "For XP, start with pack size or magic monsters on a familiar layout.": "Für Erfahrung zuerst Pack Size oder magische Gegner auf einer bekannten Karte wählen.",
       "Advance when you can clear the next tier safely and consistently.": "Steige auf, sobald du die nächste Stufe sicher und in gleichbleibender Zeit abschließt.",
       "Take familiar layouts with Pack Size or Magic Monsters.": "Bekannte Karten mit Pack Size oder magischen Monstern.",
       "T11 for +3 amulet bases · T14 iLvl 78 weapons · T15 Irradiated iLvl 81–82.": "T11 für +3-Amulettbasen, T14 für Waffen mit Itemlevel 78, bestrahltes T15 für Itemlevel 81–82.",
-      "Repeat fresh maps at the fastest safe tier that can drop the base you need. Check its item level before crafting. Reaching the threshold adds a possible roll.": "Farme bekannte Karten auf der niedrigsten für deine Basis geeigneten Stufe, wenn du dort schneller und sicherer abschließt. Prüfe die Itemlevel der Basis vor dem Herstellen.",
       "Normal and magic monsters drop at monster level. Rares add +1 iLvl and unique bosses add +2. Irradiation adds +1 monster level.": "Normale und magische Monster lassen Gegenstände auf ihrer Monsterstufe fallen. Seltene Monster geben +1, einzigartige Bosse +2. Irradiation erhöht die Monsterstufe um 1.",
       "+2 Minion on helmets, +2 Melee on gloves and +2 Spell on foci already unlock at iLvl 41. Mid-tier +skill rolls on the listed weapons unlock at iLvl 55.": "Bereits ab Itemlevel 41 sind +2 Kreaturenstufen auf Helmen, +2 Nahkampfstufen auf Handschuhen und +2 Zauberstufen auf Foki möglich. Mittlere Fertigkeitsstufen auf den genannten Waffen beginnen bei Itemlevel 55.",
       "36–40% Fire, Cold or Lightning Resistance on an eligible single-resistance suffix.": "36–40 % Feuer-, Kälte- oder Blitzwiderstand auf einem passenden Einzelwiderstands-Suffix.",
@@ -4354,7 +4408,6 @@
       "If both mods are useful, use a Regal when rare Tablet crafting is unlocked. Exalt until the permitted cap.": "Sind beide Mods gut und ist seltenes Crafting freigeschaltet, nutze eine Regal Orb. Mit einer Erhabenen Sphäre kannst du bis zum erlaubten Limit ergänzen.",
       "Alchemy can reroll an eligible magic Tablet into a rare, or upgrade a normal one. Three matching unwanted tablets can be reforged.": "Die Orb of Alchemy kann eine zulässige normale oder magische Tablet selten machen. Drei gleiche Tablets von mindestens magischer Seltenheit kannst du umschmieden.",
       "Transmute + Aug. Keep two useful mods, then Regal + Exalt up to four with both rare-crafting Atlas nodes.": "Umwandlungs- und Orb of Augmentation für zwei gute Mods. Danach Hoheitliche und Exalted Orb bis zum Limit einsetzen.",
-      "Reverse Transcription and Partial Translation each grant +1 max modifier and enable rare crafting when allocated. Defeat Ash on the way to those nodes.": "Reverse Transcription nach dem Burning Monolith, Partial Translation nach dem Endboss der Precursor Fortress. Je Knoten +1 Mod und seltene Herstellung. Zusammen bis zu vier explizite Mods.",
       "Alchemy a normal or magic spare; use the Reforging Bench for three matching, at least magic inputs. Remaining uses combine up to the cap.": "Alchemie auf normaler oder magischer Ersatztafel. An der Reforging Bench drei gleiche Tablets, mindestens magisch. Restnutzungen addieren sich bis zum Limit.",
       "Use Alchemy on normal or magic Tablets once rare crafting is available. Reforge a bad rare Tablet with matching inputs. Check the in-game currency preview.": "Prüfe vor dem Verbrauch die Währungsvorschau. Für eine unbrauchbare seltene Tablet kommt das Umschmieden mit passenden Tablets infrage.",
       "Rankings are recommendations by farming goal. Pool, roll range and mod side are patch facts.": "Die Reihenfolge sind Empfehlungen je Farmziel. Pool, Wertebereich und Affix-Seite entsprechen dem Patchstand.",
@@ -4363,12 +4416,10 @@
       "Start with a safe Waystone and one available tablet slot. The Cartographer roll helps replace the Waystone you spend.": "Starte mit einem sicheren Waystone und einem freien Tafelfach. Ein Mod für gefundene Waystones hilft, den verbrauchten Stein zu ersetzen.",
       "Use Mountain Mastery and Propagating Secrets for Tablet drops. Use more slots once you can clear the additional difficulty.": "Nutze Atlas-Passive für gefundene Tablets. Belege mehr Fächer, sobald du die zusätzliche Schwierigkeit beherrschst.",
       "3–4 Irradiated copies on a safe rare. Prioritise Waystones for the map pool and add Rares/Effectiveness only at stable clear speed.": "3–4 Irradiated Tablets auf sicherem seltenem Waystone. Für Nachschub Menge der Waystones priorisieren, dann seltene Gegner oder Effectiveness ergänzen.",
-      "For actual Tablet sustain: Mountain Mastery (+50% in Mountains) and Propagating Secrets (+8% per affecting Tablet). Route to eligible Cities for slot four.": "Für Tablet-Nachschub Berg-Biom oder Geheimnisse der Vermehrung nutzen. Bei passenden Stadtkarten den vierten Platz einplanen.",
       "Use Jado's Partial Translations for 0–40% increased explicit Tablet effect. Doryani's Disengaged Safeties supplies Irradiation for a mixed setup.": "Jados Option kann bis zu 40 % Effekt expliziter Tablet-Mods hinzufügen. Doryanis Option für Irradiation ermöglicht gemischte Tablet-Sets.",
       "Ocean and Island nodes can count as another biome. Check the node's secondary biome before choosing a route.": "Ozean- und Inselknoten können zusätzlich zu einem anderen Biom zählen. Prüfe das zweite Biom bei der Routenwahl.",
       "Level 100 XP Push": "XP Push bis Level 100",
       "Use two to three compatible Tablets on a familiar layout. One source of Irradiation gives +1 monster level.": "Nutze zwei bis drei passende Tablets auf einer bekannten Karte. Eine Quelle für Irradiation gibt +1 Monsterstufe.",
-      "Start with pack size and magic monsters. Compare how quickly you finish maps before adding tougher monsters.": "Beginne mit Pack Size und magischen Monstern. Vergleiche dein Tempo, bevor du schwierigere Mods hinzufügst.",
       "Use a blue stone if recovery or boss fights feel unsafe. Move to a carefully rolled rare when you have enough defences.": "Wenn Erholung oder Bosse unsicher sind, nutze einen magischen Waystone. Wechsle zu seltenen, sobald deine Verteidigung reicht.",
       "Prioritise pack size, magic monsters and XP. Add Effectiveness only if kill time and net XP/hour still improve.": "Pack Size, magische Monster und Erfahrung priorisieren. Effectiveness erst ergänzen, wenn Netto-EP pro Stunde weiter steigen.",
       "Screen every Waystone for stacked damage, penetration, crit and recovery penalties. Leave additional random modifiers for farming.": "Zusatzschaden, Durchdringung, Krit und verringerte Erholung prüfen. Zufällige Zusatzmods für separate Farmrunden zurücklegen.",
@@ -4380,27 +4431,15 @@
       "Match Delirium mirrors to your route; save stacked fog and empowered bosses for dedicated runs.": "Delirium-Spiegel auf deine Route abstimmen. Dichten Nebel und verstärkte Bosse auf separaten Karten spielen.",
       "Breach stabilisation is +1–2 rares in 0.5.5f. Abyss of Champions is +2–3 rares. Use eligible Overseer rolls for Azmeri Spirits.": "Stand 0.5.5f: Instabile Risse können nach Stabilisierung 1–2 weitere seltene Monster erzeugen. Abgründe der Champions 2–3. Für Azmeri Spirits geeignete Aufseher-Mods nutzen.",
       "Irradiation adds one monster level to the area. Use additional copies for their rolled affixes.": "Irradiation erhöht die Monsterstufe um 1. Weitere Exemplare lohnen sich für ihre gewürfelten Affixe.",
-      "Stacking more than one Ritual Tablet can add an altar in 0.5.5 if the map has room.": "In 0.5.5 kann ein weiteres Exemplar einen zusätzlichen Altar hinzufügen, wenn die Karte Platz hat.",
       "Choose open layouts. Extra copies can intensify the fog; test your clear before stacking.": "Wähle offene Gebiete. Mehr Tablets können den Nebel verstärken. Prüfe dein Tempo zuerst.",
-      "Stabilise the encounter to receive the extra rare wave.": "Stabilisiere den Riss, damit die zusätzlichen seltenen Gegner erscheinen.",
       "Target extra Abysses, Abyssal rares and crafting currency. Pit rewards and additional Abysses are separate modifiers.": "Zusätzliche Abgründe, seltene Gegner und entweihte Währung farmen. Belohnungen von Gruben und zusätzliche Abgründe sind verschiedene Mods.",
-      "Empowers Map Bosses. Use spirit-focused rolls on known layouts where you can control the possession target.": "Verstärkt Map Bosses. Nutze Geister-Mods auf bekannten Karten, auf denen du das Ziel der Besessenheit gezielt wählen kannst.",
-      "Available in Standard and Forbidden Rites in 0.5.5. Additional copies add encounters and Remnants.": "In 0.5.5 in Standard und Forbidden Rites verfügbar. Weitere Tablets bringen mehr Begegnungen und Remnants.",
       "Use when you can complete the Vaal Beacon and want Temple progress.": "Nutze die Tablet für Tempelfortschritt, wenn du das Vaal-Leuchtfeuer zuverlässig abschließt.",
-      "Use the same generic value rolls for clear speed, Waystone sustain or XP.": "Wähle allgemeine Mods nach Kartentempo, Waystone-Nachschub oder Erfahrung.",
-      "Sustains Waystones. For Tablet drops use Atlas passives that specify Tablet quantity.": "Füllt den Waystone-Vorrat. Tablets farmst du mit Atlas-Passiven für gefundene Tablets.",
       "More reward and XP per monster, with more monster Life. Compare clear speed.": "Mehr Ertrag und Erfahrung pro Monster bei mehr Monsterleben. Vergleiche dein Kartentempo.",
       "Value roll for a tested build. Treat as a danger roll for an XP push.": "Farm-Mod für einen erprobten Build. Beim Erfahrung-Farmen kann er gefährlich werden.",
       "The verified roll adds an Abyss encounter. No separate +1 Pit roll was verified.": "Der Mod fügt einen Abgrund hinzu. Ein separater Mod für genau eine zusätzliche Grube ist nicht belegt.",
       "S-tier": "S-Tier",
       "A-tier": "A-Tier",
       "B-tier": "B-Tier",
-      "Tablet Farming & Value": "Tablets · allgemeine Farm-Mods",
-      "Stash search for common Tablet value lines. Read the whole roll before using a Tablet.": "Breite Suche nach Nachschub, Monsterdichte und zufälligen Zusatzmods.",
-      "Jackpot League Tablet": "League Tablets · seltene Belohnungen",
-      "The requested search includes additional pit. For the verified Abyss wording, also search additional abys or spawned from abysses.": "Hebt ausgewählte Ritual-, Delirium-, Abgrund- und Geister-Mods hervor.",
-      "Danger Waystone": "Waystones · gefährliche Mods",
-      "Flags common danger wording. Read each Waystone manually, including Penetrate, maximum resistance and reduced recovery variants.": "Findet häufige Gefahren wie zusätzlichen Schaden, Durchdringung, kritische Treffer oder schwächere Erholung. Prüfe alle Mods von Hand.",
       "Waystone sustain": "Waystone-Nachschub",
       "Find Irradiated Tablets that increase the quantity of Waystones found in a map.": "Finde Irradiated Tablets mit erhöhter Menge gefundener Waystones.",
       "Experience": "XP",
@@ -4408,18 +4447,62 @@
       "Omens from Ritual": "Omens aus Ritual",
       "Find Ritual Tablets whose modifier increases the chance for Ritual Favours to be Omens.": "Finde Ritual-Tablets mit erhöhter Chance, dass Ritual Favours Omen sind.",
       "Find Abyss Tablets that increase the chance for an Abyss to lead to the Abyssal Depths.": "Finde Abgrund-Tablets mit erhöhter Chance auf Abyssal Depths.",
-      "Find Breach Tablets whose modifier adds larger monster packs inside Breaches.": "Finde Riss-Tablets mit erhöhter Pack Size innerhalb der Risse."
+      "Find Breach Tablets whose modifier adds larger monster packs inside Breaches.": "Finde Riss-Tablets mit erhöhter Pack Size innerhalb der Risse.",
+      "Industrial Improvements grants an additional tablet slot on City maps in level 75+ areas. The passive requires completing the Burning Monolith. With three regular slots you can use four tablets.": "Industrial Improvements gewährt auf City Maps ab Area Level 75 einen zusätzlichen Tablet Slot. Der Node setzt den Abschluss des Burning Monolith voraus. Sind drei reguläre Slots offen, kannst du vier Tablets einsetzen.",
+      "Pick the lowest safe tier that can drop your target base at the required item level. For example, a tier 15 map is area level 79. Irradiation adds one monster level and a unique boss drop adds two item levels, so the boss can drop item level 82 boots. That unlocks the 35% movement speed roll on eligible boots without guaranteeing it.": "Wähle ein sicheres Map Tier, auf dem deine Base das benötigte Item Level erreichen kann. Beispiel: Eine T15 Map hat Area Level 79. Irradiation gibt +1 Monster Level, ein Unique Boss Drop +2 Item Level. So sind iLvl-82-Boots möglich. Auf einer passenden Base kannst du damit 35 % Movement Speed rollen.",
+      "Aim for 0% or better as a gearing target.": "Peile als Gearing-Ziel mindestens 0 % an.",
+      "In the Ziggurat Refuge, ask Doryani for a Waystone. Identify it, read the modifiers and open a connected map. Defeat its boss to complete it.": "Sprich im Ziggurat Refuge mit Doryani. Identifiziere deinen Waystone, lies die Mods und öffne eine verbundene Map. Besiege den Map Boss für den Abschluss.",
+      "Reach your first Precursor Tower and activate its beacon. Follow the newly revealed route towards the Precursor Fortress.": "Erreiche deinen ersten Precursor Tower und aktiviere den Beacon. Folge der aufgedeckten Route zur Precursor Fortress.",
+      "Aim for +30% or better as a gearing target.": "Peile als Gearing-Ziel mindestens +30 % an.",
+      "Check the tablet slots in your Map Device. Each placed tablet normally spends a use when the map opens. Each empty slot contributes to random league content, including locked slots.": "Prüfe die Tablet Slots im Map Device. Ein eingelegtes Tablet verbraucht beim Öffnen der Map normalerweise einen Use. Jeder leere Slot trägt zu zufälligem League Content bei, auch ein gesperrter.",
+      "For the two fragments, be present for the bosses in both Enigma Chambers. Spend Atlas points on tablet crafting once the relevant node is unlocked.": "Für die zwei Fragmente musst du beim Tod der Bosse in beiden Enigma Chambers anwesend sein. Investiere Atlas Points in Tablet Crafting, sobald der gewünschte Node zugänglich ist.",
+      "At the Burning Monolith, one of the three quest fragments is already in the gate. Follow the western and eastern paths to the two Enigma Chambers. Defeat Count Geonor in the Western Enigma Chamber for the Ancient Crisis Fragment and Doryani in the Eastern Enigma Chamber for the Weathered Crisis Fragment. Be present for each kill to collect your fragments, including in a party.": "Am Burning Monolith steckt eines der drei Quest-Fragmente bereits im Tor. Folge den Wegen zur Western und Eastern Enigma Chamber. Besiege Count Geonor in der Western Enigma Chamber für das Ancient Crisis Fragment und Doryani in der Eastern Enigma Chamber für das Weathered Crisis Fragment. Du musst bei beiden Kills anwesend sein, um deine Fragmente aufzuheben, auch in einer Gruppe.",
+      "Place both fragments in the gate at the Burning Monolith. Defeat the Arbiter of Ash, inspect the Fourth Edict, take the lift and speak to Doryani.": "Setze beide Fragmente in das Tor am Burning Monolith ein. Besiege den Arbiter of Ash, untersuche das Fourth Edict und sprich nach der Aufzugfahrt mit Doryani.",
+      "Aim for +50% while gearing and work towards 75%.": "Peile beim Gear-Ausbau +50 % an und arbeite auf 75 % hin.",
+      "After the Arbiter of Ash, follow Doryani's quest to the Origin Tower. Be present for both boss kills and activate the Ancient Curiosity after each one to collect the Origin Spark in the Patriarch Halls and the Origin Cradle in the Matriarch Halls.": "Folge nach dem Arbiter of Ash Doryanis Quest zum Origin Tower. Sei bei beiden Bosskills anwesend und aktiviere danach jeweils die Ancient Curiosity. Der Origin Spark liegt in den Patriarch Halls und die Origin Cradle in den Matriarch Halls.",
+      "Combine the two pieces at the reactor at the foot of the tower. Take the Origin Core up the lift and use it at the summit to fight the Arbiter of Divinity. The quest version advances the story and does not complete a Fortress section. A kill with a non-quest Origin Core completes the entire Precursor Fortress for the map owner.": "Kombiniere beide Teile am Reactor am Fuß des Origin Tower. Nimm den Origin Core mit dem Lift zur Spitze und setze ihn dort für den Arbiter of Divinity ein. Mit dem Quest-Core setzt du die Story fort und schließt keinen Festungsabschnitt ab. Ein Kill mit einem regulären Origin Core schließt die gesamte Precursor Fortress für den Map Owner ab.",
+      "This helps with Waystone drops. It does not increase Tablet quantity. Check separate Atlas passives for that target.": "Dieser Mod hilft beim Waystone Sustain. Für mehr Tablet Drops brauchst du separate Atlas Passives mit Tablet Quantity.",
+      "Using more than one Ritual Tablet adds an extra altar if the map has room. In party play, accompanying players cannot reroll their own reward selection.": "Mehr als ein Ritual Tablet fügt einen zusätzlichen Altar hinzu, wenn die Map Platz hat. Party-Mitglieder können ihre eigene Auswahl an Favours nicht rerollen.",
+      "With the additional rare monsters modifier, stabilising the Breach spawns extra rare enemies. The pack size modifier serves a different purpose: larger Breach packs.": "Mit dem Mod für zusätzliche Rare Monsters spawnen diese beim Stabilisieren des Breach. Der Pack-Size-Mod vergrößert stattdessen die Breach-Packs.",
+      "Rare monsters after stabilisation": "Rare Monsters nach Stabilisierung",
+      "An Overseer Tablet empowers the map boss. Unlock its drops on the Atlas passive tree if you want to find it yourself. Try a familiar boss before adding rolls for extra Azmeri Spirits.": "Das Overseer Tablet verstärkt den Map Boss. Für eigene Drops musst du das Tablet im Atlas Tree freischalten. Teste einen bekannten Boss, bevor du zusätzliche Azmeri Spirits einplanst.",
+      "In 0.5.5 these tablets can drop in Standard and Forbidden Rites, but not in Runes of Aldur. One adds an Expedition. The second adds a Verisium Remnant and 35% density, the third adds an Expedition, and the fourth adds another Remnant and another 35% density.": "In 0.5.5 können Expedition Tablets in Standard und Forbidden Rites droppen. In Runes of Aldur droppen sie nicht. Ein Tablet fügt eine Expedition hinzu. Das zweite bringt einen Verisium Remnant und 35 % Expedition Density, das dritte eine weitere Expedition und das vierte einen weiteren Remnant sowie weitere 35 % Density.",
+      "This tablet uses the shared pool of general modifiers. To find Basic Tablets yourself, unlock their drops on the Atlas passive tree.": "Dieses Tablet nutzt den gemeinsamen Pool allgemeiner Mods. Für eigene Basic Tablet Drops musst du den Fund im Atlas Tree freischalten.",
+      "For tablet drops, use Mountain Mastery on Mountains or Propagating Secrets for 8% per affecting tablet. Propagating Secrets requires the Burning Monolith and applies to level 75+ areas. For a fourth slot, look for a City map with Industrial Improvements active.": "Für Tablet Drops nutze Mountain Mastery in Mountains oder Propagating Secrets für 8 % je aktivem Tablet. Propagating Secrets setzt den Burning Monolith voraus und wirkt ab Area Level 75. Für Slot vier suchst du eine City Map mit Industrial Improvements.",
+      "Start with pack size and magic monsters. Compare experience gained divided by time played across several maps of similar layouts. Include deaths and time spent between maps when comparing two setups.": "Starte mit Pack Size und Magic Monsters. Vergleiche bei mehreren Maps mit ähnlichen Layouts die gewonnenen XP pro Stunde. Rechne bei beiden Setups Tode und die Zeit zwischen den Maps mit.",
+      "Reverse Transcription requires completing the Burning Monolith. Partial Translation requires defeating the Precursor Fortress pinnacle boss. Either allocated passive enables rare tablet crafting. With one you can craft up to three explicit modifiers; with both, up to four.": "Für Reverse Transcription musst du den Burning Monolith abschließen. Für Partial Translation musst du den Pinnacle Boss der Precursor Fortress besiegen. Jeder belegte Node erlaubt Rare Tablet Crafting. Mit einem kannst du bis zu drei explizite Mods herstellen, mit beiden bis zu vier.",
+      "Useful tablet modifiers": "Nützliche Tablet Mods",
+      "Paste the search in your stash. It highlights lines for Waystone quantity, pack size or experience. Read the complete item before choosing it.": "Füge den Regex im Stash ein. Er findet Tablets mit Waystone Quantity, Pack Size oder XP. Lies vor der Auswahl das ganze Item.",
+      "Target league rewards": "Gezielt League Rewards suchen",
+      "Look for Ritual Omens, Simulacrum Splinters or one additional Abyss. A reward from an Abyss Pit is a different modifier.": "Suche nach Ritual Omens, Simulacrum Splinters oder einem zusätzlichen Abyss. Eine höhere Reward-Chance aus Abyss Pits ist ein eigener Mod.",
+      "Find dangerous Waystones": "Gefährliche Waystones finden",
+      "This search highlights four risks: monster elemental penetration, lower maximum player resistances, less recovery and increased monster critical hit chance. Read each stone for other dangerous combinations.": "Dieser Regex markiert vier Risiken: Elemental Penetration der Monster, gesenkte Maximum Player Resistances, weniger Recovery und erhöhte Monster Crit Chance. Lies jeden Waystone auf weitere gefährliche Kombinationen.",
+      "Check Spirit and Minion Skill Levels on the sceptre. Count the types of Reviving Minion still summoned for Muster in each weapon set.": "Prüfe Spirit und Minion Skill Levels am Sceptre. Zähle danach in beiden Weapon Sets, wie viele Arten von Reviving Minions für Muster beschworen bleiben.",
+      "Bidding improves Command cooldown recovery. For Muster, count distinct types of summoned Reviving Minion.": "Bidding verkürzt deine Command-Abklingzeit. Für Muster zählen nur verschiedene beschworene Arten von Reviving Minions.",
+      "Once you allocate Kelari’s Deception, use the Command while the boss recovers. Use Ruzhan’s Trap for packs if your Ascendancy path grants it.": "Sobald du den Knoten Kelari’s Deception hast, setze den Command in einer Erholungsphase des Bosses ein. Für Clear kannst du Ruzhan’s Trap einsetzen, wenn dein Ascendancy-Pfad den Command freischaltet.",
+      "The shared core is Whirling Slash in set 1 and Twister in set 2. For the full critical-strike support setup and boss rotation, open the Crit Swap variant in GuyThatDies’ linked endgame guide. Keep your previous cold setup until the switch works.": "Der gemeinsame Kern ist Whirling Slash in Set 1 und Twister in Set 2. Öffne für die vollständigen Crit-Supports und die Bossrotation die Variante „Crit Swap“ in GuyThatDies’ verlinktem Endgame-Guide. Behalte dein Kälte-Setup, bis die neue Variante funktioniert."
     },
-    "en": {
-      "Industrial Improvements grants a fourth slot on eligible City maps with three baseline slots.": "Industrial Improvements unlocks a fourth Tablet slot on eligible level 75+ City maps after completing the Burning Monolith.",
-      "Reach The Ziggurat Refuge, speak to Doryani, and open your first map.": "Speak to Doryani at the Ziggurat Refuge. Identify the first Waystone, open a connected map and defeat its Map Boss to complete it.",
-      "Complete a Precursor Tower and activate its beacon to reveal nearby routes and start the Fortress progression.": "Finish a Precursor Tower and activate the Precursor Beacon. Follow the route it reveals toward the Fortress.",
-      "Follow the Fortress gates to the Enigma Chambers for the Crisis Fragments.": "The Burning Monolith already holds one quest fragment. Defeat Count Geonor in the Western Enigma Chamber and Doryani in the Eastern Enigma Chamber for the Ancient and Weathered Crisis Fragments. Be present for both kills.",
-      "Defeat the Arbiter of Ash when ready. Check the tablet crafting nodes before investing in rare tablets.": "Use both fragments at the Burning Monolith. Defeat the Arbiter of Ash, inspect the Fourth Edict, take the lift and speak to Doryani.",
-      "After Ash, follow the Origin Tower and the Patriarch and Matriarch Halls into the Arbiter of Divinity quest.": "After Ash, travel to the Origin Tower. Recover the Origin Spark in the Patriarch Halls and the Origin Cradle in the Matriarch Halls. Activate the Ancient Curiosity after each boss.",
-      "In 0.5.5, the non-quest Origin Core kill completes the Fortress for its owner. The quest kill advances the quest.": "Combine the two parts in the reactor, take the lift and use the Origin Core for the Arbiter of Divinity. The quest kill advances the quest. Defeating the regular encounter with an Origin Core completes the Fortress for the map owner.",
-      "Reverse Transcription and Partial Translation each grant +1 max modifier and enable rare crafting when allocated. Defeat Ash on the way to those nodes.": "Reverse Transcription requires the Burning Monolith, and Partial Translation requires the Precursor Fortress Pinnacle Boss. Each enables rare crafting and raises the cap by one, for up to four explicit mods with both.",
-      "The requested search includes additional pit. For the verified Abyss wording, also search additional abys or spawned from abysses.": "Highlights selected Ritual, Delirium, Abyss, and Azmeri Spirit mods."
-    }
+    "en": {}
+  },
+  "checklist_keys": {
+    "Industrial Improvements grants an additional tablet slot on City maps in level 75+ areas. The passive requires completing the Burning Monolith. With three regular slots you can use four tablets.": "Industrial Improvements grants a fourth slot on eligible City maps with three baseline slots.",
+    "Pick the lowest safe tier that can drop your target base at the required item level. For example, a tier 15 map is area level 79. Irradiation adds one monster level and a unique boss drop adds two item levels, so the boss can drop item level 82 boots. That unlocks the 35% movement speed roll on eligible boots without guaranteeing it.": "Repeat fresh maps at the fastest safe tier that can drop the base you need. Check its item level before crafting. Reaching the threshold adds a possible roll.",
+    "In the Ziggurat Refuge, ask Doryani for a Waystone. Identify it, read the modifiers and open a connected map. Defeat its boss to complete it.": "Reach The Ziggurat Refuge, speak to Doryani, and open your first map.",
+    "Reach your first Precursor Tower and activate its beacon. Follow the newly revealed route towards the Precursor Fortress.": "Complete a Precursor Tower and activate its beacon to reveal nearby routes and start the Fortress progression.",
+    "Check the tablet slots in your Map Device. Each placed tablet normally spends a use when the map opens. Each empty slot contributes to random league content, including locked slots.": "Check Tablet slots in the Map Device. Each placed tablet spends a use; empty eligible slots can add random content.",
+    "For the two fragments, be present for the bosses in both Enigma Chambers. Spend Atlas points on tablet crafting once the relevant node is unlocked.": "Finish the western/eastern Enigma branches before attempting the Arbiter of Ash. Allocate tablet nodes when available.",
+    "At the Burning Monolith, one of the three quest fragments is already in the gate. Follow the western and eastern paths to the two Enigma Chambers. Defeat Count Geonor in the Western Enigma Chamber for the Ancient Crisis Fragment and Doryani in the Eastern Enigma Chamber for the Weathered Crisis Fragment. Be present for each kill to collect your fragments, including in a party.": "Follow the Fortress gates to the Enigma Chambers for the Crisis Fragments.",
+    "Place both fragments in the gate at the Burning Monolith. Defeat the Arbiter of Ash, inspect the Fourth Edict, take the lift and speak to Doryani.": "Defeat the Arbiter of Ash when ready. Check the tablet crafting nodes before investing in rare tablets.",
+    "After the Arbiter of Ash, follow Doryani's quest to the Origin Tower. Be present for both boss kills and activate the Ancient Curiosity after each one to collect the Origin Spark in the Patriarch Halls and the Origin Cradle in the Matriarch Halls.": "After Ash, follow the Origin Tower and the Patriarch and Matriarch Halls into the Arbiter of Divinity quest.",
+    "Combine the two pieces at the reactor at the foot of the tower. Take the Origin Core up the lift and use it at the summit to fight the Arbiter of Divinity. The quest version advances the story and does not complete a Fortress section. A kill with a non-quest Origin Core completes the entire Precursor Fortress for the map owner.": "In 0.5.5, the non-quest Origin Core kill completes the Fortress for its owner. The quest kill advances the quest.",
+    "This helps with Waystone drops. It does not increase Tablet quantity. Check separate Atlas passives for that target.": "Sustains Waystones. For Tablet drops use Atlas passives that specify Tablet quantity.",
+    "Using more than one Ritual Tablet adds an extra altar if the map has room. In party play, accompanying players cannot reroll their own reward selection.": "Stacking more than one Ritual Tablet can add an altar in 0.5.5 if the map has room.",
+    "With the additional rare monsters modifier, stabilising the Breach spawns extra rare enemies. The pack size modifier serves a different purpose: larger Breach packs.": "Stabilise the encounter to receive the extra rare wave.",
+    "An Overseer Tablet empowers the map boss. Unlock its drops on the Atlas passive tree if you want to find it yourself. Try a familiar boss before adding rolls for extra Azmeri Spirits.": "Empowers Map Bosses. Use spirit-focused rolls on known layouts where you can control the possession target.",
+    "In 0.5.5 these tablets can drop in Standard and Forbidden Rites, but not in Runes of Aldur. One adds an Expedition. The second adds a Verisium Remnant and 35% density, the third adds an Expedition, and the fourth adds another Remnant and another 35% density.": "Available in Standard and Forbidden Rites in 0.5.5. Additional copies add encounters and Remnants.",
+    "This tablet uses the shared pool of general modifiers. To find Basic Tablets yourself, unlock their drops on the Atlas passive tree.": "Use the same generic value rolls for clear speed, Waystone sustain or XP.",
+    "For tablet drops, use Mountain Mastery on Mountains or Propagating Secrets for 8% per affecting tablet. Propagating Secrets requires the Burning Monolith and applies to level 75+ areas. For a fourth slot, look for a City map with Industrial Improvements active.": "For actual Tablet sustain: Mountain Mastery (+50% in Mountains) and Propagating Secrets (+8% per affecting Tablet). Route to eligible Cities for slot four.",
+    "Start with pack size and magic monsters. Compare experience gained divided by time played across several maps of similar layouts. Include deaths and time spent between maps when comparing two setups.": "Start with pack size and magic monsters. Compare how quickly you finish maps before adding tougher monsters.",
+    "Reverse Transcription requires completing the Burning Monolith. Partial Translation requires defeating the Precursor Fortress pinnacle boss. Either allocated passive enables rare tablet crafting. With one you can craft up to three explicit modifiers; with both, up to four.": "Reverse Transcription and Partial Translation each grant +1 max modifier and enable rare crafting when allocated. Defeat Ash on the way to those nodes."
   }
 }

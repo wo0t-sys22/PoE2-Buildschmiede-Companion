@@ -1,5 +1,5 @@
 ﻿PoE2 Ingame Guide
-Kampagne, Bosse, Builds & Atlas · Stand v.0.19.0 · Patch 0.5.5f
+Kampagne, Bosse, Builds & Atlas · Stand v.0.21.0 · vorbereitet für PoE2 1.0
 
 SCHNELLSTART
 
@@ -57,14 +57,17 @@ HILFE
 
 • Gebiet wird nicht erkannt: In Optionen „Client.txt wählen“ anklicken.
   Die Datei liegt im Ordner „logs“ deiner PoE2-Installation.
-• Timer: F6 für Start, Pause und Weiter, F7 für Reset auf 00:00.
+• Stoppuhr einblenden: Die laufende Zeit steht rechts in der HUD-Leiste.
+  Auf die Zeit klicken, um die Aktzeiten zu sehen. Das Zusatzfenster folgt
+  dem Transparenzregler unter Optionen → HUD & Anzeige.
+  F6 für Start, Pause und Weiter, F7 für Reset auf 00:00.
   F4 startet und stoppt die separate Boss-Zeit. Die Belegung steht
   unter Optionen → Tastenkürzel. Dort kannst du sie ändern.
 • Update: Die ZIP in einen eigenen Ordner entpacken und den neuen Starter
   öffnen. Der geladene Stand steht unter Optionen. Bei einer Meldung zum
   alten Guide diesen mit F10 beenden und den neuen Starter erneut öffnen.
   Kopiere bei beendetem Guide den bisherigen Ordner app\userdata
-  in den entpackten v.0.19.0-Ordner unter app.
+  in den entpackten v.0.21.0-Ordner unter app.
   OBS-Browserquelle: http://127.0.0.1:8765/race-overlay.html
   Falls nötig, setze den Port aus den Optionen ein.
   Mehr zur Datenübernahme steht in app\README.md.

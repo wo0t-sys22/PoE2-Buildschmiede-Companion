@@ -1,0 +1,865 @@
+{
+  "schema": "buildschmiede.atlas-questvorschau",
+  "schema_version": 1,
+  "status": "Redaktionelle Vorschau",
+  "game": "Path of Exile 2",
+  "game_version": "0.5.x",
+  "last_patch_considered": "0.5.5h",
+  "checked_on": "2026-11-26",
+  "one_point_zero_status": "Vor Übernahme anhand der Veröffentlichungsversion prüfen.",
+  "integration": {
+    "local_baseline": "Overlay/Produktiv/app/poe2_endgame_atlas.json",
+    "existing_reference": "progression.stages[].milestones",
+    "main_path": "Sechs vorhandene Festungsmeilensteine behalten und die acht verknüpften Schritte nur als Detailansicht anbinden. Die beiden Torwege sowie die beiden Hallen können innerhalb ihres jeweiligen Paars in unterschiedlicher Reihenfolge erledigt werden.",
+    "addition": "Drei Meister und sechs Mechanikpfade mit eigenen Schritten und Suchbegriffen. Der Tempel baut auf einer Kampagnenquest auf. Pfade sind separat anwählbar, sobald ihr Einstieg verfügbar ist.",
+    "ids": "Interne redaktionelle IDs. after enthält die zusammengefassten vorausgehenden Meilensteine innerhalb derselben Reihe. Jede Schrittquelle verweist auf das Verzeichnis sources.",
+    "scope": "Die Vorschau bildet den üblichen Questweg ab. Nebenaufgaben, saisonale Ereignisse, Wiederholungsfarmen und alle Punkt- oder Beutechancen sind außerhalb dieses Inventars."
+  },
+  "version_notes": [
+    {
+      "id": "fortress-repeat",
+      "text": {
+        "de": "Seit 0.5.5 zählt der Quest-Kern für die Geschichte. Ein Sieg mit dem regulären Kern schließt für den Kartenbesitzer die gesamte Festung ab.",
+        "en": "Since 0.5.5 the quest core advances the story. A kill using a regular core completes the whole Fortress for the map owner.",
+        "hybrid": "Seit 0.5.5 zählt der Quest Origin Core für die Story. Ein Kill mit dem regulären Origin Core schließt die Fortress für den Map Owner ab."
+      },
+      "sources": [
+        "ggg055"
+      ]
+    },
+    {
+      "id": "expedition-core",
+      "text": {
+        "de": "Seit 0.5.5 gehören Farrow und Expedition auch auf Standard zum Grundspiel. Aldurs Saga ist auf die Liga Runen von Aldur beschränkt.",
+        "en": "Since 0.5.5, Farrow and Expedition are core content on Standard too. Aldur’s Saga is exclusive to the Runes of Aldur league.",
+        "hybrid": "Seit 0.5.5 sind Farrow und Expedition auch auf Standard Core. Aldur’s Saga gehört zur Runes of Aldur League."
+      },
+      "sources": [
+        "ggg055"
+      ]
+    },
+    {
+      "id": "delirium-fix",
+      "text": {
+        "de": "0.5.5h behebt einen blockierten Fortschritt der Delirium-Atlasquest. GGG nennt den betroffenen Schritt nicht.",
+        "en": "0.5.5h fixed blocked Delirium Atlas quest progression. GGG did not identify the affected step.",
+        "hybrid": "0.5.5h behebt einen blockierten Schritt der Delirium Atlas Quest. Welcher Schritt betroffen war, bleibt offen."
+      },
+      "sources": [
+        "ggg055h"
+      ]
+    },
+    {
+      "id": "release-review",
+      "text": {
+        "de": "Die Entwickler haben für 1.0 Änderungen am Einstieg angekündigt, darunter seltenere Ligabegegnungen auf den ersten Kartenstufen und die Schnellreise zu angenommenen Ligaquests. Einstieg, Wege, Freischaltungen und Belohnungen bei Veröffentlichung neu prüfen.",
+        "en": "The developers previewed changes to early mapping in 1.0, including fewer early league encounters and travel to accepted league quests. Recheck onboarding, routes, unlocks and rewards at release.",
+        "hybrid": "Für 1.0 sind Änderungen an frühen Maps und die Schnellreise zu angenommenen League Quests angekündigt. Einstiege, Wege, Unlocks und Rewards bei Release erneut prüfen."
+      },
+      "sources": [
+        "interview",
+        "interviewSummary"
+      ]
+    }
+  ],
+  "questlines": [
+    {
+      "id": "atlas-precursors",
+      "type": "main",
+      "title": {
+        "de": "Vermächtnis der Wegbereiter",
+        "en": "Legacy of the Precursors",
+        "hybrid": "Legacy of the Precursors"
+      },
+      "search_aliases": [
+        "Festung",
+        "Precursor Fortress",
+        "Origins of Divinity",
+        "Arbiter"
+      ],
+      "steps": [
+        {
+          "id": "atlas-precursors.start",
+          "after": [],
+          "text": {
+            "de": "Hol dir in der Zikkurat-Zuflucht den ersten Wegstein von Doryani. Öffne am Kartenapparat eine erreichbare Karte.",
+            "en": "Take Doryani’s first Waystone at the Ziggurat Refuge. Use the Map Device to open a connected map.",
+            "hybrid": "Hol Doryanis ersten Waystone im Ziggurat Refuge und öffne am Map Device eine erreichbare Map."
+          },
+          "sources": [
+            "journal-atlas-precursors"
+          ]
+        },
+        {
+          "id": "atlas-precursors.tower",
+          "after": [
+            "atlas-precursors.start"
+          ],
+          "text": {
+            "de": "Schließe den ersten Wegbereiter-Turm ab. Sein Leuchtfeuer weist zur Festung. Über die Uralte Pforte gelangst du zum Brennenden Monolithen.",
+            "en": "Clear your first Precursor Tower. Follow its beacon towards the Fortress and take the Ancient Gateway to the Burning Monolith.",
+            "hybrid": "Schließe den ersten Precursor Tower ab und folge dem Beacon über das Ancient Gateway zum Burning Monolith."
+          },
+          "sources": [
+            "journal-atlas-precursors",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-precursors.western",
+          "after": [
+            "atlas-precursors.tower"
+          ],
+          "text": {
+            "de": "Folge der westlichen Route. Sei beim Sieg über Graf Geonor in der Westlichen Rätselkammer dabei und nimm das Uralte Krisenfragment.",
+            "en": "Take the western route. Be present when Count Geonor dies in the Western Enigma Chamber and collect the Ancient Crisis Fragment.",
+            "hybrid": "Nimm die Westroute. Sei beim Kill von Count Geonor in der Western Enigma Chamber dabei und sammle das Ancient Crisis Fragment ein."
+          },
+          "sources": [
+            "journal-atlas-precursors",
+            "ggg055c"
+          ]
+        },
+        {
+          "id": "atlas-precursors.eastern",
+          "after": [
+            "atlas-precursors.tower"
+          ],
+          "text": {
+            "de": "Folge der östlichen Route. Sei beim Sieg über Doryani in der Östlichen Rätselkammer dabei und nimm das Verwitterte Krisenfragment.",
+            "en": "Take the eastern route. Be present when Doryani dies in the Eastern Enigma Chamber and collect the Weathered Crisis Fragment.",
+            "hybrid": "Nimm die Ostroute. Sei bei Doryanis Kill in der Eastern Enigma Chamber dabei und sammle das Weathered Crisis Fragment ein."
+          },
+          "sources": [
+            "journal-atlas-precursors",
+            "ggg055c"
+          ]
+        },
+        {
+          "id": "atlas-precursors.ash",
+          "after": [
+            "atlas-precursors.western",
+            "atlas-precursors.eastern"
+          ],
+          "text": {
+            "de": "Setze beide Fragmente am Brennenden Monolithen ein. Besiege den Richter der Asche, untersuche das Vierte Edikt und fahre mit dem Aufzug zu Doryani.",
+            "en": "Use both fragments at the Burning Monolith. Defeat the Arbiter of Ash, inspect the Fourth Edict and take the lift to Doryani.",
+            "hybrid": "Nutze beide Fragments am Burning Monolith. Besiege den Arbiter of Ash, untersuche das Fourth Edict und fahre zu Doryani."
+          },
+          "sources": [
+            "journal-atlas-precursors",
+            "ggg055c"
+          ]
+        },
+        {
+          "id": "atlas-precursors.patriarch",
+          "after": [
+            "atlas-precursors.ash"
+          ],
+          "text": {
+            "de": "Reise vom Turm des Ursprungs in die Hallen des Patriarchen. Besiege Phyx und hole den Funken des Ursprungs am uralten Objekt.",
+            "en": "From the Origin Tower, reach the Patriarch Halls. Defeat Phyx and collect the Origin Spark at the Ancient Curiosity.",
+            "hybrid": "Erreiche vom Origin Tower die Patriarch Halls. Besiege Phyx und nimm den Origin Spark an der Ancient Curiosity."
+          },
+          "sources": [
+            "journal-atlas-precursors",
+            "ggg055c"
+          ]
+        },
+        {
+          "id": "atlas-precursors.matriarch",
+          "after": [
+            "atlas-precursors.ash"
+          ],
+          "text": {
+            "de": "Suche vom Turm des Ursprungs die Hallen der Matriarchin auf. Sei beim Sieg über Phya dabei und hole die Wiege des Ursprungs.",
+            "en": "From the Origin Tower, reach the Matriarch Halls. Be present for Phya’s defeat and collect the Origin Cradle.",
+            "hybrid": "Erreiche vom Origin Tower die Matriarch Halls. Sei bei Phyas Kill dabei und sammle die Origin Cradle ein."
+          },
+          "sources": [
+            "journal-atlas-precursors",
+            "ggg055c"
+          ]
+        },
+        {
+          "id": "atlas-precursors.divinity",
+          "after": [
+            "atlas-precursors.patriarch",
+            "atlas-precursors.matriarch"
+          ],
+          "text": {
+            "de": "Erzeuge im Reaktor aus beiden Teilen den Kern des Ursprungs. Setze ihn oben im Turm ein und besiege den Richter der Göttlichkeit.",
+            "en": "Use both parts in the reactor to make the Origin Core. Use it at the top of the tower and defeat the Arbiter of Divinity.",
+            "hybrid": "Verbinde beide Teile im Reactor zum Origin Core. Setze ihn oben im Tower ein und besiege den Arbiter of Divinity."
+          },
+          "sources": [
+            "journal-atlas-precursors",
+            "ggg055"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-doryani",
+      "type": "master",
+      "title": {
+        "de": "Doryanis Wissenschaft",
+        "en": "Doryani’s Science",
+        "hybrid": "Doryani’s Science"
+      },
+      "search_aliases": [
+        "Verderbter Nexus",
+        "Corrupted Nexus",
+        "Immured Fury",
+        "Fleischgewordener Zorn"
+      ],
+      "steps": [
+        {
+          "id": "atlas-doryani.nexus",
+          "after": [],
+          "text": {
+            "de": "Suche auf dem Atlas einen Verderbten Nexus. Zerstöre die Quelle der Verderbtheit und sprich mit Doryani. Damit beginnt seine Meisterreihe.",
+            "en": "Find a Corrupted Nexus on the Atlas. Destroy its source of corruption and speak to Doryani to start his Master progression.",
+            "hybrid": "Finde einen Corrupted Nexus, zerstöre die Quelle der Corruption und sprich mit Doryani. Damit öffnest du seinen Master-Pfad."
+          },
+          "sources": [
+            "journal-atlas-doryani",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-doryani.next",
+          "after": [
+            "atlas-doryani.nexus"
+          ],
+          "text": {
+            "de": "Folge Doryanis Auftrag zu den nächsten beiden Nexusgebieten. Zerstöre jeweils die Quelle und melde dich bei ihm.",
+            "en": "Follow Doryani to two more Nexus areas. Destroy each source and report back.",
+            "hybrid": "Folge Doryani zu zwei weiteren Nexus-Maps. Zerstöre beide Quellen und kehre zu ihm zurück."
+          },
+          "sources": [
+            "journal-atlas-doryani"
+          ]
+        },
+        {
+          "id": "atlas-doryani.fury",
+          "after": [
+            "atlas-doryani.next"
+          ],
+          "text": {
+            "de": "Suche die von Doryani markierte Energiequelle auf. Besiege den Fleischgewordenen Zorn, um seine Quest abzuschließen.",
+            "en": "Investigate the energy source marked by Doryani. Defeat the Immured Fury to finish his quest.",
+            "hybrid": "Suche Doryanis markierte Energiequelle auf und besiege die Immured Fury."
+          },
+          "sources": [
+            "journal-atlas-doryani"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-hilda",
+      "type": "master",
+      "title": {
+        "de": "Hildas Jagd",
+        "en": "Hilda’s Hunting",
+        "hybrid": "Hilda’s Hunting"
+      },
+      "search_aliases": [
+        "Große Bestien",
+        "Great Beasts",
+        "Hildas Lagerplatz"
+      ],
+      "steps": [
+        {
+          "id": "atlas-hilda.camp",
+          "after": [],
+          "text": {
+            "de": "Besuche Hildas Lagerplatz etwas südwestlich des Atlasstarts. Sprich mit Hilda, um ihre Jagd zu beginnen.",
+            "en": "Visit Hilda’s Campsite a short distance southwest of your Atlas start. Speak to Hilda to begin the hunt.",
+            "hybrid": "Suche Hilda’s Campsite südwestlich vom Atlasstart auf und nimm ihre Jagd an."
+          },
+          "sources": [
+            "journal-atlas-hilda",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-hilda.hunt",
+          "after": [
+            "atlas-hilda.camp"
+          ],
+          "text": {
+            "de": "Folge Hildas Spuren zu vier Großen Bestien. Besiege sie nacheinander und sprich für die nächste Jagd wieder mit ihr.",
+            "en": "Track down Hilda’s four Great Beasts. Defeat each in turn and speak with Hilda between hunts.",
+            "hybrid": "Jage nacheinander Hildas vier Great Beasts. Sprich zwischen den Jagden wieder mit ihr."
+          },
+          "sources": [
+            "journal-atlas-hilda"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-jado",
+      "type": "master",
+      "title": {
+        "de": "Jados Spionagekunst",
+        "en": "Jado’s Spycraft",
+        "hybrid": "Jado’s Spycraft"
+      },
+      "search_aliases": [
+        "Anomalie",
+        "Versiegeltes Gewölbe",
+        "Sealed Vault",
+        "Jade Isles",
+        "Sacred Reservoir",
+        "Derelict Mansion"
+      ],
+      "steps": [
+        {
+          "id": "atlas-jado.vault",
+          "after": [],
+          "text": {
+            "de": "Untersuche das Versiegelte Gewölbe in der Nähe des Atlasstarts. Schließe die Anomaliekarte ab und sprich mit Jado.",
+            "en": "Investigate the Sealed Vault near your Atlas start. Clear the anomaly map and speak to Jado.",
+            "hybrid": "Untersuche den Sealed Vault nahe dem Atlasstart. Schließe die Anomaly Map ab und sprich mit Jado."
+          },
+          "sources": [
+            "journal-atlas-jado",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-jado.others",
+          "after": [
+            "atlas-jado.vault"
+          ],
+          "text": {
+            "de": "Besuche die übrigen Anomalien. Zum Auftrag gehören die Jadeinseln, das Heilige Reservoir und das Verfallene Herrenhaus. Das Journal führt die noch offenen Ziele.",
+            "en": "Complete the other anomaly maps. The Jade Isles, Sacred Reservoir and Derelict Mansion are part of this mission. Check the journal for remaining objectives.",
+            "hybrid": "Schließe die übrigen Anomalien ab. Zu den Zielen gehören Jade Isles, Sacred Reservoir und Derelict Mansion. Das Questlog zeigt die offenen Ziele."
+          },
+          "sources": [
+            "journal-atlas-jado"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-delirium",
+      "type": "mechanic",
+      "title": {
+        "de": "Seltsame Reflexion",
+        "en": "Strange Reflection",
+        "hybrid": "Strange Reflection"
+      },
+      "search_aliases": [
+        "Amulett weihen",
+        "Weihung",
+        "Anoint",
+        "Anointing",
+        "Instill",
+        "erneunt",
+        "Karaffe des Wahnsinns",
+        "Decanter of Madness",
+        "Flüssige Emotionen",
+        "Liquid Emotions",
+        "Welke Weide",
+        "Verwelkte Weide",
+        "The Withered Willow",
+        "Großer Spiegel",
+        "Grand Mirror"
+      ],
+      "steps": [
+        {
+          "id": "atlas-delirium.madox",
+          "after": [],
+          "text": {
+            "de": "Befreie den Ältesten Madox und überstehe die Begegnung am Deliriumspiegel. Suche die Welke Weide südwestlich des Atlasstarts auf. Untersuche den Baum und sprich mit Madox.",
+            "en": "Free Elder Madox and survive the Delirium Mirror encounter. Visit the Withered Willow southwest of the Atlas start, examine the tree and speak to Madox.",
+            "hybrid": "Befreie Elder Madox am Delirium Mirror. Suche The Withered Willow südwestlich des Atlasstarts auf, untersuche den Baum und sprich mit Madox."
+          },
+          "sources": [
+            "journal-atlas-delirium",
+            "dat-delirium-hub",
+            "db-delirium-hub",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-delirium.bosses",
+          "after": [
+            "atlas-delirium.madox"
+          ],
+          "text": {
+            "de": "Hol die Delirium-Tafel bei Madox. Besiege insgesamt fünf deliriöse Kartenbosse und kehre zu ihm zurück.",
+            "en": "Take Madox’s Delirium Tablet. Defeat five Delirious map bosses in total, then return to him.",
+            "hybrid": "Hol Madox’ Delirium Tablet. Besiege fünf Delirious Map Bosses und kehre zu ihm zurück."
+          },
+          "sources": [
+            "journal-atlas-delirium"
+          ]
+        },
+        {
+          "id": "atlas-delirium.instill",
+          "after": [
+            "atlas-delirium.bosses"
+          ],
+          "text": {
+            "de": "An der Karaffe des Wahnsinns neben Madox legst du ein geeignetes Amulett und die drei Flüssigen Emotionen für deine gewünschte passive Fertigkeit ein. Prüfe das Rezept und bestätige die Weihung.",
+            "en": "At the Decanter of Madness beside Madox, insert an eligible amulet and the three Liquid Emotions for your chosen notable. Check the recipe and confirm the instilment.",
+            "hybrid": "Lege am Decanter of Madness dein Amulet und die drei Liquid Emotions für das gewünschte Notable ein. Prüfe das Rezept und bestätige den Anoint."
+          },
+          "sources": [
+            "journal-atlas-delirium",
+            "recipe",
+            "legacy"
+          ]
+        },
+        {
+          "id": "atlas-delirium.mirror",
+          "after": [
+            "atlas-delirium.instill"
+          ],
+          "text": {
+            "de": "Suche den Großen Spiegel. Besiege den Kartenboss und sein Spiegelbild. Wähle danach über den Spiegel den Bereich, der auf dem Atlas in Nebel gehüllt wird.",
+            "en": "Find a Grand Mirror and defeat the map boss and its reflection. Use the mirror to choose an area on the Atlas to cover in fog.",
+            "hybrid": "Suche einen Grand Mirror und besiege Map Boss und Spiegelbild. Wähle am Mirror das Atlasgebiet für den Fog."
+          },
+          "sources": [
+            "journal-atlas-delirium",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-delirium.raven",
+          "after": [
+            "atlas-delirium.mirror"
+          ],
+          "text": {
+            "de": "Spiele Karten im Nebel, bis du das Simulakrum betreten kannst. Überstehe die Wellen und hole die Reflexion des Rabens. Setze sie im Spiegel an der Weide ein, um im Parakosmos den Rabenschwindler zu stellen.",
+            "en": "Run maps in the fog until the Simulacrum opens. Survive its waves, collect Raven’s Reflection and put it in the Willow’s mirror. Enter the Paracosm to fight the Raven Trickster.",
+            "hybrid": "Spiele Maps im Fog, bis das Simulacrum offen ist. Überstehe die Waves und setze Raven’s Reflection am Mirror der Willow ein. Im Paracosm wartet der Raven Trickster."
+          },
+          "sources": [
+            "journal-atlas-delirium",
+            "ggg050"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-ritual",
+      "type": "mechanic",
+      "title": {
+        "de": "Vermächtnis der Maji",
+        "en": "Legacy of the Maji",
+        "hybrid": "Legacy of the Maji"
+      },
+      "search_aliases": [
+        "Ritual",
+        "Caer Tarth",
+        "Audienz mit dem König",
+        "Kopf des Königs",
+        "Ritus der Namenlosen",
+        "Bodach"
+      ],
+      "steps": [
+        {
+          "id": "atlas-ritual.aoife",
+          "after": [],
+          "text": {
+            "de": "Begegne Aoife und beende die Rituale einer Karte. In Caer Tarth westlich des Atlasstarts gibt sie dir das nächste Ziel.",
+            "en": "Meet Aoife, finish the rituals in a map, then speak to her in Caer Tarth west of the Atlas start.",
+            "hybrid": "Triff Aoife, schließe die Rituals einer Map ab und suche sie in Caer Tarth westlich des Atlasstarts auf."
+          },
+          "sources": [
+            "journal-atlas-ritual",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-ritual.king",
+          "after": [
+            "atlas-ritual.aoife"
+          ],
+          "text": {
+            "de": "Arbeite bei den Ritualen auf eine Audienz mit dem König hin. Decke damit den Kern des Nichts auf, besiege den König in den Nebeln und bringe seinen Kopf zum Abbild in Caer Tarth.",
+            "en": "Earn An Audience with the King through rituals. Use it to reveal the Crux of Nothingness, defeat the King in the Mists and take his head to the effigy in Caer Tarth.",
+            "hybrid": "Erspiele An Audience with the King und decke den Crux of Nothingness auf. Besiege den King in the Mists und bring seinen Kopf zum Effigy in Caer Tarth."
+          },
+          "sources": [
+            "journal-atlas-ritual",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-ritual.effigy",
+          "after": [
+            "atlas-ritual.king"
+          ],
+          "text": {
+            "de": "Wähle am Abbild fünf Karten für den Ritus der Namenlosen aus. Aus ihren Ritualen bekommst du die fehlenden Teile. Setze sie am Abbild ein und folge dem Ritual zum Bodach.",
+            "en": "Use the effigy to select five maps for the Rite of the Nameless. Gather the missing pieces from their rituals, return them to the effigy and follow the rite to the Bodach.",
+            "hybrid": "Wähle am Effigy fünf Maps für den Rite of the Nameless. Bringe die Teile aus den Rituals zurück zum Effigy und folge dem Ritus zum Bodach."
+          },
+          "sources": [
+            "journal-atlas-ritual",
+            "ggg050"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-breach",
+      "type": "mechanic",
+      "title": {
+        "de": "Hüter der Flamme",
+        "en": "Keepers of the Flame",
+        "hybrid": "Keepers of the Flame"
+      },
+      "search_aliases": [
+        "Breach",
+        "Riss",
+        "Genesisbaum",
+        "Genesis Tree",
+        "Ailith",
+        "Xesht"
+      ],
+      "steps": [
+        {
+          "id": "atlas-breach.ailith",
+          "after": [],
+          "text": {
+            "de": "Öffne mit Ailith einen Riss, stabilisiere ihn und besiege die Gegner. Im Kloster der Hüter südlich des Atlasstarts zeigt sie dir, wie ein Fruchtkeim am Genesisbaum wächst.",
+            "en": "Open and stabilise a Breach with Ailith, then defeat the enemies. At the Monastery of the Keepers south of the Atlas start, she shows you how to grow a Wombgift at the Genesis Tree.",
+            "hybrid": "Öffne und stabilisiere mit Ailith einen Breach. Im Monastery of the Keepers südlich des Atlasstarts zeigt sie dir, wie ein Wombgift am Genesis Tree wächst."
+          },
+          "sources": [
+            "journal-atlas-breach",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-breach.stone",
+          "after": [
+            "atlas-breach.ailith"
+          ],
+          "text": {
+            "de": "Stabilisiere fünf Risse für Ailith. Nimm anschließend ihren Riss-Stein, decke die Riss-Stadt auf und hilf ihr gegen die Schwarmgeborenen.",
+            "en": "Stabilise five Breaches for Ailith. Take her Breachstone, reveal the Breach city and help her fight through the Hiveborn.",
+            "hybrid": "Stabilisiere fünf Breaches für Ailith. Decke mit ihrem Breachstone die Breach City auf und hilf ihr gegen die Hiveborn."
+          },
+          "sources": [
+            "journal-atlas-breach"
+          ]
+        },
+        {
+          "id": "atlas-breach.cocoon",
+          "after": [
+            "atlas-breach.stone"
+          ],
+          "text": {
+            "de": "Besiege in der Schwarmfestung die Überreste von Esh und Tul. Bringe den Kokon zum Träumer. Im Verzerrten Reich wartet Xesht.",
+            "en": "Defeat the remnants of Esh and Tul in the Hive Fortress. Take the Breachlord Sac to the Dreamer and face Xesht in the Twisted Domain.",
+            "hybrid": "Besiege die Überreste von Esh und Tul in der Hive Fortress. Bring den Breachlord Sac zum Dreamer und stelle dich Xesht in der Twisted Domain."
+          },
+          "sources": [
+            "journal-atlas-breach",
+            "ggg050"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-abyss",
+      "type": "mechanic",
+      "title": {
+        "de": "Macht des Abgrunds",
+        "en": "Abyssal Power",
+        "hybrid": "Abyssal Power"
+      },
+      "search_aliases": [
+        "Abyss",
+        "Abgrund",
+        "Kulemaks Einladung",
+        "Brunnen der Seelen",
+        "Well of Souls"
+      ],
+      "steps": [
+        {
+          "id": "atlas-abyss.well",
+          "after": [],
+          "text": {
+            "de": "Folge der Lauernden Kreatur zum Brunnen der Seelen. Schließe die nördlichen Abgründigen Wunden, um das Dunkle Reich zu erreichen.",
+            "en": "Follow the Lurking Creature to the Well of Souls. Close the northern Abyssal Wounds to reach the Dark Domain.",
+            "hybrid": "Folge der Lurking Creature zum Well of Souls und schließe die nördlichen Abyssal Wounds für den Zugang zur Dark Domain."
+          },
+          "sources": [
+            "journal-atlas-abyss"
+          ]
+        },
+        {
+          "id": "atlas-abyss.vandroth",
+          "after": [
+            "atlas-abyss.well"
+          ],
+          "text": {
+            "de": "Besiege Vandroth und kehre zum Brunnen zurück. Folge den Aufträgen zu den südlichen und östlichen Wunden. In der Lichtlosen Leere triffst du auf Tasgul.",
+            "en": "Defeat Vandroth and return to the Well. Follow the missions to the southern and eastern wounds, then confront Tasgul in the Lightless Void.",
+            "hybrid": "Besiege Vandroth und kehre zum Well zurück. Schließe die südlichen und östlichen Wounds und stelle dich Tasgul im Lightless Void."
+          },
+          "sources": [
+            "journal-atlas-abyss"
+          ]
+        },
+        {
+          "id": "atlas-abyss.kulemak",
+          "after": [
+            "atlas-abyss.vandroth"
+          ],
+          "text": {
+            "de": "Nimm nach Tasgul Kulemaks Einladung mit. Der Brunnen der Seelen ist dein Ausgangspunkt für die Begegnung mit dem Gefäß von Kulemak.",
+            "en": "Collect Kulemak’s Invitation after Tasgul. Return to the Well of Souls to access the Vessel of Kulemak encounter.",
+            "hybrid": "Sammle nach Tasgul Kulemak’s Invitation ein. Über den Well of Souls erreichst du den Kampf gegen das Vessel of Kulemak."
+          },
+          "sources": [
+            "journal-atlas-abyss"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-expedition",
+      "type": "mechanic",
+      "title": {
+        "de": "Die Große Expedition",
+        "en": "The Grand Expedition",
+        "hybrid": "The Grand Expedition"
+      },
+      "search_aliases": [
+        "Expedition",
+        "Farrow",
+        "Ruinen von Königsmark",
+        "Logbuch",
+        "Ozean",
+        "Dannig",
+        "Triskelion"
+      ],
+      "steps": [
+        {
+          "id": "atlas-expedition.kingsmarch",
+          "after": [],
+          "text": {
+            "de": "Sprich in der Zikkurat-Zuflucht mit Farrow. Reise zu den Ruinen von Königsmark südöstlich des Atlasstarts und nimm Makorus Logbuch an.",
+            "en": "Speak to Farrow at the Ziggurat Refuge. Reach the Ruins of Kingsmarch southeast of the Atlas start and take Makoru’s Logbook.",
+            "hybrid": "Sprich im Ziggurat Refuge mit Farrow. Suche die Ruins of Kingsmarch südöstlich des Atlasstarts auf und nimm Makoru’s Logbook."
+          },
+          "sources": [
+            "journal-atlas-expedition",
+            "ggg050",
+            "ggg055"
+          ]
+        },
+        {
+          "id": "atlas-expedition.islands",
+          "after": [
+            "atlas-expedition.kingsmarch"
+          ],
+          "text": {
+            "de": "Decke mit dem Logbuch die Inselroute auf. Suche Gwennen und stelle dich Medved. Die folgenden Logbücher führen über Vorana und Uhtred zu Olroth.",
+            "en": "Use the logbook to reveal the island route. Find Gwennen and confront Medved. Further logbooks lead to Vorana, Uhtred and finally Olroth.",
+            "hybrid": "Decke mit dem Logbook die Inselroute auf. Finde Gwennen und stelle dich Medved. Weitere Logbooks führen über Vorana und Uhtred zu Olroth."
+          },
+          "sources": [
+            "journal-atlas-expedition",
+            "ggg050"
+          ]
+        },
+        {
+          "id": "atlas-expedition.meteor",
+          "after": [
+            "atlas-expedition.islands"
+          ],
+          "text": {
+            "de": "Lass nach Olroths Niederlage das zerschmetterte Triskelion von Dannig wiederherstellen. Öffne damit die Barriere, besiege die Abnormität am Meteoriten und kehre zu Dannig zurück.",
+            "en": "After defeating Olroth, have Dannig restore the Shattered Triskelion. Use it to remove the barrier, defeat the Aberration at the meteor and return to Dannig.",
+            "hybrid": "Lass nach Olroths Kill das Shattered Triskelion bei Dannig wiederherstellen. Öffne damit die Barriere, besiege die Aberration am Meteoriten und kehre zu Dannig zurück."
+          },
+          "sources": [
+            "journal-atlas-expedition"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-temple",
+      "type": "mechanic",
+      "title": {
+        "de": "Schicksal der Vaal",
+        "en": "Fate of the Vaal",
+        "hybrid": "Fate of the Vaal"
+      },
+      "search_aliases": [
+        "Atziri",
+        "Tempel",
+        "Tempelkonsole",
+        "Königliches Vorzimmer",
+        "Lira Vaal",
+        "Xipocado"
+      ],
+      "steps": [
+        {
+          "id": "atlas-temple.lira",
+          "after": [],
+          "text": {
+            "de": "Die Tempelreihe kann bereits in der Kampagne beginnen. Im Atlas liegt ihr Schwerpunkt in Lira Vaal nordöstlich des Starts. Sammle dort an Vaal-Leuchtfeuern Energie für die Tempelkonsole.",
+            "en": "This quest can start during the campaign. In the Atlas, look for Lira Vaal northeast of the start and gather energy at Vaal Beacons to power the Temple Console.",
+            "hybrid": "Die Reihe beginnt schon in der Kampagne. Im Atlas liegt Lira Vaal nordöstlich des Starts. Sammle dort an Vaal Beacons Energie für die Temple Console."
+          },
+          "sources": [
+            "journal-atlas-temple",
+            "ggg050",
+            "temple-stage"
+          ]
+        },
+        {
+          "id": "atlas-temple.architect",
+          "after": [
+            "atlas-temple.lira"
+          ],
+          "text": {
+            "de": "Plane an der Konsole einen Weg zum Königlichen Architekten. Besiege Xipocado in einem Tempel ab Gebietsstufe 75, um an seiner Konsole das Königliche Vorzimmer platzieren zu können.",
+            "en": "Use the console to plan a route to the Royal Architect. Defeat Xipocado in an area-level 75 or higher Temple to place the Royal Access Chamber at his console.",
+            "hybrid": "Baue an der Console einen Weg zum Royal Architect. Besiege Xipocado in einem Temple ab Area Level 75 und platziere die Royal Access Chamber."
+          },
+          "sources": [
+            "journal-atlas-temple"
+          ]
+        },
+        {
+          "id": "atlas-temple.atziri",
+          "after": [
+            "atlas-temple.architect"
+          ],
+          "text": {
+            "de": "Erreiche Atziris Kammer über das Vorzimmer. Folge Atziri durch den Kampf und öffne mit ihrem Medaillon das Gewölbe.",
+            "en": "Enter Atziri’s chamber through the Royal Access Chamber. Follow her through the encounter and use her medallion to open the vault.",
+            "hybrid": "Über die Royal Access Chamber erreichst du Atziri. Folge ihr durch den Kampf und öffne mit ihrem Medallion das Vault."
+          },
+          "sources": [
+            "journal-atlas-temple"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "ggg050": {
+      "publisher": "Grinding Gear Games",
+      "label": "Patch 0.5.0 · Endgame, Origins of Divinity, Masters und Liga-Mechaniken",
+      "url": "https://www.pathofexile.com/forum/view-thread/3932540"
+    },
+    "ggg055": {
+      "publisher": "Grinding Gear Games",
+      "label": "Patch 0.5.5 · Festungsabschluss, Expedition im Grundspiel und Ritual",
+      "url": "https://www.pathofexile.com/forum/view-thread/4000864"
+    },
+    "ggg055c": {
+      "publisher": "Grinding Gear Games",
+      "label": "Patch 0.5.5c · Anwesenheit bei den vier Questbossen",
+      "url": "https://www.pathofexile.com/forum/view-thread/4006357"
+    },
+    "ggg055h": {
+      "publisher": "Grinding Gear Games",
+      "label": "Patch 0.5.5h · blockierter Delirium-Questfortschritt behoben",
+      "url": "https://www.pathofexile.com/forum/view-thread/4016665"
+    },
+    "recipe": {
+      "publisher": "POE2Page · dokumentierte Spielansicht",
+      "label": "Endgame Guide · Decanter of Madness / Instilling an amulet",
+      "url": "https://www.poe2page.com/poe2/guides/endgame/"
+    },
+    "legacy": {
+      "publisher": "GamesFuze · Sekundärquelle",
+      "label": "Vergleich der Amulettbedienung vor und ab 0.5",
+      "url": "https://gamesfuze.com/guides/path-of-exile-2-how-to-anoint-amulets-after-patch-0-5/"
+    },
+    "interview": {
+      "publisher": "MisoxShiru im Gespräch mit Jonathan Rogers und Mark Roberts",
+      "label": "ExileCon 2026 · Einstieg in Ligaquests ab 01:07, Ankündigung",
+      "url": "https://www.youtube.com/watch?v=a99hc0uDcPY&t=67s"
+    },
+    "interviewSummary": {
+      "publisher": "ARPG Central · Interviewzusammenfassung",
+      "label": "Abschnitt The league and the Atlas",
+      "url": "https://www.arpgcentral.com/path-of-exile-2-1-0-exilecon-developer-interview/"
+    },
+    "journal-atlas-precursors": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Vermächtnis der Wegbereiter",
+      "url": "https://poe2db.tw/de/Legacy_of_the_Precursors"
+    },
+    "journal-atlas-doryani": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Doryanis Wissenschaft",
+      "url": "https://poe2db.tw/de/Doryanis_Science"
+    },
+    "journal-atlas-hilda": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Hildas Jagd",
+      "url": "https://poe2db.tw/de/Hildas_Hunting"
+    },
+    "journal-atlas-jado": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Jados Spionagekunst",
+      "url": "https://poe2db.tw/de/Jados_Spycraft"
+    },
+    "dat-delirium-hub": {
+      "publisher": "PoE2DAT · deutsche Questdaten",
+      "label": "Gebietsname im Questziel „zur Welken Weide“",
+      "url": "https://poe2dat.com/de/quests/act-10"
+    },
+    "db-delirium-hub": {
+      "publisher": "PoE2DB · Gebietsdaten",
+      "label": "The Withered Willow – auch als „Die Verwelkte Weide“ geführt",
+      "url": "https://poe2db.tw/de/The_Withered_Willow"
+    },
+    "journal-atlas-delirium": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Seltsame Reflexion",
+      "url": "https://poe2db.tw/de/Strange_Reflection"
+    },
+    "journal-atlas-ritual": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Vermächtnis der Maji",
+      "url": "https://poe2db.tw/de/Legacy_of_the_Maji"
+    },
+    "journal-atlas-breach": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Hüter der Flamme",
+      "url": "https://poe2db.tw/de/Keepers_of_the_Flame"
+    },
+    "journal-atlas-abyss": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Macht des Abgrunds",
+      "url": "https://poe2db.tw/de/Abyssal_Power"
+    },
+    "journal-atlas-expedition": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Die Große Expedition",
+      "url": "https://poe2db.tw/de/The_Grand_Expedition"
+    },
+    "journal-atlas-temple": {
+      "publisher": "PoE2DB · ausgelesene Spieldaten",
+      "label": "Deutsche Questziele: Schicksal der Vaal",
+      "url": "https://poe2db.tw/de/Fate_of_the_Vaal"
+    },
+    "temple-stage": {
+      "publisher": "MetaRoad · Spieldaten",
+      "label": "Questklassifizierung in Akt 4",
+      "url": "https://metaroad.gg/poe2/database/quests/fate-of-the-vaal"
+    }
+  }
+}

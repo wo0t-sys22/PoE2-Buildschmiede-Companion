@@ -1,5 +1,5 @@
 PoE2 Ingame Guide für Linux
-Kampagne, Bosse, Builds & Atlas · Stand v.0.19.0 · Patch 0.5.5f
+Kampagne, Bosse, Builds & Atlas · Stand v.0.21.0 · vorbereitet für PoE2 1.0
 
 VORSCHAU: Die Linux-Fassung ist noch nicht im Spiel abgenommen.
 Rückmeldungen über „Feedback geben“ in den Optionen helfen sehr.
@@ -8,11 +8,11 @@ SCHNELLSTART
 
 1. Das Archiv auf dem Linux-System in einen eigenen Ordner im
    Home-Verzeichnis entpacken, zum Beispiel im Terminal:
-     tar -xzf PoE2-Companion-v.0.19.0-Linux.tar.gz
+     tar -xzf PoE2-Companion-v.0.21.0-Linux.tar.gz
    Nicht in einen freigegebenen VM-Ordner, auf einen USB-Stick oder eine
    Windows-Partition entpacken: Dort gehen die Ausführungsrechte verloren.
 2. Im Terminal in den Ordner wechseln und den Guide starten:
-     cd PoE2-Companion-v.0.19.0-Linux
+     cd PoE2-Companion-v.0.21.0-Linux
      sh PoE2-Guide-starten.sh
    „sh …“ funktioniert immer, auch wenn die Datei nicht als ausführbar
    markiert ist.
@@ -69,7 +69,11 @@ HOTKEYS
 
 F8 blendet das Overlay ein oder aus, F9 wechselt zwischen Spielmodus und
 Bearbeiten, F10 beendet den Guide, Strg+Umschalt+F9 holt die Bedienung
-zurück. F6 und F7 steuern den Übungstimer, F4 die Boss-Zeit.
+zurück. Die Stoppuhr zeigt die laufende Zeit rechts in der HUD-Leiste.
+Klick auf die Zeit öffnet die Aktzeiten. Das Zusatzfenster folgt dem
+Transparenzregler unter Optionen → HUD & Anzeige.
+F6 startet, pausiert und setzt den Speedrun-Timer fort. F7 setzt den Lauf
+zurück. F4 steuert die Boss-Zeit.
 Belegt ein anderes Programm eine Taste, steht das im Fehlerprotokoll.
 
 HILFE

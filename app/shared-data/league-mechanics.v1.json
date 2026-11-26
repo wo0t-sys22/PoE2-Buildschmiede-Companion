@@ -1,0 +1,840 @@
+{
+  "schema": "buildschmiede.league-mechanics.v1",
+  "patch": "0.5.5",
+  "checked_on": "2026-11-26",
+  "editorial_scope_de": "Stand der beschriebenen Spielregeln aus 0.5.x einschließlich 0.5.5. Vor Veröffentlichung für 1.0 insbesondere Freischaltungen, Gegenstandsquellen und Atlaspassive erneut prüfen.",
+  "source_index": {
+    "ggg050": {
+      "title": "GGG · Return of the Ancients (0.5.0)",
+      "url": "https://www.pathofexile.com/forum/view-thread/3932540"
+    },
+    "ggg053": {
+      "title": "GGG · 0.5.3, offizielle Steam-Ankündigung",
+      "url": "https://steamcommunity.com/games/2694490/announcements/detail/716782312047512352"
+    },
+    "ggg055": {
+      "title": "GGG · Forbidden Rites (0.5.5)",
+      "url": "https://www.pathofexile.com/forum/view-thread/4000864"
+    },
+    "abyss": {
+      "title": "PoE2DB · Abyss und Atlaspassive",
+      "url": "https://poe2db.tw/us/Abyss"
+    },
+    "abyss_de": {
+      "title": "PoE2DB · Abgrund (deutsche Spielbegriffe)",
+      "url": "https://poe2db.tw/de/Abyss"
+    },
+    "abyss_omens": {
+      "title": "PoE2 Wiki · Abgrund-Omen und Fundbedingungen",
+      "url": "https://www.poe2wiki.net/wiki/Abyss"
+    },
+    "abyss_factions": {
+      "title": "PoE Source · Abgrund-Fraktionen und Fundziele",
+      "url": "https://poe2source.com/learn/poe2/endgame/abyss-in-your-maps"
+    },
+    "abyss_craft": {
+      "title": "PoE2DB · Omen of the Blackblooded",
+      "url": "https://poe2db.tw/us/Omen_of_the_Blackblooded"
+    },
+    "abyss_light": {
+      "title": "PoE2DB · Omen of Light und Handel",
+      "url": "https://poe2db.tw/us/Omen_of_Light"
+    },
+    "abyss_echoes": {
+      "title": "PoE2DB · Omen of Abyssal Echoes",
+      "url": "https://poe2db.tw/us/Omen_of_Abyssal_Echoes"
+    },
+    "delirium": {
+      "title": "PoE2DB · Delirium, Passivbedingungen und Emotionen",
+      "url": "https://poe2db.tw/us/Delirium"
+    },
+    "quest_de": {
+      "title": "PoE2DAT · Deutsche Endgame-Questtexte",
+      "url": "https://poe2dat.com/de/quests/act-10"
+    },
+    "instilling": {
+      "title": "PoE2Page · Madox, Karaffe und Weihevorschau",
+      "url": "https://poe2page.com/poe2/guides/endgame/"
+    },
+    "ritual": {
+      "title": "PoE2DB · Ritualgaben und Atlaspassive",
+      "url": "https://poe2db.tw/us/Ritual"
+    },
+    "ritual_omen": {
+      "title": "PoE2 Wiki · Herkunft des Omen of Whittling",
+      "url": "https://www.poe2wiki.net/wiki/Omen_of_Whittling"
+    },
+    "essence": {
+      "title": "PoE2 Wiki · Essenzbegegnung und Korruption",
+      "url": "https://www.poe2wiki.net/wiki/Essence_encounters"
+    },
+    "essence_item": {
+      "title": "PoE2DB · Essenz des Körpers, Werte je Basis",
+      "url": "https://poe2db.tw/us/Essence_of_the_Body"
+    },
+    "essence_rework": {
+      "title": "Dokumentierte GGG-Patchnotes 0.3.0 · Überarbeitung der Essenzen",
+      "url": "https://poe2db.tw/Version_0.3.0"
+    },
+    "azmeri": {
+      "title": "PoE2DB · Azmeri-Geister und Atlaspassive",
+      "url": "https://poe2db.tw/us/Azmeri_Spirit"
+    },
+    "azmeri_idol": {
+      "title": "PoE2 Wiki · Wolf Idol und Fundbedingung",
+      "url": "https://www.poe2wiki.net/wiki/Wolf_Idol"
+    },
+    "azmeri_charm": {
+      "title": "PoE2 Wiki · Rite of Passage und Fundbedingung",
+      "url": "https://www.poe2wiki.net/wiki/Rite_of_Passage"
+    },
+    "breach": {
+      "title": "PoE2DB · Breach",
+      "url": "https://poe2db.tw/us/Breach"
+    },
+    "breach_de": {
+      "title": "PlayStation Blog · Vorstellung von Return of the Ancients auf Deutsch",
+      "url": "https://blog.de.playstation.com/?p=202054"
+    },
+    "expedition": {
+      "title": "PoE Source · Markierungen und Ausgrabungen",
+      "url": "https://poe2source.com/learn/poe2/endgame/expedition-in-your-maps"
+    },
+    "aldur": {
+      "title": "Dokumentierte GGG-Patchnotes 0.5.2 · Reliktbelohnungen und Legierungen",
+      "url": "https://poe2db.tw/us/Version_0.5.2"
+    },
+    "ggg_video_breach": {
+      "title": "GGG · Breach (Video, 41:39)",
+      "url": "https://youtu.be/vkCu3V81N74?t=2499"
+    },
+    "ggg_video_expedition": {
+      "title": "GGG · Expedition (Video, 15:53)",
+      "url": "https://youtu.be/vkCu3V81N74?t=953"
+    },
+    "ggg_video_aldur": {
+      "title": "GGG · Runic Ward & Runeforging (Video, 10:20)",
+      "url": "https://youtu.be/vkCu3V81N74?t=620"
+    },
+    "temple": {
+      "title": "PoE2 Wiki · Tempelkonsole, Räume und Kristalle",
+      "url": "https://www.poe2wiki.net/wiki/Atziri%27s_Temple"
+    },
+    "temple_rewards": {
+      "title": "PoE2 Wiki · Räume und zugehörige Herstellungswährung",
+      "url": "https://www.poe2wiki.net/wiki/Fate_of_the_Vaal"
+    }
+  },
+  "entries": [
+    {
+      "id": "website.abyss",
+      "slug": "abyss",
+      "title": {
+        "de": "Abgrund",
+        "hybrid": "Abyss",
+        "en": "Abyss"
+      },
+      "summary": {
+        "de": "Töte geschwächte Gegner an den Spalten und dann die Welle an der Grube. Knochen und bestimmte Omen helfen, einen entweihten Modifikator auf Ausrüstung zu bekommen.",
+        "hybrid": "Töte die geschwächten Gegner an den Fissures, dann die Welle am Abyss Pit. Bones und bestimmte Omens sind dein Weg zu einem Desecrated Modifier.",
+        "en": "Kill weakened monsters along the fissures, then clear the wave at the pit. Bones and specific Omens help you craft a Desecrated Modifier."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Dir fehlt ein bestimmter Modifikator auf einem seltenen Gegenstand? Mit einem passenden Knochen kannst du einen entweihten Modifikator vorbereiten. Am Brunnen der Seelen wählst du beim Enthüllen aus den angebotenen Ergebnissen. Im Solospiel ist das ein konkretes Ziel für deine nächste Ausrüstungsverbesserung.",
+            "hybrid": "Suchst du einen bestimmten Mod auf einem Rare, kannst du mit dem passenden Bone einen Desecrated Modifier vorbereiten. Am Well of Souls wählst du beim Reveal aus den angebotenen Mods. Das gibt dir auch in SSF ein konkretes Ziel.",
+            "en": "If your rare item needs a particular modifier, an eligible bone lets you add a Desecrated Modifier. Reveal it at the Well of Souls and choose from the offered outcomes. In SSF, start by identifying an item you actually want to upgrade."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "Besiege die geschwächten Gegner entlang der Spalten. Die Spalten ziehen sich zur Grube zurück. Dort steigen Abgrundmonster auf, die Eigenschaften ihrer Opfer übernehmen können. Nach der letzten Grube kann sich der Zugang zu den Abgründigen Tiefen öffnen. In einer Karte auf einer Abgrundschlucht ist bereits die Begegnung selbst garantiert.",
+            "hybrid": "Töte die geschwächten Gegner an den Fissures. Am Pit steigen Abyssal Monsters auf, die Mods ihrer Opfer übernehmen können. Der letzte Pit kann zu den Abyssal Depths führen. Maps auf einer Abyssal Ravine enthalten garantiert einen Abyss.",
+            "en": "Kill weakened monsters along the fissures. As the cracks close, the pit releases monsters that can inherit modifiers from the victims. The last pit may open the Abyssal Depths. Maps on an Abyssal Ravine are guaranteed to contain an Abyss encounter."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Für fraktionsgebundene Beute zählt, wem die Gegner dienen. Amanamu befehligt die Lichtlosen, Kurgal die Schwarzblütigen und Ulaman die Legion der Grube. Über das passende Atlaspassiv kannst du die Fraktion bei gewöhnlichen Abgründen wählen. Die Wahl gilt außerhalb der besonderen Atlas-Spalten.",
+            "hybrid": "Für fraktionsgebundene Drops achtest du auf Amanamus Lightless, Kurgals Blackblooded und Ulamans Legion of the Pit. Balance of Power lässt dich die Faction für normale Abysses wählen. Fissure Abysses sind davon ausgenommen.",
+            "en": "Match the target to the faction. Amanamu commands the Lightless, Kurgal the Blackblooded and Ulaman the Legion of the Pit. The Balance of Power Atlas passive lets you select a faction in non-fissure Abysses. Atlas fissures have their own encounters."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Das Omen des Lichts kann im Handel sehr wertvoll sein. Ist es aktiv, entfernt die nächste Sphäre der Annullierung gezielt einen entweihten Modifikator. Mit dem Omen der abgründigen Echos kannst du beim Enthüllen am Brunnen der Seelen die angebotenen Modifikatoren einmal neu würfeln. Das Omen des Schwarzblütigen lenkt die Entweihung von Waffen oder Schmuck auf Kurgals Modifikatoren.\n\nRippen entweihen Rüstung, Schlüsselbeine Amulette, Ringe und Gürtel, Kieferknochen Waffen und Köcher. Alle drei Knochenarten gibt es in drei Stufen. Angenagte Knochen funktionieren bis Gegenstandsstufe 64. Erhaltene haben keine solche Obergrenze. Uralte setzen die Mindeststufe der angebotenen Modifikatoren auf 40. Wenn eine Modifikatorart sonst komplett herausfallen würde, kann ihre höchste zulässige Stufe weiterhin erscheinen.\n\nFür seltene Juwelen gibt es die Erhaltene Hirnschale, für seltene Wegsteine die Erhaltene Wirbelsäule. Die Sondervariante „Verändertes Schlüsselbein“ kann außerweltliche Modifikatoren anbieten.",
+            "hybrid": "Omen of Light kann im Trade sehr wertvoll sein. Ist es aktiv, entfernt der nächste Orb of Annulment gezielt einen Desecrated Modifier. Mit Omen of Abyssal Echoes kannst du beim Reveal am Well of Souls die angebotenen Mods einmal rerollen. Omen of the Blackblooded lenkt die Desecration von Waffen oder Jewellery auf Kurgals Mod-Pool.\n\nRibs sind für Armour, Collarbones für Amulets, Rings und Belts, Jawbones für Weapons und Quivers. Alle drei Bone-Arten haben drei Tiers. Gnawed geht bis Item Level 64, Preserved hat kein solches Limit und Ancient setzt das Minimum Modifier Level auf 40. Würde ein Mod-Typ sonst komplett rausfallen, kann sein höchster zulässiger Tier noch rollen.\n\nPreserved Cranium ist für Rare Jewels, Preserved Vertebrae für Rare Waystones. Altered Collarbone ist eine Sondervariante mit einer Chance auf Otherworldly Modifiers.",
+            "en": "Omen of Light can be a very valuable trade drop. While active, it makes your next Orb of Annulment remove only a Desecrated Modifier. Omen of Abyssal Echoes lets you reroll the offered modifiers once when revealing at the Well of Souls. Omen of the Blackblooded steers weapon or jewellery desecration towards Kurgal’s modifiers.\n\nRibs are for armour, Collarbones for amulets, rings and belts, and Jawbones for weapons and quivers. Each comes in three grades. Gnawed works up to item level 64, Preserved has no such cap, and Ancient sets a minimum modifier level of 40. If that would exclude a modifier type entirely, its highest eligible tier can still roll.\n\nUse a Preserved Cranium on a rare jewel or Preserved Vertebrae on a rare waystone. Altered Collarbone is a separate variant with a chance to offer otherworldly modifiers."
+          }
+        }
+      ],
+      "asset": "topics/abyss.webp",
+      "tooltip_targets": [
+        {
+          "id": "website.desecrated-modifier",
+          "title": "Desecrated Modifier"
+        },
+        {
+          "id": "currency.omen-of-light",
+          "title": "Omen of Light"
+        },
+        {
+          "id": "currency.omen-of-abyssal-echoes",
+          "title": "Omen of Abyssal Echoes"
+        },
+        {
+          "id": "currency.omen-of-the-blackblooded",
+          "title": "Omen of the Blackblooded"
+        },
+        {
+          "id": "currency.gnawed-rib",
+          "title": "Gnawed Rib"
+        },
+        {
+          "id": "currency.preserved-rib",
+          "title": "Preserved Rib"
+        },
+        {
+          "id": "currency.ancient-rib",
+          "title": "Ancient Rib"
+        },
+        {
+          "id": "currency.gnawed-collarbone",
+          "title": "Gnawed Collarbone"
+        },
+        {
+          "id": "currency.preserved-collarbone",
+          "title": "Preserved Collarbone"
+        },
+        {
+          "id": "currency.ancient-collarbone",
+          "title": "Ancient Collarbone"
+        },
+        {
+          "id": "currency.gnawed-jawbone",
+          "title": "Gnawed Jawbone"
+        },
+        {
+          "id": "currency.preserved-jawbone",
+          "title": "Preserved Jawbone"
+        },
+        {
+          "id": "currency.ancient-jawbone",
+          "title": "Ancient Jawbone"
+        },
+        {
+          "id": "currency.preserved-cranium",
+          "title": "Preserved Cranium"
+        },
+        {
+          "id": "currency.preserved-vertebrae",
+          "title": "Preserved Vertebrae"
+        },
+        {
+          "id": "currency.altered-collarbone",
+          "title": "Altered Collarbone"
+        }
+      ],
+      "source_ids": [
+        "ggg050",
+        "ggg055",
+        "abyss",
+        "abyss_de",
+        "abyss_omens",
+        "abyss_factions",
+        "abyss_craft",
+        "abyss_light",
+        "abyss_echoes"
+      ],
+      "review_de": "Drei Fraktionen und das Fraktionspassiv sind belegt. Für einzelne Omen sind die konkrete Gegnerart und Spezialbedingungen getrennt zu prüfen."
+    },
+    {
+      "id": "website.delirium",
+      "slug": "delirium",
+      "aliases": [
+        "Anointing",
+        "Annointing",
+        "Instilling",
+        "Instil",
+        "Amulett weihen",
+        "Amulett salben",
+        "Amulett anointen",
+        "erneunt"
+      ],
+      "title": {
+        "de": "Delirium",
+        "hybrid": "Delirium",
+        "en": "Delirium"
+      },
+      "summary": {
+        "de": "Betritt den Spiegel und folge dem Nebel zum Boss. Flüssige Emotionen nutzt du für Juwelen und an der Karaffe des Wahnsinns für eine passive Fertigkeit auf deinem Amulett.",
+        "hybrid": "Lauf durch den Mirror und folge dem Fog zum Boss. Liquid Emotions kannst du für Jewels oder am Decanter of Madness für einen Amulet-Anoint verwenden.",
+        "en": "Step through the mirror and follow the fog towards the boss. Use Liquid Emotions on jewels or at the Decanter of Madness to instil a notable on an amulet."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Wenn deinem Build ein bestimmter passiver Knoten fehlt, kannst du ihn über das Amulett erhalten. Madox führt dich in der Welken Weide zur Karaffe des Wahnsinns. Dort legst du dein Amulett und die drei zum Knoten passenden Flüssigen Emotionen ein und prüfst die Vorschau.",
+            "hybrid": "Ein fehlendes Notable kannst du auf dein Amulet anointen. Madox führt dich in The Withered Willow zum Decanter of Madness. Setze Amulet und die drei Liquid Emotions aus dem Rezept ein und prüfe vor dem Instill die Vorschau.",
+            "en": "Need a notable that is out of reach on the passive tree? Elder Madox introduces the Decanter of Madness at The Withered Willow. Insert the amulet and the three Liquid Emotions for the intended notable, then check the preview before you instil it."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "Der Spiegel ist dein Ausgangspunkt. Während du dich durch die Karte Richtung Boss bewegst, zeigt die Leiste, wie tief du im Nebel stehst. Achte auf Spiegelsplitter unterwegs. Sie bieten Begegnungen, die du nach Kampfstärke und Ziel wählen kannst.",
+            "hybrid": "Der Mirror ist dein Startpunkt. Auf dem Weg zum Map Boss zeigt die Leiste deine Tiefe im Fog. Mirror Shards unterwegs bieten zusätzliche Encounters. Wähle, was du bis zum Boss bewältigen kannst.",
+            "en": "The mirror marks the start. The progress bar shows your depth in the fog as you advance towards the map boss. Watch for mirror shards along the route and choose encounters you can still finish on the way."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Ein Großer Spiegel eröffnet den Weg zum Nebel auf dem Atlas. Besiegte seltene Gegner und Kartenbosse können diese Karten weiter verdichten. Bei 100 % kann das Simulakrum entstehen. Darüber werden Kämpfe schwerer, während die Zahl der Delirium-Monstergruppen seit 0.5.5 bei 100 % endet.",
+            "hybrid": "Ein Grand Mirror führt zu Fog auf dem Atlas. Kills von Rares und Map Bosses steigern die Deliriousness der betroffenen Maps. Bei 100 % kann das Simulacrum entstehen. Darüber steigt die Schwierigkeit, die Zahl der Delirium Packs skaliert seit 0.5.5 nur bis 100 %.",
+            "en": "A Grand Mirror opens the Atlas fog route. Killing rares and map bosses can raise the fog bank’s Deliriousness. At 100% a Simulacrum can appear. Higher values make fights harder, but since 0.5.5 they add no further Delirium monster packs."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Für den Wirkungsvollen Flüssigen Groll gibt es einen gezielten Weg. Nach einem aktivierten Großen Spiegel kannst du „Du jagst mir keine Angst mehr ein!“ wählen. Damit hat jedes im Nebel getötete einzigartige Konstrukt 5 % Chance auf Groll. Bei einzigartigen Bestien geht es um Grausamkeit, bei Humanoiden um Melancholie. Das hilft beim gezielten Sammeln im Solospiel ebenso wie bei der Kartenwahl für den Handel.",
+            "hybrid": "Für Potent Liquid Contempt schaltest du nach einem Grand Mirror das Atlas Passive „You can't scare me anymore!“ frei und skillst es. Dann hat jeder Unique Construct im Fog 5 % Chance auf Contempt. Unique Beasts geben Ferocity, Humanoids Melancholy. In SSF und Trade kannst du so die passende Boss-Kategorie wählen.",
+            "en": "For Potent Liquid Contempt, activate a Grand Mirror and allocate “You can't scare me anymore!” Each unique Construct slain in the fog then has a 5% chance to drop Contempt. Unique Beasts can drop Ferocity and Humanoids Melancholy. Use the monster type to target the reward in SSF or trade."
+          }
+        }
+      ],
+      "asset": "topics/delirium.webp",
+      "tooltip_targets": [
+        {
+          "id": "website.liquid-emotions",
+          "title": "Liquid Emotions"
+        },
+        {
+          "id": "currency.potent-liquid-contempt",
+          "title": "Potent Liquid Contempt"
+        },
+        {
+          "id": "currency.potent-liquid-ferocity",
+          "title": "Potent Liquid Ferocity"
+        },
+        {
+          "id": "currency.potent-liquid-melancholy",
+          "title": "Potent Liquid Melancholy"
+        },
+        {
+          "id": "currency.simulacrum",
+          "title": "Simulacrum"
+        }
+      ],
+      "source_ids": [
+        "ggg050",
+        "ggg055",
+        "delirium",
+        "quest_de",
+        "instilling",
+        "ggg053"
+      ],
+      "review_de": "Die historische Konstruktliste ist ein eigener Datensatz. Für andere Drops aus Nebel oder Bossen gelten eigene Regeln. Prozentsatz, Kartenpool und Questfreischaltung mit 1.0 erneut prüfen."
+    },
+    {
+      "id": "website.ritual",
+      "slug": "ritual",
+      "title": {
+        "de": "Ritual",
+        "hybrid": "Ritual",
+        "en": "Ritual"
+      },
+      "summary": {
+        "de": "Töte Gegner im Ritualkreis und besiege sie nach der Aktivierung erneut. Mit Tribut kaufst du eine Gabe, merkst sie für später vor oder sparst auf die Audienz beim König.",
+        "hybrid": "Töte Gegner im Ritual Circle und bekämpfe sie nach Aktivierung erneut. Tribute dient für Favours, zum Deferren teurer Angebote oder für An Audience with the King.",
+        "en": "Kill enemies inside the ritual circle, then activate it and defeat them again. Spend Tribute on favours, defer costly offers or contribute towards an Audience with the King."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Das Ritual passt, wenn du zwischen angebotenen Gegenständen wählen möchtest. Die Altäre einer Endgame-Karte teilen sich deinen Tribut. Ein teures Omen kann deshalb auch dann interessant sein, wenn du es beim ersten Altar noch nicht bezahlen kannst.",
+            "hybrid": "Ritual gibt dir eine Auswahl von Favours. Die Altäre einer Endgame-Map teilen sich deinen Tribute. Auch ein teures Omen vom ersten Altar kann erreichbar werden, wenn du die übrigen Altäre abschließt.",
+            "en": "Ritual suits players who like choosing from offers. Altars on one endgame map share a Tribute budget. A costly Omen at the first altar may become affordable after the remaining encounters."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "Räume den Kreis frei und aktiviere den Altar. Er belebt die geopferten Gegner wieder, deren Tod jetzt Tribut bringt. Schließe die weiteren Altäre ab und entscheide, ob du kaufst, ein Angebot für später zurückstellst oder Tribut für eine neue Auswahl ausgibst.",
+            "hybrid": "Cleare den Kreis und aktiviere den Altar. Die wiederbelebten Gegner geben Tribute. Nach den weiteren Altars entscheidest du zwischen Kaufen, Defer und Reroll der angebotenen Favours.",
+            "en": "Clear the circle, then activate the altar. Defeating the revived enemies earns Tribute. Complete the other altars before deciding whether to buy, defer an expensive offer or pay for a reroll."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Übrigen Tribut kannst du für eine Audienz beim König opfern. Sein Kopf eröffnet in Caer Tarth einen Ritus über fünf Karten. Die Gegner früherer Karten kämpfen später wieder mit. Wähle Kartenbosse, die du auch dann noch kontrollieren kannst, wenn mehrere gleichzeitig angreifen.",
+            "hybrid": "Übrigen Tribute kannst du für An Audience with the King opfern. The Head of the King startet in Caer Tarth den Rite of the Nameless über fünf Maps. Frühere Gegner tauchen später wieder auf. Plane Bosse ein, deren Attacken du auch zusammen ausweichen kannst.",
+            "en": "Offer spare Tribute towards An Audience with the King. His head opens the five-map Rite of the Nameless in Caer Tarth. Earlier enemies return later, so pick bosses whose attacks you can manage together."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Die reguläre Endgame-Auswahl enthält einzigartige Gegenstände und bestimmte Omen wie das Omen des Schnitzens. Im Solospiel kannst du ein wertvolles Angebot für später vormerken. Im Handel entscheidet der konkrete Gegenstand. Für abgrundspezifische Omen ist der Abgrund zuständig. Die Finsterwaldblüte ist ein Sonderfall der Event-Liga Forbidden Rites.",
+            "hybrid": "Die regulären Endgame-Favours enthalten Uniques und bestimmte Omens wie Omen of Whittling. In SSF kannst du ein Ziel deferren, in Trade zählt das konkrete Item. Abyss-spezifische Omens gehören zum Abyss. Sacred Bloom ist eine Sonderbelohnung der Forbidden Rites Event League.",
+            "en": "Standard endgame favours offer uniques and specific Omens, including Omen of Whittling. In SSF, defer an item you need. In trade, compare the actual offer. Abyss-specific Omens come from Abyss. Sacred Bloom is an event-specific reward in Forbidden Rites."
+          }
+        }
+      ],
+      "asset": "topics/ritual.webp",
+      "tooltip_targets": [
+        {
+          "id": "currency.omen-of-whittling",
+          "title": "Omen of Whittling"
+        },
+        {
+          "id": "currency.an-audience-with-the-king",
+          "title": "An Audience with the King"
+        },
+        {
+          "id": "currency.sacred-bloom",
+          "title": "Sacred Bloom"
+        }
+      ],
+      "source_ids": [
+        "ggg050",
+        "ggg055",
+        "ritual",
+        "ritual_omen",
+        "abyss_omens"
+      ],
+      "review_de": "Keine pauschale Omen-Farm. Abyss-spezifische Omen und Event-Gegenstände separat behandeln. Kampagnenrituale von Forbidden Rites haben ein eigenes Angebot."
+    },
+    {
+      "id": "currency.essence",
+      "slug": "essence",
+      "title": {
+        "de": "Essenz",
+        "hybrid": "Essence",
+        "en": "Essence"
+      },
+      "summary": {
+        "de": "Lies die Namen am Kristall, befreie das Monster und sammle seine Essenzen. Welche Ausrüstung sie verändern und welchen Modifikator sie setzen, steht auf jeder Essenz.",
+        "hybrid": "Lies die Essences am Kristall, befreie das Rare und sammle die Drops. Auf jeder Essence stehen die gültige Itemklasse und der garantierte Mod.",
+        "en": "Read the essences on the crystal before releasing the monster. Defeat it to take the listed essences, each with its own eligible items and guaranteed modifier."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Mit einer Essenz kannst du einen schwierigen Schritt bei der Herstellung planen. Eine Essenz des Körpers fügt beispielsweise einem geeigneten Gürtel maximales Leben hinzu. Prüfe vorher Gegenstandsklasse und Seltenheit, denn der Effekt hängt von der Zielausrüstung ab.",
+            "hybrid": "Eine Essence macht einen Craft planbar. Eine Essence of the Body gibt auf geeigneten Bases Maximum Life. Prüfe Item Class und Rarity, weil der garantierte Mod vom Ziel abhängt.",
+            "en": "Use an essence when your craft needs a predictable modifier. For example, an Essence of the Body guarantees maximum life on eligible bases. Check the item class and rarity first, because the outcome depends on the target."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "Am gefangenen Monster siehst du vor dem Kampf, welche Essenzen es trägt. Diese bestimmen sowohl seine zusätzlichen Fähigkeiten als auch seine Beute. Befreie es erst, nachdem du gelesen hast, ob der Kampf für deine Ausrüstung sinnvoll ist.",
+            "hybrid": "Am gefangenen Rare siehst du seine Essences vor dem Kampf. Sie bestimmen Extra-Fähigkeiten und Drops. Lies die Liste, dann brich den Kristall auf.",
+            "en": "The trapped rare shows its essences before the fight. Those essences give it extra abilities and determine its drops. Read the list before breaking the crystal."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Atlaspassive können zusätzliche Essenzen auf Gegner legen. Das erhöht zugleich den Ertrag und die Gefahr. Eine Vaalsphäre auf dem ungeöffneten Kristall kann den Inhalt verändern oder das Monster sofort freilassen. Wenn die angezeigte Essenz schon dein Ziel ist, kannst du sie durch Korruption verlieren.",
+            "hybrid": "Atlas Passives können einem Rare weitere Essences geben. Das erhöht Drops und Schwierigkeit zugleich. Ein Vaal Orb vor dem Release kann die Essences verändern oder den Kampf sofort starten. Ein bereits passender Drop kann dabei verloren gehen.",
+            "en": "Atlas passives can add essences to a monster, increasing both reward and danger. A Vaal Orb used before release can change the essences or start the fight immediately. Corrupting can cost you the very essence you came for."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Geringere, gewöhnliche und größere Essenzen machen einen passenden magischen Gegenstand selten. Perfekte Essenzen ersetzen auf einem seltenen Gegenstand einen zufälligen Modifikator durch den vorgegebenen. Im Solospiel sammle für eine konkrete Basis. Im Handel vergleiche Sorte und Stufe.",
+            "hybrid": "Lesser, normale und Greater Essences werten ein passendes Magic Item zu Rare auf. Perfect Essences ersetzen an einem Rare einen zufälligen Mod durch ihren garantierten Mod. In SSF sammelst du für deine Base, im Trade vergleichst du Typ und Tier.",
+            "en": "Lesser, regular and Greater Essences upgrade an eligible magic item to rare. A Perfect Essence replaces a random modifier on a rare item with its guaranteed one. In SSF collect for a specific base. For trade, match the exact type and tier."
+          }
+        }
+      ],
+      "asset": "topics/essence.webp",
+      "tooltip_targets": [
+        {
+          "id": "currency.essence-of-the-body",
+          "title": "Essence of the Body"
+        },
+        {
+          "id": "currency.perfect-essence-of-the-body",
+          "title": "Perfect Essence of the Body"
+        },
+        {
+          "id": "currency.vaal-orb",
+          "title": "Vaal Orb"
+        }
+      ],
+      "source_ids": [
+        "essence",
+        "essence_item",
+        "essence_rework",
+        "ggg055"
+      ],
+      "review_de": "Zusatzbegegnung. Korruptionsausgänge und Zielklasse vor einem konkreten Herstellungsrezept prüfen."
+    },
+    {
+      "id": "website.azmeri-spirit",
+      "slug": "azmeri-spirit",
+      "title": {
+        "de": "Azmeri-Geist",
+        "hybrid": "Azmeri Spirit",
+        "en": "Azmeri Spirit"
+      },
+      "summary": {
+        "de": "Bleib am Irrlicht, während es durch Gegnergruppen flieht. Es berührt kleinere Gegner, ergreift dann Besitz von einem seltenen oder einzigartigen Gegner und verstärkt dessen Beute.",
+        "hybrid": "Bleib am Wisp, während er durch Packs flieht. Er beeinflusst normale und magische Gegner und kann dann einen Rare oder Unique in Besitz nehmen. Dieses Ziel trägt die besondere Beute.",
+        "en": "Stay with the wisp as it flees through packs. It influences smaller enemies, then possesses a rare or unique monster. That host is the target for special drops."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Azmeri-Geister passen zu Karten, durch die du ohnehin kämpfst. Die Begegnung lässt sich unterwegs mitnehmen. Für einen bestimmten einsetzbaren Götzen musst du auf die Art des Geistes achten. Der Wolf-Götze ist ein Beispiel für einen solchen Fund.",
+            "hybrid": "Azmeri Spirits lassen sich beim Mapping mitnehmen. Suchst du ein bestimmtes socketable Idol, achte auf den Spirit-Typ. Ein Wolf Idol ist ein konkretes Beispiel.",
+            "en": "Azmeri spirits work well alongside ordinary mapping. To target a particular socketable idol, check which spirit possesses the monster. Wolf Idol is one example."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "Geh nahe an das Irrlicht heran und folge ihm durch noch lebende Gruppen. Normale und magische Gegner bekommen eine Geistberührung. Erreicht der Geist ein geeignetes seltenes oder einzigartiges Ziel, nimmt er es in Besitz. Besiege diesen Wirt.",
+            "hybrid": "Nähere dich dem Wisp und folge ihm durch lebende Packs. Normals und Magic Monsters werden beeinflusst. Erreicht er einen geeigneten Rare oder Unique, übernimmt er ihn. Besiege diesen Host.",
+            "en": "Approach the wisp and follow it through living packs. It influences normal and magic monsters along its path. When it reaches an eligible rare or unique, it possesses that host. Defeat the host."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Je mehr Gegner der Geist vorher beeinflusst, desto stärker kann seine Besessenheit wirken. Atlaspassive können den Schwerpunkt auf weitere Geister, besondere Arten oder bessere Chancen auf Götzen legen. Seit 0.5.5 hängt bei Freisetzung die Chance auf einen neuen Geist von der Stärke des Wirts ab.",
+            "hybrid": "Je mehr Monster der Wisp vorher beeinflusst, desto stärker wirkt die Possession. Atlas Passives steuern Spirit-Arten und Chancen auf Idols. Seit 0.5.5 hängt bei einem Release die Chance auf einen neuen Spirit vom Empowerment des Wirts ab.",
+            "en": "The more monsters a wisp influences first, the stronger the possession can become. Atlas passives can favour spirit types or improve idol chances. Since 0.5.5 the chance for a released spirit to manifest again depends on the host’s empowerment."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Ein vom passenden Wolfsgeist besessener Gegner kann den Wolf-Götzen fallen lassen. Die einzigartige Phiole Ritus der Passage ist ein weiteres mögliches Ziel. Im Solospiel prüfst du zuerst den Sockeleffekt für deine Ausrüstung. Für den Handel unterscheiden sich die einzelnen Varianten.",
+            "hybrid": "Ein vom passenden Wolf Spirit besessener Gegner kann ein Wolf Idol droppen. Auch der Unique Charm Rite of Passage ist ein mögliches Ziel. In SSF zählt der Socket-Effekt auf deinem Gear. Vergleiche im Trade die konkrete Variante.",
+            "en": "A monster possessed by the appropriate wolf spirit can drop Wolf Idol. The unique charm Rite of Passage is another possible target. In SSF, check what the idol does in your particular equipment socket. In trade, compare the specific variant."
+          }
+        }
+      ],
+      "asset": "topics/azmeri-spirit.webp",
+      "tooltip_targets": [
+        {
+          "id": "currency.wolf-idol",
+          "title": "Wolf Idol"
+        },
+        {
+          "id": "currency.omen-of-the-hunt",
+          "title": "Omen of the Hunt"
+        }
+      ],
+      "source_ids": [
+        "azmeri",
+        "azmeri_idol",
+        "azmeri_charm",
+        "ggg055"
+      ],
+      "review_de": "Die gesockelten Azmeri-Augmentationen heißen im betrachteten Stand Idole bzw. Götzen. Talismane sind zugleich eine eigenständige Waffenklasse. Ein gewöhnlicher Azmeri-Geist und das Event-Finsterwaldsystem sind verschiedene Begegnungen."
+    },
+    {
+      "id": "website.breach",
+      "slug": "breach",
+      "title": {
+        "de": "Riss",
+        "hybrid": "Breach",
+        "en": "Breach"
+      },
+      "summary": {
+        "de": "Öffne den Riss und besiege Gegner, solange er offen ist. Mit Fruchtkeimen und dem Blut der Schwarmgeborenen kannst du am Genesisbaum Schmuck und Katalysatoren herstellen.",
+        "hybrid": "Öffne den Breach und töte die Hiveborn, solange er offen ist. Wombgifts und Hiveblood bringst du zum Genesis Tree für Jewellery und Catalysts.",
+        "en": "Open the Breach and kill Hiveborn while it lasts. Take Wombgifts and Hiveblood to the Genesis Tree to make jewellery or obtain catalysts."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Der Riss passt zu einem Build, der viele Gegner in kurzer Zeit besiegt. Du sammelst Zutaten für den Genesisbaum im Kloster der Hüter. Dort kannst du beeinflussen, ob du an Ringen, Amuletten, Gürteln oder anderen Belohnungen arbeitest.",
+            "hybrid": "Breach eignet sich für Builds mit gutem Clear. Im Monastery of the Keepers investierst du am Genesis Tree in Ring-, Amulet- oder Belt-Belohnungen und weitere Optionen.",
+            "en": "Breach suits a build that can clear crowds quickly. The Genesis Tree at the Monastery of the Keepers turns the encounter’s materials into choices, including rings, amulets and belts."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "Berühre den Riss, bleib bei den erscheinenden Gruppen und fülle durch Abschüsse die Leiste. Bei voller Leiste stabilisiert sich der Riss. Kehre zum Ausgangspunkt zurück und erledige die zusätzliche Begegnung. Hebe Blut, Fruchtkeime und Riss-Splitter für die spätere Verwendung auf.",
+            "hybrid": "Berühre den Breach und fülle die Leiste durch Kills an den erscheinenden Packs. Bei 100 % beginnt der Stabilised Breach. Geh zum Startpunkt zurück und schließe das neue Encounter ab. Sammle Hiveblood, Wombgifts und Breach Splinters.",
+            "en": "Touch the Breach and kill emerging packs to fill its bar. At 100% the Breach stabilises. Return to its starting point for the next encounter. Collect Hiveblood, Wombgifts and Breach Splinters."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Über weitere Fruchtkeime schaltest du Möglichkeiten am Genesisbaum frei. Wähle Knoten passend zur Art von Schmuck, die du brauchst. Gesammelte Splitter führen über einen besonderen Fruchtkeim zu einem Riss-Stein und damit zu den weiterführenden Begegnungen in den Riss-Domänen.",
+            "hybrid": "Weitere Wombgifts schalten Möglichkeiten am Genesis Tree frei. Wähle Nodes für deinen gewünschten Jewellery-Slot. Ein voller Stack Breach Splinters wird zu einem besonderen Wombgift, das du für einen Breachstone nutzt. Der öffnet den Zugang zu Breach Domains.",
+            "en": "Using Wombgifts unlocks more Genesis Tree options. Pick nodes for the jewellery slot you need. A full stack of splinters becomes a special Wombgift that the tree can turn into a Breachstone for the Breach Domains."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Für das eigene Spiel sind exklusive Schmuckbasen und Katalysatoren besonders interessant. Letztere erhältst du in diesem System am Genesisbaum. Suchst du im Handel nach einem Ring, prüfe die Basis und die tatsächlich erzielten Modifikatoren. Der besondere Basistyp allein entscheidet seinen Wert noch nicht.",
+            "hybrid": "Für SSF sind die exklusiven Jewellery Bases und Catalysts interessant. Catalysts stammen in diesem System vom Genesis Tree. Im Trade bewertest du bei einem Ring Base und gerollte Mods zusammen.",
+            "en": "Exclusive jewellery bases and catalysts give SSF players clear targets. In this system catalysts come from the Genesis Tree. When pricing a ring in trade, consider both the base and the actual modifiers it rolled."
+          }
+        }
+      ],
+      "asset": "topics/breach.webp",
+      "tooltip_targets": [
+        {
+          "id": "currency.breach-splinter",
+          "title": "Breach Splinter"
+        },
+        {
+          "id": "currency.breachstone",
+          "title": "Breachstone"
+        },
+        {
+          "id": "currency.signet-wombgift",
+          "title": "Signet Wombgift"
+        },
+        {
+          "id": "website.catalysts",
+          "title": "Catalysts"
+        }
+      ],
+      "source_ids": [
+        "ggg050",
+        "ggg055",
+        "breach",
+        "breach_de",
+        "ggg_video_breach"
+      ],
+      "review_de": "Beschreibt das System ab 0.5 mit dem Genesisbaum. Die alten pauschalen Empfehlungen zu Katalysator-Drops in der Karte entfallen."
+    },
+    {
+      "id": "website.expedition",
+      "slug": "expedition",
+      "title": {
+        "de": "Expedition",
+        "hybrid": "Expedition",
+        "en": "Expedition"
+      },
+      "summary": {
+        "de": "Lege die Sprengfolge über Truhen, Runenmonster oder Verisium-Relikte. Für Logbücher sind Runenmonster interessant. Ein Logbuch deckt Inseln auf dem Ozean auf.",
+        "hybrid": "Plane deine Explosives für Chests, Runic Monsters oder Verisium Remnants. Für Logbooks priorisierst du Runic Monsters. Ein Logbook deckt Inseln im Ocean auf.",
+        "en": "Lay explosives over chests, Runic Monsters or Verisium Remnants. Prioritise Runic Monsters for logbooks. Use a logbook to reveal islands in the ocean."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Du bestimmst vor dem Kampf, was ausgegraben wird. Für sofortige Beute sind Truhen interessant. Für die Ozeanreise suchst du Runenmonster, die Expeditions-Logbücher fallen lassen können. Ein Logbuch öffnet einen Abschnitt des Ozeans mit Inseln und weiteren Ausgrabungen.",
+            "hybrid": "Du wählst die Beute schon beim Planen. Chests liefern direkte Drops, Runic Monsters können Expedition Logbooks droppen. Ein Logbook deckt im Ocean Inseln mit weiteren Encounters und Grand Expeditions auf.",
+            "en": "You choose the targets before the fight. Marked chests offer immediate loot, while Runic Monsters can drop Expedition Logbooks. A logbook uncovers an ocean region with islands and further excavation sites."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "Schau dir die Markierungen an, bevor du die erste Ladung setzt. Plane eine Kette, deren Sprengradien deine Ziele erreichen. Sprenge anschließend und besiege die ausgegrabenen Gegner. Triffst du ein Verisium-Relikt, spielt auch das gewählte Runenrezept eine Rolle.",
+            "hybrid": "Prüfe die Marker, bevor du das erste Explosive setzt. Lege die Kette über deine Ziele. Nach der Detonation bekämpfst du die freigelegten Gegner. Nimmst du ein Verisium Remnant mit, beachte das Runic Recipe.",
+            "en": "Read the markers before placing your first explosive. Plan a chain whose blast radii cover your chosen targets, then detonate and clear the enemies. If a Verisium Remnant is included, factor its runic recipe into your plan."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Eine dichtere Ausgrabung bietet mehr Ziele, die du in die begrenzten Sprengradien legen kannst. Bei einer Großen Expedition haben höhere Wegsteinstufen mehr mögliche Relikte. Wer noch Mühe mit den Gegnern hat, kann zunächst gezielt die lohnenden Markierungen erreichen.",
+            "hybrid": "Mehr Expedition Density bringt mehr Marker in Reichweite. In Grand Expeditions können höhere Waystone Tiers mehr Remnants ermöglichen. Arbeite zuerst mit einer Kette, deren verstärkte Gegner dein Build zuverlässig schafft.",
+            "en": "A denser site gives your limited blast radii more targets. Higher waystone tiers allow more remnants in a Grand Expedition. Start with targets you can reach and enemies your build can reliably defeat."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Im Solospiel ist ein Logbuch Zugang zum nächsten Stück Ozean und zu den dortigen Großen Expeditionen. Im Handel kannst du es auch ungeöffnet bewerten. Verisium ist für die Runenschmiede interessant. Seit 0.5.5 gehört Expedition auch in Standard zum Atlas.",
+            "hybrid": "In SSF ist ein Logbook dein Zugang zum nächsten Ocean-Sektor und seinen Grand Expeditions. Im Trade lässt sich das ungeöffnete Logbook bewerten. Verisium brauchst du fürs Runeforging. Seit 0.5.5 ist Expedition auch in Standard Teil des Atlas.",
+            "en": "In SSF, a logbook buys access to another stretch of ocean and its Grand Expeditions. In trade, check the unopened logbook’s value before using it. Keep Verisium for runeforging. Since 0.5.5 Expedition also appears in the core Standard Atlas."
+          }
+        }
+      ],
+      "asset": "topics/expedition.webp",
+      "tooltip_targets": [
+        {
+          "id": "currency.expedition-logbook",
+          "title": "Expedition Logbook"
+        },
+        {
+          "id": "currency.verisium",
+          "title": "Verisium"
+        },
+        {
+          "id": "website.aldur",
+          "title": "Runes of Aldur"
+        }
+      ],
+      "source_ids": [
+        "ggg050",
+        "ggg053",
+        "ggg055",
+        "expedition",
+        "ggg_video_expedition"
+      ],
+      "review_de": "Expedition ist seit 0.5.5 auch auf Standard verfügbar. Die Freischaltung von Runenschmieden und Tafelverfügbarkeit unterscheiden sich je Liga."
+    },
+    {
+      "id": "website.aldur",
+      "slug": "aldur",
+      "title": {
+        "de": "Runen von Aldur",
+        "hybrid": "Runes of Aldur",
+        "en": "Runes of Aldur"
+      },
+      "summary": {
+        "de": "Wähle am Relikt ein Runenrezept. Zusätzliche Runenformen bringen weitere Gegnerwellen. Besiege sie, um den hergestellten Gegenstand zu erhalten. Verisium nutzt du separat am Amboss.",
+        "hybrid": "Wähle am Remnant ein Runic Recipe. Zusätzliche Runeshapes bringen weitere Waves. Für den gecrafteten Gegenstand musst du die Waves schaffen. Verisium nutzt du am Anvil.",
+        "en": "Select a runic recipe at a Remnant. Each extra runeshape adds an enemy wave. Survive the encounter to claim the crafted item. Spend Verisium separately at the anvil."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Bei einer Expedition entscheiden Sprengladungen, was du ausgräbst. An einem Verisium-Relikt entscheidest du zusätzlich, was du herstellen willst. Diese zweite Entscheidung ist interessant, wenn du für deine eigene Ausrüstung eine bestimmte Verbesserung suchst.",
+            "hybrid": "Expedition entscheidet über deine Grabung. Das Verisium Remnant gibt dir eine zweite Wahl über den Craft. So kannst du in SSF gezielt ein Ergebnis für dein Gear anpeilen.",
+            "en": "Explosives decide what you dig up. At a Verisium Remnant you also choose which item or effect to craft. That makes it useful when your equipment needs a particular upgrade."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "Prüfe die verfügbaren Fassungen und ihre Runenformen. Wähle ein zugängliches Rezept, lies Belohnung und Gegner-Effekte und starte die Wellen. Verisium von Gegnern kannst du später am Amboss für die Runenschmiede ausgeben.",
+            "hybrid": "Prüfe Slots und Runeshapes am Remnant. Wähle ein verfügbares Recipe und lies Reward und Monster Mods vor dem Start. Verisium von besiegten Gegnern nutzt du später am Verisium Anvil für Runeforging.",
+            "en": "Inspect the available slots and runeshapes. Pick an available recipe, review the reward and enemy effects, then fight the waves. Save the Verisium dropped by enemies for runeforging at the anvil."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Mehr Runenformen erweitern die Rezeptwahl und erhöhen die Zahl der Wellen. Jede weitere Welle kann zusätzliche Gegner-Effekte mitbringen. Außerhalb der ursprünglichen Aldur-Liga wird der Verisium-Amboss seit 0.5.5 über die Runensucher-Quest in Akt 4 zugänglich.",
+            "hybrid": "Mehr Runeshapes erweitern die Auswahl und erhöhen die Anzahl der Waves. Mit jeder weiteren Wave kommen Runic Mods auf die Gegner. Außerhalb der ursprünglichen Aldur League öffnet seit 0.5.5 The Runeseeker in Akt 4 den Verisium Anvil.",
+            "en": "More runeshapes expand your recipe choices and add waves with further runic enemy modifiers. Outside the original Runes of Aldur league, the Act 4 Runeseeker quest unlocks the Verisium Anvil as of 0.5.5."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Ein konkretes Ziel sind Legierungen, etwa die Legierung des Runenvaters. Für die eigene Rüstung kannst du am Amboss Verisium in Runenschutz investieren. Lies die Vorschau, weil höherstufige Rüstungen dafür einen Teil ihrer Grundverteidigung abgeben. Für den Handel zählt das Ergebnis des konkreten Rezepts.",
+            "hybrid": "Ein Crafting-Ziel ist The Runefather's Alloy. Am Anvil kannst du für deine Armour Runic Ward erwerben. Lies die Vorschau, weil höherstufige Bases dafür einen Teil ihrer Basisverteidigung verlieren. Im Trade zählt der Output des konkreten Recipes.",
+            "en": "Alloys such as The Runefather’s Alloy are concrete crafting targets. At the anvil, Verisium can add Runic Ward to your armour. Check the preview because higher-level bases give up some base defences. In trade, evaluate the output of the particular recipe."
+          }
+        }
+      ],
+      "asset": "topics/runes-of-aldur-league.webp",
+      "tooltip_targets": [
+        {
+          "id": "currency.verisium",
+          "title": "Verisium"
+        },
+        {
+          "id": "currency.the-runefathers-alloy",
+          "title": "The Runefather's Alloy"
+        },
+        {
+          "id": "website.expedition",
+          "title": "Expedition"
+        }
+      ],
+      "source_ids": [
+        "ggg050",
+        "ggg055",
+        "expedition",
+        "aldur",
+        "ggg_video_aldur"
+      ],
+      "review_de": "Runenrezepte und Zugang je Liga erneut prüfen. Beschrieben wird der Herstellungsanteil von Expedition, kein weiterer unabhängig zu farmender Atlaszweig."
+    },
+    {
+      "id": "website.atziri",
+      "slug": "atziri",
+      "title": {
+        "de": "Atziris Tempel",
+        "hybrid": "Atziri’s Temple",
+        "en": "Atziri’s Temple"
+      },
+      "summary": {
+        "de": "Lade Vaal-Leuchtfeuer auf, öffne die Tempelkonsole und verbinde Räume mit Wegen. Der Raumtyp und seine Stufe bestimmen, welche Werkbank oder Beute du erreichst.",
+        "hybrid": "Lade Vaal Beacons, öffne die Temple Console und verbinde Rooms und Paths. Raumtyp und Tier bestimmen, welche Bench oder Belohnung erreichbar wird.",
+        "en": "Charge Vaal Beacons, open the Temple Console and connect paths and rooms. Room type and tier determine which crafting bench or reward you can reach."
+      },
+      "sections": [
+        {
+          "key": "purpose",
+          "text": {
+            "de": "Atziris Tempel lohnt sich, wenn du eine bestimmte Werkbank ansteuern willst und gern mehrere Durchgänge vorausplanst. Wähle zuerst den gewünschten Raum. So kannst du beim nächsten Ausbau beurteilen, ob ein Weg dich tatsächlich näher an deine Belohnung bringt.",
+            "hybrid": "Atziri’s Temple ist für zielgerichtete Bench-Crafts und Planung über mehrere Runs interessant. Bestimme zuerst deinen Zielraum. Dann kannst du die angebotenen Paths und Rooms nach ihrem Nutzen für diesen Craft bewerten.",
+            "en": "Atziri’s Temple rewards planning across multiple runs, especially when you want a particular crafting bench. Decide on a target room first, then judge whether each offered path or room brings you closer."
+          }
+        },
+        {
+          "key": "play",
+          "text": {
+            "de": "An Vaal-Leuchtfeuern sammelst du die Kristalle für die Tempelkonsole. Dort legst du Raum- und Wegkarten so, dass ein begehbarer Pfad entsteht. Öffne den Tempel und laufe deinen Weg bis zum Zielraum. Nach dem Durchgang können Teile des Aufbaus instabil werden.",
+            "hybrid": "Vaal Beacons liefern Energised Crystals für die Temple Console. Lege Room Cards und Paths zu einer begehbaren Route. Öffne den Temple und laufe zu den erreichbaren Rewards. Nach dem Run kann ein Teil des Layouts destabilisieren.",
+            "en": "Vaal Beacons supply Energised Crystals for the Temple Console. Place room and path cards to form a walkable route. Open the temple and reach the connected rewards. Parts of the layout can destabilise after the run."
+          }
+        },
+        {
+          "key": "scale",
+          "text": {
+            "de": "Achte beim Platzieren auf Verbindungen, die einen Raum aufwerten. Ein höherer Raumrang kann eine stärkere Werkbank oder besondere Beute erschließen. Je nach Angebot sicherst du einen wertvollen Ausbau, ergänzt einen fehlenden Weg oder arbeitest auf Atziri hin.",
+            "hybrid": "Achte auf Synergien zwischen verbundenen Rooms. Ein höherer Tier schaltet bessere Benches oder Rewards frei. Je nach Layout priorisierst du den Ausbau, eine fehlende Connection oder den Weg zu Atziri.",
+            "en": "Look for connected rooms that upgrade each other. A higher room tier can open better benches or special rewards. Depending on your layout, prioritise an upgrade, a missing path or access to Atziri."
+          }
+        },
+        {
+          "key": "rewards",
+          "text": {
+            "de": "Beispiele sind der Vaal-Verstärker des Rüstungsschmieds aus der ausgebauten Schmiede und die Vaalsphäre der Kultivierung aus der Opferkammer hoher Stufe. Im Solospiel kannst du auf die Werkbank für deinen Gegenstand bauen. Für den Handel prüfst du, ob der Raum eine mitnehmbare Währung anbietet.",
+            "hybrid": "Beispiele sind der Vaal Armourer's Infuser aus der ausgebauten Smithy und der Vaal Cultivation Orb aus der hochstufigen Sacrificial Chamber. In SSF planst du für deine Bench. Im Trade ist interessant, ob du die Belohnung auch als Currency mitnehmen kannst.",
+            "en": "Examples include a Vaal Armourer’s Infuser from an upgraded Smithy and a Vaal Cultivation Orb from a high-tier Sacrificial Chamber. Build towards the specific bench you need in SSF. For trade, check whether the room offers a portable currency reward."
+          }
+        }
+      ],
+      "asset": "topics/atziris-temple.webp",
+      "tooltip_targets": [
+        {
+          "id": "currency.vaal-armourers-infuser",
+          "title": "Vaal Armourer's Infuser"
+        },
+        {
+          "id": "currency.vaal-cultivation-orb",
+          "title": "Vaal Cultivation Orb"
+        },
+        {
+          "id": "currency.architects-orb",
+          "title": "Architect's Orb"
+        }
+      ],
+      "source_ids": [
+        "ggg050",
+        "temple",
+        "temple_rewards"
+      ],
+      "review_de": "Raumverbindungen und Rezepte hängen von Raumtyp und Ausbaustufe ab. Keine Tempelbau-Schablone oder Ertragsprognose."
+    }
+  ]
+}

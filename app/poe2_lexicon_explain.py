@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import re
 
-from poe2_lexicon import GERMAN_ITEM_TYPES, catalogue, lexicon_practice, lexicon_prose
+from poe2_lexicon import GERMAN_ITEM_TYPES, catalogue, league_guides, lexicon_practice, lexicon_prose
 
 
 # Whole phrases only: translate game vocabulary while leaving the German sentence intact.
@@ -242,6 +242,8 @@ def entry_copy(entry, language):
     group, row = target["group"], target.get("row", {})
     if group == "terms":
         summary = term_summary(row, language)
+        if guide := league_guides().get(row.get("id")):
+            return summary, tuple(section["text"][language] for section in guide["sections"] if section["key"] == "scale")
         paragraphs = tuple(filter(None, (localized_copy(p, language) for p in row.get("article", ()))))
         return summary, paragraphs or (line(
             "Prüfe, wo dir der Begriff im Spiel begegnet. Der zugehörige Gegenstand, Skill oder Gebietsabschnitt liefert den konkreten Kontext.",
@@ -259,6 +261,8 @@ def entry_copy(entry, language):
 
 
 def term_summary(row, language):
+    if guide := league_guides().get(row.get("id")):
+        return guide["summary"][language]
     if linked := currencies().get(row.get("currencyId")):
         if active := lexicon_prose(linked.get("summary"),language) or lexicon_prose(linked.get("description"),language):
             return active

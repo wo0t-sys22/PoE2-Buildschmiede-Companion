@@ -234,7 +234,7 @@ def options(filters, language):
     return options
 
 
-def _profile_keys(filters, profiles):
+def profile_keys(filters, profiles):
     if filters.database in profiles:
         return (filters.database,)
     base = base_items().get(filters.base, {})
@@ -438,5 +438,5 @@ def search(filters, language):
                                    _fold(row["name"])))
         return tuple({"id": f"{row.get('kind', 'base')}:{row['name']}", "title": (row.get("de") or row["name"]) if language == "de" else row["name"],
                       "item": row} for row in rows)
-    profiles = _profile_keys(filters, catalogue()["profiles"])
+    profiles = profile_keys(filters, catalogue()["profiles"])
     return _profile_results(filters, words, language, profiles) if profiles else _mod_results(filters, words, language)

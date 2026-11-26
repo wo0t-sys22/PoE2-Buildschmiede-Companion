@@ -19,10 +19,11 @@ class AutoHideScrollbar(ttk.Scrollbar):
 class ScrollArrows(tk.Frame):
     """Page controls for content that exceeds the available height."""
 
-    def __init__(self, parent, view, background, accent, *, inset=4):
+    def __init__(self, parent, view, background, accent, *, inset=4, inline=False):
         super().__init__(parent, bg=background)
         self.view = view
         self.inset = inset
+        self.inline = inline
         self.buttons = []
         for direction, glyph in ((-1, "▲"), (1, "▼")):
             button = tk.Button(self, text=glyph, font=("Segoe UI Symbol", 16, "bold"),
@@ -42,12 +43,18 @@ class ScrollArrows(tk.Frame):
         above, below = float(first) > 0.00001, float(last) < 0.99999
         if above or below:
             if not self.winfo_manager():
-                self.place(relx=1, rely=1, x=-self.inset, y=-3, anchor="se")
+                if self.inline:
+                    self.grid(row=0, column=1, sticky="se", padx=(self.inset, 0))
+                else:
+                    self.place(relx=1, rely=1, x=-self.inset, y=-3, anchor="se")
             self.lift()
             for button, enabled in zip(self.buttons, (above, below)):
                 button.configure(state="normal" if enabled else "disabled")
         elif self.winfo_manager():
-            self.place_forget()
+            if self.inline:
+                self.grid_remove()
+            else:
+                self.place_forget()
 
 
 class BrassSlider(tk.Canvas):
@@ -285,12 +292,22 @@ class ClickTargets:
         self.dragging_header = False
         self.targets = {}
         self.signature = None
+        self.native_handle = None
         self.pending = None
         self.enabled = False
+        self.window.bind("<Map>", self._mapped, add="+")
 
     def show(self):
         self.enabled = True
+        # Applying the guide's click mode raises its window. Put the targets
+        # back above it even if the button geometry stayed the same.
+        self.native_handle = None
         self.sync()
+
+    def _mapped(self, event):
+        if event.widget is self.window:
+            self.native_handle = None
+            self.schedule()
 
     def hide(self):
         self.enabled = False
@@ -300,6 +317,7 @@ class ClickTargets:
         self.pressed = None
         self.dragging_header = False
         self.signature = None
+        self.native_handle = None
         self.window.withdraw()
 
     def schedule(self):
@@ -337,6 +355,17 @@ class ClickTargets:
         self.pending = None
         if not self.enabled or not self.guide.window.winfo_ismapped():
             return
+        if not self.window.winfo_viewable():
+            self.window.deiconify()
+            if not self.window.winfo_viewable():
+                return  # <Map> schedules another pass once the native window exists.
+        handle = self.native.hwnd(self.window)
+        if handle != self.native_handle:
+            # Apply the colour key and input style to the mapped wrapper. Tk
+            # can recreate it after deiconify or when reconfiguring the HUD.
+            self.native.set_click_mode(self.window, False, no_activate=True, alpha=1, owner=self.guide.window)
+            self.native_handle = handle
+            self.signature = None
         x, y, right, bottom = self._size(self.guide.window)
         rectangles = tuple(self._widgets(self.guide.shell, (x, y, right, bottom)))
         if not self.guide.app.click_through:
@@ -346,18 +375,8 @@ class ClickTargets:
         signature = x, y, right, bottom, rectangles, mask
         if signature == self.signature:
             return
-        if self.signature is None:
-            # The pixels outside buttons are the color key. A tiny nonzero alpha at
-            # the buttons leaves their original appearance visible underneath.
-            try:
-                self.native.set_click_mode(self.window, False, no_activate=True, alpha=1)
-            except OSError:
-                # Tk can create the top-level wrapper only when it first maps.
-                pass
-            self.window.deiconify()
-            self.native.set_click_mode(self.window, False, no_activate=True, alpha=1)
         if self.signature is None or signature[:4] != self.signature[:4]:
-            self.native.place(self.native.hwnd(self.window), x, y, right - x, bottom - y)
+            self.native.place(handle, x, y, right - x, bottom - y)
         self.canvas.delete("all")
         self.targets.clear()
         for widget, (a, b, c, d) in rectangles:
@@ -376,6 +395,12 @@ class ClickTargets:
 
     def _press(self, event):
         self.pressed = self._at(event)
+        if self.pressed is not None and not self.guide.app.click_through:
+            # The Windows click window does not activate the Tk guide by itself.
+            window = self.guide.window
+            focused = window.focus_get()
+            if focused is None or focused.winfo_toplevel() is not window:
+                window.focus_force()
         self.dragging_header = self.pressed is self.guide.header
         if self.dragging_header:
             self.guide._begin_gesture("move", event)
@@ -484,7 +509,8 @@ class InputRegion(ClickTargets):
     def show(self):
         # set_click_mode may just have reset the region, so apply it again.
         self.signature = "stale"
-        super().show()
+        self.enabled = True
+        self.sync()
 
     def schedule(self):
         app = self.guide.app
