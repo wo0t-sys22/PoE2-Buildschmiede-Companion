@@ -12,18 +12,20 @@ from poe2_language import display_label
 from poe2_lexicon_explain import augments, currencies, entry_copy
 from poe2_lexicon import (AFFIX_SIDES, GERMAN_ITEM_TYPES, GROUPS, ITEM_KINDS, MECHANICS_LABELS, NODE_KINDS, TOPICS,
                           affix_weight, base_items, bundled_lexicon, catalogue, german_stat_translations, league_guides,
-                          lexicon_guides, public_name, public_stats, web_url)
+                          lexicon_guides, lineage_sources, public_name, public_stats, web_url)
 from poe2_overlay_controls import FlowRow
 from poe2_overlay_lookup import (AFFIX_TIPS, PAGE_SIZE, catalogue_entries, editorial_entries, find_entries,
-                                 lexicon_search_entries, lexicon_terms_and_items, make, modifier_entries,
+                                 lexicon_search_entries, lexicon_terms_and_items, lineage_support_entries, make, modifier_entries,
                                  published_terms)
 from poe2_overlay_theme_art import mix_color
 from poe2_r18_features import PALETTE
 from poe2_website_content import localized_text
 
 
+LINEAGE_LABELS = ("Abstammungs-Unterstützungen", "Lineage Supports", "Lineage Support Gems")
 FACETS = {
     "terms": {"mechanics": MECHANICS_LABELS, **TOPICS},
+    "supports": {"lineage": LINEAGE_LABELS},
     "passives": {key: label for key, label in NODE_KINDS.items() if key not in {"skill", "support"}},
     "items": {key: label for key, label in ITEM_KINDS.items() if key != "currency"},
     "mods": AFFIX_SIDES,
@@ -125,6 +127,10 @@ def _is_game_mechanic(record):
     return record.get("mechanic") and record["id"] not in league_guides()
 
 
+def _is_lineage_support(record):
+    return "Lineage" in (tag.strip() for tag in (record.get("tags") or "").split(","))
+
+
 @dataclass
 class LexiconBrowser:
     query: str = ""
@@ -170,6 +176,8 @@ class LexiconBrowser:
             def facet(entry):
                 if group == "terms":
                     return entry.target["row"].get("topic")
+                if group == "supports":
+                    return "lineage" if _is_lineage_support(entry.target["row"]) else ""
                 return entry.target.get("side" if group == "mods" else "facet")
             entries = (entry for entry in entries if facet(entry) == self.facet)
         return find_entries(entries, self.query, "lexicon")
@@ -342,6 +350,26 @@ def _league_related(guide, language, website):
     return [found[ident] for ident in ids if ident in found]
 
 
+def _lineage_location_entries(ids, language, website):
+    locations = {ident: website[ident] for ident in ids if ident in website}
+    return {entry.target["row"]["id"]: entry for entry in published_terms(language, locations)}
+
+
+def _lineage_related(target, language, website):
+    lineage = lineage_sources()
+    group = target["group"]
+    if group == "terms" and (location := lineage.locations.get(target["row"]["id"])):
+        supports = lineage_support_entries(language)
+        return [(supports[drop["supportId"]], localized_text(drop.get("note"), language))
+                for drop in location["drops"] if drop["supportId"] in supports]
+    if group == "nodes" and target["facet"] == "support":
+        drops = lineage.by_support.get(target["ident"], ())
+        results = _lineage_location_entries((ident for ident, _ in drops), language, website)
+        return [(results[ident], localized_text(drop.get("note"), language))
+                for ident, drop in drops if ident in results]
+    return []
+
+
 def _league_visual(guide):
     accent, icon_id = LEAGUE_VISUALS.get(guide["slug"], (None, ""))
     return accent, currencies().get(icon_id, {}).get("imageLocal")
@@ -367,6 +395,8 @@ def _entry_visual(entry):
 
 def _preview_subtitle(entry, language):
     target = entry.target
+    if target.get("facet") == "support" and _is_lineage_support(target["row"]):
+        return display_label(LINEAGE_LABELS, language)
     if target["group"] != "terms":
         return " · ".join(entry.details)
     record = target["row"]
@@ -553,6 +583,9 @@ def _render_article(window, language, message, row, button, link, pages, *, pict
     originals = []
     url = None
     guide = league_guides().get(record.get("id")) if group == "terms" else None
+    lineage = lineage_sources()
+    lineage_location = lineage.locations.get(record["id"]) if group == "terms" else None
+    lineage_support = group == "nodes" and target["facet"] == "support" and target["ident"] in lineage.by_support
     related_guides = _related_guides(window, entry, language)
     summary, paragraphs = entry_copy(entry, language)
     accent, ref = _entry_visual(entry)
@@ -563,8 +596,9 @@ def _render_article(window, language, message, row, button, link, pages, *, pict
     if ref and picture:
         picture(ref)
     if group == "terms":
-        subtitle = (display_label(GROUPS["league"], language) + " · Patch " + guide["patch"]
-                    if guide else entry.details[1])
+        subtitle = _preview_subtitle(entry, language)
+        if guide:
+            subtitle += " · Patch " + guide["patch"]
         message(subtitle, tone="muted", points=9)
         if language == "hybrid":
             titles = [name for name in dict.fromkeys(record["title"].values()) if name != entry.title]
@@ -602,7 +636,9 @@ def _render_article(window, language, message, row, button, link, pages, *, pict
             message(text("Positionen im Passivbaum", "Positions in the passive tree") + f" · {sum(positions.values())}",
                     tone="muted", points=10)
         source(record.get("source"))
-        if target["facet"] != "support":
+        if lineage_support:
+            url = web_url(language, "support-" + target["ident"], thema="supports")
+        elif target["facet"] != "support":
             fragment = ("skill-" if target["facet"] == "skill" else "passiv-") + target["ident"]
             url = web_url(language, fragment)
     elif group == "items":
@@ -685,7 +721,7 @@ def _render_article(window, language, message, row, button, link, pages, *, pict
         pages(page, VARIANTS_PER_PAGE, len(variants), go)
         source(target.get("url"))
         url = web_url(language, "affix-katalog")
-    if paragraphs and not guide:
+    if paragraphs and not guide and (not lineage_location or record.get("article")):
         message(text("Erklärung & Praxis", "Explanation & examples"), tone="gold")
         for paragraph in paragraphs:
             message(paragraph)
@@ -707,6 +743,34 @@ def _render_article(window, language, message, row, button, link, pages, *, pict
                 preview = (item.title, entry_copy(item, language)[0], None, ref)
                 widget.detail_at_point = lambda x, y, preview=preview: (preview[0], preview)
                 window.app.term_tips.register(widget)
+    website = window.app.website_lexicon() if lineage_location or lineage_support else {}
+    related = _lineage_related(target, language, website) if website else []
+    if related:
+        headline = (display_label(LINEAGE_LABELS, language) if lineage_location
+                    else text("Fundorte", "Drop locations"))
+        message(headline, tone="gold")
+        controls = None
+        for item, note in related:
+            if controls is None:
+                controls = row()
+            widget = button(controls, item.title, lambda item=item: window._pick_lookup(item))
+            widget.configure(fg=window.theme.accent, wraplength=window.layout.px(220), justify="left")
+            if button_art:
+                _, ref = _entry_visual(item)
+                button_art(widget, ref, 22)
+            if note:
+                message(note)
+                controls = None
+    if lineage_location and (slugs := lineage_location.get("related")):
+        available = {item["slug"]: ident for ident, item in lineage.locations.items()}
+        ids = [available[slug] for slug in slugs if slug in available]
+        locations = _lineage_location_entries(ids, language, website)
+        if locations:
+            message(text("Passende Orte", "Related locations"), tone="gold")
+            controls = row()
+            for item in locations.values():
+                widget = button(controls, item.title, lambda item=item: window._pick_lookup(item))
+                widget.configure(fg=window.theme.accent, wraplength=window.layout.px(220), justify="left")
     if related_guides:
         message(text("Passende Guides", "Related guides"), tone="gold")
         controls = row()

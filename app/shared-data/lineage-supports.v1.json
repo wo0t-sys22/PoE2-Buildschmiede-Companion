@@ -1,0 +1,1145 @@
+{
+  "schema": "buildschmiede.lineage-supports.v1",
+  "patch": "0.5.5",
+  "checked": "2026-11-27",
+  "locations": [
+    {
+      "id": "website.atlas-anomalies",
+      "slug": "atlas-anomalies",
+      "title": {
+        "de": "Atlas-Anomalien",
+        "hybrid": "Atlas Anomalies",
+        "en": "Atlas Anomalies"
+      },
+      "summary": {
+        "de": "Vier besondere Atlas-Karten haben je eine eigene Freischaltung. Ihre Bosse können bestimmte Abstammungs-Unterstützungsgemmen fallen lassen.",
+        "hybrid": "Vier besondere Atlas-Maps haben je einen eigenen Unlock. Ihre Bosse können bestimmte Lineage Supports droppen.",
+        "en": "Four special Atlas maps have their own unlock conditions. Their bosses can drop specific Lineage Support Gems."
+      },
+      "article": [
+        {
+          "de": "Bei Gebieten ab Stufe 75 kann die passende Erinnerungs-Passive eine zusätzliche Abstammungs-Unterstützungsgemme gewähren. Die angegebenen 15 % beziehen sich auf den Zusatzdrop aus dem Pool.",
+          "hybrid": "Ab Area Level 75 kann die passende Memories-Passive einen zusätzlichen Lineage Support aus dem Anomaly-Pool droppen lassen. Die 15 % beziehen sich auf den Zusatzdrop aus dem Pool.",
+          "en": "In area level 75+ areas, the corresponding Memories passive adds a 15% chance for an extra Lineage Support from that Anomaly pool."
+        }
+      ],
+      "aliases": [
+        "Anomalie-Karten",
+        "Anomaly Maps",
+        "Lineage Supports",
+        "Abstammungs-Unterstützungsgemmen"
+      ],
+      "drops": [],
+      "related": [
+        "jade-isles",
+        "sacred-reservoir",
+        "derelict-mansion",
+        "sealed-vault"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Anomaly_Map"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.jade-isles",
+      "slug": "jade-isles",
+      "title": {
+        "de": "Die Jadeinseln",
+        "hybrid": "The Jade Isles",
+        "en": "The Jade Isles"
+      },
+      "summary": {
+        "de": "Manoki, der Auserwählte, kann auf den Jadeinseln Rakiatas Fluss und weitere Abstammungs-Unterstützungen fallen lassen.",
+        "hybrid": "Manoki, the Chosen, kann auf The Jade Isles Rakiata's Flow und weitere Lineage Supports droppen.",
+        "en": "Manoki, the Chosen can drop Rakiata's Flow and other Lineage Supports in The Jade Isles."
+      },
+      "article": [
+        {
+          "de": "Suche beim Auge des Sturms in einer benachbarten Karte nach einem Karui-Leuchtfeuer und aktiviere es. Danach ist der Zugang zu den Jadeinseln frei.",
+          "hybrid": "Suche beim Eye of the Storm in einer nahegelegenen Map nach einem Karui Beacon und aktiviere es, um The Jade Isles freizulegen.",
+          "en": "Find the Eye of the Storm on the Atlas. Activate a Karui Beacon in a nearby map to reveal access to The Jade Isles."
+        },
+        {
+          "de": "Rakiatas Fluss ist für elementare Treffer interessant. Positive Elementarwiderstände des Gegners werden für unterstützte Treffer als negative Werte behandelt.",
+          "hybrid": "Rakiata's Flow ist für Elemental Hits interessant. Bei unterstützten Hits werden positive gegnerische Elemental Resistances als negative Werte behandelt.",
+          "en": "Rakiata's Flow is useful for elemental hits. A supported hit treats positive enemy elemental resistances as negative."
+        }
+      ],
+      "aliases": [
+        "Jade Island",
+        "Jade Isle",
+        "Jade Isles",
+        "Jadeinseln",
+        "Auge des Sturms",
+        "Eye of the Storm",
+        "Manoki"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportRakiatasFlowPlayer"
+        },
+        {
+          "supportId": "SupportHardyTotemsPlayerThree"
+        },
+        {
+          "supportId": "SupportKaomsMadnessPlayer"
+        },
+        {
+          "supportId": "SupportTasaliosRhythmPlayer"
+        }
+      ],
+      "related": [
+        "atlas-anomalies"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/The_Jade_Isles"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.sacred-reservoir",
+      "slug": "sacred-reservoir",
+      "title": {
+        "de": "Heiliges Reservoir",
+        "hybrid": "Sacred Reservoir",
+        "en": "Sacred Reservoir"
+      },
+      "summary": {
+        "de": "Zahmir, der Klingenherrscher, kann im Heiligen Reservoir unter anderem Garukhans Entschlossenheit fallen lassen.",
+        "hybrid": "Zahmir, the Blade Sovereign, kann im Sacred Reservoir unter anderem Garukhan's Resolve droppen.",
+        "en": "Zahmir, the Blade Sovereign can drop Garukhan's Resolve and other Lineage Supports in Sacred Reservoir."
+      },
+      "article": [
+        {
+          "de": "Aktiviere drei Temporale Vorrichtungen in nahegelegenen Karten, um den Temporalen Sandsturm aufzulösen.",
+          "hybrid": "Aktiviere drei Temporal Tethers in Maps rund um den Temporal Sandstorm.",
+          "en": "Activate three Temporal Tethers in nearby maps to dispel the Temporal Sandstorm."
+        }
+      ],
+      "aliases": [
+        "Temporaler Sandsturm",
+        "Temporal Sandstorm",
+        "Zahmir"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportGarukhansResolvePlayer"
+        },
+        {
+          "supportId": "SupportKhatalsRejuvenationPlayer"
+        },
+        {
+          "supportId": "SupportVarashtasBlessingPlayer"
+        },
+        {
+          "supportId": "SupportZarokhsRefrainPlayer"
+        }
+      ],
+      "related": [
+        "atlas-anomalies",
+        "zarokh-the-temporal"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Sacred_Reservoir"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.derelict-mansion",
+      "slug": "derelict-mansion",
+      "title": {
+        "de": "Verfallenes Herrenhaus",
+        "hybrid": "Derelict Mansion",
+        "en": "Derelict Mansion"
+      },
+      "summary": {
+        "de": "Varloch, der Aschfahle Fürst, und Avelyne, die Verwelkte Rose, können die Abstammungs-Unterstützungen dieses Herrenhauses fallen lassen.",
+        "hybrid": "Varloch, the Ashen Lord, und Avelyne, the Withered Rose, sind die Lineage-Dropquellen der Derelict Mansion.",
+        "en": "Varloch, the Ashen Lord and Avelyne, the Withered Rose are the Lineage drop sources for Derelict Mansion."
+      },
+      "article": [
+        {
+          "de": "Schließe Karten ab, in denen sich Draíocht-Irrlichter sammeln. So lockst du sie zum Herrenhaus und legst den Zugang frei.",
+          "hybrid": "Schließe Maps mit Draíocht Wisps ab. So lockst du die Wisps zur Mansion in the Mists und legst den Zugang frei.",
+          "en": "Complete maps where Draíocht Wisps gather to lure them towards the Mansion in the Mists and open it."
+        }
+      ],
+      "aliases": [
+        "Herrenhaus in den Nebeln",
+        "Mansion in the Mists",
+        "Draíocht",
+        "Varloch",
+        "Avelyne"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportAilithLineagePlayer"
+        },
+        {
+          "supportId": "SupportRigwaldsFerocityPlayer"
+        },
+        {
+          "supportId": "SupportEinharsBeastritePlayer"
+        }
+      ],
+      "related": [
+        "atlas-anomalies"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Derelict_Mansion"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.sealed-vault",
+      "slug": "sealed-vault",
+      "title": {
+        "de": "Versiegeltes Gewölbe",
+        "hybrid": "Sealed Vault",
+        "en": "Sealed Vault"
+      },
+      "summary": {
+        "de": "Ytzara, Blutorakel, und Maztli, Fleischformer, können im Versiegelten Gewölbe unter anderem Ataluis Aderlass fallen lassen.",
+        "hybrid": "Ytzara, Blood Oracle, und Maztli, Flesh-Shaper, können im Sealed Vault unter anderem Atalui's Bloodletting droppen.",
+        "en": "Ytzara, Blood Oracle and Maztli, Flesh-Shaper can drop Atalui's Bloodletting and other Lineage Supports in Sealed Vault."
+      },
+      "article": [
+        {
+          "de": "Aktiviere das Gefäß von Estazunti in einer der mit dem Gewölbe verbundenen Karten.",
+          "hybrid": "Aktiviere das Vessel of Estazunti in einer mit dem Sealed Vault verbundenen Map.",
+          "en": "Activate a Vessel of Estazunti in one of the maps connected to the vault."
+        }
+      ],
+      "aliases": [
+        "Estazuntis Schatzkammer",
+        "Estazunti's Vault",
+        "Estazunti",
+        "Ytzara",
+        "Maztli"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportAtaluiBloodlettingPlayer"
+        },
+        {
+          "supportId": "SupportCorruptingCryPlayerThree"
+        },
+        {
+          "supportId": "SupportAtzirisAllurePlayer"
+        },
+        {
+          "supportId": "SupportXibaquasRendingPlayer"
+        }
+      ],
+      "related": [
+        "atlas-anomalies",
+        "the-bodach"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Sealed_Vault"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.zarokh-the-temporal",
+      "slug": "zarokh-the-temporal",
+      "title": {
+        "de": "Zarokh, Meister der Zeit",
+        "hybrid": "Zarokh, the Temporal",
+        "en": "Zarokh, the Temporal"
+      },
+      "summary": {
+        "de": "Zarokh ist der Boss am Ende des vierten Stockwerks der Prüfung der Sekhemas.",
+        "hybrid": "Zarokh ist der Boss am Ende von Floor 4 im Trial of the Sekhemas.",
+        "en": "Zarokh is the boss at the end of floor four in the Trial of the Sekhemas."
+      },
+      "article": [],
+      "aliases": [
+        "Prüfung der Sekhemas",
+        "Trial of the Sekhemas",
+        "Sekhemas"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportZarokhsRefrainPlayer"
+        },
+        {
+          "supportId": "SupportVarashtasBlessingPlayer"
+        }
+      ],
+      "related": [
+        "sacred-reservoir"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Zarokh_the_Temporal"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.the-bodach",
+      "slug": "the-bodach",
+      "title": {
+        "de": "Der Bodach",
+        "hybrid": "The Bodach",
+        "en": "The Bodach"
+      },
+      "summary": {
+        "de": "Der Bodach kann eigene Abstammungs-Unterstützungen fallen lassen, darunter Paquates Pakt.",
+        "hybrid": "The Bodach kann eigene Lineage Supports droppen, darunter Paquate's Pact.",
+        "en": "The Bodach can drop its own Lineage Supports, including Paquate's Pact."
+      },
+      "article": [
+        {
+          "de": "Der Ritual-Endboss wartet in Caer Tarth.",
+          "hybrid": "Der Ritual-Pinnacle-Boss wartet in Caer Tarth.",
+          "en": "The Ritual pinnacle boss is found in Caer Tarth."
+        }
+      ],
+      "aliases": [
+        "Bodach",
+        "Caer Tarth",
+        "Ritual"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportCorruptingCryPlayerThree"
+        },
+        {
+          "supportId": "SupportCathasBrilliance"
+        },
+        {
+          "supportId": "SupportMorrigansInsight"
+        }
+      ],
+      "related": [
+        "sealed-vault"
+      ],
+      "sources": [
+        {
+          "label": "PoE2Wiki",
+          "url": "https://www.poe2wiki.net/wiki/The_Bodach"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.abyssal-depths-troves",
+      "slug": "abyssal-depths-troves",
+      "title": {
+        "de": "Schatztruhen der Abgründigen Tiefen",
+        "hybrid": "Abyssal Depths Troves",
+        "en": "Abyssal Depths Troves"
+      },
+      "summary": {
+        "de": "Öffne die großen Abgrund-Schatztruhen am Ende der Abgründigen Tiefen. Dort können drei Abstammungs-Unterstützungen gefunden werden.",
+        "hybrid": "Öffne die Large Abyssal Troves am Ende der Abyssal Depths. Dort können drei Lineage Supports droppen.",
+        "en": "Open the Large Abyssal Troves at the end of the Abyssal Depths. They can yield three Lineage Supports."
+      },
+      "article": [],
+      "aliases": [
+        "Large Abyssal Trove",
+        "Abgründige Tiefen",
+        "Abyssal Depths"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportAmanamusTithePlayer"
+        },
+        {
+          "supportId": "SupportKurgalsLeashPlayer"
+        },
+        {
+          "supportId": "SupportKulemaksDominionPlayer"
+        }
+      ],
+      "related": [],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Abyssal_Depths"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.vessel-of-kulemak",
+      "slug": "vessel-of-kulemak",
+      "title": {
+        "de": "Gefäß von Kulemak",
+        "hybrid": "Vessel of Kulemak",
+        "en": "Vessel of Kulemak"
+      },
+      "summary": {
+        "de": "Tecrods Rache ist ein möglicher Drop vom Gefäß von Kulemak.",
+        "hybrid": "Tecrod's Revenge kann beim Vessel of Kulemak droppen.",
+        "en": "Tecrod's Revenge can drop from the Vessel of Kulemak."
+      },
+      "article": [
+        {
+          "de": "Der Zugang zur Schwarzen Kathedrale führt über den Brunnen der Seelen.",
+          "hybrid": "Die Black Cathedral erreichst du über den Well of Souls.",
+          "en": "Access the Black Cathedral through the Well of Souls."
+        }
+      ],
+      "aliases": [
+        "Kulemak",
+        "Die Schwarze Kathedrale",
+        "The Black Cathedral",
+        "Well of Souls"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportTecrodsRevengePlayer"
+        }
+      ],
+      "related": [
+        "abyssal-depths-troves"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/The_Black_Cathedral"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.xesht-lineage",
+      "slug": "xesht-lineage",
+      "title": {
+        "de": "Xesht · Abstammungs-Unterstützungen",
+        "hybrid": "Xesht · Lineage Supports",
+        "en": "Xesht · Lineage Supports"
+      },
+      "summary": {
+        "de": "Xesht hat einen eigenen Pool aus vier Abstammungs-Unterstützungen.",
+        "hybrid": "Xesht hat einen eigenen Pool aus vier Lineage Supports.",
+        "en": "Xesht, We That Are One has a pool of four Lineage Supports."
+      },
+      "article": [
+        {
+          "de": "Der Kampf findet in The Twisted Domain statt.",
+          "hybrid": "Der Kampf findet in The Twisted Domain statt.",
+          "en": "The encounter takes place in The Twisted Domain."
+        }
+      ],
+      "aliases": [
+        "Xesht",
+        "Xesht, We That Are One",
+        "Riss",
+        "Breach",
+        "The Twisted Domain"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportXophsPyrePlayer"
+        },
+        {
+          "supportId": "SupportEshsRadiancePlayer"
+        },
+        {
+          "supportId": "SupportTulsStillnessPlayer"
+        },
+        {
+          "supportId": "SupportUulNetolsEmbracePlayer"
+        }
+      ],
+      "related": [],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Xesht%2C_We_That_Are_One"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.esh-tul-breach",
+      "slug": "esh-tul-breach",
+      "title": {
+        "de": "Esh und Tul · Riss-Bosse",
+        "hybrid": "Esh and Tul · Breach bosses",
+        "en": "Esh and Tul · Breach bosses"
+      },
+      "summary": {
+        "de": "Die Riss-Bosse It That Was Esh und It That Was Tul werden beide als Quellen für Eshs Tapferkeit und Tuls Lawine geführt.",
+        "hybrid": "It That Was Esh und It That Was Tul sind beide Quellen für Esh's Prowess und Tul's Avalanche.",
+        "en": "It That Was Esh and It That Was Tul are both listed as sources for Esh's Prowess and Tul's Avalanche."
+      },
+      "article": [
+        {
+          "de": "Suche die Schwarmkolonie am Ende der Rissfestung.",
+          "hybrid": "Suche die Hive Colony am Ende der Breach Fortress.",
+          "en": "Find the Hive Colony at the end of a Breach Fortress."
+        }
+      ],
+      "aliases": [
+        "It That Was Esh",
+        "It That Was Tul",
+        "Riss",
+        "Schwarmkolonie",
+        "Hive Colony",
+        "Breach Fortress"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportEshsProwess"
+        },
+        {
+          "supportId": "SupportTulsAvalanche"
+        }
+      ],
+      "related": [
+        "xesht-lineage"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Hive_Colony"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.olroth-lineage",
+      "slug": "olroth-lineage",
+      "title": {
+        "de": "Olroth · Abstammungs-Unterstützungen",
+        "hybrid": "Olroth · Lineage Supports",
+        "en": "Olroth · Lineage Supports"
+      },
+      "summary": {
+        "de": "Bei Olroth aus der Expedition können Uhtreds Exodus, Uhtreds Omen und Uhtreds Wahrsagung fallen.",
+        "hybrid": "Olroth kann Uhtred's Exodus, Uhtred's Omen und Uhtred's Augury droppen.",
+        "en": "Olroth, Origin of the Fall can drop Uhtred's Exodus, Uhtred's Omen and Uhtred's Augury."
+      },
+      "article": [
+        {
+          "de": "Suche Olroth auf der Geheimnisvollen Insel.",
+          "hybrid": "Suche Olroth auf Obscure Island.",
+          "en": "Look for Olroth on Obscure Island."
+        }
+      ],
+      "aliases": [
+        "Olroth, Origin of the Fall",
+        "Expedition",
+        "Obscure Island",
+        "Geheimnisvolle Insel"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportUhtredExodusPlayer"
+        },
+        {
+          "supportId": "SupportUhtredOmenPlayer"
+        },
+        {
+          "supportId": "SupportUhtredAuguryPlayer"
+        }
+      ],
+      "related": [
+        "uhtred-lineage"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Obscure_Island"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.uhtred-lineage",
+      "slug": "uhtred-lineage",
+      "title": {
+        "de": "Uhtred · Abstammungs-Unterstützungen",
+        "hybrid": "Uhtred · Lineage Supports",
+        "en": "Uhtred · Lineage Supports"
+      },
+      "summary": {
+        "de": "Uhtred im Secluded Temple ist die Quelle für Uhtreds Ritus und Uhtreds Sternbild.",
+        "hybrid": "Uhtred im Secluded Temple kann Uhtred's Rite und Uhtred's Constellation droppen.",
+        "en": "Uhtred, the Stardrinker in Secluded Temple can drop Uhtred's Rite and Uhtred's Constellation."
+      },
+      "article": [
+        {
+          "de": "Der Abgelegene Tempel ist eine Expeditionskarte.",
+          "hybrid": "Secluded Temple ist eine Expedition-Map.",
+          "en": "Secluded Temple is an Expedition map."
+        }
+      ],
+      "aliases": [
+        "Uhtred, the Stardrinker",
+        "Secluded Temple",
+        "Expedition",
+        "Abgelegener Tempel"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportUhtredsRitePlayer"
+        },
+        {
+          "supportId": "SupportUhtredsConstellation"
+        }
+      ],
+      "related": [
+        "olroth-lineage"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Secluded_Temple"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.medved-lineage",
+      "slug": "medved-lineage",
+      "title": {
+        "de": "Medved · Abstammungs-Unterstützungen",
+        "hybrid": "Medved · Lineage Supports",
+        "en": "Medved · Lineage Supports"
+      },
+      "summary": {
+        "de": "Als Quelle für Voranas Belagerung ist Medved im Sprawling Jungle angegeben.",
+        "hybrid": "Medved im Sprawling Jungle ist als Dropquelle für Vorana's Siege gelistet.",
+        "en": "Medved, the Fallen Seer in Sprawling Jungle is listed as a drop source for Vorana's Siege."
+      },
+      "article": [
+        {
+          "de": "Der Weitläufige Dschungel ist eine Expeditionskarte.",
+          "hybrid": "Sprawling Jungle ist eine Expedition-Map.",
+          "en": "Sprawling Jungle is an Expedition map."
+        }
+      ],
+      "aliases": [
+        "Medved, the Fallen Seer",
+        "Sprawling Jungle",
+        "Expedition",
+        "Weitläufiger Dschungel"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportVoranasSiege"
+        }
+      ],
+      "related": [],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Sprawling_Jungle"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.the-aberration",
+      "slug": "the-aberration",
+      "title": {
+        "de": "Die Abnormität",
+        "hybrid": "The Aberration",
+        "en": "The Aberration"
+      },
+      "summary": {
+        "de": "Die Abnormität ist als Quelle für Olroths Überzeugung angegeben.",
+        "hybrid": "The Aberration kann Olroth's Conviction droppen.",
+        "en": "The Aberration is listed as a drop source for Olroth's Conviction."
+      },
+      "article": [
+        {
+          "de": "Die Begegnung findet im Verisium-Krater statt.",
+          "hybrid": "Die Begegnung findet im Verisium Crater statt.",
+          "en": "The encounter is in Verisium Crater."
+        }
+      ],
+      "aliases": [
+        "Aberration",
+        "Die Abnormität",
+        "Verisium Crater"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportOlrothsConvictionPlayer"
+        }
+      ],
+      "related": [
+        "olroth-lineage"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Olroths_Conviction"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.atziri-red-queen",
+      "slug": "atziri-red-queen",
+      "title": {
+        "de": "Atziri, die Rote Königin",
+        "hybrid": "Atziri, the Red Queen",
+        "en": "Atziri, the Red Queen"
+      },
+      "summary": {
+        "de": "Atziri, die Rote Königin, kann Atziris Verbundenheit, Atziris Ungeduld und Zerphis Schande fallen lassen.",
+        "hybrid": "Atziri, the Red Queen, kann Atziri's Communion, Atziri's Impatience und Zerphi's Infamy droppen.",
+        "en": "Atziri, the Red Queen can drop Atziri's Communion, Atziri's Impatience and Zerphi's Infamy."
+      },
+      "article": [],
+      "aliases": [
+        "Atziris Tempel",
+        "Atziri's Temple"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportAtzirisCommunionPlayer"
+        },
+        {
+          "supportId": "SupportAtzirisImpatiencePlayer"
+        },
+        {
+          "supportId": "SupportZerphisLegacyPlayer"
+        }
+      ],
+      "related": [
+        "atziri-lineage-vault"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.atziri-lineage-vault",
+      "slug": "atziri-lineage-vault",
+      "title": {
+        "de": "Schatzkammer für Abstammungsgemmen",
+        "hybrid": "Lineage Gems Vault in Atziri's Temple",
+        "en": "Lineage Gems Vault in Atziri's Temple"
+      },
+      "summary": {
+        "de": "Öffne die Historische Truhe in der Halle der Verehrung in Atziris Tempel. Dort können Guatelitzis Ablation und Hayoxis Wutausbruch liegen.",
+        "hybrid": "Öffne das Lineage Gems Vault im Hall of Reverence in Atziri's Temple. Es kann Guatelitzi's Ablation und Hayoxi's Fulmination enthalten.",
+        "en": "Open the Lineage Gems Vault in the Hall of Reverence in Atziri's Temple. It can contain Guatelitzi's Ablation and Hayoxi's Fulmination."
+      },
+      "article": [],
+      "aliases": [
+        "Atziris Tempel",
+        "Atziri's Temple",
+        "Hall of Reverence",
+        "Lineage Gems Vault",
+        "Halle der Verehrung",
+        "Historische Truhe"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportGuatelitzisAblationPlayer"
+        },
+        {
+          "supportId": "SupportHayoxisBindingPlayer"
+        }
+      ],
+      "related": [
+        "atziri-red-queen"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Guatelitzis_Ablation"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        },
+        {
+          "label": "PoE2DB · Hayoxi",
+          "url": "https://poe2db.tw/us/Hayoxis_Fulmination"
+        }
+      ]
+    },
+    {
+      "id": "website.arbiter-of-ash-lineage",
+      "slug": "arbiter-of-ash-lineage",
+      "title": {
+        "de": "Richter der Asche · Abstammungs-Unterstützungen",
+        "hybrid": "Arbiter of Ash · Lineage Supports",
+        "en": "Arbiter of Ash · Lineage Supports"
+      },
+      "summary": {
+        "de": "Zündung des Richters kann beim Richter der Asche fallen.",
+        "hybrid": "Arbiter's Ignition kann beim Arbiter of Ash droppen.",
+        "en": "Arbiter's Ignition can drop from the Arbiter of Ash."
+      },
+      "article": [
+        {
+          "de": "Der Richter der Asche wartet im Brennenden Monolithen.",
+          "hybrid": "Den Arbiter of Ash findest du im Burning Monolith.",
+          "en": "The Arbiter of Ash is found in The Burning Monolith."
+        }
+      ],
+      "aliases": [
+        "The Arbiter of Ash",
+        "Richter der Asche",
+        "The Burning Monolith",
+        "Brennender Monolith"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportArbitersIgnitionPlayer"
+        }
+      ],
+      "related": [],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Arbiters_Ignition"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.arbiter-of-divinity-lineage",
+      "slug": "arbiter-of-divinity-lineage",
+      "title": {
+        "de": "Arbiter of Divinity · Abstammungs-Unterstützungen",
+        "hybrid": "Arbiter of Divinity · Lineage Supports",
+        "en": "Arbiter of Divinity · Lineage Supports"
+      },
+      "summary": {
+        "de": "Beim Arbiter of Divinity können Ihre Kundgebung und Prototyp 17 fallen.",
+        "hybrid": "Beim Arbiter of Divinity können Her Declaration und Prototype Seventeen droppen.",
+        "en": "Her Declaration and Prototype Seventeen can drop from the Arbiter of Divinity."
+      },
+      "article": [
+        {
+          "de": "Die Begegnung findet im Origin Tower statt.",
+          "hybrid": "Die Begegnung findet im Origin Tower statt.",
+          "en": "The encounter takes place in The Origin Tower."
+        }
+      ],
+      "aliases": [
+        "The Arbiter of Divinity",
+        "The Origin Tower"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportHerDeclarationPlayer"
+        },
+        {
+          "supportId": "SupportPrototypeSeventeenPlayer"
+        },
+        {
+          "supportId": "ArbitersReachWardPlayer"
+        },
+        {
+          "supportId": "SupportSeraphsHeartPlayer"
+        }
+      ],
+      "related": [
+        "arbiter-of-ash-lineage"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/The_Origin_Tower"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        },
+        {
+          "label": "PoE2DB · The Arbiter of Divinity",
+          "url": "https://poe2db.tw/us/The_Arbiter_of_Divinity"
+        }
+      ]
+    },
+    {
+      "id": "website.trialmaster-lineage",
+      "slug": "trialmaster-lineage",
+      "title": {
+        "de": "Prüfungsmeister · Abstammungs-Unterstützungen",
+        "hybrid": "Trialmaster · Lineage Supports",
+        "en": "Trialmaster · Lineage Supports"
+      },
+      "summary": {
+        "de": "Ixchels Qual kann beim Prüfungsmeister am Ende des Chaos-Pfads fallen.",
+        "hybrid": "Ixchel's Torment kann beim Trialmaster im Chaos-Pfad droppen.",
+        "en": "Ixchel's Torment can drop from the Trialmaster in the Trial of Chaos."
+      },
+      "article": [],
+      "aliases": [
+        "Trialmaster",
+        "Prüfung des Chaos",
+        "Trial of Chaos"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportFlukePlayerTwo"
+        }
+      ],
+      "related": [],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.raven-trickster-lineage",
+      "slug": "raven-trickster-lineage",
+      "title": {
+        "de": "Rabenschwindler · Abstammungs-Unterstützungen",
+        "hybrid": "The Raven Trickster · Lineage Supports",
+        "en": "The Raven Trickster · Lineage Supports"
+      },
+      "summary": {
+        "de": "The Raven Trickster in The Withered Hollow ist als Quelle für Splitter des Schwindlers und Tangmazus Weihrauchfass angegeben.",
+        "hybrid": "The Raven Trickster in The Withered Hollow kann Trickster's Shard und Tangmazu's Thurible droppen.",
+        "en": "The Raven Trickster in The Withered Hollow can drop Trickster's Shard and Tangmazu's Thurible."
+      },
+      "article": [
+        {
+          "de": "An der Welken Weide führt die Spiegelung des Raben zur Begegnung.",
+          "hybrid": "An der Withered Willow führt Raven's Reflection zur Begegnung.",
+          "en": "Use Raven's Reflection at The Withered Willow to access the encounter."
+        }
+      ],
+      "aliases": [
+        "The Withered Hollow",
+        "Raven Trickster",
+        "Die Welke Weide",
+        "The Withered Willow",
+        "Raven's Reflection",
+        "Rabenschwindler"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportTrickstersShardPlayer"
+        },
+        {
+          "supportId": "SupportTangMazusThuriblePlayer"
+        }
+      ],
+      "related": [],
+      "sources": [
+        {
+          "label": "PoE2Wiki",
+          "url": "https://www.poe2wiki.net/wiki/The_Raven_Trickster"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.styrn-lineage",
+      "slug": "styrn-lineage",
+      "title": {
+        "de": "Styrn · Abstammungs-Unterstützungen",
+        "hybrid": "Styrn · Lineage Supports",
+        "en": "Styrn · Lineage Supports"
+      },
+      "summary": {
+        "de": "Styrn, der gefallene Ritter von Aldur, kann Styrns Berg und Styrns Wildheit fallen lassen.",
+        "hybrid": "Styrn, Fallen Knight of Aldur kann Styrn's Mountain und Styrn's Ferocity droppen.",
+        "en": "Styrn, Fallen Knight of Aldur can drop Styrn's Mountain and Styrn's Ferocity."
+      },
+      "article": [
+        {
+          "de": "Styrn wartet im Grab des gefallenen Ritters.",
+          "hybrid": "Styrn wartet im Tomb of the Fallen Knight.",
+          "en": "Styrn is found in the Tomb of the Fallen Knight."
+        }
+      ],
+      "aliases": [
+        "Styrn, Fallen Knight of Aldur",
+        "Runes of Aldur",
+        "Runen von Aldur",
+        "Tomb of the Fallen Knight"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportStyrnsMountain"
+        },
+        {
+          "supportId": "SupportStyrnsFerocity"
+        }
+      ],
+      "related": [],
+      "sources": [
+        {
+          "label": "PoE2Wiki",
+          "url": "https://www.poe2wiki.net/wiki/Styrn%2C_Fallen_Knight_of_Aldur"
+        },
+        {
+          "label": "PoE2DB · Lineage Supports",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    },
+    {
+      "id": "website.global-lineage-drops",
+      "slug": "global-lineage-drops",
+      "title": {
+        "de": "Globale Abstammungs-Drops",
+        "hybrid": "Global Lineage drops",
+        "en": "Global Lineage drops"
+      },
+      "summary": {
+        "de": "Diese Abstammungs-Unterstützungen sind als globale Drops gelistet. Für sie ist kein bestimmter Boss oder eine feste Karte als gezielte Quelle angegeben.",
+        "hybrid": "Diese Lineage Supports sind als Global Drops gelistet. Du brauchst dafür keinen bestimmten Boss oder eine feste Map als Dropquelle.",
+        "en": "These Lineage Supports are listed as global drops. They do not have a listed target boss or map."
+      },
+      "article": [],
+      "aliases": [
+        "Abstammungs-Unterstützungen",
+        "Lineage Support Gems",
+        "World Drop"
+      ],
+      "drops": [
+        {
+          "supportId": "SupportOisinsOathPlayer"
+        },
+        {
+          "supportId": "SupportVilentasPropulsionPlayer"
+        },
+        {
+          "supportId": "SupportBrutusBrainPlayer"
+        },
+        {
+          "supportId": "SupportAhnsCitadelPlayer"
+        },
+        {
+          "supportId": "SupportEonyrsThunderPlayer"
+        },
+        {
+          "supportId": "SupportUruksSmeltingPlayer"
+        },
+        {
+          "supportId": "SupportDoedresUndoingPlayer"
+        },
+        {
+          "supportId": "SupportCombatReloadPlayer"
+        },
+        {
+          "supportId": "SupportAmmoConservationPlayerFour"
+        },
+        {
+          "supportId": "SupportWildshardsPlayerThree"
+        },
+        {
+          "supportId": "SupportCirelsCultivationPlayer"
+        },
+        {
+          "supportId": "SupportRomirasRequitalPlayer"
+        },
+        {
+          "supportId": "SupportPietysMercyPlayer"
+        },
+        {
+          "supportId": "SupportDiallasDesirePlayer"
+        },
+        {
+          "supportId": "SupportKalisasCrescendoPlayer"
+        },
+        {
+          "supportId": "SupportDaressosPassionPlayer"
+        },
+        {
+          "supportId": "SupportTacatisIrePlayer"
+        },
+        {
+          "supportId": "SupportArakaalisLustPlayer"
+        },
+        {
+          "supportId": "SupportMorganasTempestPlayer"
+        },
+        {
+          "supportId": "SupportHelbrymsHidePlayer"
+        }
+      ],
+      "related": [
+        "atlas-anomalies"
+      ],
+      "sources": [
+        {
+          "label": "PoE2DB",
+          "url": "https://poe2db.tw/us/Lineage_Supports"
+        }
+      ]
+    }
+  ]
+}

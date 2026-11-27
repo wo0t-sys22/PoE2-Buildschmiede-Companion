@@ -7,9 +7,9 @@ import sys
 
 
 APP_NAME = "PoE2 Ingame Guide"
-BUILD = 226
+BUILD = 227
 INSTALLED_BUILD = getattr(sys, "frozen", False)
-VERSION = "0.23.0"
+VERSION = "0.24.0"
 BUILD_LABEL = f"v.{VERSION}"
 SERVER_NAME = "PoE2RaceControl/1.0"
 

@@ -118,6 +118,29 @@ def league_guides():
     return {row["id"]: {**row, "patch": document["patch"]} for row in document["entries"]}
 
 
+class LineageSources(NamedTuple):
+    locations: dict
+    by_support: dict
+
+
+@lru_cache(maxsize=1)
+def lineage_sources():
+    path = DATA_DIR / "shared-data" / "lineage-supports.v1.json"
+    try:
+        with path.open(encoding="utf-8") as source:
+            document = json.load(source)
+    except (OSError, ValueError):
+        return LineageSources({}, {})
+    if not isinstance(document, dict) or document.get("schema") != "buildschmiede.lineage-supports.v1":
+        return LineageSources({}, {})
+    locations = {row["id"]: row for row in document["locations"]}
+    by_support = defaultdict(list)
+    for ident, location in locations.items():
+        for drop in location["drops"]:
+            by_support[drop["supportId"]].append((ident, drop))
+    return LineageSources(locations, dict(by_support))
+
+
 @lru_cache(maxsize=1)
 def lexicon_guides():
     path = DATA_DIR / "shared-data" / "lexicon-guides.v1.json"
@@ -149,6 +172,15 @@ def bundled_lexicon():
         if "icon" in entry:
             entry["imageLocal"] = shared.native_ref(entry)
             entry.pop("icon")
+    for ident, location in lineage_sources().locations.items():
+        entries[ident] = {
+            **entries.get(ident, {}),
+            "id": ident, "slug": location["slug"], "title": location["title"],
+            "summary": location["summary"], "article": location.get("article", []),
+            "aliases": location.get("aliases", []), "links": location.get("sources", []),
+            "role": "info", "topic": "info", "mechanic": True,
+            "url": f'{LEXICON_URL}?thema=terms#begriff-{location["slug"]}',
+        }
     return entries
 
 

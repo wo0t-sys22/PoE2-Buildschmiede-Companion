@@ -11,9 +11,9 @@ from poe2_language import CATALOG, LANGUAGES, boss_text, display_label, ui_text
 from poe2_build_editorial import BUILD_TOPICS, editorial_lines, plain_guide_text, stage_view
 from poe2_lexicon_explain import term_summary
 from poe2_lexicon import (AFFIX_SIDES, CURRENCY_FAMILIES, GERMAN_ITEM_TYPES, GROUPS, ITEM_KINDS, NODE_KINDS, TOPICS,
-                          affix_applies, affix_rows, affix_weight_rule,
-                          bundled_lexicon, catalogue, german_stat_translations, league_guides, lexicon_item_available, node_rows, profile_rows,
-                          public_name, public_stats)
+                          affix_applies, affix_rows, affix_weight_rule, bundled_lexicon, catalogue,
+                          german_stat_translations, league_guides, lexicon_item_available, lineage_sources,
+                          node_rows, profile_rows, public_name, public_stats)
 from poe2_r18_features import BASE_DIR, GUIDE, localized, read_json
 from poe2_respec import RESPEC
 from poe2_website_content import localized_text
@@ -175,6 +175,7 @@ def _hidden_item_titles():
 
 def published_terms(language, website):
     hidden = _hidden_item_titles()
+    locations = lineage_sources().locations
     for entry in website.values():
         if any(search_text(title) in hidden for title in entry["title"].values() if title):
             continue
@@ -192,6 +193,11 @@ def published_terms(language, website):
         else:
             content = [text for paragraph in entry.get("article", ()) for text in paragraph.values()]
             content.extend((entry.get("summary") or {}).values())
+            if location := locations.get(entry["id"]):
+                supports = catalogue()["supports"]
+                for drop in location["drops"]:
+                    support = supports.get(drop["supportId"], {})
+                    content.extend(filter(None, (support.get("name"), support.get("de"))))
         yield make("lexicon", title, {"group": "terms", "row": entry}, details, names, content)
 
 
@@ -201,6 +207,7 @@ def catalogue_entries(language, group):
     german = language == "de"
     entries = []
     if group == "nodes":
+        lineage = lineage_sources()
         for kind, ident, row, positions in node_rows(data):
             title = row.get("de") or row["name"] if german else row["name"]
             label = display_label(NODE_KINDS[kind], language)
@@ -211,6 +218,11 @@ def catalogue_entries(language, group):
             for field in ("stats", "statsDe", "statsHybrid"):
                 words.extend(public_stats(row.get(field, ())))
             words.extend(german_stat_translations().get(stat, "") for stat in public_stats(row.get("stats", ())))
+            if kind == "support":
+                for location_id, _ in lineage.by_support.get(ident, ()):
+                    location = lineage.locations[location_id]
+                    words.extend(location["title"].values())
+                    words.extend(location.get("aliases", ()))
             aliases = (public_name(alias, ident) for alias in row.get("aliases", ()))
             entries.append(make("lexicon", title, {
                 "group": group, "facet": kind, "ident": ident, "row": row, "positions": positions,
@@ -240,6 +252,12 @@ def catalogue_entries(language, group):
     elif group == "pools":
         return tuple(_profile_entries(data, language, data["profiles"]))
     return tuple(entries)
+
+
+def lineage_support_entries(language):
+    ids = lineage_sources().by_support
+    return {entry.target["ident"]: entry for entry in catalogue_entries(language, "nodes")
+            if entry.target["facet"] == "support" and entry.target["ident"] in ids}
 
 
 def lexicon_terms_and_items(language, website):

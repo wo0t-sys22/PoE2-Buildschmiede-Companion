@@ -26,18 +26,18 @@ from poe2_shared_content import campaign_section_rows, sections_for_mode
 from poe2_boss_clips import BossClipStore
 from poe2_endgame_atlas_ui import EndgamePanel
 from poe2_experience import EXPERIENCE_LEVELS, default_guide_mode, experience_allows, saved_experience
-from poe2_feedback import open_feedback
+from poe2_feedback import feedback_url
 from poe2_gif import AnimatedGif, preview_size
 from poe2_hud_icons import hud_icon
 from poe2_overlay_controls import BackgroundMirror, BrassSlider, ClickTargets, FlowRow, InputRegion, ScrollArrows, SearchCategories
 from poe2_overlay_layout import HUD_MIN_SIZE, HUD_SIZE, OverlayLayout
 from poe2_overlay_lookup import (AFFIX_TIPS, CATEGORIES, FAQ_TOPICS, PAGE_SIZE, QUERY_LIMIT, construct_catalog,
-                                 editorial_entries, find_entries, lookup_entries, make, published_terms)
+                                 editorial_entries, find_entries, lineage_support_entries, lookup_entries, make, published_terms)
 from poe2_overlay_theme_art import CLASSIC, ThemeTreatment, mix_color, paint_header, paint_rule
 from poe2_regex_ui import RegexState, render_regex
 from poe2_speedrun import elapsed as timer_elapsed
 from poe2_speedrun_hud import SpeedrunHUD
-from poe2_lexicon import league_guides, merge_published_lexicon, web_url
+from poe2_lexicon import league_guides, lineage_sources, merge_published_lexicon, web_url
 from poe2_lexicon_ui import LexiconBrowser, render_lexicon
 from poe2_overlay_version import APP_NAME, BUILD_LABEL, INSTALLED_BUILD
 from poe2_r18_features import PALETTE, bundled, hud_check_id, hub_kind, item_spans
@@ -4654,8 +4654,8 @@ class StandaloneOverlay:
             lambda _: "Reset settings" if self.language == "en" else "Einstellungen zurücksetzen"),
             command=self.reset_options, padx=px(9), pady=px(4)))
         feedback_button = tk.Button(footer, command=self.open_feedback, cursor="hand2", padx=px(9), pady=px(4),
-                                    textvariable=caption(lambda _: "Send feedback" if self.language == "en"
-                                                         else "Feedback geben"))
+                                    textvariable=caption(lambda _: "Send feedback ↗" if self.language == "en"
+                                                         else "Feedback geben ↗"))
         footer_buttons.append(feedback_button)
 
         def style_panel(widget, surface, family):
@@ -4801,8 +4801,7 @@ class StandaloneOverlay:
         guide._schedule_targets()
 
     def open_feedback(self):
-        parent = self.settings if self.settings_open() else self.current.window
-        open_feedback(parent, self.language, self.theme, self.theme_font(), self.native)
+        webbrowser.open(feedback_url(self.language))
 
     def pick_client_log(self):
         path = filedialog.askopenfilename(parent=self.settings, title=ui_text("PoE2-Spiel-Log auswählen", self.language),
@@ -4826,12 +4825,16 @@ class StandaloneOverlay:
             elif selected and selected.category == "tips" and selected.url:
                 guide.lookup_entry = next((entry for entry in editorial_entries(language)
                                            if entry.category == "tips" and entry.target == selected.target), None)
-            elif selected and selected.category == "lexicon" and selected.target["group"] == "terms":
-                ident = selected.target["row"]["id"]
-                if ident in league_guides():
-                    term = self.website_lexicon().get(ident)
-                    if term:
-                        guide.lookup_entry = next(published_terms(language, {ident: term}), None)
+            elif selected and selected.category == "lexicon":
+                group = selected.target["group"]
+                if group == "terms":
+                    ident = selected.target["row"]["id"]
+                    if ident in league_guides() or ident in lineage_sources().locations:
+                        term = self.website_lexicon().get(ident)
+                        if term:
+                            guide.lookup_entry = next(published_terms(language, {ident: term}), None)
+                elif group == "nodes" and selected.target["facet"] == "support":
+                    guide.lookup_entry = lineage_support_entries(language).get(selected.target["ident"])
             guide._draw_header()
             guide._style_nav_icons()
             guide.update(self.state)
